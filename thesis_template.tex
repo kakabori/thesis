@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     This is a LaTex template to be used for a PhD thesis in the
+%     Department of Physics at Carnegie Mellon University. It is 
+%     recommended to input individual chapters, appendices, etc
+%     as separate files. To avoid having to provide multiple files
+%     with this template, simple examples for such separate files
+%     are included with this template.
+%                                                       July 2010
+%
+%     For comments contact: Manfred Paulini <paulini@cmu.edu>
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[12pt,twoside]{report}
+%
+% ====================================================================
+%     Include you favorite packages 
+%     Here only basic packages used for LaTex with PS output file
+% ====================================================================
+%
+\usepackage{color}
+\usepackage{graphicx}                   
+\DeclareGraphicsExtensions{.eps,.ps}               
+%
+% ====================================================================
+%     Some formatting suggestions
+% ====================================================================
+%
+\topmargin -0.3in
+\oddsidemargin 0.5in
+\evensidemargin 0.5in
+\textheight 8.5in
+\textwidth 6.0in
+%
+% ====================================================================
+%     The following commands tent to keep LaTex happier in the 
+%     placement of figures, tables, etc
+% ====================================================================
+%
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{9}
+% 
+% ====================================================================
+%     Some of the things we need for the title page
+% ====================================================================
+%
+\author{\\
+	\\
+	\\
+	by \\
+	\\
+      	Kiyotaka Akabori \\
+	\\
+	\\
+	\\
+	\\
+	\\
+        Submitted in partial fulfillment of the \\
+        requirements for the degree of \\
+        Doctor of Philosophy \\
+        at \\
+        Carnegie Mellon University \\
+        Department of Physics \\
+        Pittsburgh, Pennsylvania \\
+	\\
+        \\
+	Advised by Professor John F. Nagle
+	\\
+	\\
+}
+
+\title{\bf{
+Measurement of the Most Important Physics Quantity Ever Discovered 
+}}
+
+\date{\today}
+
+%
+% ====================================================================
+%     Input your definition in file definitions.tex here. 
+%     A simple example of the content of such a file is given below.
+% ====================================================================
+%
+%\input{definitions}
+%
+%%%%%%%%%%%%%% Example for content of file definitions.tex %%%%%%%%%%%
+\def\ra    {\rightarrow}
+\def\ul    {\underline} 
+\def\mevcc {\ifmmode {\mathrm MeV}/c^2 \else MeV$/c^2$\fi}
+\def\BsJpsiPhi {\ensuremath{\Bs \ra J/\psi\,\phi}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{document} 
+
+\thispagestyle{empty}
+
+\maketitle
+
+% ====================================================================
+%     Generates one blank page before the 'Abstract'
+% ====================================================================
+
+\thispagestyle{empty} \cleardoublepage
+
+%
+\include{abstract}
+%
+
+
+\thispagestyle{empty} \cleardoublepage
+
+\pagenumbering{roman}
+
+%
+\include{acknowledgments}
+%
+
+
+\tableofcontents 
+
+\listoftables
+
+\listoffigures
+
+\clearpage 
+
+\pagenumbering{arabic}
+
+%
+\include{chap_01}
+%
+\include{chap_02}
+%
+\include{chap_03}
+%
+\include{chap_04}
+%
+\include{chap_05}
+%
+\include{chap_06}
+%
+\include{bib}
+%
+
+
+\end{document}
