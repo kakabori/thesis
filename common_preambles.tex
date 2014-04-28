@@ -1,0 +1,47 @@
+%%%%%%%%%%%%%%%%% common packages are included here %%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx}
+\usepackage[lofdepth,lotdepth]{subfig} % subfloat
+\usepackage{bm} % bold math
+\usepackage{color}
+\usepackage[centertags]{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newlfont}
+\usepackage{textcomp,gensymb} % for \textcelsius, \textdegree, and \degree
+\usepackage{syntonly}
+
+%%%%%%%%%%%%%%%%%%%% some declaration %%%%%%%%%%%%%%%%%%%%%
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
+\graphicspath{{./figures/}}
+
+%%%%%%%%%%%%%%%%%%% new commands are defined here %%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dg}{$^{\circ}$} % degree symbol
+\newcommand{\iang}{\AA$^{-1}$} % inverse Angstrom symbol
+\newcommand{\degC}{$^{\circ}\mathrm{C}$} % degree Celcius
+\newcommand{\Eq}[1]{Eq.\,(\ref{#1})} % reference to an equation
+
+% Some mathematical (physical) quantities and symbols that are used often
+\newcommand{\xhat}{\mathbf{\hat{x}}}
+\newcommand{\yhat}{\mathbf{\hat{y}}}
+\newcommand{\zhat}{\mathbf{\hat{z}}}
+\newcommand{\kin}{\mathbf{k}_{\mathrm{in}}}
+\newcommand{\kout}{\mathbf{k}_{\mathrm{out}}}
+\newcommand{\Tat}{\mathrm{Tat}}
+\newcommand{\DOPC}{\mathrm{DOPC}}
+\newcommand{\cm}{\mathrm{cm}}
+
+% To simplify some formatting issues
+\newcommand{\pars}[1]{\mathopen{}\left( #1 \right)\mathclose{}} % () without extra spaces due to \left and \right
+\newcommand{\bracks}[1]{\mathopen{}\left[ #1 \right]\mathclose{}} % [] without extra spaces
+\newcommand{\angles}[1]{\mathopen{}\left\lange #1 \right\rangle\mathclose{}} % <> without extra spaces
+\newcommand{\braces}[1]{\mathopen{}\left\lbrace #1 \right\rbrace\mathclose{}} % {} without extra spaces
+\newcommand{\ds}[1]{\displaystyle{#1}}%
+\newcommand{\+}{^{\dagger}}%                                
+\newcommand{\partiald}[3][]{{\partial^{#1}#2 \over \partial {#3}^{#1}}}%
