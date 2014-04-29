@@ -1,52 +1,207 @@
-\chapter{Measurement of Mosaic Spread}
+\chapter{results}
+As discussed in chapter 2, the two main techniques employed in this thesis 
+were molecular dynamics (MD) simulation and low angle X-ray scattering (LAXS).
+First, we discuss the results and analysis of diffuse X-ray scattering. The
+general protocol was the following; LAXS data were fitted to a model X-ray
+scattering pattern from a stack of flucutating membranes via NFIT program,
+the analysis of which yielded the bending modulus, $K_C$, and the bulk
+modulus, $B$. Dividing the experimenal data by the model, then, gave the 
+absolute X-ray form factor, $|F(q_z)$, which is the Fourier transform
+of bilayer electron density profile along the bilayer normal direction, $z$. 
+We fitted $|F(q_z)|$ to a model density profile using the scattering density
+profile (SDP) program. The SDP program allows us to model a bilayer density
+according to volumentric spacing constraint. The advantage of this program is
+that we can see fine details of bilayer structure such as an individual
+head group, terminal methly, and so on. The model requires many parameters
+that are not so well determined. We then constrain many parameters from
+the past experimental data and MD simulations. This is discussed in 
+section ?.
 
-This is a test, nothing but a test, a test, just a test and a test.
+The second main method is MD simulation. From simulation trajectory, we 
+calculated the so called simulated X-ray form factor using the SIMtoEXP
+program (ref). The best matching simulation result was chosen as the best
+prediciton of the bilayer structure. We, then, calculated many structural
+details from the trajectory that were not accessible experimentally.   
 
-\section{Mosaic Spread}
+\section{Low Angle X-ray Scattering}
+\subsection{Theory}
+The analysis of diffuse X-ray scattering pattern begins with separating 
+$|F(q_z)|$ from $S(\mathbf{q})$. To this end, we used an analysis program
+called NFIT. The derivation is described in Yufeng Liu's thesis in detail. 
+In this section, we describe the theoretical model for $S(\mathbf{q})$ to 
+outline the theory. 
 
-This is a test, nothing but a test, a test, just a test and a test.
+We assume that a stack of bilayers can be accurately
+described by the smectic liquid crystal theory, so that the free energy of 
+the system is
+\begin{equation}
+  F
+\end{equation}
+where $K_C$ and $B$ are the bending and bulk modulus, respectively. 
+Writing the membrane height profile in terms of the Fourier modes,
+$u=\sum \mathrm{exp}(i\mathbf{q} \cdot \mathbf{r})$, 
+\begin{equation}
+  F
+\end{equation}
 
-%%%%% Example of Table %%%%
-%\begin{table}[tbh]
-%\caption{Summary of the most important results.}
-%
-%\begin{center}
-%  \begin{tabular}{|c|cc|}
-%    \hline
-%    A   & B   & C  \\
-%    \hline
-%    1   & 2   & 3   \\
-%    11  & 22  & 33  \\
-%    1   & 2   & 3   \\
-%    \hline
-%  \end{tabular}
-%\end{center}
-%\label{Tab:table1}
-%\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%% ----------------------------------------------------------------
-%\begin{figure}[tb]
-%\begin{center}
-%\includegraphics[width=0.5\textwidth]{my_result.eps}
-%\caption{
-%The Nobel prize awarded measurement.
-%}
-%\label{Fig:nobel1}
-%\end{center}
-%\end{figure}
-%%%%% ----------------------------------------------------------------
+\subsection{Results}
+Fig. XX shows the scattering intensity pattern from DOPC/DOPE (1:1) with mole 
+fraction
+x=0.034 Tat. The diffuse lobes are due to equilibrium fluctuations that occur 
+in these fully
+hydrated, oriented lipid/peptide samples. The intensity I(q) in the diffuse 
+patterns provide the
+absolute values of the form factors F(qz), which are the Fourier transforms 
+of the electron density
+profile, through the relation I(q)=S(q)|F(qz)|2/qz, where q=(qr,qz), S(q) is 
+the structure
+interference factor, and qz
+−1 is the usual LAXS approximation to the Lorentz factor [39, 55, 56].
+The first step in the analysis takes advantage of the qr dependence of the 
+scattering to obtain the
+bending modulus KC with results shown in Fig. 2. As positively charged Tat 
+concentration was
+increased, the lamellar repeat spacing D generally increased in neutral lipid 
+bilayers and
+decreased in negatively charged bilayers, consistent with changes in 
+electrostatic repulsive
+interactions. With few exceptions, the water space between bilayers exceeded 
+20 Å.
+Figure 1. LAXS of DOPC/DOPE (1:1), x=0.034 Tat mole
+fraction (peptide/(lipid+peptide)) at 37 oC. White lobes of
+diffuse scattering intensity have large grey numbers, while
+lamellar orders and beam are shown to the left of the
+Molybdenum beam attenuator (short, dark rectangle). qz
+and qr are the projections of q along the direction normal
+and parallel to the membranes, respectively. The lamellar
+repeat spacing was D=66.2 Å.
+7
+Figure 2. Bilayer bending modulus, KC, vs. P/(L+P) mole fraction. D-spacings 
+for DOPC/Tat
+mixtures varied from 64 to 68 Å, for DOPC/DOPE/Tat mixtures from 64 to 69 Å, for
+DOPC/DOPS/Tat (3:1) mixtures from 57 Å to >100 Å (pure DOPS was unbound), and for
+nuclear mimic/Tat mixtures from unbound (nuclear mimic) to 64 Å. Estimated uncertainty in all
+values is ± 2.
+The analysis that obtains KC also obtains the structure factor S(q) and then the unsigned
+form factors |F(qz)| are obtained from the intensity I(q) by division. Results for five different
+membrane mimics are shown in Fig. 3. Vertical lines indicate the “zero” position between the
+lobes of diffuse data where F(qz) change sign. In every sample, the zero positions shift to larger
+qz, indicating a thinning of the membranes.
+8
+Figure 3. Form factors of lipid mixtures (arbitrarily scaled and vertically displaced) with
+increasing Tat mole fractions, P/(L+P), indicated on figure legends. Lipid mixtures: A. DOPC
+B. DOPC/DOPE (3:1) C. DOPC/DOPE (1:1) D. DOPC/DOPS (3:1) E. Nuclear mimic. The
+entire qz range is shown in C, while others show partial ranges. Solid vertical lines indicate the
+qz values where the form factors equal zero between the lobes of diffuse data.
 
-\subsection{Test 1 - SubSection}
+\section{Scattering Density Profile Modeling}
+We also estimate structure by fitting the experimental form factors using the SDP method
+[44] with the component groups identified in Fig. 5. The positions of these groups were free
+parameters and the agreement with the experimental form factors was excellent. Absolute total
+electron density profiles and the Tat profiles are shown for many samples in Fig. 6 (A-C). It
+must be emphasized, however, that, while the total EDP is well determined by this fitting
+procedure, the values of the parameters for the components are not as well determined as they
+would be if one had X-ray data to smaller and larger qz and neutron data. Indeed, there are local
+minima in the fitting landscape, including one with Tat closer to the center of the bilayer as
+shown in Fig. S5. The simulations help to discard that result. For the results shown in Fig. 6, a
+consistent trend is that Tat moves away from the bilayer center as concentration increases.
+Electron density profiles for DOPC/DOPS (3:1) and the nuclear membrane mimic were not
+successful, due to loss of diffuse scattering by Tat’s charge neutralization of these negatively
+charged membranes.
+11
+Figure 6. SDP modeling results for
+absolute electron density profiles
+(EDPs) and for the Tat location as a
+function of distance Z along the
+bilayer normal. A. DOPC B.
+DOPC/DOPE (3:1) and C.
+DOPC/DOPE (1:1).
+12
+More structural detail from the modeling and from the simulations is shown in Fig. 7. The
+bilayer thickness can be described as DHH, which is the distance between the maxima in the
+electron density profile, or as DPP, which is the distance between the phosphocholines on the
+opposing monolayers (see Fig. 5). Figs. 7A and 7B show that both these quantities tend to
+decrease with increasing Tat mole fraction (P/(L+P)), showing that Tat thins membranes,
+increasingly so as its concentration is increased, even though both simulation and modeling
+suggest that Tat moves further from the membrane center with increasing concentration as
+shown in Fig. 7D. Fig. 7C shows that the area per lipid AL usually increases with increasing
+mole fraction of Tat, similar to the findings from MD simulations (Section 3.2), as would be
+expected. The results from the simulation data plotted in Fig. 7 were obtained by using a
+weighted average based on chi-square of the four best fits of the simulated form factors with the
+experimental form factors.
+Figure 7. A. Bilayer thickness, DPP; B. Bilayer thickness, DHH; C. Area/lipid, AL; D. Twice the
+Tat location, 2ATat: all plotted vs. Tat mole fraction P/(L+P). Error bars are standard deviations
+from imposing Tat Gaussian widths, σ = 2.5, 3.0 or 3.5 Å. Inverted blue triangles connected
+with dotted line are results from MD simulations, averaging the best fits to the X-ray data for
+each parameter, with standard deviations shown.
 
-This is a test, nothing but a test, a test, just a test and a test.
+\section{Molecular Dynamics Simulations}
+Due to the slow relaxation in lipid bilayers and limited accuracy of the force field, a good
+agreement between experimental and MD simulation calculated form factors may be difficult to
+reach. Consequently, we carried out several constrained simulations at AL and ZTat as described
+in Materials and Methods. We then compared the simulated form factor F(qz) with the
+experiment. The best match for DOPC/Tat (128:4) was found when the Tats were constrained at
+9
+18 Å away from the bilayer center (Fig. 4.A,B). The other best fit results were: DOPC AL = 70
+Å2 and DOPC/Tat(128:2) AL = 72 Å2, ZTat = 18 Å. It clearly indicates that with increasing Tat
+concentration, AL increases. The agreement worsened as Tat was constrained to be closer to the
+center of the bilayer. When Tats were constrained at 5 Å away from the bilayer center, we
+observed a spontaneous formation of water pores in the MD simulation. However, as shown in
+Fig. 4.C the corresponding form factor calculated from MD simulations does not match well
+with experiments.
+Figure 4. MD simulated form factors (red solid lines in A and C) of Tat/(DOPC+Tat), x=0.030,
+with Tat fixed at ZTat= 18 Å (panel A) and 5 Å (panel C) from the bilayer center compared to
+experimental form factors (open circles) scaled vertically to provide the best fit to the
+simulations. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
+represented as grey sticks on a white background, Tats are yellow, phosphate groups are red and
+water is blue.
+10
+Figure 5. Symmetrized total electron density profile (EDP) from the simulation with the form
+factor shown in Fig. 4A. Also shown are the component group contributions. Component groups
+are labeled: PC, phosphocholine; CG, carbonyl-glycerol; CH2+CH, methylene and methine
+hydrocarbon region; CH3, terminal methyl; Tat peptide distribution is shaded.
 
-\subsubsection{Test 1 - SubSubSection}
 
-This is a test, nothing but a test, a test, just a test and a test.
+\section{Volume results}
+Experimental and simulated volumes are given in Table 2. The simulated volume was
+obtained using the volume app in the SIMtoEXP program. The experimental Tat volume was
+calculated from the measured density assuming that the lipid volume was the same as with no
+Tat. In general, there may be an interaction volume between the peptide and the lipid membrane
+as we found previously for bacteriorhodopsin [57]. As lipid was present in excess to Tat, the
+partial molecular volume of the lipid should be the same as with no Tat, so this way of
+calculating includes all the interaction volume in VTat. Comparison of VTat in water with the
+result for 5:1 Lipid:Tat suggests that the interaction volume may be negative, consistent with a
+net attractive interaction with lipid. Understandably, values of VTat were unreliable for small
+mole ratios of Tat:Lipid. Therefore we used simple additivity for those mimics not shown in
+Table 2 for the volumes used in the SDP program. All volumes obtained from the Gromacs MD
+simulations were somewhat smaller than the measured volumes, but it supports the Tat volume
+being closer to 1822 Å3 than the outlying values obtained experimentally at small Tat
+concentrations.
+Table 2. Volume results at 37 oC
+Tat in: Vlipid (Å3) Lipid:Tat VTat (Å3)
+Water 1877
+DOPC/DOPE (3:1) 1288 5:1 1822
+DOPC 1314 39.6:1 676
+DOPC/DOPS (3:1) 1298 39.6:1 2613
+Simulations
+DOPC 1283 128:2 1694
+DOPC 1294 128:4 1699
 
-\section{Conventional Method: Rocking Scan}
-I should first talk about the rocking scan, which is more conventional. I should identify pros and cons.
-
-\section{New Method: Ring Analysis}
-This is where I discuss the ring method.
+\section{Summary of Results}
+We summarize our results for how Tat affects the lipid bilayer in Fig. 9. The height of
+Tat, HTat = 8.7 Å, was the full width at half maximum of the Tat electron density profiles
+obtained from simulations and the cylindrical radius, RTat = 8.3 Å, was calculated to give the
+measured volume. The Z distances from the center of the bilayer were derived from weighted
+averages of four MD simulations of Tat:DOPC 2:128. The χ2 obtained by comparison to
+experiment indicated that the best ZTat lay between the simulated values of 16 Å and 18 Å and
+the best area/lipid AL lay between the simulated values of 72 Å2 and 74 Å2, so averages were
+obtained from these four combinations of ZTat and AL, weighted inversely with their χ2. The
+average positions, Z'Phos, of phosphates situated underneath the Tats were calculated by
+averaging over the phosphates whose in-plane distance, R, from the center of Tat is smaller than
+RTat. The simulation cell extended to 38Å, far enough to ensure that ZPhos for most of the lipids is
+the same as for DOPC. Assuming a simple linear ramp in ZPhos, Fig. 9 then indicates a ring of
+boundary lipids that extends twice are far in R as Tat itself. Although the guanidinium electron
+density profile was broad (Fig. S8), indicating that some were pointing away from the bilayer
+relative to the center of Tat, more were pointing towards the bilayer center as indicated in Fig. 9.
+Numerical values are given in Table S1.
