@@ -1,13 +1,117 @@
 \chapter{Experiment and Simulation}
 
-\section{Experimental Setup}
-Refer to Jianjun's thesis or something
+\section{X-ray optics}
+High resolution setup should be described.
 
-%\subsection{Test 2 - SubSection}
+Low resolution setup should be described.
 
-\section{Data Collection}
-CCD, Dezinger, 
+Detector correction was applied. See references.
+
+\section{Hydration Chamber}
+The chamber is sealed very tightly. We used helium to replace air. Air 
+scattering is strong. 
+Mylar window, cast scatteing in wide angle region. Helium. Peltier used to 
+condense water in and out of the sample.  
+
+\section{Sample Preparation}
+Synthesized lipids were purchased from Avanti Polar Lipids (Alabaster, AL) and 
+used without further purification. Membrane mimics were prepared by first 
+dissolving lyophilized lipids in chloroform and then mixing these stock 
+solutions to create the lipid compositions
+DOPC, DOPC/DOPE (3:1), DOPC/DOPE (1:1), DOPC/DOPS (3:1) and nuclear membrane
+mimic (POPC/POPE/POPS/SoyPI/Cholesterol, 69:15:2:4:11) (based on Ref. [37]). 
+Peptide
+(Y47GRKKRRQRRR57) was purchased in two separate lots from the Peptide Synthesis 
+Facility
+(University of Pittsburgh, Pittsburgh, PA); mass spectroscopy revealed greater
+than 95\% 
+purity. This Tat
+peptide corresponds to residues (47-57) of the 86 residues in the Tat 
+protein [6]. Tat was
+dissolved in HPLC trifluoroethanol (TFE) and then mixed with lipid stock 
+solutions in
+chloroform to form mole fractions between 0.0044 and 0.108. Weight of Tat in 
+these mole
+fractions was corrected for protein content (the remainder being 8 
+trifluoroacetate counter-ions
+from the peptide synthesis). Solvents were removed by evaporation in the fume 
+hood followed
+by 2 hours in a vacuum chamber at room temperature.
+
+\section{Samples for X-ray scattering}
+Four mg dried lipid/peptide mixture was re-dissolved in HPLC chloroform/TFE 
+(2:1 v:v)
+for most of the lipid compositions. DOPC/DOPS (3:1) mixtures required
+chloroform/HFP (1:1 v:v) in order to solubilize the negatively charged DOPS. 
+200 μl of 4 mg
+mixtures in solvents were plated onto silicon wafers (15x30x1 mm) via the rock 
+and roll method
+[38] to produce stacks of ~1800 well-aligned bilayers; solvents were removed by 
+evaporation in
+the fume hood, followed by two hours under vacuum. Samples were prehydrated 
+through the
+vapor in polypropylene hydration chambers at 37 \degC for two to six hours 
+directly before hydrating in the
+thick-walled X-ray hydration chamber [39] for 0.5–1 h. Pre-equilibration 
+allowed 
+sufficient time
+for equilibrium binding of peptides with membrane mimics.
+
+For ripple phase experiments, the sample was annealed at 60 \degC for approximately
+10 hours prior to the experiment. The sample was trimmed to 1 mm for high
+resolution and 5 mm for low resolution study, respectively. The temperature
+was set at 18 \degC. The sample was dried by applying a small heating 
+current to the Peltier.
+
+
+
+
+\section{Low Angle X-ray Scattering Experiment}
+The analysis of diffuse low angle X-ray scattering from oriented stacks of 
+fluctuating fluid bilayers has been previously described [39]. Absolute form 
+factors |F(qz)| were obtained as previously described [42]. Modeling to 
+estimate the locations of Tat and the lipid components
+was performed using the SDP program [44].
+
+\section{Transmission X-ray Scattering Experiment}
+Transmission experiment. The axis of rotation does not coincide with the
+plane of the sample, so that the sample-to-detector distance is not fixed
+for different motor angle. The sample-to-detector distance was estimated
+from the setup geometry. We used 35 $\mu$m thin Si wafer, which absorbs
+x-ray by only 10\%. 
+
+\section{Densimetry}
+\subsection{Samples for densimetry}
+Multilamellar vesicles (MLVs) were prepared by mixing dried lipid mixtures with 
+MilliQ
+water to a final concentration of 2-5 wt\% in nalgene vials and cycling three 
+times between -20oC
+and 60oC for ten minutes at each temperature with vortexing. Pure Tat was 
+dissolved in water
+at 0.4 wt\%.
+
+\subsection{Densimetry}
+Volumes of lipid mixtures with and without peptides in fully hydrated multilamellar
+vesicles (MLV) were determined at 37±0.01 \degC using an Anton-Paar USA DMA5000M
+(Ashland, VA) vibrating tube densimeter [47].
+
 
 \section{MD simulation}
+Systems with different DOPC/Tat mole ratios (128:0, 128:2 and 128:4, corresponding to
+0, 0.015 and 0.030 mole fractions) were simulated atomistically using the Gromacs 4.6.1
+package [49]. DOPC was modeled by the Slipid force field [50, 51] and HIV Tat was modeled
+by Amber 99SB [52]. Tip3p water was used [53]. The number of Tats was divided equally on
+each side of the bilayer to mimic experimental conditions. All systems were simulated at 310 K
+with a constant area in the x-y plane for and 1 atm constant pressure in the Z direction. Each
+system was simulated for 100 ns and the last 50 ns was used as the production run.
+At each DOPC/Tat mole ratio, we studied systems with three different area/lipid (AL).
+For the DOPC system, we fixed AL = 68, 70, 72 Å2; DOPC/Tat (128:2), we fixed the AL = 72,
+74, 76 Å2; DOPC/Tat (128:4), we fixed the AL =72, 74, 76 Å. For each DOPC/Tat system at
+fixed AL, we then conducted seven independent simulations with the center of mass (COM) of
+each Tat constrained at different bilayer depths from the bilayer center (18, 16, 14, 12, 10, 8 and
+5 Å). In total, 45 independent simulations were conducted. The goal of constrained simulations
+is to find the best match between experimental and MD simulation form factors. Comparison to
+the X-ray form factors was performed using the SIMtoEXP software [54]. Additional details
+concerning the MD simulations are in Supplementary Data 6.
 
 
