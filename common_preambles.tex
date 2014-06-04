@@ -11,15 +11,16 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{newlfont}
 \usepackage{textcomp,gensymb} % for \textcelsius, \textdegree, and \degree
 \usepackage{syntonly}
+\usepackage[pdftex]{hyperref}
+\usepackage[toc,page]{appendix}
 
 %%%%%%%%%%%%%%%%%%%% some declaration %%%%%%%%%%%%%%%%%%%%%
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
-\graphicspath{{./figures/}}
+%\graphicspath{{./figures/}}
 
 %%%%%%%%%%%%%%%%%%% new commands are defined here %%%%%%%%%%%%%%%%%%%%%
 \newcommand{\dg}{$^{\circ}$} % degree symbol
@@ -36,6 +37,10 @@
 \newcommand{\Tat}{\mathrm{Tat}}
 \newcommand{\DOPC}{\mathrm{DOPC}}
 \newcommand{\cm}{\mathrm{cm}}
+\newcommand{\dx}{\mathop{dx}}
+\newcommand{\dy}{\mathop{dy}}
+\newcommand{\dz}{\mathop{dz}}
+\newcommand{\dr}{\mathop{dr}}
 
 % To simplify some formatting issues
 \newcommand{\pars}[1]{\mathopen{}\left( #1 \right)\mathclose{}} % () without extra spaces due to \left and \right

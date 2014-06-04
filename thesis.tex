@@ -1,8 +1,10 @@
 \documentclass[12pt,twoside]{report}
 
-\input{common_preambles}             
+\input{common_preambles}  
+\input{newcommand_Tat}
+\input{newcommand_ripple}          
 
-\includeonly{abstract,chap_02,chap_03,chap_04}
+%\includeonly{abstract,chap_01,chap_02}
 
 \topmargin -0.3in
 \oddsidemargin 0.5in
@@ -47,7 +49,7 @@
         Pittsburgh, Pennsylvania \\
 	\\
         \\
-	Advised by Professor John F. Nagle
+	Advised by Professor John F. Nagle and Stephanie Tristram-Nagle
 	\\
 	\\
 }
@@ -58,21 +60,6 @@ Measurement of the Most Important Physics Quantity Ever Discovered
 
 \date{\today}
 
-%
-% ====================================================================
-%     Input your definition in file definitions.tex here. 
-%     A simple example of the content of such a file is given below.
-% ====================================================================
-%
-%\input{definitions}
-%
-%%%%%%%%%%%%%% Example for content of file definitions.tex %%%%%%%%%%%
-\def\ra    {\rightarrow}
-\def\ul    {\underline} 
-\def\mevcc {\ifmmode {\mathrm MeV}/c^2 \else MeV$/c^2$\fi}
-\def\BsJpsiPhi {\ensuremath{\Bs \ra J/\psi\,\phi}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 \begin{document} 
 
 \thispagestyle{empty}
@@ -109,21 +96,16 @@ Measurement of the Most Important Physics Quantity Ever Discovered
 
 \pagenumbering{arabic}
 
-%
-\include{chap_01}
-%
-\include{chap_02}
-%
-\include{chap_03}
-%
-\include{chap_04}
-%
-\include{chap_05}
-%
-\include{chap_06}
-%
-\include{bib}
-%
 
+\include{chap_01}
+\include{chap_02}
+\include{chap_03}
+\include{chap_04}
+\begin{appendices}
+  \include{appendix}
+\end{appendices}
+
+\bibliography{thesis}
+\bibliographystyle{unsrt}
 
 \end{document}
