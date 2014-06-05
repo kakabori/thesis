@@ -189,6 +189,79 @@ further characterize Tat/membrane interactions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
+\subsection{Volume Measurement}
+Multilamellar vesicles (MLVs) were prepared by mixing dried lipid mixtures with 
+MilliQ
+water to a final concentration of 2-5 wt\% in nalgene vials and cycling three 
+times between 20 \textcelsius\ 
+and 60 \textcelsius\ for ten minutes at each temperature with vortexing. 
+Pure Tat was dissolved in water at 0.4 wt\%.
+
+Volumes of lipid mixtures with and without peptides in fully hydrated multilamellar
+vesicles (MLV) were determined at 37$\pm$ 0.01 \textcelsius\ using 
+an Anton-Paar USA DMA5000M (Ashland, VA) vibrating tube densimeter 
+\cite{ref:}. This instrument measures the average density of a solution. 
+
+The Tat peptide sequence used in X-ray experiements and MD simulations was 
+YGRKKRRQRRR. 
+Table~\ref{tb:aa} lists the chemical formulas and molecular weights of
+these amino acids for convenience. The molecular 
+weight of this sequence is 
+$181.2+75.1+146.1+2 \times 146.2+6\times 174.2-10\times 18=1560$.
+%------------------------------------------------------------------------------
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{c c c c}
+    Code & Amino acid & Chemical Formula & Molecular weight (g/mol) \\
+    K & Lysine & $\mathrm{C_6H_{14}N_2O_2}$ & 146.2 \\
+    R & Arginine & $\mathrm{C_6H_{14}N_4O_2}$ & 174.2 \\
+    G & Glycine & $\mathrm{C_2H_5NO_2}$ & 75.1\\
+    Y & Tyrosine & $\mathrm{C_9H_{11}NO_3}$ & 181.2 \\
+    Q & Glutamine & $\mathrm{C_5H_{10}N_2O_3}$ & 146.1  
+  \end{tabular}
+  \caption{Some Amino Acids Data}
+  \label{tb:aa}
+\end{table}
+%------------------------------------------------------------------------------
+The Tat peptides were synthetized in trifluoroacetic acid, which has 
+the chemical formula $\mathrm{CF_3CO_2H}$, and made into a powder form by the 
+freeze-dry method. Therefore, each positively charged amino acid such as 
+an arginine and lysine was counter-balanced by a trifluoroacetate (TFA)
+($\mathrm{C_2F_3O_2}$). Since Tat has six arginines and two lysines, it came 
+with eight trifluoroacetates. This complex has a molecular weight of 
+$1560+113\times 8=2464$. We used the 
+molecular weight of this complex in order to calculate the molarity of a Tat
+in water solution correctly.
+
+The Tat volume $\VTat$ was calculated from the measured average density of a 
+Tat-water solution in the following way. Assuming that Tat
+molecules in water does not change the volume of water molecules, the density
+of Tat-water solution is equal to the mass of Tat-water solution divided
+by the sum of volumes of water and Tat, 
+\begin{equation}
+  \rho_\textrm{sol} = \frac{\mw+\mc}{\Vw+\Vc\Nc},
+\end{equation}
+where $\mw$ and 
+$\mc$
+are the total mass of water and Tat-TFA complex, $\Vw$ is the total volume of 
+water, $\Vc$ is the molecular volume of a Tat-TFA complex, and $\Nc$ is the total number 
+of this complex in the solution. 
+Denoting $\Vw=\mw/\rho_\textrm{w}$ 
+and $\Nc=N_\textrm{A}\mc/\Wc$, 
+where $\Wc$ is the molecular weight of the complex, 
+$N_\textrm{A}$ is the Avogadro's number,
+and $\rho_\textrm{w}$ is the density of water, we have
+\begin{equation}
+  \Vc = \frac{\Wc}{\rho_\textrm{sol}N_\textrm{A}} \left( 
+        1 + \frac{\mw}{\mc}\left(1-\frac{\rho_\textrm{sol}}{\rho_\textrm{w}}\right) 
+        \right),
+\end{equation}
+which allows us to calculate the molecular volume of a Tat-TFA complex 
+from the experimentally measured quantities. 
+Assuming that the molecular
+volume scales with the molecular weight gives the volume of Tat, 
+$\VTat$ = $1560/2464\times\Vc$ \AA$^3$. 
+
 \subsection{Analysis of Diffuse Scattering}
 The analysis of diffuse X-ray scattering pattern begins with separating 
 $|F(q_z)|$ from $S(\mathbf{q})$. To this end, we used an analysis program
@@ -486,84 +559,98 @@ these volumes to the calculated values in our model.
 %------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Volume Measurements}
-(Maybe do this in appendix?)
+\subsection{Molecular Dynamics Simulation}
+Systems with different DOPC/Tat mole ratios (128:0, 128:2 and 128:4, corresponding to
+0, 0.015 and 0.030 mole fractions) were simulated atomistically using the Gromacs 4.6.1
+package \cite{ref:Hess08}. 
+DOPC was modeled by the Slipid force field 
+\cite{ref:Jambeck12_JPCB,ref:Jambeck12_JCTC} 
+and HIV Tat was modeled by Amber 99SB \cite{ref:Hornak06}. 
+Tip3p water was used [53]. The number of Tats was divided equally on
+each side of the bilayer to mimic experimental conditions. All systems were simulated at 310 K
+with a constant area in the $x$-$y$ plane and 1 atm constant pressure in the $z$ direction. Each
+system was simulated for 100 ns and the last 50 ns was used as the production run.
+At each DOPC/Tat mole ratio, we studied systems with three different area/lipid ($\AL$).
+For the DOPC system, we fixed $\AL$ = 68, 70, 72 \AA$^2$; 
+DOPC/Tat (128:2), we fixed the $\AL$ = 72, 74, 76 \AA$^2$; 
+DOPC/Tat (128:4), we fixed the $\AL$ = 72, 74, 76 \AA$^2$. 
+For each DOPC/Tat system at fixed $\AL$, 
+we then conducted seven independent simulations with the center of mass (COM) of
+each Tat constrained at different bilayer depths from the bilayer center 
+(18, 16, 14, 12, 10, 8 and 5 \AA). 
+In total, 45 independent simulations were conducted. 
+The goal of constrained simulations is to find the best match between 
+experimental and MD simulation form factors. Comparison to
+the X-ray form factors was performed using the SIMtoEXP software [54]. 
+Additional details concerning the MD simulations are in Supplementary Data 6.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\subsection{MD simulation}
-Three systems with different petpide concentrations (DOPC:Tat = 128:0, 128:2, and 128.4)
-were studied with Gromacs 4.6.1 package \cite{ref:Hess08}. DOPCs were modeled by Slipid 
-force field \cite{ref:Jambeck12_JPCB,ref:Jambeck12_JCTC} and HIV-Tats
-were modeled by Amber99SB \cite{ref:Hornak06}. The systems were simulated at 
-310 K with a constant
-area in the x-y plane. The z direction was coupled to 1 atm with constant pressure. The
-center of mass (COM) distance between each peptide and the bilayer was constrained by an
-umbrella potential with a force constant of 3000 kJ/mol/nm$^2$. Each system was explored
-18 independent simulations as a combination of 3 different constant area and 6 different
-peptide insertion depths (except the pure DOPC system).
-
-\begin{equation}
-  z_{\mathrm{cm}} = \frac{\sum\limits_{i=1}^N m_iz_i}{\sum\limits_{i=1}^N m_i}
-\end{equation}
-The center of mass constraint was applied through an external force field,
-which derives from an added pontential energy of the system. The pontential 
-is like a spring, where it depends on the deviation of the distance 
+The center of mass (COM) distance between each peptide and the bilayer was 
+constrained by an umbrella potential with a force constant $k$ of 3000 kJ/mol/nm$^2$. 
+Essentially, this potential acts as a spring, 
+where its potential energy depends on the deviation of the distance 
 between the center of mass of Tat and DOPC from a prefered value, $z_0$,
-\begin{equation}
+\begin{equation*}
   U(z_1^{\textrm{Tat}},\ldots,z_1^{\textrm{DOPC}},\ldots) = 
   -\frac{1}{2} k 
-  \pars{z_{\textrm{cm}}^{\textrm{Tat}} - z_{\textrm{cm}}^{\textrm{DOPC}} - z_0}^2
-\end{equation}
-Then, $-\partial U/\partial z_i$ is equal to the external force acting 
+  \pars{z_{\textrm{cm}}^{\textrm{Tat}} - z_{\textrm{cm}}^{\textrm{DOPC}} - z_0}^2.
+\end{equation*}
+Then, $-\partial U/\partial z_i$ is the external force acting 
 on atom, $i$. Before applying this constraint, Tats were attached to 
 the bilayer from the water region. During the first 20 ns for 
 pre-equilibration, Tats were allowed to change their configuration,
 which resulted in different configurations for each Tat when attached
-to the bilayer. It is possible that the Tats configuration inside the
-bilayer at the end of simulations was affected by this initial 
-configuration of Tats. Instead of preparing many simulations with
-different initial Tat configurations, we avaraged over all Tats
-present in the system. We also performed many simulations with
-different $A_\textrm{L}$ and $z_{\textrm{Tat}}$ to investigate how robust some of the 
-Tat structural features are. Many simulation results are shown in
-the appendix of this thesis. 
-
+to the bilayer. With this COM constraint, each Tat was allowed to move
+laterally and rotate, changing its configuration during simulations.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Local Thinning of Membranes}
-The SIMtoEXP program only gives the average quantities for each leaflet. 
-While our x-ray data are sensitive to the avarage bilayer electron density,
-local information of Tat-DOPC interactions can be obtained from MD simulations.
-In this section, we discuss a method to extract a local membrane thickness.
+\newpage
+\section{Analysis of Molecular Dynamics Simulation Data}
+\subsection{SIMtoEXP program}
+This section briefly describes the SIMtoEXP program \cite{ref:Kucerka10}.
 
-The presence of Tat may result in compression of lipid bilayer along z-direction. 
-If so, the phosphorus-phosphorus distance of the bilayer near Tat (denoted by DPP'
-in the figure below) may be different from that away from Tat (DPP).  For 
-small Tat concentration, DPP would be the same as that of pure DOPC if the 
-distance from all Tats is large enough.  Of course, for our concentrations, 
+\subsection{Local Thinning of Membranes}
+The SIMtoEXP program only gives the average quantities for each leaflet. 
+While our x-ray data are sensitive to the bilayer avarage electron density,
+local information of Tat-DOPC interactions can be obtained from MD simulations.
+In this section, we discuss a method to extract a local membrane thickness
+around the Tat peptides.
+
+The presence of Tat may result in compression of lipid bilayer along 
+$z$-direction. If so, the phosphorus-phosphorus distance $D_\textrm{PP}'$ 
+of the bilayer near Tat may be different from the distance
+$D_\textrm{PP}$ away from Tat.  
+For small Tat concentration, $D_\textrm{PP}$ would be the same as that of 
+pure DOPC if the 
+distance from all Tats is large enough.  For our concentrations, 
 the thinning effect may extend throughout the bilayer because the lateral
 effect of Tat might have a larger lateral decay length than the distance 
-between Tats.  Whether that is the case or not, one would expect that the 
-thickness near the Tats is smaller than the average thickness.
-
+between Tats. Whether that is the case or not, one would expect that the 
+thickness near the Tats is smaller than the average thickness, and
+$D_\textrm{PP}'$ is what we want to measure. 
+%------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.5]{./figures/Tat/cylinder_model}
   \caption{test}
   \label{fig:cylinder_model}
 \end{figure}
-So, we want to measure DPP'.  First, let us define what we mean by lipids 
-close to Tat.  As in Fig.~\ref{fig:cylinder_model}, we imagine a cylinder around Tat and 
-pick up all the phosphorus atoms within it.  Approximating Tat as a cylinder 
-with its height given by the FWHM of its electron density distribution, its 
-radius $R_\textrm{Tat}$ = 9~\AA\ comes from the volume of Tat = 1876~\AA$^3$ and 
-$\hTat$ = 7.6~\AA\
-measured from one of the simulations. Let us define the lateral center of the 
+%------------------------------------------------------------------------------
+ 
+First, let us define what we mean by lipids close to Tat.  
+As in Fig.~\ref{fig:cylinder_model}, we imagine a cylinder around Tat and 
+pick up all the phosphorus atoms within it.  
+Approximating Tat as a cylinder 
+with its height given by the FWHM of its electron density distribution, 
+its 
+radius $R_\textrm{Tat}$ = 9 \AA comes from the volume of Tat = 1876 \AA$^3$ and 
+$\hTat$ = 7.6 \AA
+measured from one of the simulations. 
+Let us define the lateral center of the 
 cylinder in some way - a crude approximation would put it at the arginine in 
-the middle of the amino acid sequence. Then let us define DPP' using only 
-those lipids whose phosphorus atoms lie within these 9\AA\ cylinders around the 
-tats. Then $D_\textrm{PP} = \zphos^+ - \zphos^-$ where $\zphos^+$ and $\zphos^-$ 
+the middle of the amino acid sequence. Then let us define $D\textrm{PP}'$ 
+using only 
+those lipids whose phosphorus atoms lie within these 9 \AA cylinders around the 
+Tats. Then $D_\textrm{PP} = \zphos^+ - \zphos^-$ where $\zphos^+$ and $\zphos^-$ 
 are the 
 average $Z$ of the n1 (n2) lipids in the upper and lower monolayer, respectively.  
 To be more precise, assume that the arginine in the middle of the amino acid 
@@ -571,28 +658,27 @@ sequence is at the center of the cylinder. For a refined method, we could find
 the center of mass of each Tat and use them as the lateral center of cylinders 
 (instead of a particular carbon atom in an arginine). 
 
-The algorithm for doing this is straightforward.  For each time frame 
-(snapshot), the positions ($X_i$ ,$Y_i$, $Z_i$) of each Tat, $i$, are listed.   
-We choose phosphorus atoms whose ($X$, $Y$) lateral position lies within 
-9~\AA\ of any one of the Tat's lateral position. Then, $Z$ position
+The algorithm for doing this is straightforward.  For each time frame, 
+the positions ($x_i$ ,$y_i$, $z_i$) of each Tat, $i$, are listed.   
+We choose phosphorus atoms whose ($x$, $y$) lateral position lies within 
+9 \AA of any one of the Tat's lateral position. Then, $z$ position
 of the chosen phosphorus atoms are placed in a 
 list. Then, $\zphos$ are calculated from the list. 
 The number of selected phosphorus atoms in each monolayer was also 
 recorded. This value gives local lateral depletion if the Tat cylinders 
-are assumed not to overlap. After averaging over many snapshots, 
-there will hopefully be decent statistics 
-for local thinning and local difference between Tat and phosphorus Z positions, 
-and maybe local lateral depletion if overlaps are taken into account.  
+are assumed not to overlap. We averaged over many snapshots to gain 
+better statistics. 
 
-\subsubsection{Linear Model}
-As described in the previous section, a Tat is modeled as a cylinder with 
+\subsection{Lateral Decay Length of Membrane Thinning}
+This section describes a method to measure the lateral decay length
+of membrane thinning due to Tat-lipid interactions. 
+As in the previous section, Tat is modeled here as a cylinder with 
 its radius equal to $R_1$, height $\hTat$,
 and volume $\VTat$ such that $R_1=\sqrt{\VTat/(\pi \hTat)}$. 
 Let $h(r)$ represent the phosphorus height profile
 of a leaflet. The two leaflets are assumed to be decoupled.
-In the linear model, lipids are seprated into three regions: 
-suppressed, boundary, and unperturbed (see Fig. for the definitions
-of various quantities). 
+In our model, lipids are separated into three regions: 
+suppressed, boundary, and unperturbed region . 
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -601,12 +687,15 @@ of various quantities).
   \label{fig:linear_model}
 \end{figure}
 %------------------------------------------------------------------------------
-In the suppressed region,
-lipids are uniformly compressed by Tat toward the center of the bilayer; 
-$h(r)$ is a constant, $\zphos$. In the boundary region, $h(r)$ is assumed to 
-linearly increase with the distance $r$ from the center of the Tat. In
-the unperturbed region, lipids do not interact with Tat, behaving
-identially to DOPC, so the phosphorus position is the same as that of 
+The suppressed region extends from $r=0$ to $R_1$ and is directly beneath 
+(above) Tat in the top (bottom) leaflet. In this region, lipids are uniformly 
+compressed by Tat toward the 
+center of the bilayer, so that $h(r)$ is a constant equal to $\zphos$. 
+From $r=R_1$ to $R_2$ is the boundary region, where $h(r)$ is assumed to 
+linearly increase with the lateral distance $r$. The lateral decay length
+of membrane thinning is given by $R_2-R_1$. 
+In the unperturbed region ($r>R_3$), lipids do not interact with 
+Tat, behaving identically to DOPC, so the phosphorus position is the same as that of 
 DOPC. A continuous $h(r)$ that 
 satisfies the above criteria is
 \begin{equation}
@@ -618,12 +707,16 @@ satisfies the above criteria is
   \end{array}\right.  
 \end{equation}     
 with $m=(\zphos-\zphos^0)/(R_1-R_2)$ and $b=(\zphos^0R_1-\zphos R_2)/(R_1-R_2)$. 
-Assuming that the simulation box is a cylinder, we have 
-$R_3=\sqrt{N\AL/\pi}$. $\zphos$ can be measured directly from simulation trajectories.
-$\zphos^0$ is a half of the average phosphorus-phosphorus distance in a DOPC simulation,
-which can be easily obtained from the SIMtoEXP program. The average height profile over
-the monolayer, $\langle h(r) \rangle$, can be also obtained from the program in the same manner. 
-The only unknown is $R_2$, which is the relaxation length of DOPC-Tat interaction.
+Assuming that the simulation box is a cylinder gives 
+$R_3=\sqrt{N\AL/\pi}$. 
+$\zphos$ can be measured directly from simulation trajectories.
+$\zphos^0$ is a half of the average phosphorus-phosphorus distance 
+in a DOPC simulation,
+which can be easily obtained from the SIMtoEXP program. 
+The average height profile over
+the monolayer, $\langle h(r) \rangle$, can be also obtained from the program 
+in the same manner. 
+The only unknown is $R_2$.
 
 Let us calculate $\langle h(r) \rangle$. In the cylindrical coodinates, 
 \begin{equation}
@@ -656,11 +749,6 @@ with
 \begin{equation}
   C = \frac{3R_3^2\left(\zphos^0-\langle h(r)\rangle\right)}{\zphos^0-\zphos} - R_1^2
 \end{equation}
-The model quantities calculated from the MD simulations are shown in Table.
-
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -705,6 +793,39 @@ $q_z$, indicating a thinning of the membranes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Volume results}
+(Should probably include this info in appendix)
+First, the mass of Tat and water were measured to be 
+3.7 and 1212.6 mg via a digital balance. The density of water and 
+Tat-water solution were measured to be 0.993325 and 0.99418 $\mathrm{g/cm^3}$,
+respectively. The measured values of these quantities
+are shown in Table \ref{tb:values}.
+%------------------------------------------------------------------------------
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{c c c}
+    Molecule & Molecular Weight & Volume \\
+    Tat (YGRKKRRQRRR) & 1560 & 1876 \\ 
+    Tat + TFA & 2464 & 2964
+  \end{tabular}
+  \caption{Important Quantities for Tat Peptide}
+  \label{tb:Tat}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{c c}
+    $\rho_{sol}$ & 0.994180 $\mathrm{g/cm^3}$\\
+    $\rho_w$ & 0.993325 $\mathrm{g/cm^3}$\\
+    $m_w$ & 1212.6 mg \\
+    $m_T$ & 3.73 mg \\ 
+  \end{tabular}
+  \caption{Measured Quantities in }
+  \label{tb:values}
+\end{table}
+%------------------------------------------------------------------------------
+This value is in a good agreement with the 
+value calculated from a peptide calculator website \cite{}. 
+
 Experimental and simulated volumes are given in Table 2. The simulated volume was
 obtained using the volume app in the SIMtoEXP program. The experimental Tat volume was
 calculated from the measured density assuming that the lipid volume was the same as with no
@@ -878,8 +999,8 @@ in Materials and Methods. We then compared the simulated form factor $F(q_z)$
 with the
 experiment. The best match for DOPC/Tat (128:4) was found when the Tats were 
 constrained at 18 \AA away from the bilayer center (Fig. 4.A,B). The other 
-best fit results were: DOPC $A_L$ = 70 $\AA^2$ and DOPC/Tat(128:2) $A_L$ = 72 
-$\AA^2$, $Z_{Tat} = 18 \AA$. It clearly indicates that with increasing Tat
+best fit results were: DOPC $A_L$ = 70 \AA$^2$ and DOPC/Tat(128:2) $A_L$ = 72 
+\AA$^2$, $Z_{Tat} = 18$ \AA. It clearly indicates that with increasing Tat
 concentration, $A_L$ increases. The agreement worsened as Tat was constrained 
 to be closer to the
 center of the bilayer. When Tats were constrained at 5 \AA away from the bilayer 
@@ -900,9 +1021,9 @@ water is blue.
 
 \subsection{Summary of Results}
 We summarize our results for how Tat affects the lipid bilayer in Fig. 9. 
-The height of Tat, $H_{Tat} = 8.7 \AA$, was the full width at half maximum of 
+The height of Tat, $H_{Tat} = 8.7$ \AA, was the full width at half maximum of 
 the Tat electron density profiles
-obtained from simulations and the cylindrical radius, $R_{Tat} = 8.3 \AA$, was 
+obtained from simulations and the cylindrical radius, $R_{Tat} = 8.3$ \AA, was 
 calculated to give the
 measured volume. The $Z$ distances from the center of the bilayer were derived 
 from weighted
@@ -910,14 +1031,14 @@ averages of four MD simulations of Tat:DOPC 2:128. The $\chi^2$ obtained by
 comparison to
 experiment indicated that the best $Z_{Tat}$ lay between the simulated values 
 of 16 \AA and 18 \AA and
-the best area/lipid $A_L$ lay between the simulated values of 72 $\AA^2$ and 
-74 $\AA^2$, 
+the best area/lipid $A_L$ lay between the simulated values of 72 \AA$^2$ and 
+74 \AA$^2$, 
 so averages were
 obtained from these four combinations of $Z_{Tat}$ and $A_L$, weighted inversely 
 with their $\chi^2$. The
 average positions, Z'Phos, of phosphates situated underneath the Tats were calculated by
 averaging over the phosphates whose in-plane distance, R, from the center of Tat is smaller than
-RTat. The simulation cell extended to 38Å, far enough to ensure that ZPhos for most of the lipids is
+RTat. The simulation cell extended to 38 \AA, far enough to ensure that ZPhos for most of the lipids is
 the same as for DOPC. Assuming a simple linear ramp in ZPhos, Fig. 9 then indicates a ring of
 boundary lipids that extends twice are far in R as Tat itself. Although the guanidinium electron
 density profile was broad (Fig. S8), indicating that some were pointing away from the bilayer
