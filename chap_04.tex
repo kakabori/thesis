@@ -286,14 +286,14 @@ the sample was continuously rotated. As a result of this rotation,
 main peaks become arcs that subtend an angle $2\theta_{h0}$,
 as shown in Fig.~\ref{fig:ewald_main}, with its length
 equal to $2\theta_{h0}\qz{h0}$.  
-%----------------------------------------------
+%------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=1]{figures/ripple/ewald_main}
   \caption{caption goes here}
   \label{fig:ewald_main}
 \end{figure}
-%----------------------------------------------
+%------------------------------------------------------------------------------
 The detector records the cross sections of these arcs with the 
 Ewald sphere, so the total scattering power is the product of the observed intensity,
 $\Io{hk}$ with the arc length, that is, 
@@ -316,6 +316,25 @@ Inverting Eq.~(\ref{eq:main_ewald}) and (\ref{eq:side_ewald})
 and realizing that the intensity is the form factor
 squared, we can calculate the observed intensity, $\Io{}$, 
 from a model for an electron density in the ripple phase.
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=1]{figures/ripple/ewald_side_h1_ver1}
+  \includegraphics[scale=1]{figures/ripple/ewald_side_h2_ver1}
+  \caption{$q$-space representations of Bragg peaks and Bragg rings 
+  for $h=1$ and $k$ = 0, 1, and 2 in $\qz{hk}$ planes.
+  The shaded rectangles show cross sections of the rotating Ewald sphere along
+  $\qz{hk}$ plane. The intersection between the Ewald sphere and 
+  a Bragg peak/ring is indicated in red. 
+  The observed intensity for the $k\neq 0$ orders is proportional to
+  the fraction of the length of red arcs in the circumference. This 
+  fraction is equal to one for a $k=0$ order.
+  Because the orders are not in the same $q_z$ plane, the range of $q_y$ 
+  integration indicated by the height of the rectangle is different for different
+  orders. The magnitude of curvature of arcs is exaggerated.}
+  \label{fig:ewald_side_h1}
+\end{figure}
+%------------------------------------------------------------------------------
 
 Mathematically, the rotation is  
 equivalent to an integration over $\omega$. In low angle X-ray scattering, 
