@@ -76,23 +76,3 @@ was set to 18 \textcelsius.
 \section{CCD detector}
 Data reduction and correction for charged coupled device (CCD) detector
 are discribed in detail in \cite{ref:Burner}.
-
-\section{MD simulation}
-Systems with different DOPC/Tat mole ratios (128:0, 128:2 and 128:4, corresponding to
-0, 0.015 and 0.030 mole fractions) were simulated atomistically using the Gromacs 4.6.1
-package [49]. DOPC was modeled by the Slipid force field [50, 51] and HIV Tat was modeled
-by Amber 99SB [52]. Tip3p water was used [53]. The number of Tats was divided equally on
-each side of the bilayer to mimic experimental conditions. All systems were simulated at 310 K
-with a constant area in the x-y plane for and 1 atm constant pressure in the Z direction. Each
-system was simulated for 100 ns and the last 50 ns was used as the production run.
-At each DOPC/Tat mole ratio, we studied systems with three different area/lipid (AL).
-For the DOPC system, we fixed AL = 68, 70, 72 Å2; DOPC/Tat (128:2), we fixed the AL = 72,
-74, 76 Å2; DOPC/Tat (128:4), we fixed the AL =72, 74, 76 Å. For each DOPC/Tat system at
-fixed AL, we then conducted seven independent simulations with the center of mass (COM) of
-each Tat constrained at different bilayer depths from the bilayer center (18, 16, 14, 12, 10, 8 and
-5 Å). In total, 45 independent simulations were conducted. The goal of constrained simulations
-is to find the best match between experimental and MD simulation form factors. Comparison to
-the X-ray form factors was performed using the SIMtoEXP software [54]. Additional details
-concerning the MD simulations are in Supplementary Data 6.
-
-
