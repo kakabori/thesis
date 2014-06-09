@@ -3,16 +3,16 @@ As discussed in chapter 2, the two main techniques employed in this thesis
 were molecular dynamics (MD) simulation and low angle X-ray scattering (LAXS).
 First, we discuss the results and analysis of diffuse X-ray scattering. The
 general protocol was the following; LAXS data were fitted to a model X-ray
-scattering pattern from a stack of flucutating membranes via NFIT program,
+scattering pattern from a stack of fluctuating membranes via NFIT program,
 the analysis of which yielded the bending modulus, $K_C$, and the bulk
-modulus, $B$. Dividing the experimenal data by the model, then, gave the 
+modulus, $B$. Dividing the experimental data by the model, then, gave the 
 absolute X-ray form factor, $|F(q_z)$, which is the Fourier transform
 of bilayer electron density profile along the bilayer normal direction, $z$. 
 We fitted $|F(q_z)|$ to a model density profile using the scattering density
 profile (SDP) program. The SDP program allows us to model a bilayer density
-according to volumentric spacing constraint. The advantage of this program is
+according to volumetric spacing constraint. The advantage of this program is
 that we can see fine details of bilayer structure such as an individual
-head group, terminal methly, and so on. The model requires many parameters
+head group, terminal methyl, and so on. The model requires many parameters
 that are not so well determined. We then constrain many parameters from
 the past experimental data and MD simulations. This is discussed in 
 section ?.
@@ -20,7 +20,7 @@ section ?.
 The second main method is MD simulation. From simulation trajectory, we 
 calculated the so called simulated X-ray form factor using the SIMtoEXP
 program (ref). The best matching simulation result was chosen as the best
-prediciton of the bilayer structure. We, then, calculated many structural
+prediction of the bilayer structure. We, then, calculated many structural
 details from the trajectory that were not accessible experimentally.   
 
 Section X discusses the implication of the results obtained in the proceeding 
@@ -29,7 +29,7 @@ it supports Tat's ability to interact with neutral membranes. This finding
 is compared with recent studies on a single arginine molecule.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}
+\section{Introduction}\label{sec:Tat_intro}
 The name cell-penetrating peptide (CPP) connotes a peptide that 
 easily penetrates cell membranes (for Reviews see [1-3]). 
 
@@ -223,7 +223,7 @@ $181.2+75.1+146.1+2 \times 146.2+6\times 174.2-10\times 18=1560$.
   \label{tb:aa}
 \end{table}
 %------------------------------------------------------------------------------
-The Tat peptides were synthetized in trifluoroacetic acid, which has 
+The Tat peptides were synthesized in trifluoroacetic acid, which has 
 the chemical formula $\mathrm{CF_3CO_2H}$, and made into a powder form by the 
 freeze-dry method. Therefore, each positively charged amino acid such as 
 an arginine and lysine was counter-balanced by a trifluoroacetate (TFA)
@@ -305,13 +305,12 @@ Modeling of the bilayer structure was done similarly to the SDP model
 
 Parsing of DOPC into lipid components is shown in
 Fig~\ref{fig:dopc_schematic}. The phosphate/choline (PC) and 
-carbonyl/glycerol (CG) groups together make up the lipid headgroup
+carbonyl/glycerol (CG) components together make up the lipid headgroup
 whereas the hydrocarbon chain region
-is divided into two components, the methylene and methine groups 
+is divided into two components, the methylene (CH$_2$) and methine (CH) group
 combination ($\CH{2}$+CH) and terminal methyl group ($\CH{3}$). 
-We combine methylene ($\CH{2}$) and methine groups (CH) in order to avoid 
-proliferation of 
-fitting parameters.
+We combine methylene (CH$_2$) and methine groups (CH) in order to avoid 
+proliferation of fitting parameters.
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -329,16 +328,17 @@ fitting parameters.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Functional forms}
 Our model for electron density profile (EDP)
-of Tat/lipid bilayer system consists of six structrual subgroups 
+of Tat/lipid bilayer system consists of five structural subgroups: PC, CG,
+CH$_2$+CH, CH$_3$, and Tat. 
 (Fig.~\ref{fig:DOPC_EDP1}).
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_EDP1}
-  \caption{A model electron density profile for DOPC.}
+  \includegraphics[width=\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP}
+  \caption{A model electron density profile for DOPC with Tat.}
   \label{fig:DOPC_EDP}
 \end{figure}
-The volume probability distributions of components PC, CG, terminal
-methyl groups ($\CH{3}$), and Tat are described by Gaussian functions,
+The volume probability distributions of components PC, CG, CH$_3$, and Tat 
+are described by Gaussian functions,
 \begin{equation}
   P_i(z)=\frac{c_i}{\sqrt{2\pi}}\pars{
     \exp\braces{-\frac{(z+z_i)^2}{2\sigma_i^2}}
@@ -346,8 +346,7 @@ methyl groups ($\CH{3}$), and Tat are described by Gaussian functions,
   },
 \end{equation}
 where $c_i$ is an integrated area underneath the curve and the two parts of the 
-expression describe the two bilayer leaflets. The calculation of $c_i$ is 
-explained below.
+expression describe the two bilayer leaflets. 
 
 The hydrocarbon chain region (HC) is represented by error functions,
 \begin{equation}
@@ -360,7 +359,7 @@ where
   \mathrm{erf}(z,z_i,\sigma_i)=\frac{2}{\sqrt{\pi}}
     \int_0^{\frac{z-z_i}{\sqrt{2\sigma}}} \dx e^{-x^2}.
 \end{equation}
-The volume probability distribution for the methylene and methine groups 
+The volume probability distribution for the methylene and methine group
 combination can then be expressed as
 \begin{equation}
   \PCHtwoCH(z) = \PHC(z)-\PCHthree(z).
@@ -374,8 +373,8 @@ chain region, we also consider an alternative definition,
 \begin{equation}
   \PCHtwoCH(z) = \PHC(z)-\PCHthree(z) - \PTat(z),
 \end{equation}
-where the volume probability of CH$_2$+CH combined group is reduced by 
-the Tat volume probability distribution. We call this model model B.
+where the volume probability of CH$_2$+CH combined component is reduced by 
+the Tat volume probability distribution. We call this model B.
 The spatial conservation requires the water volume probability distribution 
 to be
 \begin{equation}
@@ -385,7 +384,7 @@ for model A and
 \begin{equation}
   \PW(z) = 1-\PPC(z)-\PCG(z)-\PHC(z)
 \end{equation}
-for model B.
+for model B. 
 
 Because X-rays measure the contrast between the bilayer and surrounding solvents, 
 water, the experimental form factor is compared to the water subtracted model
@@ -405,23 +404,16 @@ fixed to $\zCHthree=0$ by symmetry arguments. The total lipid volume
 $\VL$ is fixed to the experimentally measured value. 
 The headgroup volume $\VHL$ was determined to be 331 \AA$^3$ for 
 gel phase phosphatidylcholine bilayers \cite{ref:Tristram-Nagle02},
-and we assume the same volume for the fluid phase bilayers.
-
-We define the ratios of component volumes that control volume allocation:
-in the headgroup region,
+and we assume the same volume for the fluid phase phosphatidylcholine bilayers.
+The volumes of PC and CG components satisfy
 \begin{equation}
-  \RPC=\frac{\VPC}{\VHL}, \quad \RCG=\frac{\VCG}{\VHL}, \quad \RTat=\frac{\VTat}{\VHL},
+  \VPC + \VCG = \VHL,
 \end{equation}
-and in the hydrocarbon chain region, 
+and the volumes of CH$_3$ and CH$_2$+CH components satisfy
 \begin{equation}
-  r=\frac{\VCHthree}{\VCHtwoCH}, \quad r_{12}=\frac{\VTat}{2\VCHtwoCH}.
+  2\left(16\VCHtwoCH + \VCHthree\right) = \VL-\VHL.
 \end{equation}
-These volumetric parameters satisfy the following equality,
-\begin{align}
-  1 = \RPC + \RCG + \RTat \quad\text{and}\quad \VL - \VHL = 2\left(16\VCHtwoCH + r\VCHtwoCH\right).
-\end{align}
-
-The component volumes constraint the height of the Gaussians as
+These component volumes constrain the height of the Gaussians as
 \begin{align}
   \cPC &= \frac{\VPC}{\AL\sigmaPC} \\
   \cCG &= \frac{\VCG}{\AL\sigmaCG} \\
@@ -430,29 +422,49 @@ The component volumes constraint the height of the Gaussians as
 \end{align}
 where $\AL$ is area per lipid.
 
-The ratio $\RCG$ of 
+The ratio of 
 the carbonyl/glycerol volume to the headgroup volume $\VHL$ was
-suggested to be 0.41 \cite{ref:Braun13}, so we constrain the CG
-volume to 135.7 \AA$^3$ and the phosphate/choline volume to 
+reported to be 0.41 \cite{ref:Braun13}, so we constrain the CG
+component volume to 135.7 \AA$^3$ and the PC component volume to 
 195.3 \AA$^3$. 
 
-At 30 \textcelsius, the volume of DOPC is 1303 \AA$^3$ and the headgroup
-volume 331 \AA$^3$, so the volume of hydrocarbon chain region is 
-$1303 - 331 = 972$ \AA$^3$ \cite{ref:Braun13}. The ratio $r$ of the volumes
+The most detailed structural study on DOPC to date was published 
+by Braun \textit{et al.} \cite{ref:Braun13}, 
+and many of constraints on our model parameters can be derived
+from their study. However, in that work, the authors used the 
+SDP model \cite{ref:Kucerka08}, which is specifically tailored for
+combined analysis of neutron and X-ray form factors. 
+Therefore, we need to convert their structural results to the 
+corresponding parameters in our simpler model. For example, 
+from the reported values of the ratio of the volumes of the chain terminal
+methyl (CH$_3$) to the chain methylenes (CH$_2$) and the ratio of 
+the volumes of the chain methines (CH) to the chain methylenes, we can
+calculate the ratio $\rCHthree$ of the volumes of CH$_3$ to the CH$_2$ and
+CH combined component.  
+Furthermore, the study by Braun \textit{et al.} was at 30 \textcelsius\
+while our study was at 37 \textcelsius, so our
+measured volume of DOPC was slightly higher.
+
+At 30 \textcelsius, the volume of DOPC was reported to be 1303 \AA$^3$, 
+so the volume of hydrocarbon chain region at the same temperature is 
+$1303 - 331 = 972$ \AA$^3$. The ratio $r$ of the volumes
 of the chain terminal methyl (CH$_3$) to the chain methylenes (CH$_2$) was 
-suggested to be 1.95, and the ratio $r_{12}$ of the volumes of the chain
-methines (CH) to the chain methylenes 0.91. Because there are 14 CH$_2$ groups,
+reported to be 1.95, and the ratio $r_{12}$ of the volumes of the chain
+methines (CH) to the chain methylenes 0.91 at 30 \textcelsius. 
+Because there are 14 CH$_2$ groups,
 2 CH groups, and 1 CH$_3$ group in each DOPC hydrocarbon chain, we have
 $2\times(14\VCHtwo+2\VCH+\VCHthree)=972$ \AA$^3$. 
 Using $\VCHthree/\VCHtwo=1.95$ 
 and $\VCH/\VCHtwo=0.91$, we get $\VCHtwo=27.3$ \AA$^3$, 
-$\VCH=24.9$ \AA$^3$, and $\VCHthree=53.3$ \AA$^3$. These calculated volumes
-lead to $\VCHthree/\VCHtwoCH=1.97$. 
+$\VCH=24.9$ \AA$^3$, and $\VCHthree=53.3$ \AA$^3$. 
+These calculated volumes lead to $\VCHthree/\VCHtwoCH=1.97$  for 30 \textcelsius. 
+
 At 37 \textcelsius, the volume of DOPC was measured to be 1313.5 \AA$^3$, so
 we have $2\times(16\VCHtwoCH+\VCHthree)=1313.5-331$. Assuming that the ratio 
 $\VCHthree/\VCHtwoCH$ at 37 \textcelsius\ is the same as that at 30 \textcelsius\ 
 gives $\VCHtwoCH=27.3$ \AA$^3$ and $\VCHthree=53.9$ \AA$^3$. We constrain
-these volumes to the calculated values in our model.
+the components for the hydrocarbon chain region in our model 
+to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
@@ -577,6 +589,7 @@ these volumes to the calculated values in our model.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Molecular Dynamics Simulation}
+This section describes the MD simulations performed by Dr. Kun Huang.
 Systems with different DOPC/Tat mole ratios (128:0, 128:2 and 128:4, corresponding to
 0, 0.015 and 0.030 mole fractions) were simulated atomistically using the Gromacs 4.6.1
 package \cite{ref:Hess08}. 
@@ -623,7 +636,8 @@ laterally and rotate, changing its configuration during simulations.
 \newpage
 \section{Analysis of Molecular Dynamics Simulation Data}
 \subsection{SIMtoEXP program}
-This section briefly describes the SIMtoEXP program \cite{ref:Kucerka10}.
+This section briefly describes the SIMtoEXP program
+developed by Dr. Norbert Kucerka \cite{ref:Kucerka10}. 
 
 \subsection{Local Thinning of Membranes}
 The SIMtoEXP program only gives the average quantities for each leaflet. 
@@ -880,30 +894,36 @@ led to large magnitude of the form factor at larger $q_z$. Because data
 points at larger $q_z$ were not available, this narrow feature did not get penalized. 
 In wide angle X-ray scattering, which probes much larger $q_z$ than LAXS does,
 we did not see much diffuse scattering for $q_z > 1.0$ \AA$^{-1}$ (data not shown).
-Also, from stereochemical point of view, a peptide width cannot be too small either.
+Also, from a stereochemical point of view, a peptide width cannot be too small either.
 These arguments allowed us to disregard the best fits with a too small value
 of $\sigmaTat$.
 
 Figure~\ref{fig:DOPC_Tat_XFF1} shows the results for DOPC with Tat. 
+As shown, the fits were generally very good.  
+Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
+It is clear that the area per lipid $\AL$ increased as the Tat concentration was
+increased. An increase in $\AL$ implies thinning of the bilayer which is an 
+incompressible membrane. The results for DOPC:DOPE (3:1) are shown in 
+Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1} and 
+Table~\ref{tb:DOPCDOPE3to1_fit_results}, and the results for DOPC:DOPE (1:1) 
+in Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1} and 
+Table~\ref{tb:DOPCDOPE1to1_fit_results}.
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_XFF1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC form factors with $\xTat$ = 0, 1/63, 1/29, 
-  and 1/17 (from top to bottom). DOPC electron density profiles for $\xTat$ = 0, 1/63,
-  1/29, and 1/17.}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_XFF1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_EDP1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
+  \caption{The best fits to DOPC form factors (left) and the corresponding 
+  electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
+  and 0.059 (from top to bottom).}
   \label{fig:DOPC_Tat_XFF1}
 \end{figure}
-%------------------------------------------------------------------------------
-As shown, the fits were generally very good.  
-Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
@@ -932,8 +952,8 @@ Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
     \hline
     $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
     $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-    $r$ & \multicolumn{10}{c|}{1.97} \\
-    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
+    $\rTat$ & \multicolumn{10}{c|}{0} \\
     \hline
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
@@ -943,29 +963,7 @@ Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
   \label{tb:DOPC_fit_results}
 \end{table}
 %------------------------------------------------------------------------------
-It is clear that the area per lipid $\AL$ increased as the Tat concentration was
-increased. An increase in $\AL$ implies thinning of the bilayer which is an 
-incompressible membrane.
-Figure~\ref{fig:DOPC_Tat_X2} shows $\chi^2$ as a function of fixed Tat position, 
-$\zTat$. Generally, two minima were found. For DOPC bilayers, $\zTat$ in the 
-headgroup region yielded the best fit.
-%------------------------------------------------------------------------------
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2} 
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2} 
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:Tat (62:1), (28:1), 
-  and (16:1). (Need both methine and choline models)}
-  \label{fig:DOPC_Tat_X2}
-\end{figure}
-%------------------------------------------------------------------------------
-The results for DOPC:DOPE (3:1) are shown in Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1}, 
-Table~\ref{tb:DOPCDOPE3to1_fit_results}, and Fig.~\ref{fig:DOPCDOPE3to1_Tat_X2}.
-Likewise, the results for DOPC:DOPE (1:1) are shown in 
-Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1}, Table~\ref{tb:DOPCDOPE1to1_fit_results},
-and Fig.~\ref{fig:DOPCDOPE1to1_Tat_X2}.
- 
+
 As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
 as the distance $\DPP$ between the PC components in the opposing leaflets
 or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
@@ -981,8 +979,7 @@ and what assumptions and constraints go into the specific model.
 A disadvantage of using $\DHH$ as a measure of the membrane thickness is
 that $\DHH$ is influenced by the electron density of Tat because 
 the total electron density profile has a contribution from the electron density of Tat. 
-Especially 
-when the mole fraction of Tat in a system becomes large, 
+Especially when the mole fraction of Tat in a system becomes large, 
 the Tat electron density contributes significantly to the total electron 
 density profile. If the Tat resided slightly 
 outside of the PC component, the apparent membrane thickness measured by $\DHH$
@@ -994,18 +991,17 @@ since they can be easily calculated from the model.
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC:DOPE (3:1) form factors with 
-  $\xTat$ = 0, 1/63, 1/29, and 1/17 (from top to bottorm). 
-  DOPC:DOPE (3:1) electron density profiles for $\xTat$ = 0, 1/63,
-  1/29, and 1/17.}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1}
+  \caption{The best fits to DOPC:DOPE (3:1) form factors (left) and the corresponding 
+  electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
+  and 0.059 (from top to bottom).}
   \label{fig:DOPCDOPE3to1_Tat_XFF1}
 \end{figure}
 %------------------------------------------------------------------------------
@@ -1020,7 +1016,7 @@ since they can be easily calculated from the model.
     $\zPC$ & 18.3 & 18.5 & 18.5 & 18.4 & 18.5 & 18.4 & 18.3 & 18.2 & 18.2 & 18.1 \\
     $\sigmaPC$ & 2.66 & 2.23 & 2.26 & 2.27 & 2.25 & 2.31 & 2.34 & 2.31 & 2.19 & 2.11 \\
     $\zCG$ & 15.2 & 15.4 & 15.4 & 15.3 & 15.4 & 15.3 & 15.2 & 15.1 & 15.1 & 15.0 \\
-    $\sigmaCG$ 2.92 & 2.63 & 2.65 & 2.69 & 2.52 & 2.58 & 2.63 & 2.40 & 2.20 & 2.01 \\
+    $\sigmaCG$ & 2.92 & 2.63 & 2.65 & 2.69 & 2.52 & 2.58 & 2.63 & 2.40 & 2.20 & 2.01 \\
     $\zHC$ & 13.9 & 14.1 & 14.1 & 14.0 & 14.1 & 14.0 & 13.9 & 13.8 & 13.8 & 13.7 \\
     $\sigmaHC$ & 2.73 & 2.70 & 2.83 & 2.91 & 2.86 & 2.79 & 2.84 & 2.25 & 2.38 & 2.60 \\
     $\sigmaCHthree$ & 3.24 & 2.94 & 2.97 & 2.98 & 2.87 & 2.90 & 2.91 & 2.63 & 2.61 & 2.65 \\
@@ -1035,8 +1031,8 @@ since they can be easily calculated from the model.
     \hline
     $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
     $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-    $r$ & \multicolumn{10}{c|}{1.97} \\
-    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
+    $\rTat$ & \multicolumn{10}{c|}{0} \\
     \hline
     $\AL$ & 70.9 & 69.8 & 69.9 & 70.1 & 69.5 & 70.0 & 70.6 & 71.3 & 71.4 & 71.7 \\
     \hline
@@ -1046,33 +1042,22 @@ since they can be easily calculated from the model.
   \label{tb:DOPCDOPE3to1_fit_results}
 \end{table}
 %------------------------------------------------------------------------------
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:DOPE (3:1) with 
-  $x_\textrm{Tat}$ = 1/63, 1/29, and 1/17, where $x_\textrm{Tat}=Tat/(Tat+Lipid)$.
-  (Need both methine and choline models)}
-  \label{fig:DOPCDOPE3to1_Tat_X2}
-\end{figure}
-%------------------------------------------------------------------------------
+
 
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.4\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.4\textwidth]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC:DOPE (1:1) form factors with 
-  $\xTat$ = 0, 1/63, 1/29, and 1/17.
-  DOPC:DOPE (1:1) electron density profiles for $\xTat$ = 0, 1/63,
-  1/29, and 1/17. (Error bars look wrong. Need to check.)}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1}
+  \caption{The best fits to DOPC:DOPE (1:1) form factors (left) and the corresponding 
+  electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
+  and 0.059 (from top to bottom).}
   \label{fig:DOPCDOPE1to1_Tat_XFF1}
 \end{figure}
 %------------------------------------------------------------------------------
@@ -1103,8 +1088,8 @@ since they can be easily calculated from the model.
     \hline
     $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
     $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-    $r$ & \multicolumn{10}{c|}{1.97} \\
-    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
+    $\rTat$ & \multicolumn{10}{c|}{0} \\
     \hline
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
@@ -1114,30 +1099,60 @@ since they can be easily calculated from the model.
   \label{tb:DOPCDOPE1to1_fit_results}
 \end{table}
 %------------------------------------------------------------------------------
+
+We also investigated how the goodness of fits varied as the placement of 
+the Tat Gaussian was varied. Figure~\ref{fig:DOPC_Tat_X2} plots $\chi^2$ as a 
+function of fixed Tat position, $\zTat$. We found that model A and B resulted 
+in similar electron density profiles, yielding similar $\chi^2$ values 
+when Tat was placed near the hydrocarbon-water interface region. In model B, 
+the error function representing the hydrocarbon chain region became wider as the 
+Tat component was placed deeper into the headgroup region. The subtraction
+of the Tat component from the hydrocarbon chain error function resulted in 
+a smooth error function-like profile with a smaller value of $\sigma$ such that
+the total profile calculated from model B was very similar to that calculated 
+from model A.
+%------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:DOPE (1:1) with 
-  $x_\textrm{Tat}$ = 1/63, 1/29, and 1/17, where $x_\textrm{Tat}=Tat/(Tat+Lipid)$.
-  (Need both methine and choline models)}
-  \label{fig:DOPCDOPE1to1_Tat_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2} 
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2} 
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2}
+  \caption{$\chi^2$ as a function of $\zTat$ for DOPC, DOPC:DOPE (3:1), and 
+  DOPC:DOPE (1:1) (from left to right) 
+  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom).}
+  \label{fig:DOPC_Tat_X2}
 \end{figure}
 %------------------------------------------------------------------------------
 
-While the total electron density profile is well determined by 
-these modeling procedures, the values of the parameters for the components are not as well 
-determined as the agreement of the fit to the data may suggest. 
-Indeed, we found local
-minima in the fitting landscape, including one with Tat closer to the center 
-of the bilayer as
-shown in Fig. \ref{fig:DOPCDOPE3to1_Tat_X2} and \ref{fig:DOPCDOPE1to1_Tat_X2}. 
-While these modeling results suggested
-that Tat could be in the tail region, this position seemed energetically 
-unfavorable as Tat is a hydrophilic molecule. With a help of MD simulations,
+In generaly, while the total electron density profile is well determined by 
+our modeling procedures, the values of the parameters for the components are 
+not as well determined as the agreement of the fit to the data may suggest. 
+in many cases, we found multiple local minima in the fitting landscape, 
+including one with Tat closer to the center of the bilayer as
+shown in Fig.~\ref{fig:DOPC_Tat_X2}. $\chi^2$ calculated at these local minima 
+tended to be smaller for larger concentration of Tat. We also found
+that $\chi^2$ with $\zTat$ in the hydrocarbon chain region and headgroup
+region was almost equal for the smallest value of $\xTat$ for DOPC:DOPE (1:1)
+bilayer.
+While Fig.~\ref{fig:DOPC_Tat_X2} shows trends for the $\chi^2$ minima with Tat 
+in the hydrocarbon chain region, this position seemed energetically 
+unfavorable as Tat is a hydrophilic molecule. Also, if Tat favored to be 
+inserted deep in a membrane, it would be difficult for Tat to
+leave the membrane. This difficulty seems inefficient in terms of the HIV virus
+infection because Tat passing through the nuclear membrane and binding
+to the viral integrated DNA is crucial for proliferation of HIV infected cells as
+discussed in section~\ref{sec:Tat_intro}. 
+These considerations suggested that the local minima in the chain region
+was artifact of our models.
+With a help of MD simulations performed by Dr. Kun Huang,
 we were able to discard the interior position as an artifact of our 
-modeling. The simulation results are discussed later.
+modeling. The simulation results are discussed in section~\ref{sec:sim_results}.
 
 Electron density profiles for DOPC/DOPS (3:1) and the nuclear membrane 
 mimic were not
@@ -1146,11 +1161,11 @@ of these negatively
 charged membranes as described in section \ref{sec:Kc_results}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Hard Wall Constrain Fits}
+\subsection{Hard Wall Constraint Fits}
 As seen from Table~\ref{tb:DOPC_fit_results}, \ref{tb:DOPCDOPE3to1_fit_results},
 and \ref{tb:DOPCDOPE1to1_fit_results}, the widths of the headgroup components
 became smaller as Tat concentration increased in all membranes. These 
-decreases seem somewhat unreasonable; if Tat causes a bilayer 
+decreases seemed somewhat unreasonable; if Tat causes a bilayer 
 to locally become thinner near where it is bound, 
 we would expect that the headgroup components to become
 wider. Therefore, we also fitted the model with hard wall constrains
@@ -1207,7 +1222,7 @@ conservation of lipid volume. Interestingly, the bilayer thickness did not
 increase for DOPC/DOPE (3:1) bilayers with x less than 0.03.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Molecular Dynamics Simulations}
+\subsection{Molecular Dynamics Simulations}\label{sec:sim_results}
 Due to the slow relaxation in lipid bilayers and limited accuracy of the force 
 field, a good
 agreement between experimental and MD simulation calculated form factors may 
