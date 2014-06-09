@@ -861,9 +861,30 @@ concentrations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Electron Density Profile Modeling}\label{sec:SDP_results}
 Using the model described in section \ref{sec:SDP_method}, 
-we fitted our measured X-ray form factors. 
-The positions of component groups were free parameters. 
-Figure~\ref{fig:DOPC_Tat_XFF1} show the results for DOPC with Tat. 
+we fitted our measured X-ray form factors. In all fits,
+the positions of component groups were free parameters, but we 
+assumed that the lipid headgroup is somewhat rigid so that it cannot compress
+or expand. This assumption led to fixing the distance
+$\zPC-\zCG$ between the PC and CG components as well
+as the distance $\zCG-\zHC$ between the CG component and the Gibbs dividing
+surface for the hydrocarbon chains. 
+We also constrained the width of Tat 
+Gaussian. We fitted with three different values of widths,
+2.5, 3.0, and 3.5, to study the range of variation due to the Tat width. 
+The choice was made based on MD simulation results. (Check this again)
+We constrained the Tat width 
+because we found that this parameter tended to become very small
+when it was free. This tendency to a unphysically small value was due to 
+lack of higher $q_z$ data points. A very narrow feature in an electron density profile
+led to large magnitude of the form factor at larger $q_z$. Because data 
+points at larger $q_z$ were not available, this narrow feature did not get penalized. 
+In wide angle X-ray scattering, which probes much larger $q_z$ than LAXS does,
+we did not see much diffuse scattering for $q_z > 1.0$ \AA$^{-1}$ (data not shown).
+Also, from stereochemical point of view, a peptide width cannot be too small either.
+These arguments allowed us to disregard the best fits with a too small value
+of $\sigmaTat$.
+
+Figure~\ref{fig:DOPC_Tat_XFF1} shows the results for DOPC with Tat. 
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -881,8 +902,95 @@ Figure~\ref{fig:DOPC_Tat_XFF1} show the results for DOPC with Tat.
   \label{fig:DOPC_Tat_XFF1}
 \end{figure}
 %------------------------------------------------------------------------------
-Figure~\ref{fig:DOPCDOPE3to1_Tat_XFF1} show the results for DOPC:DOPE (3:1)
-with Tat.
+As shown, the fits were generally very good.  
+Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
+%------------------------------------------------------------------------------
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
+    \hline
+    $\chi^2$ & 2961 & 1554 & 1570 & 1581 & 1563 & 1587 & 1607 & 2342 & 2338 & 2363 \\ 
+    $\chi^2_\textrm{red}$ & 5.307 & 2.785 & 2.813 & 2.833 & 2.807 & 2.849 & 2.885 & 4.197 & 4.189 & 4.235 \\
+    \hline
+    $\zPC$ & 18.1 & 18.0 & 17.9 & 17.9 & 17.8 & 17.7 & 17.6 & 17.8 & 17.8 & 17.7 \\
+    $\sigmaPC$ & 2.52 & 2.14 & 2.17 & 2.18 & 1.86 & 1.92 & 1.93 & 2.02 & 1.97 & 1.93 \\
+    $\zCG$ & 15.0 & 14.9 & 14.8 & 14.8 & 14.7 & 14.6 & 14.5 & 14.7 & 14.7 & 14.6 \\
+    $\sigmaCG$ & 3.00 & 2.62 & 2.64 & 2.66 & 2.22 & 2.30 & 2.31 & 2.58 & 2.27 & 2.14 \\
+    $\zHC$ & 13.7 & 13.6 & 13.5 & 13.5 & 13.4 & 13.3 & 13.2 & 13.4 & 13.4 & 13.3 \\ 
+    $\sigmaHC$ & 3.00 & 2.69 & 2.84 & 2.95 & 2.65 & 2.82 & 3.01 & 2.47 & 2.58 & 2.83 \\
+    $\sigmaCHthree$ & 3.20 & 3.19 & 3.22 & 3.24 & 3.37 & 3.43 & 3.47 & 2.70 & 2.70 & 2.74 \\
+    $\zTat$ & NA & 12.9 & 13.4 & 14.2 & 13.1 & 13.8 & 14.4 & 15.2 & 15.2 & 15.7 \\
+    $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
+    \hline
+    $\VL$ & 1314 & \multicolumn{3}{c|}{1344} & \multicolumn{3}{c|}{1380} & \multicolumn{3}{c|}{1432} \\ 
+    $\VHL$ & 331 & \multicolumn{3}{c|}{362} & \multicolumn{3}{c|}{397} & \multicolumn{3}{c|}{450} \\
+    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
+    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
+    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
+    \hline
+    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
+    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
+    $r$ & \multicolumn{10}{c|}{1.97} \\
+    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    \hline
+    $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
+    \hline
+  \end{tabular}
+  \caption{Fitting Results for DOPC membranes. $\Delta z_1 = \zPC-\zCG$
+  and $\Delta z_2 = \zCG-\zHC$.}
+  \label{tb:DOPC_fit_results}
+\end{table}
+%------------------------------------------------------------------------------
+It is clear that the area per lipid $\AL$ increased as the Tat concentration was
+increased. An increase in $\AL$ implies thinning of the bilayer which is an 
+incompressible membrane.
+Figure~\ref{fig:DOPC_Tat_X2} shows $\chi^2$ as a function of fixed Tat position, 
+$\zTat$. Generally, two minima were found. For DOPC bilayers, $\zTat$ in the 
+headgroup region yielded the best fit.
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2} 
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2} 
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
+  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:Tat (62:1), (28:1), 
+  and (16:1). (Need both methine and choline models)}
+  \label{fig:DOPC_Tat_X2}
+\end{figure}
+%------------------------------------------------------------------------------
+The results for DOPC:DOPE (3:1) are shown in Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1}, 
+Table~\ref{tb:DOPCDOPE3to1_fit_results}, and Fig.~\ref{fig:DOPCDOPE3to1_Tat_X2}.
+Likewise, the results for DOPC:DOPE (1:1) are shown in 
+Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1}, Table~\ref{tb:DOPCDOPE1to1_fit_results},
+and Fig.~\ref{fig:DOPCDOPE1to1_Tat_X2}.
+ 
+As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
+as the distance $\DPP$ between the PC components in the opposing leaflets
+or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
+is more reliable than $\DPP$ because it is a property of the total 
+electron density of a bilayer and, therefore, does not depend strongly on the 
+specific model employed for fitting the data. Indeed, the total electron
+density profile can be determined independently of a bilayer model 
+by writing the electron density profile in terms of Fourier series, Fourier transforming
+the profile, and fitting the resulting model independent
+form factor to the data. On the other hand, $\DPP$ is a property that
+depends on lipid components, which are influenced by how the lipid is parsed 
+and what assumptions and constraints go into the specific model.
+A disadvantage of using $\DHH$ as a measure of the membrane thickness is
+that $\DHH$ is influenced by the electron density of Tat because 
+the total electron density profile has a contribution from the electron density of Tat. 
+Especially 
+when the mole fraction of Tat in a system becomes large, 
+the Tat electron density contributes significantly to the total electron 
+density profile. If the Tat resided slightly 
+outside of the PC component, the apparent membrane thickness measured by $\DHH$
+would be larger than $\DPP$. Then, even if the actual bilayer thickness defined by $\DPP$ 
+was reduced by the presence of Tat, the effect of thinning might not be obvious. 
+With the above caveat in mind, we report both quantities in what follows
+since they can be easily calculated from the model.
+
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -901,8 +1009,55 @@ with Tat.
   \label{fig:DOPCDOPE3to1_Tat_XFF1}
 \end{figure}
 %------------------------------------------------------------------------------
-Figure~\ref{fig:DOPCDOPE1to1_Tat_XFF1} shows the results for DOPC:DOPE (1:1)
-with Tat.
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
+    \hline
+    $\chi^2$ & 924.5 & 4972 & 4985 & 4994 & 6758 & 6826 & 6863 & 2293 & 2280 & 2296 \\ 
+    \hline
+    $\zPC$ & 18.3 & 18.5 & 18.5 & 18.4 & 18.5 & 18.4 & 18.3 & 18.2 & 18.2 & 18.1 \\
+    $\sigmaPC$ & 2.66 & 2.23 & 2.26 & 2.27 & 2.25 & 2.31 & 2.34 & 2.31 & 2.19 & 2.11 \\
+    $\zCG$ & 15.2 & 15.4 & 15.4 & 15.3 & 15.4 & 15.3 & 15.2 & 15.1 & 15.1 & 15.0 \\
+    $\sigmaCG$ 2.92 & 2.63 & 2.65 & 2.69 & 2.52 & 2.58 & 2.63 & 2.40 & 2.20 & 2.01 \\
+    $\zHC$ & 13.9 & 14.1 & 14.1 & 14.0 & 14.1 & 14.0 & 13.9 & 13.8 & 13.8 & 13.7 \\
+    $\sigmaHC$ & 2.73 & 2.70 & 2.83 & 2.91 & 2.86 & 2.79 & 2.84 & 2.25 & 2.38 & 2.60 \\
+    $\sigmaCHthree$ & 3.24 & 2.94 & 2.97 & 2.98 & 2.87 & 2.90 & 2.91 & 2.63 & 2.61 & 2.65 \\
+    $\zTat$ & NA & 13.5 & 14.0 & 15.0 & 14.3 & 14.9 & 16.0 & 16.3 & 16.4 & 16.9 \\
+    $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
+    \hline
+    $\VL$ & 1288 & \multicolumn{3}{c|}{1319} & \multicolumn{3}{c|}{1354} & \multicolumn{3}{c|}{1407} \\ 
+    $\VHL$ & 306 & \multicolumn{3}{c|}{336} & \multicolumn{3}{c|}{372} & \multicolumn{3}{c|}{425} \\
+    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
+    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
+    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
+    \hline
+    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
+    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
+    $r$ & \multicolumn{10}{c|}{1.97} \\
+    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    \hline
+    $\AL$ & 70.9 & 69.8 & 69.9 & 70.1 & 69.5 & 70.0 & 70.6 & 71.3 & 71.4 & 71.7 \\
+    \hline
+  \end{tabular}
+  \caption{Fitting Results for DOPC:DOPE (3:1) membranes. $\Delta z_1 = \zPC-\zCG$
+  and $\Delta z_2 = \zCG-\zHC$.}
+  \label{tb:DOPCDOPE3to1_fit_results}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
+  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
+  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:DOPE (3:1) with 
+  $x_\textrm{Tat}$ = 1/63, 1/29, and 1/17, where $x_\textrm{Tat}=Tat/(Tat+Lipid)$.
+  (Need both methine and choline models)}
+  \label{fig:DOPCDOPE3to1_Tat_X2}
+\end{figure}
+%------------------------------------------------------------------------------
+
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -921,86 +1076,43 @@ with Tat.
   \label{fig:DOPCDOPE1to1_Tat_XFF1}
 \end{figure}
 %------------------------------------------------------------------------------
-(Table ? shows the best fit parameters for DOPC bilayers.
-%------------------------------------------------------------------------------
-\begin{table}[ht]
+\begin{table}[htbp]
   \centering
-  \begin{tabular}{c c c}
-    Molecule & Molecular Weight & Volume \\
-    Tat (YGRKKRRQRRR) & 1560 & 1876 \\ 
-    Tat + TFA & 2464 & 2964
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
+    \hline
+    $\chi^2$ & 2961 & 1554 & 1570 & 1581 & 1563 & 1587 & 1607 & 2342 & 2338 & 2363 \\ 
+    $\chi^2_\textrm{red}$ & 5.307 & 2.785 & 2.813 & 2.833 & 2.807 & 2.849 & 2.885 & 4.197 & 4.189 & 4.235 \\
+    \hline
+    $\zPC$ & 18.1 & 18.0 & 17.9 & 17.9 & 17.8 & 17.7 & 17.6 & 17.8 & 17.8 & 17.7 \\
+    $\sigmaPC$ & 2.52 & 2.14 & 2.17 & 2.18 & 1.86 & 1.92 & 1.93 & 2.02 & 1.97 & 1.93 \\
+    $\zCG$ & 15.0 & 14.9 & 14.8 & 14.8 & 14.7 & 14.6 & 14.5 & 14.7 & 14.7 & 14.6 \\
+    $\sigmaCG$ & 3.00 & 2.62 & 2.64 & 2.66 & 2.22 & 2.30 & 2.31 & 2.58 & 2.27 & 2.14 \\
+    $\zHC$ & 13.7 & 13.6 & 13.5 & 13.5 & 13.4 & 13.3 & 13.2 & 13.4 & 13.4 & 13.3 \\ 
+    $\sigmaHC$ & 3.00 & 2.69 & 2.84 & 2.95 & 2.65 & 2.82 & 3.01 & 2.47 & 2.58 & 2.83 \\
+    $\sigmaCHthree$ & 3.20 & 3.19 & 3.22 & 3.24 & 3.37 & 3.43 & 3.47 & 2.70 & 2.70 & 2.74 \\
+    $\zTat$ & NA & 12.9 & 13.4 & 14.2 & 13.1 & 13.8 & 14.4 & 15.2 & 15.2 & 15.7 \\
+    $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
+    \hline
+    $\VL$ & 1314 & \multicolumn{3}{c|}{1344} & \multicolumn{3}{c|}{1380} & \multicolumn{3}{c|}{1432} \\ 
+    $\VHL$ & 331 & \multicolumn{3}{c|}{362} & \multicolumn{3}{c|}{397} & \multicolumn{3}{c|}{450} \\
+    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
+    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
+    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
+    \hline
+    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
+    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
+    $r$ & \multicolumn{10}{c|}{1.97} \\
+    $r_{12}$ & \multicolumn{10}{c|}{0} \\
+    \hline
+    $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
+    \hline
   \end{tabular}
-  \caption{Important Quantities for Tat Peptide}
-  \label{tb:Tat}
+  \caption{Fitting Results for DOPC:DOPE (1:1) membranes. $\Delta z_1 = \zPC-\zCG$
+  and $\Delta z_2 = \zCG-\zHC$. (Need to work)}
+  \label{tb:DOPCDOPE1to1_fit_results}
 \end{table}
-%------------------------------------------------------------------------------
-
-As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
-as the distance $\DPP$ between the PC components in the opposing leaflets
-or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
-is more reliable than $\DPP$ because it is a property of the total 
-electron density of a bilayer and, therefore, does not depend strongly on the 
-specific model employed for fitting the data. Indeed, the total electron
-density profile can be determined independently of a bilayer model 
-by writing the ED profile in terms of Fourier series, Fourier transforming
-each term in the series, and fitting the resulting model independent
-form factor to the data. On the other hand, $\DPP$ is a property that
-depends on lipid components, which are influenced by how the lipid is parsed 
-and what assumptions and constraints go into the specific model.
-A disadvantage of using $\DHH$ as a measure of the membrane thickness is
-that $\DHH$ is influenced by the ED of Tat. For the ED of Tat cannot be 
-separated from that of lipids in the total ED profile. Especially 
-when the mole fraction of Tat in a system becomes large, the Tat ED contributes significantly to the total ED profile. If the Tat happens to reside slightly 
-outside of the PC component, the apparent membrane thickness measured by $\DHH$
-is larger than $\DPP$. Then, even if the actual bilayer thickness defined by $\DPP$ 
-is reduced by the presence of Tat, the effect of thinning may not be obvious. 
-With the above caveat in mind, we report both quantities in what follows
-since they can be easily calculated from the model.
-
-For fitting the form factors for systems with Tat, we constrained the 
-distance between the PC and CG components and the distance between the
-CG and the Gibbs dividing surface of the hydrocarbon chain region.
-These constraints mean that we treat the lipid headgroup as a somewhat
-rigid object and a change in the membrane thickness is due to compression
-or expansion of the lipid chains. An addition of Tat ED leads to
-two more fitting parameters: the position and the width. 
-These constraints were necessary to keep the number of fitting parameters 
-the same among systems with and without Tat.
- 
-We also constrained the width of Tat 
-Gaussian because we found that the best fits of this width was  
-unphysically too small for all the data. 
-We fitted with three different values of widths,
-2.5, 3.0, and 3.5, to study the range of variation due to the Tat width. 
-The choice was made based on MD simulation results. (Check this again)
-Figure~\ref{fig:DOPC_Tat_62to1_3.0_XFF1} shows the best fit to the 
-form factor for DOPC:Tat (62:1). 
-(Show all the results in a composite figure. Show results for DOPC:DOPE bilayers.)
-
-Figure~\ref{fig:DOPC_Tat_X2} shows $\chi^2$ as a function of fixed Tat position, 
-$\zTat$. Generally, two minima were found. For DOPC bilayers, $\zTat$ in the 
-headgroup region yielded the best fit.
-%------------------------------------------------------------------------------
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2} 
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2} 
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:Tat (62:1), (28:1), 
-  and (16:1). (Need both methine and choline models)}
-  \label{fig:DOPC_Tat_X2}
-\end{figure}
-%------------------------------------------------------------------------------
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
-  \includegraphics[scale=0.3]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC:DOPE (3:1) with 
-  $x_\textrm{Tat}$ = 1/63, 1/29, and 1/17, where $x_\textrm{Tat}=Tat/(Tat+Lipid)$.
-  (Need both methine and choline models)}
-  \label{fig:DOPCDOPE3to1_Tat_X2}
-\end{figure}
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -1014,25 +1126,19 @@ headgroup region yielded the best fit.
 \end{figure}
 %------------------------------------------------------------------------------
 
-However, as Fig.~\ref{fig:DOPCDOPE3to1_Tat_X2} shows, the fits are are 
-equally good with Tat inside and outside the chain region for DOPC:DOPE bilayers.
-(Show a bunch more plots for DOPC:DOPE membranes) 
-While modeling suggested
-that Tat could be in the tail region, this position seems energetically 
-unfavorable as Tat is a hydrophilic molecule. With a help of MD simulations,
-we were able to discard the interior position as an artifact of our 
-modeling. The simulation results are discussed later.
-
-It
-must be emphasized, however, that, while the total EDP is well determined by 
-this fitting
-procedure, the values of the parameters for the components are not as well 
+While the total electron density profile is well determined by 
+these modeling procedures, the values of the parameters for the components are not as well 
 determined as the agreement of the fit to the data may suggest. 
 Indeed, we found local
 minima in the fitting landscape, including one with Tat closer to the center 
 of the bilayer as
 shown in Fig. \ref{fig:DOPCDOPE3to1_Tat_X2} and \ref{fig:DOPCDOPE1to1_Tat_X2}. 
-The simulations help to discard that result. 
+While these modeling results suggested
+that Tat could be in the tail region, this position seemed energetically 
+unfavorable as Tat is a hydrophilic molecule. With a help of MD simulations,
+we were able to discard the interior position as an artifact of our 
+modeling. The simulation results are discussed later.
+
 Electron density profiles for DOPC/DOPS (3:1) and the nuclear membrane 
 mimic were not
 successful, due to loss of diffuse scattering by Tat’s charge neutralization 
@@ -1041,9 +1147,12 @@ charged membranes as described in section \ref{sec:Kc_results}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hard Wall Constrain Fits}
-As shown in the previous section, some of the values of the parameters
-for the components did not appear to be reasonable. If Tat causes a bilayer 
-to become thinner, we would expect that the headgroup components to become
+As seen from Table~\ref{tb:DOPC_fit_results}, \ref{tb:DOPCDOPE3to1_fit_results},
+and \ref{tb:DOPCDOPE1to1_fit_results}, the widths of the headgroup components
+became smaller as Tat concentration increased in all membranes. These 
+decreases seem somewhat unreasonable; if Tat causes a bilayer 
+to locally become thinner near where it is bound, 
+we would expect that the headgroup components to become
 wider. Therefore, we also fitted the model with hard wall constrains
 on these headgroup widths. Namely, the minimum values of the widths of
 the headgroup components, PC and CG, were limited to the corresponding 
@@ -1051,13 +1160,7 @@ values for pure bilayers without Tat. (Need to finish analysis on this)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Summary of Electron Density Profile Modeling}
-More structural detail from the modeling and from the simulations is shown 
-in Fig. 7. The
-bilayer thickness can be described as DHH, which is the distance between 
-the maxima in the
-electron density profile, or as DPP, which is the distance between the 
-phosphocholines on the
-opposing monolayers (see Fig. 5). Figs. 7A and 7B show that both these 
+Figs. 7A and 7B show that both these 
 quantities tend to
 decrease with increasing Tat mole fraction (P/(L+P)), showing that Tat thins 
 membranes,
