@@ -203,7 +203,7 @@ an Anton-Paar USA DMA5000M (Ashland, VA) vibrating tube densimeter
 \cite{ref:}. This instrument measures the average density of a solution. 
 
 The Tat peptide sequence used in X-ray experiements and MD simulations was 
-YGRKKRRQRRR. 
+Y$_{47}$GRKKRRQRRR$_{57}$. 
 Table~\ref{tb:aa} lists the chemical formulas and molecular weights of
 these amino acids for convenience. The molecular 
 weight of this sequence is 
@@ -308,7 +308,7 @@ Fig~\ref{fig:dopc_schematic}. The phosphate/choline (PC) and
 carbonyl/glycerol (CG) components together make up the lipid headgroup
 whereas the hydrocarbon chain region
 is divided into two components, the methylene (CH$_2$) and methine (CH) group
-combination ($\CH{2}$+CH) and terminal methyl group ($\CH{3}$). 
+combination (CH$_2$+CH) and terminal methyl group (CH$_3$). 
 We combine methylene (CH$_2$) and methine groups (CH) in order to avoid 
 proliferation of fitting parameters.
 %------------------------------------------------------------------------------
@@ -468,7 +468,7 @@ to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ cc }
+  \begin{tabular}{c c}
   \hline
     number of e/lipid & 434 \\ 
     volume/lipid (\AA$^3$) & 1313.5 \\
@@ -493,7 +493,7 @@ to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ cc }
+  \begin{tabular}{c c}
   \hline
     number of e/lipid & 410 \\ 
     volume/lipid (\AA$^3$) & 1212.3 \\
@@ -517,7 +517,7 @@ to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ cc }
+  \begin{tabular}{c c}
   \hline
     number of e/lipid & 428 \\ 
     volume/lipid (\AA$^3$) & 1288.2 \\
@@ -541,7 +541,7 @@ to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ ccc }
+  \begin{tabular}{c c c}
     \hline
     number of e/Tat & 838 \\ 
     volume/Tat (\AA$^3$) & 1877 \\
@@ -565,7 +565,7 @@ to these calculated values.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ |c|c|c|c|c|c|c|c| }
+  \begin{tabular}{c c c c c c c c}
     \hline
      & DOPC & \multicolumn{2}{c|}{62:1} & \multicolumn{2}{c|}{28:1} & \multicolumn{2}{c|}{16:1} \\
     \cline{3-8}
@@ -586,6 +586,46 @@ to these calculated values.
   \label{tb:model_constraints}
 \end{table}
 %------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fits with Lower Bounds}
+Non-linear least squared fits with upper and lower bounds for the model
+parameters are implemented using an internal-external parameter transformation
+method. This method is described in MINUIT User's Guide, section 1.3 
+\cite{ref:minuit2}. This section briefly describes the method. The details
+can be found in the MINUIT website \cite{ref:minuit}.
+
+Basically, instead of a model parameter, which is also called the external variable, 
+the minimization procedure varies a related variable called the internal variable.
+This internal variable can take any values between $-\infty$ to $+\infty$. 
+At every $\chi^2$ calculation, the internal variable is transformed to 
+the external variable, which can take values only between the lower and 
+upper bounds ($a$ and $b$). This non-linear transformation allows an existing minimization
+algorithm that was developed for fits with no bounds to work for fits with bounds.
+This point was important because it allowed us to implement bound fits in
+the model fitting program called the SDP program, 
+fully developed by Dr. Norbert Kucerka, without too many additional changes.
+Downsides of the transformation method include turning a linear problem into
+a non-linear one and some computational overhead, neither of which is particularly
+problematic in this study. 
+
+For variables with both lower and upper bounds 
+($a$ and $b$, respectively), the transformation between the internal and
+external variables is
+\begin{align}
+  P_\textrm{int} &= \arcsin \pars{2\frac{P_\textrm{ext}-a}{b-a}-1}  \\
+  P_\textrm{ext} &= a + \frac{b-a}{2}(\sin P_\textrm{int}+1).
+\end{align}
+For variables with a lower bound $a$ only, the transformation is
+\begin{align}
+  P_\textrm{int} &= \sqrt{(P_\textrm{ext}-a+1)^2 - 1} \\
+  P_\textrm{ext} &= a - 1 + \sqrt{P_\textrm{int}^2+1}, 
+\end{align}
+and for variables with an upper bound $b$ only,
+\begin{align}
+  P_\textrm{int} &= \sqrt{(b-P_\textrm{ext}+1)^2 - 1} \\
+  P_\textrm{ext} &= b + 1 - \sqrt{P_\textrm{int}^2+1}.
+\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Molecular Dynamics Simulation}
@@ -637,7 +677,40 @@ laterally and rotate, changing its configuration during simulations.
 \section{Analysis of Molecular Dynamics Simulation Data}
 \subsection{SIMtoEXP program}
 This section briefly describes the SIMtoEXP program
-developed by Dr. Norbert Kucerka \cite{ref:Kucerka10}. 
+developed by Dr. Norbert Kucerka \cite{ref:Kucerka10}.
+Essentially, for each snapshot, positional distribution of each atom
+averaged over the $xy$ plane is calculated. Then, the distribution is
+averaged over snapshots. The product of this distribution and the average
+electron density gives the electron density profile of the atom. The sum 
+of all the atoms provide the total electron density profile. This total
+electron density profile minus the average electron density of water
+is Fourier transformed to provide the X-ray form factor.
+\begin{equation}
+  F^\textrm{sim}(q_z) = \int_0^\infty\dz (\rho(z)-\rhoW)\cos (q_zz).
+\end{equation}
+Electron density profiles were symmetrized and then
+X-ray form factors were calculated with $\rhoW$ = 0.326.
+Because $\rho(z)$ is equal to $\rhoW$ outside the bilayer, the upper 
+integration limit takes on a finite value. Since the total electron density
+profile is symmetric with respect to the bilayer center, the simulated
+form factor $F_\textrm{sim}$ is real.
+
+Because the experimental form factor is on arbitrary units, it is 
+scaled by a single constant $a$ to produce the best fit to the simulated
+form factor through a linear least squared fit,
+\begin{equation}
+  \chi^2 = \sum_i \left(\frac{1}{\sigma_i}\pars{
+    a|F^\textrm{exp}_i| - |F^\textrm{sim}(q_{z,i})|
+  }\right)^2
+\end{equation}
+where $\sigma$ is the input experimental uncertainty and $F_\textrm{exp}$
+is the experimental form factor.
+Because the SIMtoEXP program does not scale the input uncertainties,
+the relative errors ($\sigma$ / $|F|$) depend on the overall scaling
+factor by which the experimental form factor is multiplied to produce the 
+best fit of an experimental form factor to a simulated one. Consequently,
+The $\chi^2$ values calculated by the program were multiplied by
+1 / $a^2$. These corrected $\chi^2$ are reported in this chapter.
 
 \subsection{Local Thinning of Membranes}
 The SIMtoEXP program only gives the average quantities for each leaflet. 
@@ -673,8 +746,8 @@ pick up all the phosphorus atoms within it.
 Approximating Tat as a cylinder 
 with its height given by the FWHM of its electron density distribution, 
 its 
-radius $R_\textrm{Tat}$ = 9 \AA comes from the volume of Tat = 1876 \AA$^3$ and 
-$\hTat$ = 7.6 \AA
+radius $\RTat$ = 9 \AA comes from the volume of Tat = 1876 \AA$^3$ and 
+$\HTat$ = 7.6 \AA
 measured from one of the simulations. 
 Let us define the lateral center of the 
 cylinder in some way - a crude approximation would put it at the arginine in 
@@ -704,8 +777,8 @@ better statistics.
 This section describes a method to measure the lateral decay length
 of membrane thinning due to Tat-lipid interactions. 
 As in the previous section, Tat is modeled here as a cylinder with 
-its radius equal to $R_1$, height $\hTat$,
-and volume $\VTat$ such that $R_1=\sqrt{\VTat/(\pi \hTat)}$. 
+its radius equal to $R_1$, height $\HTat$,
+and volume $\VTat$ such that $R_1=\sqrt{\VTat/(\pi \HTat)}$. 
 Let $h(r)$ represent the phosphorus height profile
 of a leaflet. The two leaflets are assumed to be decoupled.
 In our model, lipids are separated into three regions: 
@@ -893,10 +966,10 @@ lack of higher $q_z$ data points. A very narrow feature in an electron density p
 led to large magnitude of the form factor at larger $q_z$. Because data 
 points at larger $q_z$ were not available, this narrow feature did not get penalized. 
 In wide angle X-ray scattering, which probes much larger $q_z$ than LAXS does,
-we did not see much diffuse scattering for $q_z > 1.0$ \AA$^{-1}$ (data not shown).
-Also, from a stereochemical point of view, a peptide width cannot be too small either.
+we did not observe much diffuse scattering for $q_z > 1.0$ \AA$^{-1}$ (data not shown).
+Also, from a stereochemical point of view, a peptide width cannot be too small.
 These arguments allowed us to disregard the best fits with a too small value
-of $\sigmaTat$.
+of $\sigmaTat$ and led to fixing the Tat width.
 
 Figure~\ref{fig:DOPC_Tat_XFF1} shows the results for DOPC with Tat. 
 As shown, the fits were generally very good.  
@@ -927,7 +1000,7 @@ Table~\ref{tb:DOPCDOPE1to1_fit_results}.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{c c c c c c c c c c c}
     \hline
     $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
     \hline
@@ -958,7 +1031,7 @@ Table~\ref{tb:DOPCDOPE1to1_fit_results}.
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
   \end{tabular}
-  \caption{Fitting Results for DOPC membranes. $\Delta z_1 = \zPC-\zCG$
+  \caption{Fitting Results for DOPC membranes for the THG model. $\Delta z_1 = \zPC-\zCG$
   and $\Delta z_2 = \zCG-\zHC$.}
   \label{tb:DOPC_fit_results}
 \end{table}
@@ -1007,7 +1080,7 @@ since they can be easily calculated from the model.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{c c c c c c c c c c c}
     \hline
     $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
     \hline
@@ -1037,7 +1110,7 @@ since they can be easily calculated from the model.
     $\AL$ & 70.9 & 69.8 & 69.9 & 70.1 & 69.5 & 70.0 & 70.6 & 71.3 & 71.4 & 71.7 \\
     \hline
   \end{tabular}
-  \caption{Fitting Results for DOPC:DOPE (3:1) membranes. $\Delta z_1 = \zPC-\zCG$
+  \caption{Fitting Results for DOPC:DOPE (3:1) membranes for the THG model. $\Delta z_1 = \zPC-\zCG$
   and $\Delta z_2 = \zCG-\zHC$.}
   \label{tb:DOPCDOPE3to1_fit_results}
 \end{table}
@@ -1063,7 +1136,7 @@ since they can be easily calculated from the model.
 %------------------------------------------------------------------------------
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{c c c c c c c c c c c}
     \hline
     $\xTat$ & 0 & \multicolumn{3}{c|}{1/63} & \multicolumn{3}{c|}{1/29} & \multicolumn{3}{c|}{1/17} \\
     \hline
@@ -1094,43 +1167,45 @@ since they can be easily calculated from the model.
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
   \end{tabular}
-  \caption{Fitting Results for DOPC:DOPE (1:1) membranes. $\Delta z_1 = \zPC-\zCG$
+  \caption{Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. $\Delta z_1 = \zPC-\zCG$
   and $\Delta z_2 = \zCG-\zHC$. (Need to work)}
   \label{tb:DOPCDOPE1to1_fit_results}
 \end{table}
 %------------------------------------------------------------------------------
 
-We also investigated how the goodness of fits varied as the placement of 
+We also investigated how the goodness of fits varied as the position of 
 the Tat Gaussian was varied. Figure~\ref{fig:DOPC_Tat_X2} plots $\chi^2$ as a 
-function of fixed Tat position, $\zTat$. We found that model A and B resulted 
+function of the fixed Tat position $\zTat$. We found that the two models,
+THG and THC, resulted 
 in similar electron density profiles, yielding similar $\chi^2$ values 
-when Tat was placed near the hydrocarbon-water interface region. In model B, 
-the error function representing the hydrocarbon chain region became wider as the 
-Tat component was placed deeper into the headgroup region. The subtraction
+when Tat was placed near the hydrocarbon-water interface region. In the THC model, 
+the error function representing the hydrocarbon chain region became wider as
+Tat was placed near the interface region but further from the bilayer center. The subtraction
 of the Tat component from the hydrocarbon chain error function resulted in 
 a smooth error function-like profile with a smaller value of $\sigma$ such that
-the total profile calculated from model B was very similar to that calculated 
-from model A.
+the total profile calculated from the THC model was very similar to that calculated 
+from the THG model.
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2} 
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2} 
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2}
   \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
   \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
   \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
+  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
   \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2}
   \caption{$\chi^2$ as a function of $\zTat$ for DOPC, DOPC:DOPE (3:1), and 
   DOPC:DOPE (1:1) (from left to right) 
-  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom).}
+  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
+  $\sigmaTat = 3.0$. The THG model (black squares) and the THC model (red circles).}
   \label{fig:DOPC_Tat_X2}
 \end{figure}
 %------------------------------------------------------------------------------
 
-In generaly, while the total electron density profile is well determined by 
+In general, while the total electron density profile is well determined by 
 our modeling procedures, the values of the parameters for the components are 
 not as well determined as the agreement of the fit to the data may suggest. 
 in many cases, we found multiple local minima in the fitting landscape, 
@@ -1171,71 +1246,423 @@ we would expect that the headgroup components to become
 wider. Therefore, we also fitted the model with hard wall constrains
 on these headgroup widths. Namely, the minimum values of the widths of
 the headgroup components, PC and CG, were limited to the corresponding 
-values for pure bilayers without Tat. (Need to finish analysis on this)
+values for pure bilayers without Tat. 
+
+Table~\ref{tb:bound_DOPC} shows results from fitting the data with
+lower bounds on the widths of the headgroup components for DOPC:Tat.
+In all cases, both headgroup widths, $\sigmaPC$ and $\sigmaCG$, resulted 
+in the same value as the value of their corresponding lower bounds. 
+Figure~\ref{fig:bound_DOPC_X2} shows $\chi^2$ landscape as a function of
+$\zTat$ similarly to Fig.~\ref{fig:DOPC_Tat_X2}. The $\chi^2$ minima 
+observed for $\zTat > $ > 25 \AA were artifact; Tat are essentially in
+the water region while the bilayer structure was significantly perturbed.
+This action-at-distance seemed unreasonable, so these minima were considered
+as artifact of the model. 
+Indeed, when we fixed lipid component parameters in these fits to be identical to those of 
+the DOPC model, we did not observe any minima with Tat in the water region.
+Although we did not note in the previous section,
+we observed similar minima in the unbound model as well.
+
+%------------------------------------------------------------------------------
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l}
+\hline\hline
+  \begin{tabular}{c}
+    $\xTat$ \\
+    $\chi^2$ \\ 
+    $\zPC$ \\
+    $\sigmaPC$ \\
+    $\zCG$ \\
+    $\sigmaCG$ \\
+    $\zHC$ \\ 
+    $\sigmaHC$ \\
+    $\sigmaCHthree$ \\
+    $\zTat$ \\
+    $\sigmaTat$ \\ 
+    $\Delta z_1$ \\
+    $\Delta z_2$ \\
+    $\AL$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c}
+    0 \\
+    2961 \\ 
+    18.1 \\
+    2.5 \\
+    15.0 \\
+    3.0 \\
+    13.7 \\ 
+    3.0 \\
+    3.2 \\
+    \\
+    \\ 
+    3.1 \\
+    1.3 \\
+    71.5
+  \end{tabular}
+  \quad
+  \begin{tabular}{c c c}
+    0.016 & 0.016 & 0.16 \\
+    1853 & 1979 & 2118\\ 
+    17.8 & 17.8 & 17.8 \\
+    2.5 & 2.5 & 2.5 \\
+    14.7 & 14.7 & 14.7 \\
+    3.0 & 3.0 & 3.0 \\
+    13.4 & 13.4 & 13.4 \\ 
+    2.7 & 2.7 & 2.7 \\
+    3.1 & 3.1 & 3.1 \\
+    16.9 & 16.8 & 17.0 \\
+    2.5 & 3.0 & 3.5 \\ 
+    3.1 & 3.1 & 3.1 \\
+    1.3 & 1.3 & 1.3 \\
+    73.5 & 73.5 & 73.5
+  \end{tabular}
+  \quad
+  \begin{tabular}{c c c}
+    0.034 & 0.034 & 0.034 \\
+    2398 & 2893 & 3414 \\ 
+    17.4 & 17.4 & 17.4 \\
+    2.5 & 2.5 & 2.5 \\
+    14.3 & 14.3 & 14.3 \\
+    3.0 & 3.0 & 3.0 \\
+    13.0 & 13.0 & 13.0 \\ 
+    2.7 & 2.7 & 2.7 \\
+    3.6 & 3.6 & 3.7 \\
+    16.4 & 16.5 & 16.7 \\
+    2.5 & 3.0 & 3.5 \\ 
+    3.1 & 3.1 & 3.1 \\
+    1.3 & 1.3 & 1.3 \\
+    & & 
+  \end{tabular}
+\\
+\hline
+  \begin{tabular}{c}
+    $\xTat$ \\
+    $\chi^2$ \\ 
+    $\zPC$ \\
+    $\sigmaPC$ \\
+    $\zCG$ \\
+    $\sigmaCG$ \\
+    $\zHC$ \\ 
+    $\sigmaHC$ \\
+    $\sigmaCHthree$ \\
+    $\zTat$ \\
+    $\sigmaTat$ \\ 
+    $\Delta z_1$ \\
+    $\Delta z_2$ \\
+    $\AL$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c c c}
+    0.059 & 0.059 & 0.059 \\
+    3160 & 4298 & 5539 \\ 
+    17.5 & 17.4 & 17.3 \\
+    2.5 & 2.5 & 2.5 \\
+    14.4 & 14.4 & 14.3 \\
+    3.0 & 3.0 & 3.0 \\
+    13.1 & 13.0 & 12.9 \\ 
+    2.7 & 2.7 & 2.7 \\
+    2.6 & 2.6 & 2.5 \\
+    16.3 & 16.6 & 17.1 \\
+    2.5 & 3.0 & 3.5 \\ 
+    3.1 & 3.1 & 3.1 \\
+    1.3 & 1.3 & 1.3 \\
+    & &
+  \end{tabular}
+\\
+\hline\hline
+\end{tabular}
+  \caption{Fitting Results of the bound THG model for DOPC membranes. 
+  $\Delta z_1 = \zPC-\zCG$ and $\Delta z_2 = \zCG-\zHC$.}
+  \label{tb:bound_DOPC}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_bound_X2}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_bound_X2}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_bound_X2}
+  \caption{$\chi^2$ as a function of $\zTat$ for DOPC
+  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
+  $\sigmaTat = 3.0$. The bound THG model was used.}
+  \label{fig:bound_DOPC_X2}
+\end{figure}
+%------------------------------------------------------------------------------
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Summary of Electron Density Profile Modeling}
-Figs. 7A and 7B show that both these 
-quantities tend to
-decrease with increasing Tat mole fraction (P/(L+P)), showing that Tat thins 
-membranes,
-increasingly so as its concentration is increased, even though both simulation 
+As discussed in the previous section, 
+the bilayer thickness can be described as $\DHH$ which is the 
+distance between the maxima in the electron density profile, or as $\DPP$, which 
+is the distance between the phosphocholines on the opposing monolayers. 
+Figs.~\ref{fig:SDP_DPP} and \ref{fig:SDP_DHH} show that the thickness defined by $\DPP$ or $\DHH$ tends to
+decrease with increasing Tat mole fraction $xTat$, showing that Tat thins 
+membranes, increasingly so as its concentration is increased, even though both simulation 
 and modeling
 suggest that Tat moves further from the membrane center with increasing 
-concentration as
-shown in Fig. 7D. Fig. 7C shows that the area per lipid AL usually increases 
+concentration as shown in Fig.~\ref{fig:SDP_zTat}. 
+Figure~\ref{fig:SDP_AL} shows that the area per lipid AL usually increases 
 with increasing
-mole fraction of Tat, similar to the findings from MD simulations (Section 3.2), 
-as would be
-expected. The results from the simulation data plotted in Fig. 7 were obtained 
-by using a
-weighted average based on chi-square of the four best fits of the simulated 
-form factors with the
-experimental form factors.
-
-Figure shows that $A_L$ as defined by $(V_L-V_{HL})/D_c$ decreases as the 
-amount of DOPE increases for systems without Tat. This is consistent with the
-previous studies (or predictions?) and attributed to the small size of PE
-head group. Because DOPE has smaller head group than DOPC, lipids in DOPC/DOPE
-bilayers pack more compactly than DOPC bilayers do, leading to a smaller $A_L$.
-Consequently, bilayers composed of DOPC and DOPE tend to have a higher order 
-parameter than DOPC alone. (NO THEY DON'T. WHAT'S GOING ON HERE?). Similarly,
-the thickness of bilayers is larger at higher PE content. 
-
-Figure shows that Tat is located further out from the bilayer center with 
-higher content of PE lipids. This is also consistent with MD simulation PMF,
-which showed that arginine insertion cost more energy for PE membrane than
-PC membrane, the result of which was attributed to more possible hydrogen 
-bonding between PE group and arginines.
-
-More structural detail from the modeling and from the simulations is shown in 
-Fig. 7. The bilayer thickness can be described as DHH, which is the 
-distance between the maxima in the electron density profile, or as DPP, which 
-is the distance between the phosphocholines on the opposing monolayers. Figs. 
-7A and 7B show that both these quantities decrease with increasing Tat mole 
-fraction (P/(L+P)), showing that Tat thins membranes, increasingly so as its 
-concentration is increased, even though both simulation and modeling suggest 
-that Tat moves further from the membrane center with increasing concentration 
-as shown in Fig. 7D.  Fig. 7C shows that the area per lipid AL usually increases 
-with increasing mole fraction of Tat, as would be expected from consideration of 
+mole fraction of Tat, 
+as would be expected from consideration of 
 conservation of lipid volume. Interestingly, the bilayer thickness did not 
-increase for DOPC/DOPE (3:1) bilayers with x less than 0.03.  
+increase for DOPC/DOPE (3:1) bilayers with x less than 0.03. 
+
+Figure~\ref{fig:SDP_AL} shows that the area per lipid $\AL$ 
+as defined by $(\VL-\VHL)/\DC$ decreases as the mole
+fraction of DOPE in DOPC:DOPE membranes increases. 
+This decrease of $\AL$ is qualitatively consistent with 
+previous studies and attributed to the small size of PE
+head group (references?). Because DOPE has smaller head group than DOPC, lipids in DOPC/DOPE
+bilayers pack more compactly than in DOPC bilayers. Then, more compact packing of
+lipids leads to a smaller $\AL$.  
+
+Figure~\ref{fig:SDP_zTat} shows that Tat is located further out from the bilayer 
+center with higher content of PE lipids. This trend is consistent with 
+a potential mean force calculated from MD simulations, 
+which has shown that arginine insertion costs more energy in 
+a PE membrane than PC membrane. The higher energy cost of arginine insertion 
+is due to more possible hydrogen bonding between PE group and arginines.
+(After I wrote this paragraph, I realized that the argument presented does
+not make much sense. $\zTat$ could be larger for PE simply because DOPE
+membranes are thicker than DOPC membrane. $\zTat$ must be measured with 
+respect to, say, the hydrocarbon interface.)
+
+%------------------------------------------------------------------------------
+\begin{figure}
+  \centering
+  \caption{DPP graph}
+  \label{fig:SDP_DPP}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}
+  \centering
+  \caption{DHH graph}
+  \label{fig:SDP_DHH}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}
+  \centering
+  \caption{AL graph}
+  \label{fig:SDP_AL}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}
+  \centering
+  \caption{zTat graph}
+  \label{fig:SDP_zTat}
+\end{figure}
+%------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Molecular Dynamics Simulations}\label{sec:sim_results}
 Due to the slow relaxation in lipid bilayers and limited accuracy of the force 
-field, a good
-agreement between experimental and MD simulation calculated form factors may 
-be difficult to
-reach. Consequently, we carried out several constrained simulations at $A_L$ 
-and $Z_{Tat}$ as described
-in Materials and Methods. We then compared the simulated form factor $F(q_z)$ 
-with the
-experiment. The best match for DOPC/Tat (128:4) was found when the Tats were 
+field, a good agreement between experimental and MD simulation calculated 
+form factors may be difficult to reach. Consequently, we carried out several 
+constrained simulations at various $\AL$ and $\zTat$ as described
+in Materials and Methods. 
+We then compared the simulated form factor $F(q_z)$ with the
+experimentally measured one. Figure~\ref{fig:MD_dopc_sim-exp} shows such
+comparison for a DOPC bilayer. As discussed earlier, the simulated form factor
+shifted to larger $q_z$ as the area per lipid was increased. 
+From this comparison, we found the simulation
+at $\AL$ = 70 \AA$^2$ to be the best match with the experimental form
+factor, yielding the lowest $\chi^2$. 
+However, the form factor for $\AL$ = 72 \AA$^2$ matched the experiment
+better than that for 70 \AA$^2$ near $q_z$ = 0.3 \AA$^{-1}$, which 
+suggests that a better match might lie between 70 and 72 \AA$^2$. 
+This case was not investigated further.
+The electron density profile for the best fit is shown in 
+Fig.~\ref{fig:MD_dopc_70_PC-CG}.
+The comparison for DOPC with $\xTat$ = 0.015 where there is one Tat in
+each monolayer is shown in Fig.~\ref{fig:MD_dopc-tat2_sim-exp}. The
+same comparison for DOPC with $\xTat$ = 0.03 is shown in 
+Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/Tat/MD_Results/xff/dopc_sim-exp}
+  \caption{MD simulated form factors for DOPC at $\AL$ = 68 \AA$^2$ (blue solid line), 
+  70 \AA$^2$ (red solid line), and 72 \AA$^2$ (green solid line)
+  compared to the experimental form factor (open circles) scaled vertically
+  to best match the form factor for 70 \AA$^2$.}
+  \label{fig:MD_dopc_sim-exp}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/Tat/MD_Results/edp/dopc_70_PC-CG}
+  \caption{The simulated, symmetrized electron density profile for DOPC at $\AL$ = 70 \AA$^2$ as 
+  a function of the distance away from the bilayer center. 
+  Each component profile is labeled with its name: PC (phosphate-choline),
+  CG (carbonyl-glycerol), CH$_2$+CH (methylene-methine combination), 
+  CH$_3$ (terminal methyl). The sum of all the components is labeled as total.}
+  \label{fig:MD_dopc_70_PC-CG}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1}
+  \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1}
+  \caption{MD simulated form factors for DOPC with $\xTat$ = 0.015 
+  at $\AL$ = 72 \AA$^2$ (top) and 74 \AA$^2$ (bottom),
+  with $\zTat$ = 18 \AA\ (red solid lines), 16 \AA\ (green solid lines), 
+  and 14 \AA\ (blue solid lines) compared to the experimental form factor 
+  (open circles) scaled vertically to best match the form factor for 
+  $\zTat$ = 18 \AA.}
+  \label{fig:MD_dopc-tat2_sim-exp}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1}
+  \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1}
+  \caption{MD simulated form factors for DOPC with $\xTat$ = 0.030 
+  at $\AL$ = 74 \AA$^2$ (top) and 76 \AA$^2$ (bottom),
+  with $\zTat$ = 18 \AA\ (red solid lines), 16 \AA\ (green solid lines), 
+  and 14 \AA\ (blue solid lines) compared to the experimental form factor 
+  (open circles) scaled vertically to best match the form factor for 
+  $\zTat$ = 18 \AA.}
+  \label{fig:MD_dopc-tat4_sim-exp}
+\end{figure}
+%------------------------------------------------------------------------------
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccc}
+    \multicolumn{4}{c}{$\xTat=0.015$} \\
+    \hline
+    \rule{0pt}{14pt} % add extra space  
+    $\AL$ (\AA$^2$) & $\zTat$ (\AA) & $a$ & $\chi^2$ \\
+    \hline
+    70 & 18 & 0.621 & 60.1 \\
+    70 & 16 & 0.568 & 69.1 \\
+    70 & 14 & 0.439 & 131 \\ 
+    70 & 12 & 0.285 & 391 \\
+    70 & 10 & 0.199 & 440 \\
+    70 & 8  & 0.196 & 374 \\
+    70 & 5  & 0.159	& 527 \\
+    \hline
+    72 & 18 & 0.72  & 18.0 \\
+    72 & 16 & 0.65  & 24.9 \\
+    72 & 14 & 0.6   & 31.4 \\
+    72 & 12 & 0.426	& 104 \\
+    72 & 10 & 0.219 & 443 \\
+    72 & 8  & 0.205 & 336 \\
+    72 & 5  & 0.165 & 448 \\
+    \hline
+    74 & 18 & 0.722 & 21.3 \\
+    74 & 16 & 0.704	& 25.9 \\
+    74 & 14 & 0.631 & 24.7 \\
+    74 & 12 & 0.412 & 81.9 \\
+    74 & 10 & 0.312 & 194 \\
+    74 & 8  & 0.246 & 351 \\
+    74 & 5  & 0.177 & 427 \\
+    \hline
+  \end{tabular}
+  \qquad
+  \begin{tabular}{c c c c}
+    \multicolumn{4}{c}{$\xTat=0.030$} \\
+    \hline
+    \rule{0pt}{14pt} % add extra space  
+    $\AL$ (\AA$^2$) & $\zTat$ (\AA) & $a$ & $\chi^2$ \\
+    \hline
+    70 & 18 & 0.621 & 60.1 \\
+    70 & 16 & 0.568 & 69.1 \\
+    70 & 14 & 0.439 & 131 \\ 
+    70 & 12 & 0.285 & 391 \\
+    70 & 10 & 0.199 & 440 \\
+    70 & 8  & 0.196 & 374 \\
+    70 & 5  & 0.159	& 527 \\
+    \hline
+    72 & 18 & 0.72  & 18.0 \\
+    72 & 16 & 0.65  & 24.9 \\
+    72 & 14 & 0.6   & 31.4 \\
+    72 & 12 & 0.426	& 104 \\
+    72 & 10 & 0.219 & 443 \\
+    72 & 8  & 0.205 & 336 \\
+    72 & 5  & 0.165 & 448 \\
+    \hline
+    74 & 18 & 0.722 & 21.3 \\
+    74 & 16 & 0.704	& 25.9 \\
+    74 & 14 & 0.631 & 24.7 \\
+    74 & 12 & 0.412 & 81.9 \\
+    74 & 10 & 0.312 & 194 \\
+    74 & 8  & 0.246 & 351 \\
+    74 & 5  & 0.177 & 427 \\
+    \hline
+  \end{tabular}
+  \caption{Comparison of the simulated form factors to the 
+  experimental form factors.}
+  \label{tb:MD_sim-exp}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c c c c c c c c c c}
+    $\xTat$ & $\AL$ & $\zTat$ & $\langle\DPP\rangle$ & $\DPP$ & $x$ & $\Delta t$ & $\HTat$ & $\RTat$ & $R_2$ & $\zphos$ & $\zguan$ & $\chi^2$ \\
+    0 & 70 & & 36.3 & & & \\
+    0.015 & 72 & 18 & 35.6 & 32.8 & 35.8 & 3.5 & 9.2 & 8.1 & 15.0 & 14.7 & 15.5 & 18 \\ 
+    0.015 & 72 & 16 & 36.1 & 33.0 & 36.3 & 3.3 & 9.4 & 8.0 & 9.0  & 14.9 & 14.5 & 24.9 \\
+    0.015 & 74 & 18 & 35.0 & 33.0 & 35.1 & 3.3 & 8.6 & 8.3 & 23.9 & 14.9 & 16.5 & 21.3 \\
+    0.015 & 74 & 16 & 35.0 & 32.1 & 35.2 & 4.2 & 7.6 & 8.9 & 20.4 & 14.0 & 13.5 & 25.9 \\
+    0.030 & 74 & 18 & 35.3 & 32.6 & NA   & 3.7 & 7.6 & 8.9 & NA   & 14.5 & 15.5 & 24.3 \\ 
+    0.030 & 74 & 16 & 35.3 & 31.2 & NA   & 5.1 & 7.7 & 8.8 & NA   & 13.1 & 13.5 & 40.1 \\
+    0.030 & 76 & 18 & 34.2 & 32.0 & NA   & 4.3 & 7.6 & 8.9 & NA   & 13.9 & 16.5 & 14.8 \\
+    0.030 & 76 & 16 & 34.9 & 31.4 & NA   & 4.9 & 7.8 & 8.7 & NA   & 13.3 & 14.5 & 30.4
+  \end{tabular}
+  \caption{Summary of simulation results. $\langle\DPP\rangle$, phosphorus-phosphorus 
+  distance averaged over all lipids; $\DPP$, Tat-perturbed phosphorus atoms; 
+  $x$, thickness away from Tat; $\Delta t$, $\langle\DPP^\textrm{DOPC}\rangle-\DPP$; $\HTat$, Tat 
+  height; $\RTat$, radius of Tat cylinder; $R_2$, radius of the calculated
+  in-plane Tat-perturbed region; $R_3$, effective radius of the simulation box.}
+  \label{tb:MD_summary}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c c c c c c c c}
+    $\xTat$ & $\AL$ & $\zTat$ & $\langle\DPP\rangle$ & $\DPP$ & $\Delta t$ & $\HTat$ & $\RTat$ & $R_2$ & $\zphos$ & $\zguan$ \\
+    0.015 & 72.9 & 17.1 & 35.4 & 32.7 & 3.6 & 8.7 & 8.3 & 17.1 & 14.6 & 15.1 \\  
+    0.030 & 75.2 & 17.3 & 34.8 & 31.9 & 4.4 & 7.7 & 8.8 & NA & 13.8 & 15.4
+  \end{tabular}
+  \caption{Summary of weighted average results. The caption is the same as
+  Table~\ref{tb:MD_summary}.}
+  \label{tb:MD_summary_avg}
+\end{table}
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L}
+  \includegraphics[width=0.4\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R}
+%  \begin{overpic}[width=0.45\textwidth]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L}
+%    \put(22,65){74 \AA$^2$}
+%    \put(22,55){16 \AA}
+%  \end{overpic}
+  \caption{Electron density profiles of guanidinium groups 
+  from the four best matched simulations for DOPC with $\xTat = 0.015$ 
+  (one Tat on each leaflet). Tat on the lower and upper leaflets
+  are shown on the left and right plots, respectively.}
+  \label{fig:MD_guanidinium}
+\end{figure}
+%------------------------------------------------------------------------------
+%  \begin{overpic}[grid,width=0.45\textwidth,tics=10]{figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L}
+%    \put(-20,60){74 \AA$^2$}
+%    \put(-20,50){16 \AA}
+%  \end{overpic}
+
+The best match for DOPC/Tat (128:4) was found when the Tats were 
 constrained at 18 \AA away from the bilayer center (Fig. 4.A,B). The other 
-best fit results were: DOPC $A_L$ = 70 \AA$^2$ and DOPC/Tat(128:2) $A_L$ = 72 
-\AA$^2$, $Z_{Tat} = 18$ \AA. It clearly indicates that with increasing Tat
-concentration, $A_L$ increases. The agreement worsened as Tat was constrained 
+best fit results were: DOPC $\AL$ = 70 \AA$^2$ and DOPC/Tat(128:2) $\AL$ = 72 
+\AA$^2$, $\zTat = 18$ \AA. It clearly indicates that with increasing Tat
+concentration, $\AL$ increases. The agreement worsened as Tat was constrained 
 to be closer to the
 center of the bilayer. When Tats were constrained at 5 \AA away from the bilayer 
 center, we
@@ -1244,16 +1671,7 @@ as shown in
 Fig. 4.C the corresponding form factor calculated from MD simulations does not 
 match well
 with experiments.
-Figure 4. MD simulated form factors (red solid lines in A and C) of Tat/(DOPC+Tat), x=0.030,
-with Tat fixed at ZTat= 18 Å (panel A) and 5 Å (panel C) from the bilayer center compared to
-experimental form factors (open circles) scaled vertically to provide the best fit to the
-simulations. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
-represented as grey sticks on a white background, Tats are yellow, phosphate groups are red and
-water is blue.
 
-
-
-\subsection{Summary of Results}
 We summarize our results for how Tat affects the lipid bilayer in Fig. 9. 
 The height of Tat, $H_{Tat} = 8.7$ \AA, was the full width at half maximum of 
 the Tat electron density profiles
@@ -1278,7 +1696,24 @@ boundary lipids that extends twice are far in R as Tat itself. Although the guan
 density profile was broad (Fig. S8), indicating that some were pointing away from the bilayer
 relative to the center of Tat, more were pointing towards the bilayer center as indicated in Fig. 9.
 Numerical values are given in Table S1.
+%%------------------------------------------------------------------------------
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_bound_X2}
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_bound_X2}
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_bound_X2}
+%  \caption{MD simulated form factors (red solid lines in A and C) for DOPC with
+%  $\xTat = 0.030$,
+%with Tat fixed at ZTat= 18 Å (panel A) and 5 Å (panel C) from the bilayer center compared to
+%experimental form factors (open circles) scaled vertically to provide the best fit to the
+%simulations. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
+%represented as grey sticks on a white background, Tats are yellow, phosphate groups are red and
+%water is blue.}
+%  \label{fig:DOPC_MD_EXP}
+%\end{figure}
+%%------------------------------------------------------------------------------
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 Given that 8 of the 11 amino acids in Tat (47-57) are arginines and lysines, 
 one would have

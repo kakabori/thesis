@@ -7,3 +7,6 @@
 *.bbl
 *.blg
 *.ini
+thesis.bib.save
+thesis.dvi
+thesis.out
