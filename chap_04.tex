@@ -153,8 +153,9 @@ for different motor angle. The sample-to-detector distance was estimated
 from the setup geometry. We used 35 $\mu$m thin Si wafer, which absorbs
 x-ray by only 10\%. 
 
-\section{Some Theories}
-\subsection{Lattice Structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Some Theories}\label{sec:some_theories}
+\subsection{Lattice Structure}\label{sec:lattice_structure}
 It has been shown from X-ray studies (ref) that ripples in in different bilayers
 are registered to form a two-dimensional oblique lattice as shown by the unit 
 cell in Fig. X. 
@@ -181,11 +182,10 @@ Miller indices $(h,k)$ is
 \end{equation}
 so its Cartesian components are
 \begin{align}
-  & q_{k}^x \equiv q_{hk}^x = \frac{2\pi k}{\lambda_r} \\
-  & q_{hk}^y = 0 \\
-  & \qz{hk} = \frac{2\pi h}{D} - \frac{2\pi k}{\lambda_r\tan\gamma}.
+  & \mathbf{q}_{hk}\cdot\xhat = q_{hk}^x = \frac{2\pi k}{\lambda_r} \equiv q_{k}^x \\
+  & \mathbf{q}_{hk}\cdot\yhat = q_{hk}^y = 0 \\
+  & \mathbf{q}_{hk}\cdot\zhat = \qz{hk} = \frac{2\pi h}{D} - \frac{2\pi k}{\lambda_r\tan\gamma}.
 \end{align}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample $q$-space}
@@ -316,6 +316,7 @@ Inverting Eq.~(\ref{eq:main_ewald}) and (\ref{eq:side_ewald})
 and realizing that the intensity is the form factor
 squared, we can calculate the observed intensity, $\Io{}$, 
 from a model for an electron density in the ripple phase.
+
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
@@ -371,8 +372,7 @@ structure factor is
 where $q_{r,k}=2\pi |k|/\lambda_r$. Thus, the scattering pattern in the 
 ripple phase is a 
 collection of Bragg ``rings'' centered at the meridian and the 
-Bragg peaks that are called the main peaks.  
-
+Bragg peaks located along the meridian.  
 The observed, integrated intensity of $hk$ peak is proportional to
 \begin{equation}
   I_{\mathrm{o},hk} 
@@ -409,7 +409,7 @@ a model to the experimentally observed intensity, and are
 equivalent to Eq.~(\ref{eq:main_ewald}) and (\ref{eq:side_ewald}), 
 which were derived by using the Ewald sphere. 
 
-In nonlinear least-squares fitting procedure, 
+In non-linear least squares fitting procedure, 
 we fitted the observed integrated intensity to
 the calculated intensity from a bilayer model using these geometrical corrections. 
 This is because we can determine experimental uncertainties
