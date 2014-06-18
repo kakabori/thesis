@@ -22,8 +22,8 @@ dimyristoylphophatidylcholine (DMPC) were imaged, and
 a ripple wavelength of 130 \AA\ and an amplitude of 45 \AA\ were obtained.
 An X-ray diffraction study of unoriented ripple phase DMPC at 18 \textcelsius\
 showed the ripple wavelength is not a monotonic function of hydration
-\cite{ref:Wack88}. By analyzing the X-ray form factor measured by Wack
-and Webb \cite{ref:Wack88}, Sun \textit{et al.} \cite{ref:Sun96} was able to
+\cite{ref:Wack89}. By analyzing the X-ray form factor measured by Wack
+and Webb \cite{ref:Wack89}, Sun \textit{et al.} \cite{ref:Sun96} was able to
 obtain the electron density profile of the DMPC ripple phase. This
 study showed that the ripple profile is asymmetric with a longer, thicker
 major arm and a shorter, thinner minor arm within each lattice unit cell.  
@@ -42,6 +42,33 @@ In 2003, Sengupta et al. suggested lipid chain packing in 2003 based on
 average bilayer electron density (ED) profile calculated from low angle
 X-ray scattering. In 2005, de Vrie et al suggested interdigitated chain in the
 minor side based on MD (molecular dynamics) simulations.
+
+\begin{table}
+\centering
+  \begin{tabular}{cccc}
+    \hline
+    $D_s$ & $D$ & $\lambda_r$ & $\gamma$ \\
+    (\AA) & (\AA) & (\AA) & (deg) \\
+    \hline
+    55.7 & 55.0 & 159.4 & 99.0 \\
+    57.5 & 57.0 & 140.8 & 97.6 \\
+    57.8 & 57.3 & 151.6 & 97.8 \\
+    57.9 & 57.4 & 148.4 & 97.6 \\
+    58.0 & 57.5	& 144.1 & 97.8 \\
+    58.1 & 57.5 & 141.9 & 98.0 \\
+    58.6 & 58.0 & 140.1 & 98.2 \\
+    58.6 & 58.0 & 141.7 & 98.4 \\
+    60.3 & 59.8 & 129.6 & 97.3 \\
+    61.1 & 60.6 & 130.1 & 97.0 \\
+    61.9 & 61.5 & 130.8 & 96.5 \\
+    62.7 & 62.4 & 122.0 & 95.9 \\
+    64.1 & 63.9 & 123.1 & 94.9 \\
+    65.0 & 64.9 & 120.3 & 92.3 \\    
+    \hline 
+  \end{tabular}
+  \caption{Lattice constants for DMPC at $T$ = 18.0 \textcelsius\
+  reported by Wack and Webb \cite{ref:Wack89}.} 
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
@@ -83,15 +110,38 @@ a small vial with a small amount of heat sink compound at a corner of the
 wafer. The wafer was stable enough for rocking. The sample deposited on a 
 glass cover slip (70 microns) was prepared similarly.  
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Low Angle X-ray Scattering Experiment}
-(The setup for the low angle X-ray scattering experiment should be 
-described in chapter 2 since it is common among both Tat and ripple)
-In order to achieve a D-spacing comparable to that of Wack and Webb
-($D \approx 57.9$ \AA), 
-current was applied to the Peltier, which heated the 
-surface on which the sample was situated. 
-The temperature gradient caused by this heating Peltier was negligible 
-(less than 0.1 \textcelsius).
+The low resolution X-ray scattering experiment was carried out at the Cornell 
+High Energy Synchrotron Source (CHESS) G1 station. The X-ray beam was 
+configured by the station scientist, Dr. Arthor Woll, and the assistant 
+scientist, Dr. Robin lastname?.
+A W/B$_4$C multilayer monochromater with $\Delta E$/$E$ of 1.5\% was used,
+providing a very intense X-ray beam. 
+The energy of the X-ray beam was 10.55 keV, corresponding to a wavelength 
+of 1.175 \AA. 
+The horizontal and vertical divergence of the beam were
+$4.2 \times 10^{-5}$ rad and $1.6 \times 10^{-4}$ rad, respectively.
+The beam shape, measured through a semi-transparent 200 $\mu$m thick
+molybdenum (Mo) beam stop, is shown in Fig.~\ref{fig:ripple_lr_beam}.
+The horizontal beam width was 2.3 pixels (0.16 mm). The vertical beam
+width was approximately 1 mm, tall enough to cover the entire sample
+when the sample was tilted by 7\textdegree. The sample was rocked
+during X-ray exposure between -1.6\textdegree\ and 7\textdegree\ 
+in order to observe many diffraction peaks in one data collection. 
+The sample to detector distance was 359.7 mm, measured by indexing
+silver behenate Bragg peaks. The D-spacing of silver behenate is known to be
+58.367 \AA.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/ripple/beamx_lr}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/beamz_lr}
+  \caption{Beam used in the low resolution experiment.
+  The horizontal beam profile (left) and vertical beam profile (right)
+  are shown.}
+  \label{fig:ripple_lr_beam}
+\end{figure}
 
 A few Bragg peaks in the low angle X-ray scattering of the ripple phase
 were very strong, leading to saturation of CCD pixels for data collection
@@ -168,10 +218,13 @@ be 6.9 for the wavelength used (1.175 \AA).
 \end{figure}
 
 \subsection{Near Grazing Incidence Wide Angle X-ray Scattering Experiment}
+The high resolution X-ray scattering experiment was also carried out at 
+the G1 station.
 The energy of the beam was 10.55 keV (wavelength = 1.175 \AA).
-Instead of multilayer monochromator with 1.5\% energy dispersion, 
-silicon monochromator with $\Delta E/E$ of 0.001\% was used to achieve
-a higher resolution than that for the low angle X-ray scattering experiment.
+Instead of a multilayer monochromator with 1.5\% energy dispersion, a (111)
+silicon monochromator with $\Delta E/E$ of 0.01\% was used to achieve
+a higher resolution than that for the low angle X-ray scattering experiment
+(section \ref{}).
 The horizontal and vertical divergence of the X-ray beam were
 $4.2 \times 10^{-5}$ rad and $1.6 \times 10^{-4}$ rad, respectively. 
 Because the resolution was dominated by the geometric broadening due to the
@@ -184,12 +237,16 @@ of synchrotron beam time, I considered 1 mm width to be reasonable.
 %S1L = 153.6 mm, S1H = 220.6 mm, and S2 = 359.7 mm
 The sample to detector distance was 220.6 mm, measured using a silver behenate film. 
 The horizontal beam width was 0.2 mm. Wide angle X-ray
-scattering was collected at an incident angle of 0.2\textdegree.
+scattering was collected at an incident angle of 0.2\textdegree. 
 
 \begin{figure}
   \centering
-  \caption{show the beam profile}
-  \label{fig:NGIWASX_beam}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/beamx_hr}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/beamz_hr}
+  \caption{Beam used in the high resolution experiment.
+  The horizontal beam profile (left) and vertical beam profile (right)
+  are shown.}
+  \label{fig:NGIWAXS_beam}
 \end{figure}
 
 \subsection{Transmission Wide Angle X-ray Scattering Experiment}
@@ -358,15 +415,6 @@ main peaks become arcs that subtend an angle $2\theta_{h0}$,
 as shown in Fig.~\ref{fig:ewald_main}, with its length
 equal to $2\theta_{h0}\qz{h0}$.  
 
-%------------------------------------------------------------------------------
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[scale=1]{figures/ripple/ewald_main}
-  \caption{caption goes here}
-  \label{fig:ewald_main}
-\end{figure}
-%------------------------------------------------------------------------------
-
 The detector records the cross sections of these arcs with the 
 Ewald sphere, so the total scattering power is the product of the observed intensity,
 $\Io{hk}$ with the arc length, that is, 
@@ -389,6 +437,15 @@ Inverting Eq.~(\ref{eq:main_ewald}) and (\ref{eq:side_ewald})
 and realizing that the intensity is the form factor
 squared, we can calculate the observed intensity, $\Io{}$, 
 from a model for an electron density in the ripple phase.
+
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[scale=1]{figures/ripple/ewald_main}
+  \caption{caption goes here}
+  \label{fig:ewald_main}
+\end{figure}
+%------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
