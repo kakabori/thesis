@@ -248,61 +248,7 @@ rules for going from the detector space (pixels) to the sample $q$-space.
 With them, we would know how to trace out a line on the detector in order
 to measure the mosaicity distribution. 
 
-
-The incoming and outgoing wavevectors of the x-ray beam in Fig. XXX 
-are given by
-\begin{equation}
-  \kin = \frac{2\pi}{\lambda} \yhat, \quad
-  \kout = 
-    \frac{2\pi}{\lambda} \left( 
-      \sin 2\theta \cos\phi \, \xhat
-      + \cos 2\theta \, \yhat
-      + \sin 2\theta \sin\phi \, \zhat 
-    \right),
-  \label{eq:kinkout}
-\end{equation}
-where $\lambda$ is the wavelength of x-ray. The scattering vector is
-the difference between $\kin$ and $\kout$,
-\begin{align}
-  \mathbf{q} &= \kout - \kin \nonumber \\
-             &= q \left( 
-                  \cos\theta\cos\phi \, \xhat - \sin\theta \, \yhat
-                  + \cos\theta\sin\phi \, \zhat
-                \right),
-  \label{eq:q_vector}
-\end{align}
-where $q=4\pi\sin\theta/\lambda$ is the magnitude of the scattering vector. 
-When the sample is rotated by $\omega$ about the x-axis in the clockwise 
-direction as shown in Fig. XXX, the sample coodinates written in terms of 
-the lab coordinates are  
-\begin{equation}
-  \mathbf{\hat{e}_x} = \xhat, \quad
-  \mathbf{\hat{e}_y} = \cos\omega\,\yhat + \sin\omega\,\zhat, \quad
-  \mathbf{\hat{e}_z} = -\sin\omega\,\yhat + \cos\omega\,\zhat.
-  \label{eq:smp_coord}
-\end{equation}
-From \Eq{eq:q_vector} and \Eq{eq:smp_coord}, we find the projection of 
-$\mathbf{q}$ on the sample coordinates to be
-\begin{align}
-  q_x &= \mathbf{q}\cdot\mathbf{\hat{e}_x} 
-       = q\cos\theta\cos\phi 
-       \label{eq:qx} \\
-  q_y &= \mathbf{q}\cdot\mathbf{\hat{e}_y} 
-       = q\left(-\sin\theta\cos\omega + \cos\theta\sin\phi\sin\omega\right) 
-       \label{eq:qy} \\
-  q_z &= \mathbf{q}\cdot\mathbf{\hat{e}_z} 
-       = q\left(\sin\theta\sin\omega + \cos\theta\sin\phi\cos\omega\right).
-       \label{eq:qz}
-\end{align}
-With respect to the beam, the position on the detector is given by
-\begin{equation}
-  X = S \tan 2\theta \cos\phi, \quad Z = S \tan 2\theta \sin\phi.
-\end{equation} 
-The pixels on the detector are directly proportional to $X$ and $Z$. Thus,
-these equations define the transformation rules from the detector space
-to the sample q-space and vice versa.
-
-In terms of these coordinates, in the rocking scan, $\phi=\pi/2$ and 
+In terms of the coordinates defined in section~\ref{sec:sample_q-space}, in the rocking scan, $\phi=\pi/2$ and 
 $q=2\pi h/D$
 while $\omega$ is varied about $\theta_B$, where $\theta_B$ is the Bragg
 angle for a Bragg peak that is focused on. Using $q=4\pi\sin\theta/\lambda$, 
