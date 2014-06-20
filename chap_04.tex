@@ -750,11 +750,11 @@ intensity is equal to $I_0$, then the attenuated intensity is
   I(z,\omega,\theta) = I_0\exp\left(-\frac{L_\textrm{tot}}{\mu}\right),
   \label{eq:ray}
 \end{equation}
-where $\mu$ is the absorption length of an X-ray. $\mu$ is 111 for 10.5 keV
-and 222 for 8 keV \cite{ref:cxro}.
+where $\mu$ is the absorption length of an X-ray. $\mu$ is 2.6 mm for 10.5 keV
+and 1.2 mm for 8 keV \cite{ref:cxro}.
 The observed intensity of scattering from a sample fixed at an angle $\omega$ 
 is equal to the integration
-of Eq.~(\ref{eq:ray}) over the whole sample and given by
+of Eq.~(\ref{eq:ray}) over the total thickness of the sample and given by
 \begin{align}
   I_{\textrm{obs}}(\omega,\theta) 
     &= \int_0^t \dz I(z,\omega,\theta)
@@ -763,7 +763,7 @@ of Eq.~(\ref{eq:ray}) over the whole sample and given by
     \label{eq:I_obs1}
 \end{align}
 Defining the absorption factor at a fixed angle to be $A(\omega,\theta)$, 
-the observed intensity can be written as
+the observed intensity can also be written as
 \begin{equation}
 I_{\textrm{obs}}(\omega,\theta)=A(\omega,\theta)tI_0,
 \label{eq:I_obs2}
@@ -773,42 +773,45 @@ Equating Eq.~(\ref{eq:I_obs1}) and (\ref{eq:I_obs2}), we get
 \begin{equation}
   A(\omega,\theta) = \frac{\mu}{t} 
                      \frac{1-\exp\left(-\frac{t}{\mu}g(\omega,\theta)\right)}{g(\omega,\theta)}.
+  \label{eq:ang_abs_factor}
 \end{equation}
+If $\mu$ is taken to infinity (no absorption), $A(\omega,\theta)$ 
+goes to 1 as expected. (make a plot of $A(\omega,\theta)$.
+$A(\omega=\theta_B,\theta=\theta_B)$ gives the absorption factor for
+the $k=0$ peaks.
+
+For $k\neq 0$ satellite peaks, an integration over the incident angle $\omega$
+is necessary because these peaks are observable at all incident angles as
+described in section \ref{sec:Lorentz_correction}.
 The total observed intensity from a sample that is being rotated during 
 an exposure is simply
 \begin{equation}
   I_{\textrm{total}}(\theta) 
   = \int_0^{2\theta}\textrm{d}\omega I_{\textrm{obs}}(\omega,\theta).
+  \label{eq:total_obs_I}
 \end{equation}
 The upper integration limit is equal to $2\theta$ because the substrate
 completely blocks the scattered X-rays above this angle as discussed in 
 section \ref{sec:Lorentz_correction}.
-
-Because the total non-attenuated intensity is given by $t\omega I_0$,
-
-
-so that the total absorption factor is equal to
+The total non-attenuated intensity is equal to $2\theta t I_0$. We, then, 
+define the absorption factor $A(\theta)$ to be the ratio of the total 
+observed intensity to the total non-attenuated intensity,
+\begin{align}
+  A(\theta) \equiv \frac{I_\textrm{total}(\theta)}{2\theta tI_0}. 
+  \label{eq:abs_factor_def}
+\end{align}
+Using Eq.~(\ref{eq:ang_abs_factor}) and (\ref{eq:total_obs_I})
+in (\ref{eq:abs_factor_def}), we arrive
+at the final absorption factor
 \begin{equation}
-  A(\theta) = \frac{\mu}{2\theta t} \int_0^{2\theta}d\omega 
-      \frac{1-\exp\left(-\frac{t}{\mu}g(\omega)\right)}{g(\omega)}.
+  A(\theta) = \frac{1}{2\theta}\int_0^{2\theta}d\omega A(\omega,\theta)
+  = \frac{\mu}{2\theta t} \int_0^{2\theta}d\omega 
+  \frac{1-\exp\left(-\frac{t}{\mu}g(\omega,\theta)\right)}{g(\omega,\theta)}.
+  \label{eq:abs_factor}
 \end{equation}
-If $\mu$ is taken to infinity (no absorption), $A$ goes to 1 as expected. 
-Here, it is important to note that $1/2\theta$ factor in the above equation
-is normally called Lorentz polarization factor, which
-is usually approximated as $1/q_z$ for LAXS analysis. Since the SDP
-program applies this correction factor in addition to the absorption
-correction, we remove this factor in the formula for $A_c$. Therefore,
-the final result for the total absorption correction is 
-\begin{equation}
-  A_c(\theta) 
-    = \frac{1}{2\theta A(\theta)} \nonumber \\
-    = \frac{t}{\mu} 
-       \left[ 
-         \int_0^{2\theta}d\omega 
-         \frac{1-\exp\left(-\frac{t}{\mu}g(\omega)\right)}{g(\omega)}
-       \right]^{-1}
-\end{equation}
-with $g(\omega)=1/\sin\omega+1/\sin(2\theta-\omega)$.
+Make a plot of $A(\theta)$.
+The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_factor}). 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Absorption Correction for WAXS}
