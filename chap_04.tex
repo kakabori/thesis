@@ -8,20 +8,26 @@ formed by dimyristolphosphatydylcholine (DMPC) bilayers.
 \section{Introduction}
 (At some point, do some literature search and write up this section)
 The ripple phase has been a fascinating thermodynamic phase to many physicists 
-and physical chemists since its discovery by Tardieu \textit{et al.} 
+and physical chemists since its discovery (not exactly? may be first structural
+study, calorimetry for
+alcanes, sturevant, Rand) by Tardieu \textit{et al.} 
 in 1973 \cite{ref:Tardieu73}. Although this phase has never been reported to 
 occur in a biologically relevant situation, it provides interesting opportunities
 to study fundamental lipid interactions and their influence on the bilayer 
 shape. (Let's find some recent papers and see if anyone says anything about
 biological relevance)
 
+Get to the figure first, so people know unit cells.
+
 The equilibrium structure of the ripple phase has been extensively studied by
 diffraction (X-ray \cite{} and neutron \cite{}) and freeze fracture
-(electron microscopy \cite{} and scanning tunneling microscopy \cite{}) techniques.
+(AFM, electron microscopy \cite{} and scanning tunneling microscopy \cite{}) techniques.
 In the scanning tunneling microscopy experiment \cite{ref:Zasadzinski88}, 
 the three-dimensional contours of the ripple phase $P_{\beta'}$ of
 dimyristoylphophatidylcholine (DMPC) were imaged, and
-a ripple wavelength of 130 \AA\ and an amplitude of 45 \AA\ were obtained.
+a ripple wavelength of 130 \AA\ and an amplitude of 45 \AA\ were reported.
+
+LUV paper
 
 Various experiments have indicated the existence of two types of ripple phases:
 the stable asymmetric and the metastable symmetric phase. In the asymmetric
@@ -111,7 +117,7 @@ samples were annealed for approximately 12 hours just before the X-ray experimen
 Figure~\ref{fig:annealing_chamber} shows a picture of the annealing chamber. 
 To achieve gentle but efficient hydration of a sample, filter papers were installed 
 covering the sample. For successful annealing, it must be emphasized that the annealing 
-chamber should equilibrates in the annealing oven prior to putting a sample in the chamber.
+chamber should equilibrate in an annealing oven prior to putting a sample in the chamber.
 When a sample was put in the chamber sitting at a room temperature and
 then the system was placed inside the oven, warmer water vapor inside the chamber 
 condensed on the cooler sample, causing so called flooding of oriented sample. 
@@ -130,18 +136,31 @@ The sample for the grazing incident wide angle study was prepared in the same wa
 as for low angle study. In order to minimize the geometric broadening, the 
 sample was trimmed to 1 mm in width along the beam direction.
 
+(Back reference to RR in Tat chapter)
 The sample for transmission study was deposited on a thin, 35 micron, silicon
-wafer. Because the wafer was very fragile, attaching the sample to a sticky 
+wafer, oriented see sec. Because the wafer was very fragile, attaching the sample to a sticky 
 thing was impossible. Instead, the sample was attached to a plastic cap on 
 a small vial with a small amount of heat sink compound at a corner of the 
 wafer. The wafer was stable enough for rocking. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Instrumental Resolution}
+Talk about divergence, dispersion, and geometric broadening.
+\subsubsection{Divergence}
+
+\subsection{Energy dispersion}
+multilayer vs Si crystal
+
+\subsection{Geometric Broadening}
+WAXS vs LAXS
+Make a table (in pixel and q)
+
 \subsection{Low Angle X-ray Scattering Experiment}
+(Three different runs, Robin in high resolution, Transmission was in 2011)
 The low resolution X-ray scattering experiment was carried out at the Cornell 
 High Energy Synchrotron Source (CHESS) G1 station. The X-ray beam was 
 set up by the station scientist, Dr. Arthor Woll, and the assistant 
-scientist, Dr. Robin lastname?.
+scientist, Dr. Robin Baur.
 A W/B$_4$C multilayer monochromater with $\Delta E$/$E$ of 1.5\% was used,
 providing a very intense X-ray beam. 
 The energy of the X-ray beam was 10.55 keV, corresponding to a wavelength 
@@ -163,14 +182,17 @@ silver behenate Bragg peaks. The D-spacing of silver behenate is known to be
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/beamx_lr}
-  \caption{The horizontal profile of the beam used in the low resolution study.}
+  \caption{The horizontal profile of the beam used in the low resolution study.
+  Each pixel is 0.07113 mm. Given a CCD resolution of at S2 = 359.7 mm.
+  beam FWHM = $\Delta\theta$.}
   \label{fig:ripple_lr_beamx}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/beamz_lr}
-  \caption{The vertical profile of the beam used in the low resolution study.}
+  \caption{The vertical profile of the beam used in the low resolution study.
+  The beam height = 1.1 mm.}
   \label{fig:ripple_lr_beamz}
 \end{figure}
 
@@ -200,15 +222,17 @@ Consequently, the box was made wider for higher
 orders. The box size was chosen so that approximately 80\% of the peak intensity
 was counted toward the integrated intensity.
 
-A thin piece of molybdenum was used to attenuate the beam. The attenuation length
-$\mu$ of X-ray in Mo is 6.433 $\mu$m for 8 keV and 13.74 $\mu$m for 10.55 keV 
+Sheets of molybdenum were used to attenuate the beam and the strong orders. 
+The attenuation length
+$\mu$ of 8 keV X-ray in Mo is 6.433 $\mu$m for and 13.74 $\mu$m for 10.55 keV 
 \cite{ref:cxro}.
 For a 25 $\mu$m thick Mo attenuator, $\mu=13.74$ gives the attenuation factor 
 of $[\exp(-25/13.74)]^{-1} = 6.2$. The exact attenuation factor was determined
 by comparing X-ray images collected with and without the attenuator, 
 shown in Fig.~\ref{fig:olddopc} and \ref{fig:attenuator}.
 The attenuation factor of the nominally 25 $\mu$m thick Mo was found to 
-be 6.9 for the wavelength used (1.175 \AA). 
+be 6.9 for the wavelength used (1.175 \AA). 100 and 200 $\mu$m for h=1,2
+and 200 or 225 for beam.
 
 \begin{figure}[htbp]
   \centering
@@ -229,10 +253,11 @@ be 6.9 for the wavelength used (1.175 \AA).
   \includegraphics[trim=100 0 100 0,clip,width=0.45\textwidth]{figures/ripple/olddopc044}
   \caption{CCD images of X-ray scattering taken with (left) and without 
   (right) a nominally 25 $\mu$m thick Mo attenuator. These data were taken 
-  at a fixed angle of incidence. The sample was an oriented film of 
+  at a fixed angle of incidence (0.8\textdegree). The sample was an oriented film of 
   DOPC:DOPE (3:1) in the fluid phase at 37 \textcelsius. The wavelength
   was 1.175 \AA, the same as the one used for the ripple phase experiment.
-  The same gray scale is used in both images.}
+  The same gray scale is used in both images. 100 pixel = ? in q A little do
+  between the first and second orders is specular.}
   \label{fig:olddopc}
 \end{figure}
 
@@ -244,7 +269,7 @@ be 6.9 for the wavelength used (1.175 \AA).
   (left). The scattering intensity measured with the attenuator (red solid circles) 
   was multiplied by 
   a factor of 6.9 and compared to the intensity measured 
-  without the attenuator (black solid circles, right).}
+  without the attenuator (black solid circles, right). Exposure time?}
   \label{fig:attenuator}
 \end{figure}
 
@@ -275,13 +300,13 @@ The total scattering angle $2\theta$ for the ripple WAXS was approximately
 16\textdegree. 
 To minimize the contribution from the sample, the sample was trimmed to 1 mm
 along the beam direction. 
-The width of 1 mm was chosen simply because I could not trim more
+(edge effect)The width of 1 mm was chosen simply because I could not trim more
 without a more sophisticated device than a simple razor blade. Also, a very
 narrow sample would be a weak scattering body. Due to limited availability
 of synchrotron beam time, I considered 1 mm width to be reasonable.
 With these values, we have $\Delta x = 0.57$ mm = 8 pixels, which would be the 
-width of a wide angle peak if the correlation length was very large.
-The sample to detector distance was 220.6 mm, measured using silver behenate.
+unresolved width of a intrinsically infinitely narrow wide angle peak if the correlation length was very large.
+The sample to detector distance were 220.6 mm, measured using silver behenate.
 Then, the minimum peak width measured in $q$-space would be
 $\Delta q \approx 0.014$ \AA$^{-1}$.
 Wide angle X-ray scattering was collected at an incident angle of 0.2\textdegree. 
@@ -303,12 +328,12 @@ usually implies that the incident angle is less than the total reflection angle.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/ripple/geometric_broadening}
-  \caption{The geometric broadening due to the sample width and the beam width.
-  A top view of the sample (gray), Si wafer (blue), and 
+  \includegraphics[width=0.5\textwidth]{figures/ripple/geometric_broadening}
+  \caption{The geometric broadening due to the sample width $w_s$ and the beam width $\Delta x_\textrm{beam}$.
+  A top view of the sample (gray) on the Si wafer (blue), and 
   incoming and diffracted X-rays (bounded by red solid lines)
   are shown. The horizontal beam width is labelled as $\Delta x_\textrm{beam}$,
-  the sample width as $w_\textrm{s}$, the total scattering
+  the sample width as $w_\textrm{s}$, the total in-plane scattering
   angle for a lipid chain-chain correlation as $2\theta$, and 
   the geometric broadening as $\Delta x$.}
   \label{fig:geometric_broadening}
@@ -317,7 +342,7 @@ usually implies that the incident angle is less than the total reflection angle.
 \subsection{Transmission Wide Angle X-ray Scattering Experiment}
 The transmission wide angle X-ray scattering (TWAXS) experiment was also 
 carried out at the G1 station, and a similar instrumental resolution
-to the one used in the low angle experiment was used.
+to the one in sec?.
 The sample to detector distance was measured to be 170 mm using a sliver behenate 
 when the angle of incidence $\omega$ was 0\textdegree.
 The incident angle was set to -45\textdegree\ for transmission data
@@ -330,8 +355,8 @@ measure the sample to detector distance, low angle scattering was collected
 at a fixed $\omega$. Due to the sample mosaic spread, many orders were
 visible. While the relative intensity of each order was inaccurate, 
 the position of peaks was the same as that observed with a rotating sample.
-The sample to detector distance was accurately measured at $\omega$ = 0\textdegree
-usign a silver behenate sample. From the geometry of the sample holder,
+The sample to detector distance was accurately measured at $\omega$ = 0\textdegree\
+using a silver behenate sample. From the geometry of the sample holder,
 a shift in the sample to detector distance was estimated for an arbitrary 
 incident angle $\omega$.
 
@@ -350,7 +375,7 @@ wafer.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/ripple/transmission/sample_holder1.jpg}
-  \caption{Picture of the sample holder looking from the above. A lead tape was
+  \caption{Picture of the sample holder looking from above. A lead tape was
   attached to the back of the sample holder to help reduce the background 
   scattering, typically coming from the air gap between the flightpath snout
   and the mylar window of the chamber.}
@@ -400,11 +425,10 @@ wafer.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Some Theories}\label{sec:some_theories}
+\section{LAXS analysis}\label{sec:some_theories}
 \subsection{Lattice Structure}\label{sec:lattice_structure}
-It has been shown from X-ray studies that ripples in in different bilayers
-are registered to form a two-dimensional oblique lattice as shown in Fig.~\ref{fig:lattice}. 
-The unit cell vectors in the ripple phase can be expressed as 
+The unit cell vectors in two-dimensional oblique lattice shown in Fig.~\ref{fig:lattice}
+can be expressed as 
 \begin{equation}
   \mathbf{a} = \frac{D}{\tan\gamma}\xhat + D\zhat
 \end{equation}
@@ -431,8 +455,8 @@ so its Cartesian components are
   & \mathbf{q}_{hk}\cdot\yhat = q_{hk}^y = 0 \\
   & \mathbf{q}_{hk}\cdot\zhat = \qz{hk} = \frac{2\pi h}{D} - \frac{2\pi k}{\lambda_r\tan\gamma}.
 \end{align}
-Our sample consists of many ripple domains with varying directions of the
-ripple wave vector. In this case, $q_{hk}^x$ and $q_{hk}^y$ are combined to 
+Our sample consists of a uniform distribution of in-plane directions of the
+ripple wave vector, $\mathbf{b}$. In this case, $q_{hk}^x$ and $q_{hk}^y$ are combined to 
 give $q_{hk}^r = 2\pi k/\lambda_r$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -531,7 +555,8 @@ almost impossible to analyze without the use of Eq.~(\ref{eq:qxqyqz}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Lorentz Correction}\label{sec:Lorentz_correction}
-Our sample has in-plane rotational symmetry. This means that the sample 
+Our sample has in-plane rotational symmetry about the $z$-axis. 
+Ignoring mosaic spread to which we will come back later, this means that the sample 
 consists of many domains with differing ripple directions, all domains
 being parallel to the substrate.  
 In sample $q$-space, ripple $k\neq 0$ side peaks are represented as rings 
@@ -539,12 +564,12 @@ centered at the meridian, or $q_z$-axis,
 while $k=0$ peaks are still points on the meridian 
 (see Fig.~\ref{fig:ripple_sample_qspace}). 
 Then, for an arbitrary incident angle, $k=0$ peaks are not observed
-while side peaks are observed. 
-In order to capture both $k=0$ and $k\neq 0$ side peaks in one X-ray exposure, 
-the sample was continuously rotated. As a result of this rotation, 
+while side peaks are observed for a range of omega as will now be explained. 
+In order to capture all hk peaks in one X-ray exposure, 
+the sample was continuously rotated about the x-axis. As a result of this rotation, 
 $k=0$ peaks become arcs that subtend an angle $2\theta_{h0}$,
 as shown in Fig.~\ref{fig:ewald_main}, with its length
-equal to $2\theta_{h0}\qz{h0}$.  
+equal to $2\theta_{h0}\qz{h0}$. Cut off fact, say here $2\theta $
 
 The detector records the intersections of these arcs with the 
 Ewald sphere, so the total scattering intensity is the product of the observed intensity,
@@ -552,8 +577,10 @@ $\Io{hk}$ with the arc length, that is,
 \begin{equation}
   I = 2\theta_{h0}\qz{h0} \Io{h0}. \label{eq:main_ewald}
 \end{equation}
+This is the usual Lorentz correction for lamellar orders.
 
-Because the sample has in-plane rotational symmetry, $k\neq 0$
+This is a preview, looking at same h but different k
+Because the sample has in-plane rotational symmetry about the $z$-axis, $k\neq 0$
 side peaks are represented as
 rings whose radius is $\qr{hk}$. 
 Because only the domains
@@ -570,12 +597,13 @@ However, as Fig.~\ref{fig:ewald_side} shows, only small parts of the rings
 are actually intersected with the Ewald sphere.  
 Then, the total scattering intensity is given by
 \begin{equation}
-  I=2\pi \qr{k} \Io{k}. \label{eq:side_ewald}
+  I=2\pi \qr{hk} \Io{hk}. \label{eq:side_ewald}
 \end{equation}
 Inverting Eq.~(\ref{eq:main_ewald}) and (\ref{eq:side_ewald}) 
 and realizing that the intensity is the form factor
 squared, we can calculate the observed intensity, $\Io{hk}$, 
 from a model for an electron density in the ripple phase.
+But above is not the whole story and we need to do more work.
 
 \begin{figure}[htbp]
   \centering
@@ -586,7 +614,7 @@ from a model for an electron density in the ripple phase.
   A ripple $k\neq 0$ ring is the black ring centered about the $q_z$-axis. 
   The portion of the ring that is 
   inside the Ewald sphere is shown as a red dashed line and the portion of the 
-  ring that is outside but behind the Ewald sphere is shown as a black
+  ring that is outside but behind the Ew here to sayald sphere is shown as a black
   dotted line. The magnitude of the total scattering angle is exaggerated. 
   With a wavelength
   of 1.175 \AA, the magnitude $|\kin|=5.35$ \AA$^{-1}$. For a $h=5$ peak,
@@ -625,7 +653,7 @@ from a model for an electron density in the ripple phase.
 
 Mathematically, the rotation is  
 equivalent to an integration over $\omega$. In low angle X-ray scattering, 
-$q_z$ is constant at a given pixel as $\omega$ is changed, which can be seen from 
+$q_z$ is nearly constant at a given pixel as $\omega$ is changed, which can be seen from 
 Eq.~(\ref{eq:qxqyqz_small}). $\omega$ dependence appears only through $q_y$, 
 so rotating the sample is realized by integrating over $q_y$. 
 To derive the integration limits, let us consider two cases: (a) When $\omega \leq 0$,
@@ -649,7 +677,7 @@ written as,
              S_{hk}(\mathbf{q}),
   \label{eq:I_obs_general}
 \end{align}
-where $1/q_z$ factor in $q_y$ integration is the Lorentz polarization factor
+where $1/q_z$ factor in $q_y$ integration is the usual Lorentz polarization factor
 in the small angle approximation. The second line in Eq.~\ref{eq:I_obs_general}
 is derived anticipating that $q_z$ is a constant for any Bragg orders, so that
 $q_z$ integration simply replaces $q_z$ variables with $\qz{hk}$. 
@@ -712,7 +740,7 @@ We avoid propagating the uncertainties by fitting a model to observed intensity.
 (Under construction)
 In this section, we derive the absorption correction for the thin film
 sample. The calculation involves an explicit integration over the incident angle, 
-$\omega$, which is necessiated by the sample rotation during an x-ray exposure. 
+$\omega$, which is necessitated by the sample rotation during an x-ray exposure. 
 The procedure is to write down an absorption factor, $A(\omega,\theta)$, for a 
 given scattering angle at a given incident angle, and
 then integrate over $\omega$. We ignore $q_x$ dependence because the X-ray
@@ -723,7 +751,7 @@ section.
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/ripple/absorption_LAXS}
+  \includegraphics[width=0.5\textwidth]{figures/ripple/absorption_LAXS}
   \caption{The path of X-rays within the sample. The incident angle is 
   $\omega$ and the total scattering angle is $2\theta$. An X-ray with a
   penetration depth of $z$ is shown. The total thickness of the sample
@@ -776,15 +804,26 @@ Equating Eq.~(\ref{eq:I_obs1}) and (\ref{eq:I_obs2}), we get
   \label{eq:ang_abs_factor}
 \end{equation}
 If $\mu$ is taken to infinity (no absorption), $A(\omega,\theta)$ 
-goes to 1 as expected. (make a plot of $A(\omega,\theta)$.
-$A(\omega=\theta_B,\theta=\theta_B)$ gives the absorption factor for
-the $k=0$ peaks.
+goes to 1 as expected.
+The absorption factor $A_{h0}$ for the $k=0$ peaks is given by
+$A(\omega=\theta=\theta_B)$, plotted in Fig.~\ref{fig:abs_factor}.
+As shown, this factor is about 30 \% for $h=1$ peak, so it is not negligible.
 
-For $k\neq 0$ satellite peaks, an integration over the incident angle $\omega$
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/ripple/abs_factor}
+  \caption{Absorption factors as a function of $q_z \approx 4\pi\theta/\lambda$.
+  The values at $q_z=2\pi h/D$ corresponding to $D=58$ \AA\ are shown as squares.
+  $\mu$ = 2600 $\mu$m, $t$ = 10 $\mu$m, and $\lambda$ = 1.175 \AA.}
+  \label{fig:abs_factor}
+\end{figure}
+%------------------------------------------------------------------------------
+
+For $k\neq 0$ side peaks, an integration over the incident angle $\omega$
 is necessary because these peaks are observable at all incident angles as
 described in section \ref{sec:Lorentz_correction}.
-The total observed intensity from a sample that is being rotated during 
-an exposure is simply
+The total observed intensity from a rotating sample is simply
 \begin{equation}
   I_{\textrm{total}}(\theta) 
   = \int_0^{2\theta}\textrm{d}\omega I_{\textrm{obs}}(\omega,\theta).
@@ -809,7 +848,7 @@ at the final absorption factor
   \frac{1-\exp\left(-\frac{t}{\mu}g(\omega,\theta)\right)}{g(\omega,\theta)}.
   \label{eq:abs_factor}
 \end{equation}
-Make a plot of $A(\theta)$.
+$A_{hk} = A(\theta)$ is plotted in Fig.~\ref{fig:abs_factor}.
 The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_factor}). 
 
 
@@ -824,8 +863,8 @@ The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_facto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model}
 \subsection{Contour Part of the Form Factor}
-As in ref, we take the ripple profile to have a sawtooth-like profile. Its
-amplitude is  $A/2$ and the projection of the major arm on the 
+As in ref, we take the ripple profile to have a sawtooth profile. Its
+amplitude is  $A$ and the projection of the major arm on the 
 ripple direction is $x_0$ as shown in Fig. X. Then, we write the ripple 
 profile as
 \begin{equation}
@@ -842,10 +881,10 @@ profile as
       & \frac{x_0}{2} < x \leq \frac{\lambda_r}{2}.
     \end{array} \right.
 \end{equation}
-The ripple profile has the inversion symmetry, so that the resulting
+The ripple profile has inversion symmetry, so that the resulting
 form factor is real. $A$ and $x_0$ are fitting parameters that depend 
-on the integrated intensity of each peak while $D$ and $\lambda_r$ are
-determined from measuring the positions of the Bragg peaks.
+on the integrated intensity of each peak while $D$, $\lambda_r$, and $\gamma$
+are determined from measuring the positions of the Bragg peaks.
 
 In order to allow the electron density along the ripple direction to 
 modulate, we include two additional parameters, one to allow for the electron
@@ -894,6 +933,7 @@ and the bridging part is given by
 \end{equation}
 with $\deltazh=\zw-\zchtwo$. Here, we assume $\zh{2}>\zh{1}$. 
 Table \ref{tb:zchtwozw} shows some of the definitions.
+
 %------------------------------------------------------------
 \begin{table}[htb]
   \centering
@@ -906,10 +946,11 @@ Table \ref{tb:zchtwozw} shows some of the definitions.
   \label{tb:zchtwozw}
 \end{table}
 %------------------------------------------------------------
+
 The transbilayer profile along $x=-z\tan\psi$ can be obtained by rotating
 the coordinates $x$ and $z$ by $\psi$ in the clockwise direction and
 reexpressing $\rho(z)$ in terms of the rotated coordinates. This leads
-to replaincg $x$ with $x'=x\cos\psi+z\sin\psi$ and
+to replacing $x$ with $x'=x\cos\psi+z\sin\psi$ and
 $z$ with $z'=-x\sin\psi+z\cos\psi$. Then, the rotated transbilayer profile is
 \begin{equation}
   \rho(x,z) = \delta(x+z\tan\psi)\bracks{\rhog(z') + \rhos(z') + \rhob(z')}.
@@ -927,8 +968,8 @@ leads to the transbilayer part of the form factor,
 The form factor is calculated in the minus fluid convention, 
 where the bilayer electron density
 is measured with respect to the electron density of the surrounding solvent.
-The expression for $F_\mathrm{T}$ is rather messy and not shown. 
-The derivation and full expression can be found in the appendix. Here, 
+The expression for $F_\mathrm{T}$ is rather messy, so 
+the derivation and full expression are in the appendix. Here, 
 we note that
 the fitting parameters in this model are $\zh{i}$, $\sigmah{i}$, and 
 $\Rhm{i}$ for each of the two headgroup Gaussian functions, $\sigmam$ for
@@ -941,11 +982,12 @@ In total, the modified 2G hybrid model implements 14 structural parameters.
 \section{Results}
 \subsection{Data and Electron Density Profile}
 Table~\ref{tb:lattice_const} summarizes data we analyzed. 
-As shown, we measured scattering in a almost identical conditions as the
-Wack and Webb's. This data allowed us to check our data obtained by using
-an oriented sample against an unoriented sample. As discussed earlier, 
-these two types of samples give different Lorentz correction. We derived
-the Lorentz correction for our oriented sample. 
+As shown, we measured scattering on oriented samples in almost identical conditions as the
+best unoriented sample of Wack and Webb. 
+As discussed earlier, 
+these two types of samples have different Lorentz corrections, so 
+this allowed us to check our data obtained on
+oriented samples against an unoriented sample. 
 
 %------------------------------------------------------------
 \begin{table}[htbp]
