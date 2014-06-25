@@ -137,9 +137,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="215.18704"
-     inkscape:cy="184.67947"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-38.948791"
+     inkscape:cy="241.649"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -170,7 +170,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -180,14 +180,14 @@
      id="layer1"
      transform="translate(-196.18522,-258.39929)">
     <rect
-       style="fill:#0064ff;fill-opacity:1;stroke:none"
+       style="fill:#7d7d7d;fill-opacity:1;stroke:none"
        id="rect2985"
        width="300"
        height="150"
        x="230"
        y="413.36218" />
     <rect
-       style="fill:#646464;fill-opacity:1;stroke:none"
+       style="fill:#00ff00;fill-opacity:1;stroke:none"
        id="rect2985-2"
        width="300"
        height="50"
@@ -359,7 +359,7 @@
    id="tspan5425">s</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#646464;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
        x="531.18518"
        y="494.88599"
        id="text5391"
@@ -368,10 +368,10 @@
          id="tspan5393"
          x="531.18518"
          y="494.88599"
-         style="font-size:28px;fill:#646464;fill-opacity:1">sample</tspan></text>
+         style="font-size:28px;fill:#00ff00;fill-opacity:1">sample</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0064ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#7d7d7d;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
        x="534.04236"
        y="449.88599"
        id="text5395"
@@ -380,7 +380,7 @@
          id="tspan5397"
          x="534.04236"
          y="449.88599"
-         style="font-size:28px;fill:#0064ff;fill-opacity:1">Si wafer</tspan></text>
+         style="font-size:28px;fill:#7d7d7d;fill-opacity:1">Si wafer</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#000000;stroke-width:1.60358846;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -389,7 +389,7 @@
        sodipodi:cy="100.77238"
        sodipodi:rx="30.714285"
        sodipodi:ry="30.714285"
-       d="m 105.01204,83.993719 a 30.714285,30.714285 0 0 1 4.73581,20.706201"
+       d="m 105.01204,83.993719 c 3.99093,6.119192 5.67,13.460563 4.73581,20.706201"
        transform="matrix(0.8077675,-0.88826371,1.2134901,0.59127849,219.24397,491.62528)"
        sodipodi:start="5.7052665"
        sodipodi:end="6.4114099"

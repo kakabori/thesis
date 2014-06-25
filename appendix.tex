@@ -170,29 +170,11 @@ given
 by $S(\mathbf{q'})=S(q,\theta',\phi')$. Summing over all the domains, we get 
 for the total structure factor
 \begin{equation}
-  S_M(q,\theta,\phi) 
-    = \int_0^{2\pi} \!\! \mathrm{d}\beta \int_0^{\frac{\pi}{2}} 
-      \mathrm{d}\alpha \, \sin\alpha \, S(q,\theta',\phi') \, P(\alpha)
+  S_M(q,\theta,\phi) = \int_0^{2\pi}\mathop{d\beta} \int_0^{\frac{\pi}{2}} 
+  \mathop{d\alpha} S(q,\theta',\phi')P(\alpha)
   \label{eq:SM}
 \end{equation}
 with Eq.\,(\ref{eq:theta'}) and Eq.\,(\ref{eq:phi'}).
-
-For $\theta=0$, $\theta'=\alpha$ and $\phi'=0$ or $\pi$, so we have
-\begin{align}
-  S_M(q,0) 
-    &\sim \int_0^{\frac{\pi}{2}} \mathrm{d}\alpha \, \sin\alpha \, 
-          S(q,\alpha,0) \, P(\alpha)
-          + \int_0^{\frac{\pi}{2}} \mathrm{d}\alpha \, \sin\alpha \, 
-            S(q,\alpha,\pi) \, P(\alpha) \\
-    &= \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \mathrm{d}\alpha \, \sin\alpha \, 
-       S(q,\alpha) \, P(\alpha)
-\end{align} 
-if we understand $S(q,\alpha)$ to be the structure factor on the ($q_r$,$q_z$) 
-plane. This shows that $S_M(q,0)$ is equal to the convolution of the 
-distribution
-function and the original structure factor. In general, however, $S_M(q,\theta)$ 
-is 
-not a convolution of the distribution function and the structure factor.
 
 Given Eqs.\,(\ref{eq:theta'}), (\ref{eq:phi'}), and (\ref{eq:SM}), we want to
  show that
@@ -214,7 +196,7 @@ where $\delta(x)$ is the Dirac delta function. Plugging \Eq{eq:Bragg} in
 \Eq{eq:SM},
 we obtain $\phi-\beta=0$. Using this condition, we get 
 \begin{equation}
-  S_M(q,\theta) \sim \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta)\sin\theta,
+  S_M(q,\theta) \sim \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta),
 \end{equation}
 which shows that we can directly measure the probability distribution 
 experimentally
@@ -232,32 +214,45 @@ conventional method to measure mosaicity distribution is a rocking scan, where
 one measures the integrated intensity of a given Bragg peak as a function of 
 $\omega$ with a fixed detector position. In a non-conventional method called
 ring analysis, one measures the intensity as a function of $\eta$ on a two
-dimensional detector. First, we want to show that the two methods mentioned 
-above in fact measure the mosaicity disitribution and therefore are equivalent
-to each other.
+dimensional detector. First, we want to compare the two methods mentioned 
+above and figure out the exact relationship between them.
 
-Let $\omega$ be the angle of incidence, $2\theta$ be the total scattering angle,
-$p_x$ be the pixel number in the horizontal direction, $p_z$ be the pixel 
-number in the vertical direction, $eta$ be the angle measured from the 
-$p_z$-axis 
-on the detector. $\Delta p$ is 0.07113 mm/pixel. $q_x=\mathbf{q} \cdot 
-\hat{\mathbf{x}}$, $q_y=\mathbf{q} \cdot \hat{\mathbf{y}}$, and $q_z=\mathbf{q} 
-\cdot \hat{\mathbf{z}}$, 
-where $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$, and $\hat{\mathbf{z}}$ are all 
-defined on the sample space. This means that $\hat{\mathbf{y}}$ and 
-$\hat{\mathbf{z}}$ both rotate as $\omega$ is varied while $\hat{\mathbf{x}}$ 
-is always perpendicular to the beam. What we need is a set of transformation
-rules for going from the detector space (pixels) to the sample $q$-space.
-With them, we would know how to trace out a line on the detector in order
-to measure the mosaicity distribution. 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/ripple/mosaic/ring_setup}
+  \caption{Notations used in this section. The arc originating from the $Z$-axis
+  is the mosaic arc due to the mosaic spread distribution.}
+  \label{fig:ring_setup}
+\end{figure}
 
-In terms of the coordinates defined in section~\ref{sec:sample_q-space}, in the rocking scan, $\phi=\pi/2$ and 
-$q=2\pi h/D$
-while $\omega$ is varied about $\theta_B$, where $\theta_B$ is the Bragg
-angle for a Bragg peak that is focused on. Using $q=4\pi\sin\theta/\lambda$, 
-we recover the Bragg condition, $2D\sin\theta=h\lambda$. Plugging $\phi=\pi/2$
-in Eq.\,(\ref{eq:qx}), (\ref{eq:qy}), and (\ref{eq:qz}), and taking 
-$\theta=\theta_B$, 
+
+Using the coordinates defined in Fig.~\ref{fig:ring_setup},
+borrowing Eq.~(\ref{eq:qxqyqz}), and replacing $\phi=\pi/2-\chi$,
+we have
+\begin{align}
+  q_x &= q\cos\theta\sin\chi, \nonumber\\
+  q_y &= q\left(-\sin\theta\cos\omega + \cos\theta\cos\chi\sin\omega\right), \nonumber\\
+  q_z &= q\left(\sin\theta\sin\omega + \cos\theta\cos\chi\cos\omega\right),
+  \label{eq:ccd2q}
+\end{align}
+or in the small angle approximation,
+\begin{align}
+  q_x &\approx \frac{4\pi\theta\sin\chi}{\lambda} \approx kX/S \nonumber\\
+  q_y &\approx q_z\omega -\frac{4\pi\theta^2}{\lambda} \approx q_z\omega - \frac{\lambda q_z^2}{4\pi}\nonumber\\
+  q_z &\approx \frac{4\pi\theta\cos\chi}{\lambda} \approx kZ/S.
+  \label{eq:ccd2q_small}
+\end{align}
+For a rocking scan focused on a particular order, 
+$\chi=0$ and $\theta=\theta_B$ while $\omega$ is varied about $\theta_B$, 
+where $\theta_B$ is the Bragg angle. Then, 
+\begin{align}
+  q_x &= 0 \nonumber\\
+  q_y &= q\sin(\omega-\theta_B) \nonumber\\
+  q_z &= q\cos(\omega-\theta_B),
+  \label{eq:rock} 
+\end{align}
+which shows that this scan traces a circular path in the $q_x=0$ plane.
+
 
 \subsection{Results}
 
