@@ -8,44 +8,99 @@ at lower $q_z$ than we have traditionally measured.
 
 \subsection{Results}
 
-\section{Proper Incorporation of Mosaic Spread to NFIT analysis}
+\section{Mosaic Spread for NFIT analysis}
 \label{sec:mosaic_spread}
-First we describe the theory of mosaic spread for diffuse scattering. 
-Next we discuss some simplification. Third, we discuss the program.
+First we describe an analysis of mosaic spread for diffuse scattering. 
+Next we discuss some experimental methods. Third, we discuss the updated NFIT program.
 Fourth, we show the results.
 
 \subsection{Mosaic Spread: Calculation}
-(Some things are messed up.)
-In this section, an analytical framework for a measurement of mosaic spread will 
-be developed. Let us imagine that a sample is made up of many small domains 
-that are 
-tilted from the direction perpendicular to the substrate normal by some amount. 
-A "perfect" domain is a domain that is parallel to the substrate plane.
-Then, we can consider a probability distribution function, $P(\alpha)$, 
-representing a probablity of finding a domain with tilt $\alpha$, which is the 
-angle
-between the substrate normal and the tilted domain normal. Here, we have
-assumed the rotational symmetry about the substrate normal, so that the 
-distribution
-does not depend on the azimuthal angle, $\beta$. The normalization condition on 
-the probability distribution is 
+In this section, an analytical framework for dealing with mosaic spread is 
+developed. A sample of oriented stacks of bilayers consists of many small domains, 
+within which layers are registered in an array. The stacking direction $\mathbf{n'}$ of a domain is the 
+direction perpendicular to these layers. 
+A ``perfect'' domain is a domain parallel to the substrate $xy$-plane and 
+its stacking direction is $\mathbf{n}$ as shown in Fig.~\ref{fig:spherical_coordinates}.
+Then, we consider a mosaic spread distribution function, $P(\alpha)$, 
+representing a probability of finding a domain with tilt $\alpha$. 
+We assume that the sample is symmetric about the substrate normal $\mathbf{n}$, 
+so that the distribution $P(\alpha)$ does not depend on the azimuthal angle, $\beta$. 
+The normalization condition on $P(\alpha)$ is 
 \begin{equation}
   1 = \int_0^{2\pi} \!\! \mathrm{d}\beta  
       \int_0^{\frac{\pi}{2}} \! \mathrm{d}\alpha \, \sin\alpha \, P(\alpha).
 \end{equation}
-The object of this section is to derive the x-ray scattering structure factor 
-including the probability distribtion. The cooridate system employed here is 
-such that x, y, and
-z-axes of the zero tilt domain, that is, a domain parallel to the substrate, 
-coincide with the lab x, y, and z-axes 
+The object of this section is to derive the X-ray scattering structure factor 
+including the distribution function $P(\alpha)$. 
 
-First, we want to calculate the structure factor for a domain tilted by 
-$\alpha$ and $\beta$, expressed in the lab coordinates (Need a figure). 
-For this, we need to express
-$\mathbf{q}$ in terms of . We imagine
-rotating the coorinates about the y-axis first, and then about the z-axis. In
-other words, we apply the appropriate rotation matrices to , y, and 
-z-axes. The rotation matrix for rotaing a vector about y-axis is given by
+\begin{figure}
+  \centering
+  \includegraphics[width=0.65\textwidth]{figures/ripple/mosaic/stack}
+  \quad
+  \includegraphics[width=0.25\textwidth]{figures/ripple/mosaic/spherical_coordinates}
+  \caption{Two dimensional view of mosaic spread (left) and 
+  notations used in this section (right). 
+  The stacking direction of a perfect
+  domain is $\mathbf{n}$ and that of a tilted domain $\mathbf{n'}$. 
+  The deviation of $\mathbf{n'}$ from $\mathbf{n}$ denoted as $\alpha$
+  quantifies the degree of mis-orientation of a domain. 
+  The $x$, $y$, and $z$-axes are the sample coordinates.}
+  \label{fig:spherical_coordinates}
+\end{figure}
+
+First, let us consider a two dimensional example. 
+Our sample consists of two identical domains except a tilt $\alpha$
+shown in Fig.~\ref{fig:mosaic_2D}.
+Then, the sample structure factor $S^\textrm{sam}(\mathbf{q})$ is 
+a superposition of the structure factor $S(\mathbf{q})$ of the perfect
+domain and $S(\mathbf{q'})$ of the tilted domain,
+\begin{equation}
+  S^\textrm{sam}(\mathbf{q}) = S(q_x,q_z) + S(q_x',q_z').
+  \label{eq:S2D}
+\end{equation}
+To express $S(q_x',q_z')$ in terms of the sample $q$-space $(q_x,q_z)$, 
+we write $q_x'$ and $q_z'$ in terms of $q_x$, $q_z$, and $\alpha$,
+\begin{align}
+  q_x' &= \mathbf{q}\cdot\xhat' = q\cos\left(\frac{\pi}{2}-\theta+\alpha\right) \nonumber\\
+  q_z' &= \mathbf{q}\cdot\zhat' = q\sin\left(\frac{\pi}{2}-\theta+\alpha\right) \nonumber\\
+  q_x &= q\cos(\pi/2-\theta) \nonumber\\
+  q_z &= q\sin(\pi/2-\theta)
+  \label{eq:q2D}
+\end{align}
+where $q=|\mathbf{q}|$. Eq.~(\ref{eq:S2D}) and (\ref{eq:q2D}) give
+the structure factor of a sample consisting of the two domains. With a 
+continuous distribution of $\mathbf{n'}$, we integrate over the angle $\alpha$
+with each structure factor modulated by the distribution function $P(\alpha)$,
+\begin{equation}
+  S_M(\mathbf{q})=S_M(q,\theta)=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}
+  \mathop{d\alpha} S(q_x',q_z')P(\alpha),
+  \label{eq:SM2D}
+\end{equation}
+Variables $q$ and $\theta$ are used in the above equation to make a connection with the
+three dimensional case, where the spherical coordinates are convenient, which
+we discuss now.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.55\textwidth]{figures/ripple/mosaic/mosaic_2D}
+  \quad\quad
+  \includegraphics[width=0.25\textwidth]{figures/ripple/mosaic/mosaic_2Dqspace}
+  \caption{Example of a two dimensional sample consisting of a perfect 
+  and tilted domains. $\mathbf{q} = (q_x,q_z)$ is the sample $q$-space and
+  $\mathbf{q'} = (q_x',q_z')$ is the domain $q$-space. The two $q$-spaces
+  are related by a rotation of $\alpha$ about the $y$-axis, which is into 
+  the page.}
+  \label{fig:mosaic_2D}
+\end{figure}
+
+For a three dimensional sample, the basic idea is the same as the two 
+dimensional case. In the three dimensional case, we also rotate the vector
+about the $z$-axis by an angle $\beta$ after the rotation about the $y$-axis
+by an angle $\alpha$, so
+all we need to do is to apply appropriate rotation matrices to
+the sample $xyz$-axes, which, then, defines the domain coordinates $x'y'z'$.
+
+The rotation matrix for rotaing a vector about y-axis is given by
 \begin{equation}
   \begin{pmatrix} 
     \cos\alpha & 0 & -\sin\alpha \\ 
@@ -59,7 +114,7 @@ and for ratating about z-axis
     \cos\beta & \sin\beta & 0 \\ 
     -\sin\beta & \cos\beta & 0 \\
     0 & 0 & 1 
-  \end{pmatrix}
+  \end{pmatrix}.
 \end{equation}
 Then, what we want is
 \begin{equation}
@@ -132,43 +187,34 @@ Then, what we want is
     \sin\alpha\cos\beta \\
     \sin\alpha\sin\beta \\
     \cos\alpha
-  \end{pmatrix}
+  \end{pmatrix}.
 \end{equation}
-Then, the components of $\mathbf{q}$ represented in the rotated coodinates, 
-denoted 
-by $\mathbf{q'}$, are the projection of $\mathbf{q}$ on x$'$, y$'$, and 
-z$'$-axes, 
-that is,
-\begin{equation}
-  q_x' = \mathbf{q} \cdot \mathbf{\hat{x}'} 
-       = q_x\cos\alpha\cos\beta + q_y\cos\alpha\sin\beta -q_z\sin\alpha  
-\end{equation}
-\begin{equation}
-  q_y' = \mathbf{q} \cdot \mathbf{\hat{y}'} 
-       = -q_x\sin\beta + q_y\cos\beta  
-\end{equation}
-\begin{equation}
-  q_z' = \mathbf{q} \cdot \mathbf{\hat{z}'} 
-       = q_x\sin\alpha\cos\beta + q_y\sin\alpha\sin\beta + q_z\cos\alpha  
-\end{equation}
-The transformation rule we are looking for is 
-\begin{equation}
+The domain $q$-space, $(q_x',q_y',q_z')$, in terms of the sample $q$-space 
+$(q_x,q_y,q_z)$ is given by
+\begin{align}
+  q_x' &= \mathbf{q} \cdot \mathbf{\hat{x}'} 
+  = q_x\cos\alpha\cos\beta + q_y\cos\alpha\sin\beta -q_z\sin\alpha, 
+  \label{eq:qx'} \\
+  q_y' &= \mathbf{q} \cdot \mathbf{\hat{y}'} 
+  = -q_x\sin\beta + q_y\cos\beta, 
+  \label{eq:qy'} \\
+  q_z' &= \mathbf{q} \cdot \mathbf{\hat{z}'} 
+  = q_x\sin\alpha\cos\beta + q_y\sin\alpha\sin\beta + q_z\cos\alpha.
+  \label{eq:qz'}
+\end{align}
+The transformation expressed in the spherical coordinates is 
+\begin{align}
   \cos\theta' = \frac{q_z'}{q} 
-              = \sin\theta\sin\alpha\cos(\phi-\beta) + \cos\theta\cos\alpha 
-  \label{eq:theta'}
-\end{equation}
-and
-\begin{equation}
+              = \sin\theta\sin\alpha\cos(\phi-\beta) + \cos\theta\cos\alpha, 
+               \label{eq:theta'}\\
   \tan\phi' 
     = \frac{q_y'}{q_x'}
     = \frac{\sin\theta\sin(\phi-\beta)}{\sin\theta\cos\alpha\cos(\phi-\beta) 
-                                       -\cos\theta\sin\alpha}
+                                       -\cos\theta\sin\alpha}.
   \label{eq:phi'}
-\end{equation}
-The structure factor of the tilted domain in the lab coordinates is simply 
-given 
-by $S(\mathbf{q'})=S(q,\theta',\phi')$. Summing over all the domains, we get 
-for the total structure factor
+\end{align}
+Summing over all the domains, we get 
+for the mosaic spread modified structure factor
 \begin{equation}
   S_M(q,\theta,\phi) = \int_0^{2\pi}\mathop{d\beta} \int_0^{\frac{\pi}{2}} 
   \mathop{d\alpha} S(q,\theta',\phi')P(\alpha)
@@ -176,33 +222,29 @@ for the total structure factor
 \end{equation}
 with Eq.\,(\ref{eq:theta'}) and Eq.\,(\ref{eq:phi'}).
 
-Given Eqs.\,(\ref{eq:theta'}), (\ref{eq:phi'}), and (\ref{eq:SM}), we want to
- show that
-mosaic spread acts as one dimensional convolution in the x-ray structure factor:
+The structure factor for a stack of rigid layers with their normals parallel
+to the $z$-axis in the spherical coordinates is
 \begin{equation}
-  S_M(q,\theta) 
-    = \int_{-\pi}^{\pi} \mathrm{d}\alpha \, S(q,\theta-\alpha) \, P(\alpha)
-  \label{eq:conv}
+  S(q,\theta,\phi) = \frac{\delta(q-\frac{2\pi h}{D})}{q^2} 
+  \delta(\cos\theta-1) \delta(\phi)
+  \label{eq:Bragg_spherical}
 \end{equation}
-The structure factor representing Bragg peaks in the spherical coordinates are 
-written as
-\begin{equation}
-  S(q,\theta,\phi) 
-    \sim \frac{\delta(q-\frac{2\pi h}{D})}{q^2} 
-         \delta(\cos\theta-1) \delta(\phi)
-  \label{eq:Bragg}
-\end{equation}
-where $\delta(x)$ is the Dirac delta function. Plugging \Eq{eq:Bragg} in 
-\Eq{eq:SM},
-we obtain $\phi-\beta=0$. Using this condition, we get 
-\begin{equation}
-  S_M(q,\theta) \sim \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta),
-\end{equation}
-which shows that we can directly measure the probability distribution 
-experimentally
-by looking at the intensity along $q=2\pi h/D$. In the next section, we will 
-discuss 
-the relevant experimental techniques.
+where $\delta(x)$ is the Dirac delta function. 
+From Eq.~(\ref{eq:phi'}), $\delta(\phi')$ is equivalent to
+$\delta(\beta-\phi)$. Setting $\beta=\phi$ in Eq.~(\ref{eq:theta'}) gives
+$\cos\theta'=\cos(\alpha-\theta)$. 
+Then,the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
+\begin{align}
+  S_M(q,\theta,\phi) &= \int\mathop{d\alpha}\int\mathop{d\beta}
+  \frac{\delta(q-\frac{2\pi h}{D})}{q^2} \delta(\cos\theta'-1) \delta(\beta-\phi)P(\alpha) \nonumber\\
+  &= \frac{\delta(q-\frac{2\pi h}{D})}{q^2} \int\mathop{d\alpha} \delta(\cos[\alpha-\theta]-1)P(\alpha)\nonumber\\
+  &= \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta).
+  \label{eq:SM_Bragg}
+\end{align}
+Eq.~(\ref{eq:SM_Bragg}) suggests a hemispherical shell of intensity with
+a radius of $2\pi h/D$ in the sample $q$-space. As will be described
+in the next section, a 2D detector records a cross section of this shell,
+which gives rise to mosaic arcs along $q=2\pi h/D$. 
 
 \subsection{Mosaic Spread: Experiment}
 (Under construction)
@@ -212,9 +254,10 @@ to measure the mosaic distribution, $P(\alpha)$. In our setup, the angle of
 incidence between the beam and substrate, denoted by $\omega$, can be varied. A 
 conventional method to measure mosaicity distribution is a rocking scan, where
 one measures the integrated intensity of a given Bragg peak as a function of 
-$\omega$ with a fixed detector position. In a non-conventional method called
-ring analysis, one measures the intensity as a function of $\eta$ on a two
-dimensional detector. First, we want to compare the two methods mentioned 
+$\omega$ with a fixed detector position. Another method called
+ring analysis measures the intensity as a function of $\chi$ on a two
+dimensional detector (see Fig.~\ref{fig:ring_setup}). 
+First, we want to compare the two methods mentioned 
 above and figure out the exact relationship between them.
 
 \begin{figure}
@@ -251,17 +294,77 @@ where $\theta_B$ is the Bragg angle. Then,
   q_z &= q\cos(\omega-\theta_B),
   \label{eq:rock} 
 \end{align}
-which shows that this scan traces a circular path in the $q_x=0$ plane.
+which shows that this scan traces a part of the circular path in the $q_x=0$ plane
+as shown in Fig.~\ref{fig:rock}. As Fig.~\ref{fig:rock} shows, however, the 
+rocking scan only probes a small fraction of the entire distribution, limited
+by $2\theta_B$. As discussed in section~\ref{sec:Lorentz_correction}, beyond
+$\omega=2\theta_B$, the substrate blocks scattering. On the other hand,
+the ring analysis takes an advantage of a two dimensional detector and can probe
+a substantially wider range of the distribution, approximately $\pm$45\textdegree\
+at $\omega=\theta_B$. This method is now described.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/mosaic/rock}
+  \caption{Rocking scan trace in $q$-space.}
+  \label{fig:rock}
+\end{figure}
+
+In the ring method, we set $\omega=\theta_B$ and scan on the detector
+along $\theta=\theta_B$ as a function of $\chi$. 
+Then, Eq.~(\ref{eq:ccd2q}) becomes
+\begin{align}
+  q_x &= q\cos\theta_B\sin\chi, \nonumber\\
+  q_y &= q\sin\theta_B\cos\theta_B(\cos\chi-1), \nonumber\\
+  q_z &= q(\sin^2\theta_B\ + \cos^2\theta_B\cos\chi),
+  \label{eq:ring}
+\end{align}
+where $q=4\pi\sin\theta_B/\lambda$. For small $\theta_B$, Eq.~(\ref{eq:ring})
+is reduced to
+\begin{align}
+  q_x &\approx q\sin\chi, \nonumber\\
+  q_y &\approx 0, \nonumber\\
+  q_z &\approx q\cos\chi.
+  \label{eq:ring_small}
+\end{align}
+Thus, the rocking scan and ring analysis are equivalent for small $\theta_B$,
+the condition of which is satisfied for low angle X-ray scattering.
+
+\subsection{NFIT}
+The updated NFIT first calculates a theoretical structure factor in 
+cylindrical coordinates \cite{Lyatskaya01}. This calculated structure factor $S(q_r,q_z)$
+has rotational symmetry about the $z$-axis, which eliminates $\phi'$ dependence
+in Eq.~(\ref{eq:SM}). The program interpolates $S(q_r,q_z)$ in terms
+of the spherical coordinates $q$ and $\theta$ with $\phi=0$ 
+to perform the double integration in Eq.~(\ref{eq:SM}). 
+After the mosaic spread integration, $q_y$ integration is done.
+For this integration, the calculated $S_M$ is interpolated 
+in terms of $q_x$, $q_y$, and $q_z$.
+
+If the structure factor defined in the Cartesian coordinates are desired
+(for a case of square domains instead of circular ones),
+Eq.~(\ref{eq:qx'} -- \ref{eq:qz'}) can be used instead of 
+Eq.~(\ref{eq:theta'}) and (\ref{eq:phi'}).
+
+An issue with the current analysis comes from the form factor $|F(q_z)|$,
+which is not calculated from a model in the NFIT. Because the mosaic
+spread integration mixes up intesity at different $q_z$ values, 
+the separation of $|F(q_z)|$ from $S(\mathbf{q})$ is in principle impossible. 
+One way to deal with this issue is to combine the SDP and NFIT programs, but
+that will end up with too many non-linear parameters.
+Another way to deal is to limit the fitting range to regions close to the meridian
+and truncate the distribution at an angle much smaller than $\pi/2$. 
+For a small range of integration, it is not unreasonable to assume that
+the form factor is approximately constant as can be seen from 
+Eq.~(\ref{eq:qz'}) with small $q_x$, $q_y$, and $\alpha$. 
+Therefore, the analysis developed in this appendix ignores the form factor.
 
 \subsection{Results}
 
-\section{Domain Size Distribution: Gaussian and Exponential}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Some More Details of Tat Stuff if needed}
 
-\section{Hard Wall Constraints in SDP}
-
-\section{Some More Details of Tat Stuff}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Ripple Phase}
 \section{Derivation of the contour part of the form factor}
 In this section, we derive $\FC$. The ripple profile, $u(x)$ is given by
