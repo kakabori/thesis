@@ -17,13 +17,16 @@ Fourth, we show the results.
 \subsection{Mosaic Spread: Calculation}
 In this section, an analytical framework for dealing with mosaic spread is 
 developed. A sample of oriented stacks of bilayers consists of many small domains, 
-within which layers are registered in an array. The stacking direction $\mathbf{n'}$ of a domain is the 
-direction perpendicular to these layers. 
-A ``perfect'' domain is a domain parallel to the substrate $xy$-plane and 
-its stacking direction is $\mathbf{n}$ as shown in Fig.~\ref{fig:spherical_coordinates}.
+within which layers are registered in an array. 
+An ideal domain is a domain where the layers are parallel to the substrate, whose
+surface is in the sample $xy$-plane, so
+the orientation $\mathbf{n}$ of an ideal domain is perpendicular
+to the substrate as shown in Fig.~\ref{fig:spherical_coordinates}.
+In general, the orientation $\mathbf{n'}$ of a domain is tilted from that of an
+ideal domain by some angle $\alpha$. 
 Then, we consider a mosaic spread distribution function, $P(\alpha)$, 
-representing a probability of finding a domain with tilt $\alpha$. 
-We assume that the sample is symmetric about the substrate normal $\mathbf{n}$, 
+representing a probability of finding a domain with a tilt $\alpha$. 
+We assume that the sample is symmetric about the substrate normal, 
 so that the distribution $P(\alpha)$ does not depend on the azimuthal angle, $\beta$. 
 The normalization condition on $P(\alpha)$ is 
 \begin{equation}
@@ -40,7 +43,7 @@ including the distribution function $P(\alpha)$.
   \includegraphics[width=0.25\textwidth]{figures/ripple/mosaic/spherical_coordinates}
   \caption{Two dimensional view of mosaic spread (left) and 
   notations used in this section (right). 
-  The stacking direction of a perfect
+  The stacking direction of an ideal
   domain is $\mathbf{n}$ and that of a tilted domain $\mathbf{n'}$. 
   The deviation of $\mathbf{n'}$ from $\mathbf{n}$ denoted as $\alpha$
   quantifies the degree of mis-orientation of a domain. 
@@ -52,7 +55,7 @@ First, let us consider a two dimensional example.
 Our sample consists of two identical domains except a tilt $\alpha$
 shown in Fig.~\ref{fig:mosaic_2D}.
 Then, the sample structure factor $S^\textrm{sam}(\mathbf{q})$ is 
-a superposition of the structure factor $S(\mathbf{q})$ of the perfect
+a superposition of the structure factor $S(\mathbf{q})$ of the ideal
 domain and $S(\mathbf{q'})$ of the tilted domain,
 \begin{equation}
   S^\textrm{sam}(\mathbf{q}) = S(q_x,q_z) + S(q_x',q_z').
@@ -85,7 +88,7 @@ we discuss now.
   \includegraphics[width=0.55\textwidth]{figures/ripple/mosaic/mosaic_2D}
   \quad\quad
   \includegraphics[width=0.25\textwidth]{figures/ripple/mosaic/mosaic_2Dqspace}
-  \caption{Example of a two dimensional sample consisting of a perfect 
+  \caption{Example of a two dimensional sample consisting of an ideal
   and tilted domains. $\mathbf{q} = (q_x,q_z)$ is the sample $q$-space and
   $\mathbf{q'} = (q_x',q_z')$ is the domain $q$-space. The two $q$-spaces
   are related by a rotation of $\alpha$ about the $y$-axis, which is into 
@@ -94,13 +97,13 @@ we discuss now.
 \end{figure}
 
 For a three dimensional sample, the basic idea is the same as the two 
-dimensional case. In the three dimensional case, we also rotate the vector
+dimensional case. In the three dimensional case, we also rotate the vector $\mathbf{n'}$
 about the $z$-axis by an angle $\beta$ after the rotation about the $y$-axis
 by an angle $\alpha$, so
 all we need to do is to apply appropriate rotation matrices to
 the sample $xyz$-axes, which, then, defines the domain coordinates $x'y'z'$.
 
-The rotation matrix for rotaing a vector about y-axis is given by
+The rotation matrix for rotating a vector about y-axis is given by
 \begin{equation}
   \begin{pmatrix} 
     \cos\alpha & 0 & -\sin\alpha \\ 
@@ -108,7 +111,7 @@ The rotation matrix for rotaing a vector about y-axis is given by
     \sin\alpha & 0 & \cos\alpha 
   \end{pmatrix}
 \end{equation}
-and for ratating about z-axis
+and for rotating about z-axis
 \begin{equation}
   \begin{pmatrix} 
     \cos\beta & \sin\beta & 0 \\ 
@@ -241,22 +244,24 @@ Then,the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
   &= \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta).
   \label{eq:SM_Bragg}
 \end{align}
-Eq.~(\ref{eq:SM_Bragg}) suggests a hemispherical shell of intensity with
-a radius of $2\pi h/D$ in the sample $q$-space. As will be described
-in the next section, a 2D detector records a cross section of this shell,
-which gives rise to mosaic arcs along $q=2\pi h/D$. 
+Eq.~(\ref{eq:SM_Bragg}) indicates hemispherical shells of intensity with
+radii of $2\pi h/D$ in the sample $q$-space. As will be described
+in the next section, a 2D detector records cross sections of these shells,
+which give rise to mosaic arcs along $q=2\pi h/D$. 
 
 \subsection{Mosaic Spread: Experiment}
-(Under construction)
 In this section, we discuss experimental procedures to probe appropriate 
 $q$-space
 to measure the mosaic distribution, $P(\alpha)$. In our setup, the angle of 
 incidence between the beam and substrate, denoted by $\omega$, can be varied. A 
-conventional method to measure mosaicity distribution is a rocking scan, where
+conventional method to measure mosaic spread distribution is a rocking scan, where
 one measures the integrated intensity of a given Bragg peak as a function of 
-$\omega$ with a fixed detector position. Another method called
-ring analysis measures the intensity as a function of $\chi$ on a two
-dimensional detector (see Fig.~\ref{fig:ring_setup}). 
+$\omega$ with a fixed detector position. Another method that takes an advantage
+of an area detector \cite{Rodriguez-Navarro07} 
+measures the intensity as a function of $\chi$ on a two
+dimensional detector (see Fig.~\ref{fig:ring_setup}). This method has been used
+to quantify complete pole figures for thin films with fiber texture (isotropic 
+in-plane orientation) \cite{Baker10}.
 First, we want to compare the two methods mentioned 
 above and figure out the exact relationship between them.
 
