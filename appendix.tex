@@ -1,8 +1,8 @@
 \chapter{Tat}
 \section{Analysis of Fixed Angle Data using NFIT}\label{sec:fixed_angle_analysis}
 In this section, I propose a slightly new method to analyze the diffuse 
-scattering data. This method may allow us to measure the X-ray form factor
-at lower $q_z$ than we have traditionally measured. 
+scattering data. This method may ease measurement of the X-ray form factor
+at lower $q_z$ ($\leq 0.25$ \AA$^{-1}$). 
 
 \subsection{Theory}
 
@@ -14,7 +14,7 @@ First we describe an analysis of mosaic spread for diffuse scattering.
 Next we discuss some experimental methods. Third, we discuss the updated NFIT program.
 Fourth, we show the results.
 
-\subsection{Mosaic Spread: Calculation}
+\subsection{Mosaic Spread: Calculation}\label{app:mosaic_calc}
 In this section, an analytical framework for dealing with mosaic spread is 
 developed. A sample of oriented stacks of bilayers consists of many small domains, 
 within which layers are registered in an array. 
@@ -30,8 +30,8 @@ We assume that the sample is symmetric about the substrate normal,
 so that the distribution $P(\alpha)$ does not depend on the azimuthal angle, $\beta$. 
 The normalization condition on $P(\alpha)$ is 
 \begin{equation}
-  1 = \int_0^{2\pi} \!\! \mathrm{d}\beta  
-      \int_0^{\frac{\pi}{2}} \! \mathrm{d}\alpha \, \sin\alpha \, P(\alpha).
+  1 = \int_0^{2\pi}\mathop{d\beta}  
+      \int_0^{\frac{\pi}{2}}\mathop{d\alpha}\sin\alpha P(\alpha).
 \end{equation}
 The object of this section is to derive the X-ray scattering structure factor 
 including the distribution function $P(\alpha)$. 
@@ -46,7 +46,7 @@ including the distribution function $P(\alpha)$.
   The stacking direction of an ideal
   domain is $\mathbf{n}$ and that of a tilted domain $\mathbf{n'}$. 
   The deviation of $\mathbf{n'}$ from $\mathbf{n}$ denoted as $\alpha$
-  quantifies the degree of mis-orientation of a domain. 
+  quantifies the degree of misorientation of a domain. 
   The $x$, $y$, and $z$-axes are the sample coordinates.}
   \label{fig:spherical_coordinates}
 \end{figure}
@@ -101,37 +101,30 @@ dimensional case. In the three dimensional case, we also rotate the vector $\mat
 about the $z$-axis by an angle $\beta$ after the rotation about the $y$-axis
 by an angle $\alpha$, so
 all we need to do is to apply appropriate rotation matrices to
-the sample $xyz$-axes, which, then, defines the domain coordinates $x'y'z'$.
+the sample $xyz$-axes which define the domain coordinates $x'y'z'$.
 
-The rotation matrix for rotating a vector about y-axis is given by
+The rotation matrix for rotating a vector about the $y$-axis is given by
 \begin{equation}
+  R_y =  
   \begin{pmatrix} 
-    \cos\alpha & 0 & -\sin\alpha \\ 
+    \cos\alpha & 0 & \sin\alpha \\ 
     0 & 1 & 0 \\
-    \sin\alpha & 0 & \cos\alpha 
+    -\sin\alpha & 0 & \cos\alpha 
   \end{pmatrix}
 \end{equation}
-and for rotating about z-axis
+and for rotating about the $z$-axis
 \begin{equation}
+  R_z = 
   \begin{pmatrix} 
-    \cos\beta & \sin\beta & 0 \\ 
-    -\sin\beta & \cos\beta & 0 \\
+    \cos\beta & -\sin\beta & 0 \\ 
+    \sin\beta & \cos\beta & 0 \\
     0 & 0 & 1 
   \end{pmatrix}.
 \end{equation}
 Then, what we want is
 \begin{equation}
   \mathbf{\hat{x}}' = 
-  \begin{pmatrix} 
-    \cos\beta & \sin\beta & 0 \\ 
-    -\sin\beta & \cos\beta & 0 \\
-    0 & 0 & 1 
-  \end{pmatrix}
-  \begin{pmatrix} 
-    \cos\alpha & 0 & -\sin\alpha \\ 
-    0 & 1 & 0 \\
-    \sin\alpha & 0 & \cos\alpha 
-  \end{pmatrix}
+  R_zR_y
   \begin{pmatrix}
     1 \\
     0 \\
@@ -146,16 +139,7 @@ Then, what we want is
 \end{equation}
 \begin{equation}
   \mathbf{\hat{y}}' = 
-  \begin{pmatrix} 
-    \cos\beta & \sin\beta & 0 \\ 
-    -\sin\beta & \cos\beta & 0 \\
-    0 & 0 & 1 
-  \end{pmatrix}
-  \begin{pmatrix} 
-    \cos\alpha & 0 & -\sin\alpha \\ 
-    0 & 1 & 0 \\
-    \sin\alpha & 0 & \cos\alpha 
-  \end{pmatrix}
+  R_zR_y
   \begin{pmatrix}
     0 \\
     1 \\
@@ -170,16 +154,7 @@ Then, what we want is
 \end{equation}
 \begin{equation}
   \mathbf{\hat{z}}' = 
-  \begin{pmatrix} 
-    \cos\beta & \sin\beta & 0 \\ 
-    -\sin\beta & \cos\beta & 0 \\
-    0 & 0 & 1 
-  \end{pmatrix}
-  \begin{pmatrix} 
-    \cos\alpha & 0 & -\sin\alpha \\ 
-    0 & 1 & 0 \\
-    \sin\alpha & 0 & \cos\alpha 
-  \end{pmatrix}
+  R_zR_y
   \begin{pmatrix}
     0 \\
     0 \\
@@ -223,10 +198,10 @@ for the mosaic spread modified structure factor
   \mathop{d\alpha} S(q,\theta',\phi')P(\alpha)
   \label{eq:SM}
 \end{equation}
-with Eq.\,(\ref{eq:theta'}) and Eq.\,(\ref{eq:phi'}).
+with Eq.\,(\ref{eq:theta'}) and Eq.\,(\ref{eq:phi'}). 
 
 The structure factor for a stack of rigid layers with their normals parallel
-to the $z$-axis in the spherical coordinates is
+to the $z$-axis in spherical coordinates is
 \begin{equation}
   S(q,\theta,\phi) = \frac{\delta(q-\frac{2\pi h}{D})}{q^2} 
   \delta(\cos\theta-1) \delta(\phi)
@@ -236,7 +211,7 @@ where $\delta(x)$ is the Dirac delta function.
 From Eq.~(\ref{eq:phi'}), $\delta(\phi')$ is equivalent to
 $\delta(\beta-\phi)$. Setting $\beta=\phi$ in Eq.~(\ref{eq:theta'}) gives
 $\cos\theta'=\cos(\alpha-\theta)$. 
-Then,the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
+Then, the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
 \begin{align}
   S_M(q,\theta,\phi) &= \int\mathop{d\alpha}\int\mathop{d\beta}
   \frac{\delta(q-\frac{2\pi h}{D})}{q^2} \delta(\cos\theta'-1) \delta(\beta-\phi)P(\alpha) \nonumber\\
@@ -244,17 +219,22 @@ Then,the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
   &= \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta).
   \label{eq:SM_Bragg}
 \end{align}
-Eq.~(\ref{eq:SM_Bragg}) indicates hemispherical shells of intensity with
+Eq.~(\ref{eq:SM_Bragg}) describes hemispherical shells during a scattering
+experiment with
 radii of $2\pi h/D$ in the sample $q$-space. As will be described
 in the next section, a 2D detector records cross sections of these shells,
 which give rise to mosaic arcs along $q=2\pi h/D$. 
 
-\subsection{Mosaic Spread: Experiment}
+The structure factor of thermally fluctuating layers is not simple delta functions
+and gives rise to diffuse scattering. Analysis of the diffuse scattering 
+from a sample with mosaic spread requires Eq.~(\ref{eq:SM}).
+
+\subsection{Mosaic Spread: Experiment}\label{app:mosaic_exp}
 In this section, we discuss experimental procedures to probe appropriate 
 $q$-space
-to measure the mosaic distribution, $P(\alpha)$. In our setup, the angle of 
+to measure the mosaic spread distribution, $P(\alpha)$. In our setup, the angle of 
 incidence between the beam and substrate, denoted by $\omega$, can be varied. A 
-conventional method to measure mosaic spread distribution is a rocking scan, where
+conventional method to measure $P(\alpha)$ is a rocking scan, where
 one measures the integrated intensity of a given Bragg peak as a function of 
 $\omega$ with a fixed detector position. Another method that takes an advantage
 of an area detector \cite{Rodriguez-Navarro07} 
@@ -263,7 +243,7 @@ dimensional detector (see Fig.~\ref{fig:ring_setup}). This method has been used
 to quantify complete pole figures for thin films with fiber texture (isotropic 
 in-plane orientation) \cite{Baker10}.
 First, we want to compare the two methods mentioned 
-above and figure out the exact relationship between them.
+above and determine their relationship.
 
 \begin{figure}
   \centering
@@ -278,17 +258,10 @@ Using the coordinates defined in Fig.~\ref{fig:ring_setup},
 borrowing Eq.~(\ref{eq:qxqyqz}), and replacing $\phi=\pi/2-\chi$,
 we have
 \begin{align}
-  q_x &= q\cos\theta\sin\chi, \nonumber\\
-  q_y &= q\left(-\sin\theta\cos\omega + \cos\theta\cos\chi\sin\omega\right), \nonumber\\
-  q_z &= q\left(\sin\theta\sin\omega + \cos\theta\cos\chi\cos\omega\right),
+  q_x &= q\cos\theta\sin\chi \nonumber\\
+  q_y &= q\left(-\sin\theta\cos\omega + \cos\theta\cos\chi\sin\omega\right) \nonumber\\
+  q_z &= q\left(\sin\theta\sin\omega + \cos\theta\cos\chi\cos\omega\right).
   \label{eq:ccd2q}
-\end{align}
-or in the small angle approximation,
-\begin{align}
-  q_x &\approx \frac{4\pi\theta\sin\chi}{\lambda} \approx kX/S \nonumber\\
-  q_y &\approx q_z\omega -\frac{4\pi\theta^2}{\lambda} \approx q_z\omega - \frac{\lambda q_z^2}{4\pi}\nonumber\\
-  q_z &\approx \frac{4\pi\theta\cos\chi}{\lambda} \approx kZ/S.
-  \label{eq:ccd2q_small}
 \end{align}
 For a rocking scan focused on a particular order, 
 $\chi=0$ and $\theta=\theta_B$ while $\omega$ is varied about $\theta_B$, 
@@ -304,7 +277,7 @@ as shown in Fig.~\ref{fig:rock}. As Fig.~\ref{fig:rock} shows, however, the
 rocking scan only probes a small fraction of the entire distribution, limited
 by $2\theta_B$. As discussed in section~\ref{sec:Lorentz_correction}, beyond
 $\omega=2\theta_B$, the substrate blocks scattering. On the other hand,
-the ring analysis takes an advantage of a two dimensional detector and can probe
+the ring analysis takes advantage of a two dimensional detector and can probe
 a substantially wider range of the distribution, approximately $\pm$45\textdegree\
 at $\omega=\theta_B$. This method is now described.
 
@@ -319,30 +292,32 @@ In the ring method, we set $\omega=\theta_B$ and scan on the detector
 along $\theta=\theta_B$ as a function of $\chi$. 
 Then, Eq.~(\ref{eq:ccd2q}) becomes
 \begin{align}
-  q_x &= q\cos\theta_B\sin\chi, \nonumber\\
-  q_y &= q\sin\theta_B\cos\theta_B(\cos\chi-1), \nonumber\\
+  q_x &= q\cos\theta_B\sin\chi \nonumber\\
+  q_y &= q\sin\theta_B\cos\theta_B(\cos\chi-1) \nonumber\\
   q_z &= q(\sin^2\theta_B\ + \cos^2\theta_B\cos\chi),
   \label{eq:ring}
 \end{align}
 where $q=4\pi\sin\theta_B/\lambda$. For small $\theta_B$, Eq.~(\ref{eq:ring})
-is reduced to
+reduces to
 \begin{align}
-  q_x &\approx q\sin\chi, \nonumber\\
-  q_y &\approx 0, \nonumber\\
+  q_x &\approx q\sin\chi \nonumber\\
+  q_y &\approx 0 \nonumber\\
   q_z &\approx q\cos\chi.
   \label{eq:ring_small}
 \end{align}
-Thus, the rocking scan and ring analysis are equivalent for small $\theta_B$,
-the condition of which is satisfied for low angle X-ray scattering.
+Thus, by comparing Eq.~(\ref{eq:rock}) and Eq.~(\ref{eq:ring_small}),
+the rocking scan and ring analysis have been shown to be equivalent for small $\theta_B$,
+the condition which is satisfied for low angle X-ray scattering.
 
 \subsection{NFIT}
 The updated NFIT first calculates a theoretical structure factor in 
 cylindrical coordinates \cite{Lyatskaya01}. This calculated structure factor $S(q_r,q_z)$
-has rotational symmetry about the $z$-axis, which eliminates $\phi'$ dependence
+has rotational symmetry about the $z$-axis, which eliminates the $\phi'$ dependence
 in Eq.~(\ref{eq:SM}). The program interpolates $S(q_r,q_z)$ in terms
 of the spherical coordinates $q$ and $\theta$ with $\phi=0$ 
 to perform the double integration in Eq.~(\ref{eq:SM}). 
-After the mosaic spread integration, $q_y$ integration is done.
+After the mosaic spread integration, the program performs the $q_y$ integration
+described in section~\ref{sec:diffuse_analysis}.
 For this integration, the calculated $S_M$ is interpolated 
 in terms of $q_x$, $q_y$, and $q_z$.
 
@@ -352,12 +327,12 @@ Eq.~(\ref{eq:qx'} -- \ref{eq:qz'}) can be used instead of
 Eq.~(\ref{eq:theta'}) and (\ref{eq:phi'}).
 
 An issue with the current analysis comes from the form factor $|F(q_z)|$,
-which is not calculated from a model in the NFIT. Because the mosaic
+which is not calculated from a model in NFIT. Because the mosaic
 spread integration mixes up intesity at different $q_z$ values, 
 the separation of $|F(q_z)|$ from $S(\mathbf{q})$ is in principle impossible. 
 One way to deal with this issue is to combine the SDP and NFIT programs, but
 that will end up with too many non-linear parameters.
-Another way to deal is to limit the fitting range to regions close to the meridian
+Another possibility is to limit the fitting range to regions close to the meridian
 and truncate the distribution at an angle much smaller than $\pi/2$. 
 For a small range of integration, it is not unreasonable to assume that
 the form factor is approximately constant as can be seen from 

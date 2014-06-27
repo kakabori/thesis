@@ -270,21 +270,25 @@ was counted toward the integrated intensity.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=160 180 160 180,clip,width=0.49\textwidth]{figures/ripple/ripple083}
-  \includegraphics[trim=160 180 160 180,clip,width=0.49\textwidth]{figures/ripple/ripple085}
+  \includegraphics[width=0.95\textwidth]{figures/ripple/ripple083and085}
+  %\includegraphics[trim=160 180 160 180,clip,width=0.49\textwidth]{figures/ripple/ripple083}
+  %\includegraphics[trim=160 180 160 180,clip,width=0.49\textwidth]{figures/ripple/ripple085}
   \caption{1 second exposure (left) and 60 second exposure (right) of the low
-  angle X-ray scattering from the DMPC ripple phase. The dark rectangle 
-  in the right image extending from $q_z$ = 0 \AA$^{-1}$ to 0.2 \AA$^{-1}$
-  is the shadow cast by 100 $\mu$m thick molybdenum beam stop.
-  $D$ = 57.8 \AA, $\lambda_r$ = 145.0 \AA, and $\gamma$ = 97.8\textdegree.
-  The gray scales used are [0 100] (left) and [0 500] (right).}
+  angle X-ray scattering from the DMPC ripple phase in gray log scales. 
+  The index $h$ is 
+  labeled in green. $(3,k)$ reflections are identified in cyan. 
+  The shadow cast by 100 $\mu$m thick molybdenum attenuator blocking
+  strong (1,0) and (2,0) orders in the right image is labeled as attenuator
+  and extends from $q_z$ = 0 \AA$^{-1}$ to 0.2 \AA$^{-1}$.
+  $D$ = 57.8 \AA, $\lambda_r$ = 145.0 \AA, and $\gamma$ = 97.8\textdegree.}
   \label{fig:ripple_laxs_images}  
 \end{figure} 
 
 \begin{figure}[jtbp]
   \centering
-  \includegraphics[trim=100 0 100 0,clip,width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc045}
-  \includegraphics[trim=100 0 100 0,clip,width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc044}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc045_labels}
+  \quad
+  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc044}
   \caption{CCD images of X-ray scattering taken with (left) and without 
   (right) a nominally 25 $\mu$m thick Mo attenuator. These data were taken 
   at a fixed angle of incidence $\omega=0.8$\textdegree. The sample was an oriented film of 
@@ -292,7 +296,7 @@ was counted toward the integrated intensity.
   was 1.175 \AA, the same as the one used for the ripple phase experiment.
   The same gray scale is used in both images. 100 pixel =  0.11 \AA$^{-1}$ in $q$. 
   A small dot located about $(p_x,p_z)=(520,170)$ between the first and second orders is 
-  a specular reflection from the substrate. \textcolor{red}{exposure time?}}
+  a specular reflection from the substrate. The exposure times were 1 second.}
   \label{fig:olddopc}
 \end{figure}
 
@@ -304,7 +308,7 @@ was counted toward the integrated intensity.
   (left). The scattering intensity measured with the attenuator (red solid circles) 
   was multiplied by 
   a factor of 6.9 and compared to the intensity measured 
-  without the attenuator (black solid circles, right). Exposure time?}
+  without the attenuator (black solid circles, right).}
   \label{fig:attenuator}
 \end{figure}
 
@@ -805,9 +809,9 @@ We avoid propagating the uncertainties by fitting a model to observed intensity.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Absorption Correction for LAXS}\label{sec:abs_correction_LAXS}
-In this section, we derive the absorption correction for the thin film
-sample. The calculation involves an explicit integration over the incident angle, 
-$\omega$, which is necessitated by the sample rotation during an x-ray exposure. 
+In this section, we derive the absorption correction for an oriented sample. 
+The calculation involves an explicit integration over the incident angle, 
+$\omega$, which is necessitated by the sample rotation during an X-ray exposure. 
 The procedure is to write down an absorption factor, $A(\omega,\theta)$, for a 
 given scattering angle at a given incident angle, and
 then integrate over $\omega$. We ignore $q_x$ dependence because the X-ray
@@ -829,7 +833,7 @@ section.
 
 Assume that all the X-rays enter the sample from the top surface. The total scattering
 angle is given by $2\theta$ (see Fig.~\ref{fig:absorption_LAXS}).
-Let $z$-axis point downward. At the top surface
+Let the $z$-axis point downward. At the top surface
 (air-sample interface), $z=0$. For X-rays that travel to $z$ and then scatter, the
 total path length within the sample is 
 \begin{equation}
@@ -925,7 +929,32 @@ The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_facto
 
 \subsection{Effect of mosaic spread}\label{sec:mosaic_spread_correction}
 (Under construction)
+Integrated intensity needs to be corrected for mosaic spread. 
+During an X-ray exposure, the sample
+was continuously rotated. Due to this rotation, each pixel integrates 
+intensity over the incident angle $\omega$.
+As described in
+appendix~\ref{app:mosaic_exp}, a rocking scan probes a mosaic spread distribution
+as a function of $\omega$, so integrated intensity observed on a detector 
+is proportional to an integrated mosaic spread distribution.
+Because the range of the distribution probed is limited by 
+$\omega=2\theta_B$. this range is larger for higher orders. The observed 
+integrated intensity is then larger for higher orders even if the intrinsic
+relative intensity of different orders is the same. This effect is 
+illustrated in Fig.~\ref{fig:mosaic_contour}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/analysis/mosaic_contour}
+  \caption{Contours of a mosaic spread distribution projected on the $xy$-plane.
+  The distribution function takes a form of Lorentzian centered at $\alpha=0$.
+  Domains with $\alpha=0$ are probed at $\omega=\theta_B$ and $\chi=0$.
+  Integrated intensity of $(1,0)$ reflection is proportional to the green
+  shaded area while that of $(3,0)$ reflection is proportional to the
+  blue shaded area, which is three times larger. The rocking scan axis
+  is centered at $\theta_B$.}
+  \label{fig:mosaic_contour} 
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model}
@@ -1048,7 +1077,7 @@ In total, the modified 2G hybrid model implements 14 structural parameters.
 
 \section{Results}
 \subsection{Data and Electron Density Profile}\label{sec:LAXS}
-Table~\ref{tb:obs_intensity} summarizes observed intensity from data shown
+Table~\ref{tb:obs_intensity1} summarizes observed intensity from data shown
 in Fig.~\ref{fig:ripple_laxs_images}. 
 We measured scattering on oriented samples in almost identical conditions as the
 best unoriented sample of Wack and Webb. As discussed earlier,
@@ -1058,21 +1087,114 @@ oriented samples against an unoriented sample.
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ccccc}
+  \begin{tabular}{rrrrrr}
     \hline
-    $h$ & $k$ & $\Io{hk}$ & box size & background \\
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & \multicolumn{1}{c}{box size} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & \multicolumn{1}{c}{(pixels)} \\ 
     \hline
-    1 & -1 & ?? & ?? & ?? \\
-    1 &  0 & ?? & ?? & ?? \\
-    1 &  1 & & &\\
-    2 & -1 & \\
-    2 &  0 & \\
-    2 &  1 & \\
+    1 & -1 & 0.102 & -0.043 &    726 & 10 by 7 \\
+    1 &  0 & 0.109 &  0.000 & 180818 & 10 by 7 \\
+    1 &  1 & 0.114 &  0.043 &    241 & 10 by 7 \\
+    1 &	 3 & 0.128 &	0.130 &	   4.8 & 10 by 7 \\
+    2 &	-2 & 0.206 & -0.087 &	  51.4 & 10 by 7 \\
+    2 &	-1 & 0.212 &	0.044 &	  1818 & 10 by 7 \\
+    2 &  0 & 0.218 &	0.000 &  10200 & 10 by 7 \\
+    2 &	 1 & 0.224 &  0.043	&    558 & 10 by 7 \\
+    2	&  2 & 0.231 &  0.086	&	   116 & 10 by 7 \\
+    2 &	 3 & 0.237 &  0.129	&	    27 & 10 by 7 \\
+    2	&  4 & 0.243 &  0.173	&    7.6 & 10 by 7 \\
+    2	&  5 & 0.250 &  0.214	&    2.9 & 10 by 7 \\
+	  3 &	-2 & 0.314 & -0.087	&    305 & 15 by 7 \\
+    3	& -1 & 0.321 & -0.043	&   1205 & 15 by 7 \\
+    3	&  0 & 0.326 &  0.000	&   1566 & 15 by 7 \\
+    3	&  1 &       &        &   31.7 & 15 by 7 \\
+    3	&  2 & 0.339 &  0.086	&   32.4 & 15 by 7 \\
+    3	&  3 & 0.345 &  0.129	&	  38.2 & 15 by 7 \\
+    3	&  4 & 0.352 &  0.172	&	  26.1 & 15 by 7 \\
+    3	&  5 & 0.358 &  0.215	&	   8.6 & 15 by 7 \\
     \hline
   \end{tabular}
-  \caption{Observed intensity}
-  \label{tb:obs_intensity}
+  \quad
+  \begin{tabular}{rrrr}
+    \hline
+     & & \multicolumn{1}{c}{oriented} & \multicolumn{1}{c}{unoriented} \\
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$|F_{hk}|$} & \multicolumn{1}{c}{$|F_{hk}|$*} \\
+    \hline
+    1 & -1 &  & 60.8 \\
+    1 &  0 &  & 100.0 \\
+    1 &  1 &  & 26.9 \\
+    1 &	 3 &  & 7.6 \\
+    2 &	-2 &  & 15.1 \\
+    2 &	-1 &  & 71.2 \\
+    2 &  0 &  & 39.7 \\
+    2 &	 1 &  & 33.9 \\
+    2	&  2 &  & 22.7 \\
+    2 &	 3 &  & 14.2 \\
+    2	&  4 &  & 7.8 \\
+    2	&  5 &  & \\
+	  3 &	-2 &  & 29.3 \\
+    3	& -1 &  & 44.2 \\
+    3	&  0 &  & 12.0 \\
+    3	&  1 &  & \\
+    3	&  2 &  & 10.5 \\
+    3	&  3 &  & 14.9 \\
+    3	&  4 &  & 10.0 \\
+    3	&  5 &  & \\
+    \hline
+  \end{tabular}
+  \caption{Observed intensity for $h$ = 1 to 3 at $D=58.0$, $\lambda_r=145$, and 
+  $\gamma=98.2$\textdegree. *Unoriented data are from Wack and Webb \cite{ref:Wack89}.}
+  \label{tb:obs_intensity1}
 \end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{rrrrrr}
+    \hline
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & \multicolumn{1}{c}{box size} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & \multicolumn{1}{c}{(pixels)} \\ 
+    \hline
+    4 &	-3 & 0.417 & -0.131 &    143 & 20 by 8 \\
+    4 &	-2 & 0.423 & -0.087 &	   730 & 20 by 8 \\
+    4	& -1 & 0.429 & -0.043	&    415 & 20 by 8 \\
+    4	&  0 & 0.435 &  0.000 &   1938 & 20 by 8 \\
+    4	&  1 &       &        &   51.5 & 20 by 8 \\
+    4	&  2 & 0.448 &  0.085 &     39 & 20 by 8 \\
+    4	&  3 &       &        &   weak & \\
+    4	&  4 & 0.461 &  0.173 &    2.1 & 20 by 8 \\
+    4	&  5 & 0.467 &  0.215 &    3.2 & 20 by 8 \\
+    4 &	 6 & 0.473 &  0.259 &    1.0 & 20 by 8 \\
+    5 & -3 & 0.525 & -0.132 &   84.4 & 25 by 9 \\
+    5 & -2 & 0.532 & -0.087	&    146 & 25 by 9 \\
+    5 & -1 & 0.538 & -0.042	&   64.6 & 25 by 9 \\
+    5	&  0 & 0.544 &  0.000	&    259 & 25 by 9 \\
+    5	&  1 & 0.550 &  0.040	&   50.2 & 25 by 9 \\
+    6 &	-4 & 0.628 & -0.175	&	  10.3 & 30 by 10 \\
+    6 &	-3 & 0.635 & -0.131	&	  13.8 & 30 by 10 \\
+    6	& -2 & 0.641 & -0.085	&    9.7 & 30 by 10 \\
+    6	& -1 &       &        &    2.0 & 30 by 10 \\
+    6	&  0 & 0.653 &  0.000	&	  69.0 & 30 by 10 \\
+    6	&  1 &       &        &    2.5 & 30 by 10 \\
+    6	&  3 & 0.672 &  0.128 &	    42 & 30 by 10 \\
+    6	&  4 & 0.679 &  0.170 &     40 & 30 by 10 \\
+    7 & -4 & 0.737 & -0.174 &	    42 & 35 by 10 \\
+    7	& -3 & 0.743 & -0.130	&     40 & 35 by 10 \\
+    7	& -2 & 0.749 & -0.085	&     15 & 35 by 10 \\
+    7	& -1 & 0.755 & -0.042	&     27 & 35 by 10 \\
+    7 &  0 & 0.760 &  0.000	&     41 & 35 by 10 \\
+    9 & -5 &       &        &	  weak & \\
+    9 &	-4 & 0.951 & -0.174	&	    19 & 35 by 10 \\
+    9 & -3 &       &        &	  weak & \\
+    9 & -2 & 0.963 & -0.085 &   21.0 & 35 by 10 \\
+	  9	& -1 &       &        &   weak & \\
+	  9 &  0 & 0.974 &  0.000	&   21.0 & 35 by 10 \\
+    \hline
+  \end{tabular}
+  \caption{Observed intensity for $h$ = 4 to 9 at $D=58.0$, $\lambda_r=145$, and 
+  $\gamma=98.2$\textdegree\ (continued from Table~\ref{tb:obs_intensity1}).}
+  \label{tb:obs_intensity2}
+\end{table}
+
 
 Show a table showing our measured form factor (Lorentz corrected). Do the 
 fits once we decide on mosaic spread correction. Show in a table, fitting 

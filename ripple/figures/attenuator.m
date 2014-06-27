@@ -6,12 +6,17 @@ addpath('C:\Documents and Settings\Owner\My Documents\work\MATLAB_UserFunctions\
 addpath(genpath('C:\Documents and Settings\Owner\My Documents\work\MATLAB_UserFunctions\Functions\Downloaded'));
 addpath('C:\Documents and Settings\Owner\My Documents\work\chess13a\lastday');
 
+addpath('~/WinC/MATLAB_UserFunctions/Functions/waxs_kiyo');
+addpath('~/WinC/MATLAB_UserFunctions/Functions');
+addpath(genpath('~/WinC/MATLAB_UserFunctions/Functions/Downloaded'));
+addpath('~/WinE/chess13a/lastday');
+
 a = slurp('olddopc_044_c.tif', 'c');
 pedestal = 103;
 a = a - pedestal;
 a = flipud(a);
 fig1 = figure;
-imagesc(a, [0 200]);
+imagesc(a, [0 100]);
 colormap(gray)
 axis image
 axis xy
@@ -33,7 +38,7 @@ pedestal = 102;
 b = b - pedestal;
 b = flipud(b);
 fig2 = figure;
-imagesc(b, [0 200]);
+imagesc(b, [0 100]);
 colormap(gray)
 axis image
 axis xy
