@@ -941,9 +941,9 @@ Because the range of the distribution probed is limited by
 $\omega=2\theta_B$. this range is larger for higher orders. The observed 
 integrated intensity is then larger for higher orders even if the intrinsic
 relative intensity of different orders is the same. This effect is 
-illustrated in Fig.~\ref{fig:mosaic_contour}
+illustrated in Fig.~\ref{fig:mosaic_contour}.
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/ripple/analysis/mosaic_contour}
   \caption{Contours of a mosaic spread distribution projected on the $xy$-plane.
@@ -955,6 +955,20 @@ illustrated in Fig.~\ref{fig:mosaic_contour}
   is centered at $\theta_B$.}
   \label{fig:mosaic_contour} 
 \end{figure}
+
+We first consider correction on $(h,0)$ main reflections. We will limit 
+$\chi$ to go from -5\textdegree to 5\textdegree. This simplifies a calculation
+because we can ignore the curvature of the sphere on which the mosaic spread
+distribution $P(\alpha)$ is defined as described in Appendix~\ref{app:mosaic_calc}.
+We then imagine a two dimensional contour map on a $\omega\chi$ plane.
+Observed intensity for a Bragg peak with a Bragg angle of $\theta_B$ is
+given by
+\begin{equation}
+  I^\textrm{obs} = \int_0^{2\theta_B}\mathop{d\omega}
+  \int_{-\chi_0}^{\chi_0}\mathop{d\chi}
+  \frac{N}{(\omega-\theta_B)^2+\chi^2+\gamma^2}.
+\end{equation}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model}
