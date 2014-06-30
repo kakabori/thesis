@@ -490,7 +490,7 @@ wafer.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{LAXS analysis}
+\section{LAXS: analysis}
 \subsection{Lattice Structure}\label{sec:lattice_structure}
 The unit cell vectors for the two-dimensional oblique lattice shown in Fig.~\ref{fig:unit_cell}
 can be expressed as 
@@ -885,7 +885,7 @@ As shown, this factor is about 30 \% for $h=1$ peak, so it is not negligible.
   \centering
   \includegraphics[width=0.8\textwidth]{figures/ripple/analysis/abs_factor}
   \caption{Absorption factors as a function of $q_z \approx 4\pi\theta/\lambda$.
-  The values at $q_z=2\pi h/D$ corresponding to $D=58$ \AA\ are shown as squares.
+  Values at $q_z=2\pi h/D$ corresponding to $D=57.8$ \AA\ are shown as squares.
   $\mu$ = 2600 $\mu$m, $t$ = 10 $\mu$m, and $\lambda$ = 1.175 \AA.}
   \label{fig:abs_factor}
 \end{figure}
@@ -924,10 +924,7 @@ The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_facto
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Absorption Correction for WAXS}\label{sec:abs_correction_WAXS}
-(Under construction)
-
-\subsection{Effect of mosaic spread}\label{sec:mosaic_spread_correction}
+\subsection{Correction due to mosaic spread}\label{sec:mosaic_spread_correction}
 (Under construction)
 Integrated intensity needs to be corrected for mosaic spread. 
 During an X-ray exposure, the sample
@@ -956,22 +953,76 @@ illustrated in Fig.~\ref{fig:mosaic_contour}.
   \label{fig:mosaic_contour} 
 \end{figure}
 
-We first consider correction on $(h,0)$ main reflections. We will limit 
-$\chi$ to go from -5\textdegree to 5\textdegree. This simplifies a calculation
+We limit 
+$\chi$ to go from -1.4\textdegree\ to 1.4\textdegree. This simplifies a calculation
 because we can ignore the curvature of the sphere on which the mosaic spread
 distribution $P(\alpha)$ is defined as described in Appendix~\ref{app:mosaic_calc}.
+The effect of cutoff on $\chi$ is not very important
+because most of observed intensity was included in integration boxes.
+In contrast, cutoff on $\omega$ due to substrate blocking the scattering
+is important, especially for lower $h$ orders.
+ 
+We take the distribution to be Lorentzian, which has been experimentally
+observed.
+\begin{equation}
+  P(\alpha) = \frac{N}{\alpha^2+\alpha_M},
+\end{equation}
+where $N$ is a normalization constant and $\alpha_M$ is the HWHM of the 
+distribution. $N$ satisfies
+\begin{equation}
+  N \approx \frac{1}{2\pi}\left(\int_0^{\frac{\pi}{2}}\mathop{d\alpha}
+  \frac{\alpha}{\alpha^2+\alpha_M^2}\right)^{-1},
+  \label{eq:mosaic_N}
+\end{equation}
+where a small angle approximation is assumed for $\alpha$.
 We then imagine a two dimensional contour map on a $\omega\chi$ plane.
 Observed intensity for a Bragg peak with a Bragg angle of $\theta_B$ is
 given by
 \begin{equation}
-  I^\textrm{obs} = \int_0^{2\theta_B}\mathop{d\omega}
+  I^\textrm{obs}_{h0} = \int_{-\theta_B}^{\theta_B}\mathop{d\omega} 
+  \int_{-\chi_0}^{\chi_0}\mathop{d\chi} P(\alpha)
+  = \int_{-\theta_B}^{\theta_B}\mathop{d\omega}
   \int_{-\chi_0}^{\chi_0}\mathop{d\chi}
-  \frac{N}{(\omega-\theta_B)^2+\chi^2+\gamma^2}.
+  \frac{N}{(\omega-\theta_B)^2+\chi^2+\alpha_M^2}
+  \label{eq:mosaic_I}
 \end{equation}
+After $\chi$ integration, Eq.~(\ref{eq:mosaic_I}) is
+\begin{equation}
+  I^\textrm{obs}_{h0} = 4N\int_0^{\theta_B}\frac{d\omega}{\sqrt{\omega^2+\alpha_M^2}}
+  \arctan\pars{\frac{\chi_0}{\sqrt{\omega^2+\alpha_M^2}}}.
+  \label{eq:mosaic_I2}
+\end{equation}
+Eq.~(\ref{eq:mosaic_I2}) is plotted in Fig.~\ref{fig:mosaic_correction}.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/analysis/mosaic_correction}
+  \caption[Mosaic factor given by Eq.~(\ref{eq:mosaic_I2}) as a function of 
+  $q_z\approx 4\pi\theta/\lambda$]{Mosaic factor given by Eq.~(\ref{eq:mosaic_I2}) as a function of 
+  $q_z\approx 4\pi\theta/\lambda$. Values at $q_z=2\pi h/D$ corresponding to $D=57.8$ \AA
+  are shown as squares. $\alpha_M=0.05$\textdegree and $\chi_0$=1.4\textdegree.}
+  \label{fig:mosaic_correction}
+\end{figure}
+
+%As Fig.~\ref{fig:rocking_scan_data} shows, observed intensity of $(h,k\neq 0)$ reflections are independent
+%of the incident angle $\omega$. Therefore, they do not need to be corrected 
+%for mosaic spread. Essentially, this mosaic spread correction is due to
+%the substrate blocking incoming and outgoing X-rays outside a range of 
+%incident angles. Because this effect is already taken
+%into account for $(h,k\neq 0)$ side peaks in the Lorentz correction
+%as described in Sec.~\ref{sec:Lorentz_correction}, 
+%the mosaic spread correction is not necessary for the side peaks.  
+%
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/analysis/20peaks}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/analysis/21peaks}
+%  \caption[title goes here]{caption goes here}
+%  \label{fig:rocking_scan_data}
+%\end{figure} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Model}
+\section{LAXS: model}
 \subsection{Contour Part of the Form Factor}\label{sec:contour}
 As in Ref.\cite{ref:Sun96}, we take the ripple profile to have a sawtooth profile. Its
 amplitude is $A$ and the projection of the major arm on the 
@@ -990,6 +1041,7 @@ Then, we write the ripple profile as
       & \text{for} 
       & \frac{x_0}{2} < x \leq \frac{\lambda_r}{2}.
     \end{array} \right.
+  \label{eq:sawtooth}
 \end{equation}
 The ripple profile has inversion symmetry, so that the resulting
 form factor is real. $A$ and $\xM$ are fitting parameters that depend 
@@ -1004,13 +1056,22 @@ is multiplied by $\delta$ functions $\delta(x \pm \xM/2)$ to allow for
 a different electron density near the kink between the major and the minor
 sides. 
 
+The contour part of the form factor $F_C$ calculated from Eq.~(\ref{eq:sawtooth})
+is plotted in Fig.~(\ref{fig:FT}).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/model/F_contour}
+  \caption[title goes here]{Not sure if this plot is useful.}
+  \label{fig:FT}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Transbilayer Part of the Form Factor}\label{sec:transbilayer}
-\subsubsection{SDF}
+\subsubsection{Delta function model}
 Delta function model is described here.
 
-\subsubsection{2G model}
+\subsubsection{1G and 2G hybrid model}
 In the hybrid model, the terminal methyl region of the bilayer is represented
 as a Gaussian function \cite{ref:Wiener89}. The headgroups are represented by one 
 and two Gaussian
@@ -1088,16 +1149,29 @@ the lipid tilt, and an overall scaling factor. The contour part of the
 form factor has four more parameters ($A$, $\xM$, $f_1$, and $f_2$).
 In total, the modified 2G hybrid model implements 14 structural parameters.
 
-
-\section{Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{LAXS: results}
 \subsection{Data and Electron Density Profile}\label{sec:LAXS}
-Table~\ref{tb:obs_intensity1} summarizes observed intensity from data shown
-in Fig.~\ref{fig:ripple_laxs_images}. 
+Table~\ref{tb:obs_intensity1} and \ref{tb:obs_intensity2} summarize observed intensity from data shown
+in Fig.~\ref{fig:ripple_laxs_images}. $q_z$ values for observed peaks were
+corrected for index of refraction (Appendix~\ref{app:refraction}).
 We measured scattering on oriented samples in almost identical conditions as the
 best unoriented sample of Wack and Webb. As discussed earlier,
 these two types of samples have different Lorentz corrections, so 
 this allowed us to check our data obtained on 
 oriented samples against an unoriented sample. 
+As Table~\ref{tb:obs_intensity1} shows, agreement between our oriented data
+and the uroriented data was good, but integrated intensity from our oriented
+sample was in many cases larger than that from an unoriented sample.
+We attribute this discrepancy to the way intensity was extracted. 
+In an X-ray data from an oriented sample, each peak
+was nicely separated, so integrating a peak intensity was rather trivial.
+In contrast, some reflections in unoriented data were overlapping with
+each other (three pairs of overlapping peaks are highlighted in Table~\ref{tb:obs_intensity1}), 
+making separation of intensity difficult. If the $(1,0)$ peak in the unoriented 
+data were overestimated, that would account for the observed discrepancy.
+Indeed, the microdensitometer trace in \cite{ref:Wack89} suggests that 
+the $(1,0)$ and $(1,1)$ reflections should have similar intensity.
 
 \begin{table}[htbp]
   \centering
@@ -1106,57 +1180,56 @@ oriented samples against an unoriented sample.
     \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & \multicolumn{1}{c}{box size} \\
      & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & \multicolumn{1}{c}{(pixels)} \\ 
     \hline
-    1 & -1 & 0.102 & -0.043 &    726 & 10 by 7 \\
-    1 &  0 & 0.109 &  0.000 & 180818 & 10 by 7 \\
-    1 &  1 & 0.114 &  0.043 &    241 & 10 by 7 \\
-    1 &	 3 & 0.128 &	0.130 &	   4.8 & 10 by 7 \\
-    2 &	-2 & 0.206 & -0.087 &	  51.4 & 10 by 7 \\
-    2 &	-1 & 0.212 &	0.044 &	  1818 & 10 by 7 \\
-    2 &  0 & 0.218 &	0.000 &  10200 & 10 by 7 \\
-    2 &	 1 & 0.224 &  0.043	&    558 & 10 by 7 \\
-    2	&  2 & 0.231 &  0.086	&	   116 & 10 by 7 \\
-    2 &	 3 & 0.237 &  0.129	&	    27 & 10 by 7 \\
-    2	&  4 & 0.243 &  0.173	&    7.6 & 10 by 7 \\
-    2	&  5 & 0.250 &  0.214	&    2.9 & 10 by 7 \\
-	  3 &	-2 & 0.314 & -0.087	&    305 & 15 by 7 \\
-    3	& -1 & 0.321 & -0.043	&   1205 & 15 by 7 \\
-    3	&  0 & 0.326 &  0.000	&   1566 & 15 by 7 \\
-    3	&  1 &       &        &   31.7 & 15 by 7 \\
-    3	&  2 & 0.339 &  0.086	&   32.4 & 15 by 7 \\
-    3	&  3 & 0.345 &  0.129	&	  38.2 & 15 by 7 \\
-    3	&  4 & 0.352 &  0.172	&	  26.1 & 15 by 7 \\
-    3	&  5 & 0.358 &  0.215	&	   8.6 & 15 by 7 \\
+    1 & -1 & 0.102 &-0.043 & 726 & 10 $\times$ 7 \\
+    1 &  0 & 0.109 &0.000 & 180818 & 10 $\times$ 7 \\
+    1 &  1 & 0.114 &0.043 &    241 & 10 $\times$ 7 \\
+    1 &  3 & 0.128 &0.130 &	   4.8 & 10 $\times$ 7 \\
+    2 & -2 & 0.206 &-0.087 &	  51.4 & 10 $\times$ 7 \\
+    2 & -1 & 0.212 &0.044&	  1818 & 10 $\times$ 7 \\
+    2 &  0 & 0.218 &0.000&10200 & 10 $\times$ 7 \\
+    2&1&0.224&0.043&558 & 10 $\times$ 7 \\
+    2&2&0.231&0.086&116& 10 $\times$ 7 \\
+    2 &  3 & 0.23  &  0.129 &	    27 & 10 $\times$ 7 \\
+    2 &  4 & 0.243 &  0.173 &    7.6 & 10 $\times$ 7 \\
+    2 &  5 & 0.250 &  0.214 &    2.9 & 10 $\times$ 7 \\
+    3 &	-2 & 0.314 & -0.087 & 305 & 15 $\times$ 7 \\
+    3 & -1 & 0.321 & -0.043	&   1205 & 15 $\times$ 7 \\
+    3 &  0 & 0.326 &  0.000 & 1566 & 15 $\times$ 7 \\
+    3 &  1 & 0.333 &  0.043 &   31.7 & 15 $\times$ 7 \\
+    3 &  2 & 0.339 &  0.086 &   32.4 & 15 $\times$ 7 \\
+    3 &  3 & 0.345 &  0.129 &	  38.2 & 15 $\times$ 7 \\
+    3 &  4 & 0.352 &  0.172 &	  26.1 & 15 $\times$ 7 \\
+    3 &  5 & 0.358 &  0.215 &	   8.6 & 15 $\times$ 7 \\
     \hline
   \end{tabular}
-  \quad
-  \begin{tabular}{rrrr}
+  \begin{tabular}{rrrrr}
     \hline
-     & & \multicolumn{1}{c}{oriented} & \multicolumn{1}{c}{unoriented} \\
-    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$|F_{hk}|$} & \multicolumn{1}{c}{$|F_{hk}|$*} \\
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q$*}& \multicolumn{1}{c}{oriented} & \multicolumn{1}{c}{unoriented} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{$|F_{hk}|$} & \multicolumn{1}{c}{$|F_{hk}|$*} \\
     \hline
-    1 & -1 &  & 60.8 \\
-    1 &  0 &  & 100.0 \\
-    1 &  1 &  & 26.9 \\
-    1 &	 3 &  & 7.6 \\
-    2 &	-2 &  & 15.1 \\
-    2 &	-1 &  & 71.2 \\
-    2 &  0 &  & 39.7 \\
-    2 &	 1 &  & 33.9 \\
-    2	&  2 &  & 22.7 \\
-    2 &	 3 &  & 14.2 \\
-    2	&  4 &  & 7.8 \\
-    2	&  5 &  & \\
-	  3 &	-2 &  & 29.3 \\
-    3	& -1 &  & 44.2 \\
-    3	&  0 &  & 12.0 \\
-    3	&  1 &  & \\
-    3	&  2 &  & 10.5 \\
-    3	&  3 &  & 14.9 \\
-    3	&  4 &  & 10.0 \\
-    3	&  5 &  & \\
+    1 & -1 & {\color{red}0.111} &  83.0 & 60.8 \\
+    1 &  0 & {\color{red}0.108} & 100.0 & 100.0 \\
+    1 &  1 & 0.123 &  44.0 & 26.9 \\
+    1 &	 3 & 0.185 &   9.9 & 7.6 \\
+    2 &	-2 & 0.224 &  19.4 & 15.1 \\
+    2 &	-1 & {\color{blue}0.215} &  80.2 & 71.2 \\
+    2 &  0 & {\color{blue}0.217} &  30.8 & 39.7 \\
+    2 &	 1 & 0.228 &  42.4 & 33.9 \\
+    2 &  2 & 0.246 &  26.8 & 22.7 \\
+    2 &	 3 & 0.271 &  15.6 & 14.2 \\
+    2 &  4 & 0.301 &   9.5 & 7.8 \\
+    2 &  5 & 0.329 &   6.4 & \\
+	3 &	-2 & {\color{green}0.325} &  36.2 & 29.3 \\
+    3 & -1 & 0.322 &  50.0 & 44.2 \\
+    3 &  0 & {\color{green}0.325} &  14.4 & 12.0 \\
+    3 &  1 & & 7.9 & \\
+    3 &  2 & 0.350 &  11.2 & 10.5 \\
+    3 &  3 & 0.370 &  14.8 & 14.9 \\
+    3 &  4 & 0.394 &  13.9 & 10.0 \\
+    3 &  5 & & 8.8 & \\
     \hline
   \end{tabular}
-  \caption{Observed intensity for $h$ = 1 to 3 at $D=58.0$, $\lambda_r=145$, and 
+  \caption{Observed intensity for $h$ = 1 to 3 at $D=57.8$, $\lambda_r=145$, and 
   $\gamma=98.2$\textdegree. *Unoriented data are from Wack and Webb \cite{ref:Wack89}.}
   \label{tb:obs_intensity1}
 \end{table}
@@ -1182,13 +1255,14 @@ oriented samples against an unoriented sample.
     5 & -2 & 0.532 & -0.087	&    146 & 25 by 9 \\
     5 & -1 & 0.538 & -0.042	&   64.6 & 25 by 9 \\
     5	&  0 & 0.544 &  0.000	&    259 & 25 by 9 \\
-    5	&  1 & 0.550 &  0.040	&   50.2 & 25 by 9 \\
-    6 &	-4 & 0.628 & -0.175	&	  10.3 & 30 by 10 \\
-    6 &	-3 & 0.635 & -0.131	&	  13.8 & 30 by 10 \\
-    6	& -2 & 0.641 & -0.085	&    9.7 & 30 by 10 \\
-    6	& -1 &       &        &    2.0 & 30 by 10 \\
-    6	&  0 & 0.653 &  0.000	&	  69.0 & 30 by 10 \\
-    6	&  1 &       &        &    2.5 & 30 by 10 \\
+    5	&  1 & 0.550 &  0.040 &   50.2 & 25 by 9 \\
+    6 &	-4 & 0.628 & -0.175	& 10.3 & 30 by 10 \\
+    6 &	-3 & 0.635 & -0.131	& 13.8 & 30 by 10 \\
+    6 & -2 & 0.641 & -0.085	&  9.7 & 30 by 10 \\
+    6 & -1 & 0.647 & -0.043 &  2.0 & 30 by 10 \\
+    6 &  0 & 0.653 &  0.000	& 69.0 & 30 by 10 \\
+    6 &  1 & 0.659 &  0.043 &  2.5 & 30 by 10 \\
+    6 &  2 &       &        & weak \\
     6	&  3 & 0.672 &  0.128 &	    42 & 30 by 10 \\
     6	&  4 & 0.679 &  0.170 &     40 & 30 by 10 \\
     7 & -4 & 0.737 & -0.174 &	    42 & 35 by 10 \\
@@ -1204,20 +1278,72 @@ oriented samples against an unoriented sample.
 	  9 &  0 & 0.974 &  0.000	&   21.0 & 35 by 10 \\
     \hline
   \end{tabular}
-  \caption{Observed intensity for $h$ = 4 to 9 at $D=58.0$, $\lambda_r=145$, and 
+  \quad
+  \begin{tabular}{rrr}
+    \hline
+     & & \multicolumn{1}{c}{oriented} \\
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$|F_{hk}|$} \\
+    \hline
+    4 & -3 & 25.7 \\
+4 & -2 & 46.8 \\ 
+4 & -1 & 24.7 \\
+4 & 0 & 18.1 \\ 
+4 & 1 & 8.5 \\ 
+4 & 2 & 10.4 \\ 
+4 & 3 \\ 
+4 & 4 & 3.4 \\
+4 & 5 & 4.6 \\ 
+4 & 6 & 2.8 \\ 
+5 & -3 & 17.3 \\ 
+5 & -2 & 18.4 \\ 
+5 & -1 & 8.5 \\ 
+5 & 0 & 7.3 \\ 
+5 & 1 & 7.2 \\ 
+6 & -4 & 6.3 \\ 
+6 & -3 & 6.3 \\ 
+6 & -2 & 4.2 \\ 
+6 & -1 & 0.0 \\ 
+6 & 0 & 4.1 \\ 
+6 & 1 & 0.0 \\ 
+6 & 2 & weak\\
+6 & 3 & 10.5 \\
+6 & 4 & 11.7 \\ 
+7 & -4 & 11.6 \\
+7 & -3 & 9.7 \\ 
+7 & -2 & 4.8 \\ 
+7 & -1 & 4.5 \\ 
+7 & 0 & 3.4 \\ 
+9 & -5 & \\
+9 & -4 & \\
+9 & -3 & \\
+9 & -2 & \\
+9 & -1 & \\
+9 & 0 &\\
+\hline
+\end{tabular}
+  \caption{Observed intensity for $h$ = 4 to 9 at $D=57.8$, $\lambda_r=145$, and 
   $\gamma=98.2$\textdegree\ (continued from Table~\ref{tb:obs_intensity1}).}
   \label{tb:obs_intensity2}
 \end{table}
 
 
-Show a table showing our measured form factor (Lorentz corrected). Do the 
-fits once we decide on mosaic spread correction. Show in a table, fitting 
+
+Show in a table, fitting 
 results. Show an edp. Show the thicknesses of both arms. Comment on
 some fine features.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Near Grazing Incidence Wide Angle X-ray Scattering (NGIWAXS)}
-\label{sec:NGIWAXS_results}
+\section{NGIWAXS: analysis}
+\subsection{Absorption Correction}\label{sec:WAXS_abs_correction}
+(Under construction)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{NGIWAXS: model}
+\subsection{Thin rod model}\label{sec:WAXS_thin_rod}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{NGIWAXS: results}\label{sec:NGIWAXS_results}
 Figure~\ref{fig:NGIWAXS} shows near grazing incidence Wide Angle X-ray
 scattering (NGIWAXS) from an oriented DMPC film in the ripple phase.
 As can be seen, hydrocarbon chain scattering did not vary considerably
@@ -1292,7 +1418,7 @@ true sample scattering? Comment on the widths of the peaks observed.
 Possibly make use of both low and high resolution data.
 Apply the absorption correction. Show q swaths for various $\phi$.
 
-\subsection{Transmission WAXS}\label{sec:TWAXS_results}
+\section{TWAXS: results}\label{sec:TWAXS_results}
 Convert the image to $q$-space.
 No strong order on the equator. 
 Compare to NGIWAXS and comment on the absorption effect
