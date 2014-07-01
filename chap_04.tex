@@ -1043,34 +1043,32 @@ The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_facto
 Integrated intensity needs to be corrected for mosaic spread. 
 During an X-ray exposure, the sample
 was continuously rotated. Due to this rotation, each pixel integrates 
-intensity over the incident angle $\omega$.
-As described in
-appendix~\ref{app:mosaic_exp}, a rocking scan probes a mosaic spread distribution
-as a function of $\omega$, so integrated intensity observed on a detector 
-is proportional to an integrated mosaic spread distribution.
-Because the range of the distribution probed is limited by 
-$\omega=2\theta_B$, this range is larger for higher orders. The observed 
-integrated intensity is then larger for higher $h$ orders even if the intrinsic
-relative intensity of different $h$ orders is the same. This effect is 
-illustrated in Fig.~\ref{fig:mosaic_contour}.
+intensity over a range of incident angles $\omega$.
+As described in appendix~\ref{app:mosaic_exp}, 
+a mosaic spread distribution can be probed
+by changing $\omega$, so rotating the sample is essentially  
+equivalent to integrating a mosaic spread distribution.
+Because the range of the distribution probed is given by $\omega=2\theta_{hk}$ 
+where $\theta_{hk}$ is the Bragg angle for the $(h,k)$ reflection, 
+this range is larger for higher $h$ orders. 
+This effect is illustrated in Fig.~\ref{fig:mosaic_contour}.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/ripple/analysis/mosaic_contour}
-  \caption{Contours of a mosaic spread distribution projected on the $xy$-plane.
+  \caption{Contours of a mosaic spread distribution projected on the $\omega\chi$-plane,
+  where $\chi$ is an angle measured from the meridian ($\chi=\pi/2-\phi$).
   The distribution function takes a form of Lorentzian centered at $\alpha=0$.
   Domains with $\alpha=0$ are probed at $\omega=\theta_B$ and $\chi=0$.
-  Integrated intensity of $(1,0)$ reflection is proportional to the green
-  shaded area while that of $(3,0)$ reflection is proportional to the
-  blue shaded area, which is three times larger. The rocking scan axis
+  Integrated intensity of $(1,k)$ reflection is proportional to the green
+  shaded area while that of $(3,k)$ reflection is proportional to the
+  blue shaded area, which is three times larger. The rocking scan $\omega$ axis
   is centered at $\theta_B$.}
   \label{fig:mosaic_contour} 
 \end{figure}
 
 We limit 
-$\chi$ to go from -1.4\textdegree\ to 1.4\textdegree. This simplifies a calculation
-because we can ignore the curvature of the sphere on which the mosaic spread
-distribution $P(\alpha)$ is defined as described in Appendix~\ref{app:mosaic_calc}.
+$\chi$ to go from -1.4\textdegree\ to 1.4\textdegree. 
 The effect of cutoff on $\chi$ is not very important
 because most of observed intensity was included in integration boxes.
 In contrast, cutoff on $\omega$ due to substrate blocking the scattering
@@ -1085,13 +1083,11 @@ where $N$ is a normalization constant and $\alpha_M$ is the HWHM of the
 distribution. $N$ satisfies
 \begin{equation}
   N \approx \frac{1}{2\pi}\left(\int_0^{\frac{\pi}{2}}\mathop{d\alpha}
-  \frac{\alpha}{\alpha^2+\alpha_M^2}\right)^{-1},
+  \frac{\alpha}{\alpha^2+\alpha_M^2}\right)^{-1}.
   \label{eq:mosaic_N}
 \end{equation}
-where a small angle approximation replaced $\sin\alpha$ in the 
-numerator with $\alpha$.
 We then consider a two dimensional contour map on a $\omega\chi$ plane.
-Observed intensity for a Bragg peak with a Bragg angle of $\theta_B$ is
+Observed intensity for a reflection with a Bragg angle of $\theta_B$ is
 given by
 \begin{equation}
   I^\textrm{obs}_{h0} = \int_{-\theta_B}^{\theta_B}\mathop{d\omega} 
@@ -1285,13 +1281,13 @@ and the uroriented data was good, but integrated intensity from our oriented
 sample was in many cases larger than that from an unoriented sample.
 We attribute this discrepancy to the way intensity was extracted. 
 In an X-ray data from an oriented sample, each peak
-was nicely separated, so integrating a peak intensity was rather trivial.
+was nicely separated, so integrating a peak intensity was trivial.
 In contrast, some reflections in unoriented data were overlapping with
 each other (three pairs of overlapping peaks are highlighted in Table~\ref{tb:obs_intensity1}), 
 making separation of intensity difficult. If the $(1,0)$ peak in the unoriented 
 data were overestimated, that would account for the observed discrepancy.
 Indeed, the microdensitometer trace in \cite{ref:Wack89} suggests that 
-the $(1,0)$ and $(1,1)$ reflections should have similar intensity.
+the $(1,0)$ and $(1,1)$ reflections should have similar intensity as we observed.
 
 \begin{table}[htbp]
   \centering
@@ -1549,12 +1545,12 @@ Comparison with previous unoriented/oriented stuff.
 
 \section{Conclusion}
 Future possible experiments
-include the high resolution transmission experiment, where both geometric 
+include a high resolution transmission experiment, where both geometric 
 broadening and energy dispersion are minimized. The expected resolution 
 is the width of the X-ray beam, which is about 3 pixels. This experiment 
 doubles the best resolution achieved in this work. 
 Another slightly different high resolution experiment is to use silicon 
-crystal analyzer downstread of the sample, which completely remove geoemtric
-boradening. The downside of this type of high resolution experiment is that
-only one point in q-space is probed at any given exposure, so to get a full
+crystal analyzer downstream of the sample, which completely remove geometric
+broadening. The downside of this type of high resolution experiment is that
+only one point in q-space is probed at any given exposure, so getting a full
 2D map of wide angle scattering is time consuming.  
