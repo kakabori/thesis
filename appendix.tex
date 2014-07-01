@@ -200,8 +200,9 @@ for the mosaic spread modified structure factor
 \end{equation}
 with Eq.\,(\ref{eq:theta'}) and Eq.\,(\ref{eq:phi'}). 
 
-The structure factor for a stack of rigid layers with their normals parallel
-to the $z$-axis in spherical coordinates is
+To test these equations, let us apply them to the simple case of 
+a stack of rigid layers with their normals parallel to the $z$-axis 
+in spherical coordinates.  The structure factor is then
 \begin{equation}
   S(q,\theta,\phi) = \frac{\delta(q-\frac{2\pi h}{D})}{q^2} 
   \delta(\cos\theta-1) \delta(\phi)
@@ -219,8 +220,7 @@ Then, the mosaic spread modified structure factor $S_M(\mathbf{q})$ is
   &= \frac{\delta(q-\frac{2\pi h}{D})}{q^2}P(\theta).
   \label{eq:SM_Bragg}
 \end{align}
-Eq.~(\ref{eq:SM_Bragg}) describes hemispherical shells during a scattering
-experiment with
+Eq.~(\ref{eq:SM_Bragg}) describes hemispherical shells with
 radii of $2\pi h/D$ in the sample $q$-space. As will be described
 in the next section, a 2D detector records cross sections of these shells,
 which give rise to mosaic arcs along $q=2\pi h/D$. 
@@ -229,7 +229,7 @@ The structure factor of thermally fluctuating layers is not simple delta functio
 and gives rise to diffuse scattering. Analysis of the diffuse scattering 
 from a sample with mosaic spread requires Eq.~(\ref{eq:SM}).
 
-\subsection{Mosaic Spread: Experiment}\label{app:mosaic_exp}
+\subsection{Mosaic Spread: Near Equivalence of Two Methods}\label{app:mosaic_exp}
 In this section, we discuss experimental procedures to probe appropriate 
 $q$-space
 to measure the mosaic spread distribution, $P(\alpha)$. In our setup, the angle of 
@@ -266,8 +266,8 @@ $\chi=0$ and $\theta=\theta_B$ while $\omega$ is varied about $\theta_B$,
 where $\theta_B$ is the Bragg angle. Then, 
 \begin{align}
   q_x &= 0 \nonumber\\
-  q_y &= q\sin(\omega-\theta_B) \nonumber\\
-  q_z &= q\cos(\omega-\theta_B),
+  q_y &= q_B\sin(\omega-\theta_B) \nonumber\\
+  q_z &= q_B\cos(\omega-\theta_B),
   \label{eq:rock} 
 \end{align}
 which shows that this scan traces a part of the circular path in the $q_x=0$ plane
@@ -303,15 +303,27 @@ reduces to
   q_z &\approx q\cos\chi.
   \label{eq:ring_small}
 \end{align}
-Thus, by comparing Eq.~(\ref{eq:rock}) and Eq.~(\ref{eq:ring_small}),
-the rocking scan and ring analysis have been shown to be equivalent for small $\theta_B$,
-the condition which is satisfied for low angle X-ray scattering.
+For a sharp Bragg peak, this ring method gives the same mosaic intensity 
+$I(\chi,\theta_B)$ in Eq.~(\ref{eq:ring_small} as the rocking method mosaic 
+intensity $I(\omega - \theta_B)$ in Eq.~(\ref{eq:rock}) because the mosaic 
+distribution $P(\alpha)$ is in-plane isotropic. Differences occur when diffuse 
+scattering is added.  The diffuse scattering intensity is much broader and weaker 
+than the Bragg peaks.  In the ring method, it can be estimated as the average 
+from two rings offset on either side from $\theta_B$ and subtracted from the 
+$\theta_B$ ring.
 
 \subsection{NFIT}
-The updated NFIT first calculates a theoretical structure factor in 
-cylindrical coordinates \cite{Lyatskaya01}. This calculated structure factor $S(q_r,q_z)$
-has rotational symmetry about the $z$-axis, which eliminates the $\phi'$ dependence
-in Eq.~(\ref{eq:SM}). The program interpolates $S(q_r,q_z)$ in terms
+The original NFIT program was written by Dr. Yufeng Liu and described in his thesis.  
+It was used in the Nagle lab, with small updates for data handling, from 2003 until recently.
+A newer version has been implemented by Michael Jablin that calculates the theoretical structure factor using 
+cylindrical domains appropriate for in-plane correlations \cite{Lyatskaya01}
+rather than rectangular domains appropriate for coherence domains. 
+All these versions approximated the effect of mosaic spread roughly by averaging 
+only in the $q_r$ direction at fixed $q_z$ which means that mosaic rings are approximated 
+as mosaic lines or spikes. The subsequent development described here and not yet adopted 
+by the Nagle lab calculates the structure factor $S(q_r,q_z)$ with rotational symmetry 
+about the $z$-axis, which eliminates the $\phi'$ dependence in Eq.~(\ref{eq:SM}). 
+The program interpolates $S(q_r,q_z)$ in terms
 of the spherical coordinates $q$ and $\theta$ with $\phi=0$ 
 to perform the double integration in Eq.~(\ref{eq:SM}). 
 After the mosaic spread integration, the program performs the $q_y$ integration
@@ -319,19 +331,19 @@ described in section~\ref{sec:diffuse_analysis}.
 For this integration, the calculated $S_M$ is interpolated 
 in terms of $q_x$, $q_y$, and $q_z$.
 
-If the structure factor defined in the Cartesian coordinates are desired
+Note: if the structure factor defined in the Cartesian coordinates is desired
 (for a case of square domains instead of circular ones),
 Eq.~(\ref{eq:qx'} -- \ref{eq:qz'}) can be used instead of 
 Eq.~(\ref{eq:theta'}) and (\ref{eq:phi'}).
 
-An issue with the current analysis comes from the form factor $|F(q_z)|$,
-which is not calculated from a model in NFIT. Because the mosaic
-spread integration mixes up intesity at different $q_z$ values, 
+While it is an improvement, the new program also is an approximation because 
+it does not include the unknown form factor $|F(q_z)|$. 
+The mosaic spread integration mixes up intensity at different $q_z$ values, so
 the separation of $|F(q_z)|$ from $S(\mathbf{q})$ is in principle impossible. 
-One way to deal with this issue is to combine the SDP and NFIT programs, but
+One way to deal with this issue would be to combine the SDP program, 
+which determines $|F(q_z)|$, with the NFIT program, but
 that will end up with too many non-linear parameters.
-Another possibility is to limit the fitting range to regions close to the meridian
-and truncate the distribution at an angle much smaller than $\pi/2$. 
+Another possibility is to limit the fitting range to regions close to the meridian.
 For a small range of integration, it is not unreasonable to assume that
 the form factor is approximately constant as can be seen from 
 Eq.~(\ref{eq:qz'}) with small $q_x$, $q_y$, and $\alpha$. 

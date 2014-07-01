@@ -118,19 +118,23 @@ minor side \cite{ref:deVries05}.
 \newpage
 \section{Materials and Methods}
 \subsection{Sample Preparation}
-DMPC was purchased from Avanti Polar Lipids and used without further purification.
+DMPC was purchased from Avanti Polar Lipids.
 Oriented thin films were deposited on clean silicon wafers with
 a chloroform:methanol 2:1 (volume ratio) mixture following the rock and roll procedure
-\cite{Tristram-Nagle07_MMB}.
-In previous synchrotron experiments, the samples were created and annealed 
+\cite{Tristram-Nagle07_MMB}. See also Sec.~\ref{sec:volume_method}.
+In 2011 and 2012 synchrotron experiments, the samples were created and annealed 
 more than a week in advance and stored in a refrigerator. The quality of 
 these samples measured by their mosaic spread was found to worsen over time
-after the samples were annealed. Therefore, to ensure the best sample quality, the 
-samples were annealed for approximately 12 hours just before the X-ray experiment.
-Figure~\ref{fig:annealing_chamber} shows a picture of the annealing chamber. 
-To achieve gentle but efficient hydration of a sample, filter papers were installed. 
-For successful annealing, it must be emphasized that the annealing 
-chamber should equilibrate in an annealing oven prior to putting a sample in the chamber.
+after the samples were annealed. Therefore, to attempt better quality, the 
+samples were annealed for only about 12 hours just before the X-ray experiment.
+Figure~\ref{fig:annealing_chamber} shows a picture of the annealing chamber.
+Annealing is promoted both by hydration and by elevated temperature. 
+To achieve gentle but efficient hydration of a sample, filter papers were installed
+that exposed a larger surface for evaporation. The temperature was set to
+60 \textcelsius.
+It must be emphasized that the annealing 
+chamber should equilibrate in an annealing oven set to 60 \textcelsius,
+prior to putting a sample in the chamber.
 When a sample was put in the chamber sitting at a room temperature and
 then the system was placed inside the oven, warmer water vapor inside the chamber 
 condensed on the cooler sample, causing so called flooding of oriented sample. 
@@ -152,8 +156,7 @@ as for low angle study. In order to minimize the geometric broadening, the
 sample was trimmed to 1 mm in width along the beam direction.
 
 The sample for transmission study was deposited on a thin, 35 micron, silicon
-wafer, and oriented following the rock and roll procedure \cite{Tristram-Nagle07_MMB}. 
-See also Sec.~\ref{sec:volume_method}. 
+wafer, and oriented following the rock and roll procedure \cite{Tristram-Nagle07_MMB}.  
 Because the wafer was very fragile, attaching the sample to a sticky 
 thing was impossible. Instead, the sample was attached to a plastic cap on 
 a small vial with a small amount of heat sink compound at a corner of the 
@@ -161,8 +164,6 @@ wafer. The wafer was stable enough for rocking.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Instrumental Resolution}
-The instrumental resolution of our X-ray experiments depended on the beam
-divergence, energy dispersion, and geometric broadening. 
 The X-ray scattering experiments were carried out at the Cornell 
 High Energy Synchrotron Source (CHESS) G1 station in three different runs
 (2011, 2012, and 2013). 
@@ -171,27 +172,32 @@ in this thesis were collected in 2013.
 The near grazing incidence wide angle X-ray scattering (NGIWAXS) data were also collected
 in the 2013 run, but with smaller energy dispersion than in the LAXS experiment.
 The transmission wide angle X-ray scattering (TWAXS) data were collected
-in the 2011 run. The ripple phase experiment in the 2011 run was not successful
+in the 2011 run. The ripple phase experiment in the 2012 run was not successful
 due to low sample quality.
+The instrumental resolution in these X-ray experiments depended on the beam
+divergence, energy dispersion, and geometric broadening. 
 
 \subsubsection{Divergence}
 The beam divergence quantifies an angular spread of the incoming X-ray
 beam. We estimated the beam divergence by measuring the horizontal and 
-vertical beam widths at two known sample-to-detector $S$ distances. 
+vertical beam widths at two known sample-to-detector $S$ distances
+with difference $\Delta S$. 
 The beam widths were larger at the further distance, which indicated 
-that the beam was divergent. Then, from similar triangles, we calculated the divergence.
+that the beam was divergent. 
+We calculated the divergence as div = $\Delta B/\Delta S$, where
+$\Delta B$ is the difference in beam widths at different $S$ distances.
 Table~\ref{tb:beam_divergence} summarizes beam divergence.
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{ccc}
+  \begin{tabular}{cccc}
     \hline
-    type of  & horizontal & vertical \\
-    experiment & (rad.) & (rad.) \\
+    year & type of  & horizontal & vertical \\
+     & experiment & (rad.) & (rad.) \\
     \hline
-    LAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
-    NGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
-    TWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
+    2013 & LAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
+    2013 & NGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
+    2011 & TWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
     \hline
   \end{tabular}
   \caption[Beam divergence]{Beam divergence}
@@ -200,7 +206,7 @@ Table~\ref{tb:beam_divergence} summarizes beam divergence.
 
 \subsubsection{Energy dispersion}
 A W/B$_4$C multilayer monochromater with energy bandwidth $\Delta E$/$E$ of 
-1.5\% was used in the LAXS and TWAXS experiments. 
+~1.3\% was used in the LAXS and TWAXS experiments. 
 The energy of the X-ray beam was 10.55 keV, corresponding to a wavelength 
 $\lambda$ of 1.175 \AA, in the LAXS experiment.
 To achieve a higher instrumental resolution than that for 
@@ -212,14 +218,14 @@ Table~\ref{tb:energy_dispersion} summarizes energy dispersion.
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{cccc}
+  \begin{tabular}{ccccc}
     \hline
-    type of & $\Delta E/E$ & $E$ & $\lambda$ \\
-    experiment & (\%) & (keV) & (\AA) \\
+    year & type of & $\Delta E/E$ & $E$ & $\lambda$ \\
+     & experiment & (\%) & (keV) & (\AA) \\
     \hline
-    LAXS & 1.5 & 10.55 & 1.175 \\
-    NGIWAXS & 0.01 & 10.55 & 1.175 \\
-    TWAXS & 1.5 & 10.54 & 1.176 \\
+    2013 & LAXS & 1.5 & 10.55 & 1.175 \\
+    2013 & NGIWAXS & 0.01 & 10.55 & 1.175 \\
+    2011 & TWAXS & 1.5 & 10.54 & 1.176 \\
     \hline
   \end{tabular}
   \caption[Energy dispersion]{Energy dispersion}
@@ -232,7 +238,8 @@ geometric broadening of diffraction peaks on the CCD detector.
 
 In the LAXS experiment, 
 the geometric broadening in the horizontal $x$ direction is simply the 
-horizontal beam width. Geometric broadening in the vertical $z$ direction
+horizontal beam width for $k=0$ peaks with minor additional broadening
+for $k\neq 0$ peaks. Geometric broadening in the vertical $z$ direction
 is due to different heights of the sample along the $y$ direction of the beam 
 at non zero angle of incidence $\omega$. It is given approximately by
 $w_s\tan\theta$, where $w_s$ is the sample width along the $y$
@@ -240,16 +247,18 @@ direction and $\theta$ is the scattering angle.
 The beam shape, measured through a semi-transparent 200 $\mu$m thick
 molybdenum (Mo) beam stop, is shown in Fig.~\ref{fig:ripple_lr_beamx}
 and \ref{fig:ripple_lr_beamz}.
-The horizontal beam width was 2.3 pixels (0.16 mm). The vertical beam
+The horizontal beam width was 1.7 pixels (0.12 mm). The vertical beam
 width was approximately 1 mm, tall enough to cover the entire sample
-when the sample was tilted by 7\textdegree. The sample was rocked
+if the sample was tilted between 0\textdegree\ and 11.5\textdegree. 
+The sample was rocked
 during X-ray exposure between -1.6\textdegree\ and 7\textdegree\ 
-in order to observe many diffraction peaks in one data collection. 
+in order to observe many diffraction peaks in one data collection
+and keep all the sample in the beam. 
 
 \begin{figure}[p]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/laxs/beamx_lr}
-  \caption{The horizontal profile of the beam used in the low resolution study.
+  \caption{The horizontal profile of the beam used in the 2013 low resolution study.
   Each pixel was 0.07113 mm, which gave a CCD angular resolution $\Delta\theta$ of 
   0.0057\textdegree, corresponding to $\Delta q=0.0011$ \AA$^{-1}$ at the 
   sample to detector distance of 359.7 mm. 
@@ -261,7 +270,7 @@ in order to observe many diffraction peaks in one data collection.
 \begin{figure}[p]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/laxs/beamz_lr}
-  \caption{The vertical profile of the beam used in the low resolution study.
+  \caption{The vertical profile of the beam used in the 2013 low resolution study.
   The beam height = 15 pixels = 1.1 mm.}
   \label{fig:ripple_lr_beamz}
 \end{figure}
@@ -270,51 +279,35 @@ In the NGIWAXS experiment,
 the horizontal geometric broadening was due to the
 sample width along the beam direction and the horizontal beam width.
 From the geometry of the experiment shown in Fig.~\ref{fig:geometric_broadening}, 
-the geometric broadening $\Delta x$ can be determined,
+the geometric broadening $\Delta x$ can be estimated,
+assuming simple additivity,
 \[
 \Delta x = \Delta x_\textrm{beam} + w_\textrm{s}\tan(2\theta),
 \] 
 where $\theta$ is the in-plane scattering angle.
 The total scattering angle $2\theta$ for the ripple WAXS was approximately 
 16\textdegree. 
-To minimize the contribution from the sample, the sample was trimmed to 1 mm
-along the beam direction. 
-The width of 1 mm was chosen because (1) I could not trim more
+To minimize the contribution to $\Delta x$ from the sample, 
+the sample was trimmed to $w_s$ = 1 mm along the beam direction. 
+This width was chosen because (1) I could not trim more
 without a more sophisticated device than a simple razor blade, (2) a very
-narrow sample would be a weak scattering body, and (3) any effect from 
+narrow sample would be a weak scattering body, and (3) disordering effect from 
 the sample edge might become too significant to ignore. 
 Given the above reasons and due to limited availability
 of synchrotron beam time, I considered a 1 mm width to be reasonable.
 The horizontal beam width was 4 pixels (0.28 mm) as shown in
 Fig.~\ref{fig:NGIWAXS_beamx}.
 With these experimental parameters, 
-the resolution was calculated to be $\Delta x = 0.57$ mm = 8 pixels, 
+the resolution was estimated to be $\Delta x = 0.57$ mm = 8 pixels, 
 which would be the unresolved width of an intrinsically infinitely sharp 
 wide angle peak.
+{\color{red} Comment and refer to the gel phase data shown in the 
+result section of NGIWAXS.}
 The sample to detector distance were 220.6 mm, measured using silver behenate.
 Then, the minimum peak width measured in $q$-space would be
 $\Delta q \approx 0.014$ \AA$^{-1}$. The vertical geometric broadening 
 was negligible because the sample width $w_s$ was narrow and scattering
 of interest occurred at small $q_z$.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/waxs/beamx_hr}
-  \caption{The horizontal profile of the beam used in the high resolution 
-  experiment. The CCD angular resolution $\Delta\theta$ = 0.0092\textdegree\,
-  corresponding to $\Delta q$ = 0.0017 \AA$^{-1}$, at the sample to detector
-  distance of 220.6 mm. The beam FWHM = 3.7 pixels = 0.26 mm, giving
-  $\Delta\theta$ = 0.034\textdegree\ or $\Delta q$ = 0.0063 \AA$^{-1}$. }
-  \label{fig:NGIWAXS_beamx}
-\end{figure} 
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/waxs/beamz_hr}
-  \caption{The vertical profile of the beam used in the high resolution experiment.
-  The beam height = 9 pixels = 0.64 mm.}
-  \label{fig:NGIWAXS_beamz}
-\end{figure} 
 
 \begin{figure}[htbp]
   \centering
@@ -328,13 +321,32 @@ of interest occurred at small $q_z$.
   \label{fig:geometric_broadening}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/waxs/beamx_hr}
+  \caption{The horizontal profile of the beam used in the 2013 high resolution 
+  experiment. The CCD angular resolution $\Delta\theta$ = 0.0092\textdegree\,
+  corresponding to $\Delta q$ = 0.0017 \AA$^{-1}$, at the sample to detector
+  distance of 220.6 mm. The beam FWHM = 3.7 pixels = 0.26 mm, giving
+  $\Delta\theta$ = 0.034\textdegree\ or $\Delta q$ = 0.0063 \AA$^{-1}$. }
+  \label{fig:NGIWAXS_beamx}
+\end{figure} 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/waxs/beamz_hr}
+  \caption{The vertical profile of the beam used in the 2013 high resolution experiment.
+  The beam height = 9 pixels = 0.64 mm.}
+  \label{fig:NGIWAXS_beamz}
+\end{figure} 
+
 In the TWAXS experiment, 
 geometric broadening in both $x$ and $z$ directions was non-negligible.
 To calculate the broadening, let us assume that the beam has a rectangular
 cross section with its height $Y_b$ and width $X_b$ as shown in Figure 
-\ref{fig:gb_trans1}. When the sample is tilted by $\omega$, rays emerging 
+\ref{fig:gb_trans1}. When the sample is tilted by $\omega$, X-rays emerging 
 from the top edge of the sample travel extra distance compared to the distance 
-that rays from the bottom edge of the sample travel. This, then, leads to 
+that X-rays from the bottom edge of the sample travel. This, then, leads to 
 distortion of the scattered beam; namely, the scattered beam will appear on 
 the CCD screen as a parallelogram as shown in Figure 
 \ref{fig:gb_trans1}. 
@@ -392,7 +404,7 @@ our experiments.
   \label{fig:gb_trans3}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \begin{tabular}{ccccc}
     \hline
@@ -993,7 +1005,8 @@ If $\mu$ is taken to infinity (no absorption), $A(\omega,\theta)$
 goes to 1 as expected.
 The absorption factor $A_{h0}$ for the $k=0$ peaks is given by
 $A(\omega=\theta=\theta_B)$, plotted in Fig.~\ref{fig:abs_factor}.
-As shown, this factor is about 30 \% for $h=1$ peak, so it is not negligible.
+As shown, this factor is about 20 \% for $h=1$ peak with respect to
+$h=4$, so it is not negligible.
 
 %------------------------------------------------------------------------------
 \begin{figure}[htbp]
@@ -1087,19 +1100,19 @@ distribution. $N$ satisfies
   \label{eq:mosaic_N}
 \end{equation}
 We then consider a two dimensional contour map on a $\omega\chi$ plane.
-Observed intensity for a reflection with a Bragg angle of $\theta_B$ is
+Intensity for a reflection with a Bragg angle of $\theta_B$ is
 given by
 \begin{equation}
-  I^\textrm{obs}_{h0} = \int_{-\theta_B}^{\theta_B}\mathop{d\omega} 
+  I = \int_{-\theta_B}^{\theta_B}\mathop{d\omega} 
   \int_{-\chi_0}^{\chi_0}\mathop{d\chi} P(\alpha)
   = \int_{-\theta_B}^{\theta_B}\mathop{d\omega}
   \int_{-\chi_0}^{\chi_0}\mathop{d\chi}
   \frac{N}{(\omega-\theta_B)^2+\chi^2+\alpha_M^2}
   \label{eq:mosaic_I}
 \end{equation}
-After $\chi$ integration, Eq.~(\ref{eq:mosaic_I}) is
+After the integration over $\chi$, Eq.~(\ref{eq:mosaic_I}) is
 \begin{equation}
-  I^\textrm{obs}_{h0} = 4N\int_0^{\theta_B}\frac{d\omega}{\sqrt{\omega^2+\alpha_M^2}}
+  I = 4N\int_0^{\theta_B}\frac{d\omega}{\sqrt{\omega^2+\alpha_M^2}}
   \arctan\pars{\frac{\chi_0}{\sqrt{\omega^2+\alpha_M^2}}}.
   \label{eq:mosaic_I2}
 \end{equation}
