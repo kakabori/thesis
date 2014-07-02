@@ -424,7 +424,7 @@ our experiments.
 \subsection{Low Angle X-ray Scattering Experiment}\label{sec:LAXS_method}
 The X-ray beam for the low angle X-ray scattering (LAXS) experiment 
 was set up by the station scientist, Dr. Arthor Woll.
-The sample to detector distance was 359.7 mm, measured by indexing
+We chose the sample to detector distance to be 359.7 mm, measured by indexing
 silver behenate Bragg peaks. The D-spacing of silver behenate is known to be
 58.367 \AA.
 
@@ -438,13 +438,15 @@ $[\exp(-25/13.74)]^{-1} = 6.2$. The exact attenuation factor was determined
 by comparing X-ray images collected with and without the attenuator, 
 shown in Fig.~\ref{fig:olddopc} and \ref{fig:attenuator}.
 The attenuation factor of the nominally 25 $\mu$m thick Mo was found to 
-be 6.9 for the wavelength used (1.175 \AA). 
+be 6.9 for the wavelength used (1.175 \AA), indicating an actual thickness
+of ~27 $\mu$m. 
 
-Sheets of Mo were also used as a beam stop downstream of the sample, just 
+Sheets of Mo were also used as a semi-transparent beam stop downstream of the sample, just 
 outside the hydration chamber, to attenuate the beam and strong orders.
 100 and 200 $\mu$m were used to attenuate strong orders and 
-and 225 $\mu$m to attenuate the beam. To avoid saturation of CCD pixels by
-the very intense beam, the beam stop was always set to block the beam.
+and either 200 or 225 $\mu$m to attenuate the beam. To avoid saturation of CCD pixels by
+the very intense beam of ~10$^{11}$ photons/mm$^2$/second, 
+the beam stop was always set to attenuate the beam.
 
 A few Bragg peaks in the low angle X-ray scattering of the ripple phase
 were very strong, leading to saturation of CCD pixels for data collection
@@ -459,7 +461,7 @@ Then, the integrated intensity of (1,0) peak was measured
 from the first image. This value was multiplied by 6.9 to account for the beam
 attenuation and by 60 to scale with the exposure time. 
 The intensity of (2,0) and (2,-1) were measured from the second image, also
-multiplied by 60 to account for the shorter exposure time. The intensity of
+multiplied by 60 to account for the shorter exposure time. The intensities of
 the rest of the observed peaks were measured from the third image.
 
 The integrated intensity of each peak was obtained using the Nagle lab tview
@@ -472,6 +474,28 @@ the peaks were wider for higher orders.
 Consequently, the box was made wider for higher
 orders. The box size was chosen so that approximately 80\% of the peak intensity
 was counted toward the integrated intensity.
+
+\begin{figure}[jtbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/ripple/MMs/laxs/olddopc045_labels}
+  \includegraphics[width=0.4\textwidth]{figures/ripple/MMs/laxs/olddopc044}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator1}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator2}
+  \caption{(top panels) CCD images of X-ray scattering taken with (left) and without 
+  (right) a nominally 25 $\mu$m thick Mo attenuator. These data were taken 
+  at a fixed angle of incidence $\omega=0.8$\textdegree. The sample was an oriented film of 
+  DOPC:DOPE (3:1) in the fluid phase at 37 \textcelsius. The wavelength
+  was 1.175 \AA, the same as the one used for the ripple phase experiment.
+  The same gray scale is used in both images. 100 pixel =  0.11 \AA$^{-1}$ in $q$. 
+  A small dot located about $(p_x,p_z)=(520,170)$ between the first and second orders is 
+  a specular reflection from the substrate. The exposure times were 1 second. 
+  (bottom panels) Vertical $p_z$ slices of the X-ray images shown in the top panels (left).
+  The scattering intensity measured with the attenuator (red solid circles) 
+  was multiplied by a factor of 6.9 and compared to the intensity measured 
+  without the attenuator (black solid circles, right).}
+  \label{fig:olddopc}
+\end{figure}
+
 
 \begin{figure}[htbp]
   \centering
@@ -489,40 +513,12 @@ was counted toward the integrated intensity.
   \label{fig:ripple_laxs_images}  
 \end{figure} 
 
-\begin{figure}[jtbp]
-  \centering
-  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc045_labels}
-  \quad
-  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/olddopc044}
-  \caption{CCD images of X-ray scattering taken with (left) and without 
-  (right) a nominally 25 $\mu$m thick Mo attenuator. These data were taken 
-  at a fixed angle of incidence $\omega=0.8$\textdegree. The sample was an oriented film of 
-  DOPC:DOPE (3:1) in the fluid phase at 37 \textcelsius. The wavelength
-  was 1.175 \AA, the same as the one used for the ripple phase experiment.
-  The same gray scale is used in both images. 100 pixel =  0.11 \AA$^{-1}$ in $q$. 
-  A small dot located about $(p_x,p_z)=(520,170)$ between the first and second orders is 
-  a specular reflection from the substrate. The exposure times were 1 second.}
-  \label{fig:olddopc}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator1}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator2}
-  \caption{Vertical $p_z$ slices of X-ray images shown in Fig.~\ref{fig:olddopc}
-  (left). The scattering intensity measured with the attenuator (red solid circles) 
-  was multiplied by 
-  a factor of 6.9 and compared to the intensity measured 
-  without the attenuator (black solid circles, right).}
-  \label{fig:attenuator}
-\end{figure}
-
 \subsection{Near Grazing Incidence Wide Angle X-ray Scattering Experiment}
 \label{NGIWAXS_method}
 The high resolution wide angle X-ray scattering (WAXS)
 experiment was also carried out at the G1 station. 
 The instrument was set up by the G1
-station scientist, Author Woll, and the assistant scientist, Dr. Robin Baur.
+station scientist, Arthur Woll, and the assistant scientist, Dr. Robin Baur.
 Wide angle X-ray scattering was collected at an incident angle of 0.2\textdegree. 
 The total external reflection from an air-lipid interface occurs approximately 
 at 0.1\textdegree\ and 0.17\textdegree\ for air-silicon interface, 
@@ -544,8 +540,7 @@ The incident angle $\omega$ was set to -45\textdegree\ for transmission data
 collection (see Fig.~\ref{fig:holder_schematic}). 
 A 35 $\mu$m thick silicon substrate absorbs 10.5 keV X-ray 
 by only 20\%\ \cite{ref:cxro}, so most of the incoming X-rays penetrated
-the thin substrate. To measure the D-spacing of the sample, 
-$\omega$ was set to 1\textdegree.
+the thin substrate. 
  
 Unfortunately,
 the axis of the rotation motor did not coincide with the sample axis, so
@@ -555,6 +550,7 @@ silver behenate (AgBe) sample was collected
 at a fixed $\omega$. Due to large mosaic spread of the AgBe sample, many orders were
 visible. While the relative intensity of each order was inaccurate, 
 the positions of peaks were the same as those observed with a rotating sample.
+To measure the D-spacing of the sample, $\omega$ was set to 1\textdegree.
 The sample to detector distance was measured to be 174.7 mm 
 at $\omega$ = 0\textdegree.
 From the sample holder geometry shown in Fig.~\ref{fig:sgeometry},
@@ -953,7 +949,8 @@ section.
   \caption{The path of X-rays within the sample. The incident angle is 
   $\omega$ and the total scattering angle is $2\theta$. An X-ray with a
   penetration depth of $z$ is shown. The total thickness of the sample
-  is $t$.}
+  is $t$. Refraction correction is smaller than {\color{red} what?} for 
+  $\theta > 0.5$\textdegree ($h=1$).}
   \label{fig:absorption_LAXS}
 \end{figure}
 %------------------------------------------------------------------------------
@@ -964,7 +961,7 @@ Let the $z$-axis point downward. At the top surface
 (air-sample interface), $z=0$. For X-rays that travel to $z$ and then scatter, the
 total path length within the sample is 
 \begin{equation}
-  L_\textrm{tot}(z,\omega,\theta) 
+  L(z,\omega,\theta) 
   = \frac{z}{\sin\omega}+\frac{z}{\sin(2\theta-\omega)} 
   = zg(\omega,\theta),
 \end{equation}
@@ -973,16 +970,16 @@ For each ray, the intensity is attenuated by the sample absorption.
 If non-attenuated 
 intensity is equal to $I_0$, then the attenuated intensity is
 \begin{equation}
-  I(z,\omega,\theta) = I_0\exp\left(-\frac{L_\textrm{tot}}{\mu}\right),
+  I(z,\omega,\theta) = I_0\exp\left(-\frac{L}{\mu}\right),
   \label{eq:ray}
 \end{equation}
-where $\mu$ is the absorption length of an X-ray. $\mu$ is 2.6 mm for 10.5 keV
-\cite{ref:cxro}.
+where $\mu$ is the absorption length of an X-ray. $\mu$ is about 2.6 mm for 10.5 keV
+for both water and lipids in all phases \cite{ref:cxro}.
 The observed intensity of scattering from a sample fixed at an angle $\omega$ 
 is equal to the integration
 of Eq.~(\ref{eq:ray}) over the total thickness of the sample and given by
 \begin{align}
-  I_{\textrm{obs}}(\omega,\theta) 
+  I(\omega,\theta) 
     &= \int_0^t \dz I(z,\omega,\theta)
      = I_0\int_0^t\dz \exp\left(-\frac{g(\omega,\theta)}{\mu}z\right) \nonumber \\
     &= I_0\mu \frac{1-\exp\left(-\frac{t}{\mu}g(\omega,\theta)\right)}{g(\omega,\theta)}.
@@ -991,8 +988,8 @@ of Eq.~(\ref{eq:ray}) over the total thickness of the sample and given by
 Defining the absorption factor at a fixed angle to be $A(\omega,\theta)$, 
 the observed intensity can also be written as
 \begin{equation}
-I_{\textrm{obs}}(\omega,\theta)=A(\omega,\theta)tI_0,
-\label{eq:I_obs2}
+  I(\omega,\theta)=A(\omega,\theta)tI_0,
+  \label{eq:I_obs2}
 \end{equation}
 where $tI_0$ is the intensity we would observe for non-absorbed X-rays.
 Equating Eq.~(\ref{eq:I_obs1}) and (\ref{eq:I_obs2}), we get
@@ -1005,7 +1002,7 @@ If $\mu$ is taken to infinity (no absorption), $A(\omega,\theta)$
 goes to 1 as expected.
 The absorption factor $A_{h0}$ for the $k=0$ peaks is given by
 $A(\omega=\theta=\theta_B)$, plotted in Fig.~\ref{fig:abs_factor}.
-As shown, this factor is about 20 \% for $h=1$ peak with respect to
+As shown, this factor is about 20 \% for $h=1$ peak relative to
 $h=4$, so it is not negligible.
 
 %------------------------------------------------------------------------------
@@ -1024,8 +1021,8 @@ is necessary because these peaks are observable at all our experimental incident
 described in section \ref{sec:Lorentz_correction}.
 The total observed intensity from a rotating sample is simply
 \begin{equation}
-  I_{\textrm{total}}(\theta) 
-  = \int_0^{2\theta}\textrm{d}\omega I_{\textrm{obs}}(\omega,\theta).
+  I_\textrm{obs}(\theta) 
+  = \int_0^{2\theta}\textrm{d}\omega I(\omega,\theta).
   \label{eq:total_obs_I}
 \end{equation}
 The upper integration limit is equal to $2\theta$ because the substrate
@@ -1035,7 +1032,7 @@ The total non-attenuated intensity is equal to $2\theta t I_0$. We, then,
 define the absorption factor $A(\theta)$ to be the ratio of the total 
 observed intensity to the total non-attenuated intensity,
 \begin{align}
-  A(\theta) \equiv \frac{I_\textrm{total}(\theta)}{2\theta tI_0}. 
+  A(\theta) \equiv \frac{I_\textrm{obs}(\theta)}{2\theta tI_0}. 
   \label{eq:abs_factor_def}
 \end{align}
 Using Eq.~(\ref{eq:ang_abs_factor}) and (\ref{eq:total_obs_I})
@@ -1061,8 +1058,8 @@ As described in appendix~\ref{app:mosaic_exp},
 a mosaic spread distribution can be probed
 by changing $\omega$, so rotating the sample is essentially  
 equivalent to integrating a mosaic spread distribution.
-Because the range of the distribution probed is given by $\omega=2\theta_{hk}$ 
-where $\theta_{hk}$ is the Bragg angle for the $(h,k)$ reflection, 
+Because the range of the distribution probed is approximately given by $\omega=[0, 2\theta_{hk}]$ 
+where $\theta_{hk}$ is the Bragg angle for a $(h,k)$ reflection, 
 this range is larger for higher $h$ orders. 
 This effect is illustrated in Fig.~\ref{fig:mosaic_contour}.
 
@@ -1070,27 +1067,28 @@ This effect is illustrated in Fig.~\ref{fig:mosaic_contour}.
   \centering
   \includegraphics[width=0.9\textwidth]{figures/ripple/analysis/mosaic_contour}
   \caption{Contours of a mosaic spread distribution projected on the $\omega\chi$-plane,
-  where $\chi$ is an angle measured from the meridian ($\chi=\pi/2-\phi$).
+  where $\chi-\chi_{hk}$ is an angle measured from a $(h,k)$ reflection on the detector
+  ($\chi=\pi/2-\phi$ in Fig.~\ref{fig:laxs_setup}) and $\theta_{hk}$ is the
+  Bragg angle for a $(h,k)$ reflection.
   The distribution function takes a form of Lorentzian centered at $\alpha=0$.
-  Domains with $\alpha=0$ are probed at $\omega=\theta_B$ and $\chi=0$.
-  Integrated intensity of $(1,k)$ reflection is proportional to the green
-  shaded area while that of $(3,k)$ reflection is proportional to the
-  blue shaded area, which is three times larger. The rocking scan $\omega$ axis
-  is centered at $\theta_B$.}
+  Domains with $\alpha=0$ are probed at $\omega=\theta_{hk}$ and $\chi=\chi_{hk}$.
+  Integrated intensity of $(1,k)$ reflection arises from domains in the green
+  shaded area while that of $(3,k)$ reflection is from the
+  blue shaded area, which is three times larger.}
   \label{fig:mosaic_contour} 
 \end{figure}
 
 We limit 
-$\chi$ to go from -1.4\textdegree\ to 1.4\textdegree. 
-The effect of cutoff on $\chi$ is not very important
+$\chi-\chi_{hk}$ to go from -1.4\textdegree\ to 1.4\textdegree. 
+The effect of cutoff on $\chi-\chi_{hk}$ is not very important
 because most of observed intensity was included in integration boxes.
 In contrast, cutoff on $\omega$ due to substrate blocking the scattering
 is important, especially for lower $h$ orders.
  
 We take the distribution to be Lorentzian, which has been experimentally
-observed,
+observed (REF, Dr. Nagle),
 \begin{equation}
-  P(\alpha) = \frac{N}{\alpha^2+\alpha_M},
+  P(\alpha) = \frac{N}{\alpha^2+\alpha_M^2},
 \end{equation}
 where $N$ is a normalization constant and $\alpha_M$ is the HWHM of the 
 distribution. $N$ satisfies
@@ -1107,7 +1105,7 @@ given by
   \int_{-\chi_0}^{\chi_0}\mathop{d\chi} P(\alpha)
   = \int_{-\theta_B}^{\theta_B}\mathop{d\omega}
   \int_{-\chi_0}^{\chi_0}\mathop{d\chi}
-  \frac{N}{(\omega-\theta_B)^2+\chi^2+\alpha_M^2}
+  \frac{N}{\omega^2+\chi^2+\alpha_M^2}
   \label{eq:mosaic_I}
 \end{equation}
 After the integration over $\chi$, Eq.~(\ref{eq:mosaic_I}) is
@@ -1126,7 +1124,9 @@ Eq.~(\ref{eq:mosaic_I2}) is plotted in Fig.~\ref{fig:mosaic_correction}.
   Eq.~(\ref{eq:mosaic_I2}) as a function of 
   $q_z\approx 4\pi\theta/\lambda$. Values at $q_z=2\pi h/D$ corresponding 
   to $D=57.8$ \AA\ are shown as squares. $\alpha_M=0.05$\textdegree\ and 
-  $\chi_0$=1.4\textdegree.}
+  $\chi_0$=1.4\textdegree. Eq.~(\ref{eq:mosaic_I2}) reaches $\sim$0.54 at 
+  $\theta_B=\pi/2$ and $\chi_0=1.4$\textdegree\ and reaches $\sim$1 at
+  $\theta_B=\pi/2$ and $\chi_0=1.4$\textdegree\ as expected.}
   \label{fig:mosaic_correction}
 \end{figure}
 

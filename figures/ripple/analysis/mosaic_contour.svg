@@ -379,14 +379,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="593.76045"
-     inkscape:cy="-80.422225"
+     inkscape:zoom="1.979899"
+     inkscape:cx="285.7872"
+     inkscape:cy="189.07963"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="1440"
+     inkscape:window-height="876"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -481,18 +481,22 @@
          sodipodi:role="line"
          id="tspan5855"
          x="525.78442"
-         y="615.47119">χ</tspan></text>
+         y="615.47119">χ-χ<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3101">hk</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="344.9671"
-       y="441.72495"
+       x="356.07877"
+       y="448.79602"
        id="text5857"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5859"
-         x="344.9671"
-         y="441.72495">ω</tspan></text>
+         x="356.07877"
+         y="448.79602">ω-θ<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3103">hk</tspan></tspan></text>
     <rect
        style="opacity:0.5;fill:#0000ff;fill-opacity:1;stroke:none"
        id="rect5861-9"
@@ -520,24 +524,24 @@
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="139.90613"
-       y="596.27832"
+       x="142.43152"
+       y="642.24023"
        id="text5919"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5921"
-         x="139.90613"
-         y="596.27832">ω=0°</tspan></text>
+         x="142.43152"
+         y="642.24023">ω=0°</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="81.846901"
-       y="635.53827"
+       x="83.362129"
+       y="595.63721"
        id="text5919-3"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="81.846901"
-         y="635.53827"
+         x="83.362129"
+         y="595.63721"
          id="tspan5950">ω=2θ<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
    id="tspan6121">10</tspan>=1.16°</tspan></text>
@@ -549,25 +553,16 @@
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="488.64542"
-       y="533.98285"
+       x="489.15051"
+       y="532.46759"
        id="text5853-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5855-2"
-         x="488.64542"
-         y="533.98285">χ ≈ 5°</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="185.22144"
-       y="531.73639"
-       id="text5853-1-2"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5855-2-1"
-         x="185.22144"
-         y="531.73639">χ ≈ -5°</tspan></text>
+         x="489.15051"
+         y="532.46759">χ-χ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3105">hk</tspan> ≈ 1.4°</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 2;stroke-dashoffset:0"
        d="m 199.00005,536.43445 c 0,135.86796 0,135.86796 0,135.86796"
@@ -581,14 +576,14 @@
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="521.46484"
-       y="557.29431"
+       x="521.96991"
+       y="675.48212"
        id="text5919-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5921-7"
-         x="521.46484"
-         y="557.29431">ω=0°</tspan></text>
+         x="521.96991"
+         y="675.48212">ω=0°</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 2;stroke-dashoffset:0"
        d="m 200.69478,670.52452 c 320.88911,0 320.88911,0 320.88911,0"
@@ -597,13 +592,13 @@
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="523.73517"
-       y="674.96472"
+       x="520.70465"
+       y="557.28192"
        id="text5919-3-9"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="523.73517"
-         y="674.96472"
+         x="520.70465"
+         y="557.28192"
          id="tspan5950-8">ω=2θ<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
    id="tspan6119">30</tspan>=3.48°</tspan></text>
@@ -647,5 +642,31 @@
          id="tspan6125-9"
          x="355.78394"
          y="693.98914">α=2.5°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="143.26176"
+       y="532.10632"
+       id="text5853-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5855-2-17"
+         x="143.26176"
+         y="532.10632">χ-χ<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3105-4">hk</tspan> ≈ -1.4°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="143.84642"
+       y="618.77844"
+       id="text5919-30"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5921-73"
+         x="143.84642"
+         y="618.77844">ω=θ<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3152">hk</tspan></tspan></text>
   </g>
 </svg>
