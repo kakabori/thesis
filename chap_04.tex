@@ -58,6 +58,8 @@ a ripple wavelength of 130 \AA\ and an amplitude of 45 \AA\ were reported.
 
 \textcolor{red}{multilayer vs LUV. Any LUV paper report on ripple?}
 
+\textcolor{red}{List all lipids in which ripple phase has been observed}
+
 From X-ray data of the DMPC ripple of unoriented samples, 
 Wack and Webb \cite{ref:Wack89} argued that the ripples have a sawtooth shape,
 but were unable to phase the observed pattern.
@@ -83,7 +85,7 @@ Several MD (molecular dynamics) simulations have been carried out, indicating
 various lipid packing. de Vrie \textit{et al.} has suggested interdigitated chain in the
 minor side \cite{ref:deVries05}.
 
-\textcolor{red}{Some theory papers}
+\textcolor{red}{Some theory papers. What causes ripple phase?}
 
 \begin{table}[htbp]
 \centering
@@ -163,7 +165,7 @@ a small vial with a small amount of heat sink compound at a corner of the
 wafer. The wafer was stable enough for rocking. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Instrumental Resolution}
+\subsection{Instrumental Resolution}\label{sec:instrumental_resolution}
 The X-ray scattering experiments were carried out at the Cornell 
 High Energy Synchrotron Source (CHESS) G1 station in three different runs
 (2011, 2012, and 2013). 
@@ -1019,7 +1021,7 @@ $h=4$, so it is not negligible.
 For $k\neq 0$ side peaks, an integration over the incident angle $\omega$
 is necessary because these peaks are observable at all our experimental incident angles as
 described in section \ref{sec:Lorentz_correction}.
-The total observed intensity from a rotating sample is simply
+The observed intensity for side peaks from a rotating sample is simply
 \begin{equation}
   I_\textrm{obs}(\theta) 
   = \int_0^{2\theta}\textrm{d}\omega I(\omega,\theta).
@@ -1027,8 +1029,11 @@ The total observed intensity from a rotating sample is simply
 \end{equation}
 The upper integration limit is equal to $2\theta$ because the substrate
 completely blocks the scattered X-rays above this angle as discussed in 
-section \ref{sec:Lorentz_correction}.
-The total non-attenuated intensity is equal to $2\theta t I_0$. We, then, 
+section \ref{sec:Lorentz_correction}. Eq.~(\ref{eq:ang_abs_factor}),
+which is essentially the integrand in Eq.~(\ref{eq:total_obs_I}), is 
+plotted in Fig.~\ref{fig:abs_integrand}. It is maximum when $\omega=\theta$,
+meaning that the path length is shortest at the Bragg condition.
+The non-attenuated observed intensity is equal to $2\theta t I_0$. We, then, 
 define the absorption factor $A(\theta)$ to be the ratio of the total 
 observed intensity to the total non-attenuated intensity,
 \begin{align}
@@ -1047,6 +1052,17 @@ at the final absorption factor
 $A_{hk} = A(\theta)$ is plotted in Fig.~\ref{fig:abs_factor}.
 The absorption correction $A_c(\theta)$ is the inverse of Eq.~(\ref{eq:abs_factor}). 
 
+%------------------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/analysis/abs_integrand}
+  \caption[Eq.~(\ref{eq:ang_abs_factor}) plotted as a function of $\omega$ for 
+  $\theta=\theta_B$]{Eq.~(\ref{eq:ang_abs_factor}) plotted as a function of 
+  $\omega$ for $\theta=\theta_B=0.58$\textdegree, corresponding to a Bragg
+  angle for $D$ = 57.8 \AA.}
+  \label{fig:abs_integrand}
+\end{figure}
+%------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Correction due to mosaic spread}\label{sec:mosaic_spread_correction}
@@ -1300,7 +1316,7 @@ each other (three pairs of overlapping peaks are highlighted in Table~\ref{tb:ob
 making separation of intensity difficult. If the $(1,0)$ peak in the unoriented 
 data were overestimated, that would account for the observed discrepancy.
 Indeed, the microdensitometer trace in \cite{ref:Wack89} suggests that 
-the $(1,0)$ and $(1,1)$ reflections should have similar intensity as we observed.
+the $(1,0)$ and $(1,1)$ reflections could have similar intensity as we observed.
 
 \begin{table}[htbp]
   \centering
@@ -1462,9 +1478,9 @@ results. Show an edp. Show the thicknesses of both arms. Comment on
 some fine features.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{NGIWAXS: analysis}
-\subsection{Absorption Correction}\label{sec:WAXS_abs_correction}
-(Under construction)
+%\section{NGIWAXS: analysis}
+%\subsection{Absorption Correction}\label{sec:WAXS_abs_correction}
+%(Under construction)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{NGIWAXS: model}
@@ -1492,13 +1508,10 @@ Figure~\ref{fig:NGIWAXS_enlarge} shows an enlarged image of the ripple
 phase WAXS at $D$ = 60.8 \AA. We observed a strong peak off the 
 equator and a weak one, the center of which was not determined. 
 The maximum intensity of the strong peak was at 
-$(q_r, q_z) \approx (1.49 \text{\AA}^{-1}, 0.19 \text{\AA}^{-1})$ as shown
+$(q_r, q_z) \approx (1.48 \text{\AA}^{-1}, 0.20 \text{\AA}^{-1})$ as shown
 in Fig.~\ref{fig:qrplots}. The weak peak was observed near the equator, but 
 separation of this peak from the strong one was most visible at 
-$q_z = 0.13 \textrm{\AA}^{-1}$ as Fig.~\ref{fig:qrplots} shows. Separation
-of the two peaks was possible because of the high resolution experiment. 
-In previous runs with the low resolution setup, the ripple peak
-appeared as a single wide peak.
+$q_z = 0.12 \textrm{\AA}^{-1}$ as Fig.~\ref{fig:qrplots} shows. 
 
 \begin{figure}[htbp]
   \centering
@@ -1536,27 +1549,145 @@ appeared as a single wide peak.
   \includegraphics[width=0.3\textwidth]{figures/ripple/NGIWAXS/qrplot11}
   \includegraphics[width=0.3\textwidth]{figures/ripple/NGIWAXS/qrplot12}
   \includegraphics[width=0.3\textwidth]{figures/ripple/NGIWAXS/qrplot13}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/NGIWAXS/qrplot14}
   \caption{$q_r$ swaths, each averaged over 0.02 \AA$^{-1}$. 
   The center $q_z$ value of a swatch is shown in the figure legends.}
   \label{fig:qrplots}
 \end{figure}
 
-(some thought) Can we say that
-the observed arc like scattering is not the mosaic spread, but
-true sample scattering? Comment on the widths of the peaks observed.
-Possibly make use of both low and high resolution data.
-Apply the absorption correction. Show q swaths for various $\phi$.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[trim=150 190 150 180,clip,width=0.45\textwidth]{figures/ripple/NGIWAXS/dmpc1_107}
+  \includegraphics[trim=50 0 50 0,clip,width=0.45\textwidth]{figures/ripple/NGIWAXS/dmpc1_107_gel_phase_20_swath_8px}
+  \caption[NGIWAXS of the DMPC gel phase]{(left) NGIWAXS image of the DMPC gel phase
+  at 10 \textcelsius\ for $D$ = 57.7 \AA. The (2,0) peak was at
+  $q_r=1.479$ \AA$^{-1}$, corresponding to $d_{20}=4.25$ \AA.
+  (right) The (2,0) peak plotted along horizontal pixels $p_x$ averaging over 8
+  pixels in $p_z$. The solid red
+  line is a Lorentzian fit to the data, resulting in the FWHM of $\sim$8 pixels,
+  which is an unresolved width of intrinsically infinitely sharp peak
+  estimated in Sec.~\ref{sec:instrumental_resolution}.}
+  \label{fig:gel_phase}  
+\end{figure}
+  
+(some thought) Show q swaths for various $\phi$.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{TWAXS: results}\label{sec:TWAXS_results}
-Convert the image to $q$-space.
-No strong order on the equator. 
-Compare to NGIWAXS and comment on the absorption effect
-in NGIWAXS data.
+Figure~\ref{fig:twaxs_ripple} shows the transmission wide angle X-ray
+scattering pattern after the CCD to q transformation. The stronger
+peak observed in NGIWAXS was also observed at approximately the same location.
+Because of a lager instrumental resolution than in the NGIWAXS experiment,
+the weaker peak was not well separated. Figure~\ref{fig:twaxs_qrplots} shows
+a slight hint of the second peak at $q_z=0.12$ \AA$^{-1}$. Indeed, this
+data set taken in the 2011 run motivated me to try an experiment
+with a higher instrumental resolution, which led to the NGIWAXS experiment
+in the 2013 run. Figure~\ref{fig:twaxs_qzplot} shows intensity along $q_z$,
+averaged between 1.46 \AA$^{-1}$ and 1.52 \AA${-1}$. It shows absence of
+a sharp peak at $q_z$ = 0 \AA$^{-1}$, which complements the NGIWAXS data.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_ripple}
+  \caption[TWAXS image of the DMPC ripple phase]{TWAXS image of the DMPC
+  ripple phase at 18 \textcelsius\ and $D$ = 60.3 \AA.}
+  \label{fig:twaxs_ripple}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot2}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot3}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot4}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot5}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot6}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot7}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot8}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot10}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot11}
+  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot12}
+  \caption{$q_r$ swaths of the TWAXS image, each averaged over 0.02 \AA$^{-1}$. 
+  The center $q_z$ value of a swatch is shown in the figure legends.}
+  \label{fig:twaxs_qrplots}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_qzplot}
+  \caption{$q_z$ swath averaged between 1.46 \AA$^{-1}$ and 1.52 \AA$^{-1}$.}
+  \label{fig:twaxs_qzplot}
+\end{figure}  
+  
+  
 \section{Discussion}
-Comparison with previous unoriented/oriented stuff.
+The ripple phase has attracted many researchers since its discovery in 1967,
+and extensive structural work on average structural properties such as 
+the ripple wavelength, oblique angle, $D$-spacing, and electron density
+profiles have been published. From those experimental measurements, 
+many theoretical models to explain the origin of the ripple phase have 
+been published with some models resulting in prediction of the structure
+inconsistent with the experimental data. Yet, chain packing within the 
+bilayer has only be suggested experimentally based on the measured thicknesses
+of the major and minor arms. For example, Sun et al. has suggested that 
+the chains in the minor arm are disordered like in the fluid phase.
+Senguphta et al. has argued, based on the electron density profile calculated
+using the data by Wack and Webb, that chains are packed in orthorhombic 
+lattice throughout both arms. Since the thickness of the major arm has
+shown to be almost the same as that of the gel phase, they argued that
+chains in the major arm should be tilted about 30\textdegree\ with respect
+to the bilayer local normal.
+
+Since the millennium, several simulations
+have predicted various chain packing. For example, all atomistic simulations
+done by de Vrie et al. have predicted existence of interdigitated state in 
+the minor arm of the DMPC assymetric ripple while lipids in the major arm
+are packed in an orthorhombic lattice with tilted chains, consistent with 
+the suggestion by Senguphta et al.  
+
+All those suggestions made so far has suffered because of the lack of
+quantitative wide angle scattering data. Studies using a rotating anode
+have suggested that the wide angle peak was broad and ambiguous to answer
+the question of lipid packing. Therefore, we sought to fill the gap
+with X-ray techniques that have been successful in describing the fluid
+phase chain-chain correlation. Our strength were two fold: 1) brilliant
+synchrotron beam that allows use of Si monochromater with a very small
+energy dispersion, 2) stacks of $\sim$2000 bilayers oriented on the substrate
+that scatters strongly and anisotropically, and 3) hydration chamber that 
+allowed us to control the hydration of the sample.
+
+By careful analysis of low angle X-ray scattering data, we have shown that...
+
+The high resolution near grazing incidence wide angle scattering data showed
+the existence of at least two instrumentally resolved peaks. Our simple model
+suggested that orthorhombic lattle requires more than one peak, so the finding
+of the second peak supports the gel-like packing in the major side.
+
+NGIWAXS has also shown that scattering intensity around 1.3 $^{-1}$ is probably
+the tail of those sharp peaks and not due to 
+the fluid-like chain packing. 
+
+In our simple, we have only considered orthorhombic lattice, but other lattice
+structures such as rectangular could be also tested. Atomistic simulation
+results can also be compared against our NGIWAXS and TWAXS data by directly
+Fourier transforming the atoms distribution. 
 
 \section{Conclusion}
+We have attempted to solve the lateral structure of the lipids within the
+bilayer using synchrotron X-rays. Our simple thin rod models can explain
+the existence of observed two peaks. However, this leads to another 
+mystery of the ripple phase; namely, the contribution to scattering from
+the minor arm. We have argued that gel-like packing in the minor arm
+would require large tilt angle, which has not been observed in a gel 
+phase, suggesting that tilt angle greater 30\textdegree\ is energetically
+costly for lipids. To accomodate the thickness of the minor arm, one
+could also consider some exotic packings such swirling pattern observed
+by Watkin et al. (PNAS) or tilt modulation field. Predicting the scattering
+intensity pattern from these structures might lead to a different way
+to analysis our NGIWAXS data and possibly more improved study of the 
+ripple phase. As a conclusion, we list two future possible experiments.
+
 Future possible experiments
 include a high resolution transmission experiment, where both geometric 
 broadening and energy dispersion are minimized. The expected resolution 
@@ -1567,3 +1698,15 @@ crystal analyzer downstream of the sample, which completely remove geometric
 broadening. The downside of this type of high resolution experiment is that
 only one point in q-space is probed at any given exposure, so getting a full
 2D map of wide angle scattering is time consuming.  
+
+Also highly speculative, but the ripple phase might be an interesting phase
+to study curvature sensing peptides. The description of curvature in the
+ripple phase has been around for a while. Those curvature sensing peptides
+may accumulate at the kink regions. Then, the electron density profile
+can be calculated with the analysis detailed in this work. It would 
+be very interesting if peptide-lipid interactions also significantly 
+modify the wide angle pattern. With a known perturbation property of 
+a peptide, it could shed light on the structure of the minor arm.
+
+The ripple phase has not attracted much attention recently, but
+it could possible be used to study biologically relevant problems.
