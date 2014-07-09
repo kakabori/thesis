@@ -168,9 +168,12 @@ simulations essentially found the same results.
 \section{Materials and Methods}
 \subsection{Sample Preparation}
 DMPC was purchased from Avanti Polar Lipids.
-Oriented thin films were deposited on clean silicon wafers with
-a chloroform:methanol 2:1 (volume ratio) mixture following the rock and roll procedure
-\cite{Tristram-Nagle07_MMB}. See also Sec.~\ref{sec:volume_method}.
+Four mg DMPC powder was dissolved in 140 $\mu$l chloroform:methanol (2:1 v:v) 
+mixture. The solution was plated onto silicon wafers following the rock and
+roll procedure \cite{Tristram-Nagle07_MMB}. 
+See also Sec.~\ref{sec:volume_method}.
+For all the ripple phase experiments, the temperature of the hydration 
+chamber was set to 18 \textcelsius. 
 In 2011 and 2012 synchrotron experiments, the samples were created and annealed 
 more than a week in advance and stored in a refrigerator. The quality of 
 these samples measured by their mosaic spread was found to worsen over time
@@ -325,6 +328,7 @@ and keep all the sample in the beam.
   \label{fig:ripple_lr_beamz}
 \end{figure}
 
+\paragraph{NGIWAXS}
 In the NGIWAXS experiment, 
 the horizontal geometric broadening was due to the
 sample width along the beam direction and the horizontal beam width.
@@ -390,6 +394,7 @@ of interest occurred at small $q_z$.
   \label{fig:NGIWAXS_beamz}
 \end{figure} 
 
+\paragraph{TWAXS}
 In the TWAXS experiment, 
 geometric broadening in both $x$ and $z$ directions was non-negligible.
 To calculate the broadening, let us assume that the beam has a rectangular
@@ -1260,9 +1265,6 @@ is plotted in Fig.~(\ref{fig:FT}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Transbilayer Part of the Form Factor}\label{sec:transbilayer}
-\subsubsection{Delta function model}
-Delta function model is described here.
-
 \subsubsection{1G and 2G hybrid model}
 In the hybrid model, the terminal methyl region of the bilayer is represented
 as a Gaussian function \cite{ref:Wiener89}. The headgroups are represented by one 
@@ -1355,16 +1357,17 @@ this allowed us to check our data obtained on
 oriented samples against an unoriented sample. 
 As Table~\ref{tb:obs_intensity1} shows, agreement between our oriented data
 and the uroriented data was good, but integrated intensity from our oriented
-sample was in many cases larger than that from an unoriented sample.
+sample was in many cases slightly larger than that from the unoriented sample.
 We attribute this discrepancy to the way intensity was extracted. 
 In an X-ray data from an oriented sample, each peak
 was nicely separated, so integrating a peak intensity was trivial.
 In contrast, some reflections in unoriented data were overlapping with
 each other (three pairs of overlapping peaks are highlighted in Table~\ref{tb:obs_intensity1}), 
 making separation of intensity difficult. If the $(1,0)$ peak in the unoriented 
-data were overestimated, that would account for the observed discrepancy.
+data had been overestimated, that would account for the observed discrepancy.
 Indeed, the microdensitometer trace in \cite{ref:Wack89} suggests that 
-the $(1,0)$ and $(1,1)$ reflections could have similar intensity as we observed.
+the $(1,0)$ and $(1,1)$ reflections could have similar intensity as we observed
+in our oriented sample.
 
 \begin{table}[htbp]
   \centering
@@ -1519,11 +1522,45 @@ the $(1,0)$ and $(1,1)$ reflections could have similar intensity as we observed.
   \label{tb:obs_intensity2}
 \end{table}
 
+Figure~\ref{fig:fit2} plots a two dimensional electron density profile calculated
+using the phases obtained from the M1G model and our experimental form factors.
+It is clear that the terminal methyl exists along the bilayer 
+center in the major arm. The thickness along the local bilayer normal
+in the major arm was about 40 \AA. This value is slightly larger than
+the previously published value of 37.9 \AA\ obtained from the unoriented
+data \cite{ref:Sun96}. The DMPC gel phase profile published in 
+\cite{Tristram-Nagle02} also has shown that the distance between
+the headgroup centers in opposing monolayers is approximately 38 \AA.
+Therefore, our experimental
+electron density profile suggests that chains in the ripple major arm are
+less tilted than in the gel phase, where chains are tilted by 30\textdegree.
+Incidentally, the maximum peak in the gel phase headgroup corresponding to the
+phosphate and choline components has been shown to be located at 20 \AA\
+from the bilayer center \cite{Tristram-Nagle02}. 
+
+Figure~\ref{fig:fit2} also shows absence of the terminal methyl trough
+in the minor arm. This absence is consistent with chains being interdigitated
+like in ref.~\cite{ref:deVries05}. Indeed, our electron density profile
+shows a small peak at the bilayer center of the minor arm, rather than
+depletion of electron density as in the gel and fluid phases. We also fitted
+the data to M1G models with more fitting parameters that allow the model 
+parameters in the minor arm to be different from those in the major arm.
+In those cases also, we observed the same absence of the terminal methyl trough,
+suggesting that this feature in the minor arm is not artifact of the model we used.
 
 
-Show in a table, fitting 
-results. Show an edp. Show the thicknesses of both arms. Comment on
-some fine features.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit2}
+  \caption[Electron density profile calculated using the phases obtained from the M2G
+  model and experimental form factors]
+  {Electron density profile calculated using the phases obtained from the M2G
+  model and experimental form factors. White is most electron dense and
+  black is least electron dense. The thickness along the local bilayer normal
+  in the major arm was about 40 \AA. Depletion of electron density due to
+  the terminal methyl is visible in the major arm but not in the minor arm.}
+  \label{fig:fit2}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{NGIWAXS: analysis}
@@ -1531,8 +1568,8 @@ some fine features.
 %(Under construction)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{NGIWAXS: model}
-\subsection{Thin rod model}\label{sec:WAXS_thin_rod}
+%\section{NGIWAXS: model}
+%\subsection{Thin rod model}\label{sec:WAXS_thin_rod}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1543,23 +1580,39 @@ As can be seen, hydrocarbon chain scattering did not vary considerably
 between the two $D$-spacings. A weak feature that looks like an 
 arc coming from the chain peak was observed. This feature extended
 out from $\phi$ = 0\textdegree to at least 70\textdegree. This feature
-might simply be mosaic spread scattering due to the peak near the equator.
-Because mosaic spread of this sample was very small, 
-it may also be possible that the feature is not mosaic spread arc,
-but comes from the minor arm, indicating
-that tilt modulation may occur in the minor arm. Chains are
-packed quite tightly, unlike in the fluid phase. (I did rocking scan,
-so show the data, and maybe estimate what scattering would look like 
-based on Lorentzian distribution.)
+is perhaps mosaic spread scattering due to the peak near the equator.
+Even if we suppose that the feature is due to fluid-phase like chain
+correlations in the ripple bilayers, the $q$ value of the arc is too
+large for chains that are fluctuating, which have a larger average 
+chain-chain correlation length than those in the gel phase.
 
 Figure~\ref{fig:NGIWAXS_enlarge} shows an enlarged image of the ripple 
 phase WAXS at $D$ = 60.8 \AA. We observed a strong peak off the 
 equator and a weak one, the center of which was not determined. 
 The maximum intensity of the strong peak was at 
 $(q_r, q_z) \approx (1.48 \text{\AA}^{-1}, 0.20 \text{\AA}^{-1})$ as shown
-in Fig.~\ref{fig:qrplots}. The weak peak was observed near the equator, but 
+in Fig.~\ref{fig:strong_peak}. The weak peak was observed near the equator, and
 separation of this peak from the strong one was most visible at 
-$q_z = 0.12 \textrm{\AA}^{-1}$ as Fig.~\ref{fig:qrplots} shows. 
+$q_z = 0.12$ \AA$^{-1}$ as Fig.~\ref{fig:weak_peak} shows. Because of absorption
+of X-rays due to the sample, intensity near the equator was not reliable.
+Therefore, we could not eliminate a possibility that the weaker peak
+is centered at $q_z$ = 0 \AA$^{-1}$. Nonetheless, this shows existence 
+of more than one broad peak. Figure~\ref{fig:qrplots} shows many more
+$q_r$ swaths.
+
+Figure~\ref{fig:gel_phase} shows NGIWAXS data from the DMPC gel phase.
+The width of (2,0) peak was the same as the instrumental resolution, 
+indicating that the correlation of chains extends over a long distance.
+In contrast, the observed peaks in the ripple phase were much wider,
+suggesting that the correlation length in the ripple phase is much shorter.
+This observation is consistent with the finding in the electron density profile
+that chain packing in two different arms is different, thereby restricting 
+the longest possible correlation along the ripple direction to be about 
+100 \AA\ in the major arm and 50 \AA\ in the minor arm. Although
+it is possible that the correlation length along the direction perpendicular
+to the ripple direction is long, this correlation length cannot be measured
+separately from the shorter one in our in-plane powder sample. For that,
+a single crystal sample would be required.
 
 \begin{figure}[htbp]
   \centering
@@ -1579,6 +1632,25 @@ $q_z = 0.12 \textrm{\AA}^{-1}$ as Fig.~\ref{fig:qrplots} shows.
   \caption{Enlarged view of the right image in Fig.~\ref{fig:NGIWAXS}. To show 
   smaller features around the peak, a different contrast is used.}
   \label{fig:NGIWAXS_enlarge}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/NGIWAXS/qrplot8}
+  \caption[$q_r$ swath averaged over 0.02 \AA$^{-1}$ centered at 
+  $q_z$ = 0.20 \AA$^{-1}$]{$q_r$ swath averaged over 0.02 \AA$^{-1}$ centered at 
+  $q_z$ = 0.20 \AA$^{-1}$, showing the maximum intensity of the stronger
+  peak.}
+  \label{fig:strong_peak}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/NGIWAXS/qrplot4}
+  \caption[$q_r$ swath averaged over 0.02 \AA$^{-1}$ centered at 
+  $q_z$ = 0.12 \AA$^{-1}$]{$q_r$ swath averaged over 0.02 \AA$^{-1}$ centered at 
+  $q_z$ = 0.12 \AA$^{-1}$, showing the weaker peak}
+  \label{fig:weak_peak}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -1613,33 +1685,45 @@ $q_z = 0.12 \textrm{\AA}^{-1}$ as Fig.~\ref{fig:qrplots} shows.
   (right) The (2,0) peak plotted along horizontal pixels $p_x$ averaging over 8
   pixels in $p_z$. The solid red
   line is a Lorentzian fit to the data, resulting in the FWHM of $\sim$8 pixels,
+  corresponding to $\Delta q$ = 0.014 \AA$^{-1}$.
   which is an unresolved width of intrinsically infinitely sharp peak
   estimated in Sec.~\ref{sec:instrumental_resolution}.}
   \label{fig:gel_phase}  
 \end{figure}
   
-(some thought) Show q swaths for various $\phi$.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{TWAXS: results}\label{sec:TWAXS_results}
 Figure~\ref{fig:twaxs_ripple} shows the transmission wide angle X-ray
 scattering pattern after the CCD to q transformation. The stronger
 peak observed in NGIWAXS was also observed at approximately the same location.
-Because of a lager instrumental resolution than in the NGIWAXS experiment,
-the weaker peak was not well separated. Figure~\ref{fig:twaxs_qrplots} shows
-a slight hint of the second peak at $q_z=0.12$ \AA$^{-1}$. Indeed, this
+Because of a larger instrumental resolution than in the NGIWAXS experiment,
+the weaker peak was not well separated. Figure~\ref{fig:twaxs_weak_peak} shows
+a slight hint of the weak peak at $q_z=0.12$ \AA$^{-1}$ and 
+Fig.~\ref{fig:twaxs_qrplot} shows many more $q_r$ swaths. This
 data set taken in the 2011 run motivated me to try an experiment
 with a higher instrumental resolution, which led to the NGIWAXS experiment
 in the 2013 run. Figure~\ref{fig:twaxs_qzplot} shows intensity along $q_z$,
-averaged between 1.46 \AA$^{-1}$ and 1.52 \AA${-1}$. It shows absence of
-a sharp peak at $q_z$ = 0 \AA$^{-1}$, which complements the NGIWAXS data.
+averaged between 1.46 \AA$^{-1}$ and 1.52 \AA$^{-1}$. It shows absence of
+a sharp peak at $q_z$ = 0 \AA$^{-1}$, complementing the NGIWAXS data.
+While the instrumental resolution here was not great, 
+Fig.~\ref{fig:twaxs_qrplots} and \ref{fig:twaxs_qzplot} indicate
+that the second, weaker peak is located at or above $q_z$ = 0.12 \AA$^{-1}$.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_ripple}
+  \includegraphics[trim=20 0 10 0,clip,width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_ripple}
   \caption[TWAXS image of the DMPC ripple phase]{TWAXS image of the DMPC
   ripple phase at 18 \textcelsius\ and $D$ = 60.3 \AA.}
   \label{fig:twaxs_ripple}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_qrplot8}
+  \caption{$q_r$ swath of the TWAXS image averaged over 0.02 \AA$^{-1}$
+  centered at $q_z$ = 0.12 \AA$^{-1}$.}
+  \label{fig:twaxs_weak_peak}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -1668,8 +1752,9 @@ a sharp peak at $q_z$ = 0 \AA$^{-1}$, which complements the NGIWAXS data.
   \label{fig:twaxs_qzplot}
 \end{figure}  
   
-  
-\section{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Discussion}\label{sec:ripple_discussion}
 The ripple phase has attracted many researchers since its discovery in 1967,
 and extensive structural work on average structural properties such as 
 the ripple wavelength, oblique angle, $D$-spacing, and electron density
