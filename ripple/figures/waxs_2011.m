@@ -17,6 +17,7 @@ sDist = 169.8;
 beamX = 32;
 beamZ = 110; % same as X_cen = 1024 - 110 + 1 = 915;
 
+% ripple phase data
 a = slurp('ripple_060_cz.tif', 'c');
 b = slurp('ripple_061_cz.tif', 'c');
 tmp = a - b;
@@ -25,31 +26,51 @@ waxs1 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0022, 0.0022, 0.2);
 waxs1.Int = int64(waxs1.Int);
 fig1 = figure;
 qshow(waxs1, [0 1000]);
-axis([1.2 1.7 0 1])
-saveas(fig1, 'ripple_060.pdf');
-
-k = 0;
-for i = 0.04:0.02:0.30
-  figure;
-  qrplot_q(waxs1, [i i+0.02], 'LineStyle', 'none', 'Marker', 'o', 'Color', 'k');
-  xlabel(strcat('q_r (', char(197), '^{-1})'), 'interpreter', 'tex', ...
-         'FontName', 'Times New Roman', 'FontSize', 18);
-
-  axis([1.38 1.58 0 2000]);
-  avg = i + 0.01;
-  str = strcat(num2str(avg), {' '}, char(197), '^{-1}');
-  legend(str, 'FontName', 'Times New Roman', 'FontSize', 18);
-  %saveTightFigure(gcf, strcat('qrplot', num2str(k), '.pdf'))
-  k = k + 1;
-end
+axis([1 1.8 0 1])
+%saveas(fig1, 'ripple_060.pdf');
+%saveTightFigure(fig1, 'ripple_060.pdf')
 
 % fluid phase data
 a = slurp('fluid_036_cz.tif','c');
 b = slurp('fluid_039_cz.tif','c');
 tmp = a - b;
+tmp = tmp * 0.12;
+tmp = rotateAround(tmp, 915, 32, -0.97, 'bicubic');
 waxs2 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0022, 0.0022, 0.5);
 waxs2.Int = int64(waxs2.Int);
 fig2 = figure;
-qshow(waxs2, [0 1000]);
-axis([1.2 1.7 0 1])
-saveas(fig1, 'fluid_036.pdf');
+qshow(waxs2, [0 400]);
+axis([1 1.8 0 1])
+%saveas(fig2, 'fluid_036.pdf');
+%saveTightFigure(fig2, 'fluid_036.pdf')
+
+k = 0;
+for i = 0.09:0.1:0.6
+  figure 
+  qrplot_q(waxs1, [i i+0.02], 'LineStyle', 'none', 'Marker', 'o', 'Color', 'k');
+  hold on
+  qrplot_q(waxs2, [i i+0.02], 'LineStyle', 'none', 'Marker', 'o', 'Color', 'r');
+  hold off
+  set(gca,'XMinorTick','on','YMinorTick','on')
+  xlabel(strcat('q_r (', char(197), '^{-1})'), 'interpreter', 'tex', ...
+         'FontName', 'Times New Roman', 'FontSize', 18);
+  axis([1 1.8 0 1300]);
+  avg = i + 0.01;
+  str = strcat(num2str(avg), {' '}, char(197), '^{-1}');
+  legend(str, 'FontName', 'Times New Roman', 'FontSize', 18, 'Location', 'NorthWest');
+  saveTightFigure(gcf, strcat('qr_fluid&ripple', num2str(k), '.pdf'))
+  %saveas(gcf, strcat('qr_fluid&ripple', num2str(k), '.pdf'))
+  k = k + 1;
+end
+
+figure;
+tmp = waxs1;
+tmp.Int = waxs1.Int-waxs2.Int;
+qrplot_q(tmp, [0.19 0.21], 'LineStyle', 'none', 'Marker', 'o', 'Color', 'k');
+xlabel(strcat('q_r (', char(197), '^{-1})'), 'interpreter', 'tex', ...
+       'FontName', 'Times New Roman', 'FontSize', 18);
+axis([1 1.8 0 1300]);
+avg = 0.20;
+str = strcat(num2str(avg), {' '}, char(197), '^{-1}');
+legend(str, 'FontName', 'Times New Roman', 'FontSize', 18, 'Location', 'NorthWest');
+saveTightFigure(gcf, strcat('qr_ripple-fluid.pdf'))
