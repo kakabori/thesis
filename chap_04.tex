@@ -56,10 +56,9 @@ the three-dimensional contours of the ripple phase $P_{\beta'}$ of
 dimyristoylphophatidylcholine (DMPC) were imaged, and
 a ripple wavelength of 130 \AA\ and an amplitude of 45 \AA\ were reported.
 
-Some argued that inter-membrane interactions are important in mechanism of
-the ripple phase formation (REF?). However, the ripple phase was also found in
+While many studies used multilamellar samples, the ripple phase was also found in
 unilamellar vesicles, where a vesicle has only one bilayer 
-\cite{ref:Marsh96}.
+\cite{ref:Mason99}.
 
 The ripple phase has been detected in a wide variety of lipids, including
 phosphatidylcholines, phosphatidylacetoyl (PA), and phosphatidylglycerol (PG),
@@ -89,26 +88,24 @@ It is believed that the resolved structure was for the symmetric ripple,
 which has been shown to be thermodynamically metastable and whose occurrence
 depends on the sample history \cite{ref:Katsaras00}. 
 In \cite{ref:Hentschel91}, only symmetric ripple was observed in the low angle
-X-ray scattering, which seems to contract with the metastability of this 
+X-ray scattering, which seems to contradict with the metastability of this 
 symmetric ripple.
 
-\textcolor{red}{Katsaras and Raghnathan papers}
-Sengupta et al. investigated temperature dependence of the average structure
+Sengupta et al. \cite{ref:Sengupta03} has investigated temperature dependence of the average structure
 of DMPC and concluded that there is no obvious change in the structure
 as a function of temperature. On the other hand, the ripple phase composed of 
 POPC showed some variation in the average structure.
 Based on calculated electron density profiles and model parameters, they
 argued that chains in both major and minor arms are tilted with respect to 
-the $z$ direction by the same amount and  
-in the major arm chains are parallel to the local normal. This speculation 
-is inconsistent with the findings in \cite{ref:Sun96} that
+the stacking $z$ direction by the same amount and that 
+chains are parallel to the local normal in the major arm. This argument 
+was inconsistent with the findings in \cite{ref:Sun96} that
 the thickness of major arm is almost identical to that of the gel phase where chains 
-are tilted by $\sim$30\textdegree. To accomodate this discrepancy, 
-Sengputa et al. aruged that chains might be titled by some amount into the 
-direction perpendicular to the ripple direction, but this type of information
-is not well captured in the low angle scattering data.
-From these studies, it is 
-clear that wide angle scattering data are necessary.
+are tilted by $\sim$30\textdegree. To circumvent this discrepancy, 
+Sengputa \textit{et al.} speculated that chains might be titled by some amount into the 
+direction perpendicular to the ripple direction. This type of information
+, however, is not well captured in low angle scattering data, and
+wide angle scattering is essential.
 
 In a giant unilamellar vesicle composed of a mixture of DPPC and DOPC, 
 coexisting domains of L$_\beta'$ and P$_\beta'$ have been found \cite{ref:Li06}.
@@ -125,14 +122,29 @@ thoroughly studied.
 It is not clear whether the structure of these ripple formation top layers
 is the same as that in a bulk sample such as MLVs and oriented samples.
 
-Several MD (molecular dynamics) simulations have shed light on molecular 
+A few MD (molecular dynamics) simulations have shed light on molecular 
 organization in the ripple phase as well. 
-de Vrie \textit{et al.} carried out atomistic simulations resulting in an
+de Vrie \textit{et al.} \cite{ref:deVries05}
+carried out atomistic simulations resulting in an
 assymetric ripple where chains are gel-like in the major arm and
-interdigitated in the minor side \cite{ref:deVries05}. Coarse-grain
-simulations essentially found the same results.
+interdigitated in the minor side. Coarse-grain
+simulations performed later essentially found the same results
+\cite{ref:Lenz07}.
 
-\textcolor{red}{Some theory papers. What causes ripple phase?}
+A theory developed by Chen \textit{et al.} \cite{ref:Chen95} has been 
+successful in describing some features in the ripple phase. In this theory,
+the divergence of the tilt field of lipids are coupled to the curvature 
+of the bilayer. Increase in the divergence of the lipid tilt is compensated 
+by increase in the curvature, leading to the observed height modulated
+ripple phase. This theory predicted ripple phases with different symmetry
+for chiral and achiral lipids. Later, Katsaras and Raghunathan 
+\cite{ref:Katsaras95} carried out low angle X-ray scattering experiment
+on regular DMPC and achiral DMPC and found that there was no structural
+difference between them. 
+
+Raghunathan theory (2011)
+
+Schmidt theory (2013)
 
 \begin{table}[htbp]
 \centering
@@ -159,7 +171,8 @@ simulations essentially found the same results.
     \hline 
   \end{tabular}
   \caption{Lattice constants for DMPC at $T$ = 18.0 \textcelsius\
-  reported by Wack and Webb \cite{ref:Wack89}. The data collected and analyzed in this thesis
+  reported by Wack and Webb \cite{ref:Wack89} except the one colored in blue. 
+  The data collected and analyzed in this thesis
   are colored blue.} 
 \end{table}
 
@@ -491,7 +504,7 @@ The attenuation length $\mu$ of 10.55 keV X-ray in Mo is 13.74 $\mu$m \cite{ref:
 For a 25 $\mu$m thick Mo attenuator, the attenuation factor is calculated to be
 $[\exp(-25/13.74)]^{-1} = 6.2$. The exact attenuation factor was determined
 by comparing X-ray images collected with and without the attenuator, 
-shown in Fig.~\ref{fig:olddopc} and \ref{fig:attenuator}.
+shown in Fig.~\ref{fig:olddopc}.
 The attenuation factor of the nominally 25 $\mu$m thick Mo was found to 
 be 6.9 for the wavelength used (1.175 \AA), indicating an actual thickness
 of ~27 $\mu$m. 
@@ -1347,177 +1360,158 @@ In total, the modified 2G hybrid model implements 14 structural parameters.
 \newpage
 \section{LAXS: results}
 \subsection{Data and Electron Density Profile}\label{sec:LAXS}
-Table~\ref{tb:obs_intensity1} and \ref{tb:obs_intensity2} summarize observed intensity from data shown
-in Fig.~\ref{fig:ripple_laxs_images}. $q_z$ values for observed peaks were
-corrected for index of refraction (Appendix~\ref{app:refraction}).
 We measured scattering on oriented samples in almost identical conditions as the
 best unoriented sample of Wack and Webb. As discussed earlier,
 these two types of samples have different Lorentz corrections, so 
 this allowed us to check our data obtained on 
-oriented samples against an unoriented sample. 
-As Table~\ref{tb:obs_intensity1} shows, agreement between our oriented data
-and the uroriented data was good, but integrated intensity from our oriented
+oriented samples against an unoriented sample.
+As Table~\ref{tb:cmu_vs_wack} shows, agreement between our oriented data
+and the uroriented data was good, but form factor from our oriented
 sample was in many cases slightly larger than that from the unoriented sample.
 We attribute this discrepancy to the way intensity was extracted. 
-In an X-ray data from an oriented sample, each peak
+In X-ray data from an oriented sample, each peak
 was nicely separated, so integrating a peak intensity was trivial.
 In contrast, some reflections in unoriented data were overlapping with
-each other (three pairs of overlapping peaks are highlighted in Table~\ref{tb:obs_intensity1}), 
+each other (three pairs of overlapping peaks are highlighted in 
+Table~\ref{tb:cmu_vs_wack}), 
 making separation of intensity difficult. If the $(1,0)$ peak in the unoriented 
 data had been overestimated, that would account for the observed discrepancy.
 Indeed, the microdensitometer trace in \cite{ref:Wack89} suggests that 
-the $(1,0)$ and $(1,1)$ reflections could have similar intensity as we observed
-in our oriented sample.
+the $(1,0)$ and $(1,-1)$ reflections could have similar intensity as we observed
+in our oriented sample. 
+
+Table~\ref{tb:obs_intensity1} and \ref{tb:obs_intensity2} summarize observed 
+intensity from our data shown in Fig.~\ref{fig:ripple_laxs_images}. $q_z$ values 
+for observed peaks were corrected for index of refraction (Appendix~\ref{app:refraction}).
 
 \begin{table}[htbp]
   \centering
   \begin{tabular}{rrrrrr}
     \hline
-    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & \multicolumn{1}{c}{box size} \\
-     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & \multicolumn{1}{c}{(pixels)} \\ 
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q$*} & \multicolumn{1}{c}{unoriented} & \multicolumn{1}{c}{oriented} & \multicolumn{1}{c}{error} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{$|F_{hk}|$*} & \multicolumn{1}{c}{$|F_{hk}|$} \\
     \hline
-    1 & -1 & 0.102 &-0.043 & 726 & 10 $\times$ 7 \\
-    1 &  0 & 0.109 &0.000 & 180818 & 10 $\times$ 7 \\
-    1 &  1 & 0.114 &0.043 &    241 & 10 $\times$ 7 \\
-    1 &  3 & 0.128 &0.130 &	   4.8 & 10 $\times$ 7 \\
-    2 & -2 & 0.206 &-0.087 &	  51.4 & 10 $\times$ 7 \\
-    2 & -1 & 0.212 &0.044&	  1818 & 10 $\times$ 7 \\
-    2 &  0 & 0.218 &0.000&10200 & 10 $\times$ 7 \\
-    2 &  1&0.224&0.043&558 & 10 $\times$ 7 \\
-    2 &  2&0.231&0.086&116& 10 $\times$ 7 \\
-    2 &  3 & 0.23  &  0.129 &	    27 & 10 $\times$ 7 \\
-    2 &  4 & 0.243 &  0.173 &    7.6 & 10 $\times$ 7 \\
-    2 &  5 & 0.250 &  0.214 &    2.9 & 10 $\times$ 7 \\
-    3 &	-2 & 0.314 & -0.087 & 305 & 15 $\times$ 7 \\
-    3 & -1 & 0.321 & -0.043	&   1205 & 15 $\times$ 7 \\
-    3 &  0 & 0.326 &  0.000 & 1566 & 15 $\times$ 7 \\
-    3 &  1 & 0.333 &  0.043 &   31.7 & 15 $\times$ 7 \\
-    3 &  2 & 0.339 &  0.086 &   32.4 & 15 $\times$ 7 \\
-    3 &  3 & 0.345 &  0.129 &	  38.2 & 15 $\times$ 7 \\
-    3 &  4 & 0.352 &  0.172 &	  26.1 & 15 $\times$ 7 \\
-    3 &  5 & 0.358 &  0.215 &	   8.6 & 15 $\times$ 7 \\
-    \hline
-  \end{tabular}
-  \begin{tabular}{rrrrr}
-    \hline
-    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q$*}& \multicolumn{1}{c}{oriented} & \multicolumn{1}{c}{unoriented} \\
-     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{$|F_{hk}|$} & \multicolumn{1}{c}{$|F_{hk}|$*} \\
-    \hline
-    1 & -1 & {\color{red}0.111} &  83.0 & 60.8 \\
-    1 &  0 & {\color{red}0.108} & 100.0 & 100.0 \\
-    1 &  1 & 0.123 &  44.0 & 26.9 \\
-    1 &	 3 & 0.185 &   9.9 & 7.6 \\
-    2 &	-2 & 0.224 &  19.4 & 15.1 \\
-    2 &	-1 & {\color{blue}0.215} &  80.2 & 71.2 \\
-    2 &  0 & {\color{blue}0.217} &  30.8 & 39.7 \\
-    2 &	 1 & 0.228 &  42.4 & 33.9 \\
-    2 &  2 & 0.246 &  26.8 & 22.7 \\
-    2 &	 3 & 0.271 &  15.6 & 14.2 \\
-    2 &  4 & 0.301 &   9.5 & 7.8 \\
-    2 &  5 & 0.329 &   6.4 & \\
-	3 &	-2 & {\color{green}0.325} &  36.2 & 29.3 \\
-    3 & -1 & 0.322 &  50.0 & 44.2 \\
-    3 &  0 & {\color{green}0.325} &  14.4 & 12.0 \\
-    3 &  1 & & 7.9 & \\
-    3 &  2 & 0.350 &  11.2 & 10.5 \\
-    3 &  3 & 0.370 &  14.8 & 14.9 \\
-    3 &  4 & 0.394 &  13.9 & 10.0 \\
-    3 &  5 & & 8.8 & \\
+    1 & -1 & {\color{red}0.111}   & 60.8  & 86.3  & 3.7 \\
+    1 &  0 & {\color{red}0.108}   & 100.0 & 100.0 & 0.5 \\
+    1 &  1 & 0.123                & 26.9  & 43.1  & 2.6 \\
+    1 &  2 &                      &       & 0.0   & 3.9 \\
+    1 &	 3 & 0.185                & 7.6   & 8.8   & 0.2 \\
+    2 &	-2 & 0.224                & 15.1  & 18.0  & 0.6 \\
+    2 &	-1 & {\color{blue}0.215}  & 71.2  & 76.0  & 0.4 \\
+    2 &  0 & {\color{blue}0.217}  & 39.7  & 28.7  & 0.2 \\
+    2 &	 1 & 0.228                & 33.9  & 39.5  & 0.4 \\
+    2 &  2 & 0.246                & 22.7  & 24.6  & 0.3 \\
+    2 &	 3 & 0.271                & 14.2  & 14.6  & 0.1 \\
+    2 &  4 & 0.301                & 7.8   & 9.2   & 0.2 \\
+    2 &  5 & 0.329                &       & 5.6   & 0.7 \\
+    2 &  6 &                      &       & 4.1   & 0.3 \\
+	  3 &	-2 & {\color{green}0.325} & 29.3  & 33.2  & 0.8 \\
+    3 & -1 & 0.322                & 44.2  & 45.9  & 0.4 \\
+    3 &  0 & {\color{green}0.325} & 12.0  & 13.2  & 0.5 \\
+    3 &  1 &                      &       & 0.0   & 7.1 \\
+    3 &  2 & 0.350                & 10.5  & 10.2  & 0.2 \\
+    3 &  3 & 0.370                & 14.9  & 13.6  & 0.2 \\
+    3 &  4 & 0.394                & 10.0  & 13.0  & 0.2 \\
+    3 &  5 &                      &       & 9.6   & 0.1 \\
+    3 &  6 &                      &       & 5.6   & 0.4 \\
     \hline
   \end{tabular}
-  \caption{Observed intensity for $h$ = 1 to 3 at $D=57.8$, $\lambda_r=145$, and 
-  $\gamma=98.2$\textdegree. *Unoriented data are from Wack and Webb \cite{ref:Wack89}.}
-  \label{tb:obs_intensity1}
+  \caption{Comparison of form factor obtained in two different methods.\\
+  *Unoriented data are from Wack and Webb \cite{ref:Wack89}.}
+  \label{tb:cmu_vs_wack}
 \end{table}
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{rrrrrr}
+  \begin{tabular}{rrrrrrrrc}
     \hline
-    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & \multicolumn{1}{c}{box size} \\
-     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & \multicolumn{1}{c}{(pixels)} \\ 
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & 
+    \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & 
+    \multicolumn{1}{c}{$\sigma_I$} & \multicolumn{1}{c}{$|F|$} &
+    \multicolumn{1}{c}{$\sigma_F$} & \multicolumn{1}{c}{box size} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & & & &
+    \multicolumn{1}{c}{(pixels)} \\ 
     \hline
-    4 &	-3 & 0.417 & -0.131 &    143 & 20 by 8 \\
-    4 &	-2 & 0.423 & -0.087 &	   730 & 20 by 8 \\
-    4	& -1 & 0.429 & -0.043	&    415 & 20 by 8 \\
-    4	&  0 & 0.435 &  0.000 &   1938 & 20 by 8 \\
-    4	&  1 &       &        &   51.5 & 20 by 8 \\
-    4	&  2 & 0.448 &  0.085 &     39 & 20 by 8 \\
-    4	&  3 &       &        &   weak & \\
-    4	&  4 & 0.461 &  0.173 &    2.1 & 20 by 8 \\
-    4	&  5 & 0.467 &  0.215 &    3.2 & 20 by 8 \\
-    4 &	 6 & 0.473 &  0.259 &    1.0 & 20 by 8 \\
-    5 & -3 & 0.525 & -0.132 &   84.4 & 25 by 9 \\
-    5 & -2 & 0.532 & -0.087	&    146 & 25 by 9 \\
-    5 & -1 & 0.538 & -0.042	&   64.6 & 25 by 9 \\
-    5	&  0 & 0.544 &  0.000	&    259 & 25 by 9 \\
-    5	&  1 & 0.550 &  0.040 &   50.2 & 25 by 9 \\
-    6 &	-4 & 0.628 & -0.175	& 10.3 & 30 by 10 \\
-    6 &	-3 & 0.635 & -0.131	& 13.8 & 30 by 10 \\
-    6 & -2 & 0.641 & -0.085	&  9.7 & 30 by 10 \\
-    6 & -1 & 0.647 & -0.043 &  2.0 & 30 by 10 \\
-    6 &  0 & 0.653 &  0.000	& 69.0 & 30 by 10 \\
-    6 &  1 & 0.659 &  0.043 &  2.5 & 30 by 10 \\
-    6 &  2 &       &        & weak \\
-    6	&  3 & 0.672 &  0.128 &	    42 & 30 by 10 \\
-    6	&  4 & 0.679 &  0.170 &     40 & 30 by 10 \\
-    7 & -4 & 0.737 & -0.174 &	    42 & 35 by 10 \\
-    7	& -3 & 0.743 & -0.130	&     40 & 35 by 10 \\
-    7	& -2 & 0.749 & -0.085	&     15 & 35 by 10 \\
-    7	& -1 & 0.755 & -0.042	&     27 & 35 by 10 \\
-    7 &  0 & 0.760 &  0.000	&     41 & 35 by 10 \\
-    9 & -5 &       &        &	  weak & \\
-    9 &	-4 & 0.951 & -0.174	&	    19 & 35 by 10 \\
-    9 & -3 &       &        &	  weak & \\
-    9 & -2 & 0.963 & -0.085 &   21.0 & 35 by 10 \\
-	  9	& -1 &       &        &   weak & \\
-	  9 &  0 & 0.974 &  0.000	&   21.0 & 35 by 10 \\
+1     & -1    & 0.102 & -0.043 & 726   & 63    & 86.3  & 3.7   & 10 $\times$ 7 \\
+1     & 0     & 0.109 & 0     & 180818 & 1759  & 100.0 & 0.5   & 10 $\times$ 7 \\
+1     & 1     & 0.114 & 0.043 & 228   & 28    & 43.1  & 2.6   & 10 $\times$ 7 \\
+1     & 2     &       &       & 0     & 1     & 0.0   & 3.9   &  \\
+1     & 3     & 0.128 & 0.13  & 3.8   & 0.2   & 8.8   & 0.2   & 10 $\times$ 7 \\
+2     & -2    & 0.206 & -0.087 & 49.2  & 3.5   & 18.0  & 0.6   & 10 $\times$ 7 \\
+2     & -1    & 0.212 & -0.044 & 1818  & 20    & 76.0  & 0.4   & 10 $\times$ 7 \\
+2     & 0     & 0.218 & 0     & 10200 & 174   & 28.7  & 0.2   & 10 $\times$ 7 \\
+2     & 1     & 0.224 & 0.043 & 550   & 10    & 39.5  & 0.4   & 10 $\times$ 7 \\
+2     & 2     & 0.231 & 0.086 & 112   & 3     & 24.6  & 0.3   & 10 $\times$ 7 \\
+2     & 3     & 0.237 & 0.129 & 27    & 0.2   & 14.6  & 0.1   & 10 $\times$ 7 \\
+2     & 4     & 0.243 & 0.173 & 8.2   & 0.4   & 9.2   & 0.2   & 10 $\times$ 7 \\
+2     & 5     & 0.25  & 0.214 & 2.6   & 0.7   & 5.6   & 0.7   & 10 $\times$ 7 \\
+2     & 6     & 0.256 & 0.257 & 1.2   & 0.2   & 4.1   & 0.3   & 10 $\times$ 7 \\
+3     & -2    & 0.314 & -0.087 & 305   & 15    & 33.2  & 0.8   & 15 $\times$ 7 \\
+3     & -1    & 0.321 & -0.043 & 1205  & 22    & 45.9  & 0.4   & 15 $\times$ 7 \\
+3     & 0     & 0.326 & 0     & 1566  & 110   & 13.2  & 0.5   & 15 $\times$ 7 \\
+3     & 1     &       &       & 0     & 31    & 0.0   & 7.1   &  \\
+3     & 2     & 0.339 & 0.086 & 32.4  & 1.6   & 10.2  & 0.2   & 15 $\times$ 7 \\
+3     & 3     & 0.345 & 0.129 & 39.1  & 0.9   & 13.6  & 0.2   & 15 $\times$ 7 \\
+3     & 4     & 0.352 & 0.172 & 27.7  & 0.7   & 13.0  & 0.2   & 15 $\times$ 7 \\
+3     & 5     & 0.358 & 0.215 & 12.2  & 0.3   & 9.6   & 0.1   & 15 $\times$ 7 \\
+3     & 6     & 0.364 & 0.258 & 3.5   & 0.5   & 5.6   & 0.4   & 15 $\times$ 7 \\
+4     & -3    & 0.417 & -0.131 & 142   & 8     & 23.0  & 0.6   & 20 $\times$ 8 \\
+4     & -2    & 0.423 & -0.087 & 755.4 & 19    & 42.8  & 0.5   & 20 $\times$ 8 \\
+4     & -1    & 0.429 & -0.043 & 429.6 & 34    & 22.6  & 0.9   & 20 $\times$ 8 \\
+4     & 0     & 0.435 & 0.000 & 1917  & 23    & 16.2  & 0.1   & 20 $\times$ 8 \\
+4     & 1     & 0.441 & 0.043 & 45.3  & 7.2   & 7.2   & 0.6   & 20 $\times$ 8 \\
+4     & 2     & 0.448 & 0.085 & 43.6  & 2.4   & 9.9   & 0.3   & 20 $\times$ 8 \\
+4     & 3     &       &       & 0     & 1.3   & 0.0   & 2.1   &  \\
+4     & 4     & 0.461 & 0.173 & 2.1   & 0.4   & 3.0   & 0.3   & 20 $\times$ 8 \\
+4     & 5     & 0.467 & 0.215 & 3.2   & 0.3   & 4.1   & 0.2   & 20 $\times$ 8 \\
+4     & 6     & 0.473 & 0.259 & 1     & 1.1   & 2.5   & 1.1   & 20 $\times$ 8 \\
     \hline
   \end{tabular}
-  \quad
-  \begin{tabular}{rrr}
+  \caption{Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda_r=145$, and 
+  $\gamma=98.2$\textdegree.}
+  \label{tb:obs_intensity1}
+\end{table}  
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{rrrrrrrrc}
     \hline
-     & & \multicolumn{1}{c}{oriented} \\
-    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$|F_{hk}|$} \\
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{$q_z$} & 
+    \multicolumn{1}{c}{$q_r$} & \multicolumn{1}{c}{$\Io{hk}$} & 
+    \multicolumn{1}{c}{$\sigma_I$} & \multicolumn{1}{c}{$|F|$} &
+    \multicolumn{1}{c}{$\sigma_F$} & \multicolumn{1}{c}{box size} \\
+     & & \multicolumn{1}{c}{(\AA$^{-1}$)} & \multicolumn{1}{c}{(\AA$^{-1}$)} & & & & &
+    \multicolumn{1}{c}{(pixels)} \\ 
     \hline
-    4 & -3 & 25.7 \\
-4 & -2 & 46.8 \\ 
-4 & -1 & 24.7 \\
-4 & 0 & 18.1 \\ 
-4 & 1 & 8.5 \\ 
-4 & 2 & 10.4 \\ 
-4 & 3 \\ 
-4 & 4 & 3.4 \\
-4 & 5 & 4.6 \\ 
-4 & 6 & 2.8 \\ 
-5 & -3 & 17.3 \\ 
-5 & -2 & 18.4 \\ 
-5 & -1 & 8.5 \\ 
-5 & 0 & 7.3 \\ 
-5 & 1 & 7.2 \\ 
-6 & -4 & 6.3 \\ 
-6 & -3 & 6.3 \\ 
-6 & -2 & 4.2 \\ 
-6 & -1 & 0.0 \\ 
-6 & 0 & 4.1 \\ 
-6 & 1 & 0.0 \\ 
-6 & 2 & weak\\
-6 & 3 & 10.5 \\
-6 & 4 & 11.7 \\ 
-7 & -4 & 11.6 \\
-7 & -3 & 9.7 \\ 
-7 & -2 & 4.8 \\ 
-7 & -1 & 4.5 \\ 
-7 & 0 & 3.4 \\ 
-9 & -5 & \\
-9 & -4 & \\
-9 & -3 & \\
-9 & -2 & \\
-9 & -1 & \\
-9 & 0 &\\
-\hline
-\end{tabular}
-  \caption{Observed intensity for $h$ = 4 to 9 at $D=57.8$, $\lambda_r=145$, and 
+5     & -3    & 0.525 & -0.132 & 86.2  & 6.8   & 15.6  & 0.6   & 25 $\times$ 9 \\
+5     & -2    & 0.532 & -0.087 & 145   & 4     & 16.3  & 0.2   & 25 $\times$ 9 \\
+5     & -1    & 0.538 & -0.042 & 63.4  & 3.4   & 7.5   & 0.2   & 25 $\times$ 9 \\
+5     & 0     & 0.544 & 0.000 & 260   & 4     & 6.5   & 0.1   & 25 $\times$ 9 \\
+5     & 1     & 0.550 & 0.040 & 50    & 2.8   & 6.4   & 0.2   & 25 $\times$ 9 \\
+6     & -4    & 0.628 & -0.175 & 11.4  & 0.8   & 5.9   & 0.2   & 30 $\times$ 10 \\
+6     & -3    & 0.635 & -0.131 & 15.6  & 0.9   & 5.9   & 0.2   & 30 $\times$ 10 \\
+6     & -2    & 0.641 & -0.085 & 10.1  & 1.8   & 3.8   & 0.3   & 30 $\times$ 10 \\
+6     & -1    & 0.647 & 0.043 & 16.3  & 3     & 3.4   & 0.3   & 30 $\times$ 10 \\
+6     & 0     & 0.653 & 0.000 & 60.2  & 4.7   & 3.4   & 0.1   & 30 $\times$ 10 \\
+6     & 1     & 0.659 & 0.044 & 20.4  & 1.5   & 3.9   & 0.1   & 30 $\times$ 10 \\
+6     & 2     &       &       & 0     & 0.6   & 0.0   & 0.9   &  \\
+6     & 3     & 0.672 & 0.128 & 5.9   & 0.3   & 3.5   & 0.1   & 30 $\times$ 10 \\
+6     & 4     & 0.679 & 0.170 & 4.2   & 0.3   & 3.4   & 0.1   & 30 $\times$ 10 \\
+7     & -4    & 0.737 & -0.174 & 40    & 1.1   & 10.0  & 0.1   & 35 $\times$ 10 \\
+7     & -3    & 0.743 & -0.130 & 36    & 1.8   & 8.1   & 0.2   & 35 $\times$ 10 \\
+7     & -2    & 0.749 & -0.085 & 15    & 7.3   & 4.2   & 0.9   & 35 $\times$ 10 \\
+7     & -1    & 0.755 & -0.042 & 22    & 2.3   & 3.6   & 0.2   & 35 $\times$ 10 \\
+7     & 0     & 0.760 & 0.000 & 36    & 1.8   & 2.8   & 0.1   & 35 $\times$ 10 \\
+8     & 0     &       &       & 0     & 3     & 0.0   & 0.9   &  \\
+9     & -5    & 0.951 & -0.215 & 16    & 3     & 6.1   & 0.5   & 35 $\times$ 10 \\
+9     & -4    & 0.957 & -0.173 & 16.9  & 3     & 5.6   & 0.5   & 35 $\times$ 10 \\
+9     & -3    &       &       & 0     & 8     & 0.0   & 3.3   &  \\
+9     & -2    & 0.969 & -0.086 & 10    & 2.9   & 3.0   & 0.4   & 35 $\times$ 10 \\
+9     & -1    &       &       & 0     & 6     & 0.0   & 1.7   &  \\
+9     & 0     & 0.981 & 0.000 & 17    & 10    & 2.2   & 0.6   & 35 $\times$ 10 \\
+    \hline
+  \end{tabular}
+  \caption{Observed intensity for $h$ = 5 to 9 at $D=57.8$, $\lambda_r=145$, and 
   $\gamma=98.2$\textdegree\ (continued from Table~\ref{tb:obs_intensity1}).}
   \label{tb:obs_intensity2}
 \end{table}
