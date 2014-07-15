@@ -1596,7 +1596,7 @@ larger $q$-space.
 \section{nGIWAXS: results}\label{sec:nGIWAXS_results}
 As a first step in data reduction of near grazing incidence wide angle X-ray
 scattering (nGIWAXS) data, we 
-subtracted background scattering data taken at incident angle of -$\omega$ 
+subtracted background scattering data taken at incident angle -$\omega$ 
 from the data taken at $\omega$. This background
 subtraction resulted in a clean image of sample scattering. 
 A background subtracted CCD image was then transformed to the
@@ -1906,34 +1906,75 @@ chains in the minor arm are disordered similarly to the fluid phase.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{TWAXS: results}\label{sec:TWAXS_results}
-Just like in near grazing incidence wide angle scattering, the background
-subtraction is the first step in analysis of transmission wide angle X-ray 
-scattering (TWAXS) data. The background scattering data were collected by replacing 
-the sample with a bare Si wafer. Although the background subtraction was not 
-as good as for the nGIWAXS, this did not affect scattering in the wide angle 
-region. Because the data were taken at $\omega=45$\textdegree, the ripple
-WAXS pattern in the CCD space is very different from the respective pattern
-in the sample $q$-space. Therefore, the CCD to $q$-space transformation is crucial
-in analyzing the TWAXS data. 
+Figure~\ref{fig:twaxs_gel}(left) shows background subtracted transmission wide
+angle X-ray scattering (TWAXS) of the DMPC gel L$_{\beta I}$ phase at 
+$\omega$ = 45\textdegree.
+The background scattering image was collected by replacing 
+the sample with a bare Si wafer. Imperfect subtraction of mylar scattering 
+can be seen. This was most likely due to slight displacement of mylar windows
+when the sample was replaced with a bare wafer. Three main reflections whose Miller indices 
+are (2,0), (1,1), and (1,-1) were observed along with the (1,$\pm$1) satellite 
+peaks.
+Because the data were taken at $\omega=45$\textdegree, the WAXS pattern 
+appeared on the CCD detector very differently from the respective pattern
+in the sample $q$-space. 
+Therefore, the CCD to $q$-space transformation shown in 
+Fig~\ref{fig:twaxs_gel}(right) was crucial in analyzing the TWAXS data. 
 
-Figure~\ref{fig:twaxs_ripple} shows the transmission wide angle X-ray
-scattering pattern after the CCD to q transformation. The stronger
+Figure~\ref{fig:twaxs_ripple} shows the TWAXS pattern of the ripple phase 
+after the CCD to q transformation. The stronger
 peak observed in nGIWAXS was also observed at approximately the same location.
-Because of a larger instrumental resolution than in the nGIWAXS experiment,
-the weaker peak was not as well separated. Figure~\ref{fig:twaxs_weak_peak} shows
-a slight hint of the weak peak at $q_z=0.12$ \AA$^{-1}$ and 
-Fig.~\ref{fig:twaxs_qrplots} shows many more $q_r$ swaths. This
+Because of a lower instrumental resolution than in the nGIWAXS experiment,
+the weaker peak was not as well separated. Figure~\ref{fig:twaxs_weak_qr} shows
+a hint of the weak peak at $q_z=0.12$ \AA$^{-1}$. This
 data set taken in the 2011 run motivated me to try an experiment
 with a higher instrumental resolution, which led to the nGIWAXS experiment
-in the 2013 run. Figure~\ref{fig:twaxs_qzplot} shows intensity along $q_z$,
-averaged for $q_r$ between 1.46 \AA$^{-1}$ and 1.52 \AA$^{-1}$. It shows absence of
-a sharp peak at $q_z$ = 0 \AA$^{-1}$, complementing the nGIWAXS data.
-While the instrumental resolution here was not great, 
-Fig.~\ref{fig:twaxs_qrplots} and \ref{fig:twaxs_qzplot} indicate
-that the second, weaker peak is located at or above $q_z$ = 0.12 \AA$^{-1}$.
+in the 2013 run. 
+
+The length $L$ of scattering entities in the $z$ direction can be estimated by 
+measuring the full length $\Delta q_z$ of the (2,0) Bragg rod in $q_z$ in
+the L$_{\beta I}$ phase \cite{ref:Tristram93},
+the relation between them being $\Delta q_z = 4\pi/L$.
+Figure~\ref{fig:twaxs_gel} shows intensity of observed Bragg rods along $q_z$ averaged in $q_r$
+for the gel and ripple phases. The full length $\Delta q_z$ for the (2,0) gel
+phase peak was measured to be about 0.4 \AA$^{-1}$, corresponding to 
+$L \approx 31$ \AA. This value of $L$ indicates that chains in the upper and
+lower monolayers scatter coherently, which has been shown to be the case
+for DPPC previously \cite{ref:Tristram93}.
+Figure~\ref{fig:twaxs_gel}(right) compares $\Delta q_z$ in the ripple and gel phases,
+showing that $\Delta q_z$ was about the same in both phases. Therefore, 
+chains in the major arm are also coupled between the monolayers. 
+We note that mosaic spread of the sample would make the apparent $\Delta q_z$ 
+larger, so that $L \approx 31$ \AA\ might be the lower bound on the true $L$. 
+
+Finally, Fig.~\ref{fig:twaxs_qzplot} plots $q_z$ swath averaged between
+$q_r$ = 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$ and between
+1.465 \AA$^{-1}$ and 1.51 \AA$^{-1}$. We found no obvious intensity maxima
+below $q_z$ = 0.12 \AA$^{-1}$, asserting that the weaker peak was also
+off the equator as discussed in Sec.~\ref{sec:nGIWAXS_results}.
+There was also no sign of a third peak.
 
 
-\begin{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.44\textwidth]{figures/ripple/TWAXS/twaxs_gel_ccd}
+  \includegraphics[width=0.54\textwidth]{figures/ripple/TWAXS/twaxs_gel_q}
+  \caption[Transmission WAXS of the DMPC gel phase]
+  {Transmission WAXS of the DMPC gel L$_{\beta I}$ phase observed on
+  the CCD detector (left) and its corresponding pattern in the sample $q$-space
+  (right). Bragg rods were indexed as (2,0), (1,1) and (1,-1). The satellite 
+  peaks of (1,$\pm$1) reflections were also labeled. The black region in
+  the right image corresponds to $q$-space that was not probed. The edges
+  of the sample $q$-space image were distorted due to the nonlinear relation
+  between the detector pixels and the sample $q$-space as discussed in 
+  Sec.~\ref{sec:nGIWAXS_results}. A ring of intensity
+  at $q \approx$ 0.9 \AA$^{-1}$ is due to imperfect subtraction of the mylar
+  scattering. Residual mylar scattering is also visible near the (2,0) Bragg 
+  rod.}
+  \label{fig:twaxs_gel}
+\end{figure}
+
+\begin{figure}[htbp]
   \centering
   \includegraphics[trim=20 0 10 0,clip,width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_ripple}
   \caption[TWAXS image of the DMPC ripple phase]{TWAXS image of the DMPC
@@ -1941,39 +1982,59 @@ that the second, weaker peak is located at or above $q_z$ = 0.12 \AA$^{-1}$.
   \label{fig:twaxs_ripple}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_qrplot8}
-  \caption{$q_r$ swath of the TWAXS image averaged over 0.02 \AA$^{-1}$
-  centered at $q_z$ = 0.12 \AA$^{-1}$.}
-  \label{fig:twaxs_weak_peak}
+  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_weak_qr}
+  \caption{$q_r$ swath of the ripple TWAXS averaged between 0.11 \AA$^{-1}$
+  and 0.13 \AA$^{-1}$ in $q_z$. Asymmetric shape of the profile is due to
+  two Bragg rods centered at different $q_r$ values as discussed in
+  Sec.~\ref{sec:nGIWAXS_results}.}
+  \label{fig:twaxs_weak_qr}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot2}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot3}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot4}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot5}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot6}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot7}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot8}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot10}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot11}
-  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot12}
-  \caption{$q_r$ swaths of the TWAXS image, each averaged over 0.02 \AA$^{-1}$. 
-  The center $q_z$ value of a swatch is shown in the figure legends.}
-  \label{fig:twaxs_qrplots}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/TWAXS/twaxs_gel_qz}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/TWAXS/twaxs_strong_qz}
+  \caption[]{(left) $q_z$ swath of the gel (2,0) Bragg rod. The solid line is
+  a Gaussian fit with the FWHM of 0.23 \AA$^{-1}$. 
+  (right) $q_z$ swath of the ripple peak averaged between 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$
+   in $q_r$ (red solid squares) and the gel (2,0) peak scaled and shifted to guide 
+   visual comparison (open black circles).}
+  \label{fig:twaxs_gel}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/ripple/TWAXS/twaxs_qzplot}
-  \caption{$q_z$ swath averaged between 1.46 \AA$^{-1}$ and 1.52 \AA$^{-1}$.}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/TWAXS/twaxs_weak_qz}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/TWAXS/twaxs_both_qz}
+  \caption{$q_z$ swath averaged between 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$
+  (left) and between 1.465 \AA$^{-1}$ and 1.51 \AA$^{-1}$ (right) in $q_r$.
+  The left plot is approximately the $q_z$ profile along the weaker peak
+  while the right profile extends over the whole ripple WAXS pattern.}
   \label{fig:twaxs_qzplot}
 \end{figure}  
+
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot2}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot3}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot4}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot5}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot6}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot7}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot8}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot9}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot10}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot11}
+%  \includegraphics[width=0.3\textwidth]{figures/ripple/TWAXS/twaxs_qrplot12}
+%  \caption{$q_r$ swaths of the TWAXS image, each averaged over 0.02 \AA$^{-1}$. 
+%  The center $q_z$ value of a swatch is shown in the figure legends.}
+%  \label{fig:twaxs_qrplots}
+%\end{figure}
+
+
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
