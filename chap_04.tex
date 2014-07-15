@@ -76,8 +76,7 @@ the ripples indeed have a sawtooth shape. The map also showed that
 the major arm is about twice as long as the minor arm. The bilayer
 thickness was found to be larger than that of the minor arm. The
 value of the bilayer thickness in the major arm was comparable to the
-thickness of DMPC bilayers in the gel phase whereas the thickness
-of the minor arm was comparable to that in the fluid phase.
+thickness of DMPC bilayers in the gel phase.
 
 A structural investigation by X-ray diffraction of the ripple phase of
 oriented dipalmitoylphosphatidylcholine (DPPC) samples indicated that
@@ -234,7 +233,7 @@ High Energy Synchrotron Source (CHESS) G1 station in three different runs
 (2011, 2012, and 2013). 
 The low angle X-ray scattering (LAXS) data analyzed 
 in this thesis were collected in 2013.
-The near grazing incidence wide angle X-ray scattering (NGIWAXS) data were also collected
+The near grazing incidence wide angle X-ray scattering (nGIWAXS) data were also collected
 in the 2013 run, but with smaller energy dispersion than in the LAXS experiment.
 The transmission wide angle X-ray scattering (TWAXS) data were collected
 in the 2011 run. The ripple phase experiment in the 2012 run was not successful
@@ -261,7 +260,7 @@ Table~\ref{tb:beam_divergence} summarizes beam divergence.
      & experiment & (rad.) & (rad.) \\
     \hline
     2013 & LAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
-    2013 & NGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
+    2013 & nGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
     2011 & TWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
     \hline
   \end{tabular}
@@ -276,7 +275,7 @@ The energy of the X-ray beam was 10.55 keV, corresponding to a wavelength
 $\lambda$ of 1.175 \AA, in the LAXS experiment.
 To achieve a higher instrumental resolution than that for 
 the LAXS experiment, a (111) silicon monochromator was used for 
-the NGIWAXS experiment, which gave $\Delta E/E$ of 0.01\%.
+the nGIWAXS experiment, which gave $\Delta E/E$ of 0.01\%.
 Due to the geometry of the G1 station, the Si monochromator was placed in
 the G1 hutch, in series with the multilayer monochromator. 
 Table~\ref{tb:energy_dispersion} summarizes energy dispersion.
@@ -289,7 +288,7 @@ Table~\ref{tb:energy_dispersion} summarizes energy dispersion.
      & experiment & (\%) & (keV) & (\AA) \\
     \hline
     2013 & LAXS & 1.5 & 10.55 & 1.175 \\
-    2013 & NGIWAXS & 0.01 & 10.55 & 1.175 \\
+    2013 & nGIWAXS & 0.01 & 10.55 & 1.175 \\
     2011 & TWAXS & 1.5 & 10.54 & 1.176 \\
     \hline
   \end{tabular}
@@ -297,7 +296,7 @@ Table~\ref{tb:energy_dispersion} summarizes energy dispersion.
   \label{tb:energy_dispersion}
 \end{table}
 
-\subsubsection{Geometric Broadening}
+\subsubsection{Geometric Broadening}\label{sec:geometric_broadening}
 The beam footprint on the sample has a finite size and this causes
 geometric broadening of diffraction peaks on the CCD detector.
 
@@ -341,8 +340,8 @@ and keep all the sample in the beam.
   \label{fig:ripple_lr_beamz}
 \end{figure}
 
-\paragraph{NGIWAXS}
-In the NGIWAXS experiment, 
+\paragraph{nGIWAXS}
+In the nGIWAXS experiment, 
 the horizontal geometric broadening was due to the
 sample width along the beam direction and the horizontal beam width.
 From the geometry of the experiment shown in Fig.~\ref{fig:geometric_broadening}, 
@@ -363,13 +362,13 @@ the sample edge might become too significant to ignore.
 Given the above reasons and due to limited availability
 of synchrotron beam time, I considered a 1 mm width to be reasonable.
 The horizontal beam width was 4 pixels (0.28 mm) as shown in
-Fig.~\ref{fig:NGIWAXS_beamx}.
+Fig.~\ref{fig:nGIWAXS_beamx}.
 With these experimental parameters, 
 the resolution was estimated to be $\Delta x = 0.57$ mm = 8 pixels, 
 which would be the unresolved width of an intrinsically infinitely sharp 
 wide angle peak.
 {\color{red} Comment and refer to the gel phase data shown in the 
-result section of NGIWAXS.}
+result section of nGIWAXS.}
 The sample to detector distance were 220.6 mm, measured using silver behenate.
 Then, the minimum peak width measured in $q$-space would be
 $\Delta q \approx 0.014$ \AA$^{-1}$. The vertical geometric broadening 
@@ -396,7 +395,7 @@ of interest occurred at small $q_z$.
   corresponding to $\Delta q$ = 0.0017 \AA$^{-1}$, at the sample to detector
   distance of 220.6 mm. The beam FWHM = 3.7 pixels = 0.26 mm, giving
   $\Delta\theta$ = 0.034\textdegree\ or $\Delta q$ = 0.0063 \AA$^{-1}$. }
-  \label{fig:NGIWAXS_beamx}
+  \label{fig:nGIWAXS_beamx}
 \end{figure} 
 
 \begin{figure}[htbp]
@@ -404,7 +403,7 @@ of interest occurred at small $q_z$.
   \includegraphics[width=0.7\textwidth]{figures/ripple/MMs/waxs/beamz_hr}
   \caption{The vertical profile of the beam used in the 2013 high resolution experiment.
   The beam height = 9 pixels = 0.64 mm.}
-  \label{fig:NGIWAXS_beamz}
+  \label{fig:nGIWAXS_beamz}
 \end{figure} 
 
 \paragraph{TWAXS}
@@ -480,7 +479,7 @@ our experiments.
     experiment & (pixels) & (\AA$^{-1}$) & (pixels) & (\AA$^{-1}$) \\
     \hline
     LAXS & 1.7 & 0.0019 & 6.6$q_z$ & 0.0072$q_z$ \\
-    NGIWAXS & 8 & 0.014 &  & \\
+    nGIWAXS & 8 & 0.014 &  & \\
     TWAXS & 2.8 & 0.0067 & 3.1 & 0.0074 \\
     \hline
   \end{tabular}
@@ -545,8 +544,8 @@ was counted toward the integrated intensity.
 
 \begin{figure}[jtbp]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/ripple/MMs/laxs/olddopc045_labels}
-  \includegraphics[width=0.4\textwidth]{figures/ripple/MMs/laxs/olddopc044}
+  \includegraphics[width=0.35\textwidth]{figures/ripple/MMs/laxs/olddopc045_labels}
+  \includegraphics[width=0.35\textwidth]{figures/ripple/MMs/laxs/olddopc044}
   \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator1}
   \includegraphics[width=0.45\textwidth]{figures/ripple/MMs/laxs/attenuator2}
   \caption{(top panels) CCD images of X-ray scattering taken with (left) and without 
@@ -563,7 +562,6 @@ was counted toward the integrated intensity.
   without the attenuator (black solid circles, right).}
   \label{fig:olddopc}
 \end{figure}
-
 
 \begin{figure}[htbp]
   \centering
@@ -582,7 +580,7 @@ was counted toward the integrated intensity.
 \end{figure} 
 
 \subsection{Near Grazing Incidence Wide Angle X-ray Scattering Experiment}
-\label{NGIWAXS_method}
+\label{nGIWAXS_method}
 The high resolution wide angle X-ray scattering (WAXS)
 experiment was also carried out at the G1 station. 
 The instrument was set up by the G1
@@ -1584,20 +1582,20 @@ larger $q$-space.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{NGIWAXS: analysis}
+%\section{nGIWAXS: analysis}
 %\subsection{Absorption Correction}\label{sec:WAXS_abs_correction}
 %(Under construction)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{NGIWAXS: model}
+%\section{nGIWAXS: model}
 %\subsection{Thin rod model}\label{sec:WAXS_thin_rod}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{NGIWAXS: results}\label{sec:NGIWAXS_results}
+\section{nGIWAXS: results}\label{sec:nGIWAXS_results}
 As a first step in data reduction of near grazing incidence wide angle X-ray
-scattering (NGIWAXS) data, we 
+scattering (nGIWAXS) data, we 
 subtracted background scattering data taken at incident angle of -$\omega$ 
 from the data taken at $\omega$. This background
 subtraction resulted in a clean image of sample scattering. 
@@ -1621,12 +1619,12 @@ which was most visible near the meridian $q_r$ = 0.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/ripple_060}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/ripple_061}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/ripple_060_ccd}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/ripple_060_q}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_061}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060_ccd}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060_q}
   \caption[Transformation of wide angle scattering data from the CCD to $q$-space]
-  {Data reduction of NGIWAXS data. (top) Data taken at $\omega$ = 0.2\textdegree\ 
+  {Data reduction of nGIWAXS data. (top) Data taken at $\omega$ = 0.2\textdegree\ 
   (left) and at -0.2\textdegree\ (right) with the low resolution setup at the 
   2011 run. Because of mosaic spread present in 
   the sample, ($h,0$) main peaks as well as ($h,k\neq 0$) side peaks in the ripple LAXS 
@@ -1645,7 +1643,7 @@ which was most visible near the meridian $q_r$ = 0.
   \label{fig:waxs_data_reduction}
 \end{figure}
 
-Figure~\ref{fig:NGIWAXS_enlarge} shows NGIWAXS from an oriented DMPC film
+Figure~\ref{fig:nGIWAXS_enlarge} shows nGIWAXS from an oriented DMPC film
 in the ripple phase for $D$ = 60.8 \AA, collected with the high resolution setup. 
 We observed a stronger peak off the 
 equator and a weaker one, the center of which was not unambiguously determined. 
@@ -1656,35 +1654,38 @@ separation of this peak from the stronger one was most visible at
 $q_z = 0.12$ \AA$^{-1}$, indicating that the center of this peak was near
 $(q_r, q_z) \approx (1.452 \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
 However, because of absorption
-of X-rays due to the sample, intensity near the equator was attenuated.
+of X-rays due to the sample, intensity became attenuated as one approaches
+the equator. However, very close to the equator, there is Vineyard-Yoneda 
+peak that is due to constructive interference with scattering from the substrate,
+which we will not consider.
 Therefore, we could not eliminate a possibility that the weaker peak
 is centered at $q_z$ = 0 \AA$^{-1}$. This is further investigated in
 the next section for transmission wide angle X-ray scattering.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=100 170 100 170,clip,width=\textwidth]{figures/ripple/NGIWAXS/dmpc1_enlarge}
-  \caption{High resolution NGIWAXS of the DMPC ripple phase for $D$ = 60.8 \AA.
+  \includegraphics[trim=100 170 100 170,clip,width=\textwidth]{figures/ripple/nGIWAXS/dmpc1_enlarge}
+  \caption{High resolution nGIWAXS of the DMPC ripple phase for $D$ = 60.8 \AA.
   The angle of incidence $\omega$ was 0.2\textdegree. The stronger peak was at
   $(q_r, q_z) \approx$ (1.478 \AA$^{-1}$, 0.20 \AA$^{-1}$). 
   The weaker peak was at 
   $(q_r, q_z) \approx$ (1.452 \AA$^{-1}$, 0.12 \AA$^{-1}$). The scattered
   intensity along the line slightly above $q_z$ = 0 \AA$^{-1}$ is the Vineyard-Yoneda
   peak \cite{ref:Vineyard82,ref:Miller08}.}
-  \label{fig:NGIWAXS_enlarge}
+  \label{fig:nGIWAXS_enlarge}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/ripple/NGIWAXS/qrplots}
-  \caption{$q_r$ swaths of the ripple WAXS, each averaged over 0.02 \AA$^{-1}$. Each curve
-  is shifted by 100 vertically. 
-  The center $q_z$ values of swaths are shown in the figure legend.}
+  \includegraphics[width=0.8\textwidth]{figures/ripple/nGIWAXS/qrplots}
+  \caption{$q_r$ swaths of the ripple WAXS, each averaged over 0.02 \AA$^{-1}$
+  in $q_z$. Each curve is shifted by 100 vertically. 
+  The central $q_z$ values of swaths are shown in the figure legend.}
   \label{fig:qrplots}
 \end{figure}
 
 We also investigated dependence of the ripple WAXS on the interbilayer
-$D$-spacing. Figure~\ref{fig:NGIWAXS} compares NGIWAXS at two different $D$-spacing,
+$D$-spacing. Figure~\ref{fig:nGIWAXS} compares nGIWAXS at two different $D$-spacing,
 showing that chain scattering did not depend on the $D$-spacing in this range. 
 A weak feature that looks like an 
 arc coming from the chain peak was observed. This feature extended
@@ -1693,26 +1694,28 @@ is perhaps mosaic spread scattering.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.49\textwidth]{figures/ripple/NGIWAXS/dmpc1_046}
-  \includegraphics[width=0.49\textwidth]{figures/ripple/NGIWAXS/046_vs_052}
-  \caption{NGIWAXS of the DMPC ripple phase for $D$ = 59.2 \AA\ (left)
+  \includegraphics[width=0.49\textwidth]{figures/ripple/nGIWAXS/dmpc1_046}
+  \includegraphics[width=0.49\textwidth]{figures/ripple/nGIWAXS/046_vs_052}
+  \caption{nGIWAXS of the DMPC ripple phase for $D$ = 59.2 \AA\ (left)
   and difference between $D$ = 59.2 \AA\ and 60.8 \AA\ (right). 
   The difference shows no obvious feature, indicating that the ripple WAXS
   patterns at the two D-spacing were identical within an error.
   The angle of incidence $\omega$ was 0.2\textdegree. The data were taken
   with the high resolution setup.}
-  \label{fig:NGIWAXS}
+  \label{fig:nGIWAXS}
 \end{figure}
 
 The chain-chain correlation length in the ripple phase can be studied by
 measuring the widths of the ripple peaks, which are determined by the convolution of 
 the intrinsic width and the instrumental resolution. To characterize the instrumental 
-resolution, we also collected high resolution NGIWAXS for the DMPC L$_{\beta I}$ gel phase
+resolution, we also collected high resolution nGIWAXS for the DMPC L$_{\beta I}$ gel phase
 that occurs at the highest hydration \cite{ref:Smith88,Tristram-Nagle02}
 shown in Fig~\ref{fig:gel_phase}.
-When the peak profile of the (2,0) peak in $q_r$ was fitted to a Lorentzian, we obtained
-an excellent fit with its full width half maximum (FWHM) being the same as the instrumental resolution,
-$\Delta q = 0.014$ \AA$^{-1}$. The center of the peak was estimated to be at $q_r$ = 1.479 \AA$^{-1}$.
+When the peak profile of the (2,0) peak in $q_r$ was fitted to a Lorentzian, 
+we obtained
+an excellent fit with its full width half maximum (FWHM) $\Delta q = 0.014$ \AA$^{-1}$,
+centered at $q_r$ = 1.479 \AA$^{-1}$.
+This is the instrumental resolution as discussed in Sec.~\ref{sec:geometric_broadening}. 
 The chain-chain correlation length can be estimated by using the Scherrer equation 
 \cite{ref:Warren69},
 \[
@@ -1731,9 +1734,9 @@ length of 2900 \AA \cite{ref:Sun94}.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=150 190 150 180,clip,width=0.45\textwidth]{figures/ripple/NGIWAXS/dmpc1_107}
-  \includegraphics[trim=50 0 50 0,clip,width=0.45\textwidth]{figures/ripple/NGIWAXS/dmpc1_107_gel_phase_20_swath_8px}
-  \caption[NGIWAXS of the DMPC gel phase]{(left) NGIWAXS image of the DMPC gel phase
+  \includegraphics[trim=150 190 150 180,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107}
+  \includegraphics[trim=50 0 50 0,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px}
+  \caption[nGIWAXS of the DMPC gel phase]{(left) nGIWAXS image of the DMPC gel phase
   at 10 \textcelsius\ for $D$ = 57.7 \AA\ where the sample was in the 
   L$_{\beta I}$ phase. The (2,0) peak was at
   $q_r=1.479$ \AA$^{-1}$, corresponding to $d_{20}=4.25$ \AA.
@@ -1754,7 +1757,7 @@ indicating that the correlation length in the ripple phase is shorter
 than that in the gel phase.
 This observation can be understood by supposing that chains in the major
 and minor arms are not correlated, so that gel phase like chains in the 
-major are only correlated within the major arm, limiting the correlation
+major arm are only correlated within the major arm, limiting the correlation
 length along the ripple direction to be less than the length of the major 
 arm, $\sim$100 \AA. Although
 it is possible that chains are correlated over a much longer distance 
@@ -1762,7 +1765,7 @@ along the direction perpendicular to the ripple direction leading to
 a sharp reflection along $q_y$,
 what is observed in our in-plane powder sample is a convolution
 of a broad width along $q_x$ and sharp one along $q_y$. Such convolution
-would result in a broad Bragg rod as observed in our NGIWAXS data. 
+would result in a broad Bragg rod as observed in our nGIWAXS data. 
 
 Figure~\ref{fig:strong_peak} also shows that there was a broader component
 in the observed peak profile. A fit with a single Lorentzian was not very
@@ -1798,7 +1801,7 @@ of chain packing and domain shape.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/NGIWAXS/strong_peak_Lorentz}
+  \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/strong_peak_Lorentz}
   \caption[Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
   fitted to double Lorentzian functions]{Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
   fitted to double Lorentzian functions. The FWHM and center obtained 
@@ -1809,8 +1812,8 @@ of chain packing and domain shape.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/weak_peak_Lorentz}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/weak_peak_tripleLorentz}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/weak_peak_Lorentz}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/weak_peak_tripleLorentz}
   \caption[Peak profile in $q_r$ at $q_z$ = 0.12 \AA$^{-1}$ fitted to
   double Lorentzian (left) and double pseudo Voigtian functions (right)]
   {(left) Peak profile in $q_r$ at $q_z$ = 0.12 \AA$^{-1}$ fitted to
@@ -1827,7 +1830,7 @@ of chain packing and domain shape.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{figures/ripple/NGIWAXS/weak_peak_pseudoVoigt}
+  \includegraphics[width=0.6\textwidth]{figures/ripple/nGIWAXS/weak_peak_pseudoVoigt}
   \caption[]
   {The peak profile fitted to double pseudo Voigtian functions.
   The FWHM and center obtained were 0.107 \AA$^{-1}$ and 1.458 \AA$^{-1}$ (red) 
@@ -1836,7 +1839,7 @@ of chain packing and domain shape.
   \label{fig:pseudoVoigt}
 \end{figure}
 
-We also measured NGIWAXS of the DMPC fluid phase at $T$ = 30 \textcelsius\
+We also measured nGIWAXS of the DMPC fluid phase at $T$ = 30 \textcelsius\
 (Fig.~\ref{fig:fluid_036}).
 Fig.~\ref{fig:fluid_vs_ripple} compares the ripple and fluid phase WAXS.
 The maximum intensity of the fluid phase
@@ -1861,8 +1864,8 @@ chains in the minor arm are disordered similarly to the fluid phase.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[trim=0 0 0 0,clip,width=0.7\textwidth]{figures/ripple/NGIWAXS/fluid_036}
-  \caption{NGIWAXS of the DMPC fluid phase at 30 \textcelsius. $\omega$ =
+  \includegraphics[trim=0 0 0 0,clip,width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_036}
+  \caption{nGIWAXS of the DMPC fluid phase at 30 \textcelsius. $\omega$ =
   0.5\textdegree. The data were taken in the 2011 run with a low resolution 
   setup. The sample width, $w_s$ = 2 mm.}
   \label{fig:fluid_036}
@@ -1870,7 +1873,7 @@ chains in the minor arm are disordered similarly to the fluid phase.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/NGIWAXS/fluid_vs_ripple}
+  \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
   \caption{Comparison of the ripple (black) and fluid (red) phase WAXS at $q_z$ = 0.012 \AA$^{-1}$.
   The fluid phase data were taken with the low resolution setup and scaled 
   vertically to enable visual comparison.}
@@ -1879,12 +1882,12 @@ chains in the minor arm are disordered similarly to the fluid phase.
 
 %\begin{figure}[htbp]
 %  \centering
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple0}
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple1}
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple2}
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple3}
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple4}
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_fluid&ripple5}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple0}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple1}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple2}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple3}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple4}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_fluid&ripple5}
 %  \caption{$q_r$ swaths comparing intensity of the fluid WAXS and ripple WAXS.
 %  The fluid phase data were scaled so that its WAXS lies below the ripple WAXS.}
 %  \label{fig:fluid&ripple}
@@ -1892,7 +1895,7 @@ chains in the minor arm are disordered similarly to the fluid phase.
 
 %\begin{figure}[htbp]
 %  \centering
-%  \includegraphics[width=0.45\textwidth]{figures/ripple/NGIWAXS/qr_ripple-fluid}
+%  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/qr_ripple-fluid}
 %  \caption{Subtraction of the fluid phase WAXS from the ripple phase
 %  WAXS. The subtraction results in asymmetric ripple peak.}
 %  \label{fig:ripple-fluid}
@@ -1907,7 +1910,7 @@ Just like in near grazing incidence wide angle scattering, the background
 subtraction is the first step in analysis of transmission wide angle X-ray 
 scattering (TWAXS) data. The background scattering data were collected by replacing 
 the sample with a bare Si wafer. Although the background subtraction was not 
-as good as for the NGIWAXS, this did not affect scattering in the wide angle 
+as good as for the nGIWAXS, this did not affect scattering in the wide angle 
 region. Because the data were taken at $\omega=45$\textdegree, the ripple
 WAXS pattern in the CCD space is very different from the respective pattern
 in the sample $q$-space. Therefore, the CCD to $q$-space transformation is crucial
@@ -1915,16 +1918,16 @@ in analyzing the TWAXS data.
 
 Figure~\ref{fig:twaxs_ripple} shows the transmission wide angle X-ray
 scattering pattern after the CCD to q transformation. The stronger
-peak observed in NGIWAXS was also observed at approximately the same location.
-Because of a larger instrumental resolution than in the NGIWAXS experiment,
+peak observed in nGIWAXS was also observed at approximately the same location.
+Because of a larger instrumental resolution than in the nGIWAXS experiment,
 the weaker peak was not as well separated. Figure~\ref{fig:twaxs_weak_peak} shows
 a slight hint of the weak peak at $q_z=0.12$ \AA$^{-1}$ and 
 Fig.~\ref{fig:twaxs_qrplots} shows many more $q_r$ swaths. This
 data set taken in the 2011 run motivated me to try an experiment
-with a higher instrumental resolution, which led to the NGIWAXS experiment
+with a higher instrumental resolution, which led to the nGIWAXS experiment
 in the 2013 run. Figure~\ref{fig:twaxs_qzplot} shows intensity along $q_z$,
 averaged for $q_r$ between 1.46 \AA$^{-1}$ and 1.52 \AA$^{-1}$. It shows absence of
-a sharp peak at $q_z$ = 0 \AA$^{-1}$, complementing the NGIWAXS data.
+a sharp peak at $q_z$ = 0 \AA$^{-1}$, complementing the nGIWAXS data.
 While the instrumental resolution here was not great, 
 Fig.~\ref{fig:twaxs_qrplots} and \ref{fig:twaxs_qzplot} indicate
 that the second, weaker peak is located at or above $q_z$ = 0.12 \AA$^{-1}$.
@@ -2034,7 +2037,7 @@ is probably the tail of the stronger peak coming from the major arm
 and not due to the fluid-like chain packing in the minor arm.
  
 Given existence of gel-like packing in the major arm, we argue that the 
-stronger peak observed in the NGIWAXS data is the Bragg rod from the 
+stronger peak observed in the nGIWAXS data is the Bragg rod from the 
 major arm. It is not clear, however, whether or not the weaker peak is 
 also due to packing in the major arm. Resolving this issue seems to require
 modeling of various types of chain packing for both major and minor arms.
@@ -2051,7 +2054,7 @@ to obtain a good fit to our measured wide angle data.
 One could also consider some exotic packing such as swirling pattern observed
 by Watkin et al. (PNAS) or tilt modulation field. Predicting the scattering
 intensity pattern from these structures might lead to a different way
-to analyze our LAXS and NGIWAXS data and possibly more improved study of the 
+to analyze our LAXS and nGIWAXS data and possibly more improved study of the 
 ripple phase. 
 
 Future possible experiments
