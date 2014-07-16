@@ -1356,8 +1356,7 @@ In total, the modified 2G hybrid model implements 14 structural parameters.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{LAXS: results}
-\subsection{Data and Electron Density Profile}\label{sec:LAXS}
+\section{LAXS: results}\label{sec:LAXS_results}
 We measured scattering on oriented samples in almost identical conditions as the
 best unoriented sample of Wack and Webb. As discussed earlier,
 these two types of samples have different Lorentz corrections, so 
@@ -1368,7 +1367,7 @@ and the uroriented data was good, but form factor from our oriented
 sample was in many cases slightly larger than that from the unoriented sample.
 We attribute this discrepancy to the way intensity was extracted. 
 In X-ray data from an oriented sample, each peak
-was nicely separated, so integrating a peak intensity was trivial.
+was well separated, so integrating a peak intensity was trivial.
 In contrast, some reflections in unoriented data were overlapping with
 each other (three pairs of overlapping peaks are highlighted in 
 Table~\ref{tb:cmu_vs_wack}), 
@@ -1553,10 +1552,53 @@ necessary to obtain a robust minor arm profile. Since $h$ = 9 was quite strong,
 we expect to see more orders with the same instrument by simply probing a
 larger $q$-space.
 
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccccccc}
+    \hline
+          & fit1  & fit2  & fit3  & fit4  & fit5  & fit6  & fit7 \\
+    \hline
+    $\chi^2$ & 11996 & 9664  & 19458 & 8827  & 8525  & 8905  & 8883 \\
+    $A$     & 20.4  & 24.2  & 22.1  & 21.5  & 21.5  & 21.4  & 21.5 \\
+    $x_M$   & 98.5  & 118.8 & 92.6  & 104.0 & 102.9 & 102.1 & 102.7 \\
+    $f_1$    & 0.489 & 0.726 & 0.776 & 0.515 & 0.538 & 0.516 & 0.511 \\
+    $f_2$    & 0*    & -11.3 & -6.06 & -2.77 & -2.81 & -2.62 & -2.63 \\
+    $\psi$   & 0.266 & 0.250 & 0.183 & 0.252 & 0.252 & 0.263 & 0.259 \\
+    $z_{H1}$  & 19.8  & 19.7  & 18.1  & 19.5  & 18.7  & 19.1  & 19.0 \\
+    $\sigma_{H1}$ & 3.43* & 3.43* & 2.94* & 3.06  & 2.51  & 2.94* & 2.97 \\
+    $\rho_{H1}$ & 10.77* & 10.77* & 9.91* & 9.91* & 7.03  & 8.38  & 8.45 \\
+    $z_{H2}$  & NA    & NA    & 20.0  & 20.4  & 22.4  & 23.2  & 23.0 \\
+    $\sigma_{H2}$ & NA    & NA    & 1.47* & 3.17  & 1.38  & 1.47* & 1.72 \\
+    $\rho_{H2}$ & NA    & NA    & 7.27* & 7.27* & 3.75  & 2.83  & 3.00 \\
+    $\sigma_M$ & 1.67* & 1.67* & 1.83* & 2.47  & 2.53  & 1.83* & 1.87 \\
+    $\rho_M$ & 9.23* & 9.23* & 10.9* & 10.9* & 5.15  & 6.87  & 6.97 \\
+    \hline
+  \end{tabular}
+  \caption{Fit results. fit1 and fit2 used the M1G model while 
+  fit3-7 used the M2G model. \\ *Parameters were fixed.}
+  \label{tb:LAXS_fits}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccccccc}
+    \hline
+     & fit1  & fit2  & fit3  & fit4  & fit5  & fit6  & fit7 \\
+    \hline
+    $D_{HH}^\text{major}$ & 42.0  & 41.0  & 40.0  & 40.6  & 40.6  & 41.8  & 41.8 \\
+    $D_{HH}^\text{minor}$ & 30.8  & 31.0  & 29.2  & 29.2  & 29.2  & 31.0  & 31.0 \\
+    $\alpha_M$ & 11.7  & 11.5  & 13.4  & 11.7  & 11.8  & 11.8  & 11.8 \\
+    $\alpha_m$ & 23.7  & 42.7  & 22.9  & 27.7  & 27.1  & 26.5  & 26.9 \\
+    \hline
+  \end{tabular}
+  \caption{Ripple structural quantities.}
+  \label{tb:LAXS_dhh}
+\end{table}
+
 \newpage
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit2}
+  %\includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit2}
   \caption[Electron density profile calculated using the phases obtained from the M2G
   model and experimental form factors]
   {Electron density profile calculated using the phases obtained from the M2G
@@ -1569,7 +1611,7 @@ larger $q$-space.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit1}
+  %\includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit1}
   \caption[Electron density profile calculated using the phases obtained from the M2G
   model and experimental form factors]
   {Electron density profile calculated using the phases obtained from the M2G
@@ -1838,7 +1880,8 @@ the same, $\sim$1.49 \AA$^{-1}$.
   \end{tabular}
   \caption[Summary of peak properties]
   {Summary of measured peak properties. The values of $\Delta q_z$ are 
-  from Sec.~\ref{sec:TWAXS_results}. $\hat{\theta} = \arctan(q_z/q_r)$.}
+  from Sec.~\ref{sec:TWAXS_results}. $\hat{\theta} = \arctan(q_z/q_r)$.
+  $R = I_{strong}/I_{weak} \approx$ 1.5-1.85.}
   \label{tb:nGIWAXS_summary}
 \end{table}
 
@@ -1934,12 +1977,12 @@ chains in the major arm are also coupled between the monolayers.
 We note that mosaic spread of the sample would make the apparent $\Delta q_z$ 
 larger, so that $L \approx 31$ \AA\ might be the lower bound on the true $L$. 
 
-Finally, Fig.~\ref{fig:twaxs_qzplot} plots $q_z$ swath averaged between
-$q_r$ = 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$ and between
-1.465 \AA$^{-1}$ and 1.51 \AA$^{-1}$. We found no obvious intensity maxima
+Finally, Fig.~\ref{fig:twaxs_qzplot} plots $q_z$ swath along the weaker 
+Bragg rod and along the entire ripple WAXS pattern. 
+We found no obvious intensity maxima
 below $q_z$ = 0.12 \AA$^{-1}$, asserting that the weaker peak was also
 off the equator as discussed in Sec.~\ref{sec:nGIWAXS_results}.
-There was also no sign of a third peak.
+We also foud no sign of a third peak.
 
 \begin{figure}[htbp]
   \centering
@@ -1997,7 +2040,7 @@ There was also no sign of a third peak.
   \caption{$q_z$ swath averaged between 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$
   (left) and between 1.465 \AA$^{-1}$ and 1.51 \AA$^{-1}$ (right) in $q_r$.
   The left plot is approximately the $q_z$ profile along the weaker peak
-  while the right profile extends over the whole ripple WAXS pattern.}
+  while the right profile extends over the entire ripple WAXS pattern.}
   \label{fig:twaxs_qzplot}
 \end{figure}  
 

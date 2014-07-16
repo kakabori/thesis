@@ -644,7 +644,8 @@ First, let us calculate the positions of the diffraction peaks from a two
 dimensional orthorhombic lattice whose plane makes an angle $\xi$ with 
 respect to the $xy$ plane and extends to infinity. 
 As a unit cell, we will take a parallelpipedon containing two rods,
-one located at the origin and the other located at the center.
+one located at the origin and the other located at the center
+(Fig.~\ref{fig:unit_cell_waxs}).
 The lattice vectors are $\mathbf{a_1}=a_1\cos\xi\xhat+a_1\sin\xi\zhat$ 
 and $\mathbf{a_2}=a_2\yhat$. \textcolor{red}{There are other choices for
 how the lattice is oriented with respect to the ripple direction,
@@ -662,11 +663,37 @@ In other words, $\theta$ and $\phi$ are usual spherical coordinates
 with respect to the ripple $x$, $y$, and $z$ axes, not the local
 bilayer Cartesian axes. With this choice of coordinates, chains 
 are tilted with respect to the local bilayer normal if 
-$\theta$ = 0. No tilt of chains are given by 
-$\theta=\xi$ and $\phi=\pi$. \textcolor{red}{It would be good to work out
+$\theta$ = 0. $\theta=\xi$ and $\phi=\pi$ gives chains parallel to the
+local bilayer normal, or $\theta_t$ = 0. 
+\textcolor{red}{It would be good to work out
 the relation between $\theta$ and $\theta_t$, $\theta_t$ being the chain tilt
 with respect to the local bilayer normal.}
-The electron density is given by 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/ripple/unit_cell_waxs_side} \\
+  \includegraphics[width=0.6\textwidth]{figures/ripple/unit_cell_waxs_top}
+  \caption[Unit cell for chain packing in the major arm]
+  {Unit cell for chain packing in the major arm. 
+  (top) Projection of the unit cell in the $xz$-plane. The unit cell is taken
+  as a parallelpipedon shown by black solid lines, each unit cell 
+  containing two chains.
+  Chains located at the center of the unit cell are
+  drawn as opaque red lines while chains at the lattice points are 
+  drawn as solid red lines. The dash line indicates
+  the mid-plane of a rippling bilayer. Chains are tilted with respect to
+  the stacking $z$ direction by $\theta$ and the major arm is tilted 
+  with respect to the ripple $x$ direction by $\xi$. The chain length
+  is denoted by $L$. $\mathbf{a_1}$ and $\mathbf{a_2}$ are orthorhombic 
+  unit cell vectors.
+  (bottom) Projection of the unit cell in the $xy$-plane.
+  $\phi=0$ means chains are tilted in the $xz$ plane and $\phi=\pi/2$
+  means chains are titled into the direction perpendicular to the 
+  ripple direction.}
+  \label{fig:unit_cell_waxs}
+\end{figure}
+
+The electron density, assuming a delta function for each chain, is given by 
 \begin{align}
 	\rho(\mathbf{r})&=\delta(x-\alpha z, y-\beta z)+\\
 	&\delta\left[x-\frac{a_1\cos\xi}{2}-\alpha\left(z-\frac{a_1\sin\xi}{2}\right),\, y-\frac{a_2}{2}-\beta\left(z-\frac{a_1\sin\xi}{2}\right)\right],
@@ -695,6 +722,7 @@ where $\gamma=\alpha q_x+\beta q_y+q_z$. Eq. \ref{eq:FormFactor} shows that peak
 \begin{equation}%form factor for even h+k
 	F(\mathrm{q})=\frac{4}{\gamma}\sin\left(\frac{\gamma L\cos\theta}{2}\right)\label{eq:FormFactorEven}.
 \end{equation} 
+
 For (20) peak, $q_y$ = 0 and $4\pi=a_1\cos\xi q_x+a_1\sin\xi q_z$. The second equation can be rewritten to give
 \begin{equation}
 	q_z=-\frac{1}{\tan\xi}q_x+\frac{4\pi}{a_1\sin\xi}
