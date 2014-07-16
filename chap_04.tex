@@ -1705,7 +1705,7 @@ in the ripple phase for $D$ = 60.8 \AA, collected with the high resolution setup
 We observed a stronger peak and a weaker one off the equator. 
 The maximum intensity of the stronger peak was at 
 $(q_r, q_z) \approx (1.478 \text{ \AA}^{-1}, 0.20 \text{ \AA}^{-1})$ as shown
-in Fig.~\ref{fig:qrplots}. The weaker peak was observed near the equator, and
+in Fig.~\ref{fig:qrplots}. The weaker peak was observed closer to the equator, and
 separation of this peak from the stronger one was most visible at 
 $q_z = 0.12$ \AA$^{-1}$, indicating that the center of this peak was near
 $(q_r, q_z) \approx (1.457\textsl{•} \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
@@ -1799,7 +1799,8 @@ the same, $\sim$1.49 \AA$^{-1}$.
   fitted to double Lorentzian functions]{Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
   fitted to double Lorentzian functions. The FWHM and center obtained 
   were 0.025 \AA$^{-1}$ and 1.478 \AA$^{-1}$ (green) and 0.140 \AA$^{-1}$ 
-  and 1.464 \AA$^{-1}$(red), respectively.}
+  and 1.464 \AA$^{-1}$(red), respectively. The solid blue line is a sum
+  of the two Lorentzian fits.}
   \label{fig:strong_peak}
 \end{figure}
 
@@ -1813,7 +1814,7 @@ the same, $\sim$1.49 \AA$^{-1}$.
   double Lorentzian functions. 
   The FWHM and center obtained were 0.025 \AA$^{-1}$ and 1.457 \AA$^{-1}$ (red) 
   and 0.026 \AA$^{-1}$ and 1.484 \AA$^{-1}$ (green), respectively.
-  The fit was limited within the range in which the fit was reasonable.
+  The fit was limited within a range in which fits were reasonable.
   (right) The same peak profile fitted to triple Lorentzian. The FWHM was
   constrained to 0.025 \AA$^{-1}$ (blue), 0.025 \AA$^{-1}$ (green), and 0.14 \AA$^{-1}$ (red).
   The center was found to be 1.485 \AA$^{-1}$ (blue), 1.458 \AA$^{-1}$ (green), 
@@ -1821,23 +1822,23 @@ the same, $\sim$1.49 \AA$^{-1}$.
   \label{fig:weak_peak}
 \end{figure}
 
-\begin{table}
+\begin{table}[htbp]
   \centering
-  \begin{tabular}{cccccc}
+  \begin{tabular}{ccccccc}
     \hline
     peaks & $q$ & $q_r$ & $q_z$ & $\Delta q_r$ & $\Delta q_z$ & $\hat{\theta}$ \\
-     & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\textdegree) \\
+     & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & \\
     \hline
-    stronger  & 1.491 & 1.478 & 0.20 & 0.025 & 0.4 & 7.7 \\
-    weaker    & 1.462 & 1.457 & 0.12 & 0.025 & 4.7 \\
-    broader   & 1.463-1.478 & 1.458-1.464 & 0.12-0.20 & 0.140 &\\
-    gel (2,0) & 1.479 & 1.479 & 0 & 0.014 & 0.4 \\
+    stronger  & 1.491 & 1.478 & 0.20 & 0.025 & 0.4 & 7.7\textdegree \\
+    weaker    & 1.462 & 1.457 & 0.12 & 0.025 & & 4.7\textdegree \\
+    broader   & 1.463-1.478 & 1.458-1.464 & 0.12-0.20 & 0.140 & \\
+    gel (2,0) & 1.479 & 1.479 & 0 & 0.014 & 0.4 & 0\textdegree \\
     fluid     & 1.41 & & & 0.288 & \\
     \hline
   \end{tabular}
   \caption[Summary of peak properties]
   {Summary of measured peak properties. The values of $\Delta q_z$ are 
-  from Sec.~\ref{sec:TWAXS_results}.}
+  from Sec.~\ref{sec:TWAXS_results}. $\hat{\theta} = \arctan(q_z/q_r)$.}
   \label{tb:nGIWAXS_summary}
 \end{table}
 
@@ -1892,11 +1893,12 @@ the same, $\sim$1.49 \AA$^{-1}$.
 \newpage
 \section{TWAXS: results}\label{sec:TWAXS_results}
 Figure~\ref{fig:twaxs_gel}(left) shows background subtracted transmission wide
-angle X-ray scattering (TWAXS) of the DMPC gel L$_{\beta I}$ phase at 
+angle X-ray scattering (TWAXS) of the DMPC gel L$_{\beta I}$ phase obtained at 
 $\omega$ = 45\textdegree.
 The background scattering image was collected by replacing 
 the sample with a bare Si wafer. Imperfect subtraction of mylar scattering 
-can be seen. This was most likely due to slight displacement of mylar windows
+can be seen in the background subtracted image. 
+This was most likely due to slight displacement of mylar windows
 when the sample was replaced with a bare wafer. Three main reflections whose Miller indices 
 are (2,0), (1,1), and (1,-1) were observed along with the (1,$\pm$1) satellite 
 peaks.
@@ -1904,7 +1906,7 @@ Because the data were taken at $\omega=45$\textdegree, the WAXS pattern
 appeared on the CCD detector very differently from the respective pattern
 in the sample $q$-space. 
 Therefore, the CCD to $q$-space transformation shown in 
-Fig~\ref{fig:twaxs_gel}(right) was crucial in analyzing the TWAXS data. 
+Fig~\ref{fig:twaxs_gel}(right) was important in analyzing the TWAXS data. 
 
 Figure~\ref{fig:twaxs_ripple} shows the TWAXS pattern of the ripple phase 
 after the CCD to q transformation. The stronger
@@ -1938,7 +1940,6 @@ $q_r$ = 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$ and between
 below $q_z$ = 0.12 \AA$^{-1}$, asserting that the weaker peak was also
 off the equator as discussed in Sec.~\ref{sec:nGIWAXS_results}.
 There was also no sign of a third peak.
-
 
 \begin{figure}[htbp]
   \centering
@@ -2019,8 +2020,6 @@ There was also no sign of a third peak.
 %  \label{fig:twaxs_qrplots}
 %\end{figure}
 
-
-  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Discussion}\label{sec:ripple_discussion}
@@ -2068,28 +2067,23 @@ would result in a broad Bragg rod as observed in our nGIWAXS data.
 \end{figure}
 
 The ripple phase has attracted many researchers since its discovery in 1967,
-and extensive structural work on average structural properties such as 
+and extensive study on average structural properties such as 
 the ripple wavelength, oblique angle, $D$-spacing, and electron density
-profiles have been published. From those experimental measurements, 
+profiles have been reported. From those experimental measurements, 
 many theoretical models to explain the origin of the ripple phase have 
-been published with some models resulting in predictions
-inconsistent with the experimental data. Yet, from equilibrium structural
-study such as X-ray scattering, chain packing for the asymmetric
-ripple has only be suggested based on the measured thicknesses
-of the major and minor arms. For example, based on the calculated electron
+been considered. Yet, chain packing for the asymmetric
+ripple has only be elusive. For example, based on the calculated electron
 density profile, Sun \textit{et al.} \cite{ref:Sun96} 
-has suggested that the chains in the minor arm are disordered like in the fluid phase.
+has suggested that the chains in the major arm are gel phase like while
+those in the minor arm are disordered like in the fluid phase.
 Senguphta \textit{et al.} \cite{ref:Sengupta03} has argued, 
 also based on the electron density profile calculated
-using the data by Wack and Webb, that chains are packed like in the gel phase 
+using the X-ray data by Wack and Webb \cite{ref:Wack89}, 
+that chains are packed like in the gel phase 
 throughout both arms with the same tilt angle with respect to the stacking
-$z$ direction. Since the thickness of the major arm has
-shown to be almost the same as that of the gel phase, they argued that
-chains in the major arm should be tilted about 30\textdegree\ with respect
-to the bilayer local normal.
-
+$z$ direction. 
 Since the millennium, a few simulations
-have predicted different type of chain packing. For example, all atomistic simulations
+have predicted a different type of chain packing. For example, all atomistic simulations
 done by de Vrie \textit{et al.} \cite{ref:deVries05} have predicted existence 
 of interdigitated state in the minor arm of the DMPC asymmetric ripple 
 while lipids in the major arm are packed like in the gel phase with
@@ -2101,8 +2095,7 @@ scattering data. Although the DMPC WAXS was measured by Katsaras
 and Raghunathan \cite{ref:Katsaras95} using a rotating anode,
 the wide angle peak measured was broad and ambiguous to answer
 the question of lipid packing. Therefore, we sought to fill the gap
-with synchrotron X-ray, which has been successful in describing the fluid
-phase chain-chain correlation. Our strength were three fold: 1) brilliant
+with synchrotron X-ray techniques. Our strength were three fold: 1) brilliant
 synchrotron beam that allowed use of Si monochromater with a very small
 energy dispersion, 2) stacks of $\sim$2000 bilayers oriented on the substrate
 that scattered strongly and anisotropically, and 3) hydration chamber that 
