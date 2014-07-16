@@ -1594,45 +1594,65 @@ larger $q$-space.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{nGIWAXS: results}\label{sec:nGIWAXS_results}
-As a first step in data reduction of near grazing incidence wide angle X-ray
-scattering (nGIWAXS) data, we 
-subtracted background scattering data taken at incident angle -$\omega$ 
-from the data taken at $\omega$. This background
-subtraction resulted in a clean image of sample scattering. 
-A background subtracted CCD image was then transformed to the
+\subsection{Fluid and gel phase}\label{sec:fluid_gel_phase}
+Figure~\ref{fig:waxs_data_reduction} shows the data reduction of 
+near grazing incidence wide angle X-ray scattering (nGIWAXS) data of
+the DMPC fluid phase at $T$ = 30 \textcelsius.
+The original scattering image taken at $\omega=0.5$\textdegree\ had unwanted
+scattering due to mylar windows in the hydration chamber which
+overlapped with the fluid phase WAXS.
+Subtracting background scattering data taken at incident angle -$\omega$  
+removed these unwanted features in the scattering data, 
+resulting in a sample scattering image 
+(Fig.~\ref{fig:waxs_data_reduction}(bottom, left panel)).
+This sample scattering image was then transformed to the
 sample $q$-space using the relationship between the CCD 
 pixel positions and the sample $q$-space
 given by Eq.~\ref{eq:qxqyqz} and Eq.~\ref{eq:XZ}. The nonlinearity of this
 relationship is
 not negligible and must be taken into account for wide angle scattering data.
-Figure~\ref{fig:waxs_data_reduction} shows an example of the data reduction.
-The original scattering image taken at $\omega=0.2$\textdegree\ had unwanted
-scattering due to mylar windows in the hydration chamber which
-overlapped with the ripple WAXS.
-The background subtraction removed these unwanted features in the scattering 
-data, resulting in a sample scattering image. This sample scattering image
-was then transformed to the sample $q$-space. 
-The black regions in the sample $q$-space image are the regions of $q$-space that
+The black regions in the sample $q$-space image
+(Fig.~\ref{fig:waxs_data_reduction}(bottom, right panel))
+are the regions of $q$-space that
 were not probed by the detector. Because of the nonlinearity in the 
 transformation, straight detector edges were turned into curves, the effect of
-which was most visible near the meridian $q_r$ = 0.
+which was most visible near the meridian $q_r$ = 0. All nGIWAXS data
+in this chapter were reduced in the same manner.
+
+Because of chain disordering in the fluid phase, chain-chain scattering
+gives rise to intensity along an arc \cite{ref:Mills08} with a broad
+width in $q$. 
+Scattering of the fluid phase WAXS
+is most intense at the equator. However, scattering near the equator
+was strongly absorbed by the sample and substrate, so observing the 
+peak in the fluid phase WAXS would require a different experimental 
+geometry.
+The data were collected with a low resolution setup to maximize
+intensity. The low resolution did not pose a problem for analysis of the 
+data because observed features were broad.
+Figure~\ref{fig:fluid_qr} plots intensity along $q_r$ showing that
+the fluid phase WAXS was centered at $q \approx$ 1.41 \AA$^{-1}$. 
+This corresponds to an average chain-chain distance of 4.5 \AA. 
+A Lorentzian fit to the profile resulted in the full width half maximum
+(FWHM) $\Delta q_r=0.288$ \AA$^{-1}$.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_061}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060_ccd}
-  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/ripple_060_q}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/fluid_036}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/fluid_039}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/fluid_036_ccd}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/fluid_036_q}
   \caption[Transformation of wide angle scattering data from the CCD to $q$-space]
-  {Data reduction of nGIWAXS data. (top) Data taken at $\omega$ = 0.2\textdegree\ 
-  (left) and at -0.2\textdegree\ (right) with the low resolution setup at the 
-  2011 run. Because of mosaic spread present in 
-  the sample, ($h,0$) main peaks as well as ($h,k\neq 0$) side peaks in the ripple LAXS 
-  were observed at fixed $\omega$. The darker region below the equator defined by 
-  the beam vertical position $p_z$ was due to the substrate. The beam and 
-  $(h=1,k=0)$ reflection were visible through the semitransparent beam stop.
-  Scattering at $p_z >$ 700 was the shadow cast by the electrical wires and thermal shielding
-  in the hydration chamber.
+  {Data reduction of nGIWAXS data. (top) Fluid phase scattering at
+  30 \textcelsius\ taken at $\omega$ = 0.5\textdegree\ (left) 
+  and at -0.5\textdegree\ (right) with the low resolution setup at the 
+  2011 run. The sample width $w_s$ = 2 mm.
+  The fluid phase LAXS is also visible near the beam.  
+  The darker region below the equator defined by 
+  the beam vertical position $p_z$ was due to the substrate. The beam
+  was visible through the semitransparent beam stop.
+  Scattering at $p_z >$ 750 was the shadow cast by the electrical wires 
+  and thermal shielding in the hydration chamber.
   (bottom) The background subtracted 
   image (left) and corresponding image in the sample $q$-space (right).
   Except some minor left over scattering, all the background scattering was 
@@ -1643,24 +1663,62 @@ which was most visible near the meridian $q_r$ = 0.
   \label{fig:waxs_data_reduction}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_qr}
+  \caption{Fluid phase WAXS plotted along $q_r$ at $q_z$ = 0.012 \AA$^{-1}$.
+  The red solid line is a Lorentzian fit with its FWHM equal to 0.288 \AA$^{-1}$,
+  centered at $q_r$ = 1.408. Extra intensity at larger $q_r$ was due to
+  water scattering, which led to a slightly asymmetric profile.}
+  \label{fig:fluid_qr}
+\end{figure}
+
+Figure~\ref{fig:gel_phase} shows nGIWAXS of the the DMPC L$_{\beta I}$ gel phase
+that occurs at the highest hydration \cite{ref:Smith88,Tristram-Nagle02},
+collected with the high resolution setup. Because exposure time was short,
+the data did not have much intensity, but the (2,0) peak was clearly 
+visible on the equator.
+When the peak profile of the (2,0) peak in $q_r$ was fitted to a Lorentzian, 
+we obtained an excellent fit with its FWHM $\Delta q_r = 0.014$ \AA$^{-1}$,
+centered at $q_r$ = 1.479 \AA$^{-1}$.
+This is the instrumental resolution as discussed in Sec.~\ref{sec:geometric_broadening}. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[trim=150 190 150 180,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107}
+  \includegraphics[trim=50 0 50 0,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px}
+  \caption[nGIWAXS of the DMPC gel phase]{(left) nGIWAXS image of the DMPC gel phase
+  at 10 \textcelsius\ for $D$ = 57.7 \AA\ where the sample was in the 
+  L$_{\beta I}$ phase. The (2,0) peak was at
+  $q_r=1.479$ \AA$^{-1}$, corresponding to $d_{20}=4.25$ \AA.
+  (right) The (2,0) peak plotted along horizontal pixels $p_x$. The solid red
+  line is a Lorentzian fit to the data, resulting in the FWHM of $\sim$8 pixels,
+  corresponding to $\Delta q$ = 0.014 \AA$^{-1}$,
+  which is an unresolved width of intrinsically infinitely sharp peak
+  estimated in Sec.~\ref{sec:instrumental_resolution}.}
+  \label{fig:gel_phase}  
+\end{figure}
+
+\subsection{Ripple phase}\label{sec:ripple_phase}
 Figure~\ref{fig:nGIWAXS_enlarge} shows nGIWAXS from an oriented DMPC film
 in the ripple phase for $D$ = 60.8 \AA, collected with the high resolution setup. 
-We observed a stronger peak off the 
-equator and a weaker one, the center of which was not unambiguously determined. 
+We observed a stronger peak and a weaker one off the equator. 
 The maximum intensity of the stronger peak was at 
 $(q_r, q_z) \approx (1.478 \text{ \AA}^{-1}, 0.20 \text{ \AA}^{-1})$ as shown
 in Fig.~\ref{fig:qrplots}. The weaker peak was observed near the equator, and
 separation of this peak from the stronger one was most visible at 
 $q_z = 0.12$ \AA$^{-1}$, indicating that the center of this peak was near
-$(q_r, q_z) \approx (1.452 \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
-However, because of absorption
-of X-rays due to the sample, intensity became attenuated as one approaches
-the equator. However, very close to the equator, there is Vineyard-Yoneda 
+$(q_r, q_z) \approx (1.457\textsl{•} \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
+Because of absorption of X-rays due to the sample, 
+intensity became attenuated as one approaches the equator.
+Very close to the equator, there is Vineyard-Yoneda 
 peak that is due to constructive interference with scattering from the substrate,
 which we will not consider.
-Therefore, we could not eliminate a possibility that the weaker peak
-is centered at $q_z$ = 0 \AA$^{-1}$. This is further investigated in
-the next section for transmission wide angle X-ray scattering.
+Absorption and Vineyard-Yoneda peak did not affect determination of the 
+ripple peak positions
+as the ripple peaks were located at sufficiently large $q_z$. 
+The positions of the peaks were confirmed by transmission wide angle X-ray 
+scattering, which is discussed in the next section.
 
 \begin{figure}[htbp]
   \centering
@@ -1689,7 +1747,7 @@ $D$-spacing. Figure~\ref{fig:nGIWAXS} compares nGIWAXS at two different $D$-spac
 showing that chain scattering did not depend on the $D$-spacing in this range. 
 A weak feature that looks like an 
 arc coming from the chain peak was observed. This feature extended
-from $\phi$ = 0\textdegree to at least 70\textdegree. This feature
+from $\phi$ = 0\textdegree\ to at least 70\textdegree. This feature
 is perhaps mosaic spread scattering.
 
 \begin{figure}[htbp]
@@ -1705,77 +1763,21 @@ is perhaps mosaic spread scattering.
   \label{fig:nGIWAXS}
 \end{figure}
 
-The chain-chain correlation length in the ripple phase can be studied by
-measuring the widths of the ripple peaks, which are determined by the convolution of 
-the intrinsic width and the instrumental resolution. To characterize the instrumental 
-resolution, we also collected high resolution nGIWAXS for the DMPC L$_{\beta I}$ gel phase
-that occurs at the highest hydration \cite{ref:Smith88,Tristram-Nagle02}
-shown in Fig~\ref{fig:gel_phase}.
-When the peak profile of the (2,0) peak in $q_r$ was fitted to a Lorentzian, 
-we obtained
-an excellent fit with its full width half maximum (FWHM) $\Delta q = 0.014$ \AA$^{-1}$,
-centered at $q_r$ = 1.479 \AA$^{-1}$.
-This is the instrumental resolution as discussed in Sec.~\ref{sec:geometric_broadening}. 
-The chain-chain correlation length can be estimated by using the Scherrer equation 
-\cite{ref:Warren69},
-\[
-  B = \frac{0.94\lambda}{L\cos\theta},
-\]
-where $B$ is the observed FWHM of a Bragg peak, $\lambda$ is the wavelength,
-$L$ is the length over which chains are positionally correlated, 
-and $\theta$ is the Bragg angle. For $\Delta q = 0.014$ \AA$^{-1}$,
-$q$ = 1.479 \AA$^{-1}$, and $\lambda$ = 1.175 \AA, the 
-Scherrer equation yields $L$ = 426 \AA. 
-Because the width of the (2,0) gel phase peak 
-was not instrumentally resolved, the correlation length of chains was 
-greater than 426 \AA.
-The width of similar lipid, DPPC, was resolved and had a correlation 
-length of 2900 \AA \cite{ref:Sun94}.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[trim=150 190 150 180,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107}
-  \includegraphics[trim=50 0 50 0,clip,width=0.45\textwidth]{figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px}
-  \caption[nGIWAXS of the DMPC gel phase]{(left) nGIWAXS image of the DMPC gel phase
-  at 10 \textcelsius\ for $D$ = 57.7 \AA\ where the sample was in the 
-  L$_{\beta I}$ phase. The (2,0) peak was at
-  $q_r=1.479$ \AA$^{-1}$, corresponding to $d_{20}=4.25$ \AA.
-  (right) The (2,0) peak plotted along horizontal pixels $p_x$ averaging over 8
-  pixels in $p_z$. The solid red
-  line is a Lorentzian fit to the data, resulting in the FWHM of $\sim$8 pixels,
-  corresponding to $\Delta q$ = 0.014 \AA$^{-1}$,
-  which is an unresolved width of intrinsically infinitely sharp peak
-  estimated in Sec.~\ref{sec:instrumental_resolution}.}
-  \label{fig:gel_phase}  
-\end{figure}
-
-In contrast, the observed peaks in the ripple phase were instrumentally 
-resolved (Fig.~\ref{fig:strong_peak}). 
-The FWHM of the stronger peak was estimated to be 0.025 \AA$^{-1}$,
-corresponding to the correlation length of $\sim$240 \AA,
-indicating that the correlation length in the ripple phase is shorter 
-than that in the gel phase.
-This observation can be understood by supposing that chains in the major
-and minor arms are not correlated, so that gel phase like chains in the 
-major arm are only correlated within the major arm, limiting the correlation
-length along the ripple direction to be less than the length of the major 
-arm, $\sim$100 \AA. Although
-it is possible that chains are correlated over a much longer distance 
-along the direction perpendicular to the ripple direction leading to
-a sharp reflection along $q_y$,
-what is observed in our in-plane powder sample is a convolution
-of a broad width along $q_x$ and sharp one along $q_y$. Such convolution
-would result in a broad Bragg rod as observed in our nGIWAXS data. 
-
-Figure~\ref{fig:strong_peak} also shows that there was a broader component
-in the observed peak profile. A fit with a single Lorentzian was not very
-good, suggesting that the broader component is not artifact.
-We also fitted the peak profile in $q_r$ along $q_z$ = 0.12 \AA$^{-1}$,
+We estimated the width of the stronger peak by fitting 
+the intensity profile in $q_r$ to double Lorentzian as shown in 
+Fig.~\ref{fig:strong_peak}. The fit resulted in the FWHM $\Delta q_r$
+= 0.025 \AA$^{-1}$ centered at 1.478 \AA$^{-1}$ and 
+$\Delta q_r$ = 0.140 \AA$^{-1}$ centered at 1.464 \AA$^{-1}$.
+A fit with a single Lorentzian was not very good, and 
+a broader Lorentzian was necessary to produce a reasonable fit. 
+We also fitted the peak profile in $q_r$ at $q_z$ = 0.12 \AA$^{-1}$,
 where two distinct peaks were observed (Fig.\ref{fig:weak_peak}).
 The two sharp peaks fitted with Lorentzian yielded the FWHM of about 
 0.025 \AA$^{-1}$, consistent with the FWHM obtained for the stronger 
-peak. This result suggests that both stronger peak and weaker peak
-are due to the gel-phase like major arm. However, as Fig.~\ref{fig:weak_peak}
+peak. The widths and positions of the observed peaks are summarized
+in Table~\ref{tb:nGIWAXS_summary}.
+
+As Fig.~\ref{fig:weak_peak}
 shows, the double Lorentzian fit was only successful within a limited range
 in $q_r$. This could be due to an underlining broad peak like the one
 shown in Fig.~\ref{fig:strong_peak}. To investigate this possibility,
@@ -1783,21 +1785,12 @@ we fitted the same peak profile to triple Lorentzian with fixed widths.
 Two of the Lorentzian had fixed widths of 0.025 \AA$^{-1}$ representing 
 the sharp peaks and the last one had a fixed width of 0.14 \AA$^{-1}$
 representing the broad peak. Figure~\ref{fig:weak_peak} shows an excellent
-fit obtained over a large range in $q_r$. Curiously, the center of the stronger 
-Bragg rod was different at the two different $q_z$ (1.485 \AA$^{-1}$
-at $q_z$ = 0.012 \AA$^{-1}$ and 1.478 \AA$^{-1}$ at $q_z$ = 0.2 \AA$^{-1}$).
-\textcolor{red}{I feel like I need a good table}
-
-Particle broadening is sometimes represented by pseudo Voigt. The peak 
-profile including the weaker peak was also fitted to double pseudo Voigt.
-Figure~\ref{fig:pseudoVoigt} shows that a fit with double pseudo Voigt was
-also excellent. Given that one of the sharp Lorentzian and the broad one
-in the triple Lorentzian fit had the same center value, it is possible
-that these two Lorentzian are parts of the same pseudo Voigh representing
-the weaker peak. While the fit was excellent, it is not clear how the fitting
-parameters are related to physical properties. To properly understand the
-peak shape and broadening may require more rigorous analysis such as modeling
-of chain packing and domain shape.
+fit obtained over a large range in $q_r$, suggesting that the estimated
+peak widths are not unreasonable.
+Curiously, the center of the stronger peak was different at the two 
+different $q_z$: ($q_r$, $q_z$) = (1.485 \AA$^{-1}$, 0.12 \AA$^{-1}$)
+and (1.478 \AA$^{-1}$, 0.2 \AA$^{-1}$), while the total $q$ was about
+the same, $\sim$1.49 \AA$^{-1}$.
 
 \begin{figure}[htbp]
   \centering
@@ -1828,29 +1821,37 @@ of chain packing and domain shape.
   \label{fig:weak_peak}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{table}
   \centering
-  \includegraphics[width=0.6\textwidth]{figures/ripple/nGIWAXS/weak_peak_pseudoVoigt}
-  \caption[]
-  {The peak profile fitted to double pseudo Voigtian functions.
-  The FWHM and center obtained were 0.107 \AA$^{-1}$ and 1.458 \AA$^{-1}$ (red) 
-  and 0.077 \AA$^{-1}$ and 1.484 \AA$^{-1}$ (green), respectively.
-  The Gaussian FWHM in the pseudo Voigt was fixed to 0.014 \AA$^{-1}$.}
-  \label{fig:pseudoVoigt}
-\end{figure}
+  \begin{tabular}{cccccc}
+    \hline
+    peaks & $q$ & $q_r$ & $q_z$ & $\Delta q_r$ & $\Delta q_z$ & $\hat{\theta}$ \\
+     & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\AA$^{-1}$) & (\textdegree) \\
+    \hline
+    stronger  & 1.491 & 1.478 & 0.20 & 0.025 & 0.4 & 7.7 \\
+    weaker    & 1.462 & 1.457 & 0.12 & 0.025 & 4.7 \\
+    broader   & 1.463-1.478 & 1.458-1.464 & 0.12-0.20 & 0.140 &\\
+    gel (2,0) & 1.479 & 1.479 & 0 & 0.014 & 0.4 \\
+    fluid     & 1.41 & & & 0.288 & \\
+    \hline
+  \end{tabular}
+  \caption[Summary of peak properties]
+  {Summary of measured peak properties. The values of $\Delta q_z$ are 
+  from Sec.~\ref{sec:TWAXS_results}.}
+  \label{tb:nGIWAXS_summary}
+\end{table}
 
-We also measured nGIWAXS of the DMPC fluid phase at $T$ = 30 \textcelsius\
-(Fig.~\ref{fig:fluid_036}).
-Fig.~\ref{fig:fluid_vs_ripple} compares the ripple and fluid phase WAXS.
-The maximum intensity of the fluid phase
-WAXS was observed at $q_r \approx$ 1.4 \AA$^{-1}$, a smaller $q$ than 
-the ripple peaks. The fluid phase WAXS is smoother because the data were
-taken with the low resolution setup with much more intensity. Because the
-width of the fluid phase WAXS was very broad, it was instrumentally resolved
-with the low resolution setup. Figure~\ref{fig:fluid_vs_ripple} shows that
-the WAXS pattern in the fluid and ripple phases are quite distinct,
-suggesting that the ripple WAXS cannot be understood by assuming that 
-chains in the minor arm are disordered similarly to the fluid phase. 
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.6\textwidth]{figures/ripple/nGIWAXS/weak_peak_pseudoVoigt}
+%  \caption[]
+%  {The peak profile fitted to double pseudo Voigtian functions.
+%  The FWHM and center obtained were 0.107 \AA$^{-1}$ and 1.458 \AA$^{-1}$ (red) 
+%  and 0.077 \AA$^{-1}$ and 1.484 \AA$^{-1}$ (green), respectively.
+%  The Gaussian FWHM in the pseudo Voigt was fixed to 0.014 \AA$^{-1}$.}
+%  \label{fig:pseudoVoigt}
+%\end{figure}
+
 
 %{\color{blue}While it is possible to argue that 
 %the long tail of the ripple peak is due to fluid like chain correlation
@@ -1862,23 +1863,7 @@ chains in the minor arm are disordered similarly to the fluid phase.
 %\textcolor{red}{This stuff is already about hypothesis evaluation. It might
 %be more appropriate to do this in the Discussion section.}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[trim=0 0 0 0,clip,width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_036}
-  \caption{nGIWAXS of the DMPC fluid phase at 30 \textcelsius. $\omega$ =
-  0.5\textdegree. The data were taken in the 2011 run with a low resolution 
-  setup. The sample width, $w_s$ = 2 mm.}
-  \label{fig:fluid_036}
-\end{figure} 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
-  \caption{Comparison of the ripple (black) and fluid (red) phase WAXS at $q_z$ = 0.012 \AA$^{-1}$.
-  The fluid phase data were taken with the low resolution setup and scaled 
-  vertically to enable visual comparison.}
-  \label{fig:fluid_vs_ripple}
-\end{figure}
 
 %\begin{figure}[htbp]
 %  \centering
@@ -1935,13 +1920,13 @@ The length $L$ of scattering entities in the $z$ direction can be estimated by
 measuring the full length $\Delta q_z$ of the (2,0) Bragg rod in $q_z$ in
 the L$_{\beta I}$ phase \cite{ref:Tristram93},
 the relation between them being $\Delta q_z = 4\pi/L$.
-Figure~\ref{fig:twaxs_gel} shows intensity of observed Bragg rods along $q_z$ averaged in $q_r$
+Figure~\ref{fig:twaxs_gel_qz} shows intensity of observed Bragg rods along $q_z$ averaged in $q_r$
 for the gel and ripple phases. The full length $\Delta q_z$ for the (2,0) gel
 phase peak was measured to be about 0.4 \AA$^{-1}$, corresponding to 
 $L \approx 31$ \AA. This value of $L$ indicates that chains in the upper and
 lower monolayers scatter coherently, which has been shown to be the case
 for DPPC previously \cite{ref:Tristram93}.
-Figure~\ref{fig:twaxs_gel}(right) compares $\Delta q_z$ in the ripple and gel phases,
+Figure~\ref{fig:twaxs_gel_qz}(right) compares $\Delta q_z$ in the ripple and gel phases,
 showing that $\Delta q_z$ was about the same in both phases. Therefore, 
 chains in the major arm are also coupled between the monolayers. 
 We note that mosaic spread of the sample would make the apparent $\Delta q_z$ 
@@ -2001,7 +1986,7 @@ There was also no sign of a third peak.
   (right) $q_z$ swath of the ripple peak averaged between 1.465 \AA$^{-1}$ and 1.481 \AA$^{-1}$
    in $q_r$ (red solid squares) and the gel (2,0) peak scaled and shifted to guide 
    visual comparison (open black circles).}
-  \label{fig:twaxs_gel}
+  \label{fig:twaxs_gel_qz}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -2039,6 +2024,49 @@ There was also no sign of a third peak.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Discussion}\label{sec:ripple_discussion}
+The chain-chain correlation length can be estimated by using the Scherrer equation 
+\cite{ref:Warren69},
+\[
+  B = \frac{0.94\lambda}{L\cos\theta},
+\]
+where $B$ is the observed FWHM of a Bragg peak, $\lambda$ is the wavelength,
+$L$ is the length over which chains are positionally correlated, 
+and $\theta$ is the Bragg angle. For $\Delta q = 0.014$ \AA$^{-1}$,
+$q$ = 1.479 \AA$^{-1}$, and $\lambda$ = 1.175 \AA, the 
+Scherrer equation yields $L$ = 426 \AA. 
+Because the width of the (2,0) gel phase peak 
+was not instrumentally resolved, the correlation length of chains was 
+greater than 426 \AA.
+The width of similar lipid, DPPC, was resolved and had a correlation 
+length of 2900 \AA \cite{ref:Sun94}.
+
+In contrast, the observed peaks in the ripple phase were instrumentally 
+resolved (Fig.~\ref{fig:strong_peak}). 
+The FWHM of the stronger peak was estimated to be 0.025 \AA$^{-1}$,
+corresponding to the correlation length of $\sim$240 \AA,
+indicating that the correlation length in the ripple phase is shorter 
+than that in the gel phase.
+This observation can be understood by supposing that chains in the major
+and minor arms are not correlated, so that gel phase like chains in the 
+major arm are only correlated within the major arm, limiting the correlation
+length along the ripple direction to be less than the length of the major 
+arm, $\sim$100 \AA. Although
+it is possible that chains are correlated over a much longer distance 
+along the direction perpendicular to the ripple direction leading to
+a sharp reflection along $q_y$,
+what is observed in our in-plane powder sample is a convolution
+of a broad width along $q_x$ and sharp one along $q_y$. Such convolution
+would result in a broad Bragg rod as observed in our nGIWAXS data. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
+  \caption{Comparison of the ripple (black) and fluid (red) phase WAXS at $q_z$ = 0.012 \AA$^{-1}$.
+  The fluid phase data were taken with the low resolution setup and scaled 
+  vertically to enable visual comparison.}
+  \label{fig:fluid_vs_ripple}
+\end{figure}
+
 The ripple phase has attracted many researchers since its discovery in 1967,
 and extensive structural work on average structural properties such as 
 the ripple wavelength, oblique angle, $D$-spacing, and electron density
