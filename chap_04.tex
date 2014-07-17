@@ -1276,7 +1276,17 @@ is plotted in Fig.~(\ref{fig:FT}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Transbilayer Part of the Form Factor}\label{sec:transbilayer}
-\subsubsection{1G and 2G hybrid model}
+The hybrid model developed by Wiener \textit{et al.} \cite{ref:Wiener89} has
+been successful in modeling the electron density profile in the gel phase.
+The hybrid model with two Gaussian functions each representing the headgroup and
+terminal methyl group was employed by Sun \text{et al.} \cite{ref:Sun96}
+for phasing the ripple phase X-ray data published by Wack and Webb \cite{ref:Wack89}.
+We employed the same model for fitting our data 
+since it was shown to be very successful in fitting the ripple X-ray data.
+Because our data contain more data points at larger $q$, we also used
+a model that has three  Gaussian functions, two of which represent the headgroup 
+and the other one represents the terminal methyl group. 
+
 In the hybrid model, the terminal methyl region of the bilayer is represented
 as a Gaussian function \cite{ref:Wiener89}. The headgroups are represented by one 
 and two Gaussian
@@ -1348,11 +1358,21 @@ The expression for $F_\mathrm{T}$ is rather messy, so
 the derivation and full expression are in the appendix. Here, 
 we note that
 the fitting parameters in this model are $\zh{i}$, $\sigmah{i}$, and 
-$\Rhm{i}$ for each of the two headgroup Gaussian functions, $\sigmam$ for
-the terminal methyl Gaussian, $\Delta R$ for the methylene region, $\psi$ for
-the lipid tilt, and an overall scaling factor. The contour part of the 
+$\rhoh{i}$ for each of the two headgroup Gaussian functions, $\sigmam$ and
+$\rhom$ for
+the terminal methyl Gaussian, $\psi$ for
+the lipid tilt, and an overall scaling factor. $rhochtwo$ is absorbed into 
+the overall scaling factor. The contour part of the 
 form factor has four more parameters ($A$, $\xM$, $f_1$, and $f_2$).
-In total, the modified 2G hybrid model implements 14 structural parameters.
+In total, the modified 2G hybrid model implements 13 structural parameters.
+Generally, we made $\zh{i}$, $\psi$, $A$, $\xM$, $f_1$, and $f_2$ free parameters
+to guide the nonlinear least square procedure to find a reasonable fit
+while the rest of the parameters was fixed to the corresponding gel phase values 
+reported in Ref.~\cite{ref:Wiener89}. 
+Although the best estimate of the gel phase structure was reported in
+Ref.~\cite{Tristram-Nagle02}, precise values for the fixed parameters
+were not important because we set those fixed parameters free to find the best fit
+once a reasonable fit was obtained.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -1512,51 +1532,49 @@ for observed peaks were corrected for index of refraction (Appendix~\ref{app:ref
   \label{tb:obs_intensity2}
 \end{table}
 
-Figure~\ref{fig:fit2} plots a two dimensional electron density profile calculated
-using the phases obtained from the M1G model and our experimental form factors.
-It is clear that the terminal methyl exists along the bilayer 
-center in the major arm. The thickness along the local bilayer normal
-in the major arm was about 40 \AA. This value is slightly larger than
-the previously published value of 37.9 \AA\ obtained from the unoriented
-data \cite{ref:Sun96}. The DMPC gel phase profile published in 
-\cite{Tristram-Nagle02} also has shown that the distance between
-the headgroup centers in opposing monolayers is approximately 38 \AA.
-Therefore, our experimental
-electron density profile suggests that chains in the ripple major arm are
-less tilted than in the gel phase, where chains are tilted by 30\textdegree.
-Incidentally, the maximum peak in the gel phase headgroup corresponding to the
-phosphate and choline components has been shown to be located at 20 \AA\
-from the bilayer center \cite{Tristram-Nagle02}. 
+Table~\ref{tb:LAXS_models} summarizes representative fits obtained by a nonlinear
+least square fitting procedure. Fit1 and Fit2 were fits using the 1G hybrid model,
+and Fit3-Fit7 were with the 2G hybrid model. As Table~\ref{tb:LAXS_models} shows, 
+Fit5 produced the smallest $\chi^2$ value. This fit was arrived by first getting 
+Fit3, then freeing the widths of the three Gaussian (Fit4), 
+and finally freeing the amplitudes of the Gaussian.
+We also tried a different route; from Fit3, we freed up the amplitudes of 
+the Gaussian (Fit6) and then set the widths of the Gaussian free, arriving 
+at Fit7. While the $\chi^2$ values of fit5 and fit7 were not very different,
+they resulted in $h$ = 6 orders have the opposite phases as shown in 
+Table~\ref{tb:LAXS_fits2}. We consistently obtained model
+form factors that were too small compared to the experimental ones 
+for ($h$, $k$) = (3,0), (6,$k$), and (9,0). This can be understood by
+considering the contour part of the form factor $F_C$ given by Eq.~\ref{eq:}.
+Figure~\ref{fig:} plots a two dimensional map of $|F_C|$ for
+$\lambda_r$ = 145 \AA, $A$ = 20 \AA, $\xM$ = 100 \AA, and $f_1=f_2=0$.
+which shows that $|F_C|$ takes small values around $(q_r,q_z)$ of 
+$h$ = 3, 6, and 9. Because the model form factor $F$ is the product of
+$F_C$ and $F_T$, $F$ is also small for the models we tried. This analysis
+suggests that to fit those orders better may require a different model
+for the contour part of the form factor rather than trying various
+models for the transbilayer part of the form factor. We did not consider
+improving the models because we were only interested in the predicted
+phases for calculating an electron density profile.
 
-Figure~\ref{fig:fit2} also shows absence of the terminal methyl trough
-in the minor arm. This absence is consistent with chains being interdigitated
-like in ref.~\cite{ref:deVries05}. Indeed, our electron density profile
-shows a small peak at the bilayer center of the minor arm, rather than
-depletion of electron density as in the gel and fluid phases. We also fitted
-the data to M1G models with more fitting parameters that allow the model 
-parameters in the minor arm to be different from those in the major arm.
-In those cases also, we observed the same absence of the terminal methyl trough.
-However, when $f_2$ was fixed to zero in the M1G model, we obtained a quite
-different profile, plotted in Fig.~\ref{fig:fit1}. There, the electron density 
-shows a dip at the center of the bilayer in the minor arm, a usual feature
-seen in the fluid phase. Also, the headgroup in the minor arm appears
-to be more smooth compared to the profile shown in Fig.~\ref{fig:fit2}.
-Although the profile in Fig.~\ref{fig:fit1} was obtained using a model yielding
-a worse chi-squared value, some features are seen to be more physical.
-Therefore, we argue that the ripple profile is closer to the one plotted in 
-Fig~\ref{fig:fit1} than that in Fig~\ref{fig:fit2}. It is quite mysterious
-as to why fixing or freeing the parameter $f_2$ led to quite different profiles 
-because this parameter was implemented to affect only the kink region. It 
-may be that even higher order reflections than ones we observed might be 
-necessary to obtain a robust minor arm profile. Since $h$ = 9 was quite strong,
-we expect to see more orders with the same instrument by simply probing a
-larger $q$-space.
+Figure~\ref{fig:fit2} plots a two dimensional electron density profile calculated
+using the phases obtained from Fit5 and our experimental form factors.
+The density profile shows presence of the terminal methyl trough in the major arm, 
+which is manifested by a dip in the electron density along the bilayer center. 
+To obtain the thickness of the bilayer, electron density profiles are 
+plotted in Fig. along the slices shown by the straight dashed lines in Fig.
+(A and B).
+Slice A is along the normal of the major arm and is centered in the middle of 
+the hydrocarbon region. It indicates that the bilayer head-head spacing 
+$D_\text{HH}^\text{major}$ is 40 \AA on the major arm. Slice B is
+along the normal to the minor arm and is centered in the middle of the
+hydrocarbon region. It indicates that 
 
 \begin{table}[htbp]
   \centering
   \begin{tabular}{cccccccc}
     \hline
-          & fit1  & fit2  & fit3  & fit4  & fit5  & fit6  & fit7 \\
+          & Fit1  & Fit2  & Fit3  & Fit4  & Fit5  & Fit6  & Fit7 \\
     \hline
     $\chi^2$ & 11996 & 9664  & 19458 & 8827  & 8525  & 8905  & 8883 \\
     $A$     & 20.4  & 24.2  & 22.1  & 21.5  & 21.5  & 21.4  & 21.5 \\
@@ -1564,26 +1582,26 @@ larger $q$-space.
     $f_1$    & 0.489 & 0.726 & 0.776 & 0.515 & 0.538 & 0.516 & 0.511 \\
     $f_2$    & 0*    & -11.3 & -6.06 & -2.77 & -2.81 & -2.62 & -2.63 \\
     $\psi$   & 0.266 & 0.250 & 0.183 & 0.252 & 0.252 & 0.263 & 0.259 \\
-    $z_{H1}$  & 19.8  & 19.7  & 18.1  & 19.5  & 18.7  & 19.1  & 19.0 \\
-    $\sigma_{H1}$ & 3.43* & 3.43* & 2.94* & 3.06  & 2.51  & 2.94* & 2.97 \\
-    $\rho_{H1}$ & 10.77* & 10.77* & 9.91* & 9.91* & 7.03  & 8.38  & 8.45 \\
-    $z_{H2}$  & NA    & NA    & 20.0  & 20.4  & 22.4  & 23.2  & 23.0 \\
-    $\sigma_{H2}$ & NA    & NA    & 1.47* & 3.17  & 1.38  & 1.47* & 1.72 \\
-    $\rho_{H2}$ & NA    & NA    & 7.27* & 7.27* & 3.75  & 2.83  & 3.00 \\
-    $\sigma_M$ & 1.67* & 1.67* & 1.83* & 2.47  & 2.53  & 1.83* & 1.87 \\
-    $\rho_M$ & 9.23* & 9.23* & 10.9* & 10.9* & 5.15  & 6.87  & 6.97 \\
+    $\zh{1}$  & 19.8  & 19.7  & 18.1  & 19.5  & 18.7  & 19.1  & 19.0 \\
+    $\sigmah{1}$ & 3.43* & 3.43* & 2.94* & 3.06  & 2.51  & 2.94* & 2.97 \\
+    $\rhoh{1}$ & 10.77* & 10.77* & 9.91* & 9.91* & 7.03  & 8.38  & 8.45 \\
+    $\zh{2}$  & NA    & NA    & 20.0  & 20.4  & 22.4  & 23.2  & 23.0 \\
+    $\sigmah{2}$ & NA    & NA    & 1.47* & 3.17  & 1.38  & 1.47* & 1.72 \\
+    $\rhoh{2}$ & NA    & NA    & 7.27* & 7.27* & 3.75  & 2.83  & 3.00 \\
+    $\sigmam$ & 1.67* & 1.67* & 1.83* & 2.47  & 2.53  & 1.83* & 1.87 \\
+    $\rhom$ & 9.23* & 9.23* & 10.9* & 10.9* & 5.15  & 6.87  & 6.97 \\
     \hline
   \end{tabular}
-  \caption{Fit results. fit1 and fit2 used the M1G model while 
-  fit3-7 used the M2G model. \\ *Parameters were fixed.}
-  \label{tb:LAXS_fits}
+  \caption{Model parameters. Fit1 and Fit2 were performed with the M1G model while 
+  Fit3 to 7 were with the M2G model. \\ *Parameters were fixed to the values shown.}
+  \label{tb:LAXS_models}
 \end{table}
 
 \begin{table}[htbp]
   \centering
   \begin{tabular}{cccccccc}
     \hline
-     & fit1  & fit2  & fit3  & fit4  & fit5  & fit6  & fit7 \\
+          & Fit1  & Fit2  & Fit3  & Fit4  & Fit5  & Fit6  & Fit7 \\
     \hline
     $D_{HH}^\text{major}$ & 42.0  & 41.0  & 40.0  & 40.6  & 40.6  & 41.8  & 41.8 \\
     $D_{HH}^\text{minor}$ & 30.8  & 31.0  & 29.2  & 29.2  & 29.2  & 31.0  & 31.0 \\
@@ -1750,7 +1768,7 @@ $(q_r, q_z) \approx (1.478 \text{ \AA}^{-1}, 0.20 \text{ \AA}^{-1})$ as shown
 in Fig.~\ref{fig:qrplots}. The weaker peak was observed closer to the equator, and
 separation of this peak from the stronger one was most visible at 
 $q_z = 0.12$ \AA$^{-1}$, indicating that the center of this peak was near
-$(q_r, q_z) \approx (1.457\textsl{•} \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
+$(q_r, q_z) \approx (1.457 \text{ \AA}^{-1}, 0.12 \text{ \AA}^{-1})$. 
 Because of absorption of X-rays due to the sample, 
 intensity became attenuated as one approaches the equator.
 Very close to the equator, there is Vineyard-Yoneda 
