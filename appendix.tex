@@ -343,7 +343,7 @@ Therefore, the analysis developed in this appendix ignores the form factor.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{More results from LAXS models}
-\begin{table}
+\begin{table}[htbp]
   \centering
 \begin{tabular}{rrrrrrrrrrr}
 %   & $\chi^2$ & 11996 & 9664 & 19458 & 8827 & 8525 & 8905 & 8883 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\   
@@ -431,9 +431,30 @@ Therefore, the analysis developed in this appendix ignores the form factor.
 \label{tb:LAXS_fits2}
 \end{table}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit1_2D_edp}
+  \caption[]{Two dimensional electron density profile from Fit1.}
+  \label{fig:Fit1_2D_edp}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit3_2D_edp}
+  \caption[]{Two dimensional electron density profile from Fit3.}
+  \label{fig:Fit3_2D_edp}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit7_2D_edp}
+  \caption[]{Two dimensional electron density profile from Fit7.}
+  \label{fig:Fit7_2D_edp}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Derivation of the contour part of the form factor}
+\section{Derivation of the contour part of the form factor}\label{app:FC}
 In this section, we derive $\FC$. The ripple profile, $u(x)$ is given by
 \begin{equation}
   u(x) = \left\{
@@ -534,6 +555,7 @@ Therefore,
   \frac{\sin\left(\frac{1}{2}q_x\lambda_r - \omega\right)}
        {\frac{1}{2}q_x\lambda_r - \omega} \nonumber\\
   &+ \frac{2f_2}{\lambda_r}\cos\omega
+  \label{eq:FC}
 \end{align}
 
 \textcolor{red}{some additional models.} We write the form factor as
@@ -551,6 +573,7 @@ such that
   \frac{\sin\left(\frac{1}{2}q_x\lambda_r - \omega\right)}
        {\frac{1}{2}q_x\lambda_r - \omega} \\
   F_C^k &= \frac{2}{\lambda_r}\cos\omega.
+  \label{eq:FC_split}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -599,7 +622,7 @@ function model.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Derivation of the transbilayer part of the form factor in the 2G hybrid model}
+\section{Derivation of the transbilayer part of the form factor in the 2G hybrid model}\label{app:FT}
 In this section, we derive the trasbilayer part of the form factor calculated
 from the 2G hybrid model discussed in section X.
 Defining $z'=-x\sin\psi+z\cos\psi$, the Fourier transform of a Gaussian function 

@@ -1261,18 +1261,9 @@ density across the minor side to be different by a ratio $f_1$ from the
 electron density across the major side and a second parameter $f_2$, which
 is multiplied by $\delta$ functions $\delta(x \pm \xM/2)$ to allow for 
 a different electron density near the kink between the major and the minor
-sides. 
-
-The contour part of the form factor $F_C$ calculated from Eq.~(\ref{eq:sawtooth})
-is plotted in Fig.~(\ref{fig:FT}).
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\textwidth]{figures/ripple/model/F_contour}
-  \caption[title goes here]{Not sure if this plot is useful.
-  The horizontal axis is $q_x$ and the vertical axis is $q_z$.}
-  \label{fig:FT}
-\end{figure}
+sides. The full expression for the contour part of the form factor $\FC(\mathbf{q})$,
+which is a two dimensional Fourier transform of Eq.~\ref{eq:sawtooth},
+is found in Appendix~\ref{app:FC}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Transbilayer Part of the Form Factor}\label{sec:transbilayer}
@@ -1355,7 +1346,7 @@ The form factor is calculated in the minus fluid convention,
 where the bilayer electron density
 is measured with respect to the electron density of the surrounding solvent.
 The expression for $F_\mathrm{T}$ is rather messy, so 
-the derivation and full expression are in the appendix. Here, 
+the derivation and full expression are in Appendix~\ref{app:FT}. Here, 
 we note that
 the fitting parameters in this model are $\zh{i}$, $\sigmah{i}$, and 
 $\rhoh{i}$ for each of the two headgroup Gaussian functions, $\sigmam$ and
@@ -1541,20 +1532,34 @@ and finally freeing the amplitudes of the Gaussian.
 We also tried a different route; from Fit3, we freed up the amplitudes of 
 the Gaussian (Fit6) and then set the widths of the Gaussian free, arriving 
 at Fit7. While the $\chi^2$ values of fit5 and fit7 were not very different,
-they resulted in $h$ = 6 orders have the opposite phases as shown in 
+they resulted in $h$ = 6 orders having the opposite phases as shown in 
 Table~\ref{tb:LAXS_fits2}. We consistently obtained model
 form factors that were too small compared to the experimental ones 
-for ($h$, $k$) = (3,0), (6,$k$), and (9,0). This can be understood by
-considering the contour part of the form factor $F_C$ given by Eq.~\ref{eq:}.
-Figure~\ref{fig:} plots a two dimensional map of $|F_C|$ for
-$\lambda_r$ = 145 \AA, $A$ = 20 \AA, $\xM$ = 100 \AA, and $f_1=f_2=0$.
-which shows that $|F_C|$ takes small values around $(q_r,q_z)$ of 
-$h$ = 3, 6, and 9. Because the model form factor $F$ is the product of
-$F_C$ and $F_T$, $F$ is also small for the models we tried. This analysis
-suggests that to fit those orders better may require a different model
+for ($h$, $k$) = (3, 0), (6, $k$), and (9, 0). This can be understood by
+inspecting the contour part of the form factor $F_C(\mathbf{q})$ 
+given by Eq.~\ref{eq:FC}.
+The model form factor $F(\mathbf{q})$ is a product of
+$F_C(\mathbf{q})$ and $F_T(\mathbf{q})$.
+Figure~\ref{fig:FC} plots a two dimensional map of $|F_C(\mathbf{q})|$ for
+$\lambda_r$ = 145 \AA, $A$ = 21.5 \AA, $\xM$ = 103 \AA, $f_1=0.5$,
+and $f_2=-3$, values of which are taken from Fit5.
+It shows that $|F_C(\mathbf{q})|$ takes very small values at 
+($h, k$) = (3, 0), (6, 0)--(6,4), and (9, 0), leading to small values of
+the model $F(\mathbf{q})$ for those peaks as well. These weak spots in $|\FC(\mathbf{q})|$
+can be moved by varying $A$ and $\xM$. However, $A$ and $\xM$ are very 
+sensitive to strong peaks that are on the white streak in Fig.~\ref{fig:FC}:
+namely, ($h, k$) = (1, 0), (1, -1), (2, 0), (2, -1), (3, -1), (3, -2), and so on.
+Then, for our data set, minima in the $\chi^2$ space are normally found
+with values of $A$ and $\xM$ that result in $\FC(\mathbf{q})$ similar to the 
+one shown in Fig.~\ref{fig:FC}.
+This analysis
+suggests that to fit those underestimated orders better may require a different model
 for the contour part of the form factor rather than trying various
-models for the transbilayer part of the form factor. We did not consider
-improving the models because we were only interested in the predicted
+models for the transbilayer part of the form factor $\FT(\mathbf{q})$. 
+Since the sawtooth profile is a very reasonable assumption, an improvement
+should be made in modeling the kink regions.
+We did not consider
+improving our models because we were only interested in the predicted
 phases for calculating an electron density profile.
 
 \begin{table}[htbp]
@@ -1568,7 +1573,7 @@ phases for calculating an electron density profile.
     $x_M$   & 98.5  & 118.8 & 92.6  & 104.0 & 102.9 & 102.1 & 102.7 \\
     $f_1$    & 0.489 & 0.726 & 0.776 & 0.515 & 0.538 & 0.516 & 0.511 \\
     $f_2$    & 0*    & -11.3 & -6.06 & -2.77 & -2.81 & -2.62 & -2.63 \\
-    $\psi$   & 0.266 & 0.250 & 0.183 & 0.252 & 0.252 & 0.263 & 0.259 \\
+    $\psi$   & 15.2\textdegree & 14.3\textdegree & 10.5\textdegree & 14.4\textdegree & 14.4\textdegree & 15.1\textdegree & 14.8\textdegree \\
     $\zh{1}$  & 19.8  & 19.7  & 18.1  & 19.5  & 18.7  & 19.1  & 19.0 \\
     $\sigmah{1}$ & 3.43* & 3.43* & 2.94* & 3.06  & 2.51  & 2.94* & 2.97 \\
     $\rhoh{1}$ & 10.77* & 10.77* & 9.91* & 9.91* & 7.03  & 8.38  & 8.45 \\
@@ -1584,26 +1589,102 @@ phases for calculating an electron density profile.
   \label{tb:LAXS_models}
 \end{table}
 
-Figure~\ref{fig:fit2} plots a two dimensional electron density profile calculated
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/model/FT}
+  \caption[Two dimensional map of $\FC$]
+  {Two dimensional map of the contour part of the form factor $|\FC(\mathbf{q})|$ given by
+  Eq.~\ref{eq:FC}. The color is in a log scale shown by the color bar.
+  Red circles are the positions of the observed peaks in $q$. The actual
+  experimental data (Fig.~\ref{fig:ripple_laxs_images}) had left-right symmetry 
+  because of in-plane powder of the sample.
+  $h$ and $k$ indices are labeled for some of the peaks in green and cyan,
+  respectively. The experimentally observed form factors are given by 
+  the product $|\FC(\mathbf{q})||\FT(\mathbf{q})|$.}
+  \label{fig:FC}
+\end{figure}
+
+Figure~\ref{fig:Fit5_2D_edp} plots a two dimensional electron density profile calculated
 using the phases obtained from Fit5 and our experimental form factors.
 The density profile shows presence of the terminal methyl trough in the major arm, 
 which is manifested by a dip in the electron density along the bilayer center. 
-To obtain the thickness of the bilayer, electron density profiles are 
-plotted in Fig. along the slices shown by the straight dashed lines in Fig.
-(A and B).
+To obtain the thickness of the bilayer in the major arm, 
+electron density profiles calculated
+using the phases from various fits are 
+plotted in Fig.~\ref{fig:major_diff_models} 
+along the slice shown by the straight dashed line in Fig.~\ref{fig:Fit5_2D_edp}
+(slice A).
 Slice A is along the normal of the major arm and is centered in the middle of 
 the hydrocarbon region. It indicates that the bilayer head-head spacing 
-$D_\text{HH}^\text{major}$ is 40 \AA on the major arm. Slice B is
+$D_\text{HH}^\text{major}$ is 40.0--42.0 \AA\ in the major arm
+(see also Table~\ref{tb:LAXS_DHH}). 
+Electron density profiles are also plotted along the slice B
+in Fig.~\ref{fig:minor_diff_models}.
+Slice B is
 along the normal to the minor arm and is centered in the middle of the
-hydrocarbon region. It indicates that 
+hydrocarbon region. It indicates that $D_\text{HH}^\text{minor}$ is
+29.2--31.0 \AA\ in the minor arm.
+Table~\ref{tb:LAXS_DHH} summarizes these results along with calculated
+tilt angles of the major and minor arms, $\alpha_M$ and $\alpha_m$, respectively,
+where $\alpha_M=\arctan(A/\xM)$ and $\alpha_m=\arctan(A/\xm)=\arctan(A/(\lambda_r-\xM))$
+(see Fig.~\ref{fig:unit_cell}). Table~\ref{tb:LAXS_models} and \ref{tb:LAXS_DHH}
+imply that the amplitude and lengths of the sawtooth profile in Fit2 are 
+quite different from other fits. However, as Fig.~\ref{fig:Fit2_2D_edp} shows,
+the calculated density profile is overall similar to the one obtained from Fit5
+shown in Fig.~\ref{fig:Fit5_2D_edp}. In fact, electron density profiles calculated
+using Fit1--7 all indicate that $\alpha_M \approx 12$\textdegree\ and
+$\alpha_m \approx 27$\textdegree. 
 
-\begin{figure}
+As noted in a previous paragraph, fits to ($h, k$) = (3, 0), (6, 0)--(6, 4),
+and (9, 0). We also noticed that the phase of (1, 3) was unstable. To study
+how the electron density profile varies as we vary the phases of those peaks,
+we deliberately flipped the sign of the phases. Figure~\ref{fig:major_phase_variation}
+and \ref{fig:minor_phase_variation} show the effect of such operations
+using the phases obtained by Fit5. 
+In Fit5a, we inverted the phase of (3, 0) and in Fit5b, the phases of 
+(1, 3), (3, 0), (6, 0), and (9, 0) were inverted.
+Essentially, we obtained approximately the same $D_\text{HH}^\text{major}$
+among three cases while the variation in $D_\text{HH}^\text{minor}$ is
+about the same as observed with various fits (Fit1--7).
+Also, presence of the terminal methyl trough in the major arm was robust, but
+the profile of the chain regions in the minor arm was less robust.
+Other combination and variations including (6, 1), (6, 2), (6, 3), and (6, 4)
+resulted in similar variations of the density profile.
+
+In summary, we observed that the thickness of the bilayer in 
+the major and minor arms did not vary too much among different models
+and fits. The terminal methyl trough was also quite robust, but 
+whether the minor arm has a small dip or rise in the density at the center
+could not be determined. Table~\ref{tb:LAXS_summary} summarizes
+the final structural results.
+
+\begin{figure}[htbp]
   \centering
-  \includegraphics[scale=•]{•}
-  \caption{Two dimensional electron density profile calculated using the phases
-  predicted by the 2G hybrid model (Fit5).}
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit5_2D_edp}
+  \caption[Two dimensional electron density profile calculated using the phases
+  predicted by the 2G hybrid model (Fit5)]
+  {Two dimensional electron density profile calculated using the phases
+  predicted by the 2G hybrid model (Fit5). White is most electron dense
+  and black is least electron dense. A unit cell is shown with a solid yellow 
+  line. Dash lines A and B are the slices plotted in 
+  Fig.~\ref{fig:major_diff_models} and Fig.~\ref{fig:minor_diff_models},
+  respectively.}
+  \label{fig:Fit5_2D_edp}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/major_diff_models}
+  \caption{}
+  \label{fig:major_diff_models}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/minor_diff_models}
+  \caption{}
+  \label{fig:minor_diff_models}
+\end{figure}
 
 \begin{table}[htbp]
   \centering
@@ -1611,43 +1692,55 @@ hydrocarbon region. It indicates that
     \hline
           & Fit1  & Fit2  & Fit3  & Fit4  & Fit5  & Fit6  & Fit7 \\
     \hline
-    $D_{HH}^\text{major}$ & 42.0  & 41.0  & 40.0  & 40.6  & 40.6  & 41.8  & 41.8 \\
-    $D_{HH}^\text{minor}$ & 30.8  & 31.0  & 29.2  & 29.2  & 29.2  & 31.0  & 31.0 \\
-    $\alpha_M$ & 11.7  & 11.5  & 13.4  & 11.7  & 11.8  & 11.8  & 11.8 \\
-    $\alpha_m$ & 23.7  & 42.7  & 22.9  & 27.7  & 27.1  & 26.5  & 26.9 \\
+    $D_\text{HH}^\text{major}$ & 42.0  & 41.0  & 40.0  & 40.6  & 40.6  & 41.8  & 41.8 \\
+    $D_\text{HH}^\text{minor}$ & 30.8  & 31.0  & 29.2  & 29.2  & 29.2  & 31.0  & 31.0 \\
+    $\alpha_M$ & 11.7\textdegree  & 11.5\textdegree  & 13.4\textdegree  & 11.7\textdegree  & 11.8\textdegree  & 11.8\textdegree  & 11.8\textdegree \\
+    $\alpha_m$ & 23.7\textdegree  & 42.7\textdegree  & 22.9\textdegree  & 27.7\textdegree  & 27.1\textdegree  & 26.5\textdegree  & 26.9\textdegree \\
     \hline
   \end{tabular}
   \caption{Ripple structural quantities.}
-  \label{tb:LAXS_dhh}
+  \label{tb:LAXS_DHH}
 \end{table}
 
-\newpage
 \begin{figure}[htbp]
   \centering
-  %\includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit2}
-  \caption[Electron density profile calculated using the phases obtained from the M2G
-  model and experimental form factors]
-  {Electron density profile calculated using the phases obtained from the M2G
-  model and experimental form factors. White is most electron dense and
-  black is least electron dense. The thickness along the local bilayer normal
-  in the major arm was about 40 \AA. Depletion of electron density due to
-  the terminal methyl is visible in the major arm but not in the minor arm.}
-  \label{fig:fit2}
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit2_2D_edp}
+  \caption[Two dimensional electron density profile calculated using the phases
+  predicted by the 2G hybrid model (Fit2)]
+  {Two dimensional electron density profile calculated using the phases
+  predicted by Fit2.}
+  \label{fig:Fit2_2D_edp}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cc}
+    \hline
+    $\xM$ & 101 $\pm$ 2 \\
+    $A$ & 21 $\pm$ 1 \\
+    $D_\text{HH}^\text{major}$ & 41 $\pm$ 1 \AA \\
+    $D_\text{HH}^\text{minor}$ & 30 $\pm$ 1 \AA \\
+    $\alpha_M$ & 12\textdegree\ $\pm$ 1\textdegree \\
+    $\alpha_m$ & 27\textdegree\ $\pm$ 1\textdegree \\
+    \hline
+  \end{tabular}
+  \caption{Estimated structural quantities}
+  \label{tb:LAXS_summary}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/ripple/LAXS/major_phase_variation}
+  \caption{}
+  \label{fig:major_phase_variation}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  %\includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/fit1}
-  \caption[Electron density profile calculated using the phases obtained from the M2G
-  model and experimental form factors]
-  {Electron density profile calculated using the phases obtained from the M2G
-  model with $f_2=0$ and experimental form factors. White is most electron dense and
-  black is least electron dense. The thickness along the local bilayer normal
-  in the major arm was about 40 \AA. Depletion of electron density due to
-  the terminal methyl is visible in the major arm but not in the minor arm.}
-  \label{fig:fit1}
+  \includegraphics[width=0.5\textwidth]{figures/ripple/LAXS/minor_phase_variation}
+  \caption{}
+  \label{fig:minor_phase_variation}
 \end{figure}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{nGIWAXS: analysis}
