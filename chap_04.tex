@@ -1360,8 +1360,8 @@ Generally, we made $\zh{i}$, $\psi$, $A$, $\xM$, $f_1$, and $f_2$ free parameter
 to guide the nonlinear least square procedure to find a reasonable fit
 while the rest of the parameters was fixed to the corresponding gel phase values 
 reported in Ref.~\cite{ref:Wiener89}. 
-Although the best estimate of the gel phase structure was reported in
-Ref.~\cite{Tristram-Nagle02}, precise values for the fixed parameters
+The best estimate of the gel phase structure was reported in
+Ref.~\cite{Tristram-Nagle02}. Precise values for the fixed parameters
 were not important because we set those fixed parameters free to find the best fit
 once a reasonable fit was obtained.
 
@@ -1589,13 +1589,13 @@ phases for calculating an electron density profile.
   \label{tb:LAXS_models}
 \end{table}
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/ripple/model/FT}
   \caption[Two dimensional map of $\FC$]
   {Two dimensional map of the contour part of the form factor $|\FC(\mathbf{q})|$ given by
   Eq.~\ref{eq:FC}. The color is in a log scale shown by the color bar.
-  Red circles are the positions of the observed peaks in $q$. The actual
+  Red circles are the positions of the observed peaks. The actual
   experimental data (Fig.~\ref{fig:ripple_laxs_images}) had left-right symmetry 
   because of in-plane powder of the sample.
   $h$ and $k$ indices are labeled for some of the peaks in green and cyan,
@@ -1635,29 +1635,6 @@ shown in Fig.~\ref{fig:Fit5_2D_edp}. In fact, electron density profiles calculat
 using Fit1--7 all indicate that $\alpha_M \approx 12$\textdegree\ and
 $\alpha_m \approx 27$\textdegree. 
 
-As noted in a previous paragraph, fits to ($h, k$) = (3, 0), (6, 0)--(6, 4),
-and (9, 0). We also noticed that the phase of (1, 3) was unstable. To study
-how the electron density profile varies as we vary the phases of those peaks,
-we deliberately flipped the sign of the phases. Figure~\ref{fig:major_phase_variation}
-and \ref{fig:minor_phase_variation} show the effect of such operations
-using the phases obtained by Fit5. 
-In Fit5a, we inverted the phase of (3, 0) and in Fit5b, the phases of 
-(1, 3), (3, 0), (6, 0), and (9, 0) were inverted.
-Essentially, we obtained approximately the same $D_\text{HH}^\text{major}$
-among three cases while the variation in $D_\text{HH}^\text{minor}$ is
-about the same as observed with various fits (Fit1--7).
-Also, presence of the terminal methyl trough in the major arm was robust, but
-the profile of the chain regions in the minor arm was less robust.
-Other combination and variations including (6, 1), (6, 2), (6, 3), and (6, 4)
-resulted in similar variations of the density profile.
-
-In summary, we observed that the thickness of the bilayer in 
-the major and minor arms did not vary too much among different models
-and fits. The terminal methyl trough was also quite robust, but 
-whether the minor arm has a small dip or rise in the density at the center
-could not be determined. Table~\ref{tb:LAXS_summary} summarizes
-the final structural results.
-
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit5_2D_edp}
@@ -1674,15 +1651,24 @@ the final structural results.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/major_diff_models}
-  \caption{}
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/major_diff_models}
+  \caption{Electron density profiles along Slice A shown in Fig.~\ref{fig:Fit5_2D_edp}, 
+  calculated using the phases
+  predicted by different fits. The distance $r$ is measured from the bilayer 
+  center. A cartoon of lipids is shown at the top, designating different parts of the profile
+  as the lipid headgroup and chains. The fit from which each profile was calculated
+  is shown in the figure legend.}
   \label{fig:major_diff_models}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/minor_diff_models}
-  \caption{}
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/minor_diff_models}
+  \caption{Electron density profiles along Slice B shown in Fig.~\ref{fig:Fit5_2D_edp}, 
+  calculated using the phases
+  predicted by different fits. The distance $r$ is measured from the bilayer 
+  center. The fit from which each profile was calculated
+  is shown in the figure legend.}
   \label{fig:minor_diff_models}
 \end{figure}
 
@@ -1712,35 +1698,75 @@ the final structural results.
   \label{fig:Fit2_2D_edp}
 \end{figure}
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{cc}
-    \hline
-    $\xM$ & 101 $\pm$ 2 \\
-    $A$ & 21 $\pm$ 1 \\
-    $D_\text{HH}^\text{major}$ & 41 $\pm$ 1 \AA \\
-    $D_\text{HH}^\text{minor}$ & 30 $\pm$ 1 \AA \\
-    $\alpha_M$ & 12\textdegree\ $\pm$ 1\textdegree \\
-    $\alpha_m$ & 27\textdegree\ $\pm$ 1\textdegree \\
-    \hline
-  \end{tabular}
-  \caption{Estimated structural quantities}
-  \label{tb:LAXS_summary}
-\end{table}
+As noted in a previous paragraph, fits to ($h, k$) = (3, 0), (6, 0)--(6, 4),
+and (9, 0) were not great. We also noticed that the phase of (1, 3) was unstable. To study
+how the electron density profile varies as we vary the phases of those peaks,
+we deliberately flipped the sign of the phases. Figure~\ref{fig:major_phase_variation}
+and \ref{fig:minor_phase_variation} show the effect of such operations
+using the phases obtained by Fit5. 
+In Fit5a, we inverted the phase of (3, 0) and in Fit5b, the phases of 
+(1, 3), (3, 0), (6, 0), and (9, 0) were inverted.
+Essentially, we obtained approximately the same $D_\text{HH}^\text{major}$
+among three cases while the variation in $D_\text{HH}^\text{minor}$ is
+about the same as observed with various fits (Fit1--7).
+Also, presence of the terminal methyl trough in the major arm was robust, but
+the profile of the chain regions in the minor arm was less robust.
+Other combination and variations including (6, 1), (6, 2), (6, 3), and (6, 4)
+resulted in similar variations of the density profile.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/ripple/LAXS/major_phase_variation}
-  \caption{}
+  \caption{Variation in the electron density profile along Slice A. 
+  Reversing the sign of the (3, 0) phase in Fit5 
+  resulted in the red dashed profile (Fit5a). Reversing the sign of the 
+  (1, 3), (3, 0), (6, 0), and (9, 0) resulted in the green dash-dotted profile
+  (Fit5b). The distance $r$ is measured from the bilayer center.}
   \label{fig:major_phase_variation}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/ripple/LAXS/minor_phase_variation}
-  \caption{}
+  \caption{Variation in the electron density profile along Slice B.
+  Reversing the sign of the (3, 0) phase in Fit5 
+  resulted in the red dashed profile (Fit5a). Reversing the sign of the 
+  (1, 3), (3, 0), (6, 0), and (9, 0) resulted in the green dash-dotted profile
+  (Fit5b). The distance $r$ is measured from the bilayer center.}
   \label{fig:minor_phase_variation}
 \end{figure}
+
+In summary, we observed that the thickness of the minor arm was 
+smaller than that of the major arm and these thicknesses did not vary 
+much among different models and fits. 
+The electron density profile in the major 
+arm showed clear separation of the headgroup and chains while that in the minor 
+arm did not. 
+Furthermore, the terminal methyl trough like feature in the major arm was 
+quite robust, but 
+whether the minor arm has a small dip or rise in the density at the bilayer center
+could not be determined. Obtaining a robust electron density profile in the minor
+arm may require an improved model. Table~\ref{tb:LAXS_summary} summarizes
+the final structural results.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cc}
+    \hline
+    $\xM$ & 101 $\pm$ 2 \AA \\
+    $A$ & 21 $\pm$ 1 \AA \\
+    $D_\text{HH}^\text{major}$ & 41 $\pm$ 1 \AA \\
+    $D_\text{HH}^\text{minor}$ & 30 $\pm$ 1 \AA \\
+    $\alpha_M$ & 12\textdegree\ $\pm$ 1\textdegree \\
+    $\alpha_m$ & 27\textdegree\ $\pm$ 1\textdegree \\
+    $D$ & 57.8 \AA \\
+    $\lambda_r$ & 145.0 \AA \\
+    $\gamma$ & 98.2\textdegree \\
+    \hline
+  \end{tabular}
+  \caption{Estimated structural quantities}
+  \label{tb:LAXS_summary}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{nGIWAXS: analysis}
@@ -2185,6 +2211,60 @@ We also foud no sign of a third peak.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Discussion}\label{sec:ripple_discussion}
+\subsection{Major arm}
+There has been a number of evidence to suggest that the major arm is like 
+the gel phase. Figure~\ref{fig:gel_comparison} compares our electron density
+profile in the major arm to the DMPC gel phase profile reported by 
+Tristram-Nagle \textit{et al.} \cite{Tristram-Nagle02}. 
+It shows that the density profile of the major arm is similar to that 
+of the gel phase and the thickness is comparable between the two phases
+although the ripple profile does not show distinction
+between the phosphate and carbonyl-glycerol headgroups as in the gel phase.
+Also, the terminal methyl trough appears to be wider in the ripple major arm,
+which could be a sign that the terminal methyl is slightly more disordered
+in the ripple phase than in the gel phase.
+As discussed in
+Sec.~\ref{sec:LAXS_results}, however, small features in the ripple profile were not
+reliable because they depended on which fitting results were used
+to produce the electron density profile.
+An important point we can make based on Fig.~\ref{fig:gel_comparison} 
+is that chains must be tilted by some amount with respect to the local bilayer
+normal. If we use the distance between the centers of the headgroups as the
+bilayer thickenss, we have about 38 \AA\ for the gel phase and 40 \AA\
+for the ripple phase. Because chains are tilted by 30\textdegree\ in the 
+L$_{\beta I}$ phase, the chain tilt angle $\theta_t$ in the ripple major 
+arm is roughly estimated to be 25\textdegree\ $\pm$ 1\textdegree. This constraint on $\theta_t$
+and the measured $\alpha_M$ are important in understanding the nGIWAXS data.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/ripple/discussion/Tristram-Nagle_gel_DMPC}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/discussion/major_edp}
+  \caption{Comparison of the electron density profiles of the DMPC gel phase (left)
+  and the major arm in the ripple phase (right). The DMPC profile is taken from 
+  Ref.~\cite{Tristram-Nagle02}. The ripple major arm profiles were calculated 
+  using the phases predicted by Fit2, 5, and 7 (black, red, and green, respectively). 
+  The ripple profiles are scaled to match 
+  with the gel phase profile.}
+  \label{fig:gel_comparison}
+\end{figure}
+
+While the electron density profile derived from the LAXS data indicates that 
+chains are gel-like in the major arm, it does not show whether or not chains 
+in different leaflets are coupled. To answer this question, we turned to
+transmission WAXS where we were able to carefully measure the width of 
+observed Bragg rods. Figure~\ref{fig:} shows that the widths of the Bragg
+rods in the ripple and gel phases are approximately the same, indicating that
+chains in different leaflets in the ripple major arm scatter coherently.
+This point can be contrasted with the chain packing in the major arm
+observed in atomistic MD simulations by de Vries \textit{et al.} \cite{ref:deVries05}.
+There, while chains were straightened out like in the case of the gel phase,
+their tilt angles were modulated along the ripple direction. It was also
+clearly seen in their simulations that chains in the different leaflets were 
+decoupled and tilted in the opposite direction. Our TWAXS data are 
+inconsistent with this picture and instead consistent with normal
+gel phase packing.
+
 The chain-chain correlation length can be estimated by using the Scherrer equation 
 \cite{ref:Warren69},
 \[
@@ -2219,6 +2299,43 @@ what is observed in our in-plane powder sample is a convolution
 of a broad width along $q_x$ and sharp one along $q_y$. Such convolution
 would result in a broad Bragg rod as observed in our nGIWAXS data. 
 
+\subsection{Minor arm}
+Some previous work have suggested that the minor arm is like the fluid phase.
+Figure~\ref{fig:fluid_comparison} compares our electron density profiles
+in the minor arm to the DMPC fluid phase profile reported by 
+Kucerka \textit{et al.} \cite{Kucerka05_BPJ}.
+Unlike in the case for the major arm, the density profile in the minor arm
+does not resemble that of the fluid phase at all. This radically different
+profile of the minor arm is not an artifact as we successfully obtained 
+a typical bilayer profile for the major arm.
+Inconsistency of the minor arm being like the fluid phase is also seen in our nGIWAXS data.
+Figure~\ref{fig:fluid&ripple} compares observed WAXS patterns of the ripple and 
+fluid phase. The fluid phase pattern was centered at $q_r$ = 1.4 \AA$^{-1}$, where
+there is no obvious feature in the WAXS pattern of the ripple phase. While one
+could argue that the fluid phase pattern can be scaled down to match the tail
+of the ripple Bragg peaks as argued in Ref.~\cite{ref:Cunningham98}, 
+subtraction of the fluid phase pattern from the ripple pattern would result
+in asymmetric shape of the ripple Bragg peaks, which is not very reasonable.
+
+Another type of chain packing, possibly with atypical profile, for the minor arm 
+is the interdigitation proposed by de Vries \textit{et al.} \cite{ref:deVries05}.
+Figure~\ref{fig:interdigitation_comparison} compares the minor arm density
+profiles with the electron density profile of the DHPC L$_\text{I}$ interdigitated phase
+reported by \cite{}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/ripple/discussion/Kucerka_fluid_DMPC}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/discussion/minor_edp}
+  \caption{Comparison of the electron density profiles of the DMPC fluid phase (left)
+  and the minor arm in the ripple phase (right). The DMPC profile is taken from 
+  Ref.~\cite{Kucerka05_BPJ}. The ripple minor arm profiles were calculated 
+  using the phases predicted by Fit2, 5, and 7 (black, red, and green, respectively). 
+  The ripple profiles are scaled to match approximately
+  with the fluid phase profile.}
+  \label{fig:fluid_comparison}
+\end{figure}
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
@@ -2228,6 +2345,21 @@ would result in a broad Bragg rod as observed in our nGIWAXS data.
   \label{fig:fluid_vs_ripple}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  %\includegraphics[width=0.45\textwidth]{figures/ripple/discussion/}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/discussion/minor_edp}
+  \caption{Comparison of the electron density profiles of the DHPC  
+  L$_\text{I}$ interdigitated phase (left)
+  and the minor arm in the ripple phase (right). The DHPC profile is taken from 
+  Ref.~\cite{}. The ripple minor arm profiles were calculated 
+  using the phases predicted by Fit2, 5, and 7 (black, red, and green, respectively). 
+  The ripple profiles are scaled to match approximately
+  with the L$_\text{I}$ phase profile.}
+  \label{fig:interdigitation_comparison}
+\end{figure}
+
+\section{Conclusion}
 The ripple phase has attracted many researchers since its discovery in 1967,
 and extensive study on average structural properties such as 
 the ripple wavelength, oblique angle, $D$-spacing, and electron density
@@ -2252,7 +2384,8 @@ while lipids in the major arm are packed like in the gel phase with
 the monolayers decoupled from each other.  
 
 Previous predictions and suggestions so far have not been able to 
-directly be verified because of the lack of quantitative wide angle 
+directly be verified because of lack of a high quality average electron
+density profile and quantitative wide angle 
 scattering data. Although the DMPC WAXS was measured by Katsaras
 and Raghunathan \cite{ref:Katsaras95} using a rotating anode,
 the wide angle peak measured was broad and ambiguous to answer
@@ -2262,35 +2395,8 @@ synchrotron beam that allowed use of Si monochromater with a very small
 energy dispersion, 2) stacks of $\sim$2000 bilayers oriented on the substrate
 that scattered strongly and anisotropically, and 3) hydration chamber that 
 allowed us to control the hydration of the sample.
-
-By careful analysis of low angle X-ray scattering data, we have shown that
-chains in the major arm are straightened like in the gel phase, the finding
-of which is consistent with previous publications. The thickness of the major
-arm was measured to be 40 \AA, slightly larger than the previously published 
-value of 37.9 \AA \cite{ref:Sun96}. 
-The electron density
-profile in the minor arm we obtained was similar to that of interdigitated 
-chains. However, the wide angle X-ray scattering data is inconsistent with
-this. As de Vries \textit{et. al.} calculated, interdigitated chains in
-the minor arm would result in a wide angle peak at $q_z \approx 0.5$ \AA$^{-1}$,
-much larger $q_z$ than 0.2 \AA$^{-1}$ that we observed.
-
-By comparing the wide angle pattern from the ripple and fluid phases,
-we showed that scattering intensity around 1.4 \AA$^{-1}$ in the ripple phase
-is probably the tail of the stronger peak coming from the major arm 
-and not due to the fluid-like chain packing in the minor arm.
- 
-Given existence of gel-like packing in the major arm, we argue that the 
-stronger peak observed in the nGIWAXS data is the Bragg rod from the 
-major arm. It is not clear, however, whether or not the weaker peak is 
-also due to packing in the major arm. Resolving this issue seems to require
-modeling of various types of chain packing for both major and minor arms.
- 
-\section{Conclusion}
-We have attempted to solve the lateral structure of the lipids within the
-bilayer using synchrotron X-rays. 
-While we could not calculate the electron density profile unambiguously
-or solve the chain packing based on the measured wide angle scattering data, 
+While we could not calculate the electron density profile with high precision unambiguously
+or solve the chain packing in the minor arm based on the measured wide angle scattering data, 
 previously suggested structure of the ripple phase can be tested against
 our data.
 For example, Monte Carlo simulations based on a model free energy can be tuned
