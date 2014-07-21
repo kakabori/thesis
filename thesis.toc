@@ -32,9 +32,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{63}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Energy dispersion}{64}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{64}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{LAXS}{64}{section*.13}
-\contentsline {paragraph}{nGIWAXS}{66}{section*.16}
-\contentsline {paragraph}{TWAXS}{66}{section*.20}
+\contentsline {paragraph}{LAXS}{64}{section*.51}
+\contentsline {paragraph}{nGIWAXS}{66}{section*.54}
+\contentsline {paragraph}{TWAXS}{66}{section*.58}
 \contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering Experiment}{71}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering Experiment}{72}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Transmission Wide Angle X-ray Scattering Experiment}{72}{subsection.3.2.5}
@@ -44,28 +44,28 @@
 \contentsline {subsection}{\numberline {3.3.3}Lorentz Correction}{80}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Absorption Correction for LAXS}{85}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}Correction due to mosaic spread}{89}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}LAXS: model}{93}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Contour Part of the Form Factor}{93}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Transbilayer Part of the Form Factor}{93}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}LAXS: results}{96}{section.3.5}
-\contentsline {section}{\numberline {3.6}nGIWAXS: results}{109}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Fluid and gel phase}{109}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Ripple phase}{112}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}TWAXS: results}{118}{section.3.7}
-\contentsline {section}{\numberline {3.8}Discussion}{123}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Major arm}{123}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Minor arm}{125}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Conclusion}{130}{section.3.9}
-\contentsline {chapter}{Appendices}{132}{section*.42}
-\contentsline {chapter}{\numberline {A}}{133}{Appendix.1.A}
-\contentsline {section}{\numberline {A.1}More results from chapter 2}{133}{section.1.A.1}
-\contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{133}{section.1.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Mosaic Spread: Calculation}{133}{subsection.1.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Mosaic Spread: Near Equivalence of Two Methods}{140}{subsection.1.A.2.2}
-\contentsline {subsection}{\numberline {A.2.3}NFIT}{143}{subsection.1.A.2.3}
-\contentsline {section}{\numberline {A.3}More results from LAXS models}{145}{section.1.A.3}
-\contentsline {section}{\numberline {A.4}Derivation of the contour part of the form factor}{149}{section.1.A.4}
-\contentsline {section}{\numberline {A.5}Rotation of a Two-Dimensional Function}{152}{section.1.A.5}
-\contentsline {section}{\numberline {A.6}Derivation of the transbilayer part of the form factor in the 2G hybrid model}{153}{section.1.A.6}
-\contentsline {section}{\numberline {A.7}Correction due to refractive index}{155}{section.1.A.7}
-\contentsline {section}{\numberline {A.8}Thin Rod Model of the ripple phase}{156}{section.1.A.8}
+\contentsline {section}{\numberline {3.4}LAXS: model}{95}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Contour Part of the Form Factor}{95}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Transbilayer Part of the Form Factor}{95}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}LAXS: results}{98}{section.3.5}
+\contentsline {section}{\numberline {3.6}nGIWAXS: results}{111}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Fluid and gel phase}{111}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Ripple phase}{114}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}TWAXS: results}{120}{section.3.7}
+\contentsline {section}{\numberline {3.8}Discussion}{125}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Major arm}{125}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Minor arm}{127}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Conclusion}{132}{section.3.9}
+\contentsline {chapter}{Appendices}{134}{section*.112}
+\contentsline {chapter}{\numberline {A}}{135}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}More results from chapter 2}{135}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{135}{section.1.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Mosaic Spread: Calculation}{135}{subsection.1.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Mosaic Spread: Near Equivalence of Two Methods}{142}{subsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}NFIT}{145}{subsection.1.A.2.3}
+\contentsline {section}{\numberline {A.3}More results from LAXS models}{147}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}Derivation of the contour part of the form factor}{151}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Rotation of a Two-Dimensional Function}{154}{section.1.A.5}
+\contentsline {section}{\numberline {A.6}Derivation of the transbilayer part of the form factor in the 2G hybrid model}{155}{section.1.A.6}
+\contentsline {section}{\numberline {A.7}Correction due to refractive index}{157}{section.1.A.7}
+\contentsline {section}{\numberline {A.8}Thin Rod Model of the ripple phase}{158}{section.1.A.8}

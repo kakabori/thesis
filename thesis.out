@@ -1,3 +1,4 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Structural Perturbation of Lipid Bilayers Due to Tat Peptide}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 3
 \BOOKMARK [1][-]{section.2.2}{Materials and Methods}{chapter.2}% 4
@@ -20,16 +21,42 @@
 \BOOKMARK [2][-]{subsection.2.4.4}{Molecular Dynamics Simulations}{section.2.4}% 21
 \BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 22
 \BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 23
-\BOOKMARK [0][-]{section*.42}{Appendices}{}% 51
-\BOOKMARK [0][-]{Appendix.1.A}{}{}% 52
-\BOOKMARK [1][-]{section.1.A.1}{More results from chapter 2}{Appendix.1.A}% 53
-\BOOKMARK [1][-]{section.1.A.2}{Mosaic Spread for NFIT analysis}{Appendix.1.A}% 54
-\BOOKMARK [2][-]{subsection.1.A.2.1}{Mosaic Spread: Calculation}{section.1.A.2}% 55
-\BOOKMARK [2][-]{subsection.1.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.1.A.2}% 56
-\BOOKMARK [2][-]{subsection.1.A.2.3}{NFIT}{section.1.A.2}% 57
-\BOOKMARK [1][-]{section.1.A.3}{More results from LAXS models}{Appendix.1.A}% 58
-\BOOKMARK [1][-]{section.1.A.4}{Derivation of the contour part of the form factor}{Appendix.1.A}% 59
-\BOOKMARK [1][-]{section.1.A.5}{Rotation of a Two-Dimensional Function}{Appendix.1.A}% 60
-\BOOKMARK [1][-]{section.1.A.6}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.1.A}% 61
-\BOOKMARK [1][-]{section.1.A.7}{Correction due to refractive index}{Appendix.1.A}% 62
-\BOOKMARK [1][-]{section.1.A.8}{Thin Rod Model of the ripple phase}{Appendix.1.A}% 63
+\BOOKMARK [0][-]{chapter.3}{Ripple Phase}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{Materials and Methods}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{Sample Preparation}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{Instrumental Resolution}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.3}{Low Angle X-ray Scattering Experiment}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.4}{Near Grazing Incidence Wide Angle X-ray Scattering Experiment}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.5}{Transmission Wide Angle X-ray Scattering Experiment}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{LAXS: analysis}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.1}{Lattice Structure}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.2}{Sample q-space}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.3}{Lorentz Correction}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.4}{Absorption Correction for LAXS}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.5}{Correction due to mosaic spread}{section.3.3}% 37
+\BOOKMARK [1][-]{section.3.4}{LAXS: model}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{Contour Part of the Form Factor}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{Transbilayer Part of the Form Factor}{section.3.4}% 40
+\BOOKMARK [1][-]{section.3.5}{LAXS: results}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.6}{nGIWAXS: results}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.6.1}{Fluid and gel phase}{section.3.6}% 43
+\BOOKMARK [2][-]{subsection.3.6.2}{Ripple phase}{section.3.6}% 44
+\BOOKMARK [1][-]{section.3.7}{TWAXS: results}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.8}{Discussion}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.8.1}{Major arm}{section.3.8}% 47
+\BOOKMARK [2][-]{subsection.3.8.2}{Minor arm}{section.3.8}% 48
+\BOOKMARK [1][-]{section.3.9}{Conclusion}{chapter.3}% 49
+\BOOKMARK [0][-]{section*.112}{Appendices}{}% 50
+\BOOKMARK [0][-]{Appendix.1.A}{}{}% 51
+\BOOKMARK [1][-]{section.1.A.1}{More results from chapter 2}{Appendix.1.A}% 52
+\BOOKMARK [1][-]{section.1.A.2}{Mosaic Spread for NFIT analysis}{Appendix.1.A}% 53
+\BOOKMARK [2][-]{subsection.1.A.2.1}{Mosaic Spread: Calculation}{section.1.A.2}% 54
+\BOOKMARK [2][-]{subsection.1.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.1.A.2}% 55
+\BOOKMARK [2][-]{subsection.1.A.2.3}{NFIT}{section.1.A.2}% 56
+\BOOKMARK [1][-]{section.1.A.3}{More results from LAXS models}{Appendix.1.A}% 57
+\BOOKMARK [1][-]{section.1.A.4}{Derivation of the contour part of the form factor}{Appendix.1.A}% 58
+\BOOKMARK [1][-]{section.1.A.5}{Rotation of a Two-Dimensional Function}{Appendix.1.A}% 59
+\BOOKMARK [1][-]{section.1.A.6}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.1.A}% 60
+\BOOKMARK [1][-]{section.1.A.7}{Correction due to refractive index}{Appendix.1.A}% 61
+\BOOKMARK [1][-]{section.1.A.8}{Thin Rod Model of the ripple phase}{Appendix.1.A}% 62
