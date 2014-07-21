@@ -12,6 +12,12 @@ A.~Tardieu, Vittorio Luzzati, and F.C. Reman.
   study of lecithin-water phases.
 \newblock {\em Journal of Molecular Biology}, 75(4):711 -- 733, 1973.
 
+\bibitem{ref:Smith88}
+GS~Smith, EB~Sirota, CR~Safinya, and Noel~A Clark.
+\newblock Structure of the l $\beta$ phases in a hydrated phosphatidylcholine
+  multimembrane.
+\newblock {\em Physical review letters}, 60(9):813, 1988.
+
 \bibitem{ref:Luna77}
 Elizabeth~J Luna and Harden~M McConnell.
 \newblock The intermediate monoclinic phase of phosphatidylcholines.
@@ -59,12 +65,6 @@ Marilyn~B Schneider, WINSTON~K Chan, and Watt~W Webb.
 \newblock Fast diffusion along defects and corrugations in phospholipid p beta,
   liquid crystals.
 \newblock {\em Biophysical journal}, 43(2):157--165, 1983.
-
-\bibitem{ref:Smith88}
-GS~Smith, EB~Sirota, CR~Safinya, and Noel~A Clark.
-\newblock Structure of the l $\beta$ phases in a hydrated phosphatidylcholine
-  multimembrane.
-\newblock {\em Physical review letters}, 60(9):813, 1988.
 
 \bibitem{Fischer05}
 Rainer Fischer, Mariola Fotin-Mleczek, Hansjörg Hufnagel, and Roland Brock.
@@ -312,12 +312,6 @@ Yufeng Liu.
 \newblock {\em NEW METHOD TO OBTAIN STRUCTURE OF BIOMEMBRANES USING DIFFUSE
   Х-RAY SCATTERING: APPLICATION TO FLUID PHASE DOPC LIPID BILAYERS}.
 \newblock PhD thesis, Carnegie Mellon University, 2003.
-
-\bibitem{Nagle00}
-John~F Nagle and Stephanie Tristram-Nagle.
-\newblock Structure of lipid bilayers.
-\newblock {\em Biochimica et Biophysica Acta (BBA)-Reviews on Biomembranes},
-  1469(3):159--195, 2000.
 
 \bibitem{Kucerka08}
 Norbert Kučerka, John~F. Nagle, Jonathan~N. Sachs, Scott~E. Feller, Jeremy
@@ -633,6 +627,12 @@ M.C. Wiener, R.M. Suter, and J.F. Nagle.
   dipalmitoylphosphatidylcholine.
 \newblock {\em Biophysical Journal}, 55(2):315 -- 325, 1989.
 
+\bibitem{ref:Pabst04}
+G~Pabst, H~Amenitsch, DP~Kharakoz, P~Laggner, and M~Rappolt.
+\newblock Structure and fluctuations of phosphatidylcholines in the vicinity of
+  the main phase transition.
+\newblock {\em Physical Review E}, 70(2):021908, 2004.
+
 \bibitem{ref:Mills08}
 Thalia~T Mills, Gilman~ES Toombes, Stephanie Tristram-Nagle, Detlef-M Smilgies,
   Gerald~W Feigenson, and John~F Nagle.
@@ -669,6 +669,20 @@ W-J Sun, RM~Suter, MA~Knewtson, CR~Worthington, S~Tristram-Nagle, R~Zhang, and
 \newblock Order and disorder in fully hydrated unoriented bilayers of gel-phase
   dipalmitoylphosphatidylcholine.
 \newblock {\em Physical Review E}, 49(5):4665, 1994.
+
+\bibitem{ref:Guler09}
+S~Guler, D~Dipon Ghosh, Jianjun Pan, John~C Mathai, Mark~L Zeidel, John~F
+  Nagle, and Stephanie Tristram-Nagle.
+\newblock Effects of ether vs. ester linkage on lipid bilayer structure and
+  water permeability.
+\newblock {\em Chemistry and physics of lipids}, 160(1):33--44, 2009.
+
+\bibitem{ref:Watkins11}
+EB~Watkins, CE~Miller, J~Majewski, and TL~Kuhl.
+\newblock Membrane texture induced by specific protein binding and receptor
+  clustering: active roles for lipids in cellular function.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(17):6975--6980, 2011.
 
 \bibitem{Rodriguez-Navarro07}
 Alejandro~B. Rodriguez-Navarro.
