@@ -1,13 +1,1 @@
-*.log
-*.gz
-*.lof
-*.toc
-*.aux
-*.lot
-*.bbl
-*.blg
-*.ini
-thesis.bib.save
-thesis.dvi
-thesis.out
 *.ods#

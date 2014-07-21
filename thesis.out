@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{chapter.2}{Structural Perturbation of Lipid Bilayers Due to Tat Peptide}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Materials and Methods}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Stock Solutions}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{Thin Film Samples}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{Volume Measurements}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.4}{X-ray setup}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.5}{Data reduction of diffuse scattering data}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.6}{Analysis of Diffuse Scattering}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.7}{Modeling the Bilayer Structure}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.8}{Molecular Dynamics Simulation}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Analysis of Molecular Dynamics Simulation Data}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{SIMtoEXP program}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{Local Thinning of Membranes}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.3}{Lateral Decay Length of Membrane Thinning}{section.2.3}% 16
+\BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.4.1}{Bending and Bulk Modulus}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.2}{Volume results}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.3}{Electron Density Profile Modeling}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.4}{Molecular Dynamics Simulations}{section.2.4}% 21
+\BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 23
+\BOOKMARK [0][-]{section*.42}{Appendices}{}% 51
+\BOOKMARK [0][-]{Appendix.1.A}{}{}% 52
+\BOOKMARK [1][-]{section.1.A.1}{More results from chapter 2}{Appendix.1.A}% 53
+\BOOKMARK [1][-]{section.1.A.2}{Mosaic Spread for NFIT analysis}{Appendix.1.A}% 54
+\BOOKMARK [2][-]{subsection.1.A.2.1}{Mosaic Spread: Calculation}{section.1.A.2}% 55
+\BOOKMARK [2][-]{subsection.1.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.1.A.2}% 56
+\BOOKMARK [2][-]{subsection.1.A.2.3}{NFIT}{section.1.A.2}% 57
+\BOOKMARK [1][-]{section.1.A.3}{More results from LAXS models}{Appendix.1.A}% 58
+\BOOKMARK [1][-]{section.1.A.4}{Derivation of the contour part of the form factor}{Appendix.1.A}% 59
+\BOOKMARK [1][-]{section.1.A.5}{Rotation of a Two-Dimensional Function}{Appendix.1.A}% 60
+\BOOKMARK [1][-]{section.1.A.6}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.1.A}% 61
+\BOOKMARK [1][-]{section.1.A.7}{Correction due to refractive index}{Appendix.1.A}% 62
+\BOOKMARK [1][-]{section.1.A.8}{Thin Rod Model of the ripple phase}{Appendix.1.A}% 63
