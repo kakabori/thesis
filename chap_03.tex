@@ -269,11 +269,14 @@ $\VTat$ = $1560/2464\times\Vc$ \AA$^3$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{X-ray setup}
-Figure~ shows a schematic of the X-ray setup.
+Figure~\ref{fig:x-ray_setup} shows a schematic of the X-ray setup.
 
-The hydration chamber is described in detail in \cite{Kucerka05}. A sample
-sits on a Peltier cooling/heating element, with which hydration level of
-the sample can be easily adjusted. This ability of the chamber was important
+The hydration chamber is described in detail in \cite{Kucerka05}. 
+The sample holder was mounted on a servo motor, which allowed continuous 
+rotation of the sample between -1.6\textdegree\ and 7\textdegree. 
+A Peltier cooling/heating element was attached to the sample holder and
+the sample was situated on this Peltier element, with which hydration level of
+the sample could be easily adjusted. This ability of the chamber was important
 especially in the ripple phase experiment, which is described in chapter 3. 
 Hydration level of a sample was estimated by measuring the average 
 interbilayer distance, $D$-spacing, which was easily calculated by indexing the 
@@ -284,16 +287,27 @@ The beam profile was measured through
 this semitransparent beam stop. Data reduction and correction for a CCD 
 detector are described in detail in \cite{Barna99}.
 
+\begin{figure}[htbp]
+  \centering
+  %\includegraphics[scale=]{•}
+  \caption[]{X-ray setup for LAXS experiments.}
+  \label{fig:x-ray_setup}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Data reduction of diffuse scattering data}\label{sec:data_reduction}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis of Diffuse Scattering}\label{sec:diffuse_analysis}
-Figure~\ref{fig:figure1} shows our typical Low angle X-ray scattering (LAXS) data 
+Figure~\ref{fig:figure1} shows our typical low angle X-ray scattering (LAXS) data 
 from oriented stacks of fluctuating bilayers in the fluid phase. Analysis of diffuse scattering 
 intensity patterns like the one shown in Fig.~\ref{fig:figure1} results in material 
 parameters such as the bending modulus $K_c$ and bulk modulus $B$ as well as
-the absolute form factor $|F(q_z)$. 
+the absolute form factor $|F(q_z)|$. 
 The form factor is the Fourier transform of the bilayer electron 
-density profile $\rho(z)$ and gives us information about the internal structure of the
-bilayers interacting with Tat peptides.
+density profile $\rho(z)$ and directly related to the internal structure of the
+bilayers including Tat peptides.
 
 \begin{figure}[htbp]
   \centering
@@ -310,30 +324,39 @@ bilayers interacting with Tat peptides.
 
 The form factor $F(q_z)$ is obtained by realizing that the diffuse scattering
 intensity pattern $I(\mathbf{q})$ is a product of the structure factor $S(\mathbf{q})$ and
-the form factor; $I(\mathbf{q})= S(\mathbf{q})|F(q_z)|^2$. This means that 
-once the two dimensional structure factor map $S(\mathbf{q})$ is calculated 
-from a model free energy for bilayer fluctuations, the form factor can simply
+the form factor; $I(\mathbf{q})= S(\mathbf{q})|F(q_z)|^2$, where $\mathbf{q} = (q_r, q_z)$,
+indicating that the system is in-plane isotropic. 
+In fully hydrated multilamellar samples, $S(\mathbf{q})$ is not simple delta 
+functions because of thermal fluctuations of bilayers. Calculating $S(\mathbf{q})$
+requires a model free energy for bilayer fluctuations, from which the scattering
+pair correlation function is derived. A basic scattering theory, then, relates
+the scattering intensity $I(\mathbf{q})$ to the pair correlation function. 
+For modeling the membrane fluctuations of a multilamellar system, 
+the smectic liquid crystal free energy functional in the discreet form,
+\begin{equation}
+  F=\frac{1}{2}\int d\mathbf{r}\sum _{n=0}^{N-1}\left\{ 
+  K_{c} \left[\nabla _{r}^{2}u_{n}\left(\mathbf{r}\right)\right]^{2}
+  +B\left[u_{n+1}\left(\mathbf{r}\right)-u_{n}\left(\mathbf{r}\right)\right]^{2}
+  \right\},
+  \label{eq:free_energy}
+\end{equation}
+has been shown to be adequate \cite{Lyatskaya01}.
+Here, $u_{n}\left(\mathbf{r}\right)$ is the spatial deviations of the center 
+of the $n$-th bilayer from its average position in the $z$ direction
+at the in-plane location $\mathbf{r}=(x,y)$ (Fig.~\ref{fig:stack}).
+The first term is the bending free energy proportional to the curvature
+squared with the proportionality given by a bending modulus $K_{c}$ and
+the second term is a harmonic approximation to the interactions between
+membranes with a modulus $B$. 
+Once the two dimensional structure factor map $S(\mathbf{q})$ is calculated 
+from Eq.~(\ref{eq:free_energy}), the form factor can 
 be calculated by dividing the intensity by the structure factor. 
 Getting the best fit of a model structure factor to the intensity results in 
 the material parameters, $K_c$ and $B$.
 
-We used an analysis program called NFIT developed by Dr. Yufeng Liu
-\cite{Lyatskaya01,Liu04,Liu03} to analyze the diffuse scattering and
-obtain the bending modulus, bulk modulus, and form factor. 
-The details of the analysis are found in Dr. Yufeng Liu's thesis 
-\cite{Liu03}. This section outlines the method. 
-
-X-ray scattering essentially reflects the electron density distribution
-of the sample system. This includes not only the average electron
-density but also the disorder caused by fluctuations about the average.
-In our samples, the electron density distribution reflects
-the stacking of the bilayers, whose average structure can be described
-as a one-dimensional array of membranes, each of which is a two-dimensional
-in-plane fluid. A sketch of the membrane stack is shown in Fig.~\ref{fig:stack}.
-
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/Tat/stack}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/MMs/stack}
   \caption{Schematic of an oriented stack of lipid bilayers. Thick green curves
   represent an instance of thermally fluctuating bilayers. The dashed lines 
   show the thermally averaged positions $z=nD$ of the centers of each bilayer 
@@ -342,142 +365,169 @@ in-plane fluid. A sketch of the membrane stack is shown in Fig.~\ref{fig:stack}.
   \label{fig:stack}
 \end{figure}
 
-Fluctuations in the stack of the bilayers are described by the
-quantities $u_{n}\left(\mathbf{r}\right)$, which are the spatial
-deviations of the center of the $n$-th bilayer 
-from its average position in the $z$ direction
-at the in-plane location $\mathbf{r}=(x,y)$.
-Given this description of structure of the lipid bilayer system, we
-write the electron density $\rho _{n}$ of the $n$-th bilayer as 
-\begin{equation}
-  \rho_n(z,r) = \rho(z-nD-u_{n}(\mathbf{r}))
-  \label{eq:rho1}
-\end{equation}
-where $\rho(z)$ is the electron density profile of a single, flat 
-(no fluctuations) bilayer centered at $z=0$ with its normal in the 
-$z$ direction. Eq.~(\ref{eq:rho1}) is not quite accurate for an incompressible
-fluid phase bilayers because it ignores the $\cos\alpha$ factor \cite{Liu03} 
-(see Fig.~\ref{fig:stack2}). To correct for the absence of this factor, 
-the undulation correction \cite{Nagle00} was applied to all our 
-form factors in this thesis. For a typical sample, this correction is about 
-2\% \cite{Liu03}. We then write the electron density of a stack of $N$ bilayers,
-\begin{equation}
-  \rho \left(\mathbf{R}\right)=\sum _{n=0}^{N-1}\rho _{n}\left(z,\mathbf{r}\right).
-  \label{eq:rho3}
-\end{equation}
+We used a software called NFIT developed by Dr. Yufeng Liu
+\cite{Lyatskaya01,Liu04,Liu03} to analyze the diffuse scattering and
+obtain the bending modulus, bulk modulus, and form factor. 
+Details of the analysis, including the theoretical derivation of
+the structure factor from Eq.~(\ref{eq:free_energy}) and its
+numerical computation, are found in Dr. Yufeng Liu's thesis 
+\cite{Liu03}. 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.5\textwidth]{figures/Tat/stack2}
-  \caption{Expanded view of a fluctuating bilayer. Along the two black solid
-  lines, the electron density profile is identical in an incompressible 
-  bilayer. Along the dashed line, the bilayer appears thicker by a factor
-  $1/\cos\alpha$. This apparent thickness variation along the $z$ direction 
-  is corrected by the undulation correction.}
-  \label{fig:stack2}
-\end{figure}
-
-Basic X-ray scattering theory in the usual Born approximation gives
-\begin{align}
-  I\left(\mathbf{q}\right) &\propto \int d\mathbf{R}d\mathbf{R}' 
-  \rho(\mathbf{R})\rho (\mathbf{R}')e^{i\mathbf{q}\cdot (\mathbf{R}-\mathbf{R}')}\nonumber \\
-  & = \left|\int_V d^{3}\mathbf{R} \rho \left(\mathbf{R}\right)e^{i\mathbf{q}\cdot \mathbf{R}}
-  \right|^{2},\label{eq:eq1}
-\end{align}
-where $\rho \left(\mathbf{R}\right)$ is the electron density distribution
-function of a stack of bilayers. 
-Because X-ray scattering measures integrated intensity over time, 
-Eq.~(\ref{eq:eq1}) requires thermal averaging indicated by angular brackets, 
-\begin{equation}
-  I\left(\mathbf{q}\right)=\left\langle \left|\int _{V}\rho \left(\mathbf{R}\right)e^{i\mathbf{q}\cdot \mathbf{R}}d^{3}\mathbf{R}\right|^{2}\right\rangle .\label{eq:int2}
-\end{equation}
-Using Eq.~(\ref{eq:rho1}) and (\ref{eq:rho3}), it can be shown that \cite{Liu03}
-\begin{equation}
-  I\left(\mathbf{q}\right) = \left|F(q_{z})\right|^{2}S\left(\mathbf{q}\right)
-  \label{eq:factor1}
-\end{equation}
-where
-\begin{equation}
-  S\left(\mathbf{q}\right)=\left\langle \left|\sum _{n=0}^{N-1}\int e^{inDq_{z}+iu_{n}\left(\mathbf{r}\right)q_{z}+i\mathbf{q}_{r}\cdot \mathbf{r}}d^{2}\mathbf{r}\right|^{2}\right\rangle,
-  \label{eq:sq0}
-\end{equation}
-and
-\begin{eqnarray}
-  F(q_{z}) & = & \int _{V}\rho \left(z\right)e^{iq_{z}z}dz\nonumber \\
-  & = & \int \rho \left(z\right)\cos (q_{z}z)dz.
-  \label{eq:form_factor}
-\end{eqnarray}
-The second equality in Eq.~(\ref{eq:form_factor}) follows for centro-symmetric lipid bilayers.
-Assuming that $u_n(\mathbf{r})-u_m(\mathbf{r'})$ has a normal distribution,
-we write Eq.~(\ref{eq:sq0}) as
-\begin{eqnarray}
-  S\left(\mathbf{q}\right) & = & \sum _{n,m=0}^{N-1}e^{iq_{z}(n-m)D}\int _{V}d^{2}\mathbf{r}d^{2}\mathbf{r}^{\prime }e^{i\mathbf{q}_{r}\cdot \left(\mathbf{r-r}^{\prime }\right)}G(r,r',n,m),
-  \label{eq:struct2}
-\end{eqnarray}
-where 
-\begin{eqnarray}
-  G & = & \left\langle e^{iq_{z}\left(u_{n}\left(\mathbf{r}\right)-u_{m}(\mathbf{r}')\right)}\right\rangle \nonumber \\
-  & \approx & e^{-\frac{q_{z}^{2}\left\langle \left[u_{n}\left(\mathbf{r}\right)-u_{m}(\mathbf{r}')\right]^{2}\right\rangle }{2}\; .}
-  \label{eq:G}
-\end{eqnarray}
-$G$ is called the scattering pair correlation function. The second approximation 
-is obtained by employing the harmonic approximation \cite{Liu03}. 
-Eq.~(\ref{eq:struct2}) is an general expression for a system whose electron
-density distribution has the form given by Eq.~(\ref{eq:rho1}) and (\ref{eq:rho3}).
-
-The membrane fluctuations given by $\left\langle\bracks{u_n(\mathbf{r})-u_m(\mathbf{r'})}^2\right\rangle$ 
-in Eq.~(\ref{eq:G}) are calculated from the free energy functional 
-for smectic liquid crystals. The basic degrees of freedom in this free energy
-include (1) bending of each membrane independently of others in the
-stack and (2) interactions between membranes in the stack. The bending
-free energy is proportional to the curvature squared with a bending
-modulus $K_{c}$ as shown in the first term in the following free energy equation
-\begin{equation}
-  F_{U}=\frac{1}{2}\int d\mathbf{r}\sum _{n=0}^{N-1}\left\{ 
-  K_{c} \left[\nabla _{r}^{2}u_{n}\left(\mathbf{r}\right)\right]^{2}
-  +B\left[u_{n+1}\left(\mathbf{r}\right)-u_{n}\left(\mathbf{r}\right)\right]^{2}
-  \right\}.
-  \label{eq:free_energy}
-\end{equation}
-The second term is a harmonic approximation to the interactions between
-membranes with a modulus $B$. From analysis of X-ray data, $K_c$ and $B$ are
-determined.
-
-From the free energy functional, we calculate the pair correlation function
-$G$. We consider the Fourier representation of the displacement variables $u$
-\begin{equation}
-  u_{n}\left(r\right)=\sum _{\mathbf{Q}}U(\mathbf{Q})e^{i\mathbf{Q}_{r}\cdot \mathbf{r}+iQ_{z}nD}
-  \label{eq:uf}
-\end{equation}
-where $Q_{z}$ takes the discrete value of 
-$Q_{z}=\frac{2\pi m}{DN}\, \, (m=-N/2+1,....,-1,0,1,....,N/2)$
-(where we use $\mathbf{Q}$ to distinguish the Fourier space of the
-sample from the Fourier space $\mathbf{q}$ of the scattering). 
-The sum in Eq.(\ref{eq:uf}) includes both an integration over $\mathbf{Q}_{r}$
-and a sum over $Q_{z}$. 
-
-Because the model is harmonic, Eq.~(\ref{eq:uf}) allows us to express the 
-free energy in normal modes. Then, it can be shown that
-applying the equipartition theorem of statistical physics leads to 
-\begin{equation}
-  \left\langle U\left(\mathbf{Q}_{r},Q_{z}\right)U\left(\mathbf{Q}_{r}^{\prime },Q_{z}^{\prime }\right)\right\rangle =\frac{1}{A_{r}N}\frac{k_{B}T}{K_{c}Q_{r}^{4}+4B\sin ^{2}\left(Q_{z}D/2\right)}\delta _{\mathbf{Q}_{r}+\mathbf{Q}'_{r},0}\delta _{Q_{z}+Q'_{z},0}.
-  \label{eq:mode}
-\end{equation}
-$\left\langle\bracks{u_n(\mathbf{r})-u_m(\mathbf{r'})}^2\right\rangle$ can 
-be written in terms of $\left\langle U(\mathbf{Q})U(\mathbf{Q'}) \right\rangle$.
-After some lengthy calculus \cite{Liu03}, we arrive at
-\begin{eqnarray}
-  &  & \left\langle \left[u_{n}\left(\mathbf{r}\right)-u_{m}\left(\mathbf{r}^{\prime }\right)\right]^{2}\right\rangle \nonumber \\
-  & = & \frac{D^{2}\eta }{2\pi ^{2}}\int _{0}^{\infty }dx\frac{1-J_{0}\left(\sqrt{2x}\left|r-r'\right|/\xi \right)\left(\sqrt{1+x^{2}}-x\right)^{2\left|n-m\right|}}{x\sqrt{1+x^{2}}}.
-  \label{eq:cor1}
-\end{eqnarray}
-where $\eta=\pi k_BT/(2D^2\sqrt{K_cB})$, $\xi^4=K_c/B$, and $J_0(x)$ is the 
-first order Bessel function. 
-Essentially, Eq.~(\ref{eq:factor1}), (\ref{eq:struct2}), (\ref{eq:G}), and (\ref{eq:cor1}) relate
-the X-ray data to the material parameters, $K_c$ and $B$. Through
-a non-linear least square fitting, the values of $K_c$ and $B$ that yield the
-best fit of the model to the data are obtained. From these values, the absolute
-form factor $|F(q_z)$ is calculated.
+%X-ray scattering essentially reflects the electron density distribution
+%of the sample system. This includes not only the average electron
+%density but also the disorder caused by fluctuations about the average.
+%In our samples, the electron density distribution reflects
+%the stacking of the bilayers, whose average structure can be described
+%as a one-dimensional array of membranes, each of which is a two-dimensional
+%in-plane fluid. A sketch of the membrane stack is shown in Fig.~\ref{fig:stack}.
+%
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/stack}
+%  \caption{Schematic of an oriented stack of lipid bilayers. Thick green curves
+%  represent an instance of thermally fluctuating bilayers. The dashed lines 
+%  show the thermally averaged positions $z=nD$ of the centers of each bilayer 
+%  and $u_{n}(x,y)$ gives the instantaneous deviation from the average. 
+%  Each bilayer extends in the $\mathbf{r}=\left(x,y\right)$ plane.}
+%  \label{fig:stack}
+%\end{figure}
+%
+%Fluctuations in the stack of the bilayers are described by the
+%quantities $u_{n}\left(\mathbf{r}\right)$, which are the spatial
+%deviations of the center of the $n$-th bilayer 
+%from its average position in the $z$ direction
+%at the in-plane location $\mathbf{r}=(x,y)$.
+%Given this description of structure of the lipid bilayer system, we
+%write the electron density $\rho _{n}$ of the $n$-th bilayer as 
+%\begin{equation}
+%  \rho_n(z,r) = \rho(z-nD-u_{n}(\mathbf{r}))
+%  \label{eq:rho1}
+%\end{equation}
+%where $\rho(z)$ is the electron density profile of a single, flat 
+%(no fluctuations) bilayer centered at $z=0$ with its normal in the 
+%$z$ direction. Eq.~(\ref{eq:rho1}) is not quite accurate for an incompressible
+%fluid phase bilayers because it ignores the $\cos\alpha$ factor \cite{Liu03} 
+%(see Fig.~\ref{fig:stack2}). To correct for the absence of this factor, 
+%the undulation correction \cite{Nagle00} was applied to all our 
+%form factors in this thesis. For a typical sample, this correction is about 
+%2\% \cite{Liu03}. We then write the electron density of a stack of $N$ bilayers,
+%\begin{equation}
+%  \rho \left(\mathbf{R}\right)=\sum _{n=0}^{N-1}\rho _{n}\left(z,\mathbf{r}\right).
+%  \label{eq:rho3}
+%\end{equation}
+%
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/stack2}
+%  \caption{Expanded view of a fluctuating bilayer. Along the two black solid
+%  lines, the electron density profile is identical in an incompressible 
+%  bilayer. Along the dashed line, the bilayer appears thicker by a factor
+%  $1/\cos\alpha$. This apparent thickness variation along the $z$ direction 
+%  is corrected by the undulation correction.}
+%  \label{fig:stack2}
+%\end{figure}
+%
+%Basic X-ray scattering theory in the usual Born approximation gives
+%\begin{align}
+%  I\left(\mathbf{q}\right) &\propto \int d\mathbf{R}d\mathbf{R}' 
+%  \rho(\mathbf{R})\rho (\mathbf{R}')e^{i\mathbf{q}\cdot (\mathbf{R}-\mathbf{R}')}\nonumber \\
+%  & = \left|\int_V d^{3}\mathbf{R} \rho \left(\mathbf{R}\right)e^{i\mathbf{q}\cdot \mathbf{R}}
+%  \right|^{2},\label{eq:eq1}
+%\end{align}
+%where $\rho \left(\mathbf{R}\right)$ is the electron density distribution
+%function of a stack of bilayers. 
+%Because X-ray scattering measures integrated intensity over time, 
+%Eq.~(\ref{eq:eq1}) requires thermal averaging indicated by angular brackets, 
+%\begin{equation}
+%  I\left(\mathbf{q}\right)=\left\langle \left|\int _{V}\rho \left(\mathbf{R}\right)e^{i\mathbf{q}\cdot \mathbf{R}}d^{3}\mathbf{R}\right|^{2}\right\rangle .\label{eq:int2}
+%\end{equation}
+%Using Eq.~(\ref{eq:rho1}) and (\ref{eq:rho3}), it can be shown that \cite{Liu03}
+%\begin{equation}
+%  I\left(\mathbf{q}\right) = \left|F(q_{z})\right|^{2}S\left(\mathbf{q}\right)
+%  \label{eq:factor1}
+%\end{equation}
+%where
+%\begin{equation}
+%  S\left(\mathbf{q}\right)=\left\langle \left|\sum _{n=0}^{N-1}\int e^{inDq_{z}+iu_{n}\left(\mathbf{r}\right)q_{z}+i\mathbf{q}_{r}\cdot \mathbf{r}}d^{2}\mathbf{r}\right|^{2}\right\rangle,
+%  \label{eq:sq0}
+%\end{equation}
+%and
+%\begin{eqnarray}
+%  F(q_{z}) & = & \int _{V}\rho \left(z\right)e^{iq_{z}z}dz\nonumber \\
+%  & = & \int \rho \left(z\right)\cos (q_{z}z)dz.
+%  \label{eq:form_factor}
+%\end{eqnarray}
+%The second equality in Eq.~(\ref{eq:form_factor}) follows for centro-symmetric lipid bilayers.
+%Assuming that $u_n(\mathbf{r})-u_m(\mathbf{r'})$ has a normal distribution,
+%we write Eq.~(\ref{eq:sq0}) as
+%\begin{eqnarray}
+%  S\left(\mathbf{q}\right) & = & \sum _{n,m=0}^{N-1}e^{iq_{z}(n-m)D}\int _{V}d^{2}\mathbf{r}d^{2}\mathbf{r}^{\prime }e^{i\mathbf{q}_{r}\cdot \left(\mathbf{r-r}^{\prime }\right)}G(r,r',n,m),
+%  \label{eq:struct2}
+%\end{eqnarray}
+%where 
+%\begin{eqnarray}
+%  G & = & \left\langle e^{iq_{z}\left(u_{n}\left(\mathbf{r}\right)-u_{m}(\mathbf{r}')\right)}\right\rangle \nonumber \\
+%  & \approx & e^{-\frac{q_{z}^{2}\left\langle \left[u_{n}\left(\mathbf{r}\right)-u_{m}(\mathbf{r}')\right]^{2}\right\rangle }{2}\; .}
+%  \label{eq:G}
+%\end{eqnarray}
+%$G$ is called the scattering pair correlation function. The second approximation 
+%is obtained by employing the harmonic approximation \cite{Liu03}. 
+%Eq.~(\ref{eq:struct2}) is an general expression for a system whose electron
+%density distribution has the form given by Eq.~(\ref{eq:rho1}) and (\ref{eq:rho3}).
+%
+%The membrane fluctuations given by $\left\langle\bracks{u_n(\mathbf{r})-u_m(\mathbf{r'})}^2\right\rangle$ 
+%in Eq.~(\ref{eq:G}) are calculated from the free energy functional 
+%for smectic liquid crystals. The basic degrees of freedom in this free energy
+%include (1) bending of each membrane independently of others in the
+%stack and (2) interactions between membranes in the stack. The bending
+%free energy is proportional to the curvature squared with a bending
+%modulus $K_{c}$ as shown in the first term in the following free energy equation
+%\begin{equation}
+%  F_{U}=\frac{1}{2}\int d\mathbf{r}\sum _{n=0}^{N-1}\left\{ 
+%  K_{c} \left[\nabla _{r}^{2}u_{n}\left(\mathbf{r}\right)\right]^{2}
+%  +B\left[u_{n+1}\left(\mathbf{r}\right)-u_{n}\left(\mathbf{r}\right)\right]^{2}
+%  \right\}.
+%  \label{eq:free_energy}
+%\end{equation}
+%The second term is a harmonic approximation to the interactions between
+%membranes with a modulus $B$. From analysis of X-ray data, $K_c$ and $B$ are
+%determined.
+%
+%From the free energy functional, we calculate the pair correlation function
+%$G$. We consider the Fourier representation of the displacement variables $u$
+%\begin{equation}
+%  u_{n}\left(r\right)=\sum _{\mathbf{Q}}U(\mathbf{Q})e^{i\mathbf{Q}_{r}\cdot \mathbf{r}+iQ_{z}nD}
+%  \label{eq:uf}
+%\end{equation}
+%where $Q_{z}$ takes the discrete value of 
+%$Q_{z}=\frac{2\pi m}{DN}\, \, (m=-N/2+1,....,-1,0,1,....,N/2)$
+%(where we use $\mathbf{Q}$ to distinguish the Fourier space of the
+%sample from the Fourier space $\mathbf{q}$ of the scattering). 
+%The sum in Eq.(\ref{eq:uf}) includes both an integration over $\mathbf{Q}_{r}$
+%and a sum over $Q_{z}$. 
+%
+%Because the model is harmonic, Eq.~(\ref{eq:uf}) allows us to express the 
+%free energy in normal modes. Then, it can be shown that
+%applying the equipartition theorem of statistical physics leads to 
+%\begin{equation}
+%  \left\langle U\left(\mathbf{Q}_{r},Q_{z}\right)U\left(\mathbf{Q}_{r}^{\prime },Q_{z}^{\prime }\right)\right\rangle =\frac{1}{A_{r}N}\frac{k_{B}T}{K_{c}Q_{r}^{4}+4B\sin ^{2}\left(Q_{z}D/2\right)}\delta _{\mathbf{Q}_{r}+\mathbf{Q}'_{r},0}\delta _{Q_{z}+Q'_{z},0}.
+%  \label{eq:mode}
+%\end{equation}
+%$\left\langle\bracks{u_n(\mathbf{r})-u_m(\mathbf{r'})}^2\right\rangle$ can 
+%be written in terms of $\left\langle U(\mathbf{Q})U(\mathbf{Q'}) \right\rangle$.
+%After some lengthy calculus \cite{Liu03}, we arrive at
+%\begin{eqnarray}
+%  &  & \left\langle \left[u_{n}\left(\mathbf{r}\right)-u_{m}\left(\mathbf{r}^{\prime }\right)\right]^{2}\right\rangle \nonumber \\
+%  & = & \frac{D^{2}\eta }{2\pi ^{2}}\int _{0}^{\infty }dx\frac{1-J_{0}\left(\sqrt{2x}\left|r-r'\right|/\xi \right)\left(\sqrt{1+x^{2}}-x\right)^{2\left|n-m\right|}}{x\sqrt{1+x^{2}}}.
+%  \label{eq:cor1}
+%\end{eqnarray}
+%where $\eta=\pi k_BT/(2D^2\sqrt{K_cB})$, $\xi^4=K_c/B$, and $J_0(x)$ is the 
+%first order Bessel function. 
+%Essentially, Eq.~(\ref{eq:factor1}), (\ref{eq:struct2}), (\ref{eq:G}), and (\ref{eq:cor1}) relate
+%the X-ray data to the material parameters, $K_c$ and $B$. Through
+%a non-linear least square fitting, the values of $K_c$ and $B$ that yield the
+%best fit of the model to the data are obtained. From these values, the absolute
+%form factor $|F(q_z)$ is calculated.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -501,7 +551,7 @@ proliferation of fitting parameters.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/Tat/dopc_schematic.pdf}
+  \includegraphics[width=0.9\textwidth]{figures/Tat/MMs/dopc_schematic.pdf}
   \caption{Schematic of DOPC showing each lipid component. The dash lines 
            show where the lipid is divided into different components. 
            The lipid headgroup
@@ -900,7 +950,7 @@ so $D_\textrm{phos-phos}'$ is what we want to measure.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=0.7]{./figures/Tat/cylinder_model}
+  \includegraphics[scale=0.7]{./figures/Tat/MMs/cylinder_model}
   \caption{Our simple model to extract the local bilayer thickness from 
   simulation trajectories. Tat is modeled as a cylinder with its height $\HTat$ 
   and radius $\RTat$. The local thickness is defined as $D_\textrm{phos-phos}'$. 
@@ -977,7 +1027,7 @@ The only unknown is $R_2$.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{./figures/Tat/linear_model}
+  \includegraphics[width=0.7\textwidth]{./figures/Tat/MMs/linear_model}
   \caption{Simple model of the lateral decay of the membrane thickness 
   perturbation due to Tat.}
   \label{fig:linear_model}
@@ -1140,9 +1190,8 @@ gave 1888 \AA$^3$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Electron Density Profile Modeling}\label{sec:SDP_results}
-(Under construction)
-Using the model described in section \ref{sec:SDP_method}, 
-we fitted our measured X-ray form factors. In all fits,
+We fitted our measured X-ray form factors to the Tat-in-headgroup (THG) model described in 
+Sec.~\ref{sec:SDP_method}. In all fits,
 the positions of component groups were free parameters, but we 
 assumed that the lipid headgroup is somewhat rigid so that it cannot compress
 or expand. This assumption led to fixing the distance
@@ -1150,49 +1199,26 @@ $\zPC-\zCG$ between the PC and CG components as well
 as the distance $\zCG-\zHC$ between the CG component and the Gibbs dividing
 surface for the hydrocarbon chains. 
 We also constrained the width of Tat 
-Gaussian. We fitted with three different values of widths,
+Gaussian $\sigmaTat$. We fitted with three different values of widths,
 2.5, 3.0, and 3.5, to study the range of variation due to the Tat width. 
-The choice was made based on MD simulation results. (Check this again)
 We constrained the Tat width 
-because we found that this parameter tended to become very small
-when it was free. This tendency to a unphysically small value was due to 
-lack of higher $q_z$ data points. A very narrow feature in an electron density profile
-led to large magnitude of the form factor at larger $q_z$. Because data 
-points at larger $q_z$ were not available, this narrow feature did not get penalized. 
-In wide angle X-ray scattering, which probes much larger $q_z$ than LAXS does,
-we did not observe much diffuse scattering for $q_z > 1.0$ \AA$^{-1}$ (data not shown).
-Also, from a stereochemical point of view, a peptide width cannot be too small.
-These arguments allowed us to disregard the best fits with a too small value
-of $\sigmaTat$ and led to fixing the Tat width.
+because this parameter tended to become too small to be physical
+when it was set free. Without higher $q_z$ data points, a very narrow feature
+in an electron density profile, which resulted in large form factors,
+did not get penalized.  
 
-Figure~\ref{fig:DOPC_Tat_XFF1} shows the results for DOPC with Tat. 
-As shown, the fits were generally very good.  
-Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for DOPC bilayers.
-It is clear that the area per lipid $\AL$ increased as the Tat concentration was
-increased. An increase in $\AL$ implies thinning of the bilayer which is an 
-incompressible membrane. The results for DOPC:DOPE (3:1) are shown in 
-Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1} and 
-Table~\ref{tb:DOPCDOPE3to1_fit_results}, and the results for DOPC:DOPE (1:1) 
-in Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1} and 
-Table~\ref{tb:DOPCDOPE1to1_fit_results}. Figure~\ref{fig:figure6} summarizes
-these results. For the results shown in Fig.~\ref{fig:figure6}, a
-consistent trend is that Tat moved away from the bilayer center as concentration increased.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_XFF1} 
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_EDP1} 
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1} 
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC form factors (left) and the corresponding 
-  electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
-  and 0.059 (from top to bottom).}
-  \label{fig:DOPC_Tat_XFF1}
-\end{figure}
+Figure~\ref{fig:DOPC_Tat_XFF1} shows the best fits and corresponding 
+electron density profiles for DOPC with Tat, and
+Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for these fits.
+In most cases, a better $\chi^2$ was obtained for smaller $\sigmaTat$,
+consistent with its tendency to become too small to be physical as noted 
+in the previous paragraph. The widths of the headgroups $\sigmaPC$ and
+$\sigmaCG$ decreased from those of pure DOPC when Tat was added.  
+It is also seen from Table~\ref{tb:DOPC_fit_results} 
+that the area per lipid $\AL$ increased as the Tat concentration was
+increased. An increase in $\AL$ implies thinning of a bilayer because
+a lipid bilayer is an incompressible fluid membrane. 
+Another observed trend was that $\zTat$ increased as $\xTat$ was increased.
 
 \begin{table}[htbp]
   \centering
@@ -1210,17 +1236,6 @@ consistent trend is that Tat moved away from the bilayer center as concentration
     $\sigmaCHthree$ & 3.20 & 3.19 & 3.22 & 3.24 & 3.37 & 3.43 & 3.47 & 2.70 & 2.70 & 2.74 \\
     $\zTat$ & NA & 12.9 & 13.4 & 14.2 & 13.1 & 13.8 & 14.4 & 15.2 & 15.2 & 15.7 \\
     $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
-%    \hline
-%    $\VL$ & 1314 & \multicolumn{3}{c|}{1344} & \multicolumn{3}{c|}{1380} & \multicolumn{3}{c|}{1432} \\ 
-%    $\VHL$ & 331 & \multicolumn{3}{c|}{362} & \multicolumn{3}{c|}{397} & \multicolumn{3}{c|}{450} \\
-%    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
-%    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
-%    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
-%    \hline
-%    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
-%    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-%    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
-%    $\rTat$ & \multicolumn{10}{c|}{0} \\
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
   \end{tabular}
@@ -1231,19 +1246,113 @@ consistent trend is that Tat moved away from the bilayer center as concentration
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC:DOPE (3:1) form factors (left) and the corresponding 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_XFF1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_EDP1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1} 
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
+  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
+  \caption{The best fits to DOPC form factors (left) and the corresponding 
   electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
   and 0.059 (from top to bottom).}
-  \label{fig:DOPCDOPE3to1_Tat_XFF1}
+  \label{fig:DOPC_Tat_XFF1}
 \end{figure}
+
+As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
+as the distance $\DPP$ between the PC components in the opposing leaflets
+or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
+is more reliable than $\DPP$ because it is a property of the total 
+electron density of a bilayer and, therefore, does not depend strongly on the 
+specific model employed for fitting the data. 
+This point is illustrated in Fig.~\ref{fig:DOPC_Tat_EDP}, which compares total electron
+density profiles resulted from best fits with three different Tat widths $\sigmaTat$.
+While positions of Tat were sensitive to values of $\sigmaTat$, the total 
+electron density profiles were almost independent of $\sigmaTat$. Essentially,
+other components, namely headgroups, adjusted their widths and positions so that
+the total electron density profile was about the same.  In other words,
+the model was over parameterized.
+While the precise values of each parameter was less trustworthy,
+the total electron density profiles plotted in Fig.~\ref{fig:DOPC_Tat_EDP},
+when Fourier transformed, reproduced the experimental form factors very well
+and therefore were robust. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP}
+  \caption[]{Comparison of total electron density profiles corresponding to best fits using 
+  different Tat widths $\sigmaTat$, 2.5 (red), 3.0 (black), and 3.5 (green). 
+  The mole fraction of Tat $\xTat$
+  was 0.016 (top), 0.034(middle), and 0.059 (bottom). While different values of 
+  $\sigmaTat$ resulted in different positions of Tat, the total electron density
+  profiles were almost identical and independent of $\sigmaTat$.}
+  \label{fig:DOPC_Tat_EDP}
+\end{figure}
+
+In contrast to $\DHH$, $\DPP$ is a property that
+depends on lipid components, which are influenced by how the lipid is parsed 
+and what assumptions and constraints go into the specific model.
+A disadvantage of using $\DHH$ as a measure of the membrane thickness is
+that $\DHH$ is influenced by the electron density of Tat because 
+the total electron density profile includes a contribution from the electron density of Tat. 
+Especially when the mole fraction of Tat in a system becomes large, 
+the Tat electron density contributes significantly to the total electron 
+density profile. If the Tat resided slightly 
+outside of the PC component, the apparent membrane thickness measured by $\DHH$
+would be larger than $\DPP$. Then, even if the actual bilayer thickness defined by $\DPP$ 
+were reduced by the presence of Tat, the effect of thinning might not be obvious. 
+With the above caveat in mind, we report both quantities in what follows
+since they can be easily calculated from the model.
+
+As described in the previous paragraph, the model parameters were sensitive to 
+specific constraints and assumptions on the model, and as Fig.~\ref{fig:DOPC_Tat_EDP}
+shows, the position of Tat depended on $\sigmaTat$. On the other hand,
+the total electron density profiles were seen to be less sensitive. 
+Figure~\ref{fig:DOPC_Tat_total_EDP} compares the total electron density profiles
+at different Tat concentrations. Consistent with the form factors shifting 
+to larger $q_z$ as $\xTat$ increased, $\DHH$ decreased as $\xTat$ increased.
+As argued earlier, decrease in $\DHH$ does not necessarily indicate decrease
+in the bilayer thickness, and it could instead be attributed to deeper insertion
+of Tat into the bilayer. However, compared to the profile of DOPC alone,
+all three profiles with Tat deviate from the electron density of water 
+at smaller $|z|$ when approached from the water region. This is illustrated 
+in Fig.~\ref{fig:DOPC_Tat_total_EDP_difference} that plots the difference 
+between the total electron density profile of DOPC and those of DOPC with Tat.
+Negative values of $\Delta\rho = \rho_\text{DOPC+Tat} - \rho_\text{DOPC}$
+indicates that the headgroup, which has excess electron density relative to
+water, shifted toward the bilayer center as Tat was added to the system,
+which implies bilayer thinning. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP}
+  \caption[]{Comparison of total electron density profiles at $\xTat$ = 0 (black solid),
+  0.016 (red dash), 0.034 (green short dash), and 0.059 (blue dash dot).}
+  \label{fig:DOPC_Tat_total_EDP}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff}
+  \caption[Difference between total electron density profiles of DOPC with Tat 
+  and that of DOPC]{Difference between total electron density profiles of DOPC with Tat 
+  and that of DOPC. $\xTat$ = 0.016 (red dash), 0.034 (green short dash), 
+  and 0.059 (blue dash dot). Positive $\Delta\rho$ means excess electron density 
+  due to presence of Tat.}
+  \label{fig:DOPC_Tat_total_EDP_difference}
+\end{figure}
+
+Fitting results for DOPC:DOPE (3:1) and DOPC:DOPE (1:1) are summarized 
+in Table~\ref{tb:DOPCDOPE3to1_fit_results} and 
+Table~\ref{tb:DOPCDOPE1to1_fit_results}, respectively,
+and the best fits and corresponding electron density profiles are shown in 
+Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1} and Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1}. 
+Figure~\ref{fig:DOPCDOPE_Tat_total_EDP} plots total electron density profiles,
+showing increase of electron density at the headgroup region as Tat concentration
+increased, similarly to DOPC/Tat systems shown in Fig.~\ref{fig:DOPC_Tat_total_EDP}.
 
 \begin{table}[htbp]
   \centering
@@ -1261,18 +1370,6 @@ consistent trend is that Tat moved away from the bilayer center as concentration
     $\sigmaCHthree$ & 3.24 & 2.94 & 2.97 & 2.98 & 2.87 & 2.90 & 2.91 & 2.63 & 2.61 & 2.65 \\
     $\zTat$ & NA & 13.5 & 14.0 & 15.0 & 14.3 & 14.9 & 16.0 & 16.3 & 16.4 & 16.9 \\
     $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
-%    \hline
-%    $\VL$ & 1288 & \multicolumn{3}{c|}{1319} & \multicolumn{3}{c|}{1354} & \multicolumn{3}{c|}{1407} \\ 
-%    $\VHL$ & 306 & \multicolumn{3}{c|}{336} & \multicolumn{3}{c|}{372} & \multicolumn{3}{c|}{425} \\
-%    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
-%    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
-%    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
-%    \hline
-%    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
-%    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-%    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
-%    $\rTat$ & \multicolumn{10}{c|}{0} \\
-%    \hline
     $\AL$ & 70.9 & 69.8 & 69.9 & 70.1 & 69.5 & 70.0 & 70.6 & 71.3 & 71.4 & 71.7 \\
     \hline
   \end{tabular}
@@ -1280,22 +1377,6 @@ consistent trend is that Tat moved away from the bilayer center as concentration
   and $\zCG-\zHC = 1.3$ \AA\ in all fits.}
   \label{tb:DOPCDOPE3to1_fit_results}
 \end{table}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1}
-  \caption{The best fits to DOPC:DOPE (1:1) form factors (left) and the corresponding 
-  electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
-  and 0.059 (from top to bottom).}
-  \label{fig:DOPCDOPE1to1_Tat_XFF1}
-\end{figure}
 
 \begin{table}[htbp]
   \centering
@@ -1313,18 +1394,6 @@ consistent trend is that Tat moved away from the bilayer center as concentration
     $\sigmaCHthree$ & 3.20 & 3.19 & 3.22 & 3.24 & 3.37 & 3.43 & 3.47 & 2.70 & 2.70 & 2.74 \\
     $\zTat$ & NA & 12.9 & 13.4 & 14.2 & 13.1 & 13.8 & 14.4 & 15.2 & 15.2 & 15.7 \\
     $\sigmaTat$ & NA & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5 \\ 
-%    \hline
-%    $\VL$ & 1314 & \multicolumn{3}{c|}{1344} & \multicolumn{3}{c|}{1380} & \multicolumn{3}{c|}{1432} \\ 
-%    $\VHL$ & 331 & \multicolumn{3}{c|}{362} & \multicolumn{3}{c|}{397} & \multicolumn{3}{c|}{450} \\
-%    $\VTat$ & 0 & \multicolumn{3}{c|}{30.5} & \multicolumn{3}{c|}{66.1} & \multicolumn{3}{c|}{118.8} \\
-%    $\RPC$ & 0.59 & \multicolumn{3}{c|}{0.54} & \multicolumn{3}{c|}{0.49} & \multicolumn{3}{c|}{0.43} \\
-%    $\RCG$ & 0.41 & \multicolumn{3}{c|}{0.38} & \multicolumn{3}{c|}{0.0.34} & \multicolumn{3}{c|}{0.30} \\
-%    \hline
-%    $\Delta z_1$ & \multicolumn{10}{c|}{3.1} \\
-%    $\Delta z_2$ & \multicolumn{10}{c|}{1.3} \\
-%    $\rCHthree$ & \multicolumn{10}{c|}{1.97} \\
-%    $\rTat$ & \multicolumn{10}{c|}{0} \\
-%    \hline
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
   \end{tabular}
@@ -1333,74 +1402,103 @@ consistent trend is that Tat moved away from the bilayer center as concentration
   \label{tb:DOPCDOPE1to1_fit_results}
 \end{table}
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/Tat/figure6}
-  \caption{Modeling results for absolute electron density profiles
-  and for the Tat location as a function of distance $z$ along the
-  bilayer normal. A. DOPC B. DOPC:DOPE (3:1), and C. DOPC:DOPE (1:1).}
-  \label{fig:figure6}
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP}
+  \qquad
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP}
+  \caption[]{Total electron density profiles for DOPC:DOPE (3:1) (left) and 
+  DOPC:DOPE (1:1) (right) with Tat mole fraction $\xTat$ = 0 (black solid),
+  0.016 (red dash), 0.034 (green short dash), and 0.059 (blue dash dot).}
+  \label{fig:DOPCDOPE_Tat_total_EDP}
 \end{figure}
 
-As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
-as the distance $\DPP$ between the PC components in the opposing leaflets
-or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
-is more reliable than $\DPP$ because it is a property of the total 
-electron density of a bilayer and, therefore, does not depend strongly on the 
-specific model employed for fitting the data. Indeed, the total electron
-density profile can be determined independently of a bilayer model 
-by writing the electron density profile in terms of Fourier series, Fourier transforming
-the profile, and fitting the resulting model-independent
-form factor to the data. On the other hand, $\DPP$ is a property that
-depends on lipid components, which are influenced by how the lipid is parsed 
-and what assumptions and constraints go into the specific model.
-A disadvantage of using $\DHH$ as a measure of the membrane thickness is
-that $\DHH$ is influenced by the electron density of Tat because 
-the total electron density profile includes a contribution from the electron density of Tat. 
-Especially when the mole fraction of Tat in a system becomes large, 
-the Tat electron density contributes significantly to the total electron 
-density profile. If the Tat resided slightly 
-outside of the PC component, the apparent membrane thickness measured by $\DHH$
-would be larger than $\DPP$. Then, even if the actual bilayer thickness defined by $\DPP$ 
-were reduced by the presence of Tat, the effect of thinning might not be obvious. 
-With the above caveat in mind, we report both quantities in what follows
-since they can be easily calculated from the model.
+Figure~\ref{fig:DHH_DPP} summarizes the results for bilayer thickness as a function
+of Tat mole fraction $\xTat$. In all cases, $\DHH$ was smaller than $\DPP$, consistent
+with the results that the value of Tat position $\zTat$ from the bilayer center was smaller 
+than that of PC headgroup position $\zPC$. The CG headgroup also carries 
+high average electron density and is located closer to the bilayer center than
+the PC headgroup is. Therefore, in general, $\DHH$ is smaller than $\DPP$ even
+without presence of Tat. Figure~\ref{fig:DPP_2zTat} compares Tat position 
+to the PC headgroup position, reemphasizing a result that Tat is located
+inside the PC headgroup. We note, however, that $\DPP$ in our models is
+the average PC-PC distance and not necessarily the same as local bilayer 
+thickness near a Tat peptide. It is reasonable to expect that perturbation
+of bilayer structure due to Tat is largest near Tat and decays as a
+function of lateral distance from Tat. In Sec.~\ref{sec:MD_results}, we 
+discuss local perturbation of a DOPC bilayer measured in MD simulations.
+Finally, Fig.~\ref{fig:AL} plots area per lipid as a function of Tat mole
+fraction. Consistent with bilayer thinning, area per lipid was found to 
+increase in most cases. 
+We could not obtain electron density profiles for DOPC/DOPS (3:1) and the nuclear membrane 
+mimic, due to loss of diffuse scattering by Tat’s charge neutralization 
+of these negatively charged membranes, which rendered extraction of 
+X-ray form factors unreliable, as described in section \ref{sec:Kc_results}.
 
-More structural detail from the modeling is shown in Fig.~\ref{fig:figure7}. 
-Figs.~\ref{fig:figure7}A and \ref{fig:figure7}B show that both $\DPP$ and $\DHH$ tended to
-decrease with increasing Tat mole fraction $\xTat$, showing that Tat thins membranes,
-increasingly so as its concentration is increased, even though both simulation and modeling
-suggested that Tat moves further from the membrane center with increasing concentration as
-shown in Fig.~\ref{fig:figure7}D. Figure~\ref{fig:figure7}C shows that the area per lipid 
-$\AL$ usually increased with increasing
-mole fraction of Tat, similar to the findings from MD simulations (Sec.~\ref{sec:sim_results}), 
-as would be expected. 
-
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/Tat/figure7}
-  \caption{A. Bilayer thickness, $\DPP$; B. Bilayer thickness, $\DHH$; 
-  C. Area/lipid, $\AL$; D. Twice the Tat location, $2\zTat$: 
-  all plotted vs. Tat mole fraction $\xTat$. 
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/DHH}
+  \qquad
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/DPP}
+  \caption{Bilayer thickness, $\DHH$ (left) and $\DPP$ (right)
+  plotted against Tat mole fraction $\xTat$.
+  Black squares (DOPC), red circles (DOPC:DOPE (3:1)), and green
+  triangles (DOPC:DOPE (1:1)).
   Error bars are standard deviations from imposing Tat Gaussian widths, 
-  $\sigmaTat$ = 2.5, 3.0 or 3.5 \AA. Inverted blue triangles connected
-  with dotted line are results from MD simulations, averaging the best fits to the X-ray data for
-  each parameter, with standard deviations shown.}
-  \label{fig:figure7}
+  $\sigmaTat$ = 2.5, 3.0 or 3.5 \AA.}
+  \label{fig:DHH_DPP}
 \end{figure}
 
-We also investigated how the goodness of fits varied as the position of 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/DPP2}
+  \qquad
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/2zTat}
+  \caption{Bilayer thickness, $\DPP$ (left) and twice Tat position $2\zTat$ (right)
+  plotted against Tat mole fraction $\xTat$.
+  Black squares (DOPC), red circles (DOPC:DOPE (3:1)), and green
+  triangles (DOPC:DOPE (1:1)).
+  Error bars are standard deviations from imposing Tat Gaussian widths, 
+  $\sigmaTat$ = 2.5, 3.0 or 3.5 \AA. The data points of $\DPP$ (left) is 
+  identical to those in Fig.~\ref{fig:DHH_DPP}, but the left axis is adjusted
+  to facilitate comparison against $2\zTat$.}
+  \label{fig:DPP_2zTat}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.49\textwidth]{figures/Tat/SDP_Results/AL}
+  \caption{Area per lipid plotted against Tat mole fraction $\xTat$.
+  Black squares (DOPC), red circles (DOPC:DOPE (3:1)), and green
+  triangles (DOPC:DOPE (1:1)).
+  Error bars are standard deviations from imposing Tat Gaussian widths, 
+  $\sigmaTat$ = 2.5, 3.0 or 3.5 \AA.}
+  \label{fig:AL}
+\end{figure}
+
+We also studied how the goodness of fit varied as the position of 
 the Tat Gaussian was varied. Figure~\ref{fig:DOPC_Tat_X2} plots $\chi^2$ as a 
 function of the fixed Tat position $\zTat$. We found that the two models,
-THG (Tat in headgroup region) and THC (Tat in hydrocabon chain region), resulted 
+THG (Tat-in-headgroup region) and THC (Tat-in-hydrocabon-chain region), resulted 
 in similar electron density profiles, yielding similar $\chi^2$ values 
 when Tat was placed near the hydrocarbon-water interface region. In the THC model, 
 the error function representing the hydrocarbon chain region became wider as
-Tat was placed near the interface region but further from the bilayer center. The subtraction
-of the Tat component from the hydrocarbon chain error function resulted in 
-a smooth error function-like profile with an apparent smaller value of $\sigma$ such that
-the total profile calculated from the THC model was very similar to that calculated 
+Tat was placed closer to the interface region such that 
+the total density profile calculated from the THC model was very similar to that calculated 
 from the THG model.
+In general, while the total electron density profile is well determined by 
+our modeling procedures, the values of the parameters for the components are 
+not as well determined as the agreement of the fit to the data may suggest. 
+In many cases, we found multiple local minima in the fitting landscape, 
+including one with Tat closer to the center of the bilayer as
+shown in Fig.~\ref{fig:DOPC_Tat_X2}. $\chi^2$ calculated at these local minima 
+tended to be smaller for larger concentration of Tat. We also found
+that $\chi^2$ with $\zTat$ in the hydrocarbon chain region and headgroup
+region was almost equal for the smallest value of $\xTat$ for DOPC:DOPE (1:1)
+bilayer.
+The MD simulations performed by Dr. Kun Huang suggested that
+the interior positions of Tat were artifacts of our model, at least for DOPC
+bilayers. The simulation results are found in Sec.~\ref{sec:MD_results}.
 
 \begin{figure}[htbp]
   \centering
@@ -1420,240 +1518,106 @@ from the THG model.
   \label{fig:DOPC_Tat_X2}
 \end{figure}
 
-In general, while the total electron density profile is well determined by 
-our modeling procedures, the values of the parameters for the components are 
-not as well determined as the agreement of the fit to the data may suggest. 
-In many cases, we found multiple local minima in the fitting landscape, 
-including one with Tat closer to the center of the bilayer as
-shown in Fig.~\ref{fig:DOPC_Tat_X2}. $\chi^2$ calculated at these local minima 
-tended to be smaller for larger concentration of Tat. We also found
-that $\chi^2$ with $\zTat$ in the hydrocarbon chain region and headgroup
-region was almost equal for the smallest value of $\xTat$ for DOPC:DOPE (1:1)
-bilayer.
-While Fig.~\ref{fig:DOPC_Tat_X2} shows trends for the $\chi^2$ minima with Tat 
-in the hydrocarbon chain region, this position seemed energetically 
-unfavorable as Tat is a hydrophilic molecule. Also, if Tat favored to be 
-inserted deep in a membrane, it would be difficult for Tat to
-leave the membrane. This difficulty seems inefficient in terms of the HIV virus
-infection because Tat passing through the nuclear membrane and binding
-to the viral integrated DNA is crucial for proliferation of HIV infected cells. 
-These considerations suggested that the local minima in the chain region
-were artifact of our models.
-The MD simulations performed by Dr. Kun Huang suggested that
-the interior positions of Tat were artifacts of our model. 
-The simulation results are found in section~\ref{sec:sim_results}.
-
-Electron density profiles for DOPC/DOPS (3:1) and the nuclear membrane 
-mimic were not
-successful, due to loss of diffuse scattering by Tat’s charge neutralization 
-of these negatively
-charged membranes as described in section \ref{sec:Kc_results}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Hard Wall Constrain Fits}\label{sec:bound_results}
-(Under construction)
-As seen from Table~\ref{tb:DOPC_fit_results}, \ref{tb:DOPCDOPE3to1_fit_results},
-and \ref{tb:DOPCDOPE1to1_fit_results}, the widths of the headgroup components
-became smaller as Tat concentration increased in all membranes. These 
-decreases seemed somewhat unreasonable; if Tat causes a bilayer 
-to locally become thinner near where it is bound, 
+As seen from Table~\ref{tb:DOPC_fit_results}, 
+the widths of the headgroup components
+became smaller as Tat concentration increased. This
+decrease seemed somewhat unreasonable; if Tat causes a bilayer 
+to locally become thinner, 
 we would expect that the headgroup components to become
-wider. Therefore, we also fitted the model with hard wall constrains
+wider. Therefore, we also fitted a model with lower bounds
 on these headgroup widths. Namely, the minimum values of the widths of
-the headgroup components, PC and CG, were limited to the corresponding 
-values for pure bilayers without Tat. 
-
+the headgroup components, PC and CG, were constrained to be greater than
+or equal to the corresponding values for pure bilayers without Tat. 
 Table~\ref{tb:bound_DOPC} shows results from fitting the data with
-lower bounds on the widths of the headgroup components for DOPC:Tat.
+lower bounds on the widths of the headgroup components for DOPC/Tat systems.
 In all cases, both headgroup widths, $\sigmaPC$ and $\sigmaCG$, resulted 
 in the same value as the value of their corresponding lower bounds. 
-Figure~\ref{fig:bound_DOPC_X2} shows $\chi^2$ landscape as a function of
-$\zTat$ similarly to Fig.~\ref{fig:DOPC_Tat_X2}. The $\chi^2$ minima 
-observed for $\zTat$ \textgreater\ 25 \AA were artifact; Tat are essentially in
-the water region while the bilayer structure was significantly perturbed.
-This action-at-distance seemed unreasonable, so these minima were considered
-as artifact of the model. 
-Indeed, when we fixed lipid component parameters in these fits to be identical to those of 
-the DOPC model, we did not observe any minima with Tat in the water region.
-Although we did not note in the previous section,
-we observed similar minima in the unbound model as well.
+Similarly to fits with unbound widths, $\DPP=2\zPC$ decreased as Tat concentration
+increased. The biggest difference between these bound fits and the unbound fits
+is in Tat position $\zTat$. Figure~\ref{fig:zTat_bound} plots $\zTat$ as a function
+of Tat mole fraction $\xTat$ for both fits with and without lower bounds.
+While $\zTat$ increased as $\xTat$ increased for fits without bounds, $\zTat$
+stayed more or less constant for fits with the bounds. Moreover, 
+Tat was located closer to the PC headgroup than the CD headgroup. Thus,
+depth of Tat insertion was affected strongly by the headgroup widths.
+This again emphasizes the point that model parameters are not as well
+determined as the total electron density profiles are.
+In order to gain better understanding of location of Tat in DOPC bilayers,
+we now turn to MD simulations.
 
 \begin{table}[htbp]
-\centering
-\begin{tabular}{l}
-\hline\hline
-  \begin{tabular}{c}
-    $\xTat$ \\
-    $\chi^2$ \\ 
-    $\zPC$ \\
-    $\sigmaPC$ \\
-    $\zCG$ \\
-    $\sigmaCG$ \\
-    $\zHC$ \\ 
-    $\sigmaHC$ \\
-    $\sigmaCHthree$ \\
-    $\zTat$ \\
-    $\sigmaTat$ \\ 
-    $\Delta z_1$ \\
-    $\Delta z_2$ \\
-    $\AL$
+  \centering
+  \begin{tabular}{ccccccccccc}
+  \hline 
+    $\xTat$ & 0  &    0.016 & 0.016 & 0.016 & 0.034 & 0.034 & 0.034 & 0.059 & 0.059 & 0.059 \\
+    $\chi^2$ & 2961 &    1853 & 1979 & 2118 & 2398 & 2893 & 3414    & 3160 & 4298 & 5539 \\   
+    $\zPC$ & 18.1   &    17.8 & 17.8 & 17.8 & 17.4 & 17.4 & 17.4    & 17.5 & 17.4 & 17.3 \\   
+    $\sigmaPC$  & 2.5 &   2.5 &  2.5 &  2.5 & 2.5 & 2.5 & 2.5       & 2.5 & 2.5 & 2.5 \\      
+    $\zCG$   & 15.0 &    14.7 & 14.7 & 14.7 & 14.3 & 14.3 & 14.3    & 14.4 & 14.4 & 14.3 \\   
+    $\sigmaCG$ & 3.0 &    3.0 &  3.0 &  3.0 & 3.0 & 3.0 & 3.0       & 3.0 & 3.0 & 3.0 \\      
+    $\zHC$ & 13.7 &     13.4 & 13.4 & 13.4  & 13.0 & 13.0 & 13.0    & 13.1 & 13.0 & 12.9 \\   
+    $\sigmaHC$ &      3.0 &2.7 & 2.7 & 2.7  & 2.7 & 2.7 & 2.7       & 2.7 & 2.7 & 2.7 \\      
+    $\sigmaCHthree$ & 3.2 & 3.1 & 3.1 & 3.1 & 3.6 & 3.6 & 3.7       & 2.6 & 2.6 & 2.5 \\      
+    $\zTat$ & &          16.9 & 16.8 & 17.0 & 16.4 & 16.5 & 16.7    & 16.3 & 16.6 & 17.1 \\   
+    $\sigmaTat$ & &         2.5 & 3.0 & 3.5 & 2.5 & 3.0 & 3.5       & 2.5 & 3.0 & 3.5 \\      
+    $\AL$ & 71.5 &       73.5 & 73.5 & 73.5 & 75.6 & 75.6 & 75.6    & 75.0 & 75.4 & 75.9 \\    
+  \hline
   \end{tabular}
-  \quad
-  \begin{tabular}{c}
-    0 \\
-    2961 \\ 
-    18.1 \\
-    2.5 \\
-    15.0 \\
-    3.0 \\
-    13.7 \\ 
-    3.0 \\
-    3.2 \\
-    \\
-    \\ 
-    3.1 \\
-    1.3 \\
-    71.5
-  \end{tabular}
-  \quad
-  \begin{tabular}{c c c}
-    0.016 & 0.016 & 0.16 \\
-    1853 & 1979 & 2118\\ 
-    17.8 & 17.8 & 17.8 \\
-    2.5 & 2.5 & 2.5 \\
-    14.7 & 14.7 & 14.7 \\
-    3.0 & 3.0 & 3.0 \\
-    13.4 & 13.4 & 13.4 \\ 
-    2.7 & 2.7 & 2.7 \\
-    3.1 & 3.1 & 3.1 \\
-    16.9 & 16.8 & 17.0 \\
-    2.5 & 3.0 & 3.5 \\ 
-    3.1 & 3.1 & 3.1 \\
-    1.3 & 1.3 & 1.3 \\
-    73.5 & 73.5 & 73.5
-  \end{tabular}
-  \quad
-  \begin{tabular}{c c c}
-    0.034 & 0.034 & 0.034 \\
-    2398 & 2893 & 3414 \\ 
-    17.4 & 17.4 & 17.4 \\
-    2.5 & 2.5 & 2.5 \\
-    14.3 & 14.3 & 14.3 \\
-    3.0 & 3.0 & 3.0 \\
-    13.0 & 13.0 & 13.0 \\ 
-    2.7 & 2.7 & 2.7 \\
-    3.6 & 3.6 & 3.7 \\
-    16.4 & 16.5 & 16.7 \\
-    2.5 & 3.0 & 3.5 \\ 
-    3.1 & 3.1 & 3.1 \\
-    1.3 & 1.3 & 1.3 \\
-    & & 
-  \end{tabular}
-\\
-\hline
-  \begin{tabular}{c}
-    $\xTat$ \\
-    $\chi^2$ \\ 
-    $\zPC$ \\
-    $\sigmaPC$ \\
-    $\zCG$ \\
-    $\sigmaCG$ \\
-    $\zHC$ \\ 
-    $\sigmaHC$ \\
-    $\sigmaCHthree$ \\
-    $\zTat$ \\
-    $\sigmaTat$ \\ 
-    $\Delta z_1$ \\
-    $\Delta z_2$ \\
-    $\AL$
-  \end{tabular}
-  \quad
-  \begin{tabular}{c c c}
-    0.059 & 0.059 & 0.059 \\
-    3160 & 4298 & 5539 \\ 
-    17.5 & 17.4 & 17.3 \\
-    2.5 & 2.5 & 2.5 \\
-    14.4 & 14.4 & 14.3 \\
-    3.0 & 3.0 & 3.0 \\
-    13.1 & 13.0 & 12.9 \\ 
-    2.7 & 2.7 & 2.7 \\
-    2.6 & 2.6 & 2.5 \\
-    16.3 & 16.6 & 17.1 \\
-    2.5 & 3.0 & 3.5 \\ 
-    3.1 & 3.1 & 3.1 \\
-    1.3 & 1.3 & 1.3 \\
-    & &
-  \end{tabular}
-\\
-\hline\hline
-\end{tabular}
   \caption{Fitting Results of the bound THG model for DOPC membranes. 
-  $\Delta z_1 = \zPC-\zCG$ and $\Delta z_2 = \zCG-\zHC$.}
+  $\zPC-\zCG$ = 3.1 and $\zCG-\zHC$ = 1.3 in all fits.}
   \label{tb:bound_DOPC}
 \end{table}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_bound_X2}
-  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_bound_X2}
-  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_bound_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC
-  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
-  $\sigmaTat = 3.0$. The bound THG model was used.}
-  \label{fig:bound_DOPC_X2}
+  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/zTat_bound}
+  \caption[$\zTat$ as a function of Tat mole fraction $\xTat$ for fits with
+  lower bounds on the headgroup widths (red circles) and without lower 
+  bounds (black squares]
+  {$\zTat$ as a function of Tat mole fraction $\xTat$ for fits with
+  lower bounds on the headgroup widths (red circles) and without lower 
+  bounds (black squares). 
+  Error bars are standard deviations from imposing Tat Gaussian widths, 
+  $\sigmaTat$ = 2.5, 3.0 or 3.5 \AA.}
+  \label{fig:zTat_bound}
 \end{figure}
+
+%Figure~\ref{fig:bound_DOPC_X2} shows $\chi^2$ landscape as a function of
+%$\zTat$ similarly to Fig.~\ref{fig:DOPC_Tat_X2}. The $\chi^2$ minima 
+%observed for $\zTat$ \textgreater\ 25 \AA were artifact; Tat are essentially in
+%the water region while the bilayer structure was significantly perturbed.
+%When we fixed lipid component parameters in these fits to be identical to those of 
+%the DOPC model, we did not observe any minima with Tat in the water region,
+%asserting that these minima were artifact.
+%We observed similar minima using models with unbound headgroup widths as well.
+
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_bound_X2}
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_bound_X2}
+%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_bound_X2}
+%  \caption{$\chi^2$ as a function of $\zTat$ for DOPC
+%  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
+%  $\sigmaTat = 3.0$. The bound THG model was used.}
+%  \label{fig:bound_DOPC_X2}
+%\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Summary of Electron Density Profile Modeling}
-(Under construction)
-Figure~\ref{fig:SDP_AL} shows that the area per lipid $\AL$ 
-as defined by $(\VL-\VHL)/\DC$ decreased as the mole
-fraction of DOPE in DOPC:DOPE membranes increased. 
-This decrease of $\AL$ is qualitatively consistent with 
-previous studies which attributed the decrease to the small size of PE
-head group (references?). 
-Because DOPE has a smaller headgroup than DOPC, lipids in DOPC:DOPE
-bilayers pack more compactly than in DOPC bilayers. Then, more compact packing of
-lipids leads to a smaller $\AL$.  
+\newpage
+\subsection{Molecular Dynamics Simulations}\label{sec:MD_results}
+As emphasized in Sec.~\ref{sec:SDP_results}, Tat position inside a bilayer 
+was difficult to determine, which is a shortcoming of modeling a complex system
+with limited data sets. Therefore, we also employed a model independent 
+approach using MD simulations. From simulations of
+a DOPC bilayer with Tat, X-ray form factors can be alculated.
+Then, calculated form factors were directly compared to experimental 
+form factors. When a good match between simulated form factors and
+experimental form factors was obtained, spacial distribution of simulated
+atoms along the bilayer normal direction was analyzed to obtain 
+the positions of lipid components as well as Tat. The SIMtoEXP software
+\cite{Kucerka10} described in Sec.~\ref{sec:SIMtoEXP} facilitated the 
+comparison of simulations to experimental form factors.
 
-Figure~\ref{fig:SDP_zTat} shows that Tat is located further out from the bilayer 
-center with higher content of PE lipids. This trend is consistent with 
-a potential mean force calculated from MD simulations (ref?), 
-which has shown that arginine insertion costs more energy in 
-a PE membrane than PC membrane. The higher energy cost of arginine insertion 
-has been suggested to be due to more possible hydrogen bonding between PE groups and arginines.
-(After I wrote this paragraph, I realized that the argument presented does
-not make much sense. $\zTat$ could be larger for PE simply because DOPE
-membranes are thicker than DOPC membrane. $\zTat$ must be measured with 
-respect to, say, the hydrocarbon interface. Let's do this later.)
-
-\begin{figure}
-  \centering
-  \caption{DPP graph with bound fits}
-  \label{fig:SDP_DPP}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \caption{DHH graph with bound fits}
-  \label{fig:SDP_DHH}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \caption{AL graph with bound fits}
-  \label{fig:SDP_AL}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \caption{zTat graph with bound fits}
-  \label{fig:SDP_zTat}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Molecular Dynamics Simulations}\label{sec:sim_results}
-(Under construction)
 Due to the slow relaxation in lipid bilayers and limited accuracy of the force 
 field, a good agreement between experimental and MD simulation calculated 
 form factors may be difficult to reach. Consequently, we carried out several 
@@ -1661,7 +1625,8 @@ constrained simulations at various $\AL$ and $\zTat$ as described
 in Sec.~\ref{sec:sim_methods}. 
 We then compared the simulated form factor $F(q_z)$ with the
 experimentally measured one. Figure~\ref{fig:MD_dopc_sim-exp} shows such
-comparison for a DOPC bilayer. As discussed earlier, the simulated form factor
+comparison for a DOPC bilayer. As discussed in Sec.~\ref{sec:SDP_results}, 
+the simulated form factor
 shifted to larger $q_z$ as the area per lipid was increased. 
 From this comparison, we found the simulation
 at $\AL$ = 70 \AA$^2$ to be the best match with the experimental form
@@ -1674,7 +1639,7 @@ The electron density profile for the best fit is shown in
 Fig.~\ref{fig:MD_dopc_70_PC-CG}.
 The comparison for DOPC with $\xTat$ = 0.015 where there is one Tat in
 each monolayer is shown in Fig.~\ref{fig:MD_dopc-tat2_sim-exp}. The
-same comparison for DOPC with $\xTat$ = 0.03 is shown in 
+comparison for DOPC with $\xTat$ = 0.03 is shown in 
 Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
 
 \begin{figure}[htbp]
@@ -1855,12 +1820,12 @@ Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
 %  \end{overpic}
 
 The best match for DOPC/Tat (128:4) was found when the Tats were 
-constrained at 18 \AA away from the bilayer center (Fig.~\ref{fig:figure4}). The other 
+constrained at 18 \AA\ away from the bilayer center (Fig.~\ref{fig:figure4}). The other 
 best fit results were: DOPC $\AL$ = 70 \AA$^2$ and DOPC/Tat(128:2) $\AL$ = 72 
 \AA$^2$, $\zTat = 18$ \AA. It clearly indicates that with increasing Tat
 concentration, $\AL$ increases. The agreement worsened as Tat was constrained 
 to be closer to the
-center of the bilayer. When Tats were constrained at 5 \AA away from the bilayer 
+center of the bilayer. When Tats were constrained at 5 \AA\ away from the bilayer 
 center, we
 observed a spontaneous formation of water pores in the MD simulation. However, 
 as shown in
