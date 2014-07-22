@@ -1,0 +1,1446 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.5.15)  22 JUL 2014 00:33
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./common_preambles.tex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen105
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count91
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count93
+\Field@Width=\dimen106
+\Fld@charsize=\dimen107
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen108
+\extrarowheight=\dimen109
+\NC@list=\toks15
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+\TX@col@width=\dimen110
+\TX@old@table=\dimen111
+\TX@old@col=\dimen112
+\TX@target=\dimen113
+\TX@delta=\dimen114
+\TX@cols=\count99
+\TX@ftn=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count100
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count101
+\sf@farskip=\skip46
+\sf@captopadj=\dimen121
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count102
+\c@subfigure@save=\count103
+\c@lofdepth=\count104
+\c@subtable=\count105
+\c@subtable@save=\count106
+\c@lotdepth=\count107
+\sf@top=\skip49
+\sf@bottom=\skip50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen122
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+LaTeX Info: Redefining \boldsymbol on input line 54.
+\pmbraise@=\dimen123
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip11
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks18
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks19
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count120
+\calc@Bcount=\count121
+\calc@Adimen=\dimen131
+\calc@Bdimen=\dimen132
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count122
+\calc@Cskip=\skip56
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+\g_MT_multlinerow_int=\count123
+\l_MT_multwidth_dim=\dimen133
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen134
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen135
+\l_MT_above_intertext_dim=\dimen136
+\l_MT_below_intertext_dim=\dimen137
+\l_MT_above_shortintertext_dim=\dimen138
+\l_MT_below_shortintertext_dim=\dimen139
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup8
+\symAMSb=\mathgroup9
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/newlfont.sty
+Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
+LaTeX Info: Redefining \em on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/syntonly.sty
+Package: syntonly 1999/09/17 v2.1e Standard LaTeX2e package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count124
+\c@@ppsavesec=\count125
+\c@@ppsaveapp=\count126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks28
+\XKV@tempa@toks=\toks29
+\XKV@depth=\count127
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen140
+\tc@lly=\dimen141
+\tc@urx=\dimen142
+\tc@ury=\dimen143
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen144
+\adjbox@Height=\dimen145
+\adjbox@Depth=\dimen146
+\adjbox@Totalheight=\dimen147
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count129
+\@vwid@loff=\dimen148
+\@vwid@roff=\dimen149
+))
+(/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
+Package: overpic 2010/09/13 v0.53  Overwriting graphics
+
+Package: overpic v0.53 <2010/09/13> (RN)
+(/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count130
+\d@lta=\count131
+\@delta=\dimen150
+\@@delta=\dimen151
+\@gridcnt=\count132
+\@joinkind=\count133
+\@dotgap=\dimen152
+\@ddotgap=\dimen153
+\@x@diff=\count134
+\@y@diff=\count135
+\x@diff=\dimen154
+\y@diff=\dimen155
+\@dotbox=\box30
+\num@segments=\count136
+\num@segmentsi=\count137
+\@datafile=\read1
+)
+overpic: relative positioning in percent
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen156
+\lightrulewidth=\dimen157
+\cmidrulewidth=\dimen158
+\belowrulesep=\dimen159
+\belowbottomsep=\dimen160
+\aboverulesep=\dimen161
+\abovetopsep=\dimen162
+\cmidrulesep=\dimen163
+\cmidrulekern=\dimen164
+\defaultaddspace=\dimen165
+\@cmidla=\count138
+\@cmidlb=\count139
+\@aboverulesep=\dimen166
+\@belowrulesep=\dimen167
+\@thisruleclass=\count140
+\@lastruleclass=\count141
+\@thisrulewidth=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/notoccite/notoccite.sty
+Package: notoccite 2000/07/20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen169
+))
+(./newcommand_Tat.tex) (./newcommand_ripple.tex) (./thesis.aux (./abstract.aux)
+(./acknowledgments.aux) (./chap_01.aux) (./chap_02.aux) (./chap_03.aux)
+(./appendix.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 66.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count142
+\scratchdimen=\dimen170
+\scratchbox=\box31
+\nofMPsegments=\count143
+\nofMParguments=\count144
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen171
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
+\everyMPtoPDFconversion=\toks31
+)
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 66.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count148
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write3
+\openout3 = `thesis.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+\symgns@font=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 66.
+Package gensymb Info: Math companion symbols declared on input line 66.
+LaTeX Info: Redefining \degree on input line 66.
+LaTeX Info: Redefining \celsius on input line 66.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 66.
+LaTeX Info: Redefining \ohm on input line 66.
+Package gensymb Info: Using \textohm for \ohm on input line 66.
+Package gensymb Info: Using \textmu for \micro on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [3] [4
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \thispagestyle{empty} \cleardoublepage
+                                            [2
+
+
+] (./thesis.toc [2
+
+
+] [3])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4]
+(./thesis.lot
+Underfull \vbox (badness 2205) has occurred while \output is active []
+
+ [5
+
+])
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+
+[6] (./thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7
+
+]
+Overfull \hbox (13.0572pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/n/12 ends. Lipid mix-tures: A. DOPC B. DOPC/DOPE (3:1) C. DOPC/DOPE
+ 
+ []
+
+
+Underfull \vbox (badness 4954) has occurred while \output is active []
+
+ [8]
+Overfull \hbox (32.0407pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/m/n/12 (DOPC), red cir-cles (DOPC:DOPE (3:1)), and green tri-an-gles 
+(DOPC:DOPE 
+ []
+
+
+Overfull \hbox (11.13582pt too wide) in paragraph at lines 19--19
+ [][] [][]$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a func-tion of $\OML/cmm/
+m/it/12 z[]$ \OT1/cmr/m/n/12 for DOPC, DOPC:DOPE (3:1), and DOPC:DOPE 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Overfull \hbox (24.9006pt too wide) in paragraph at lines 26--26
+ [][] [][]\OT1/cmr/m/n/12 MD sim-u-lated form fac-tors (red solid lines in A an
+d C) of Tat/(DOPC+Tat), 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11]
+Underfull \vbox (badness 3118) has occurred while \output is active []
+
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+
+[17]
+\openout2 = `chap_01.aux'.
+
+ (./chap_01.tex
+Chapter 1.
+<figures/ripple/smith_phase_diagram.pdf, id=937, 432.01399pt x 289.88298pt>
+<figures/ripple/various_phases.pdf, id=940, 1045.09097pt x 294.81645pt>
+<figures/ripple/gel_phase_packing.pdf, id=941, 775.56487pt x 219.44844pt>pdfTeX
+ warning (ext4): destination with the same identifier (name{page.1}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 
+      [1
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 
+      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 
+      [3]
+<figures/ripple/ripple_cartoon.pdf, id=963, 381.0667pt x 139.26024pt>)pdfTeX wa
+rning (ext4): destination with the same identifier (name{page.4}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 \include{chap_01}
+                        [4]
+\openout2 = `chap_02.aux'.
+
+ (./chap_02.tex
+Chapter 2.
+
+LaTeX Warning: Citation `Duchardt07' on page 5 undefined on input line 46.
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+Underfull \vbox (badness 2443) has occurred while \output is active []
+
+ [5
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+Overfull \hbox (0.39786pt too wide) in paragraph at lines 131--150
+\OT1/cmr/m/n/12 (Y$[]$GRKKRRQRRR$[]$) across DOPC at var-i-ous lipid:peptide mo
+-lar ra-tios [[]45[]]. Their
+ []
+
+
+Underfull \vbox (badness 7595) has occurred while \output is active []
+
+ [7]
+[8] [9] [10]
+
+LaTeX Warning: Citation `Kucerka05' on page 11 undefined on input line 274.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+<figures/Tat/figure1.pdf, id=1073, 430.40799pt x 654.445pt> [12]
+<figures/Tat/MMs/stack.pdf, id=1081, 387.50024pt x 262.51971pt> [13] [14]
+Overfull \hbox (5.2501pt too wide) in paragraph at lines 543--551
+[]\OT1/cmr/m/n/12 Parsing of DOPC into lipid com-po-nents is shown in Fig. []2.
+4[]. The phos-phate/choline
+ []
+
+<figures/Tat/MMs/dopc_schematic.pdf, id=1099, 570.74644pt x 556.81714pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf, id=1101, 770.88pt x 587.19
+376pt> [15] [16] [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20] [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23]
+Overfull \hbox (19.57385pt too wide) in paragraph at lines 889--889
+[]\OT1/cmr/bx/n/17.28 Analysis of Molec-u-lar Dy-nam-ics Sim-u-la-tion Data 
+ []
+
+[24] <./figures/Tat/MMs/cylinder_model.pdf, id=1208, 507.3718pt x 255.63808pt>
+
+LaTeX Warning: Reference `sec:sim_results' on page 25 undefined on input line 9
+69.
+
+[25] [26]
+<./figures/Tat/MMs/linear_model.pdf, id=1220, 555.66415pt x 317.4181pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Missing character: There is no ‚ in font cmr8!
+Missing character: There is no à in font cmr8!
+Missing character: There is no í in font cmr8!
+
+<figures/Tat/figure2.pdf, id=1233, 999.735pt x 766.06201pt>
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [28] [29]
+<figures/Tat/figure3a.pdf, id=1248, 448.87701pt x 387.046pt>
+<figures/Tat/figure3b.png, id=1249, 257.2812pt x 231.7458pt>
+<figures/Tat/figure3c.png, id=1251, 307.8702pt x 229.3368pt>
+<figures/Tat/figure3d.png, id=1252, 107.4414pt x 226.446pt>
+<figures/Tat/figure3e.png, id=1253, 99.7326pt x 234.1548pt> [30] [31]
+<figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf, id=1273, 771.88374pt x 577.15625pt>
+<figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf, id=1274, 827.09pt x 578.16pt>
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf, id=1275, 771.88374pt 
+x 577.15625pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf, id=1276, 827.09pt x 5
+80.1675pt>
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf, id=1277, 771.88374pt 
+x 577.15625pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf, id=1278, 827.09pt x 5
+82.175pt>
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf, id=1279, 771.88374pt 
+x 577.15625pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf, id=1280, 827.09pt x 5
+82.175pt>
+
+LaTeX Warning: Float too large for page by 11.3063pt on input line 1261.
+
+[32] [33]
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf, id=1293, 827.09pt x 651.43
+375pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf, id=1294, 827.09pt x 651.43
+375pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf, id=1295, 827.09pt x 647.41
+875pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf, id=1299, 827.09pt x 630.35
+5pt>
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf, id=1300, 826.08624pt 
+x 608.2725pt>
+Underfull \vbox (badness 2253) has occurred while \output is active []
+
+ [34]
+[35] [36]
+<figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf, id=1321, 827.09pt 
+x 637.38126pt>
+<figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf, id=1322, 827.09pt 
+x 637.38126pt>
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [37] [38]
+<figures/Tat/SDP_Results/DHH.pdf, id=1337, 827.09pt x 681.54625pt>
+<figures/Tat/SDP_Results/DPP.pdf, id=1338, 827.09pt x 681.54625pt>
+<figures/Tat/SDP_Results/DPP2.pdf, id=1339, 827.09pt x 682.55pt>
+<figures/Tat/SDP_Results/2zTat.pdf, id=1340, 827.09pt x 682.55pt>
+<figures/Tat/SDP_Results/AL.pdf, id=1343, 827.09pt x 696.6025pt> [39] [40]
+<figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf, id=1356, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf, id=1357, 828.093
+75pt x 662.475pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf, id=1358, 828.093
+75pt x 652.4375pt>
+<figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf, id=1359, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf, id=1360, 828.093
+75pt x 668.4975pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf, id=1361, 828.093
+75pt x 678.535pt>
+<figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf, id=1362, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf, id=1363, 828.093
+75pt x 652.4375pt>
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf, id=1364, 828.093
+75pt x 662.475pt>
+Underfull \hbox (badness 1163) in paragraph at lines 1517--1517
+[]\OT1/cmr/m/n/12 Figure 2.18: |$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a f
+unc-tion of $\OML/cmm/m/it/12 z[]$ \OT1/cmr/m/n/12 for DOPC, DOPC:DOPE (3:1), a
+nd
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+<figures/Tat/SDP_Results/zTat_bound.pdf, id=1372, 827.09pt x 686.565pt>
+[42] [43]
+<figures/Tat/MD_Results/xff/dopc_sim-exp.pdf, id=1390, 828.09375pt x 619.31375p
+t>
+<figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf, id=1391, 828.09375pt x 633.36626
+pt>
+<figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf, id=1392, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf, id=1393, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf, id=1394, 828.09375pt x 6
+19.31375pt>
+<figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf, id=1395, 828.09375pt x 6
+19.31375pt>
+Overfull \hbox (5.9122pt too wide) in paragraph at lines 1764--1780
+ [][] 
+ []
+
+
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf, id=1398, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf, id=1399, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf, id=1400, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf, id=1401, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf, id=1402, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf, id=1403, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf, id=1404, 828.093
+75pt x 633.36626pt>
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf, id=1405, 828.093
+75pt x 633.36626pt>
+<figures/Tat/figure4.pdf, id=1408, 764.45598pt x 665.68701pt>
+Underfull \hbox (badness 1622) in paragraph at lines 1844--1844
+[]\OT1/cmr/m/n/12 Figure 2.25: |MD sim-u-lated form fac-tors (red solid lines i
+n A and C) of
+ []
+
+[44] [45] [46] [47] [48] [49] [50] [51] [52]
+<figures/Tat/figure9.pdf, id=1451, 1206.10597pt x 341.275pt>
+
+LaTeX Warning: Reference `fig:Kc' on page 53 undefined on input line 1912.
+
+
+LaTeX Warning: Reference `fig:form_factors' on page 53 undefined on input line 
+1917.
+
+[53]
+Underfull \vbox (badness 7595) has occurred while \output is active []
+
+ [54]
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ≤ in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+
+LaTeX Warning: Citation `Ziegler' on page 55 undefined on input line 2006.
+
+[55]) [56] [57]
+\openout2 = `chap_03.aux'.
+
+ (./chap_03.tex
+Chapter 3.
+<figures/ripple/unit_cell.pdf, id=1500, 285.19225pt x 77.16515pt> [58
+
+
+
+]
+Overfull \hbox (3.57pt too wide) in paragraph at lines 61--68
+[]\OT1/cmr/m/n/12 The rip-ple phase has been de-tected in phos-phatidyl-choline
+s (PC) and phos-phatidyl-
+ []
+
+[59] [60] [61]
+<figures/ripple/ripple083and085.pdf, id=1557, 399.97633pt x 393.08005pt>
+[62]
+<figures/ripple/MMs/annealing_chamber_topview.png, id=1565, 450.68375pt x 338.2
+6375pt>
+<figures/ripple/MMs/annealing_chamber_sideview.png, id=1566, 412.54124pt x 309.
+155pt> [63] [64]
+<figures/ripple/MMs/laxs/beamx_lr.pdf, id=1583, 828.09375pt x 619.31375pt>
+<figures/ripple/MMs/laxs/beamz_lr.pdf, id=1584, 828.09375pt x 619.31375pt>
+[65] [66]
+<figures/ripple/MMs/waxs/geometric_broadening.pdf, id=1598, 346.99614pt x 288.5
+5307pt>
+<figures/ripple/MMs/waxs/beamx_hr.pdf, id=1599, 828.09375pt x 619.31375pt>
+<figures/ripple/MMs/waxs/beamz_hr.pdf, id=1600, 828.09375pt x 619.31375pt>
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
+ [67]
+[68] [69]
+<figures/ripple/MMs/transmission/geometric_broadening1.pdf, id=1620, 721.35574p
+t x 606.05351pt>
+<figures/ripple/MMs/transmission/geometric_broadening2.pdf, id=1621, 421.89822p
+t x 372.13658pt>
+<figures/ripple/MMs/transmission/geometric_broadening3.pdf, id=1622, 671.3015pt
+ x 411.39355pt>
+<figures/ripple/MMs/transmission/geometric_broadening4.pdf, id=1625, 368.99911p
+t x 312.55112pt> [70] [71] [72]
+<figures/ripple/MMs/laxs/olddopc045_labels.pdf, id=1646, 192.07597pt x 329.5074
+pt>
+<figures/ripple/MMs/laxs/olddopc044.pdf, id=1647, 178.77768pt x 306.92285pt>
+<figures/ripple/MMs/laxs/attenuator1.pdf, id=1648, 421.575pt x 316.18124pt>
+<figures/ripple/MMs/laxs/attenuator2.pdf, id=1649, 421.575pt x 316.18124pt>
+Overfull \hbox (0.29956pt too wide) in paragraph at lines 608--608
+[]\OT1/cmr/bx/n/14.4 Transmission Wide An-gle X-ray Scat-ter-ing Ex-per-i-ment 
+
+ []
+
+[73] [74]
+<figures/ripple/MMs/transmission/holder_side.pdf, id=1662, 410.72673pt x 436.57
+474pt>
+<figures/ripple/MMs/transmission/holder_top.pdf, id=1663, 340.2196pt x 271.2533
+9pt>
+<figures/ripple/MMs/transmission/sgeometry.pdf, id=1664, 423.63553pt x 244.7983
+9pt>
+<figures/ripple/MMs/transmission/sample_holder1.pdf, id=1665, 430.01219pt x 329
+.74802pt> [75] [76]
+<figures/ripple/analysis/laxs_setup.pdf, id=1680, 299.56062pt x 232.8678pt>
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+ [77]
+[78]
+<figures/ripple/analysis/ripple_sample_qspace.pdf, id=1701, 559.8684pt x 646.98
+807pt> [79] [80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+<figures/ripple/analysis/ewald_main.pdf, id=1729, 207.1629pt x 194.58234pt>
+<figures/ripple/analysis/ewald_side_h1_ver1.pdf, id=1730, 194.61418pt x 189.340
+15pt>
+<figures/ripple/analysis/ewald_side_h2_ver1.pdf, id=1731, 194.92247pt x 190.143
+46pt>
+Underfull \vbox (badness 3449) has occurred while \output is active []
+
+ [82]
+[83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
+<figures/ripple/analysis/absorption_LAXS.pdf, id=1760, 275.99847pt x 194.66805p
+t> [85] [86]
+<figures/ripple/analysis/abs_factor.pdf, id=1780, 770.88pt x 590.205pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+[88]
+<figures/ripple/analysis/abs_integrand.pdf, id=1804, 770.88pt x 590.205pt>
+<figures/ripple/analysis/mosaic_contour.pdf, id=1809, 430.35284pt x 286.20671pt
+> [89] [90] [91]
+<figures/ripple/analysis/mosaic_correction.pdf, id=1830, 828.09375pt x 619.3137
+5pt> [92] [93] [94] [95]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1296.
+
+[96] [97] [98] [99]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1453.
+
+[100]
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+ [101]
+[102] [103]
+Overfull \hbox (13.69783pt too wide) in paragraph at lines 1697--1739
+ [][] 
+ []
+
+<figures/ripple/model/FT.pdf, id=1940, 769.87625pt x 733.74126pt> [104]
+[105] [106] [107]
+<figures/ripple/LAXS/Fit5_2D_edp.pdf, id=1977, 361.35pt x 248.93pt>
+<figures/ripple/LAXS/major_diff_models.pdf, id=1982, 825.0825pt x 872.25874pt>
+<figures/ripple/LAXS/minor_diff_models.pdf, id=1985, 825.0825pt x 853.1875pt>
+<figures/ripple/LAXS/Fit2_2D_edp.pdf, id=1988, 361.35pt x 248.93pt>
+<figures/ripple/LAXS/major_phase_variation.pdf, id=1991, 827.09pt x 699.61375pt
+> [108] [109] [110] [111] [112]
+<figures/ripple/LAXS/minor_phase_variation.pdf, id=2015, 827.09pt x 714.67pt>
+[113] <figures/ripple/LAXS/Fit1_2D_edp.pdf, id=2021, 361.35pt x 248.93pt>
+<figures/ripple/LAXS/Fit3_2D_edp.pdf, id=2022, 361.35pt x 248.93pt>
+<figures/ripple/LAXS/Fit7_2D_edp.pdf, id=2023, 361.35pt x 248.93pt> [114]
+[115]
+<figures/ripple/nGIWAXS/fluid_036.pdf, id=2042, 358.13467pt x 332.24126pt>
+<figures/ripple/nGIWAXS/fluid_039.pdf, id=2043, 358.13467pt x 332.24126pt>
+<figures/ripple/nGIWAXS/fluid_036_ccd.pdf, id=2044, 358.13467pt x 332.24126pt>
+<figures/ripple/nGIWAXS/fluid_036_q.pdf, id=2045, 404.98914pt x 361.91388pt>
+<figures/ripple/nGIWAXS/fluid_qr.pdf, id=2046, 770.88pt x 605.26125pt>
+<figures/ripple/nGIWAXS/dmpc1_107.pdf, id=2051, 614.295pt x 794.97pt>
+<figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf, id=2052, 770.88pt
+ x 590.205pt> [116] [117] [118] [119]
+<figures/ripple/nGIWAXS/dmpc1_enlarge.pdf, id=2075, 614.295pt x 794.97pt>
+<figures/ripple/nGIWAXS/qrplots.pdf, id=2080, 829.0975pt x 1313.90875pt>
+<figures/ripple/nGIWAXS/dmpc1_046.pdf, id=2082, 399.4925pt x 316.18124pt>
+<figures/ripple/nGIWAXS/046_vs_052.pdf, id=2083, 399.4925pt x 316.18124pt>
+<figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf, id=2090, 826.08624pt x 680.542
+5pt>
+<figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf, id=2091, 827.09pt x 679.53876pt>
+
+<figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf, id=2092, 827.09pt x 674.52
+pt> [120] [121] [122] [123] [124]
+<figures/ripple/tWAXS/twaxs_gel_ccd.pdf, id=2126, 331.45137pt x 308.15143pt>
+<figures/ripple/tWAXS/twaxs_gel_q.pdf, id=2127, 385.74602pt x 310.74413pt>
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [125]
+<figures/ripple/tWAXS/twaxs_ripple.pdf, id=2137, 226.6407pt x 402.59877pt>
+<figures/ripple/tWAXS/twaxs_weak_qr.pdf, id=2138, 827.09pt x 708.6475pt>
+<figures/ripple/tWAXS/twaxs_gel_qz.pdf, id=2141, 827.09pt x 686.565pt>
+<figures/ripple/tWAXS/twaxs_strong_qz.pdf, id=2142, 826.08624pt x 703.62875pt>
+<figures/ripple/tWAXS/twaxs_weak_qz.pdf, id=2143, 827.09pt x 695.59875pt>
+<figures/ripple/tWAXS/twaxs_both_qz.pdf, id=2144, 826.08624pt x 697.60625pt>
+[126] [127] [128] [129]
+<figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf, id=2165, 407.121pt x 42
+3.181pt>
+<figures/ripple/discussion/major_edp.pdf, id=2166, 826.08624pt x 837.1275pt>
+[130] [131] [132]
+<figures/ripple/discussion/Kucerka_fluid_DMPC.pdf, id=2202, 353.32pt x 257.7629
+9pt>
+<figures/ripple/discussion/minor_edp.pdf, id=2203, 827.09pt x 639.38875pt>
+<figures/ripple/nGIWAXS/fluid_vs_ripple.pdf, id=2206, 827.09pt x 685.56125pt>
+<figures/ripple/discussion/Guler_interdigitated_DHPC.pdf, id=2207, 481.8pt x 48
+9.02701pt>
+<figures/ripple/discussion/deVries_waxs.pdf, id=2210, 345.29pt x 642.4pt>
+<figures/ripple/discussion/ripple_waxs.pdf, id=2211, 187.902pt x 401.5pt>
+[133] [134] [135] [136]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137])
+[138] [139
+
+
+
+]
+\openout2 = `appendix.aux'.
+
+ (./appendix.tex
+Appendix A.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf, id=2245, 771.88374pt x 577.
+15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf, id=2246, 771.88374pt x 57
+7.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1.pdf, id=2247, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1.pdf, id=2248, 77
+1.88374pt x 577.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pdf, id=2249, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf, id=2250, 77
+1.88374pt x 577.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf, id=2251, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf, id=2252, 77
+1.88374pt x 577.15625pt>
+
+LaTeX Warning: Float too large for page by 25.8063pt on input line 17.
+
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf, id=2253, 771.88374pt x 577.
+15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf, id=2254, 771.88374pt x 57
+7.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf, id=2255, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf, id=2256, 77
+1.88374pt x 577.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf, id=2257, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf, id=2258, 77
+1.88374pt x 577.15625pt>
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1.pdf, id=2259, 771.
+88374pt x 577.15625pt>
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1.pdf, id=2260, 77
+1.88374pt x 577.15625pt>
+
+LaTeX Warning: Float too large for page by 25.8063pt on input line 33.
+
+<figures/ripple/mosaic/stack.pdf, id=2262, 390.1645pt x 306.2436pt>
+<figures/ripple/mosaic/spherical_coordinates.pdf, id=2263, 88.08911pt x 110.481
+7pt> [140
+
+
+] [141] [142] [143]
+<figures/ripple/mosaic/mosaic_2D.pdf, id=2286, 255.83156pt x 143.54295pt>
+<figures/ripple/mosaic/mosaic_2Dqspace.pdf, id=2287, 133.12941pt x 186.09213pt>
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+ [144]
+[145]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146]
+<figures/ripple/mosaic/ring_setup.pdf, id=2323, 299.56062pt x 232.8678pt>
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+ [147]
+[148] <figures/ripple/mosaic/rock.pdf, id=2342, 193.27866pt x 130.77583pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149]
+[150] [151]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153]
+[154]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [155]
+[156] [157]
+<figures/ripple/unit_cell_waxs_side.pdf, id=2428, 113.60666pt x 53.35509pt>
+<figures/ripple/unit_cell_waxs_top.pdf, id=2429, 133.19023pt x 99.32768pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [158]
+[159]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [160]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [161])
+[162] (./thesis.bbl [163
+
+
+]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no º in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no º in font cmr12!
+ [164]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no º in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no † in font cmr12!
+ [165] [166] [167]
+Missing character: There is no – in font cmti12!
+Missing character: There is no • in font cmti12!
+
+Underfull \hbox (badness 1694) in paragraph at lines 311--315
+\OT1/cmr/m/it/12 BRANES US-ING DIF-FUSE -RAY SCAT-TER-ING: AP-PLI-CA-TION TO
+ []
+
+Missing character: There is no ƒ in font cmr12!
+Missing character: There is no ç in font cmr12!
+[168]
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+[][]$\OT1/cmtt/m/n/12 http : / / lcgapp . cern . ch / project / cls / work-[]pa
+ckages / mathlibs / minuit /
+ []
+
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+Missing character: There is no ƒ in font cmr12!
+Missing character: There is no ç in font cmr12!
+[169]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ã in font cmr12!
+Missing character: There is no Ö in font cmr12!
+ [170] [171] [172]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ≤ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [173] [174])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+ [175]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+ (./thesis.aux (./abstract.aux)
+(./acknowledgments.aux) (./chap_01.aux) (./chap_02.aux) (./chap_03.aux)
+(./appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 52D63936D2F56B76B5D5F5A2F5CEE560;4744.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+ ) 
+Here is how much of TeX's memory you used:
+ 11344 strings out of 493493
+ 185795 string characters out of 3143797
+ 352505 words of memory out of 3000000
+ 13561 multiletter control sequences out of 15000+200000
+ 24900 words of font info for 98 fonts, out of 3000000 for 9000
+ 958 hyphenation exceptions out of 8191
+ 46i,16n,76p,1080b,460s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1200.pfb>
+Output written on thesis.pdf (196 pages, 618382 bytes).
+PDF statistics:
+ 2756 PDF objects out of 2984 (max. 8388607)
+ 2331 compressed objects within 24 object streams
+ 649 named destinations out of 1000 (max. 500000)
+ 1282 words of extra memory for PDF output out of 10000 (max. 10000000)
+
