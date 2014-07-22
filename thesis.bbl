@@ -621,6 +621,9 @@ S.~A. Tristram-Nagle.
 \bibitem{ref:cxro}
 \url{http://henke.lbl.gov/optical\_constants}.
 
+\bibitem{ref:lmfit}
+\url{http://cars9.uchicago.edu/software/python/lmfit/}.
+
 \bibitem{ref:Wiener89}
 M.C. Wiener, R.M. Suter, and J.F. Nagle.
 \newblock Structure of the fully hydrated gel phase of

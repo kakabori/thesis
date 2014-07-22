@@ -13,45 +13,45 @@ Warning--I didn't find a database entry for "Duchardt07"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "Kucerka05"
 Warning--I didn't find a database entry for "Ziegler"
-You've used 114 entries,
+You've used 115 entries,
             1791 wiz_defined-function locations,
-            1210 strings with 26875 characters,
-and the built_in function-call counts, 29290 in all, are:
-= -- 2504
-> -- 1496
+            1212 strings with 26938 characters,
+and the built_in function-call counts, 29376 in all, are:
+= -- 2508
+> -- 1497
 < -- 0
-+ -- 540
++ -- 541
 - -- 426
 * -- 2562
-:= -- 4723
-add.period$ -- 336
-call.type$ -- 114
+:= -- 4728
+add.period$ -- 337
+call.type$ -- 115
 change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 114
-duplicate$ -- 1007
-empty$ -- 2771
+cite$ -- 115
+duplicate$ -- 1012
+empty$ -- 2789
 format.name$ -- 426
-if$ -- 6311
+if$ -- 6334
 int.to.chr$ -- 0
-int.to.str$ -- 114
+int.to.str$ -- 115
 missing$ -- 110
-newline$ -- 567
+newline$ -- 570
 num.names$ -- 110
-pop$ -- 151
+pop$ -- 160
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 381
+skip$ -- 387
 stack$ -- 0
 substring$ -- 2694
-swap$ -- 114
+swap$ -- 115
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 258
-width$ -- 117
-write$ -- 1235
+width$ -- 118
+write$ -- 1240
 (There were 4 warnings)

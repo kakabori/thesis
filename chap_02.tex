@@ -205,7 +205,7 @@ the density of air using $\rho_s-\rho_0=k(\tau_s-\tau_0)^2$ where $k$ is
 an instrumental ??? that depends on the atmospheric pressure. 
 
 The Tat peptide sequence used in X-ray experiements and MD simulations was 
-Y$_{47}$GRKKRRQRRR$_{57}$. Table~\ref{tb:aa} lists the chemical formulas and 
+Y$_{47}$GRKKRRQRRR$_{57}$. Table~\ref{tab:aa} lists the chemical formulas and 
 molecular weights of these amino acids for convenience. The molecular weight of 
 this sequence is 
 $181.2+75.1+146.1+2 \times 146.2+6\times 174.2-10\times 18=1560$.
@@ -235,7 +235,7 @@ samples.
     \hline
   \end{tabular}
   \caption{Some Amino Acids Data}
-  \label{tb:aa}
+  \label{tab:aa}
 \end{table}
 
 The Tat volume $\VTat$ was calculated from the measured average density of a 
@@ -713,7 +713,7 @@ to these calculated values.
     \hline
   \end{tabular}
   \caption{Number of electrons per lipid and volume per lipid.}
-  \label{tb:electron_volume}
+  \label{tab:electron_volume}
 \end{table}
 
 \begin{table}[htbp]
@@ -734,7 +734,7 @@ to these calculated values.
   $n^e_i$ is the number of electrons and
   $\rho_i$ is the average electron density.
   }
-  \label{tb:component}
+  \label{tab:component}
 \end{table}
 
 \begin{table}[htbp]
@@ -757,8 +757,8 @@ to these calculated values.
     \hline
   \end{tabular}
   \caption{Tat basic structural parameters. The notations are the same
-  as in Table~\ref{tb:component}. $\xTat$ = Tat/(Tat+Lipid).}
-  \label{tb:Tat_basic_params}
+  as in Table~\ref{tab:component}. $\xTat$ = Tat/(Tat+Lipid).}
+  \label{tab:Tat_basic_params}
 \end{table}
 
 %\begin{table}[htbp]
@@ -781,7 +781,7 @@ to these calculated values.
 %  \end{tabular}
 %  \caption{Volumetric constraints. A and B refer to two different models 
 %  described in the text.}
-%  \label{tb:model_constraints}
+%  \label{tab:model_constraints}
 %\end{table}
 %------------------------------------------------------------------------------
 
@@ -1129,7 +1129,7 @@ $q_z$, indicating a thinning of the membranes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Volume results}\label{sec:volume_results}
-Experimental and simulated volumes are given in Table~\ref{tb:volumes}. The simulated volume was
+Experimental and simulated volumes are given in Table~\ref{tab:volumes}. The simulated volume was
 obtained using the volume app in the SIMtoEXP program. The experimental Tat volume was
 calculated from the measured density assuming that the lipid volume was the same as with no
 Tat. In general, there may be an interaction volume between the peptide and the lipid membrane
@@ -1139,7 +1139,7 @@ calculating includes all the interaction volume in $\VTat$. Comparison of $\VTat
 result for 5:1 Lipid:Tat suggests that the interaction volume may be negative, consistent with a
 net attractive interaction with lipid. Understandably, values of $\VTat$ were unreliable for small
 mole ratios of Tat:Lipid. Therefore we used simple additivity for those mimics not shown in
-Table~\ref{tb:volumes} for the volumes used in the electron density profile modeling. 
+Table~\ref{tab:volumes} for the volumes used in the electron density profile modeling. 
 All volumes obtained from the Gromacs MD
 simulations were somewhat smaller than the measured volumes, but it supports the Tat volume
 being closer to 1877 \AA$^3$ than the outlying values obtained experimentally at small Tat
@@ -1157,7 +1157,7 @@ gave 1888 \AA$^3$.
 %    $m_T$ & 3.73 mg \\ 
 %  \end{tabular}
 %  \caption{Measured Quantities in }
-%  \label{tb:values}
+%  \label{tab:values}
 %\end{table}
 
 \begin{table}[htbp]
@@ -1185,7 +1185,7 @@ gave 1888 \AA$^3$.
     \hline
   \end{tabular}
   \caption{Volume results at 37 \textcelsius}
-  \label{tb:volumes}
+  \label{tab:volumes}
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1209,12 +1209,12 @@ did not get penalized.
 
 Figure~\ref{fig:DOPC_Tat_XFF1} shows the best fits and corresponding 
 electron density profiles for DOPC with Tat, and
-Table~\ref{tb:DOPC_fit_results} shows the best fit parameters for these fits.
+Table~\ref{tab:DOPC_fit_results} shows the best fit parameters for these fits.
 In most cases, a better $\chi^2$ was obtained for smaller $\sigmaTat$,
 consistent with its tendency to become too small to be physical as noted 
 in the previous paragraph. The widths of the headgroups $\sigmaPC$ and
 $\sigmaCG$ decreased from those of pure DOPC when Tat was added.  
-It is also seen from Table~\ref{tb:DOPC_fit_results} 
+It is also seen from Table~\ref{tab:DOPC_fit_results} 
 that the area per lipid $\AL$ increased as the Tat concentration was
 increased. An increase in $\AL$ implies thinning of a bilayer because
 a lipid bilayer is an incompressible fluid membrane. 
@@ -1241,7 +1241,7 @@ Another observed trend was that $\zTat$ increased as $\xTat$ was increased.
   \end{tabular}
   \caption{Fitting Results for DOPC membranes for the THG (Tat in headgroup) model. $\zPC-\zCG = 3.1$ \AA\
   and $\zCG-\zHC = 1.3$ \AA\ in all fits.}
-  \label{tb:DOPC_fit_results}
+  \label{tab:DOPC_fit_results}
 \end{table}
 
 \begin{figure}[htbp]
@@ -1346,8 +1346,8 @@ which implies bilayer thinning.
 \end{figure}
 
 Fitting results for DOPC:DOPE (3:1) and DOPC:DOPE (1:1) are summarized 
-in Table~\ref{tb:DOPCDOPE3to1_fit_results} and 
-Table~\ref{tb:DOPCDOPE1to1_fit_results}, respectively,
+in Table~\ref{tab:DOPCDOPE3to1_fit_results} and 
+Table~\ref{tab:DOPCDOPE1to1_fit_results}, respectively,
 and the best fits and corresponding electron density profiles are shown in 
 Fig.~\ref{fig:DOPCDOPE3to1_Tat_XFF1} and Fig.~\ref{fig:DOPCDOPE1to1_Tat_XFF1}. 
 Figure~\ref{fig:DOPCDOPE_Tat_total_EDP} plots total electron density profiles,
@@ -1375,7 +1375,7 @@ increased, similarly to DOPC/Tat systems shown in Fig.~\ref{fig:DOPC_Tat_total_E
   \end{tabular}
   \caption{Fitting Results for DOPC:DOPE (3:1) membranes for the THG model. $\zPC-\zCG = 3.1$ \AA\
   and $\zCG-\zHC = 1.3$ \AA\ in all fits.}
-  \label{tb:DOPCDOPE3to1_fit_results}
+  \label{tab:DOPCDOPE3to1_fit_results}
 \end{table}
 
 \begin{table}[htbp]
@@ -1399,7 +1399,7 @@ increased, similarly to DOPC/Tat systems shown in Fig.~\ref{fig:DOPC_Tat_total_E
   \end{tabular}
   \caption{(Numbers are wrong) Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. $\Delta z_1 = \zPC-\zCG$
   and $\Delta z_2 = \zCG-\zHC$.}
-  \label{tb:DOPCDOPE1to1_fit_results}
+  \label{tab:DOPCDOPE1to1_fit_results}
 \end{table}
 
 \begin{figure}[htbp]
@@ -1518,7 +1518,7 @@ bilayers. The simulation results are found in Sec.~\ref{sec:MD_results}.
   \label{fig:DOPC_Tat_X2}
 \end{figure}
 
-As seen from Table~\ref{tb:DOPC_fit_results}, 
+As seen from Table~\ref{tab:DOPC_fit_results}, 
 the widths of the headgroup components
 became smaller as Tat concentration increased. This
 decrease seemed somewhat unreasonable; if Tat causes a bilayer 
@@ -1528,7 +1528,7 @@ wider. Therefore, we also fitted a model with lower bounds
 on these headgroup widths. Namely, the minimum values of the widths of
 the headgroup components, PC and CG, were constrained to be greater than
 or equal to the corresponding values for pure bilayers without Tat. 
-Table~\ref{tb:bound_DOPC} shows results from fitting the data with
+Table~\ref{tab:bound_DOPC} shows results from fitting the data with
 lower bounds on the widths of the headgroup components for DOPC/Tat systems.
 In all cases, both headgroup widths, $\sigmaPC$ and $\sigmaCG$, resulted 
 in the same value as the value of their corresponding lower bounds. 
@@ -1565,7 +1565,7 @@ we now turn to MD simulations.
   \end{tabular}
   \caption{Fitting Results of the bound THG model for DOPC membranes. 
   $\zPC-\zCG$ = 3.1 and $\zCG-\zHC$ = 1.3 in all fits.}
-  \label{tb:bound_DOPC}
+  \label{tab:bound_DOPC}
 \end{table}
 
 \begin{figure}[htbp]
@@ -1756,7 +1756,7 @@ Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
   \end{tabular}
   \caption{Comparison of the simulated form factors to the 
   experimental form factors.}
-  \label{tb:MD_sim-exp}
+  \label{tab:MD_sim-exp}
 \end{table}
 
 \begin{table}
@@ -1778,7 +1778,7 @@ Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
   $x$, thickness away from Tat; $\Delta t$, $\langle\DPP^\textrm{DOPC}\rangle-\DPP$; $\HTat$, Tat 
   height; $\RTat$, radius of Tat cylinder; $R_2$, radius of the calculated
   in-plane Tat-perturbed region; $R_3$, effective radius of the simulation box.}
-  \label{tb:MD_summary}
+  \label{tab:MD_summary}
 \end{table}
 
 \begin{table}
@@ -1789,8 +1789,8 @@ Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
     0.030 & 75.2 & 17.3 & 34.8 & 31.9 & 4.4 & 7.7 & 8.8 & NA & 13.8 & 15.4
   \end{tabular}
   \caption{Summary of weighted average results. The caption is the same as
-  Table~\ref{tb:MD_summary}.}
-  \label{tb:MD_summary_avg}
+  Table~\ref{tab:MD_summary}.}
+  \label{tab:MD_summary_avg}
 \end{table}
 
 \begin{figure}[htbp]
