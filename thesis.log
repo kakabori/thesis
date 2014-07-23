@@ -1,20 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.5.15)  22 JUL 2014 00:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.8.2)  22 JUL 2014 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
-hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
- czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
-n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
-reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
- sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
-n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
-speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
-lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
-celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
@@ -772,11 +763,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./chap_01.tex
 Chapter 1.
-<figures/ripple/smith_phase_diagram.pdf, id=937, 432.01399pt x 289.88298pt>
-<figures/ripple/various_phases.pdf, id=940, 1045.09097pt x 294.81645pt>
-<figures/ripple/gel_phase_packing.pdf, id=941, 775.56487pt x 219.44844pt>pdfTeX
- warning (ext4): destination with the same identifier (name{page.1}) has been a
-lready used, duplicate ignored
+<figures/ripple/smith_phase_diagram.pdf, id=860, 432.01399pt x 289.88298pt>
+File: figures/ripple/smith_phase_diagram.pdf Graphic file (type pdf)
+
+<use figures/ripple/smith_phase_diagram.pdf>
+Package pdftex.def Info: figures/ripple/smith_phase_diagram.pdf used on input l
+ine 30.
+(pdftex.def)             Requested size: 390.25534pt x 261.8698pt.
+
+<figures/ripple/various_phases.pdf, id=863, 1045.09097pt x 294.81645pt>
+File: figures/ripple/various_phases.pdf Graphic file (type pdf)
+
+<use figures/ripple/various_phases.pdf>
+Package pdftex.def Info: figures/ripple/various_phases.pdf used on input line 3
+9.
+(pdftex.def)             Requested size: 390.25534pt x 110.08804pt.
+
+<figures/ripple/gel_phase_packing.pdf, id=864, 775.56487pt x 219.44844pt>
+File: figures/ripple/gel_phase_packing.pdf Graphic file (type pdf)
+
+<use figures/ripple/gel_phase_packing.pdf>
+Package pdftex.def Info: figures/ripple/gel_phase_packing.pdf used on input lin
+e 48.
+(pdftex.def)             Requested size: 390.25534pt x 110.42378pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.78 
@@ -789,269 +800,43 @@ l.78
 <to be read again> 
                    \relax 
 l.78 
-      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.3}) has been already used, duplicate ignored
+      [2 <./figures/ripple/smith_phase_diagram.pdf> <./figures/ripple/various_p
+hases.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/various_phases.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.78 
-      [3]
-<figures/ripple/ripple_cartoon.pdf, id=963, 381.0667pt x 139.26024pt>)pdfTeX wa
-rning (ext4): destination with the same identifier (name{page.4}) has been alre
-ady used, duplicate ignored
+      [3 <./figures/ripple/gel_phase_packing.pdf>]
+<figures/ripple/ripple_cartoon.pdf, id=906, 381.0667pt x 139.26024pt>
+File: figures/ripple/ripple_cartoon.pdf Graphic file (type pdf)
+
+<use figures/ripple/ripple_cartoon.pdf>
+Package pdftex.def Info: figures/ripple/ripple_cartoon.pdf used on input line 8
+1.
+(pdftex.def)             Requested size: 303.53267pt x 110.92596pt.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.103 \include{chap_01}
-                        [4]
-\openout2 = `chap_02.aux'.
-
- (./chap_02.tex
-Chapter 2.
-
-LaTeX Warning: Citation `Duchardt07' on page 5 undefined on input line 46.
-
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-Underfull \vbox (badness 2443) has occurred while \output is active []
-
- [5
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-Overfull \hbox (0.39786pt too wide) in paragraph at lines 131--150
-\OT1/cmr/m/n/12 (Y$[]$GRKKRRQRRR$[]$) across DOPC at var-i-ous lipid:peptide mo
--lar ra-tios [[]45[]]. Their
- []
-
-
-Underfull \vbox (badness 7595) has occurred while \output is active []
-
- [7]
-[8] [9] [10]
-
-LaTeX Warning: Citation `Kucerka05' on page 11 undefined on input line 274.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-<figures/Tat/figure1.pdf, id=1073, 430.40799pt x 654.445pt> [12]
-<figures/Tat/MMs/stack.pdf, id=1081, 387.50024pt x 262.51971pt> [13] [14]
-Overfull \hbox (5.2501pt too wide) in paragraph at lines 543--551
-[]\OT1/cmr/m/n/12 Parsing of DOPC into lipid com-po-nents is shown in Fig. []2.
-4[]. The phos-phate/choline
- []
-
-<figures/Tat/MMs/dopc_schematic.pdf, id=1099, 570.74644pt x 556.81714pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf, id=1101, 770.88pt x 587.19
-376pt> [15] [16] [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20] [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-[23]
-Overfull \hbox (19.57385pt too wide) in paragraph at lines 889--889
-[]\OT1/cmr/bx/n/17.28 Analysis of Molec-u-lar Dy-nam-ics Sim-u-la-tion Data 
- []
-
-[24] <./figures/Tat/MMs/cylinder_model.pdf, id=1208, 507.3718pt x 255.63808pt>
-
-LaTeX Warning: Reference `sec:sim_results' on page 25 undefined on input line 9
-69.
-
-[25] [26]
-<./figures/Tat/MMs/linear_model.pdf, id=1220, 555.66415pt x 317.4181pt>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Missing character: There is no ‚ in font cmr8!
-Missing character: There is no à in font cmr8!
-Missing character: There is no í in font cmr8!
-
-<figures/Tat/figure2.pdf, id=1233, 999.735pt x 766.06201pt>
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
- [28] [29]
-<figures/Tat/figure3a.pdf, id=1248, 448.87701pt x 387.046pt>
-<figures/Tat/figure3b.png, id=1249, 257.2812pt x 231.7458pt>
-<figures/Tat/figure3c.png, id=1251, 307.8702pt x 229.3368pt>
-<figures/Tat/figure3d.png, id=1252, 107.4414pt x 226.446pt>
-<figures/Tat/figure3e.png, id=1253, 99.7326pt x 234.1548pt> [30] [31]
-<figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf, id=1273, 771.88374pt x 577.15625pt>
-<figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf, id=1274, 827.09pt x 578.16pt>
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf, id=1275, 771.88374pt 
-x 577.15625pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf, id=1276, 827.09pt x 5
-80.1675pt>
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf, id=1277, 771.88374pt 
-x 577.15625pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf, id=1278, 827.09pt x 5
-82.175pt>
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf, id=1279, 771.88374pt 
-x 577.15625pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf, id=1280, 827.09pt x 5
-82.175pt>
-
-LaTeX Warning: Float too large for page by 11.3063pt on input line 1261.
-
-[32] [33]
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf, id=1293, 827.09pt x 651.43
-375pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf, id=1294, 827.09pt x 651.43
-375pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf, id=1295, 827.09pt x 647.41
-875pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf, id=1299, 827.09pt x 630.35
-5pt>
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf, id=1300, 826.08624pt 
-x 608.2725pt>
-Underfull \vbox (badness 2253) has occurred while \output is active []
-
- [34]
-[35] [36]
-<figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf, id=1321, 827.09pt 
-x 637.38126pt>
-<figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf, id=1322, 827.09pt 
-x 637.38126pt>
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [37] [38]
-<figures/Tat/SDP_Results/DHH.pdf, id=1337, 827.09pt x 681.54625pt>
-<figures/Tat/SDP_Results/DPP.pdf, id=1338, 827.09pt x 681.54625pt>
-<figures/Tat/SDP_Results/DPP2.pdf, id=1339, 827.09pt x 682.55pt>
-<figures/Tat/SDP_Results/2zTat.pdf, id=1340, 827.09pt x 682.55pt>
-<figures/Tat/SDP_Results/AL.pdf, id=1343, 827.09pt x 696.6025pt> [39] [40]
-<figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf, id=1356, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf, id=1357, 828.093
-75pt x 662.475pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf, id=1358, 828.093
-75pt x 652.4375pt>
-<figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf, id=1359, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf, id=1360, 828.093
-75pt x 668.4975pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf, id=1361, 828.093
-75pt x 678.535pt>
-<figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf, id=1362, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf, id=1363, 828.093
-75pt x 652.4375pt>
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf, id=1364, 828.093
-75pt x 662.475pt>
-Underfull \hbox (badness 1163) in paragraph at lines 1517--1517
-[]\OT1/cmr/m/n/12 Figure 2.18: |$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a f
-unc-tion of $\OML/cmm/m/it/12 z[]$ \OT1/cmr/m/n/12 for DOPC, DOPC:DOPE (3:1), a
-nd
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-<figures/Tat/SDP_Results/zTat_bound.pdf, id=1372, 827.09pt x 686.565pt>
-[42] [43]
-<figures/Tat/MD_Results/xff/dopc_sim-exp.pdf, id=1390, 828.09375pt x 619.31375p
-t>
-<figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf, id=1391, 828.09375pt x 633.36626
-pt>
-<figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf, id=1392, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf, id=1393, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf, id=1394, 828.09375pt x 6
-19.31375pt>
-<figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf, id=1395, 828.09375pt x 6
-19.31375pt>
-Overfull \hbox (5.9122pt too wide) in paragraph at lines 1764--1780
- [][] 
- []
-
-
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf, id=1398, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf, id=1399, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf, id=1400, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf, id=1401, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf, id=1402, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf, id=1403, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf, id=1404, 828.093
-75pt x 633.36626pt>
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf, id=1405, 828.093
-75pt x 633.36626pt>
-<figures/Tat/figure4.pdf, id=1408, 764.45598pt x 665.68701pt>
-Underfull \hbox (badness 1622) in paragraph at lines 1844--1844
-[]\OT1/cmr/m/n/12 Figure 2.25: |MD sim-u-lated form fac-tors (red solid lines i
-n A and C) of
- []
-
-[44] [45] [46] [47] [48] [49] [50] [51] [52]
-<figures/Tat/figure9.pdf, id=1451, 1206.10597pt x 341.275pt>
-
-LaTeX Warning: Reference `fig:Kc' on page 53 undefined on input line 1912.
-
-
-LaTeX Warning: Reference `fig:form_factors' on page 53 undefined on input line 
-1917.
-
-[53]
-Underfull \vbox (badness 7595) has occurred while \output is active []
-
- [54]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no ≤ in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no ± in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-
-LaTeX Warning: Citation `Ziegler' on page 55 undefined on input line 2006.
-
-[55]) [56] [57]
+                        [4 <./figures/ripple/ripple_cartoon.pdf>]
 \openout2 = `chap_03.aux'.
 
- (./chap_03.tex
+
+(./chap_03.tex
 Chapter 3.
-<figures/ripple/unit_cell.pdf, id=1500, 285.19225pt x 77.16515pt> [58
+<figures/ripple/unit_cell.pdf, id=922, 285.19225pt x 77.16515pt>
+File: figures/ripple/unit_cell.pdf Graphic file (type pdf)
+
+<use figures/ripple/unit_cell.pdf>
+Package pdftex.def Info: figures/ripple/unit_cell.pdf used on input line 36.
+(pdftex.def)             Requested size: 346.89731pt x 93.86108pt.
+ [58
+
 
 
 
@@ -1061,179 +846,747 @@ Overfull \hbox (3.57pt too wide) in paragraph at lines 61--68
 s (PC) and phos-phatidyl-
  []
 
-[59] [60] [61]
-<figures/ripple/ripple083and085.pdf, id=1557, 399.97633pt x 393.08005pt>
-[62]
-<figures/ripple/MMs/annealing_chamber_topview.png, id=1565, 450.68375pt x 338.2
+[59 <./figures/ripple/unit_cell.pdf>] [60] [61]
+<figures/ripple/ripple083and085.pdf, id=986, 399.97633pt x 393.08005pt>
+File: figures/ripple/ripple083and085.pdf Graphic file (type pdf)
+
+<use figures/ripple/ripple083and085.pdf>
+Package pdftex.def Info: figures/ripple/ripple083and085.pdf used on input line 
+188.
+(pdftex.def)             Requested size: 411.93767pt x 404.84099pt.
+ [62 <./figures/ripple/ripple083and085.pdf>]
+<figures/ripple/MMs/annealing_chamber_topview.png, id=1033, 450.68375pt x 338.2
 6375pt>
-<figures/ripple/MMs/annealing_chamber_sideview.png, id=1566, 412.54124pt x 309.
-155pt> [63] [64]
-<figures/ripple/MMs/laxs/beamx_lr.pdf, id=1583, 828.09375pt x 619.31375pt>
-<figures/ripple/MMs/laxs/beamz_lr.pdf, id=1584, 828.09375pt x 619.31375pt>
-[65] [66]
-<figures/ripple/MMs/waxs/geometric_broadening.pdf, id=1598, 346.99614pt x 288.5
+File: figures/ripple/MMs/annealing_chamber_topview.png Graphic file (type png)
+ <use figures/ripple/MMs/annealing_chamber_topview.png>
+Package pdftex.def Info: figures/ripple/MMs/annealing_chamber_topview.png used 
+on input line 235.
+(pdftex.def)             Requested size: 173.44534pt x 130.1829pt.
+
+<figures/ripple/MMs/annealing_chamber_sideview.png, id=1034, 412.54124pt x 309.
+155pt>
+File: figures/ripple/MMs/annealing_chamber_sideview.png Graphic file (type png)
+
+ <use figures/ripple/MMs/annealing_chamber_sideview.png>
+Package pdftex.def Info: figures/ripple/MMs/annealing_chamber_sideview.png used
+ on input line 237.
+(pdftex.def)             Requested size: 173.44534pt x 129.981pt.
+ [63 <./figures/ripple/MMs/annealing_chamber_topview.png> <./figures/ripple/MMs
+/annealing_chamber_sideview.png>] [64]
+<figures/ripple/MMs/laxs/beamx_lr.pdf, id=1053, 828.09375pt x 619.31375pt>
+File: figures/ripple/MMs/laxs/beamx_lr.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/laxs/beamx_lr.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/beamx_lr.pdf used on input lin
+e 349.
+(pdftex.def)             Requested size: 303.53267pt x 227.0068pt.
+
+<figures/ripple/MMs/laxs/beamz_lr.pdf, id=1054, 828.09375pt x 619.31375pt>
+File: figures/ripple/MMs/laxs/beamz_lr.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/laxs/beamz_lr.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/beamz_lr.pdf used on input lin
+e 361.
+(pdftex.def)             Requested size: 303.53267pt x 227.0068pt.
+ [65] [66 <./figures/ripple/MMs/laxs/beamx_lr.pdf> <./figures/ripple/MMs/laxs/b
+eamz_lr.pdf>]
+<figures/ripple/MMs/waxs/geometric_broadening.pdf, id=1088, 346.99614pt x 288.5
 5307pt>
-<figures/ripple/MMs/waxs/beamx_hr.pdf, id=1599, 828.09375pt x 619.31375pt>
-<figures/ripple/MMs/waxs/beamz_hr.pdf, id=1600, 828.09375pt x 619.31375pt>
+File: figures/ripple/MMs/waxs/geometric_broadening.pdf Graphic file (type pdf)
+ <use figures/ripple/MMs/waxs/geometric_broadening.pdf>
+Package pdftex.def Info: figures/ripple/MMs/waxs/geometric_broadening.pdf used 
+on input line 404.
+(pdftex.def)             Requested size: 216.81pt x 180.29678pt.
+
+<figures/ripple/MMs/waxs/beamx_hr.pdf, id=1089, 828.09375pt x 619.31375pt>
+File: figures/ripple/MMs/waxs/beamx_hr.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/waxs/beamx_hr.pdf>
+Package pdftex.def Info: figures/ripple/MMs/waxs/beamx_hr.pdf used on input lin
+e 416.
+(pdftex.def)             Requested size: 303.53267pt x 227.0068pt.
+
+<figures/ripple/MMs/waxs/beamz_hr.pdf, id=1090, 828.09375pt x 619.31375pt>
+File: figures/ripple/MMs/waxs/beamz_hr.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/waxs/beamz_hr.pdf>
+Package pdftex.def Info: figures/ripple/MMs/waxs/beamz_hr.pdf used on input lin
+e 427.
+(pdftex.def)             Requested size: 303.53267pt x 227.0068pt.
+
 Underfull \vbox (badness 1708) has occurred while \output is active []
 
  [67]
-[68] [69]
-<figures/ripple/MMs/transmission/geometric_broadening1.pdf, id=1620, 721.35574p
+[68 <./figures/ripple/MMs/waxs/geometric_broadening.pdf> <./figures/ripple/MMs/
+waxs/beamx_hr.pdf>] [69 <./figures/ripple/MMs/waxs/beamz_hr.pdf>]
+<figures/ripple/MMs/transmission/geometric_broadening1.pdf, id=1134, 721.35574p
 t x 606.05351pt>
-<figures/ripple/MMs/transmission/geometric_broadening2.pdf, id=1621, 421.89822p
+File: figures/ripple/MMs/transmission/geometric_broadening1.pdf Graphic file (t
+ype pdf)
+
+<use figures/ripple/MMs/transmission/geometric_broadening1.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/geometric_broadening1.
+pdf used on input line 465.
+(pdftex.def)             Requested size: 216.81pt x 182.15036pt.
+
+<figures/ripple/MMs/transmission/geometric_broadening2.pdf, id=1135, 421.89822p
 t x 372.13658pt>
-<figures/ripple/MMs/transmission/geometric_broadening3.pdf, id=1622, 671.3015pt
+File: figures/ripple/MMs/transmission/geometric_broadening2.pdf Graphic file (t
+ype pdf)
+
+<use figures/ripple/MMs/transmission/geometric_broadening2.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/geometric_broadening2.
+pdf used on input line 476.
+(pdftex.def)             Requested size: 195.12767pt x 172.11047pt.
+
+<figures/ripple/MMs/transmission/geometric_broadening3.pdf, id=1136, 671.3015pt
  x 411.39355pt>
-<figures/ripple/MMs/transmission/geometric_broadening4.pdf, id=1625, 368.99911p
-t x 312.55112pt> [70] [71] [72]
-<figures/ripple/MMs/laxs/olddopc045_labels.pdf, id=1646, 192.07597pt x 329.5074
+File: figures/ripple/MMs/transmission/geometric_broadening3.pdf Graphic file (t
+ype pdf)
+
+<use figures/ripple/MMs/transmission/geometric_broadening3.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/geometric_broadening3.
+pdf used on input line 477.
+(pdftex.def)             Requested size: 195.12767pt x 119.57727pt.
+
+<figures/ripple/MMs/transmission/geometric_broadening4.pdf, id=1139, 368.99911p
+t x 312.55112pt>
+File: figures/ripple/MMs/transmission/geometric_broadening4.pdf Graphic file (t
+ype pdf)
+
+<use figures/ripple/MMs/transmission/geometric_broadening4.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/geometric_broadening4.
+pdf used on input line 492.
+(pdftex.def)             Requested size: 130.08731pt x 110.19096pt.
+ [70 <./figures/ripple/MMs/transmission/geometric_broadening1.pdf>] [71 <./figu
+res/ripple/MMs/transmission/geometric_broadening2.pdf> <./figures/ripple/MMs/tr
+ansmission/geometric_broadening3.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/MMs/transmission/geometric_broa
+dening3.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./figures/ripple/MMs/transmission/geometric_broadening4.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/MMs/transmission/geometric_broa
+dening4.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] [72]
+<figures/ripple/MMs/laxs/olddopc045_labels.pdf, id=1167, 192.07597pt x 329.5074
 pt>
-<figures/ripple/MMs/laxs/olddopc044.pdf, id=1647, 178.77768pt x 306.92285pt>
-<figures/ripple/MMs/laxs/attenuator1.pdf, id=1648, 421.575pt x 316.18124pt>
-<figures/ripple/MMs/laxs/attenuator2.pdf, id=1649, 421.575pt x 316.18124pt>
+File: figures/ripple/MMs/laxs/olddopc045_labels.pdf Graphic file (type pdf)
+ <use figures/ripple/MMs/laxs/olddopc045_labels.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/olddopc045_labels.pdf used on 
+input line 571.
+(pdftex.def)             Requested size: 151.76964pt x 260.37837pt.
+
+<figures/ripple/MMs/laxs/olddopc044.pdf, id=1168, 178.77768pt x 306.92285pt>
+File: figures/ripple/MMs/laxs/olddopc044.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/laxs/olddopc044.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/olddopc044.pdf used on input l
+ine 572.
+(pdftex.def)             Requested size: 151.76964pt x 260.57187pt.
+
+<figures/ripple/MMs/laxs/attenuator1.pdf, id=1169, 421.575pt x 316.18124pt>
+File: figures/ripple/MMs/laxs/attenuator1.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/laxs/attenuator1.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/attenuator1.pdf used on input 
+line 573.
+(pdftex.def)             Requested size: 195.12767pt x 146.34732pt.
+
+<figures/ripple/MMs/laxs/attenuator2.pdf, id=1170, 421.575pt x 316.18124pt>
+File: figures/ripple/MMs/laxs/attenuator2.pdf Graphic file (type pdf)
+
+<use figures/ripple/MMs/laxs/attenuator2.pdf>
+Package pdftex.def Info: figures/ripple/MMs/laxs/attenuator2.pdf used on input 
+line 574.
+(pdftex.def)             Requested size: 195.12767pt x 146.34732pt.
+
 Overfull \hbox (0.29956pt too wide) in paragraph at lines 608--608
 []\OT1/cmr/bx/n/14.4 Transmission Wide An-gle X-ray Scat-ter-ing Ex-per-i-ment 
 
  []
 
-[73] [74]
-<figures/ripple/MMs/transmission/holder_side.pdf, id=1662, 410.72673pt x 436.57
+[73] [74 <./figures/ripple/MMs/laxs/olddopc045_labels.pdf> <./figures/ripple/MM
+s/laxs/olddopc044.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/MMs/laxs/olddopc044.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+> <./figures/ripple/MMs/laxs/attenuator1.pdf> <./figures/ripple/MMs/laxs/attenu
+ator2.pdf>]
+<figures/ripple/MMs/transmission/holder_side.pdf, id=1222, 410.72673pt x 436.57
 474pt>
-<figures/ripple/MMs/transmission/holder_top.pdf, id=1663, 340.2196pt x 271.2533
+File: figures/ripple/MMs/transmission/holder_side.pdf Graphic file (type pdf)
+ <use figures/ripple/MMs/transmission/holder_side.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/holder_side.pdf used o
+n input line 654.
+(pdftex.def)             Requested size: 238.49231pt x 253.49997pt.
+
+<figures/ripple/MMs/transmission/holder_top.pdf, id=1223, 340.2196pt x 271.2533
 9pt>
-<figures/ripple/MMs/transmission/sgeometry.pdf, id=1664, 423.63553pt x 244.7983
+File: figures/ripple/MMs/transmission/holder_top.pdf Graphic file (type pdf)
+ <use figures/ripple/MMs/transmission/holder_top.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/holder_top.pdf used on
+ input line 655.
+(pdftex.def)             Requested size: 151.76964pt x 121.00331pt.
+
+<figures/ripple/MMs/transmission/sgeometry.pdf, id=1224, 423.63553pt x 244.7983
 9pt>
-<figures/ripple/MMs/transmission/sample_holder1.pdf, id=1665, 430.01219pt x 329
-.74802pt> [75] [76]
-<figures/ripple/analysis/laxs_setup.pdf, id=1680, 299.56062pt x 232.8678pt>
-Underfull \vbox (badness 1383) has occurred while \output is active []
+File: figures/ripple/MMs/transmission/sgeometry.pdf Graphic file (type pdf)
+ <use figures/ripple/MMs/transmission/sgeometry.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/sgeometry.pdf used on 
+input line 665.
+(pdftex.def)             Requested size: 346.89731pt x 200.45955pt.
+
+<figures/ripple/MMs/transmission/sample_holder1.pdf, id=1225, 430.01219pt x 329
+.74802pt>
+File: figures/ripple/MMs/transmission/sample_holder1.pdf Graphic file (type pdf
+)
+ <use figures/ripple/MMs/transmission/sample_holder1.pdf>
+Package pdftex.def Info: figures/ripple/MMs/transmission/sample_holder1.pdf use
+d on input line 678.
+(pdftex.def)             Requested size: 195.12767pt x 149.63304pt.
+ [75 <./figures/ripple/MMs/transmission/holder_side.pdf> <./figures/ripple/MMs/
+transmission/holder_top.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/MMs/transmission/holder_top.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>] [76 <./figures/ripple/MMs/transmission/sgeometry.pdf> <./figures/ripple/MMs/
+transmission/sample_holder1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/MMs/transmission/sample_holder1
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
-[78]
-<figures/ripple/analysis/ripple_sample_qspace.pdf, id=1701, 559.8684pt x 646.98
-807pt> [79] [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figures/ripple/analysis/laxs_setup.pdf, id=1288, 299.56062pt x 232.8678pt>
+File: figures/ripple/analysis/laxs_setup.pdf Graphic file (type pdf)
 
- [81]
-<figures/ripple/analysis/ewald_main.pdf, id=1729, 207.1629pt x 194.58234pt>
-<figures/ripple/analysis/ewald_side_h1_ver1.pdf, id=1730, 194.61418pt x 189.340
+<use figures/ripple/analysis/laxs_setup.pdf>
+Package pdftex.def Info: figures/ripple/analysis/laxs_setup.pdf used on input l
+ine 765.
+(pdftex.def)             Requested size: 346.89731pt x 269.68976pt.
+ [78 <./figures/ripple/analysis/laxs_setup.pdf>] [79]
+<figures/ripple/analysis/ripple_sample_qspace.pdf, id=1311, 559.8684pt x 646.98
+807pt>
+File: figures/ripple/analysis/ripple_sample_qspace.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/ripple_sample_qspace.pdf>
+Package pdftex.def Info: figures/ripple/analysis/ripple_sample_qspace.pdf used 
+on input line 829.
+(pdftex.def)             Requested size: 346.89731pt x 400.89153pt.
+ [80] [81 <./figures/ripple/analysis/ripple_sample_qspace.pdf>]
+<figures/ripple/analysis/ewald_main.pdf, id=1397, 207.1629pt x 194.58234pt>
+File: figures/ripple/analysis/ewald_main.pdf Graphic file (type pdf)
+
+<use figures/ripple/analysis/ewald_main.pdf>
+Package pdftex.def Info: figures/ripple/analysis/ewald_main.pdf used on input l
+ine 880.
+(pdftex.def)             Requested size: 195.12767pt x 183.28151pt.
+
+<figures/ripple/analysis/ewald_side_h1_ver1.pdf, id=1398, 194.61418pt x 189.340
 15pt>
-<figures/ripple/analysis/ewald_side_h2_ver1.pdf, id=1731, 194.92247pt x 190.143
-46pt>
-Underfull \vbox (badness 3449) has occurred while \output is active []
+File: figures/ripple/analysis/ewald_side_h1_ver1.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/ewald_side_h1_ver1.pdf>
+Package pdftex.def Info: figures/ripple/analysis/ewald_side_h1_ver1.pdf used on
+ input line 887.
+(pdftex.def)             Requested size: 195.12767pt x 189.84238pt.
 
- [82]
-[83]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figures/ripple/analysis/ewald_side_h2_ver1.pdf, id=1399, 194.92247pt x 190.143
+46pt>
+File: figures/ripple/analysis/ewald_side_h2_ver1.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/ewald_side_h2_ver1.pdf>
+Package pdftex.def Info: figures/ripple/analysis/ewald_side_h2_ver1.pdf used on
+ input line 888.
+(pdftex.def)             Requested size: 195.12767pt x 190.34315pt.
+ [82 <./figures/ripple/analysis/ewald_main.pdf>] [83 <./figures/ripple/analysis
+/ewald_side_h1_ver1.pdf> <./figures/ripple/analysis/ewald_side_h2_ver1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/analysis/ewald_side_h2_ver1.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 1946) has occurred while \output is active []
 
  [84]
-<figures/ripple/analysis/absorption_LAXS.pdf, id=1760, 275.99847pt x 194.66805p
-t> [85] [86]
-<figures/ripple/analysis/abs_factor.pdf, id=1780, 770.88pt x 590.205pt>
+<figures/ripple/analysis/absorption_LAXS.pdf, id=1544, 275.99847pt x 194.66805p
+t>
+File: figures/ripple/analysis/absorption_LAXS.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/absorption_LAXS.pdf>
+Package pdftex.def Info: figures/ripple/analysis/absorption_LAXS.pdf used on in
+put line 1001.
+(pdftex.def)             Requested size: 216.81pt x 152.92761pt.
+ [85 <./figures/ripple/analysis/absorption_LAXS.pdf>]
+<figures/ripple/analysis/abs_factor.pdf, id=1558, 770.88pt x 590.205pt>
+File: figures/ripple/analysis/abs_factor.pdf Graphic file (type pdf)
+
+<use figures/ripple/analysis/abs_factor.pdf>
+Package pdftex.def Info: figures/ripple/analysis/abs_factor.pdf used on input l
+ine 1062.
+(pdftex.def)             Requested size: 346.89731pt x 265.58978pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
-[88]
-<figures/ripple/analysis/abs_integrand.pdf, id=1804, 770.88pt x 590.205pt>
-<figures/ripple/analysis/mosaic_contour.pdf, id=1809, 430.35284pt x 286.20671pt
-> [89] [90] [91]
-<figures/ripple/analysis/mosaic_correction.pdf, id=1830, 828.09375pt x 619.3137
-5pt> [92] [93] [94] [95]
+ [86]
+[87 <./figures/ripple/analysis/abs_factor.pdf>]
+<figures/ripple/analysis/abs_integrand.pdf, id=1595, 770.88pt x 590.205pt>
+File: figures/ripple/analysis/abs_integrand.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1296.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1296.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1296.
-
-[96] [97] [98] [99]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1453.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1453.
+<use figures/ripple/analysis/abs_integrand.pdf>
+Package pdftex.def Info: figures/ripple/analysis/abs_integrand.pdf used on inpu
+t line 1105.
+(pdftex.def)             Requested size: 303.53267pt x 232.38544pt.
+ [88 <./figures/ripple/analysis/abs_integrand.pdf>]
+<figures/ripple/analysis/mosaic_contour.pdf, id=1617, 430.35284pt x 286.20671pt
+>
+File: figures/ripple/analysis/mosaic_contour.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/mosaic_contour.pdf>
+Package pdftex.def Info: figures/ripple/analysis/mosaic_contour.pdf used on inp
+ut line 1130.
+(pdftex.def)             Requested size: 390.25534pt x 259.54451pt.
+ [89 <./figures/ripple/analysis/mosaic_contour.pdf>]
+<figures/ripple/analysis/mosaic_correction.pdf, id=1701, 828.09375pt x 619.3137
+5pt>
+File: figures/ripple/analysis/mosaic_correction.pdf Graphic file (type pdf)
+ <use figures/ripple/analysis/mosaic_correction.pdf>
+Package pdftex.def Info: figures/ripple/analysis/mosaic_correction.pdf used on 
+input line 1183.
+(pdftex.def)             Requested size: 303.53267pt x 227.0068pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1453.
+(hyperref)                removing `math shift' on input line 1281.
 
-[100]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1281.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1281.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90 <./figures/ripple/analysis/mosaic_correction.pdf>] [91] [92]
+
+LaTeX Warning: Reference `eq:simga_F' on page 93 undefined on input line 1296.
+
+[93]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1306.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [94]
+[95] [96] [97] [98]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1520.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1520.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1520.
+
+[99]
 Underfull \vbox (badness 2753) has occurred while \output is active []
 
- [101]
-[102] [103]
-Overfull \hbox (13.69783pt too wide) in paragraph at lines 1697--1739
+ [100]
+[101] [102]
+Overfull \hbox (13.69783pt too wide) in paragraph at lines 1764--1806
  [][] 
  []
 
-<figures/ripple/model/FT.pdf, id=1940, 769.87625pt x 733.74126pt> [104]
-[105] [106] [107]
-<figures/ripple/LAXS/Fit5_2D_edp.pdf, id=1977, 361.35pt x 248.93pt>
-<figures/ripple/LAXS/major_diff_models.pdf, id=1982, 825.0825pt x 872.25874pt>
-<figures/ripple/LAXS/minor_diff_models.pdf, id=1985, 825.0825pt x 853.1875pt>
-<figures/ripple/LAXS/Fit2_2D_edp.pdf, id=1988, 361.35pt x 248.93pt>
-<figures/ripple/LAXS/major_phase_variation.pdf, id=1991, 827.09pt x 699.61375pt
-> [108] [109] [110] [111] [112]
-<figures/ripple/LAXS/minor_phase_variation.pdf, id=2015, 827.09pt x 714.67pt>
-[113] <figures/ripple/LAXS/Fit1_2D_edp.pdf, id=2021, 361.35pt x 248.93pt>
-<figures/ripple/LAXS/Fit3_2D_edp.pdf, id=2022, 361.35pt x 248.93pt>
-<figures/ripple/LAXS/Fit7_2D_edp.pdf, id=2023, 361.35pt x 248.93pt> [114]
-[115]
-<figures/ripple/nGIWAXS/fluid_036.pdf, id=2042, 358.13467pt x 332.24126pt>
-<figures/ripple/nGIWAXS/fluid_039.pdf, id=2043, 358.13467pt x 332.24126pt>
-<figures/ripple/nGIWAXS/fluid_036_ccd.pdf, id=2044, 358.13467pt x 332.24126pt>
-<figures/ripple/nGIWAXS/fluid_036_q.pdf, id=2045, 404.98914pt x 361.91388pt>
-<figures/ripple/nGIWAXS/fluid_qr.pdf, id=2046, 770.88pt x 605.26125pt>
-<figures/ripple/nGIWAXS/dmpc1_107.pdf, id=2051, 614.295pt x 794.97pt>
-<figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf, id=2052, 770.88pt
- x 590.205pt> [116] [117] [118] [119]
-<figures/ripple/nGIWAXS/dmpc1_enlarge.pdf, id=2075, 614.295pt x 794.97pt>
-<figures/ripple/nGIWAXS/qrplots.pdf, id=2080, 829.0975pt x 1313.90875pt>
-<figures/ripple/nGIWAXS/dmpc1_046.pdf, id=2082, 399.4925pt x 316.18124pt>
-<figures/ripple/nGIWAXS/046_vs_052.pdf, id=2083, 399.4925pt x 316.18124pt>
-<figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf, id=2090, 826.08624pt x 680.542
-5pt>
-<figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf, id=2091, 827.09pt x 679.53876pt>
+<figures/ripple/model/FT.pdf, id=1829, 769.87625pt x 733.74126pt>
+File: figures/ripple/model/FT.pdf Graphic file (type pdf)
 
-<figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf, id=2092, 827.09pt x 674.52
-pt> [120] [121] [122] [123] [124]
-<figures/ripple/tWAXS/twaxs_gel_ccd.pdf, id=2126, 331.45137pt x 308.15143pt>
-<figures/ripple/tWAXS/twaxs_gel_q.pdf, id=2127, 385.74602pt x 310.74413pt>
+<use figures/ripple/model/FT.pdf>
+Package pdftex.def Info: figures/ripple/model/FT.pdf used on input line 1852.
+(pdftex.def)             Requested size: 390.25534pt x 371.9527pt.
+ [103] [104] [105] [106 <./figures/ripple/model/FT.pdf>] <figures/ripple/LAXS/F
+it5_2D_edp.pdf, id=1882, 361.35pt x 248.93pt>
+File: figures/ripple/LAXS/Fit5_2D_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/Fit5_2D_edp.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/Fit5_2D_edp.pdf used on input line
+ 1905.
+(pdftex.def)             Requested size: 390.25534pt x 268.84418pt.
+
+<figures/ripple/LAXS/major_diff_models.pdf, id=1887, 360.34625pt x 348.30125pt>
+File: figures/ripple/LAXS/major_diff_models.pdf Graphic file (type pdf)
+<use figures/ripple/LAXS/major_diff_models.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/major_diff_models.pdf used on inpu
+t line 1919.
+(pdftex.def)             Requested size: 390.25534pt x 377.21205pt.
+
+<figures/ripple/LAXS/minor_diff_models.pdf, id=1890, 825.0825pt x 853.1875pt>
+File: figures/ripple/LAXS/minor_diff_models.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/minor_diff_models.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/minor_diff_models.pdf used on inpu
+t line 1931.
+(pdftex.def)             Requested size: 390.25534pt x 403.54982pt.
+
+<figures/ripple/LAXS/Fit2_2D_edp.pdf, id=1893, 361.35pt x 248.93pt>
+File: figures/ripple/LAXS/Fit2_2D_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/Fit2_2D_edp.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/Fit2_2D_edp.pdf used on input line
+ 1963.
+(pdftex.def)             Requested size: 390.25534pt x 268.84418pt.
+
+<figures/ripple/LAXS/major_phase_variation.pdf, id=1896, 827.09pt x 699.61375pt
+>
+File: figures/ripple/LAXS/major_phase_variation.pdf Graphic file (type pdf)
+ <use figures/ripple/LAXS/major_phase_variation.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/major_phase_variation.pdf used on 
+input line 1989.
+(pdftex.def)             Requested size: 216.81pt x 183.38982pt.
+ [107] [108 <./figures/ripple/LAXS/Fit5_2D_edp.pdf>] [109 <./figures/ripple/LAX
+S/major_diff_models.pdf>]
+[110 <./figures/ripple/LAXS/minor_diff_models.pdf>] [111 <./figures/ripple/LAXS
+/Fit2_2D_edp.pdf>]
+<figures/ripple/LAXS/minor_phase_variation.pdf, id=1981, 827.09pt x 714.67pt>
+File: figures/ripple/LAXS/minor_phase_variation.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/minor_phase_variation.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/minor_phase_variation.pdf used on 
+input line 2000.
+(pdftex.def)             Requested size: 216.81pt x 187.3365pt.
+ [112 <./figures/ripple/LAXS/major_phase_variation.pdf> <./figures/ripple/LAXS/
+minor_phase_variation.pdf>]
+<figures/ripple/LAXS/Fit1_2D_edp.pdf, id=2014, 361.35pt x 248.93pt>
+File: figures/ripple/LAXS/Fit1_2D_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/Fit1_2D_edp.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/Fit1_2D_edp.pdf used on input line
+ 2043.
+(pdftex.def)             Requested size: 390.25534pt x 268.84418pt.
+
+<figures/ripple/LAXS/Fit3_2D_edp.pdf, id=2015, 361.35pt x 248.93pt>
+File: figures/ripple/LAXS/Fit3_2D_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/Fit3_2D_edp.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/Fit3_2D_edp.pdf used on input line
+ 2050.
+(pdftex.def)             Requested size: 390.25534pt x 268.84418pt.
+
+<figures/ripple/LAXS/Fit7_2D_edp.pdf, id=2016, 361.35pt x 248.93pt>
+File: figures/ripple/LAXS/Fit7_2D_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/LAXS/Fit7_2D_edp.pdf>
+Package pdftex.def Info: figures/ripple/LAXS/Fit7_2D_edp.pdf used on input line
+ 2057.
+(pdftex.def)             Requested size: 390.25534pt x 268.84418pt.
+ [113 <./figures/ripple/LAXS/Fit1_2D_edp.pdf>] [114 <./figures/ripple/LAXS/Fit3
+_2D_edp.pdf> <./figures/ripple/LAXS/Fit7_2D_edp.pdf>]
+<figures/ripple/nGIWAXS/fluid_036.pdf, id=2083, 358.13467pt x 332.24126pt>
+File: figures/ripple/nGIWAXS/fluid_036.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_036.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_036.pdf used on input lin
+e 2119.
+(pdftex.def)             Requested size: 195.12767pt x 181.01973pt.
+
+<figures/ripple/nGIWAXS/fluid_039.pdf, id=2084, 358.13467pt x 332.24126pt>
+File: figures/ripple/nGIWAXS/fluid_039.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_039.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_039.pdf used on input lin
+e 2120.
+(pdftex.def)             Requested size: 195.12767pt x 181.01973pt.
+
+<figures/ripple/nGIWAXS/fluid_036_ccd.pdf, id=2085, 358.13467pt x 332.24126pt>
+File: figures/ripple/nGIWAXS/fluid_036_ccd.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_036_ccd.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_036_ccd.pdf used on input
+ line 2121.
+(pdftex.def)             Requested size: 195.12767pt x 181.01973pt.
+
+<figures/ripple/nGIWAXS/fluid_036_q.pdf, id=2086, 404.98914pt x 361.91388pt>
+File: figures/ripple/nGIWAXS/fluid_036_q.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_036_q.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_036_q.pdf used on input l
+ine 2122.
+(pdftex.def)             Requested size: 195.12767pt x 174.37384pt.
+
+<figures/ripple/nGIWAXS/fluid_qr.pdf, id=2087, 770.88pt x 605.26125pt>
+File: figures/ripple/nGIWAXS/fluid_qr.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_qr.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_qr.pdf used on input line
+ 2146.
+(pdftex.def)             Requested size: 303.53267pt x 238.31363pt.
+
+<figures/ripple/nGIWAXS/dmpc1_107.pdf, id=2092, 614.295pt x 794.97pt>
+File: figures/ripple/nGIWAXS/dmpc1_107.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/dmpc1_107.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/dmpc1_107.pdf used on input lin
+e 2166.
+(pdftex.def)             Requested size: 195.12767pt x 263.92993pt.
+
+<figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf, id=2094, 770.88pt
+ x 590.205pt>
+File: figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf Graphic file 
+(type pdf)
+
+<use figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8p
+x.pdf used on input line 2167.
+(pdftex.def)             Requested size: 195.12767pt x 171.75845pt.
+ [115]
+[116 <./figures/ripple/nGIWAXS/fluid_036.pdf> <./figures/ripple/nGIWAXS/fluid_0
+39.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/nGIWAXS/fluid_039.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./figures/ripple/nGIWAXS/fluid_036_ccd.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/nGIWAXS/fluid_036_ccd.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <./figures/ripple/nGIWAXS/fluid_036_q.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/nGIWAXS/fluid_036_q.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] [117 <./figures/ripple/nGIWAXS/fluid_qr.pdf>] [118 <./figures/ripple/nGIWAXS
+/dmpc1_107.pdf> <./figures/ripple/nGIWAXS/dmpc1_107_gel_phase_20_swath_8px.pdf>
+] <figures/ripple/nGIWAXS/dmpc1_enlarge.pdf, id=2226, 614.295pt x 794.97pt>
+File: figures/ripple/nGIWAXS/dmpc1_enlarge.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/dmpc1_enlarge.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/dmpc1_enlarge.pdf used on input
+ line 2203.
+(pdftex.def)             Requested size: 433.62pt x 475.72836pt.
+
+<figures/ripple/nGIWAXS/qrplots.pdf, id=2232, 829.0975pt x 1313.90875pt>
+File: figures/ripple/nGIWAXS/qrplots.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/qrplots.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/qrplots.pdf used on input line 
+2216.
+(pdftex.def)             Requested size: 346.89731pt x 549.73282pt.
+
+<figures/ripple/nGIWAXS/dmpc1_046.pdf, id=2234, 399.4925pt x 316.18124pt>
+File: figures/ripple/nGIWAXS/dmpc1_046.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/dmpc1_046.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/dmpc1_046.pdf used on input lin
+e 2233.
+(pdftex.def)             Requested size: 212.47617pt x 168.16867pt.
+
+<figures/ripple/nGIWAXS/046_vs_052.pdf, id=2235, 399.4925pt x 316.18124pt>
+File: figures/ripple/nGIWAXS/046_vs_052.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/046_vs_052.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/046_vs_052.pdf used on input li
+ne 2234.
+(pdftex.def)             Requested size: 212.47617pt x 168.16867pt.
+
+<figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf, id=2242, 826.08624pt x 680.542
+5pt>
+File: figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf Graphic file (type pdf)
+ <use figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/strong_peak_Lorentz.pdf used on
+ input line 2275.
+(pdftex.def)             Requested size: 303.53267pt x 250.05223pt.
+
+<figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf, id=2243, 827.09pt x 679.53876pt>
+File: figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf Graphic file (type pdf)
+<use figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf used on i
+nput line 2287.
+(pdftex.def)             Requested size: 195.12767pt x 160.31377pt.
+
+<figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf, id=2244, 827.09pt x 674.52
+pt>
+File: figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf Graphic file (type pdf
+)
+ <use figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/weak_peak_tripleLorentz.pdf use
+d on input line 2288.
+(pdftex.def)             Requested size: 195.12767pt x 159.12976pt.
+ [119] [120 <./figures/ripple/nGIWAXS/dmpc1_enlarge.pdf>] [121 <./figures/rippl
+e/nGIWAXS/qrplots.pdf>] [122 <./figures/ripple/nGIWAXS/dmpc1_046.pdf> <./figure
+s/ripple/nGIWAXS/046_vs_052.pdf> <./figures/ripple/nGIWAXS/strong_peak_Lorentz.
+pdf>] [123 <./figures/ripple/nGIWAXS/weak_peak_Lorentz.pdf> <./figures/ripple/n
+GIWAXS/weak_peak_tripleLorentz.pdf>]
+<figures/ripple/tWAXS/twaxs_gel_ccd.pdf, id=2347, 331.45137pt x 308.15143pt>
+File: figures/ripple/tWAXS/twaxs_gel_ccd.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_gel_ccd.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_gel_ccd.pdf used on input l
+ine 2425.
+(pdftex.def)             Requested size: 190.79385pt x 177.38786pt.
+
+<figures/ripple/tWAXS/twaxs_gel_q.pdf, id=2348, 385.74602pt x 310.74413pt>
+File: figures/ripple/tWAXS/twaxs_gel_q.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_gel_q.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_gel_q.pdf used on input lin
+e 2426.
+(pdftex.def)             Requested size: 234.15189pt x 188.62901pt.
+
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
- [125]
-<figures/ripple/tWAXS/twaxs_ripple.pdf, id=2137, 226.6407pt x 402.59877pt>
-<figures/ripple/tWAXS/twaxs_weak_qr.pdf, id=2138, 827.09pt x 708.6475pt>
-<figures/ripple/tWAXS/twaxs_gel_qz.pdf, id=2141, 827.09pt x 686.565pt>
-<figures/ripple/tWAXS/twaxs_strong_qz.pdf, id=2142, 826.08624pt x 703.62875pt>
-<figures/ripple/tWAXS/twaxs_weak_qz.pdf, id=2143, 827.09pt x 695.59875pt>
-<figures/ripple/tWAXS/twaxs_both_qz.pdf, id=2144, 826.08624pt x 697.60625pt>
-[126] [127] [128] [129]
-<figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf, id=2165, 407.121pt x 42
+ [124]
+<figures/ripple/tWAXS/twaxs_ripple.pdf, id=2357, 226.6407pt x 402.59877pt>
+File: figures/ripple/tWAXS/twaxs_ripple.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_ripple.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_ripple.pdf used on input li
+ne 2444.
+(pdftex.def)             Requested size: 216.81pt x 444.1685pt.
+
+<figures/ripple/tWAXS/twaxs_weak_qr.pdf, id=2359, 827.09pt x 708.6475pt>
+File: figures/ripple/tWAXS/twaxs_weak_qr.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_weak_qr.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_weak_qr.pdf used on input l
+ine 2452.
+(pdftex.def)             Requested size: 216.81pt x 185.75783pt.
+
+<figures/ripple/tWAXS/twaxs_gel_qz.pdf, id=2362, 827.09pt x 686.565pt>
+File: figures/ripple/tWAXS/twaxs_gel_qz.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_gel_qz.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_gel_qz.pdf used on input li
+ne 2462.
+(pdftex.def)             Requested size: 195.12767pt x 161.97136pt.
+
+<figures/ripple/tWAXS/twaxs_strong_qz.pdf, id=2363, 826.08624pt x 703.62875pt>
+File: figures/ripple/tWAXS/twaxs_strong_qz.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_strong_qz.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_strong_qz.pdf used on input
+ line 2463.
+(pdftex.def)             Requested size: 195.12767pt x 166.20096pt.
+
+<figures/ripple/tWAXS/twaxs_weak_qz.pdf, id=2364, 827.09pt x 695.59875pt>
+File: figures/ripple/tWAXS/twaxs_weak_qz.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_weak_qz.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_weak_qz.pdf used on input l
+ine 2474.
+(pdftex.def)             Requested size: 195.12767pt x 164.10257pt.
+
+<figures/ripple/tWAXS/twaxs_both_qz.pdf, id=2365, 826.08624pt x 697.60625pt>
+File: figures/ripple/tWAXS/twaxs_both_qz.pdf Graphic file (type pdf)
+
+<use figures/ripple/tWAXS/twaxs_both_qz.pdf>
+Package pdftex.def Info: figures/ripple/tWAXS/twaxs_both_qz.pdf used on input l
+ine 2475.
+(pdftex.def)             Requested size: 195.12767pt x 164.77841pt.
+ [125 <./figures/ripple/tWAXS/twaxs_gel_ccd.pdf> <./figures/ripple/tWAXS/twaxs_
+gel_q.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/tWAXS/twaxs_gel_q.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>] [126 <./figures/ripple/tWAXS/twaxs_ripple.pdf>] [127 <./figures/ripple/tWAXS
+/twaxs_weak_qr.pdf> <./figures/ripple/tWAXS/twaxs_gel_qz.pdf> <./figures/ripple
+/tWAXS/twaxs_strong_qz.pdf>] [128 <./figures/ripple/tWAXS/twaxs_weak_qz.pdf> <.
+/figures/ripple/tWAXS/twaxs_both_qz.pdf>]
+<figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf, id=2505, 407.121pt x 42
 3.181pt>
-<figures/ripple/discussion/major_edp.pdf, id=2166, 826.08624pt x 837.1275pt>
-[130] [131] [132]
-<figures/ripple/discussion/Kucerka_fluid_DMPC.pdf, id=2202, 353.32pt x 257.7629
+File: figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf Graphic file (type 
+pdf)
+ <use figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf>
+Package pdftex.def Info: figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf 
+used on input line 2532.
+(pdftex.def)             Requested size: 195.12767pt x 202.82753pt.
+
+<figures/ripple/discussion/major_edp.pdf, id=2506, 826.08624pt x 837.1275pt>
+File: figures/ripple/discussion/major_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/discussion/major_edp.pdf>
+Package pdftex.def Info: figures/ripple/discussion/major_edp.pdf used on input 
+line 2533.
+(pdftex.def)             Requested size: 195.12767pt x 197.7341pt.
+ [129] [130 <./figures/ripple/discussion/Tristram-Nagle_gel_DMPC.pdf> <./figure
+s/ripple/discussion/major_edp.pdf>] [131]
+<figures/ripple/discussion/Kucerka_fluid_DMPC.pdf, id=2560, 353.32pt x 257.7629
 9pt>
-<figures/ripple/discussion/minor_edp.pdf, id=2203, 827.09pt x 639.38875pt>
-<figures/ripple/nGIWAXS/fluid_vs_ripple.pdf, id=2206, 827.09pt x 685.56125pt>
-<figures/ripple/discussion/Guler_interdigitated_DHPC.pdf, id=2207, 481.8pt x 48
+File: figures/ripple/discussion/Kucerka_fluid_DMPC.pdf Graphic file (type pdf)
+ <use figures/ripple/discussion/Kucerka_fluid_DMPC.pdf>
+Package pdftex.def Info: figures/ripple/discussion/Kucerka_fluid_DMPC.pdf used 
+on input line 2648.
+(pdftex.def)             Requested size: 195.12767pt x 142.35611pt.
+
+<figures/ripple/discussion/minor_edp.pdf, id=2561, 827.09pt x 639.38875pt>
+File: figures/ripple/discussion/minor_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/discussion/minor_edp.pdf>
+Package pdftex.def Info: figures/ripple/discussion/minor_edp.pdf used on input 
+line 2649.
+(pdftex.def)             Requested size: 195.12767pt x 150.84175pt.
+
+<figures/ripple/nGIWAXS/fluid_vs_ripple.pdf, id=2564, 827.09pt x 685.56125pt>
+File: figures/ripple/nGIWAXS/fluid_vs_ripple.pdf Graphic file (type pdf)
+
+<use figures/ripple/nGIWAXS/fluid_vs_ripple.pdf>
+Package pdftex.def Info: figures/ripple/nGIWAXS/fluid_vs_ripple.pdf used on inp
+ut line 2661.
+(pdftex.def)             Requested size: 216.81pt x 179.70622pt.
+
+<figures/ripple/discussion/Guler_interdigitated_DHPC.pdf, id=2565, 481.8pt x 48
 9.02701pt>
-<figures/ripple/discussion/deVries_waxs.pdf, id=2210, 345.29pt x 642.4pt>
-<figures/ripple/discussion/ripple_waxs.pdf, id=2211, 187.902pt x 401.5pt>
-[133] [134] [135] [136]
+File: figures/ripple/discussion/Guler_interdigitated_DHPC.pdf Graphic file (typ
+e pdf)
+ <use figures/ripple/discussion/Guler_interdigitated_DHPC.pdf>
+Package pdftex.def Info: figures/ripple/discussion/Guler_interdigitated_DHPC.pd
+f used on input line 2670.
+(pdftex.def)             Requested size: 195.12767pt x 198.05484pt.
+File: figures/ripple/discussion/minor_edp.pdf Graphic file (type pdf)
+
+<use figures/ripple/discussion/minor_edp.pdf>
+Package pdftex.def Info: figures/ripple/discussion/minor_edp.pdf used on input 
+line 2671.
+(pdftex.def)             Requested size: 195.12767pt x 150.84175pt.
+
+<figures/ripple/discussion/deVries_waxs.pdf, id=2568, 345.29pt x 642.4pt>
+File: figures/ripple/discussion/deVries_waxs.pdf Graphic file (type pdf)
+
+<use figures/ripple/discussion/deVries_waxs.pdf>
+Package pdftex.def Info: figures/ripple/discussion/deVries_waxs.pdf used on inp
+ut line 2684.
+(pdftex.def)             Requested size: 216.81pt x 403.37125pt.
+
+<figures/ripple/discussion/ripple_waxs.pdf, id=2569, 187.902pt x 401.5pt>
+File: figures/ripple/discussion/ripple_waxs.pdf Graphic file (type pdf)
+
+<use figures/ripple/discussion/ripple_waxs.pdf>
+Package pdftex.def Info: figures/ripple/discussion/ripple_waxs.pdf used on inpu
+t line 2686.
+(pdftex.def)             Requested size: 151.76964pt x 324.31262pt.
+ [132] [133 <./figures/ripple/discussion/Kucerka_fluid_DMPC.pdf> <./figures/rip
+ple/discussion/minor_edp.pdf> <./figures/ripple/nGIWAXS/fluid_vs_ripple.pdf>] [
+134 <./figures/ripple/discussion/Guler_interdigitated_DHPC.pdf>] [135 <./figure
+s/ripple/discussion/deVries_waxs.pdf> <./figures/ripple/discussion/ripple_waxs.
+pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/discussion/ripple_waxs.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [137])
-[138] [139
+ [136])
+[137] [138
 
 
 
@@ -1243,94 +1596,298 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  (./appendix.tex
 Appendix A.
 
-<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf, id=2245, 771.88374pt x 577.
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf, id=2661, 771.88374pt x 577.
 15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf, id=2246, 771.88374pt x 57
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf Graphic file (type pdf)
+
+ <use figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf used
+ on input line 5.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf, id=2662, 771.88374pt x 57
 7.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1.pdf, id=2247, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf Graphic file (type pd
+f)
+ <use ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1.pdf us
+ed on input line 6.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1.pdf, id=2663, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1.pdf, id=2248, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0
+_XFF1.pdf used on input line 7.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1.pdf, id=2664, 77
 1.88374pt x 577.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pdf, id=2249, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3
+p0_EDP1.pdf used on input line 8.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pdf, id=2665, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf, id=2250, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0
+_XFF1.pdf used on input line 9.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf, id=2666, 77
 1.88374pt x 577.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf, id=2251, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3
+p0_EDP1.pdf used on input line 10.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf, id=2667, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf, id=2252, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0
+_XFF1.pdf used on input line 11.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf, id=2668, 77
 1.88374pt x 577.15625pt>
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3
+p0_EDP1.pdf used on input line 12.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
 
 LaTeX Warning: Float too large for page by 25.8063pt on input line 17.
 
 
-<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf, id=2253, 771.88374pt x 577.
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf, id=2669, 771.88374pt x 577.
 15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf, id=2254, 771.88374pt x 57
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf Graphic file (type pdf)
+
+ <use figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1.pdf used
+ on input line 21.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf, id=2670, 771.88374pt x 57
 7.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf, id=2255, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf Graphic file (type pd
+f)
+ <use ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.pdf us
+ed on input line 22.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf, id=2671, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf, id=2256, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0
+_XFF1.pdf used on input line 23.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf, id=2672, 77
 1.88374pt x 577.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf, id=2257, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3
+p0_EDP1.pdf used on input line 24.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf, id=2673, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf, id=2258, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0
+_XFF1.pdf used on input line 25.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf, id=2674, 77
 1.88374pt x 577.15625pt>
-<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1.pdf, id=2259, 771.
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3
+p0_EDP1.pdf used on input line 26.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1.pdf, id=2675, 771.
 88374pt x 577.15625pt>
-<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1.pdf, id=2260, 77
+File: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1.pdf Graphic f
+ile (type pdf)
+
+<use figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1.pdf>
+Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0
+_XFF1.pdf used on input line 27.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
+<./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1.pdf, id=2676, 77
 1.88374pt x 577.15625pt>
+File: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1.pdf Graphic
+ file (type pdf)
+
+<use ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1.pdf>
+Package pdftex.def Info: ./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3
+p0_EDP1.pdf used on input line 28.
+(pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
+
 
 LaTeX Warning: Float too large for page by 25.8063pt on input line 33.
 
-<figures/ripple/mosaic/stack.pdf, id=2262, 390.1645pt x 306.2436pt>
-<figures/ripple/mosaic/spherical_coordinates.pdf, id=2263, 88.08911pt x 110.481
-7pt> [140
+<figures/ripple/mosaic/stack.pdf, id=2678, 390.1645pt x 306.2436pt>
+File: figures/ripple/mosaic/stack.pdf Graphic file (type pdf)
+
+<use figures/ripple/mosaic/stack.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/stack.pdf used on input line 66.
+
+(pdftex.def)             Requested size: 281.85034pt x 221.22887pt.
+
+<figures/ripple/mosaic/spherical_coordinates.pdf, id=2679, 88.08911pt x 110.481
+7pt>
+File: figures/ripple/mosaic/spherical_coordinates.pdf Graphic file (type pdf)
+ <use figures/ripple/mosaic/spherical_coordinates.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/spherical_coordinates.pdf used o
+n input line 68.
+(pdftex.def)             Requested size: 108.405pt x 135.96584pt.
+ [139
 
 
-] [141] [142] [143]
-<figures/ripple/mosaic/mosaic_2D.pdf, id=2286, 255.83156pt x 143.54295pt>
-<figures/ripple/mosaic/mosaic_2Dqspace.pdf, id=2287, 133.12941pt x 186.09213pt>
+] [140 <./figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1.pdf> <./figures/Tat/SDP
+_Results/EDP/DOPCDOPE3to1_EDP1.pdf> <./figures/Tat/SDP_Results/XFF/DOPCDOPE3to1
+_Tat_62to1_3p0_XFF1.pdf> <./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_
+3p0_EDP1.pdf> <./figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1.pd
+f> <./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1.pdf> <./figur
+es/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1.pdf> <./figures/Tat/SDP_
+Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1.pdf>] [141 <./figures/Tat/SDP_Resul
+ts/XFF/DOPCDOPE1to1_XFF1.pdf> <./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1.
+pdf> <./figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1.pdf> <./fig
+ures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1.pdf> <./figures/Tat/SD
+P_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1.pdf> <./figures/Tat/SDP_Results/E
+DP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1.pdf> <./figures/Tat/SDP_Results/XFF/DOPCDOPE
+1to1_Tat_16to1_3p0_XFF1.pdf> <./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16
+to1_3p0_EDP1.pdf>] [142 <./figures/ripple/mosaic/stack.pdf> <./figures/ripple/m
+osaic/spherical_coordinates.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/mosaic/spherical_coordinates.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>] <figures/ripple/mosaic/mosaic_2D.pdf, id=2966, 255.83156pt x 143.54295pt>
+File: figures/ripple/mosaic/mosaic_2D.pdf Graphic file (type pdf)
+
+<use figures/ripple/mosaic/mosaic_2D.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/mosaic_2D.pdf used on input line
+ 113.
+(pdftex.def)             Requested size: 238.49231pt x 133.81552pt.
+
+<figures/ripple/mosaic/mosaic_2Dqspace.pdf, id=2967, 133.12941pt x 186.09213pt>
+File: figures/ripple/mosaic/mosaic_2Dqspace.pdf Graphic file (type pdf)
+<use figures/ripple/mosaic/mosaic_2Dqspace.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/mosaic_2Dqspace.pdf used on inpu
+t line 115.
+(pdftex.def)             Requested size: 108.405pt x 151.53455pt.
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
- [144]
-[145]
+ [143]
+[144 <./figures/ripple/mosaic/mosaic_2D.pdf> <./figures/ripple/mosaic/mosaic_2D
+qspace.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/mosaic/mosaic_2Dqspace.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [146]
-<figures/ripple/mosaic/ring_setup.pdf, id=2323, 299.56062pt x 232.8678pt>
+ [145]
+<figures/ripple/mosaic/ring_setup.pdf, id=3035, 299.56062pt x 232.8678pt>
+File: figures/ripple/mosaic/ring_setup.pdf Graphic file (type pdf)
+
+<use figures/ripple/mosaic/ring_setup.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/ring_setup.pdf used on input lin
+e 275.
+(pdftex.def)             Requested size: 346.89731pt x 269.68976pt.
+
 Underfull \vbox (badness 1776) has occurred while \output is active []
 
- [147]
-[148] <figures/ripple/mosaic/rock.pdf, id=2342, 193.27866pt x 130.77583pt>
+ [146]
+[147 <./figures/ripple/mosaic/ring_setup.pdf>]
+<figures/ripple/mosaic/rock.pdf, id=3084, 193.27866pt x 130.77583pt>
+File: figures/ripple/mosaic/rock.pdf Graphic file (type pdf)
+
+<use figures/ripple/mosaic/rock.pdf>
+Package pdftex.def Info: figures/ripple/mosaic/rock.pdf used on input line 309.
+
+(pdftex.def)             Requested size: 303.53267pt x 205.40428pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149]
-[150] [151]
+ [148 <./figures/ripple/mosaic/rock.pdf>] [149] [150]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [151]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [152]
+[153]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [153]
-[154]
+ [154]
+[155] [156]
+<figures/ripple/unit_cell_waxs_side.pdf, id=3196, 113.60666pt x 53.35509pt>
+File: figures/ripple/unit_cell_waxs_side.pdf Graphic file (type pdf)
+
+<use figures/ripple/unit_cell_waxs_side.pdf>
+Package pdftex.def Info: figures/ripple/unit_cell_waxs_side.pdf used on input l
+ine 710.
+(pdftex.def)             Requested size: 260.17464pt x 122.20364pt.
+
+<figures/ripple/unit_cell_waxs_top.pdf, id=3197, 133.19023pt x 99.32768pt>
+File: figures/ripple/unit_cell_waxs_top.pdf Graphic file (type pdf)
+
+<use figures/ripple/unit_cell_waxs_top.pdf>
+Package pdftex.def Info: figures/ripple/unit_cell_waxs_top.pdf used on input li
+ne 711.
+(pdftex.def)             Requested size: 260.17464pt x 194.0307pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [155]
-[156] [157]
-<figures/ripple/unit_cell_waxs_side.pdf, id=2428, 113.60666pt x 53.35509pt>
-<figures/ripple/unit_cell_waxs_top.pdf, id=2429, 133.19023pt x 99.32768pt>
+ [157]
+[158 <./figures/ripple/unit_cell_waxs_side.pdf> <./figures/ripple/unit_cell_wax
+s_top.pdf
+
+pdfTeX warning: pdflatex (file ./figures/ripple/unit_cell_waxs_top.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [158]
-[159]
+ [159]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [160]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [161])
-[162] (./thesis.bbl [163
+ [160])
+[161] (./thesis.bbl [162
 
 
 ]
@@ -1349,7 +1906,7 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
- [164]
+ [163]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no √ in font cmr12!
@@ -1360,7 +1917,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no † in font cmr12!
- [165] [166] [167]
+ [164] [165] [166]
 Missing character: There is no – in font cmti12!
 Missing character: There is no • in font cmti12!
 
@@ -1370,7 +1927,7 @@ Underfull \hbox (badness 1694) in paragraph at lines 311--315
 
 Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
-[168]
+[167]
 Underfull \hbox (badness 10000) in paragraph at lines 338--339
 [][]$\OT1/cmtt/m/n/12 http : / / lcgapp . cern . ch / project / cls / work-[]pa
 ckages / mathlibs / minuit /
@@ -1382,11 +1939,11 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no § in font cmr12!
 Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
-[169]
+[168]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ö in font cmr12!
- [170] [171] [172]
+ [169] [170] [171]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ≤ in font cmr12!
@@ -1396,9 +1953,9 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [173] [174])
+ [172] [173])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
- [175]
+ [174]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
  (./thesis.aux (./abstract.aux)
 (./acknowledgments.aux) (./chap_01.aux) (./chap_02.aux) (./chap_03.aux)
@@ -1406,7 +1963,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 52D63936D2F56B76B5D5F5A2F5CEE560;4744.
+(rerunfilecheck)             Checksum: 807AB8D07A3627630CEA47542EA6D933;3171.
 
 
 LaTeX Warning: There were undefined references.
@@ -1414,33 +1971,147 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 11344 strings out of 493493
- 185795 string characters out of 3143797
- 352505 words of memory out of 3000000
- 13561 multiletter control sequences out of 15000+200000
+ 11072 strings out of 495059
+ 178632 string characters out of 3182031
+ 345359 words of memory out of 3000000
+ 13338 multiletter control sequences out of 15000+200000
  24900 words of font info for 98 fonts, out of 3000000 for 9000
- 958 hyphenation exceptions out of 8191
+ 15 hyphenation exceptions out of 8191
  46i,16n,76p,1080b,460s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (196 pages, 618382 bytes).
+pdfTeX warning (dest): name{figure.caption.45} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.44} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.43} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.39} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.34} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.22} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.21} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.8} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+ </home/kiyo/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (142 pages, 55412912 bytes).
 PDF statistics:
- 2756 PDF objects out of 2984 (max. 8388607)
- 2331 compressed objects within 24 object streams
- 649 named destinations out of 1000 (max. 500000)
- 1282 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3603 PDF objects out of 4296 (max. 8388607)
+ 2976 compressed objects within 30 object streams
+ 542 named destinations out of 1000 (max. 500000)
+ 848 words of extra memory for PDF output out of 10000 (max. 10000000)
 
