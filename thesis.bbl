@@ -6,17 +6,87 @@ PF~Fahey and WW~Webb.
   liquid crystals.
 \newblock {\em Biochemistry}, 17(15):3046--3053, 1978.
 
+\bibitem{ref:Smith88}
+GS~Smith, EB~Sirota, CR~Safinya, and Noel~A Clark.
+\newblock Structure of the l $\beta$ phases in a hydrated phosphatidylcholine
+  multimembrane.
+\newblock {\em Physical review letters}, 60(9):813, 1988.
+
 \bibitem{ref:Tardieu73}
 A.~Tardieu, Vittorio Luzzati, and F.C. Reman.
 \newblock Structure and polymorphism of the hydrocarbon chains of lipids: A
   study of lecithin-water phases.
 \newblock {\em Journal of Molecular Biology}, 75(4):711 -- 733, 1973.
 
-\bibitem{ref:Smith88}
-GS~Smith, EB~Sirota, CR~Safinya, and Noel~A Clark.
-\newblock Structure of the l $\beta$ phases in a hydrated phosphatidylcholine
-  multimembrane.
-\newblock {\em Physical review letters}, 60(9):813, 1988.
+\bibitem{ref:Tristram93}
+S~Tristram-Nagle, R~Zhang, RM~Suter, CR~Worthington, WJ~Sun, and JF~Nagle.
+\newblock Measurement of chain tilt angle in fully hydrated bilayers of gel
+  phase lecithins.
+\newblock {\em Biophysical journal}, 64(4):1097--1109, 1993.
+
+\bibitem{Tristram-Nagle02}
+Stephanie Tristram-Nagle, Yufeng Liu, Justin Legleiter, and John~F. Nagle.
+\newblock Structure of gel phase {DMPC} determined by x-ray diffraction.
+\newblock {\em Biophysical Journal}, 83(6):3324 -- 3335, 2002.
+
+\bibitem{Vaishnav91}
+Yashwantrai~N Vaishnav and Flossie Wong-Staal.
+\newblock The biochemistry of aids.
+\newblock {\em Annual review of biochemistry}, 60(1):577--630, 1991.
+
+\bibitem{Raha05}
+Tamal Raha, SW~Grace Cheng, and Michael~R Green.
+\newblock Hiv-1 tat stimulates transcription complex assembly through
+  recruitment of tbp in the absence of tafs.
+\newblock {\em PLoS biology}, 3(2):e44, 2005.
+
+\bibitem{Macias09}
+David Mac{\'\i}as, Ricardo Oya, Luisa Saniger, Francisco Mart{\'\i}n, and
+  Francisco Luque.
+\newblock A lentiviral vector that activates latent human immunodeficiency
+  virus-1 proviruses by the overexpression of tat and that kills the infected
+  cells.
+\newblock {\em Human gene therapy}, 20(11):1259--1268, 2009.
+
+\bibitem{Ruben89}
+Steven Ruben, A~Perkins, R~Purcell, K~Joung, R~Sia, R~Burghoff, WA~Haseltine,
+  and CA~Rosen.
+\newblock Structural and functional characterization of human immunodeficiency
+  virus tat protein.
+\newblock {\em Journal of virology}, 63(1):1--8, 1989.
+
+\bibitem{Hauber87}
+Joachim Hauber, Ann Perkins, Edgar~P Heimer, and Bryan~R Cullen.
+\newblock Trans-activation of human immunodeficiency virus gene expression is
+  mediated by nuclear events.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  84(18):6364--6368, 1987.
+
+\bibitem{Futaki01}
+Shiroh Futaki, Tomoki Suzuki, Wakana Ohashi, Takeshi Yagami, Seigo Tanaka,
+  Kunihiro Ueda, and Yukio Sugiura.
+\newblock Arginine-rich peptides an abundant source of membrane-permeable
+  peptides having potential as carriers for intracellular protein delivery.
+\newblock {\em Journal of Biological Chemistry}, 276(8):5836--5840, 2001.
+
+\bibitem{Grabe04}
+Michael Grabe, Harold Lecar, Yuh~Nung Jan, and Lily~Yeh Jan.
+\newblock A quantitative assessment of models for voltage-dependent gating of
+  ion channels.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 101(51):17640--17645, 2004.
+
+\bibitem{Herce07}
+H.~D. Herce and A.~E. Garcia.
+\newblock Molecular dynamics simulations suggest a mechanism for translocation
+  of the hiv-1 tat peptide across lipid membranes.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 104(52):20805--20810, 2007.
+
+\bibitem{Freed98}
+Eric~O Freed.
+\newblock Hiv-1 gag proteins: diverse functions in the virus life cycle.
+\newblock {\em Virology}, 251(1):1--15, 1998.
 
 \bibitem{ref:Luna77}
 Elizabeth~J Luna and Harden~M McConnell.
@@ -277,13 +347,6 @@ P.~Bayer, M.~Kraft, A.~Ejchart, M.~Westendorp, R.~Frank, and P.~Rosch.
 \newblock Structural studies of hiv-1 tat protein.
 \newblock {\em Journal of Molecular Biology}, 247(4):529--535, 1995.
 
-\bibitem{Herce07}
-H.~D. Herce and A.~E. Garcia.
-\newblock Molecular dynamics simulations suggest a mechanism for translocation
-  of the hiv-1 tat peptide across lipid membranes.
-\newblock {\em Proceedings of the National Academy of Sciences of the United
-  States of America}, 104(52):20805--20810, 2007.
-
 \bibitem{Yesylevskyy09}
 S.~Yesylevskyy, S.~J. Marrink, and A.~E. Mark.
 \newblock Alternative mechanisms for the interaction of the cell-penetrating
@@ -319,11 +382,6 @@ Norbert Kučerka, John~F. Nagle, Jonathan~N. Sachs, Scott~E. Feller, Jeremy
 \newblock Lipid bilayer structure determined by the simultaneous analysis of
   neutron and x-ray scattering data.
 \newblock {\em Biophysical Journal}, 95(5):2356 -- 2367, 2008.
-
-\bibitem{Tristram-Nagle02}
-Stephanie Tristram-Nagle, Yufeng Liu, Justin Legleiter, and John~F. Nagle.
-\newblock Structure of gel phase {DMPC} determined by x-ray diffraction.
-\newblock {\em Biophysical Journal}, 83(6):3324 -- 3335, 2002.
 
 \bibitem{Braun13}
 Anthony~R. Braun, Jonathan~N. Sachs, and John~F. Nagle.
@@ -654,12 +712,6 @@ CE~Miller, J~Majewski, EB~Watkins, DJ~Mulder, T~Gog, and TL~Kuhl.
 \newblock Probing the local order of single phospholipid membranes using
   grazing incidence x-ray diffraction.
 \newblock {\em Physical review letters}, 100(5):058103, 2008.
-
-\bibitem{ref:Tristram93}
-S~Tristram-Nagle, R~Zhang, RM~Suter, CR~Worthington, WJ~Sun, and JF~Nagle.
-\newblock Measurement of chain tilt angle in fully hydrated bilayers of gel
-  phase lecithins.
-\newblock {\em Biophysical journal}, 64(4):1097--1109, 1993.
 
 \bibitem{ref:Warren69}
 Bertram~Eugene Warren.

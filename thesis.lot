@@ -13,20 +13,20 @@
 \contentsline {table}{\numberline {2.11}{\ignorespaces Summary of simulation results. $\delimiter "426830A D_\textrm {PP}\delimiter "526930B $, phosphorus-phosphorus distance averaged over all lipids; $D_\textrm {PP}$, Tat-perturbed phosphorus atoms; $x$, thickness away from Tat; $\Delta t$, $\delimiter "426830A D_\textrm {PP}^\textrm {DOPC}\delimiter "526930B -D_\textrm {PP}$; $H_\textrm {Tat}$, Tat height; $R_\textrm {Tat}$, radius of Tat cylinder; $R_2$, radius of the calculated in-plane Tat-perturbed region; $R_3$, effective radius of the simulation box.\relax }}{50}{table.caption.41}
 \contentsline {table}{\numberline {2.12}{\ignorespaces Summary of weighted average results. The caption is the same as Table\nobreakspace {}\ref {tab:MD_summary}.\relax }}{50}{table.caption.42}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Lattice constants for DMPC at $T$ = 18.0 \textcelsius \ reported by Wack and Webb \cite {ref:Wack89} except the one colored in blue. The data collected and analyzed in this thesis are colored blue.\relax }}{61}{table.caption.10}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Beam divergence}}{64}{table.caption.13}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Energy dispersion}}{65}{table.caption.14}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Geometric broadening\relax }}{71}{table.caption.26}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Correction for the ripple LAXS peaks\relax }}{91}{table.caption.40}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Correction for the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})\relax }}{92}{table.caption.41}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree .\relax }}{95}{table.caption.42}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1}).\relax }}{96}{table.caption.43}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Comparison of form factors for the unoriented sample from Wack and Webb \cite {ref:Wack89} and oriented sample from this study.\relax }}{97}{table.caption.44}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$\relax }}{100}{table.caption.45}
-\contentsline {table}{\numberline {3.11}{\ignorespaces Model parameters. Fit1 and Fit2 were performed with the M1G model while Fit3 to 7 were with the M2G model. *Parameters were fixed to the values shown.\relax }}{102}{table.caption.46}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Form factors for $h$ = 1 to 4\relax }}{103}{table.caption.47}
-\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 5 to 9\relax }}{104}{table.caption.48}
-\contentsline {table}{\numberline {3.14}{\ignorespaces Ripple structural quantities. I: Results from Sun \textit {et al.} II: Used only up to $(h,k)$ = (3, 4) III: Replaced lower order $|F_{hk}|$ with those from Wack and Webb, keeping the same relative error \relax }}{107}{table.caption.53}
-\contentsline {table}{\numberline {3.15}{\ignorespaces Estimated structural quantities\relax }}{112}{table.caption.57}
-\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of peak properties}}{122}{table.caption.69}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Lattice constants for DMPC at $T$ = 18.0 \textcelsius \ reported by Wack and Webb \cite {ref:Wack89} except the one colored in blue. The data collected and analyzed in this thesis are colored blue.\relax }}{61}{table.caption.12}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Beam divergence}}{64}{table.caption.15}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Energy dispersion}}{65}{table.caption.16}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Geometric broadening\relax }}{71}{table.caption.28}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Correction for the ripple LAXS peaks\relax }}{91}{table.caption.42}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Correction for the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})\relax }}{92}{table.caption.43}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree .\relax }}{95}{table.caption.44}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1}).\relax }}{96}{table.caption.45}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Comparison of form factors for the unoriented sample from Wack and Webb \cite {ref:Wack89} and oriented sample from this study.\relax }}{97}{table.caption.46}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$\relax }}{100}{table.caption.47}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Model parameters. Fit1 and Fit2 were performed with the M1G model while Fit3 to 7 were with the M2G model. *Parameters were fixed to the values shown.\relax }}{102}{table.caption.48}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Form factors for $h$ = 1 to 4 predicted by different fits. In consensus phase column, * indicates an extinct peak, and ? is assigned if a consistent phase could not be obtained throughout different fits.\relax }}{103}{table.caption.49}
+\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 5 to 9 predicted by different fits. In consensus phase column, * indicates an extinct peak, and ? is assigned if a consistent phase could not be obtained throughout different fits.\relax }}{104}{table.caption.50}
+\contentsline {table}{\numberline {3.14}{\ignorespaces Ripple structural quantities. I: Results from Sun \textit {et al.} II: Used only up to $(h,k)$ = (3, 4) III: Replaced lower order $|F_{hk}|$ with those from Wack and Webb, keeping the same relative error \relax }}{107}{table.caption.55}
+\contentsline {table}{\numberline {3.15}{\ignorespaces Estimated structural quantities\relax }}{112}{table.caption.59}
+\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of peak properties}}{123}{table.caption.71}
 \addvspace {10\p@ }

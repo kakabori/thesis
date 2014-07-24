@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Lipid bilayer}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Tat}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{ripple}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Tat peptide}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{P' ripple phase}{chapter.1}% 4
 \BOOKMARK [0][-]{chapter.3}{Ripple Phase}{}% 24
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.2}{Materials and Methods}{chapter.3}% 26
@@ -26,20 +26,22 @@
 \BOOKMARK [1][-]{section.3.7}{nGIWAXS: results}{chapter.3}% 45
 \BOOKMARK [2][-]{subsection.3.7.1}{Fluid and gel phase}{section.3.7}% 46
 \BOOKMARK [2][-]{subsection.3.7.2}{Ripple phase}{section.3.7}% 47
-\BOOKMARK [2][-]{subsection.3.7.3}{Thin Rod Model}{section.3.7}% 48
-\BOOKMARK [1][-]{section.3.8}{tWAXS: results}{chapter.3}% 49
-\BOOKMARK [1][-]{section.3.9}{Discussion}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.9.1}{Major arm}{section.3.9}% 51
-\BOOKMARK [2][-]{subsection.3.9.2}{Minor arm}{section.3.9}% 52
-\BOOKMARK [1][-]{section.3.10}{Conclusion}{chapter.3}% 53
-\BOOKMARK [0][-]{section*.81}{Appendices}{}% 54
-\BOOKMARK [0][-]{Appendix.1.A}{}{}% 55
-\BOOKMARK [1][-]{section.1.A.1}{More results from chapter 2}{Appendix.1.A}% 56
-\BOOKMARK [1][-]{section.1.A.2}{Mosaic Spread for NFIT analysis}{Appendix.1.A}% 57
-\BOOKMARK [2][-]{subsection.1.A.2.1}{Mosaic Spread: Calculation}{section.1.A.2}% 58
-\BOOKMARK [2][-]{subsection.1.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.1.A.2}% 59
-\BOOKMARK [2][-]{subsection.1.A.2.3}{NFIT}{section.1.A.2}% 60
-\BOOKMARK [1][-]{section.1.A.3}{Derivation of the contour part of the form factor}{Appendix.1.A}% 61
-\BOOKMARK [1][-]{section.1.A.4}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.1.A}% 62
-\BOOKMARK [1][-]{section.1.A.5}{Correction due to refractive index}{Appendix.1.A}% 63
-\BOOKMARK [1][-]{section.1.A.6}{Thin Rod Model of the ripple phase}{Appendix.1.A}% 64
+\BOOKMARK [1][-]{section.3.8}{tWAXS: results}{chapter.3}% 48
+\BOOKMARK [1][-]{section.3.9}{Thin Rod Model}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.9.1}{Gel phase model}{section.3.9}% 50
+\BOOKMARK [2][-]{subsection.3.9.2}{Ripple model}{section.3.9}% 51
+\BOOKMARK [1][-]{section.3.10}{Discussion}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.10.1}{Major arm}{section.3.10}% 53
+\BOOKMARK [2][-]{subsection.3.10.2}{Minor arm}{section.3.10}% 54
+\BOOKMARK [1][-]{section.3.11}{Conclusion}{chapter.3}% 55
+\BOOKMARK [0][-]{section*.83}{Appendices}{}% 56
+\BOOKMARK [0][-]{Appendix.1.A}{}{}% 57
+\BOOKMARK [1][-]{section.1.A.1}{More results from chapter 2}{Appendix.1.A}% 58
+\BOOKMARK [1][-]{section.1.A.2}{Mosaic Spread for NFIT analysis}{Appendix.1.A}% 59
+\BOOKMARK [2][-]{subsection.1.A.2.1}{Mosaic Spread: Calculation}{section.1.A.2}% 60
+\BOOKMARK [2][-]{subsection.1.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.1.A.2}% 61
+\BOOKMARK [2][-]{subsection.1.A.2.3}{NFIT}{section.1.A.2}% 62
+\BOOKMARK [1][-]{section.1.A.3}{Derivation of the contour part of the form factor}{Appendix.1.A}% 63
+\BOOKMARK [1][-]{section.1.A.4}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.1.A}% 64
+\BOOKMARK [1][-]{section.1.A.5}{Correction due to refractive index}{Appendix.1.A}% 65
+\BOOKMARK [1][-]{section.1.A.6}{Thin Rod Model of the ripple phase}{Appendix.1.A}% 66
