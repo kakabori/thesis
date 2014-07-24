@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {3.7}nGIWAXS: results}{114}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Fluid and gel phase}{114}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Ripple phase}{117}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Thin Rod Model}{118}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.3}Thin Rod Model}{123}{subsection.3.7.3}
 \contentsline {section}{\numberline {3.8}tWAXS: results}{124}{section.3.8}
 \contentsline {section}{\numberline {3.9}Discussion}{129}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Major arm}{129}{subsection.3.9.1}

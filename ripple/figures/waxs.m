@@ -21,12 +21,14 @@ a = slurp('dmpc1_046_cz.tif', 'c');
 b = slurp('dmpc1_047_cz.tif', 'c');
 tmp = a - b;
 tmp = rotateAround(tmp, 929, -245, -0.57, 'bicubic');
+%tmp = rotateAround(tmp, beamZ, beamX, -0.57, 'bicubic');
 tmp = 0.7 * tmp;
-waxs1 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2);
+tmp = flipud(tmp);
+waxs1 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2, beamX, beamZ);
 waxs1.Int = int64(waxs1.Int);
 fig1 = figure;
 qshow(waxs1, [0 50]);
-saveTightFigure(fig1, 'dmpc1_046.pdf');
+%saveTightFigure(fig1, 'dmpc1_046.pdf');
 
 % ripple phase data
 a = slurp('dmpc1_052_cz.tif', 'c');
@@ -37,7 +39,8 @@ b = slurp('dmpc1_061_cz.tif', 'c');
 tmp2 = a - b;
 tmp = (tmp + tmp2) / 2;
 tmp = rotateAround(tmp, 929, -241, -0.57, 'bicubic');
-waxs2 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2);
+tmp = flipud(tmp);
+waxs2 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2, beamX, beamZ);
 waxs2.Int = int64(waxs2.Int);
 fig2 = figure;
 qshow(waxs2, [0 50]);
@@ -45,13 +48,15 @@ qshow(waxs2, [0 50]);
 fig3 = figure;
 qshow(waxs2, [0 100]);
 axis([1.3 1.6 0 0.8])
-saveas(fig3, 'dmpc1_enlarge.pdf');
+%saveas(fig3, 'dmpc1_enlarge.pdf');
 
+% difference betweene two D's
 waxs3 = waxs1;
 waxs3.Int = waxs1.Int - waxs2.Int;
 figure
 qshow(waxs3, [-5, 5]);
-saveTightFigure(gcf, '046_vs_052.pdf');
+%saveTightFigure(gcf, '046_vs_052.pdf');
+
 % k = 0;
 % for i = 0.03:0.02:0.31
 %   figure;
@@ -69,18 +74,19 @@ saveTightFigure(gcf, '046_vs_052.pdf');
 %   dlmwrite(strcat(filename, '.dat'), [qr Int])
 % end
 
-% % gel phase data
-% a = slurp('dmpc1_107_cz.tif', 'c');
-% b = slurp('dmpc1_108_cz.tif', 'c');
-% tmp = a - b;
-% tmp = rotateAround(tmp, 929, -245, -0.57, 'bicubic');
-% waxs4 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2);
-% waxs4.Int = int64(waxs4.Int);
-% fig4 = figure;
-% qshow(waxs4, [0 50]);
-% axis([1.2 1.7 0 1])
+% gel phase data
+a = slurp('dmpc1_107_cz.tif', 'c');
+b = slurp('dmpc1_108_cz.tif', 'c');
+tmp = a - b;
+tmp = rotateAround(tmp, 929, -245, -0.57, 'bicubic');
+tmp = flipud(tmp);
+waxs4 = transform_ccd2q(tmp, [0.4 2.1], [0 1.6], 0.0017, 0.0017, 0.2, beamX, beamZ);
+waxs4.Int = int64(waxs4.Int);
+fig4 = figure;
+qshow(waxs4, [0 50]);
+axis([1.2 1.7 0 1])
 % saveas(fig4, 'dmpc1_107.pdf');
-% 
+ 
 % k = 0;
 % for i = 0.05:0.02:0.07
 %   figure;
