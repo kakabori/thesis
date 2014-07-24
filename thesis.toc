@@ -1,4 +1,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Lipid bilayer}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Tat}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}ripple}{5}{section.1.3}
 \contentsline {chapter}{\numberline {2}Structural Perturbation of Lipid Bilayers Due to Tat Peptide}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Materials and Methods}{8}{section.2.2}
@@ -32,9 +35,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{64}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Energy dispersion}{65}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{65}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{LAXS}{65}{section*.14}
-\contentsline {paragraph}{nGIWAXS}{67}{section*.17}
-\contentsline {paragraph}{tWAXS}{67}{section*.21}
+\contentsline {paragraph}{LAXS}{65}{section*.15}
+\contentsline {paragraph}{nGIWAXS}{67}{section*.18}
+\contentsline {paragraph}{tWAXS}{67}{section*.22}
 \contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering Experiment}{72}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering Experiment}{73}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Transmission Wide Angle X-ray Scattering Experiment}{73}{subsection.3.2.5}
@@ -60,7 +63,7 @@
 \contentsline {subsection}{\numberline {3.9.1}Major arm}{129}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Minor arm}{131}{subsection.3.9.2}
 \contentsline {section}{\numberline {3.10}Conclusion}{136}{section.3.10}
-\contentsline {chapter}{Appendices}{138}{section*.80}
+\contentsline {chapter}{Appendices}{138}{section*.81}
 \contentsline {chapter}{\numberline {A}}{139}{Appendix.1.A}
 \contentsline {section}{\numberline {A.1}More results from chapter 2}{139}{section.1.A.1}
 \contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{139}{section.1.A.2}
