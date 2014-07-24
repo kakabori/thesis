@@ -46,14 +46,15 @@
 \contentsline {subsection}{\numberline {3.3.4}Correction due to mosaic spread}{88}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}Determination of uncertainty on $|F_{hk}|$}{93}{subsection.3.3.5}
 \contentsline {section}{\numberline {3.4}Results for $|F_{hk}|$ form factors}{94}{section.3.4}
-\contentsline {section}{\numberline {3.5}Models to fit the $|F_{hk}|$ and obtain the phases}{99}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Contour Part of the Form Factor}{99}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Transbilayer Part of the Form Factor}{100}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Results for model fitting and the phases}{102}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Electron density profiles and coarse grained bilayer structure}{107}{section.3.6}
-\contentsline {section}{\numberline {3.7}nGIWAXS: results}{115}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Fluid and gel phase}{115}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ripple phase}{118}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.5}Models to fit the $|F_{hk}|$ and obtain the phases}{98}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Contour Part of the Form Factor}{98}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Transbilayer Part of the Form Factor}{99}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Results for model fitting and the phases}{101}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Electron density profiles and coarse grained bilayer structure}{106}{section.3.6}
+\contentsline {section}{\numberline {3.7}nGIWAXS: results}{114}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Fluid and gel phase}{114}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ripple phase}{117}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Thin Rod Model}{118}{subsection.3.7.3}
 \contentsline {section}{\numberline {3.8}tWAXS: results}{124}{section.3.8}
 \contentsline {section}{\numberline {3.9}Discussion}{129}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Major arm}{129}{subsection.3.9.1}

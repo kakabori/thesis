@@ -1,0 +1,165 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[
+ preprint,
+ showkeys, 
+ amsmath,
+ amssymb,
+ aps,
+]{revtex4-1}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{color}
+\usepackage[normalem]{ulem} 
+\newcommand{\jn} {\color{red}}
+\definecolor{dgreen}{rgb}{0,0.5,0}
+\newcommand{\cut} {\color{dgreen}}
+\newcommand{\ja} {\color{blue}}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Wide angle analysis}
+\author{John F. Nagle}
+%\altaffiliation{Corresponding author}
+\email{nagle@cmu.edu}
+\affiliation{Department of Physics\\Carnegie Mellon University\\Pittsburgh, PA, USA}
+
+\date{\today}
+
+\begin{abstract}
+Establish figures and equations for gel phase.  Use to model main arm of ripple phase.
+%\begin{description}
+%\item[Keywords]Lipid bilayers, molecular dynamics, thermal fluctuations, undulations, Fourier analysis
+%\item[PACS] 87.16.dj, 87.16.D-, 87.10.Tf
+%\end{description}
+\end{abstract}
+\maketitle
+
+\section{Gel phase model}
+The fully hydrated gel phase of DMPC consists of hydrocarbon chains that are basically straight and cooperatively tilted by an angle $\theta$ from the bilayer normal. (REF - Smith, STN93, Sun94, STN2002). This is called the $L_{{\beta}I}$ phase in which each chain is tilted toward a nearest neighbor chain. At lower hydration the chains tilt differently. We will also focus on the $L_{{\beta}F}$ phase in this section.  The chains will be modeled as thin rods.  The basic geometry of the $L_{{\beta}I}$ phase is shown in Fig. 1 from Sun et al. 1994.  That study emphasized that the chains are tilted in the same direction in both monolayers. It also allowed for translational offsets that we will set to zero for simplicity.  
+
+The unit cell that is customarily employed is indicated in Fig. 1c.  For the $L_{{\beta}I}$ phase the chain are tilted along the $b$ direction as shown in Fig. 1b and along the $a$ direction for the $L_{{\beta}F}$ phase.  It may be noted that chain packing in a plane that is perpendicular to the chains (and therefore not parallel to the bilayer) is nearly hexagonal; if the packing were hexagonal and if the chains had zero tilt, then in Fig. 1c one would have $b=a/\sqrt{3}$, which becomes $b=a/cos{\theta}\sqrt{3}$ with tilt.  The Laue conditions for allowed reflections are 
+\begin{equation}\label{Laue1}
+q_x=2{\pi}m/a 
+\end{equation}
+and
+\begin{equation}\label{Laue2}
+q_y=2{\pi}n/b 
+\end{equation}
+which establish the location of possible lines of scattering (Bragg rods). The modulation of the intensity along these rods is derived from the square of the unit cell form factor
+\begin{equation}\label{S(q)}
+F(\mathbf{q}) = \int_{0}^{a}dx\int_{0}^{b}dy\int_{-(L/2)cos{\theta}}^{(L/2)cos{\theta}}dz\rho(\bold{r})exp(i\bold{q}\cdot\bold{r})
+\end{equation}
+Our thin rods are modeled as delta functions
+\begin{equation}\label{rods}
+\rho(\bold{r})=\delta(x-{\alpha}z,y-{\beta}z)+\delta(x-a/2-{\alpha}z,y-b/2-{\beta}z)
+\end{equation}
+where for the general case that the chain tilt is oriented at angle $\phi$ relative to the $x$ axis 
+\begin{equation}\label{alpha}
+\alpha=tan{\theta}cos{\phi}
+\end{equation}
+and
+\begin{equation}\label{beta}
+\beta=tan{\theta}sin{\phi}.
+\end{equation}
+For the $L_{{\beta}I}$ phase, $\phi={\pi}/2$ and for the $L_{{\beta}F}$ phase, $\phi=0$ .  Continuing with the general $\phi$ case for awhile,
+defining $\gamma = {\alpha}q_x+{\beta}q_y+q_z$ yields
+\begin{equation}\label{S(q)}
+F(\bold{q}) = \int_{-(L/2)cos{\theta}}^{(L/2)cos{\theta}}dz\rho(\bold{r})e^{(i{\gamma}z}(1+e^{q_xa/2+q_yb/2}).
+\end{equation}
+The phase factor $1+e^{q_xa/2+q_yb/2}$ vanishes unless the sum $m+n$ of the Laue indices $(mn)$ is even. Only the lowest orders $(\pm2,0)$ and $(\pm1,\pm1)$ have observable intensity.  For the simple thin rod model in Eq.~\ref{rods} 
+\begin{equation}\label{int}
+F(q_z) = (4/\gamma)sin({\gamma}Lcos{\theta}/2)
+\end{equation}
+so the intensity $|F(q_z)|^2$ is modulated along each Bragg rod and maximum intensity occurs when $\gamma=0$ which, upon reversing the convention for the sign of $q_z$, means that the wide angle peaks are centered at
+\begin{equation}\label{centers}
+q_z^{mn}={\alpha}q_x+{\beta}q_y=\alpha2\pi{m}/a+\beta2\pi{n}/b.
+\end{equation}
+For the $L_{{\beta}I}$ phase with ${\phi}={\pi}/2$, one has
+\begin{equation}\label{20LbI}
+0=q_{z{\beta}I}^{20}=q_{z{\beta}I}^{-20}
+\end{equation}
+\begin{equation}\label{11LbI}
+(2\pi/b)tan{\theta}=q_{z{\beta}I}^{11}=q_{z{\beta}I}^{-11}=-q_{z{\beta}I}^{1-1}=-q_{z{\beta}I}^{-1-1}
+\end{equation}
+For the $L_{{\beta}F}$ phase with ${\phi}=0$
+\begin{equation}\label{20LbF}
+(4\pi/a)tan{\theta}=q_{z{\beta}F}^{20}=-q_{z{\beta}F}^{-20}
+\end{equation}
+and
+\begin{equation}\label{11LbF}
+(2\pi/a)tan{\theta}=q_{z{\beta}F}^{11}=q_{z{\beta}F}^{1-1}=-q_{z{\beta}F}^{-11}=-q_{z{\beta}F}^{-1-1}
+\end{equation}
+One can verify, using these equations and the Laue equations for $q_x$ and $q_y$ that the magnitudes $q^{{\pm}20}$ and $q^{{\pm}1{\pm}1}$ of the total scattering vectors are equal when the packing of the chains is hexagonal in the tilted chain plane.  
+
+In $\bold{q}$-space the powder averaged gel phase pattern consists of circles in $q_x$ and $q_y$ centered on $q_x=0=q_y$ and with the values of $q_z$ given in Eqs.~\ref{20LbI}-\ref{11LbF}.  
+The location of observed scattering in lab space $\bold{k}$ is obtained using the Ewald sphere, centered at $\bold{k}=0$ with radius $2\pi/\lambda$ and with the $\bold{q}=0$ center of the $\bold{q}$-space pattern located at $\bold{k}=(0,|\bold{k}|,0)$.  The $\bold{q}$-space pattern is tilted by the angle $\omega$ when the sample is tilted relative to the laboratory frame; for grazing incidence, the $q_z$ and $k_z$ axes are parallel and offset by $2\pi/\lambda$ in the $k_y$ beam direction.  The direction of scattering for the powder averaged gel phase is given by the laboratory $\bold{k}$ values where the $q$-space pattern intersects the Ewald sphere.  Each of the $(mn)$ rings generally intesects twice with opposite signs for $k_x$ corresponding to opposite sides of the meridian on the CCD.  The only rings that give obervable scattering in the gel phase are the $(\pm20)$ and the $(\pm1\pm1)$ rings.  However, some of these six rings may coincide. For the $L_{{\beta}I}$ phase $(\pm20)$, $(\pm11)$ and $(\pm1-1)$ are pairwise identical, so there are three primary reflections on each side of the merician. For the $L_{{\beta}F}$ phase $(1\pm1)$ and $(-1\pm1)$ are pairwise identical, so there are four primary peaks on each side of the meridian.
+
+\section{Ripple model}
+A reasonable hypothesis is that the major arm of the ripple has similar internal structure to a gel phase, with the major   difference that the plane of the major arm is tilted relative to the substrate.  That suggests that the predicted ripple pattern might be the same as would be obtained by tilting the in-plane powder averaged gel phase.  However, this would be a fundamental error because the operations of tilting and in-plane powder averaging do not commute.  It is necessary first to tilt the gel phase $\bold{q}$-space pattern and then to powder average it about the laboratory $k_z$ axis.  
+
+Furthermore, the axis for tilting matters, so it is important to define all angles carefully.  We continue to define the chain tilt angle relative to the bilayer normal by $\theta$.  The tilt of the major arm will be defined by a rotation angle $\xi$ about an axis in the $(x,y)$ plane and the angle that this axis makes with the $x$ axis will be defined to be $\zeta$.  Starting from the $q$ values obtained for the various gel phases, the proper order of rotations is first to rotate the orientation of the lattice with respect to the lab frame; this involves the standard rotation of the $(x,y)$ plane about the $z$ axis by angle $\zeta$.  Then, the gel phase is rotated about the new in-plane $x$ axis. The rotated $q$ value will be denoted $\tilde{q}$ which has components
+\begin{equation}\label{qtz}
+\tilde{q}_{z}^{mn}=q_{z}^{mn}cos{\xi}+q_{x}^{mn}sin{\xi}sin{\zeta}-q_{y}^{mn}sin{\xi}cos{\zeta},
+\end{equation}
+\begin{equation}\label{qtx}
+\tilde{q}_{x}^{mn}=q_{x}^{mn}cos{\zeta}+q_{y}^{mn}sin{\zeta},
+\end{equation}
+and
+\begin{equation}\label{qty}
+\tilde{q}_{y}^{mn}=q_{y}^{mn}cos{\xi}cos{\zeta}-q_{x}^{mn}sin{\xi}cos{\zeta}+q_{z}^{mn}sin{\zeta}.
+\end{equation}
+As there are many domains in each x-ray exposure, the next step powder averages each $(mn)$ reflection by rotating about the $z$ axis from $0$ to $2\pi$.  As for the gel phase, the ensuing $q$ space pattern consists of circles parallel to the $(x,y)$ plane with center at $(0,0,q_z^{mn})$.  As noted above for the gel phase, this pattern is tilted by $\omega$ when the substrate is tilted for our transmission experiments.  Intersections of these circles with the Ewald sphere determines the angle of scattering in the laboratory from which, by standard equations (Section 3.2.6?), the $\bold{q}_{mn}$ are determined.  
+
+The most pertinent component is $\tilde{q}_z^{mn}$ as this primarily determines how far reflections are from the meridian.  As there are many variable angles, let us consider $\tilde{q}_z^{mn}$ for the most pertinent special cases.  It is appropriate here to consider only $\omega=0$ because experimental data with $\omega{\neq}0$ are easily converted to this standard orientation.  We will focus on four special cases.  First, consider the in-plane orientation ${\zeta}$ of the lattice to have either the longer $a$ axis parallel (${\zeta}=0$) or perpendicular (${\zeta}={\pi}/2$) to the ripple direction.  It may be noted that these two special directions allow uniform packing of the unit cells along the finite ripple direction, whereas the edges of the unit cells are ragged at the boundaries of the major arm for other values of ${\zeta}$.  Also, these two directions are symmetrical.  However, as the lipid molecules are chiral and as there is likely disorder at the boundaries of the major arm, one cannot eliminate general ${\zeta}$ angles {\it a priori}.  We will also focus on the special orientations of the tilt direction that correspond to the $L_{{\beta}I}$ gel phase ($\phi=\pi/2$), which we will henceforth call $P_{{\beta}I}^{\zeta}$ phases, and the $L_{{\beta}F}$ gel phase ($\phi=0$), to be called $P_{{\beta}F}^{\zeta}$ phases, recognizing, of course, that we are only modeling the major arm of the $P_{\beta}$ ripple phase.   It will also be convenient to simplify to hexagonal packing of the hydrocarbon chains as the orthorhombic symmetry breaking that makes $q_{total}^{20}{\neq}q_{total}^{11}$ is small; then, $b=a/(\sqrt{3}cos{\theta})$ for the $P_{{\beta}I}^{\zeta}$ phases and $b=acos{\theta}/\sqrt{3}$ for the $P_{{\beta}F}^{\zeta}$ phases.  These simplifications allow us to focus on the chain tilt angle $\theta$ and the tilt $\xi$ of the major side for four cases of $(\phi,\zeta)$ and the observable orders $({\pm}2,0)$ and (${\pm}1,{\pm}1)$.  The following table shows the values of $q_z^{mn}$, all divided by $2\pi/a$, for the various phases that include lattice orientations $\zeta$.  
+
+Interestingly, tilting the gel phase to form putative ripple major arms breaks the degeneracy of some of the gel phase rings.  Most notably, all the degeneracies are broken in the $P_{{\beta}I}^{\zeta=\pi/2}$ special case and none are broken in $P_{{\beta}F}^{\zeta=\pi/2}$.  The magnitude of these symmmetry breaking are typically $4{\pi}sin{\xi}/a {\approx} 0.32 {\AA}^{-1}$  for $\xi=12$ degrees, so Bragg rods overlap considerably, making clear identification of the sample phase challenging.
+\vspace{0.5cm}
+
+\begin{tabular}{ | l | c | c | c |}
+  \hline                       
+   & $(\pm2,0)$ & $(\pm1,1)$ & $(\pm1,-1)$\\
+  \hline
+ $L_{{\beta}I}$ & 0 & $\sqrt{3}sin{\theta}$ & $-\sqrt{3}sin{\theta}$\\
+  \hline  
+  $P_{{\beta}I}^{\zeta=0}$ & 0 & $\sqrt{3}(sin{\theta}cos{\xi}\mp sin{\xi})$ & $-\sqrt{3}(sin{\theta}cos{\xi}\pm sin{\xi})$\\
+ \hline
+  $P_{{\beta}I}^{\zeta=\pi/2}$ & $\pm2sin\xi$ & $\sqrt{3}sin{\theta}cos{\xi}\pm sin{\xi}$ & $-\sqrt{3}sin{\theta}cos{\xi}\pm sin{\xi}$\\
+ \hline
+& $(\pm2,0)$ & $(1,\pm1)$ & $(-1,\pm1)$\\
+  \hline
+$L_{{\beta}F}$ & $\pm2tan\theta$ & $tan\theta$ & $-tan\theta$ \\
+ \hline
+  $P_{{\beta}F}^{\zeta=0}$ & $\pm2\tan{\theta}$cos$\xi$ & $tan{\theta}cos{\xi}\mp\sqrt{3}sin{\xi}$ & $-(tan{\theta}cos{\xi}{\pm}\sqrt{3}sin{\xi})$\\
+  \hline
+   $P_{{\beta}F}^{\zeta=\pi/2}$ & $\pm2(tan{\theta}$cos$\xi+$sin$\xi$) & $tan{\theta}cos{\xi}+sin{\xi}$ & $-(tan{\theta}cos{\xi}+sin{\xi})$\\
+  \hline
+\end{tabular}
+
+
+%\bibliography{References}
+\end{document}
+
+	
