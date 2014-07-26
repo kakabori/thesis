@@ -61,18 +61,18 @@
 \contentsline {section}{\numberline {3.9}Thin Rod Model}{129}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Gel phase model}{129}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Ripple model}{131}{subsection.3.9.2}
-\contentsline {section}{\numberline {3.10}Discussion}{135}{section.3.10}
-\contentsline {subsection}{\numberline {3.10.1}Major arm}{135}{subsection.3.10.1}
-\contentsline {subsection}{\numberline {3.10.2}Minor arm}{137}{subsection.3.10.2}
-\contentsline {section}{\numberline {3.11}Conclusion}{142}{section.3.11}
-\contentsline {chapter}{Appendices}{144}{section*.83}
-\contentsline {chapter}{\numberline {A}}{145}{Appendix.1.A}
-\contentsline {section}{\numberline {A.1}More results from chapter 2}{145}{section.1.A.1}
-\contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{145}{section.1.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Mosaic Spread: Calculation}{145}{subsection.1.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Mosaic Spread: Near Equivalence of Two Methods}{152}{subsection.1.A.2.2}
-\contentsline {subsection}{\numberline {A.2.3}NFIT}{155}{subsection.1.A.2.3}
-\contentsline {section}{\numberline {A.3}Derivation of the contour part of the form factor}{157}{section.1.A.3}
-\contentsline {section}{\numberline {A.4}Derivation of the transbilayer part of the form factor in the 2G hybrid model}{160}{section.1.A.4}
-\contentsline {section}{\numberline {A.5}Correction due to refractive index}{162}{section.1.A.5}
-\contentsline {section}{\numberline {A.6}Thin Rod Model of the ripple phase}{163}{section.1.A.6}
+\contentsline {section}{\numberline {3.10}Discussion}{136}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Major arm}{136}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Minor arm}{138}{subsection.3.10.2}
+\contentsline {section}{\numberline {3.11}Conclusion}{143}{section.3.11}
+\contentsline {chapter}{Appendices}{145}{section*.85}
+\contentsline {chapter}{\numberline {A}}{146}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}More results from chapter 2}{146}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{146}{section.1.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Mosaic Spread: Calculation}{146}{subsection.1.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Mosaic Spread: Near Equivalence of Two Methods}{153}{subsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}NFIT}{156}{subsection.1.A.2.3}
+\contentsline {section}{\numberline {A.3}Derivation of the contour part of the form factor}{158}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}Derivation of the transbilayer part of the form factor in the 2G hybrid model}{161}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Correction due to refractive index}{163}{section.1.A.5}
+\contentsline {section}{\numberline {A.6}Thin Rod Model of the ripple phase}{164}{section.1.A.6}
