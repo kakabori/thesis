@@ -1,33 +1,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Some Amino Acids Data\relax }}{10}{table.caption.8}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of electrons per lipid and volume per lipid.\relax }}{20}{table.caption.14}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Some structural parameters for each component. $n^e_i$ is the number of electrons and $\rho _i$ is the average electron density. \relax }}{20}{table.caption.15}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Tat basic structural parameters. The notations are the same as in Table\nobreakspace {}\ref {tab:component}. $x_\textrm {Tat}$ = Tat/(Tat+Lipid).\relax }}{20}{table.caption.16}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Volume results at 37 \textcelsius \relax }}{31}{table.caption.21}
-\contentsline {table}{\numberline {2.6}{\ignorespaces Fitting Results for DOPC membranes for the THG (Tat in headgroup) model. $z_\textrm {PC}-z_\textrm {CG}= 3.1$ \r A\ and $z_\textrm {CG}-z_\textrm {HC}= 1.3$ \r A\ in all fits.\relax }}{32}{table.caption.22}
-\contentsline {table}{\numberline {2.7}{\ignorespaces Fitting Results for DOPC:DOPE (3:1) membranes for the THG model. $z_\textrm {PC}-z_\textrm {CG}= 3.1$ \r A\ and $z_\textrm {CG}-z_\textrm {HC}= 1.3$ \r A\ in all fits.\relax }}{37}{table.caption.27}
-\contentsline {table}{\numberline {2.8}{\ignorespaces (Numbers are wrong) Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. $\Delta z_1 = z_\textrm {PC}-z_\textrm {CG}$ and $\Delta z_2 = z_\textrm {CG}-z_\textrm {HC}$.\relax }}{37}{table.caption.28}
-\contentsline {table}{\numberline {2.9}{\ignorespaces Fitting Results of the bound THG model for DOPC membranes. $z_\textrm {PC}-z_\textrm {CG}$ = 3.1 and $z_\textrm {CG}-z_\textrm {HC}$ = 1.3 in all fits.\relax }}{42}{table.caption.34}
-\contentsline {table}{\numberline {2.10}{\ignorespaces Comparison of the simulated form factors to the experimental form factors.\relax }}{49}{table.caption.40}
-\contentsline {table}{\numberline {2.11}{\ignorespaces Summary of simulation results. $\delimiter "426830A D_\textrm {PP}\delimiter "526930B $, phosphorus-phosphorus distance averaged over all lipids; $D_\textrm {PP}$, Tat-perturbed phosphorus atoms; $x$, thickness away from Tat; $\Delta t$, $\delimiter "426830A D_\textrm {PP}^\textrm {DOPC}\delimiter "526930B -D_\textrm {PP}$; $H_\textrm {Tat}$, Tat height; $R_\textrm {Tat}$, radius of Tat cylinder; $R_2$, radius of the calculated in-plane Tat-perturbed region; $R_3$, effective radius of the simulation box.\relax }}{50}{table.caption.41}
-\contentsline {table}{\numberline {2.12}{\ignorespaces Summary of weighted average results. The caption is the same as Table\nobreakspace {}\ref {tab:MD_summary}.\relax }}{50}{table.caption.42}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Amino Acid Data\relax }}{13}{table.caption.11}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of electrons and volume per lipid.\relax }}{23}{table.caption.17}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Structural parameters for each component. $n^e_i$ is the number of electrons and $\rho _i$ is the average electron density. $V_i$ is the molecular volume. \relax }}{23}{table.caption.18}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Tat basic structural parameters. The notations are the same as in Table\nobreakspace {}\ref {tab:component}. $x_\textrm {Tat}$ = Tat/(Tat+Lipid).\relax }}{23}{table.caption.19}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Volume results at 37 \textcelsius \relax }}{34}{table.caption.24}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Fitting Results for DOPC membranes for the THG (Tat in headgroup) model. The smallest $\chi ^2$ values at each Tat mole fraction $x_\textrm {Tat}$ are highlighted in red. $z_\textrm {PC}-z_\textrm {CG}= 3.1$ \r A\ and $z_\textrm {CG}-z_\textrm {HC}= 1.3$ \r A\ in all fits. *Paramters were fixed.\relax }}{35}{table.caption.25}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Fitting Results for DOPC:DOPE (3:1) membranes for the THG model. $z_\textrm {PC}-z_\textrm {CG}= 3.1$ \r A\ and $z_\textrm {CG}-z_\textrm {HC}= 1.3$ \r A\ in all fits.\relax }}{40}{table.caption.30}
+\contentsline {table}{\numberline {2.8}{\ignorespaces (Numbers are wrong) Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. $\Delta z_1 = z_\textrm {PC}-z_\textrm {CG}$ and $\Delta z_2 = z_\textrm {CG}-z_\textrm {HC}$.\relax }}{41}{table.caption.31}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Fitting Results for the THG model with the lower bounds on the headgroup widths for DOPC membranes. $z_\textrm {PC}-z_\textrm {CG}$ = 3.1 and $z_\textrm {CG}-z_\textrm {HC}$ = 1.3 in all fits. *Parameters with a lower bound as described in the text\relax }}{45}{table.caption.37}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Comparison of the simulated form factors to the experimental form factors.\relax }}{52}{table.caption.43}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Summary of simulation results. $\delimiter "426830A D_\textrm {PP}\delimiter "526930B $, phosphorus-phosphorus distance averaged over all lipids; $D_\textrm {PP}$, Tat-perturbed phosphorus atoms; $x$, thickness away from Tat; $\Delta t$, $\delimiter "426830A D_\textrm {PP}^\textrm {DOPC}\delimiter "526930B -D_\textrm {PP}$; $H_\textrm {Tat}$, Tat height; $R_\textrm {Tat}$, radius of Tat cylinder; $R_2$, radius of the calculated in-plane Tat-perturbed region; $R_3$, effective radius of the simulation box.\relax }}{53}{table.caption.44}
+\contentsline {table}{\numberline {2.12}{\ignorespaces Summary of weighted average results. The caption is the same as Table\nobreakspace {}\ref {tab:MD_summary}.\relax }}{53}{table.caption.45}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Lattice constants for DMPC at $T$ = 18.0 \textcelsius \ reported by Wack and Webb \cite {ref:Wack89} except the one colored in blue. The data collected and analyzed in this thesis are colored blue.\relax }}{61}{table.caption.12}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Beam divergence}}{64}{table.caption.15}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Energy dispersion}}{65}{table.caption.16}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Geometric broadening\relax }}{71}{table.caption.28}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Correction for the ripple LAXS peaks\relax }}{91}{table.caption.42}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Correction for the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})\relax }}{92}{table.caption.43}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree .\relax }}{95}{table.caption.44}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1}).\relax }}{96}{table.caption.45}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Comparison of form factors for the unoriented sample from Wack and Webb \cite {ref:Wack89} and oriented sample from this study.\relax }}{97}{table.caption.46}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$\relax }}{100}{table.caption.47}
-\contentsline {table}{\numberline {3.11}{\ignorespaces Model parameters. Fit1 and Fit2 were performed with the M1G model while Fit3 to 7 were with the M2G model. *Parameters were fixed to the values shown.\relax }}{102}{table.caption.48}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Form factors for $h$ = 1 to 4 predicted by different fits. In consensus phase column, * indicates an extinct peak, and ? is assigned if a consistent phase could not be obtained throughout different fits.\relax }}{103}{table.caption.49}
-\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 5 to 9 predicted by different fits. In consensus phase column, * indicates an extinct peak, and ? is assigned if a consistent phase could not be obtained throughout different fits.\relax }}{104}{table.caption.50}
-\contentsline {table}{\numberline {3.14}{\ignorespaces Ripple structural quantities. I: Results from Sun \textit {et al.} II: Used only up to $(h,k)$ = (3, 4) III: Replaced lower order $|F_{hk}|$ with those from Wack and Webb, keeping the same relative error \relax }}{107}{table.caption.55}
-\contentsline {table}{\numberline {3.15}{\ignorespaces Estimated structural quantities\relax }}{112}{table.caption.59}
-\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of peak properties}}{123}{table.caption.71}
-\contentsline {table}{\numberline {3.17}{\ignorespaces \relax }}{133}{table.caption.77}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Beam divergence}}{65}{table.caption.15}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Energy dispersion}}{66}{table.caption.16}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Geometric broadening\relax }}{72}{table.caption.28}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Correction factors for the raw intensities of the ripple LAXS peaks for thickness of an oriented sample $t$ = 10 \r A\ and mosaic spread $\alpha _M$ = 0.05\textdegree .\relax }}{94}{table.caption.42}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Corrections for the intensities of the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})\relax }}{95}{table.caption.43}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree .\relax }}{97}{table.caption.44}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1}).\relax }}{98}{table.caption.45}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Comparison of form factors $\left |F_{hk}^\text {un}\right |$ for the unoriented sample from Wack and Webb \cite {ref:Wack89} and $\left |F_{hk}^\text {ori}\right |$ from an oriented sample from this study. The ratio $\left |F_{hk}^\text {un}\right |/\left |F_{hk}^\text {ori}\right |$ of unoriented to oriented form factors is shown. Three pairs of reflections with very nearly the same $q$ values are shown in color. A modification is shown that partitions the total intensity of unoriented reflections with nearly the same $q$, as described in the text.\relax }}{100}{table.caption.46}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$\relax }}{103}{table.caption.47}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Model parameters. Fit1 and Fit2 were performed with the M1G model while Fit3 to 7 were with the M2G model. *Parameters were fixed to the values shown.\relax }}{105}{table.caption.48}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Form factors for $h$ = 1 to 4\relax }}{108}{table.caption.50}
+\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 5 to 9\relax }}{109}{table.caption.51}
+\contentsline {table}{\numberline {3.14}{\ignorespaces Ripple structural quantities. I: Results from Sun \textit {et al.} II: Used only up to $(h,k)$ = (3, 4) III: Replaced lower order $|F_{hk}|$ with those from Wack and Webb, keeping the same relative error \relax }}{111}{table.caption.55}
+\contentsline {table}{\numberline {3.15}{\ignorespaces Estimated structural quantities\relax }}{116}{table.caption.59}
+\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of peak properties}}{127}{table.caption.71}
+\contentsline {table}{\numberline {3.17}{\ignorespaces \relax }}{137}{table.caption.77}
+\contentsline {table}{\numberline {3.18}{\ignorespaces \relax }}{139}{table.caption.79}
 \addvspace {10\p@ }
