@@ -9,49 +9,48 @@ A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "Duchardt07"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "Kucerka05"
 Warning--I didn't find a database entry for "Ziegler"
-You've used 123 entries,
+You've used 124 entries,
             1791 wiz_defined-function locations,
-            1263 strings with 28709 characters,
-and the built_in function-call counts, 31503 in all, are:
-= -- 2694
-> -- 1614
+            1267 strings with 28903 characters,
+and the built_in function-call counts, 31782 in all, are:
+= -- 2718
+> -- 1631
 < -- 0
-+ -- 583
-- -- 460
-* -- 2754
-:= -- 5076
-add.period$ -- 361
-call.type$ -- 123
-change.case$ -- 116
++ -- 589
+- -- 465
+* -- 2780
+:= -- 5122
+add.period$ -- 364
+call.type$ -- 124
+change.case$ -- 117
 chr.to.int$ -- 0
-cite$ -- 123
-duplicate$ -- 1084
-empty$ -- 2980
-format.name$ -- 460
-if$ -- 6780
+cite$ -- 124
+duplicate$ -- 1093
+empty$ -- 3004
+format.name$ -- 465
+if$ -- 6838
 int.to.chr$ -- 0
-int.to.str$ -- 123
-missing$ -- 118
-newline$ -- 610
-num.names$ -- 118
-pop$ -- 168
+int.to.str$ -- 124
+missing$ -- 119
+newline$ -- 615
+num.names$ -- 119
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 412
+skip$ -- 415
 stack$ -- 0
-substring$ -- 2887
-swap$ -- 123
+substring$ -- 2912
+swap$ -- 124
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 281
-width$ -- 126
-write$ -- 1328
-(There were 4 warnings)
+while$ -- 284
+width$ -- 127
+write$ -- 1339
+(There were 3 warnings)

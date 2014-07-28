@@ -169,11 +169,18 @@ Eric Vivès, Priscille Brodin, and Bernard Lebleu.
   plasma membrane and accumulates in the cell nucleus.
 \newblock {\em Journal of Biological Chemistry}, 272(25):16010--16017, 1997.
 
-\bibitem{Ter-Avetisyan09}
+\bibitem{TerAvetisyan09}
 Gohar Ter-Avetisyan, Gisela Tünnemann, Danny Nowak, Matthias Nitschke, Andreas
   Herrmann, Marek Drab, and M.~Cristina Cardoso.
 \newblock Cell entry of arginine-rich peptides is independent of endocytosis.
 \newblock {\em Journal of Biological Chemistry}, 284(6):3370--3378, 2009.
+
+\bibitem{Duchardt07}
+Falk Duchardt, Mariola Fotin-Mleczek, Heinz Schwarz, Rainer Fischer, and Roland
+  Brock.
+\newblock A comprehensive model for the cellular uptake of cationic
+  cell-penetrating peptides.
+\newblock {\em Traffic}, 8(7):848--866, 2007.
 
 \bibitem{Tunnemann06}
 Gisela Tünnemann, Robert~M. Martin, Simone Haupt, Christoph Patsch, Frank
@@ -713,17 +720,17 @@ CE~Miller, J~Majewski, EB~Watkins, DJ~Mulder, T~Gog, and TL~Kuhl.
   grazing incidence x-ray diffraction.
 \newblock {\em Physical review letters}, 100(5):058103, 2008.
 
-\bibitem{ref:Warren69}
-Bertram~Eugene Warren.
-\newblock {\em X-ray Diffraction}.
-\newblock Courier Dover Publications, 1969.
-
 \bibitem{ref:Sun94}
 W-J Sun, RM~Suter, MA~Knewtson, CR~Worthington, S~Tristram-Nagle, R~Zhang, and
   JF~Nagle.
 \newblock Order and disorder in fully hydrated unoriented bilayers of gel-phase
   dipalmitoylphosphatidylcholine.
 \newblock {\em Physical Review E}, 49(5):4665, 1994.
+
+\bibitem{ref:Warren69}
+Bertram~Eugene Warren.
+\newblock {\em X-ray Diffraction}.
+\newblock Courier Dover Publications, 1969.
 
 \bibitem{ref:Guler09}
 S~Guler, D~Dipon Ghosh, Jianjun Pan, John~C Mathai, Mark~L Zeidel, John~F
