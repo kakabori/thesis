@@ -7,49 +7,49 @@ A level-1 auxiliary file: chap_01.aux
 A level-1 auxiliary file: chap_02.aux
 A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
-The style file: unsrt.bst
+The style file: ieeetr.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "Ziegler"
 Warning--I didn't find a database entry for ""
 You've used 124 entries,
-            1791 wiz_defined-function locations,
-            1270 strings with 29024 characters,
-and the built_in function-call counts, 31956 in all, are:
-= -- 2734
+            1876 wiz_defined-function locations,
+            1300 strings with 29014 characters,
+and the built_in function-call counts, 43602 in all, are:
+= -- 4550
 > -- 1647
 < -- 0
 + -- 594
 - -- 470
-* -- 2804
-:= -- 5161
-add.period$ -- 366
+* -- 3233
+:= -- 5857
+add.period$ -- 128
 call.type$ -- 124
 change.case$ -- 118
 chr.to.int$ -- 0
 cite$ -- 124
-duplicate$ -- 1097
-empty$ -- 3009
+duplicate$ -- 2166
+empty$ -- 3699
 format.name$ -- 470
-if$ -- 6871
+if$ -- 10801
 int.to.chr$ -- 0
 int.to.str$ -- 124
 missing$ -- 120
-newline$ -- 617
+newline$ -- 379
 num.names$ -- 120
-pop$ -- 161
+pop$ -- 172
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 412
+skip$ -- 1896
 stack$ -- 0
-substring$ -- 2930
-swap$ -- 124
+substring$ -- 3759
+swap$ -- 1200
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 286
+while$ -- 391
 width$ -- 127
-write$ -- 1345
+write$ -- 1332
 (There were 2 warnings)

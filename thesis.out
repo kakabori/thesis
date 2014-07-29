@@ -24,4 +24,48 @@
 \BOOKMARK [2][-]{subsection.2.4.5}{Molecular Dynamics Simulations}{section.2.4}% 24
 \BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 25
 \BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 26
-\BOOKMARK [0][-]{section*.53}{Appendices}{}% 62
+\BOOKMARK [0][-]{chapter.3}{Ripple Phase}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Some history}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Purpose of this study}{section.3.1}% 30
+\BOOKMARK [1][-]{section.3.2}{Materials and Methods}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{Sample Preparation}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{Instrumental Resolution}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.3}{Low Angle X-ray Scattering Experiment}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.4}{Near Grazing Incidence Wide Angle X-ray Scattering nGIWAXS}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.5}{Transmission Wide Angle X-ray Scattering tWAXS}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.6}{Sample q-space}{section.3.2}% 37
+\BOOKMARK [1][-]{section.3.3}{LAXS data reduction}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Lattice Structure - Unit Cell}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{Lorentz Correction}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{Absorption Correction for LAXS}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.4}{Correction due to mosaic spread}{section.3.3}% 42
+\BOOKMARK [1][-]{section.3.4}{Results for |Fhk| form factors}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.5}{Models to fit the |Fhk| and obtain the phases}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.5.1}{Contour Part of the Form Factor}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.2}{Transbilayer Part of the Form Factor}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.3}{Some results of model fitting}{section.3.5}% 47
+\BOOKMARK [2][-]{subsection.3.5.4}{Results for the phase factors}{section.3.5}% 48
+\BOOKMARK [1][-]{section.3.6}{Electron density profiles and coarse grained bilayer structure}{chapter.3}% 49
+\BOOKMARK [1][-]{section.3.7}{nGIWAXS: results}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.7.1}{Fluid and gel phase}{section.3.7}% 51
+\BOOKMARK [2][-]{subsection.3.7.2}{Ripple phase}{section.3.7}% 52
+\BOOKMARK [1][-]{section.3.8}{tWAXS: results}{chapter.3}% 53
+\BOOKMARK [1][-]{section.3.9}{Thin Rod Model}{chapter.3}% 54
+\BOOKMARK [2][-]{subsection.3.9.1}{Gel phase model}{section.3.9}% 55
+\BOOKMARK [2][-]{subsection.3.9.2}{Ripple model}{section.3.9}% 56
+\BOOKMARK [1][-]{section.3.10}{Discussion}{chapter.3}% 57
+\BOOKMARK [2][-]{subsection.3.10.1}{Major arm}{section.3.10}% 58
+\BOOKMARK [2][-]{subsection.3.10.2}{Minor arm}{section.3.10}% 59
+\BOOKMARK [1][-]{section.3.11}{Conclusion}{chapter.3}% 60
+\BOOKMARK [0][-]{section*.127}{Appendices}{}% 61
+\BOOKMARK [0][-]{Appendix.a.A}{}{}% 62
+\BOOKMARK [1][-]{section.a.A.1}{More results from chapter 2}{Appendix.a.A}% 63
+\BOOKMARK [1][-]{section.a.A.2}{Mosaic Spread for NFIT analysis}{Appendix.a.A}% 64
+\BOOKMARK [2][-]{subsection.a.A.2.1}{Mosaic Spread: Calculation}{section.a.A.2}% 65
+\BOOKMARK [2][-]{subsection.a.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.a.A.2}% 66
+\BOOKMARK [2][-]{subsection.a.A.2.3}{NFIT}{section.a.A.2}% 67
+\BOOKMARK [1][-]{section.a.A.3}{Derivation of the contour part of the form factor}{Appendix.a.A}% 68
+\BOOKMARK [1][-]{section.a.A.4}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.a.A}% 69
+\BOOKMARK [1][-]{section.a.A.5}{Correction due to refractive index}{Appendix.a.A}% 70
+\BOOKMARK [1][-]{section.a.A.6}{Thin Rod Model of the ripple phase}{Appendix.a.A}% 71
