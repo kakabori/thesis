@@ -269,33 +269,59 @@ $\VTat$ = $1560/2464\times\Vc$ \AA$^3$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{X-ray setup}
-Figure~\ref{fig:x-ray_setup} shows a schematic of the X-ray setup.
-
-The hydration chamber is described in detail in \cite{Kucerka05}. 
-The sample holder was mounted on a servo motor, which allowed continuous 
-rotation of the sample between -1.6\textdegree\ and 7\textdegree. 
+Figure~\ref{fig:x-ray_setup} shows a schematic of our X-ray setup
+omitting details of complicated X-ray optics and flightpath upstream of the 
+sample hydration chamber and only keeping the most pertinent features to 
+this thesis.
+Pure water was filled at the bottom of the hydration chamber, providing
+hydration vapor for the sample.
+The sample holder was mounted on a rotation motor, which allowed continuous 
+rotation of the sample during an X-ray exposure for low angle scattering
+(LAXS) as well as fixed angles of incidence $\omega$ for wide angle 
+scattering (WAXS).
 A Peltier cooling/heating element was attached to the sample holder and
 the sample was situated on this Peltier element, with which hydration level of
-the sample could be easily adjusted. This ability of the chamber was important
-especially in the ripple phase experiment, which is described in chapter 3. 
+the sample could be easily adjusted. 
+The wall of the hydration chamber was made of a thick aluminum piece within which
+water at a constant temperature $T$ circulated to provide a thermal bath:
+$T$ = 37\textdegree\ for Tat experiments and 18\textdegree\ for ripple phase 
+experiments.
+Entrance and exit windows for the X-ray beam were made of mylar, which
+caused strong mylar scattering in the wide angle region as described in
+chapter \ref{chap:ripple}.
+After a sample was loaded, the chamber was shielded very tightly
+to achieve full hydration.
+Further details of the hydration chamber is described in \cite{Kucerka05_BPJ}.
+The sample to detector distance was measured by indexing the standard 
+silver behenate diffraction pattern whose $D$-space is 58.367 \AA.
 Hydration level of a sample was estimated by measuring the average 
 interbilayer distance, $D$-spacing, which was easily calculated by indexing the 
 diffraction peaks using the tview software developed by Dr. Yufeng Liu.
-The semitransparent beam stop was set to always cover the direct beam, which would
-otherwise saturate the charge coupled device (CCD) detector. 
+A semitransparent beam stop was used to attenuate the direct beam on the CCD
+detector, 
+which would otherwise saturate the CCD pixels instantaneously. 
 The beam profile was measured through
 this semitransparent beam stop. Data reduction and correction for a CCD 
 detector are described in detail in \cite{Barna99}.
 
 \begin{figure}[htbp]
   \centering
-  \caption[]{X-ray setup for LAXS experiments.}
+  \includegraphics[width=0.9\textwidth]{figures/Tat/MMs/chamber_geometry}
+  \caption[Schematic diagram of the X-ray setup for LAXS experiments.]
+  {Schematic diagram of a top view of the X-ray setup for LAXS experiments.
+  A sample shown in green was situated on top of a Peltier cooling/heating
+  device, which was attached to the sample holder. The light gray 
+  sample holder was mounted on the dark gray rotation motor, which provided 
+  precise control of the incident angle $\omega$. Thin mylar windows shown 
+  in cyan allowed incoming
+  and outgoing X-rays shown as a red arrow to go through the chamber without 
+  being attenuated.
+  A semitransparent beam stop made of thin pieces of molybdenum attenuated
+  the direct beam to avoid saturation of CCD pixels and conveniently provided 
+  the beam profile measured on the CCD. The flightpath and hydration chamber
+  were filled with helium to reduce air scattering.}
   \label{fig:x-ray_setup}
 \end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Data reduction of diffuse scattering data}\label{sec:data_reduction}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis of Diffuse Scattering}\label{sec:diffuse_analysis}
@@ -310,7 +336,7 @@ bilayers including Tat peptides.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/Tat/figure1}
+  \includegraphics[width=0.5\textwidth]{figures/Tat/NFIT_results/dopcdope1to1}
   \caption{LAXS of DOPC:DOPE (1:1) with $\xTat$ = 0.034 at 37 \textcelsius. 
   White lobes of diffuse scattering intensity have large grey numbers, while
   lamellar orders and beam are shown to the left of the
@@ -794,7 +820,7 @@ to these calculated values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Fits with Lower Bounds}
 Modeling of the bilayer structure was done using the SDP program \cite{Kucerka08},
-fully developed by Dr. Norbert Ku\v{c}erka, 
+developed by Dr. Norbert Ku\v{c}erka, 
 as described in Sec.~\ref{sec:SDP_method}.
 To allow model parameters with upper and lower bounds, I modified the
 SDP program following the MINUIT User's Guide, section 1.3 
@@ -805,7 +831,7 @@ any values between $-\infty$ to $+\infty$, which is an assumption made
 in a typical minimization routine such as 
 the simplex method and Levenburg-Marquadt algorithm.
 A model parameter with both lower and upper bounds ($a$ and $b$, respectively) 
-is related to an internal variable by the following transformation,
+is related to its corresponding internal variable by the following transformation,
 \begin{align}
   P_\textrm{int} &= \arcsin \pars{2\frac{P_\textrm{ext}-a}{b-a}-1}  \\
   P_\textrm{ext} &= a + \frac{b-a}{2}(\sin P_\textrm{int}+1),
@@ -815,7 +841,7 @@ where $P_\text{int}$ is the value of an internal variable and
 $P_\text{ext}$ is the value of a model parameter. It is easy to show that
 $P_\text{ext}$ can only take values between $a$ and $b$.
 The goodness of a fit $\chi^2$ is then calculated by transforming the
-internal variables to the model parameters via Eq.~(\ref{eq:internal_external}). 
+internal variables to their respective model parameters via Eq.~(\ref{eq:internal_external}). 
 For variables with a lower bound $a$ only, the transformation is
 \begin{align}
   P_\textrm{int} &= \sqrt{(P_\textrm{ext}-a+1)^2 - 1} \\
@@ -1042,17 +1068,19 @@ The only unknown is $R_2$.
   perturbation due to Tat. The suppressed region is between $R$ = 0 and $R_1$,
   the boundary region between $R_1$ and $R_2$, and the unperturbed
   region between $R_2$ and $R_3$. $\zphos$ is the average $z$ position of
-  phosphorus atoms measured from the bilayer center within the suppressed region, 
-  obtained directly from the MD simulation trajectories as described in 
+  phosphorus atoms measured from the bilayer center within the suppressed region.
+  $\zphos$ were obtained directly from the MD simulation trajectories as described in 
   Sec.~\ref{sec:local_thinning}. $\zphos^0$ is the average $z$ position of 
-  phosphorus atoms measured from the bilayer center in the unperturbed region.}
+  phosphorus atoms measured from the bilayer center in the unperturbed region.
+  $\langle\zphos\rangle = \langle h(r)\rangle$ is a half of the average distance 
+  between phosphorus atoms in opposing leaflets.}
   \label{fig:linear_model}
 \end{figure}
 
 Let us calculate $\langle h(r) \rangle$. In cylindrical coodinates, 
 \begin{equation}
   \langle h(r) \rangle 
-  = \frac{1}{\pi R_3^2} \int_0^{2\pi}d\phi \int_0^{R_3}\dr rh(r)
+  = \frac{1}{\pi R_3^2} \int_0^{2\pi}d\phi \int_0^{R_3}\dr rh(r).
 \end{equation}
 The $\phi$ integration is trivial. The $r$ integration is
 \begin{align}
@@ -1084,17 +1112,12 @@ with
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \subsection{Bending and Bulk Modulus}\label{sec:Kc_results}
-(Under construction)
-Show X-ray data. Show fitting boxes. Show the Kc values.
-Also, show the resultant form factors, which qualitatively show the membrane thinning.
-Also describe how I got error bars.
-
-Fig.~\ref{fig:figure1} shows the scattering intensity pattern from DOPC/DOPE (1:1) with mole 
-fraction $\xTat=0.034$. The diffuse lobes are due to equilibrium fluctuations that occur 
-in these fully hydrated, oriented lipid/peptide samples. The intensity $I(\mathbf{q})$ in the diffuse 
-patterns provide the
-absolute values of the form factors $F(q_z)$, which are the Fourier transforms 
-of the electron density
+Fig.~\ref{fig:figure1} shows the scattering intensity pattern from 
+DOPC/DOPE (1:1) with Tat mole fraction $\xTat=0.034$. The diffuse lobes are 
+due to equilibrium fluctuations that occur in these fully hydrated, oriented 
+lipid/peptide samples. The intensity $I(\mathbf{q})$ in the diffuse 
+patterns provide the absolute values of the form factors $F(q_z)$, which are 
+the Fourier transforms of the electron density 
 profile, through the relation $I(\mathbf{q})=S(\mathbf{q})|F(q_z)|^2/q_z$, 
 where $\mathbf{q}=(q_r,q_z)$, $S(q)$ is 
 the structure
@@ -1111,7 +1134,7 @@ With few exceptions, the water space between bilayers exceeded 20 \AA.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/Tat/figure2}
+  \includegraphics[width=0.8\textwidth]{figures/Tat/NFIT_results/Kc}
   \caption{Bilayer bending modulus, $K_c$, vs. Tat mole fraction $\xTat$. 
   $D$-spacings for DOPC/Tat mixtures varied from 64 to 68 \AA, 
   for DOPC/DOPE/Tat mixtures from 64 to 69 \AA, 
@@ -1121,31 +1144,84 @@ With few exceptions, the water space between bilayers exceeded 20 \AA.
   \label{fig:figure2}
 \end{figure}
 
+\subsection{Form Factors}\label{sec:form_factors_results}
 The analysis that obtains $K_c$ also obtains the structure factor $S(\mathbf{q})$ 
-and then the unsigned form factors $|F(q_z)|$ are obtained from the intensity $I(\mathbf{q})$ by division. 
-Results for five different membrane mimics are shown in Fig.~\ref{fig:figure3}. 
-Vertical lines indicate the “zero” position between the lobes of diffuse data 
-where $F(q_z)$ change sign. In every sample, the zero positions shift to larger
-$q_z$, indicating a thinning of the membranes.
+and then the absolute form factors $|F(q_z)|$ are obtained from the intensity 
+$I(\mathbf{q})$ by division. 
+To estimate uncertainties on $|F(q_z)|$, we analyzed multiple diffuse 
+scattering data obtained by sampling different lateral positions for each sample,
+which gave multiple form factors for a given sample.
+These form factors were averaged to give the average form factors
+and standard deviations for that sample (Fig.~\ref{fig:form_factor_uncertainty}).
+Due to a small number of data sets for each sample, these standard
+deviations were noisy, so they were smoothed over adjacent 20 points.
+Average absolute form factors for five different membrane mimics are shown in 
+Fig.~\ref{fig:form_factor1}--\ref{fig:form_factor4}. 
+Vertical dashed lines indicate the ``zero'' position between the lobes of diffuse data 
+where $F(q_z)$ change sign. In almost all samples, the zero positions shift to larger
+$q_z$, indicating a thinning of the membranes. The thinning effect will be
+quantified by fitting experimental form factors to models as will be discussed in
+Sec.~\ref{sec:SDP_results}.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/Tat/figure3a}
-  \includegraphics[width=0.43\textwidth]{figures/Tat/figure3b}
-  \includegraphics[width=0.55\textwidth]{figures/Tat/figure3c}
-  \includegraphics[width=0.19\textwidth]{figures/Tat/figure3d}
-  \includegraphics[width=0.175\textwidth]{figures/Tat/figure3e}
-  \caption{Form factors of lipid mixtures (arbitrarily scaled and vertically displaced) with
-  increasing Tat mole fractions $\xTat$ indicated on figure legends. Lipid mixtures: A. DOPC
-  B. DOPC/DOPE (3:1) C. DOPC/DOPE (1:1) D. DOPC/DOPS (3:1) E. Nuclear membrane mimic. The
-  entire $q_z$ range is shown in C, while others show partial ranges. Solid vertical lines indicate the
-  $q_z$ values where the form factors equal zero between the lobes of diffuse data
-  Numbers in legends indicate Tat mole fraction.}
-  \label{fig:figure3}
+  \includegraphics[width=0.6\textwidth]{figures/Tat/NFIT_results/three_form_factors}
+  \includegraphics[width=0.6\textwidth]{figures/Tat/NFIT_results/standard_deviation}
+  \caption{Three form factors obtained for three different lateral positions
+  on the sample of a DOPC/Tat mixture with Tat mole fraction $\xTat$ = 0.016 (top).
+  Standard deviation calculated by averaging these form factors are shown
+  by black solid line (bottom). Because of a small number of data sets, these 
+  uncertainties were noisy, so for a model fitting purpose, they were smoothed
+  over adjacent 20 points (red solid line).}
+  \label{fig:form_factor_uncertainty}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/Tat/NFIT_results/DOPC_form_factors}
+  \caption{Form factors of DOPC with Tat mixtures (arbitrarily scaled and vertically 
+  displaced) with increasing Tat mole fractions $\xTat$ indicated on figure 
+  legends. 
+  Dashed vertical lines indicate the $q_z$ values where the form factors equal 
+  to zero between the lobes of diffuse data.
+  Error bars are omitted for clarity.}
+  \label{fig:form_factor1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors}
+  \caption{Form factors of DOPC:DOPE (3:1) with Tat mixtures.
+  The caption is the same as in Fig.~\ref{fig:form_factor1}.}
+  \label{fig:form_factor2}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/Tat/NFIT_results/DOPCDOPE1to1_form_factors}
+  \caption{Form factors of DOPC:DOPE (1:1) with Tat mixtures.
+  The caption is the same as in Fig.~\ref{fig:form_factor1}.}
+  \label{fig:form_factor3}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.3\textwidth]{figures/Tat/NFIT_results/DOPCDOPS3to1_form_factors}
+  \qquad  
+  \includegraphics[width=0.3\textwidth]{figures/Tat/NFIT_results/nuclear_form_factors}
+  \caption{Form factors of DOPC:DOPS (3:1) (top) and nuclear membrane mimic 
+  (bottom) with Tat mixtures.
+  The caption is the same as in Fig.~\ref{fig:form_factor1}.
+  Portions of form factors $|F(q_z)|$ that were not significantly distorted 
+  by mosaic spread scattering are shown.}
+  \label{fig:form_factor4}
+\end{figure}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Volume results}\label{sec:volume_results}
+\newpage
+\subsection{Volume}\label{sec:volume_results}
 Experimental and simulated volumes are given in Table~\ref{tab:volumes}. The simulated volume was
 obtained using the volume app in the SIMtoEXP program. The experimental Tat volume was
 calculated from the measured density assuming that the lipid volume was the same as with no

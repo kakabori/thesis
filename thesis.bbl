@@ -360,6 +360,26 @@ S.~Yesylevskyy, S.~J. Marrink, and A.~E. Mark.
   peptides penetratin and the tat peptide with lipid bilayers.
 \newblock {\em Biophysical Journal}, 97(1):40--49, 2009.
 
+\bibitem{Jarasch73}
+E.~D. Jarasch, C.~E. Reilly, P.~Comes, J.~Kartenbeck, and W.~W. Franke.
+\newblock Isolation and characterization of nuclear membranes from calf and rat
+  thymus.
+\newblock {\em Hoppe Seylers Z Physiol Chem}, 354(8):974--86, 1973.
+
+\bibitem{Tristram-Nagle07_MMB}
+S.~A. Tristram-Nagle.
+\newblock Preparation of oriented, fully hydrated lipid samples for structure
+  determination using x-ray scattering.
+\newblock {\em Methods Mol Biol}, 400:63--75, 2007.
+
+\bibitem{Kucerka05_BPJ}
+Norbert Ku{\v{c}}erka, Yufeng Liu, Nanjun Chu, Horia~I Petrache, Stephanie
+  Tristram-Nagle, and John~F Nagle.
+\newblock Structure of fully hydrated fluid phase {DMPC} and {DLPC} lipid
+  bilayers using {X-ray} scattering from oriented multilamellar arrays and from
+  unilamellar vesicles.
+\newblock {\em Biophysical journal}, 88(4):2626--2637, 2005.
+
 \bibitem{Barna99}
 SL~Barna, MW~Tate, SM~Gruner, and EF~Eikenberry.
 \newblock Calibration procedures for charge-coupled device x-ray detectors.
@@ -395,9 +415,6 @@ Anthony~R. Braun, Jonathan~N. Sachs, and John~F. Nagle.
 \newblock Comparing simulations of lipid bilayers to scattering data: The
   gromos 43a1-s3 force field.
 \newblock {\em The Journal of Physical Chemistry B}, 117(17):5065--5072, 2013.
-
-\bibitem{minuit2}
-\url{http://seal.web.cern.ch/seal/documents/minuit/mnusersguide.pdf}.
 
 \bibitem{minuit}
 \url{http://lcgapp.cern.ch/project/cls/work-packages/mathlibs/minuit/index.html}.
@@ -468,14 +485,6 @@ Michele Parrinello and Aneesur Rahman.
 \newblock Polymorphic transitions in single crystals: A new molecular dynamics
   method.
 \newblock {\em Journal of Applied physics}, 52(12):7182--7190, 1981.
-
-\bibitem{Kucerka05_BPJ}
-Norbert Ku{\v{c}}erka, Yufeng Liu, Nanjun Chu, Horia~I Petrache, Stephanie
-  Tristram-Nagle, and John~F Nagle.
-\newblock Structure of fully hydrated fluid phase {DMPC} and {DLPC} lipid
-  bilayers using {X-ray} scattering from oriented multilamellar arrays and from
-  unilamellar vesicles.
-\newblock {\em Biophysical journal}, 88(4):2626--2637, 2005.
 
 \bibitem{Kucerka06}
 Norbert Ku{\v{c}}erka, Stephanie Tristram-Nagle, and John~F Nagle.
@@ -676,12 +685,6 @@ J.~Katsaras and V.~A. Raghunathan.
 \newblock Molecular chirality and the “ripple” phase of phosphatidylcholine
   multibilayers.
 \newblock {\em Phys. Rev. Lett.}, 74:2022--2025, Mar 1995.
-
-\bibitem{Tristram-Nagle07_MMB}
-S.~A. Tristram-Nagle.
-\newblock Preparation of oriented, fully hydrated lipid samples for structure
-  determination using x-ray scattering.
-\newblock {\em Methods Mol Biol}, 400:63--75, 2007.
 
 \bibitem{ref:cxro}
 \url{http://henke.lbl.gov/optical\_constants}.

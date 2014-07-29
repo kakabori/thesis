@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.5.15)  28 JUL 2014 03:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.23)  28 JUL 2014 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex
+**thesis
 (./thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
@@ -703,40 +703,44 @@ l.83 \thispagestyle{empty} \cleardoublepage
 \openout4 = `thesis.toc'.
 
  [4]
-(./thesis.lot [5
+(./thesis.lot
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-])
+ [5
+
+]
+[6])
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
- [6] [7] (./thesis.lof [8
+ [7] (./thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Overfull \hbox (13.0572pt too wide) in paragraph at lines 16--16
- \OT1/cmr/m/n/12 ends. Lipid mix-tures: A. DOPC B. DOPC/DOPE (3:1) C. DOPC/DOPE
- 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (32.0407pt too wide) in paragraph at lines 21--21
+ [10]
+Overfull \hbox (32.0407pt too wide) in paragraph at lines 26--26
  \OT1/cmr/m/n/12 (DOPC), red cir-cles (DOPC:DOPE (3:1)), and green tri-an-gles 
 (DOPC:DOPE 
  []
 
 
-Overfull \hbox (11.13582pt too wide) in paragraph at lines 22--22
+Overfull \hbox (11.13582pt too wide) in paragraph at lines 27--27
  [][] [][]$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a func-tion of $\OML/cmm/
 m/it/12 z[]$ \OT1/cmr/m/n/12 for DOPC, DOPC:DOPE (3:1), and DOPC:DOPE 
  []
 
 
-Underfull \vbox (badness 4954) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-Overfull \hbox (24.9006pt too wide) in paragraph at lines 29--29
+ [11]
+Overfull \hbox (24.9006pt too wide) in paragraph at lines 34--34
  [][] [][]\OT1/cmr/m/n/12 MD sim-u-lated form fac-tors (red solid lines in A an
 d C) of Tat/(DOPC+Tat), 
  []
@@ -744,36 +748,36 @@ d C) of Tat/(DOPC+Tat),
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
  [12]
-Underfull \vbox (badness 3118) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-[15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [15]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
 
-[19]
+[20]
 \openout2 = `chap_01.aux'.
 
  (./chap_01.tex
 Chapter 1.
-<figures/lipid.pdf, id=879, 144.69606pt x 109.09387pt>
+<figures/lipid.pdf, id=908, 144.69606pt x 109.09387pt>
 File: figures/lipid.pdf Graphic file (type pdf)
  <use figures/lipid.pdf>
 Package pdftex.def Info: figures/lipid.pdf used on input line 12.
@@ -788,7 +792,7 @@ l.33
 
 
  <./figures/lipid.pdf>]
-<figures/smith_phase_diagram.pdf, id=906, 432.01399pt x 289.88298pt>
+<figures/smith_phase_diagram.pdf, id=936, 432.01399pt x 289.88298pt>
 File: figures/smith_phase_diagram.pdf Graphic file (type pdf)
 
 <use figures/smith_phase_diagram.pdf>
@@ -796,7 +800,7 @@ Package pdftex.def Info: figures/smith_phase_diagram.pdf used on input line 36.
 
 (pdftex.def)             Requested size: 390.25534pt x 261.8698pt.
 
-<figures/various_phases.pdf, id=909, 1045.09097pt x 294.81645pt>
+<figures/various_phases.pdf, id=939, 1045.09097pt x 294.81645pt>
 File: figures/various_phases.pdf Graphic file (type pdf)
 
 <use figures/various_phases.pdf>
@@ -811,14 +815,14 @@ l.62
 
 pdfTeX warning: pdflatex (file ./figures/various_phases.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <figures/gel_phase_packing.pdf, id=933, 775.56487pt x 219.44844pt>
+>] <figures/gel_phase_packing.pdf, id=962, 775.56487pt x 219.44844pt>
 File: figures/gel_phase_packing.pdf Graphic file (type pdf)
 
 <use figures/gel_phase_packing.pdf>
 Package pdftex.def Info: figures/gel_phase_packing.pdf used on input line 65.
 (pdftex.def)             Requested size: 390.25534pt x 110.42378pt.
 
-<figures/lipid_structure.pdf, id=934, 487.33891pt x 380.7317pt>
+<figures/lipid_structure.pdf, id=963, 487.33891pt x 380.7317pt>
 File: figures/lipid_structure.pdf Graphic file (type pdf)
 
 <use figures/lipid_structure.pdf>
@@ -839,7 +843,7 @@ d
                    \relax 
 l.140 
        [4 <./figures/lipid_structure.pdf>]
-<figures/HIV_lifecycle.pdf, id=968, 1596.36403pt x 1411.67403pt>
+<figures/HIV_lifecycle.pdf, id=998, 1596.36403pt x 1411.67403pt>
 File: figures/HIV_lifecycle.pdf Graphic file (type pdf)
 
 <use figures/HIV_lifecycle.pdf>
@@ -863,7 +867,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 149.
 
 [5] [6 <./figures/HIV_lifecycle.pdf>]
-<figures/ripple_cartoon.pdf, id=1007, 381.0667pt x 139.26024pt>
+<figures/ripple_cartoon.pdf, id=1036, 381.0667pt x 139.26024pt>
 File: figures/ripple_cartoon.pdf Graphic file (type pdf)
 
 <use figures/ripple_cartoon.pdf>
@@ -905,25 +909,28 @@ Overfull \hbox (0.39786pt too wide) in paragraph at lines 133--152
 Underfull \vbox (badness 7595) has occurred while \output is active []
 
  [10]
-
-LaTeX Warning: Citation `Jarasch73' on page 11 undefined on input line 167.
-
 [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-[13]
+[13] [14]
+<figures/Tat/MMs/chamber_geometry.pdf, id=1159, 696.99814pt x 450.17027pt>
+File: figures/Tat/MMs/chamber_geometry.pdf Graphic file (type pdf)
 
-LaTeX Warning: Citation `Kucerka05' on page 14 undefined on input line 274.
+<use figures/Tat/MMs/chamber_geometry.pdf>
+Package pdftex.def Info: figures/Tat/MMs/chamber_geometry.pdf used on input lin
+e 309.
+(pdftex.def)             Requested size: 390.25534pt x 252.05928pt.
+ [15 <./figures/Tat/MMs/chamber_geometry.pdf>]
+<figures/Tat/NFIT_results/dopcdope1to1.pdf, id=1176, 430.40799pt x 654.445pt>
+File: figures/Tat/NFIT_results/dopcdope1to1.pdf Graphic file (type pdf)
 
-[14] <figures/Tat/figure1.pdf, id=1130, 430.40799pt x 654.445pt>
-File: figures/Tat/figure1.pdf Graphic file (type pdf)
-
-<use figures/Tat/figure1.pdf>
-Package pdftex.def Info: figures/Tat/figure1.pdf used on input line 313.
+<use figures/Tat/NFIT_results/dopcdope1to1.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/dopcdope1to1.pdf used on inpu
+t line 339.
 (pdftex.def)             Requested size: 216.81pt x 329.65828pt.
 
-Overfull \hbox (15.10591pt too wide) in paragraph at lines 324--335
+Overfull \hbox (15.10591pt too wide) in paragraph at lines 350--361
 []\OT1/cmr/m/n/12 The ab-so-lute form fac-tor $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/
 12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j$ \
 OT1/cmr/m/n/12 is ob-tained through the re-la-tion $\OML/cmm/m/it/12 I\OT1/cmr/
@@ -933,34 +940,34 @@ mr/m/n/12 (\OML/cmm/m/it/12 q[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j[]$\OT1/cmr/m
 /n/12 ,
  []
 
-[15 <./figures/Tat/figure1.pdf>]
-<figures/Tat/MMs/stack.pdf, id=1144, 387.50024pt x 262.51971pt>
+[16 <./figures/Tat/NFIT_results/dopcdope1to1.pdf>]
+<figures/Tat/MMs/stack.pdf, id=1203, 387.50024pt x 262.51971pt>
 File: figures/Tat/MMs/stack.pdf Graphic file (type pdf)
 
 <use figures/Tat/MMs/stack.pdf>
-Package pdftex.def Info: figures/Tat/MMs/stack.pdf used on input line 358.
+Package pdftex.def Info: figures/Tat/MMs/stack.pdf used on input line 384.
 (pdftex.def)             Requested size: 216.81pt x 146.88585pt.
- [16] [17 <./figures/Tat/MMs/stack.pdf>]
-Overfull \hbox (5.2501pt too wide) in paragraph at lines 542--550
+ [17 <./figures/Tat/MMs/stack.pdf>]
+Overfull \hbox (5.2501pt too wide) in paragraph at lines 568--576
 []\OT1/cmr/m/n/12 Parsing of DOPC into lipid com-po-nents is shown in Fig. []2.
 4[]. The phos-phate/choline
  []
 
-<figures/Tat/MMs/dopc_schematic.pdf, id=1164, 570.74644pt x 556.81714pt>
+<figures/Tat/MMs/dopc_schematic.pdf, id=1219, 570.74644pt x 556.81714pt>
 File: figures/Tat/MMs/dopc_schematic.pdf Graphic file (type pdf)
 
 <use figures/Tat/MMs/dopc_schematic.pdf>
 Package pdftex.def Info: figures/Tat/MMs/dopc_schematic.pdf used on input line 
-553.
+579.
 (pdftex.def)             Requested size: 390.25534pt x 380.74622pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf, id=1166, 770.88pt x 587.19
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf, id=1221, 770.88pt x 587.19
 376pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf Graphic file (type pdf
 )
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_model_EDP.pdf use
-d on input line 582.
+d on input line 608.
 (pdftex.def)             Requested size: 390.25534pt x 297.26073pt.
  [18] [19 <./figures/Tat/MMs/dopc_schematic.pdf>] [20 <./figures/Tat/SDP_Result
 s/EDP/DOPC_Tat_model_EDP.pdf>]
@@ -975,29 +982,29 @@ Underfull \vbox (badness 7595) has occurred while \output is active []
 
  [25]
 [26]
-Overfull \hbox (19.57385pt too wide) in paragraph at lines 897--897
+Overfull \hbox (19.57385pt too wide) in paragraph at lines 923--923
 []\OT1/cmr/bx/n/17.28 Analysis of Molec-u-lar Dy-nam-ics Sim-u-la-tion Data 
  []
 
-[27] <./figures/Tat/MMs/cylinder_model.pdf, id=1313, 507.3718pt x 255.63808pt>
+[27] <./figures/Tat/MMs/cylinder_model.pdf, id=1368, 507.3718pt x 255.63808pt>
 File: ./figures/Tat/MMs/cylinder_model.pdf Graphic file (type pdf)
 
 <use ./figures/Tat/MMs/cylinder_model.pdf>
 Package pdftex.def Info: ./figures/Tat/MMs/cylinder_model.pdf used on input lin
-e 961.
+e 987.
 (pdftex.def)             Requested size: 355.15782pt x 178.94542pt.
 
 
-LaTeX Warning: Reference `sec:sim_results' on page 28 undefined on input line 9
-77.
+LaTeX Warning: Reference `sec:sim_results' on page 28 undefined on input line 1
+003.
 
 [28 <./figures/Tat/MMs/cylinder_model.pdf>] [29]
-<./figures/Tat/MMs/linear_model.pdf, id=1387, 555.66415pt x 317.4181pt>
+<./figures/Tat/MMs/linear_model.pdf, id=1443, 555.66415pt x 317.4181pt>
 File: ./figures/Tat/MMs/linear_model.pdf Graphic file (type pdf)
 
 <use ./figures/Tat/MMs/linear_model.pdf>
 Package pdftex.def Info: ./figures/Tat/MMs/linear_model.pdf used on input line 
-1040.
+1066.
 (pdftex.def)             Requested size: 303.53267pt x 173.389pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1007,347 +1014,371 @@ Missing character: There is no ‚ in font cmr8!
 Missing character: There is no à in font cmr8!
 Missing character: There is no í in font cmr8!
  [31]
-<figures/Tat/figure2.pdf, id=1418, 999.735pt x 766.06201pt>
-File: figures/Tat/figure2.pdf Graphic file (type pdf)
+<figures/Tat/NFIT_results/Kc.pdf, id=1477, 361.35pt x 303.1325pt>
+File: figures/Tat/NFIT_results/Kc.pdf Graphic file (type pdf)
 
-<use figures/Tat/figure2.pdf>
-Package pdftex.def Info: figures/Tat/figure2.pdf used on input line 1114.
-(pdftex.def)             Requested size: 346.89731pt x 265.81126pt.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
+<use figures/Tat/NFIT_results/Kc.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/Kc.pdf used on input line 113
+7.
+(pdftex.def)             Requested size: 346.89731pt x 291.00851pt.
+ [32 <./figures/Tat/NFIT_results/Kc.pdf>]
+<figures/Tat/NFIT_results/three_form_factors.pdf, id=1496, 361.35pt x 304.13625
+pt>
+File: figures/Tat/NFIT_results/three_form_factors.pdf Graphic file (type pdf)
+ <use figures/Tat/NFIT_results/three_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/three_form_factors.pdf used o
+n input line 1168.
+(pdftex.def)             Requested size: 260.17464pt x 218.98256pt.
 
-<figures/Tat/figure3a.pdf, id=1420, 448.87701pt x 387.046pt>
-File: figures/Tat/figure3a.pdf Graphic file (type pdf)
+<figures/Tat/NFIT_results/standard_deviation.pdf, id=1497, 361.35pt x 299.1175p
+t>
+File: figures/Tat/NFIT_results/standard_deviation.pdf Graphic file (type pdf)
+ <use figures/Tat/NFIT_results/standard_deviation.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/standard_deviation.pdf used o
+n input line 1169.
+(pdftex.def)             Requested size: 260.17464pt x 215.36899pt.
 
-<use figures/Tat/figure3a.pdf>
-Package pdftex.def Info: figures/Tat/figure3a.pdf used on input line 1133.
-(pdftex.def)             Requested size: 195.12767pt x 168.24553pt.
+<figures/Tat/NFIT_results/DOPC_form_factors.pdf, id=1498, 361.35pt x 310.15875p
+t>
+File: figures/Tat/NFIT_results/DOPC_form_factors.pdf Graphic file (type pdf)
+ <use figures/Tat/NFIT_results/DOPC_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/DOPC_form_factors.pdf used on
+ input line 1181.
+(pdftex.def)             Requested size: 433.62pt x 372.19336pt.
 
-<figures/Tat/figure3b.png, id=1421, 257.2812pt x 231.7458pt>
-File: figures/Tat/figure3b.png Graphic file (type png)
+<figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors.pdf, id=1499, 361.35pt x 31
+1.1625pt>
+File: figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors.pdf Graphic file (type
+ pdf)
+ <use figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors.pdf
+ used on input line 1193.
+(pdftex.def)             Requested size: 433.62pt x 373.39789pt.
 
-<use figures/Tat/figure3b.png>
-Package pdftex.def Info: figures/Tat/figure3b.png used on input line 1134.
-(pdftex.def)             Requested size: 186.45341pt x 167.95657pt.
+<figures/Tat/NFIT_results/DOPCDOPE1to1_form_factors.pdf, id=1502, 361.35pt x 31
+2.16624pt>
+File: figures/Tat/NFIT_results/DOPCDOPE1to1_form_factors.pdf Graphic file (type
+ pdf)
+ <use figures/Tat/NFIT_results/DOPCDOPE1to1_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/DOPCDOPE1to1_form_factors.pdf
+ used on input line 1201.
+(pdftex.def)             Requested size: 433.62pt x 374.60239pt.
 
-<figures/Tat/figure3c.png, id=1423, 307.8702pt x 229.3368pt>
-File: figures/Tat/figure3c.png Graphic file (type png)
+<figures/Tat/NFIT_results/DOPCDOPS3to1_form_factors.pdf, id=1505, 361.35pt x 68
+1.54625pt>
+File: figures/Tat/NFIT_results/DOPCDOPS3to1_form_factors.pdf Graphic file (type
+ pdf)
+ <use figures/Tat/NFIT_results/DOPCDOPS3to1_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/DOPCDOPS3to1_form_factors.pdf
+ used on input line 1209.
+(pdftex.def)             Requested size: 130.08731pt x 245.35646pt.
 
-<use figures/Tat/figure3c.png>
-Package pdftex.def Info: figures/Tat/figure3c.png used on input line 1135.
-(pdftex.def)             Requested size: 238.49231pt x 177.66069pt.
+<figures/Tat/NFIT_results/nuclear_form_factors.pdf, id=1506, 361.35pt x 703.628
+75pt>
+File: figures/Tat/NFIT_results/nuclear_form_factors.pdf Graphic file (type pdf)
 
-<figures/Tat/figure3d.png, id=1424, 107.4414pt x 226.446pt>
-File: figures/Tat/figure3d.png Graphic file (type png)
-
-<use figures/Tat/figure3d.png>
-Package pdftex.def Info: figures/Tat/figure3d.png used on input line 1136.
-(pdftex.def)             Requested size: 82.38885pt x 173.6487pt.
-
-<figures/Tat/figure3e.png, id=1425, 99.7326pt x 234.1548pt>
-File: figures/Tat/figure3e.png Graphic file (type png)
-
-<use figures/Tat/figure3e.png>
-Package pdftex.def Info: figures/Tat/figure3e.png used on input line 1137.
-(pdftex.def)             Requested size: 75.88481pt x 178.17386pt.
- [32 <./figures/Tat/figure2.pdf>] [33 <./figures/Tat/figure3a.pdf> <./figures/T
-at/figure3b.png> <./figures/Tat/figure3c.png> <./figures/Tat/figure3d.png> <./f
-igures/Tat/figure3e.png>] [34]
-<figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf, id=1466, 771.88374pt x 577.15625pt>
+ <use figures/Tat/NFIT_results/nuclear_form_factors.pdf>
+Package pdftex.def Info: figures/Tat/NFIT_results/nuclear_form_factors.pdf used
+ on input line 1211.
+(pdftex.def)             Requested size: 130.08731pt x 253.30615pt.
+ [33] [34 <./figures/Tat/NFIT_results/three_form_factors.pdf> <./figures/Tat/NF
+IT_results/standard_deviation.pdf>] [35 <./figures/Tat/NFIT_results/DOPC_form_f
+actors.pdf>]
+[36 <./figures/Tat/NFIT_results/DOPCDOPE3to1_form_factors.pdf>] [37 <./figures/
+Tat/NFIT_results/DOPCDOPE1to1_form_factors.pdf>] [38 <./figures/Tat/NFIT_result
+s/DOPCDOPS3to1_form_factors.pdf> <./figures/Tat/NFIT_results/nuclear_form_facto
+rs.pdf>] [39]
+<figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf, id=1641, 771.88374pt x 577.15625pt>
 File: figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf Graphic file (type pdf)
 <use figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf used on inpu
-t line 1272.
+t line 1348.
 (pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf, id=1467, 827.09pt x 578.16pt>
+<figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf, id=1642, 827.09pt x 578.16pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_EDP1.pdf used on inpu
-t line 1273.
+t line 1349.
 (pdftex.def)             Requested size: 195.12767pt x 136.39693pt.
 
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf, id=1468, 771.88374pt 
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf, id=1643, 771.88374pt 
 x 577.15625pt>
 File: figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pd
-f used on input line 1274.
+f used on input line 1350.
 (pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf, id=1469, 827.09pt x 5
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf, id=1644, 827.09pt x 5
 80.1675pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pd
-f used on input line 1275.
+f used on input line 1351.
 (pdftex.def)             Requested size: 195.12767pt x 136.87053pt.
 
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf, id=1470, 771.88374pt 
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf, id=1645, 771.88374pt 
 x 577.15625pt>
 File: figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pd
-f used on input line 1276.
+f used on input line 1352.
 (pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf, id=1471, 827.09pt x 5
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf, id=1646, 827.09pt x 5
 82.175pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1.pd
-f used on input line 1277.
+f used on input line 1353.
 (pdftex.def)             Requested size: 195.12767pt x 137.34413pt.
 
-<figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf, id=1472, 771.88374pt 
+<figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf, id=1647, 771.88374pt 
 x 577.15625pt>
 File: figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1.pd
-f used on input line 1278.
+f used on input line 1354.
 (pdftex.def)             Requested size: 195.12767pt x 145.90033pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf, id=1473, 827.09pt x 5
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf, id=1648, 827.09pt x 5
 82.175pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pd
-f used on input line 1279.
+f used on input line 1355.
 (pdftex.def)             Requested size: 195.12767pt x 137.34413pt.
 
 
-LaTeX Warning: Float too large for page by 11.3063pt on input line 1284.
+LaTeX Warning: Float too large for page by 11.3063pt on input line 1360.
 
-[35] [36 <./figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf> <./figures/Tat/SDP_Resul
+[40] [41 <./figures/Tat/SDP_Results/XFF/DOPC_XFF1.pdf> <./figures/Tat/SDP_Resul
 ts/EDP/DOPC_EDP1.pdf> <./figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1.pd
 f> <./figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1.pdf> <./figures/Tat/S
 DP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1.pdf> <./figures/Tat/SDP_Results/EDP/DOPC
 _Tat_28to1_3p0_EDP1.pdf> <./figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1
 .pdf> <./figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1.pdf>]
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf, id=1606, 827.09pt x 651.43
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf, id=1781, 827.09pt x 651.43
 375pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf Graphic file (type pdf
 )
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf use
-d on input line 1306.
+d on input line 1382.
 (pdftex.def)             Requested size: 216.81pt x 170.76038pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf, id=1607, 827.09pt x 651.43
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf, id=1782, 827.09pt x 651.43
 375pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf Graphic file (type pdf
 )
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_EDP.pdf use
-d on input line 1307.
+d on input line 1383.
 (pdftex.def)             Requested size: 216.81pt x 170.76038pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf, id=1608, 827.09pt x 647.41
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf, id=1783, 827.09pt x 647.41
 875pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf Graphic file (type pdf
 )
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_EDP.pdf use
-d on input line 1308.
+d on input line 1384.
 (pdftex.def)             Requested size: 216.81pt x 169.70793pt.
 
 Underfull \vbox (badness 7595) has occurred while \output is active []
 
- [37]
-[38 <./figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf> <./figures/Tat/SDP_R
+ [42]
+[43 <./figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_EDP.pdf> <./figures/Tat/SDP_R
 esults/EDP/DOPC_Tat_28to1_EDP.pdf> <./figures/Tat/SDP_Results/EDP/DOPC_Tat_16to
 1_EDP.pdf>]
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf, id=1674, 827.09pt x 630.35
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf, id=1847, 827.09pt x 630.35
 5pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf Graphic file (type pdf
 )
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf use
-d on input line 1354.
+d on input line 1430.
 (pdftex.def)             Requested size: 303.53267pt x 231.33286pt.
 
-<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf, id=1675, 826.08624pt 
+<figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf, id=1848, 826.08624pt 
 x 608.2725pt>
 File: figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf Graphic file (typ
 e pdf)
  <use figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pd
-f used on input line 1362.
+f used on input line 1438.
 (pdftex.def)             Requested size: 303.53267pt x 223.49802pt.
 
-<figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf, id=1682, 827.09pt 
+<figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf, id=1855, 827.09pt 
 x 637.38126pt>
 File: figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf Graphic file (
 type pdf)
 
 <use figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_total_EDP
-.pdf used on input line 1430.
+.pdf used on input line 1506.
 (pdftex.def)             Requested size: 195.12767pt x 150.36815pt.
 
-<figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf, id=1683, 827.09pt 
+<figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf, id=1856, 827.09pt 
 x 637.38126pt>
 File: figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf Graphic file (
 type pdf)
 
 <use figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_total_EDP
-.pdf used on input line 1432.
+.pdf used on input line 1508.
 (pdftex.def)             Requested size: 195.12767pt x 150.36815pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [39 <./figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf>] [40 <./figures/Tat
-/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf>] [41 <./figures/Tat/SDP_Results/E
+ [44 <./figures/Tat/SDP_Results/EDP/DOPC_Tat_total_EDP.pdf>] [45 <./figures/Tat
+/SDP_Results/EDP/DOPC_Tat_total_EDP_diff.pdf>] [46 <./figures/Tat/SDP_Results/E
 DP/DOPCDOPE3to1_Tat_total_EDP.pdf> <./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_
-Tat_total_EDP.pdf>] <figures/Tat/SDP_Results/DHH.pdf, id=1770, 827.09pt x 681.5
+Tat_total_EDP.pdf>] <figures/Tat/SDP_Results/DHH.pdf, id=1943, 827.09pt x 681.5
 4625pt>
 File: figures/Tat/SDP_Results/DHH.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/DHH.pdf>
-Package pdftex.def Info: figures/Tat/SDP_Results/DHH.pdf used on input line 146
-3.
+Package pdftex.def Info: figures/Tat/SDP_Results/DHH.pdf used on input line 153
+9.
 (pdftex.def)             Requested size: 195.12767pt x 160.78735pt.
 
-<figures/Tat/SDP_Results/DPP.pdf, id=1771, 827.09pt x 681.54625pt>
+<figures/Tat/SDP_Results/DPP.pdf, id=1944, 827.09pt x 681.54625pt>
 File: figures/Tat/SDP_Results/DPP.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/DPP.pdf>
-Package pdftex.def Info: figures/Tat/SDP_Results/DPP.pdf used on input line 146
-5.
+Package pdftex.def Info: figures/Tat/SDP_Results/DPP.pdf used on input line 154
+1.
 (pdftex.def)             Requested size: 195.12767pt x 160.78735pt.
 
-<figures/Tat/SDP_Results/DPP2.pdf, id=1772, 827.09pt x 682.55pt>
+<figures/Tat/SDP_Results/DPP2.pdf, id=1945, 827.09pt x 682.55pt>
 File: figures/Tat/SDP_Results/DPP2.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/DPP2.pdf>
-Package pdftex.def Info: figures/Tat/SDP_Results/DPP2.pdf used on input line 14
-77.
+Package pdftex.def Info: figures/Tat/SDP_Results/DPP2.pdf used on input line 15
+53.
 (pdftex.def)             Requested size: 195.12767pt x 161.02415pt.
 
-<figures/Tat/SDP_Results/2zTat.pdf, id=1773, 827.09pt x 682.55pt>
+<figures/Tat/SDP_Results/2zTat.pdf, id=1946, 827.09pt x 682.55pt>
 File: figures/Tat/SDP_Results/2zTat.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/2zTat.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/2zTat.pdf used on input line 1
-479.
+555.
 (pdftex.def)             Requested size: 195.12767pt x 161.02415pt.
 
-<figures/Tat/SDP_Results/AL.pdf, id=1776, 827.09pt x 696.6025pt>
+<figures/Tat/SDP_Results/AL.pdf, id=1949, 827.09pt x 696.6025pt>
 File: figures/Tat/SDP_Results/AL.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/AL.pdf>
-Package pdftex.def Info: figures/Tat/SDP_Results/AL.pdf used on input line 1493
+Package pdftex.def Info: figures/Tat/SDP_Results/AL.pdf used on input line 1569
 .
 (pdftex.def)             Requested size: 212.47617pt x 178.95464pt.
- [42 <./figures/Tat/SDP_Results/DHH.pdf> <./figures/Tat/SDP_Results/DPP.pdf>] [
-43 <./figures/Tat/SDP_Results/DPP2.pdf> <./figures/Tat/SDP_Results/2zTat.pdf> <
+ [47 <./figures/Tat/SDP_Results/DHH.pdf> <./figures/Tat/SDP_Results/DPP.pdf>] [
+48 <./figures/Tat/SDP_Results/DPP2.pdf> <./figures/Tat/SDP_Results/2zTat.pdf> <
 ./figures/Tat/SDP_Results/AL.pdf>]
-<figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf, id=1853, 828.09375pt x 6
+<figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf, id=2027, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf Graphic file (type p
 df)
  <use figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf u
-sed on input line 1528.
+sed on input line 1604.
 (pdftex.def)             Requested size: 130.08731pt x 97.28728pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf, id=1854, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf, id=2028, 828.093
 75pt x 662.475pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_
-X2.pdf used on input line 1529.
+X2.pdf used on input line 1605.
 (pdftex.def)             Requested size: 130.08731pt x 104.06743pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf, id=1855, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf, id=2029, 828.093
 75pt x 652.4375pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_
-X2.pdf used on input line 1530.
+X2.pdf used on input line 1606.
 (pdftex.def)             Requested size: 130.08731pt x 102.49065pt.
 
-<figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf, id=1856, 828.09375pt x 6
+<figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf, id=2030, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf Graphic file (type p
 df)
  <use figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2.pdf u
-sed on input line 1531.
+sed on input line 1607.
 (pdftex.def)             Requested size: 130.08731pt x 97.28728pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf, id=1857, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf, id=2031, 828.093
 75pt x 668.4975pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_
-X2.pdf used on input line 1532.
+X2.pdf used on input line 1608.
 (pdftex.def)             Requested size: 130.08731pt x 105.01349pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf, id=1858, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf, id=2032, 828.093
 75pt x 678.535pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_
-X2.pdf used on input line 1533.
+X2.pdf used on input line 1609.
 (pdftex.def)             Requested size: 130.08731pt x 106.59027pt.
 
-<figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf, id=1859, 828.09375pt x 6
+<figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf, id=2033, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf Graphic file (type p
 df)
  <use figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf u
-sed on input line 1534.
+sed on input line 1610.
 (pdftex.def)             Requested size: 130.08731pt x 97.28728pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf, id=1860, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf, id=2034, 828.093
 75pt x 652.4375pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_
-X2.pdf used on input line 1535.
+X2.pdf used on input line 1611.
 (pdftex.def)             Requested size: 130.08731pt x 102.49065pt.
 
-<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf, id=1861, 828.093
+<figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf, id=2035, 828.093
 75pt x 662.475pt>
 File: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_
-X2.pdf used on input line 1536.
+X2.pdf used on input line 1612.
 (pdftex.def)             Requested size: 130.08731pt x 104.06743pt.
 
-Underfull \hbox (badness 1163) in paragraph at lines 1540--1540
-[]\OT1/cmr/m/n/12 Figure 2.18: |$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a f
+Underfull \hbox (badness 1163) in paragraph at lines 1616--1616
+[]\OT1/cmr/m/n/12 Figure 2.22: |$\OML/cmm/m/it/12 ^^_[]$ \OT1/cmr/m/n/12 as a f
 unc-tion of $\OML/cmm/m/it/12 z[]$ \OT1/cmr/m/n/12 for DOPC, DOPC:DOPE (3:1), a
 nd
  []
 
-[44 <./figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf> <./figures/Tat/SDP
+[49 <./figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2.pdf> <./figures/Tat/SDP
 _Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2.pdf> <./figures/Tat/SDP_Results/X2/DO
 PCDOPE1to1_Tat_62to1_3p0_X2.pdf> <./figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3
 p0_X2.pdf> <./figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2.pdf> <./
@@ -1355,193 +1386,193 @@ figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2.pdf> <./figures/Tat/SD
 P_Results/X2/DOPC_Tat_16to1_3p0_X2.pdf> <./figures/Tat/SDP_Results/X2/DOPCDOPE3
 to1_Tat_16to1_3p0_X2.pdf> <./figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_
 3p0_X2.pdf>]
-<figures/Tat/SDP_Results/zTat_bound.pdf, id=2025, 827.09pt x 686.565pt>
+<figures/Tat/SDP_Results/zTat_bound.pdf, id=2198, 827.09pt x 686.565pt>
 File: figures/Tat/SDP_Results/zTat_bound.pdf Graphic file (type pdf)
 
 <use figures/Tat/SDP_Results/zTat_bound.pdf>
 Package pdftex.def Info: figures/Tat/SDP_Results/zTat_bound.pdf used on input l
-ine 1597.
+ine 1673.
 (pdftex.def)             Requested size: 195.12767pt x 161.97136pt.
- [45] [46 <./figures/Tat/SDP_Results/zTat_bound.pdf>]
-<figures/Tat/MD_Results/xff/dopc_sim-exp.pdf, id=2056, 828.09375pt x 619.31375p
+ [50] [51 <./figures/Tat/SDP_Results/zTat_bound.pdf>]
+<figures/Tat/MD_Results/xff/dopc_sim-exp.pdf, id=2230, 828.09375pt x 619.31375p
 t>
 File: figures/Tat/MD_Results/xff/dopc_sim-exp.pdf Graphic file (type pdf)
  <use figures/Tat/MD_Results/xff/dopc_sim-exp.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/xff/dopc_sim-exp.pdf used on in
-put line 1671.
+put line 1747.
 (pdftex.def)             Requested size: 346.89731pt x 259.43906pt.
 
-<figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf, id=2057, 828.09375pt x 633.36626
+<figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf, id=2231, 828.09375pt x 633.36626
 pt>
 File: figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf Graphic file (type pdf)
  <use figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/edp/dopc_70_PC-CG.pdf used on i
-nput line 1681.
+nput line 1757.
 (pdftex.def)             Requested size: 346.89731pt x 265.32584pt.
 
-<figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf, id=2058, 828.09375pt x 6
+<figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf, id=2232, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf Graphic file (type p
 df)
  <use figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1.pdf u
-sed on input line 1692.
+sed on input line 1768.
 (pdftex.def)             Requested size: 346.89731pt x 259.43906pt.
 
-<figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf, id=2059, 828.09375pt x 6
+<figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf, id=2233, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf Graphic file (type p
 df)
  <use figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf u
-sed on input line 1693.
+sed on input line 1769.
 (pdftex.def)             Requested size: 346.89731pt x 259.43906pt.
 
-<figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf, id=2060, 828.09375pt x 6
+<figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf, id=2234, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf Graphic file (type p
 df)
  <use figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf u
-sed on input line 1705.
+sed on input line 1781.
 (pdftex.def)             Requested size: 346.89731pt x 259.43906pt.
 
-<figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf, id=2061, 828.09375pt x 6
+<figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf, id=2235, 828.09375pt x 6
 19.31375pt>
 File: figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf Graphic file (type p
 df)
  <use figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1.pdf u
-sed on input line 1706.
+sed on input line 1782.
 (pdftex.def)             Requested size: 346.89731pt x 259.43906pt.
 
-Overfull \hbox (5.9122pt too wide) in paragraph at lines 1788--1804
+Overfull \hbox (5.9122pt too wide) in paragraph at lines 1864--1880
  [][] 
  []
 
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf, id=2064, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf, id=2238, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_L.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0
-_L.pdf used on input line 1822.
+_L.pdf used on input line 1898.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf, id=2065, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf, id=2239, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0_R.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-0
-_R.pdf used on input line 1823.
+_R.pdf used on input line 1899.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf, id=2066, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf, id=2240, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_L.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1
-_L.pdf used on input line 1824.
+_L.pdf used on input line 1900.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf, id=2067, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf, id=2241, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1
-_R.pdf used on input line 1825.
+_R.pdf used on input line 1901.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf, id=2068, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf, id=2242, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0
-_L.pdf used on input line 1826.
+_L.pdf used on input line 1902.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf, id=2069, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf, id=2243, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0
-_R.pdf used on input line 1827.
+_R.pdf used on input line 1903.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf, id=2070, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf, id=2244, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_L.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1
-_L.pdf used on input line 1828.
+_L.pdf used on input line 1904.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf, id=2071, 828.093
+<figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf, id=2245, 828.093
 75pt x 633.36626pt>
 File: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf Graphic file
  (type pdf)
 
 <use figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1_R.pdf>
 Package pdftex.def Info: figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-1
-_R.pdf used on input line 1829.
+_R.pdf used on input line 1905.
 (pdftex.def)             Requested size: 173.44534pt x 132.65326pt.
 
-<figures/Tat/figure4.pdf, id=2074, 764.45598pt x 665.68701pt>
+<figures/Tat/figure4.pdf, id=2248, 764.45598pt x 665.68701pt>
 File: figures/Tat/figure4.pdf Graphic file (type pdf)
 
 <use figures/Tat/figure4.pdf>
-Package pdftex.def Info: figures/Tat/figure4.pdf used on input line 1862.
+Package pdftex.def Info: figures/Tat/figure4.pdf used on input line 1938.
 (pdftex.def)             Requested size: 390.25534pt x 339.83109pt.
 
-Underfull \hbox (badness 1622) in paragraph at lines 1868--1868
-[]\OT1/cmr/m/n/12 Figure 2.25: |MD sim-u-lated form fac-tors (red solid lines i
+Underfull \hbox (badness 1622) in paragraph at lines 1944--1944
+[]\OT1/cmr/m/n/12 Figure 2.29: |MD sim-u-lated form fac-tors (red solid lines i
 n A and C) of
  []
 
-[47] [48 <./figures/Tat/MD_Results/xff/dopc_sim-exp.pdf>] [49 <./figures/Tat/MD
-_Results/edp/dopc_70_PC-CG.pdf>] [50 <./figures/Tat/MD_Results/xff/dopc-tat2_72
+[52] [53 <./figures/Tat/MD_Results/xff/dopc_sim-exp.pdf>] [54 <./figures/Tat/MD
+_Results/edp/dopc_70_PC-CG.pdf>] [55 <./figures/Tat/MD_Results/xff/dopc-tat2_72
 _sim-exp1.pdf> <./figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1.pdf>]
-[51 <./figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf> <./figures/Tat/MD_
-Results/xff/dopc-tat4_76_sim-exp1.pdf>] [52] [53] [54 <./figures/Tat/MD_Results
+[56 <./figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1.pdf> <./figures/Tat/MD_
+Results/xff/dopc-tat4_76_sim-exp1.pdf>] [57] [58] [59 <./figures/Tat/MD_Results
 /guanidinium/dopc-tat2_guan_72-0_L.pdf> <./figures/Tat/MD_Results/guanidinium/d
 opc-tat2_guan_72-0_R.pdf> <./figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_
 72-1_L.pdf> <./figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_72-1_R.pdf> <.
 /figures/Tat/MD_Results/guanidinium/dopc-tat2_guan_74-0_L.pdf> <./figures/Tat/M
 D_Results/guanidinium/dopc-tat2_guan_74-0_R.pdf> <./figures/Tat/MD_Results/guan
 idinium/dopc-tat2_guan_74-1_L.pdf> <./figures/Tat/MD_Results/guanidinium/dopc-t
-at2_guan_74-1_R.pdf>] [55 <./figures/Tat/figure4.pdf>]
-<figures/Tat/figure9.pdf, id=2333, 1206.10597pt x 341.275pt>
+at2_guan_74-1_R.pdf>] [60 <./figures/Tat/figure4.pdf>]
+<figures/Tat/figure9.pdf, id=2506, 1206.10597pt x 341.275pt>
 File: figures/Tat/figure9.pdf Graphic file (type pdf)
 
 <use figures/Tat/figure9.pdf>
-Package pdftex.def Info: figures/Tat/figure9.pdf used on input line 1898.
+Package pdftex.def Info: figures/Tat/figure9.pdf used on input line 1974.
 (pdftex.def)             Requested size: 390.25534pt x 110.42355pt.
 
 
-LaTeX Warning: Reference `fig:Kc' on page 56 undefined on input line 1936.
+LaTeX Warning: Reference `fig:Kc' on page 61 undefined on input line 2012.
 
 
-LaTeX Warning: Reference `fig:form_factors' on page 56 undefined on input line 
-1941.
+LaTeX Warning: Reference `fig:form_factors' on page 61 undefined on input line 
+2017.
 
-[56 <./figures/Tat/figure9.pdf>]
+[61 <./figures/Tat/figure9.pdf>]
 Underfull \vbox (badness 7595) has occurred while \output is active []
 
- [57]
+ [62]
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no ≤ in font cmr12!
 Missing character: There is no Œ in font cmr12!
@@ -1560,17 +1591,17 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
 
-LaTeX Warning: Citation `Ziegler' on page 58 undefined on input line 2030.
+LaTeX Warning: Citation `Ziegler' on page 63 undefined on input line 2106.
 
-[58]) [59] [60] [149
-
-
+[63]) [64] [65] [158
 
 
-] (./thesis.bbl [173
 
 
-] [174]
+] (./thesis.bbl [182
+
+
+] [183]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
 Missing character: There is no ‚ in font cmr12!
@@ -1584,7 +1615,7 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no ® in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
- [175]
+ [184]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no √ in font cmr12!
@@ -1597,18 +1628,19 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no † in font cmr12!
- [176] [177] [178]
+ [185] [186] [187]
+[188]
 Missing character: There is no – in font cmti12!
 Missing character: There is no • in font cmti12!
 
-Underfull \hbox (badness 1694) in paragraph at lines 381--385
+Underfull \hbox (badness 1694) in paragraph at lines 401--405
 \OT1/cmr/m/it/12 BRANES US-ING DIF-FUSE -RAY SCAT-TER-ING: AP-PLI-CA-TION TO
  []
 
 Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
-[179]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 [][]$\OT1/cmtt/m/n/12 http : / / lcgapp . cern . ch / project / cls / work-[]pa
 ckages / mathlibs / minuit /
  []
@@ -1617,26 +1649,26 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no § in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no § in font cmr12!
+[189]
 Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
-[180]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no ã in font cmr12!
 Missing character: There is no Ö in font cmr12!
- [181] [182]
+ [190] [191] [192]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ≤ in font cmr12!
- [183]
+ [193]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [184] [185])
+ [194])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
- [186]
+ [195]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
  (./thesis.aux (./abstract.aux)
 (./acknowledgments.aux) (./chap_01.aux) (./chap_02.aux) (./chap_03.aux)
@@ -1644,7 +1676,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F6C43FED7B70EBA69E913EFA0097CF0D;1938.
+(rerunfilecheck)             Checksum: 9241C83A0A9DC35DB664415143FECF5D;1901.
 
 
 LaTeX Warning: There were undefined references.
@@ -1655,33 +1687,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 10806 strings out of 493493
- 169755 string characters out of 3143797
- 345991 words of memory out of 3000000
- 13350 multiletter control sequences out of 15000+200000
+ 10831 strings out of 493493
+ 171313 string characters out of 3143797
+ 348960 words of memory out of 3000000
+ 13364 multiletter control sequences out of 15000+200000
  24900 words of font info for 98 fonts, out of 3000000 for 9000
  958 hyphenation exceptions out of 8191
- 46i,13n,76p,1244b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.92} has been referenced but does n
-ot exist, replaced by a fixed one
+ 46i,13n,76p,1240b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{figure.caption.134} has been referenced but does 
+not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.91} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.133} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.90} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.132} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.89} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.131} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.88} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.130} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.87} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.86} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.128} has been referenced but does no
+t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.84} has been referenced but does not
  exist, replaced by a fixed one
@@ -1752,28 +1784,25 @@ pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.53} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
- exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{equation.3.3.37} has been referenced but does not e
 xist, replaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{equation.3.3.30} has been referenced but does not e
 xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
@@ -1806,19 +1835,19 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.50} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.48} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.47} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{table.caption.46} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.42} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.45} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.44} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.43} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.42} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
@@ -1976,10 +2005,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (98 pages, 7625670 bytes).
+Output written on thesis.pdf (104 pages, 8100694 bytes).
 PDF statistics:
- 2647 PDF objects out of 2984 (max. 8388607)
- 2301 compressed objects within 24 object streams
- 428 named destinations out of 1000 (max. 500000)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2820 PDF objects out of 2984 (max. 8388607)
+ 2454 compressed objects within 25 object streams
+ 437 named destinations out of 1000 (max. 500000)
+ 557 words of extra memory for PDF output out of 10000 (max. 10000000)
 
