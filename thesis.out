@@ -2,39 +2,26 @@
 \BOOKMARK [1][-]{section.1.1}{Lipid bilayer}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Tat peptide}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{P' ripple phase}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.3}{Ripple Phase}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.1.1}{Some history}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.2}{Purpose of this study}{section.3.1}% 30
-\BOOKMARK [1][-]{section.3.2}{Materials and Methods}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.2.1}{Sample Preparation}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.2}{Instrumental Resolution}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.3}{Low Angle X-ray Scattering Experiment}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.4}{Near Grazing Incidence Wide Angle X-ray Scattering nGIWAXS}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.5}{Transmission Wide Angle X-ray Scattering tWAXS}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.6}{Sample q-space}{section.3.2}% 37
-\BOOKMARK [1][-]{section.3.3}{LAXS data reduction}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.1}{Lattice Structure - Unit Cell}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.2}{Lorentz Correction}{section.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.3}{Absorption Correction for LAXS}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.4}{Correction due to mosaic spread}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Results for |Fhk| form factors}{chapter.3}% 43
-\BOOKMARK [1][-]{section.3.5}{Models to fit the |Fhk| and obtain the phases}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.5.1}{Contour Part of the Form Factor}{section.3.5}% 45
-\BOOKMARK [2][-]{subsection.3.5.2}{Transbilayer Part of the Form Factor}{section.3.5}% 46
-\BOOKMARK [2][-]{subsection.3.5.3}{Some results of model fitting}{section.3.5}% 47
-\BOOKMARK [2][-]{subsection.3.5.4}{Results for the phase factors}{section.3.5}% 48
-\BOOKMARK [1][-]{section.3.6}{Electron density profiles and coarse grained bilayer structure}{chapter.3}% 49
-\BOOKMARK [1][-]{section.3.7}{nGIWAXS: results}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.7.1}{Fluid and gel phase}{section.3.7}% 51
-\BOOKMARK [2][-]{subsection.3.7.2}{Ripple phase}{section.3.7}% 52
-\BOOKMARK [1][-]{section.3.8}{tWAXS: results}{chapter.3}% 53
-\BOOKMARK [1][-]{section.3.9}{Thin Rod Model}{chapter.3}% 54
-\BOOKMARK [2][-]{subsection.3.9.1}{Gel phase model}{section.3.9}% 55
-\BOOKMARK [2][-]{subsection.3.9.2}{Ripple model}{section.3.9}% 56
-\BOOKMARK [1][-]{section.3.10}{WAXS Results}{chapter.3}% 57
-\BOOKMARK [1][-]{section.3.11}{Discussion}{chapter.3}% 58
-\BOOKMARK [2][-]{subsection.3.11.1}{Major arm}{section.3.11}% 59
-\BOOKMARK [2][-]{subsection.3.11.2}{Minor arm}{section.3.11}% 60
-\BOOKMARK [1][-]{section.3.12}{Conclusion}{chapter.3}% 61
-\BOOKMARK [0][-]{section*.88}{Appendices}{}% 62
+\BOOKMARK [0][-]{chapter.2}{Structural Perturbation of Lipid Bilayers Due to Tat Peptide}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Materials and Methods}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Stock Solutions}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Thin Film Samples}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{Volume Measurements}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.4}{X-ray setup}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.5}{Analysis of Diffuse Scattering}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.6}{Modeling the Bilayer Structure}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.7}{Molecular Dynamics Simulation}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Analysis of Molecular Dynamics Simulation Data}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{SIMtoEXP program}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{Local Thinning of Membranes}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Lateral Decay Length of Membrane Thinning}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Bending and Bulk Modulus}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{Form Factors}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.3}{Volume}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.4}{Electron Density Profile Modeling}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.5}{Molecular Dynamics Simulations}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 26
+\BOOKMARK [0][-]{section*.58}{Appendices}{}% 62

@@ -278,10 +278,13 @@ High Energy Synchrotron Source (CHESS) G1 station in three different runs
 (2011, 2012, and 2013). 
 The low angle X-ray scattering (LAXS) data analyzed 
 in this thesis were collected in 2013.
-The near grazing incidence wide angle X-ray scattering (nGIWAXS) data were also collected
+The near grazing incidence wide angle X-ray scattering (nGIWAXS) data
+for the ripple phase were also collected
 in the 2013 run, but with smaller energy dispersion than in the LAXS experiment.
 The transmission wide angle X-ray scattering (tWAXS) data were collected
-in the 2011 run. The ripple phase data in the 2012 run were not used
+in the 2011 run. The nGIWAXS data for the fluid phase were also collected in
+the 2011 run.
+The ripple phase data in the 2012 run were not used
 due to low sample quality.
 The instrumental resolution in these X-ray experiments depended on the beam
 divergence, energy dispersion, and geometric broadening 
@@ -298,22 +301,6 @@ We calculated the divergence as div = $\Delta B/\Delta S$, where
 $\Delta B$ is the difference in beam widths at different $S$ distances.
 Table~\ref{tab:beam_divergence} summarizes beam divergence.
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{cccc}
-    \hline
-    year & type of  & horizontal & vertical \\
-     & experiment & (rad.) & (rad.) \\
-    \hline
-    2013 & LAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
-    2013 & nGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
-    2011 & tWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
-    \hline
-  \end{tabular}
-  \caption[Beam divergence]{Beam divergence}
-  \label{tab:beam_divergence}
-\end{table}
-
 \subsubsection{Energy dispersion}\label{sec:energy_dispersion}
 A W/B$_4$C multilayer monochromater with energy bandwidth $\Delta E$/$E$ of
 $\sim$1.3\% was used in the LAXS and tWAXS experiments. 
@@ -328,14 +315,32 @@ Table~\ref{tab:energy_dispersion} summarizes energy dispersion.
 
 \begin{table}[htbp]
   \centering
+  \begin{tabular}{cccc}
+    \hline
+    year & type of  & horizontal & vertical \\
+     & experiment & (rad.) & (rad.) \\
+    \hline
+    2013 & LAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
+    2013 & nGIWAXS & $4.2 \times 10^{-5}$ & $1.6 \times 10^{-4}$ \\
+    2011 & tWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
+    2011 & nGIWAXS & $2.5 \times 10^{-5}$ & $5 \times 10^{-5}$ \\
+    \hline
+  \end{tabular}
+  \caption[Beam divergence]{Beam divergence}
+  \label{tab:beam_divergence}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
   \begin{tabular}{ccccc}
     \hline
     year & type of & $\Delta E/E$ & $E$ & $\lambda$ \\
      & experiment & (\%) & (keV) & (\AA) \\
     \hline
-    2013 & LAXS & 1.5 & 10.55 & 1.175 \\
+    2013 & LAXS & 1.3 & 10.55 & 1.175 \\
     2013 & nGIWAXS & 0.01 & 10.55 & 1.175 \\
-    2011 & tWAXS & 1.5 & 10.54 & 1.176 \\
+    2011 & tWAXS & 1.3 & 10.54 & 1.176 \\
+    2011 & nGIWAXS & 1.3 & 10.54 & 1.176 \\
     \hline
   \end{tabular}
   \caption[Energy dispersion]{Energy dispersion}
@@ -386,7 +391,7 @@ in order to observe many diffraction peaks in one data collection.
 \end{figure}
 
 \paragraph{nGIWAXS}
-In the nGIWAXS experiment, 
+In near grazing incidence WAXS, 
 the horizontal geometric broadening was due to the
 sample width along the beam direction and the horizontal beam width.
 From the geometry of the experiment shown in Fig.~\ref{fig:geometric_broadening}, 
@@ -523,14 +528,42 @@ our experiments.
     year & type of & horizontal & horizontal & vertical & vertical \\
      & experiment & (pixels) & (\AA$^{-1}$) & (pixels) & (\AA$^{-1}$) \\
     \hline
-    2013 & LAXS & 1.7 & 0.0019 & 6.6$q_z$ & 0.0072$q_z$ \\
-    2013 & nGIWAXS & 8 & 0.014 &  & \\
+    2013 & LAXS & 1.7 & 0.0018 & 6.6$q_z$ & 0.0070$q_z$ \\
+    2013 & nGIWAXS & 8 & 0.014 & 0 & 0 \\
     2011 & tWAXS & 2.8 & 0.0067 & 3.1 & 0.0074 \\
+    2011 & nGIWAXS & 11 & 0.025 & 0 & 0 \\
     \hline
   \end{tabular}
   \caption{Geometric broadening}
   \label{tab:geometric_broadening}
 \end{table}
+
+\newpage
+\subsubsection{Final instumental resolution}\label{sec:resolution_formula}
+Table~\ref{tab:instrumental_resolution} gives final 
+horizontal and vertical instrumental resolution, $\Delta q_r$ and $\Delta q_z$,
+taking into account the three contributions described in the preceding sections.
+Those are estimated assuming usual square root additivity for
+Gaussian widths and approximating $q_r \approx 0$ for LAXS and 
+$(q_r, q_z)\approx$ (1.488 \AA$^{-1}$, 0) for nGIWAXS and tWAXS.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccc}
+    \hline
+    year & type of  & $\Delta q_r$ & $\Delta q_z$ \\
+       & experiment & (\AA$^{-1}$) & (\AA$^{-1}$) \\
+    \hline
+    2013 & LAXS    & 0.0018 & $0.01\sqrt{2.2q_z^2+0.029}$ \\
+    2013 & nGIWAXS & 0.014 & 0.0017 \\
+    2011 & tWAXS   & 0.020 & 0.0074 \\
+    2011 & nGIWAXS & 0.032 & 0.0005\\ 
+    \hline  
+  \end{tabular}
+  \caption{Instrumental resolution in $q$}
+  \label{tab:instrumental_resolution}
+\end{table}
+
 
 \newpage
 \subsection{Low Angle X-ray Scattering Experiment}\label{sec:LAXS_method}
@@ -2269,7 +2302,7 @@ A Lorentzian fit to the profile resulted in the full width half maximum
   The red solid line is a Lorentzian fit with its FWHM equal to 0.288 \AA$^{-1}$,
   centered at $q_r$ = 1.408. Extra intensity at larger $q_r$ was due to
   water scattering, which led to a slightly asymmetric profile.  
-  Resolution was 0.xxx\AA$^{-1}$.}
+  Resolution was 0.032 \AA$^{-1}$.}
   \label{fig:fluid_qr}
 \end{figure}
 
@@ -2593,7 +2626,7 @@ There was also no sign of a third feature.
   \includegraphics[trim=20 0 10 0,clip,width=0.5\textwidth]{figures/ripple/tWAXS/twaxs_ripple}
   \caption[tWAXS image of the DMPC ripple phase]{tWAXS image of the DMPC
   ripple phase at 18 \textcelsius\ and $D$ = 60.3 \AA. 
-  {\jn ${\Delta}q_r^{res}=?$.}}
+  Resolution in $q_r$ was 0.020 \AA$^{-1}$.}
   \label{fig:twaxs_ripple}
 \end{figure}
 
@@ -2616,7 +2649,8 @@ There was also no sign of a third feature.
   (right) $q_z$ swath of the ripple stronger Bragg rod averaged between
   1.481 \AA$^{-1}$ and 1.510 \AA$^{-1}$ in $q_r$
   (red solid squares) and the gel (2,0) peak scaled and shifted in $q_z$ to guide 
-   visual comparison (open black circles).}
+  visual comparison (open black circles). 
+  Resolution in $q_z$ was 0.0074 \AA$^{-1}$.}
   \label{fig:twaxs_gel_qz}
 \end{figure}
 
