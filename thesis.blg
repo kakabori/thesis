@@ -11,45 +11,45 @@ The style file: ieeetr.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "Ziegler"
 Warning--I didn't find a database entry for ""
-You've used 124 entries,
+You've used 126 entries,
             1876 wiz_defined-function locations,
-            1300 strings with 29014 characters,
-and the built_in function-call counts, 43602 in all, are:
-= -- 4550
-> -- 1647
+            1312 strings with 29363 characters,
+and the built_in function-call counts, 44348 in all, are:
+= -- 4630
+> -- 1669
 < -- 0
-+ -- 594
-- -- 470
-* -- 3233
-:= -- 5857
-add.period$ -- 128
-call.type$ -- 124
-change.case$ -- 118
++ -- 602
+- -- 476
+* -- 3286
+:= -- 5953
+add.period$ -- 130
+call.type$ -- 126
+change.case$ -- 120
 chr.to.int$ -- 0
-cite$ -- 124
-duplicate$ -- 2166
-empty$ -- 3699
-format.name$ -- 470
-if$ -- 10801
+cite$ -- 126
+duplicate$ -- 2204
+empty$ -- 3765
+format.name$ -- 476
+if$ -- 10991
 int.to.chr$ -- 0
-int.to.str$ -- 124
-missing$ -- 120
-newline$ -- 379
-num.names$ -- 120
-pop$ -- 172
+int.to.str$ -- 126
+missing$ -- 122
+newline$ -- 385
+num.names$ -- 122
+pop$ -- 174
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1896
+skip$ -- 1931
 stack$ -- 0
-substring$ -- 3759
-swap$ -- 1200
+substring$ -- 3831
+swap$ -- 1222
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 391
-width$ -- 127
-write$ -- 1332
+while$ -- 397
+width$ -- 129
+write$ -- 1354
 (There were 2 warnings)

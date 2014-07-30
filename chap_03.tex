@@ -2195,9 +2195,10 @@ the final structural results.
 Figure~\ref{fig:waxs_data_reduction} shows the data reduction of 
 near grazing incidence wide angle X-ray scattering (nGIWAXS) data of
 the DMPC fluid phase at $T$ = 30 \textcelsius.
-The original scattering image taken at $\omega=0.5$\textdegree\ had unwanted
+The scattering image taken at $\omega=0.5$\textdegree\ had unwanted
 scattering due to mylar windows in the hydration chamber which
-overlapped with the fluid phase WAXS.
+overlapped with the fluid phase WAXS 
+and general background from air, He and water vapor.
 Subtracting background scattering data taken at incident angle $-\omega$  
 removed these unwanted features in the scattering data, 
 resulting in a sample scattering image 
@@ -2210,23 +2211,23 @@ relationship is
 not negligible and must be taken into account for wide angle scattering data.
 The black regions in the sample $q$-space image
 (Fig.~\ref{fig:waxs_data_reduction}(bottom, right panel))
-are the regions of $q$-space that
-were not probed by the detector. Because of the nonlinearity in the 
+are the regions of $q$-space that could
+not be probed by the detector when $\omega=0.5$. Because of the nonlinearity in the 
 transformation, straight detector edges were turned into curves, the effect of
 which was most visible near the meridian $q_r$ = 0. All nGIWAXS data
 in this chapter were reduced in the same manner.
 
 Because of chain disordering in the fluid phase, chain-chain scattering
-gives rise to intensity along an arc \cite{ref:Mills08} with a broad
-width in $q$. 
-Scattering of the fluid phase WAXS
-is most intense at the equator. However, scattering near the equator
+gives rise to diffuse scattering that is broad in both the $q_r$ and $q_z$ directions \cite{ref:Mills08}. 
+These fluid phase data were collected with a low resolution setup to maximize
+intensity. The low resolution (${\Delta}q$~0.xx\AA) did not pose a problem for analysis of these 
+data because observed features were broad.  Scattering of the fluid phase WAXS
+is most intense at the equator. However, scattering very near the equator
 was strongly absorbed by the sample and substrate, so observing the 
-peak in the fluid phase WAXS would require a different experimental 
-geometry.
-The data were collected with a low resolution setup to maximize
-intensity. The low resolution did not pose a problem for analysis of the 
-data because observed features were broad.
+peak in the fluid phase WAXS required the tWAXS experimental 
+geometry in the next section.  
+{\jn Our lab should do this for better $S_{xray}$, 
+although this would lose the large $\phi$.}
 Figure~\ref{fig:fluid_qr} plots intensity along $q_r$ showing that
 the fluid phase WAXS was centered at $q \approx$ 1.41 \AA$^{-1}$. 
 This corresponds to an average chain-chain distance of 4.5 \AA. 
@@ -2253,9 +2254,8 @@ A Lorentzian fit to the profile resulted in the full width half maximum
   (bottom) The background subtracted 
   image (left) and corresponding image in the sample $q$-space (right).
   Except for some minor left over scattering, background and mylar scattering was 
-  removed very nicely. A weak scattering feature pointed to by an arrow
-  is from a silicon wafer as we verified by collecting WAXS from a bare 
-  wafer. Because the meridian was not exactly along the vertical
+  removed very nicely. The weak scattering labelled Si also occured from a bare Si wafer.  
+  Because the meridian was not exactly along the vertical
   pixels, the background subtracted image was rotated by $\sim$1\textdegree\
   in the clockwise direction before the $q$-space transformation. The data
   reduction was done using MATLAB.}
@@ -2268,7 +2268,8 @@ A Lorentzian fit to the profile resulted in the full width half maximum
   \caption{Fluid phase WAXS plotted along $q_r$ at $q_z$ = 0.012 \AA$^{-1}$.
   The red solid line is a Lorentzian fit with its FWHM equal to 0.288 \AA$^{-1}$,
   centered at $q_r$ = 1.408. Extra intensity at larger $q_r$ was due to
-  water scattering, which led to a slightly asymmetric profile.}
+  water scattering, which led to a slightly asymmetric profile.  
+  Resolution was 0.xxx\AA$^{-1}$.}
   \label{fig:fluid_qr}
 \end{figure}
 
@@ -2296,8 +2297,11 @@ This is the instrumental resolution as discussed in Sec.~\ref{sec:geometric_broa
   (right) The (2, 0) peak plotted along horizontal pixels $p_x$. The solid red
   line is a Lorentzian fit to the data, resulting in the FWHM of $\sim$8 pixels,
   corresponding to $\Delta q$ = 0.014 \AA$^{-1}$,
-  which is an unresolved width of intrinsically infinitely sharp peak
-  estimated in Sec.~\ref{sec:instrumental_resolution}.}
+  which is the same as the instrumental resolution 
+  estimated in Sec.~\ref{sec:instrumental_resolution}.
+  The scattering appears weak compared to fluid phase scattering shown in 
+  Fig.~\ref{fig:fluid_qr} because the high resolution employed here had 100 
+  times smaller intensity.}
   \label{fig:gel_phase}  
 \end{figure}
 
@@ -2330,8 +2334,8 @@ transmission wide angle scattering, which is discussed in the next section.
   $(q_r, q_z) \approx$ (1.478 $\pm$ 0.002 \AA$^{-1}$, 0.20 $\pm$ 0.01 \AA$^{-1}$). 
   The weaker peak was at 
   $(q_r, q_z) \approx$ (1.457 $\pm$ 0.004 \AA$^{-1}$, 0.12 $\pm$ 0.02 \AA$^{-1}$). The scattered
-  intensity along the line slightly above $q_z$ = 0 \AA$^{-1}$ is the Vineyard-Yoneda
-  peak \cite{ref:Vineyard82,ref:Miller08}.}
+  intensity along the line slightly above $q_z$ = 0 \AA$^{-1}$ is Vineyard-Yoneda
+  scattering involving the substrate \cite{ref:Vineyard82,ref:Miller08}.}
   \label{fig:nGIWAXS_enlarge}
 \end{figure}
 
@@ -2339,8 +2343,9 @@ transmission wide angle scattering, which is discussed in the next section.
   \centering
   \includegraphics[width=0.8\textwidth]{figures/ripple/nGIWAXS/qrplots}
   \caption{$q_r$ swaths of the ripple WAXS, each averaged over 0.02 \AA$^{-1}$
-  in $q_z$. Each curve is shifted by 100 vertically. 
-  The central $q_z$ values of swaths are shown in the figure legend.}
+  in $q_z$. 
+  The central $q_z$ values of swaths are shown in the figure legend.  
+  Each curve is shifted by 100 vertically. }
   \label{fig:qrplots}
 \end{figure}
 
@@ -2398,8 +2403,9 @@ the same, $\sim$1.49 \AA$^{-1}$.
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/nGIWAXS/strong_peak_Lorentz}
   \caption[Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
-  fitted to double Lorentzian functions]{Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
-  fitted to double Lorentzian functions. The FWHM and center obtained 
+  fitted to the sum of two Lorentzians]
+  {Peak profile in $q_r$ at $q_z$ = 0.2 \AA$^{-1}$ 
+  fitted to the sum of two Lorentzians. The FWHM and center obtained 
   were 0.025 \AA$^{-1}$ and 1.478 \AA$^{-1}$ (green) and 0.140 \AA$^{-1}$ 
   and 1.464 \AA$^{-1}$(red), respectively. The solid blue line is a sum
   of the two Lorentzian fits.}
@@ -2411,15 +2417,15 @@ the same, $\sim$1.49 \AA$^{-1}$.
   \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/weak_peak_Lorentz}
   \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/weak_peak_tripleLorentz}
   \caption[Peak profile in $q_r$ at $q_z$ = 0.12 \AA$^{-1}$ fitted to
-  double Lorentzian (left) and double pseudo Voigtian functions (right)]
+  the sum of two  Lorentzian functions]
   {(left) Peak profile in $q_r$ at $q_z$ = 0.12 \AA$^{-1}$ fitted to
-  double Lorentzian functions. 
+  the sum of two Lorentzian functions. 
   The FWHM and center obtained were 0.025 \AA$^{-1}$ and 1.457 \AA$^{-1}$ (red) 
   and 0.026 \AA$^{-1}$ and 1.484 \AA$^{-1}$ (green), respectively.
   The fit was limited within a range in which fits were reasonable.
-  (right) The same peak profile fitted to triple Lorentzian. The FWHM was
+  (right) The same peak profile fitted to the sum of three Lorentzians. The FWHM were
   constrained to 0.025 \AA$^{-1}$ (blue), 0.025 \AA$^{-1}$ (green), and 0.14 \AA$^{-1}$ (red).
-  The center was found to be 1.485 \AA$^{-1}$ (blue), 1.458 \AA$^{-1}$ (green), 
+  The centers were found to be 1.485 \AA$^{-1}$ (blue), 1.458 \AA$^{-1}$ (green), 
   and 1.458 \AA$^{-1}$ (red).}
   \label{fig:weak_peak}
 \end{figure}
@@ -2435,16 +2441,22 @@ the same, $\sim$1.49 \AA$^{-1}$.
     weaker          & 1.462 $\pm$ 0.006 & 1.457 $\pm$ 0.004 & 0.12 $\pm$ 0.02 & 0.025 & & 4.7\textdegree \\
     broader         & 1.463--1.478 & 1.458--1.464 & 0.12--0.20 & 0.140 & \\
     gel (2, 0)      & 1.479 & 1.479 & 0 & 0.014 & 0.4 & 0\textdegree \\
-    gel ($\pm$1, 1) & 1.536 & \\
+    gel ($\pm$1, 1) & 1.536 & 1.298 & 0.821 &  &  & 32.3\textdegree \\
     fluid           & 1.41  &       &      & 0.288 & \\
     \hline
   \end{tabular}
   \caption[Summary of peak properties]
-  {Summary of measured peak properties. 
+  {Wide angle peak positions and widths for the ripple phase with comparison 
+  to the gel and fluid phases. The only resolution limited width was for gel 
+  phase $\Delta q_r$. The values of $\Delta q_z$ are from 
+  Sec.~\ref{sec:tWAXS_results}. 
   The $q$ value of gel ($\pm$1, 1) is taken from \cite{Tristram-Nagle02}.  
-  The values of $\Delta q_z$ are 
-  from Sec.~\ref{sec:tWAXS_results}. $\hat{\theta} = \arctan(q_z/q_r)$.
-  $R = I_{strong}/I_{weak} \approx$ 1.5-1.85.}
+  All $\hat{\theta} = \arctan(q_z/q_r)$.  
+  For the ripple phase the ratio of integrated Bragg rod intensities was
+  $R_{ripple} = I_\text{weak}/I_\text{strong} \approx$ 0.54--0.67 in 
+  comparison to a ratio for the gel phase of 
+  $R_{gel} = I_{(2,0)}/I_{(1,1)} \approx$ 0.8--1.0 
+  \cite{ref:Akabori14}.}
   \label{tab:nGIWAXS_summary}
 \end{table}
 
@@ -2523,47 +2535,56 @@ the weaker peak was not as well separated. Figure~\ref{fig:twaxs_weak_qr} shows
 a hint of the weak peak at $q_z=0.12$ \AA$^{-1}$. This
 data set taken in the 2011 run motivated me to try an experiment
 with a higher instrumental resolution, which led to the nGIWAXS experiment
-in the 2013 run. 
+in the 2013 run, but it was not possible to do tWAXS on that run.
 
 The length $L$ of scattering entities in the $z$ direction can be estimated by 
 measuring the full length $\Delta q_z$ of the (2,0) Bragg rod in $q_z$ in
 the $L_{\beta I}$ phase \cite{ref:Tristram93},
-the relation between them being $\Delta q_z = 4\pi/L$.
+the relation between them being $\Delta q_z = 4\pi/(L\cos\theta)$ 
+from the $\textrm{sinc}(q_zL\cos\theta/2)$ dependence from simple single slit 
+diffraction. 
 Figure~\ref{fig:twaxs_gel_qz} shows intensity of observed Bragg rods along $q_z$ averaged in $q_r$
 for the gel and ripple phases. The full length $\Delta q_z$ for the (2,0) gel
-phase peak was measured to be $\sim$0.4 \AA$^{-1}$, corresponding to 
-$L \approx 31$ \AA. This value of $L$ indicates that chains in the upper and
+phase peak shown in Fig.~\ref{fig:twaxs_gel_qz} was measured to be 
+$\sim$0.4 \AA$^{-1}$, corresponding to 
+$L \approx 36.6$ \AA. 
+{\jn This corresponds to the hydrocarbon thickness of 30.2\AA  reported by 
+STN2002}. 
+This value of $L$ indicates that chains in the upper and
 lower monolayers scatter coherently, which has been shown to be the case
 for DPPC previously \cite{ref:Tristram93}.
 Figure~\ref{fig:twaxs_gel_qz}(right) compares $\Delta q_z$ in the ripple and gel phases,
 showing that $\Delta q_z$ was almost the same in both phases. Therefore, 
 chains in the major arm are also coupled between the monolayers. 
-We note that mosaic spread of the sample would make the apparent $\Delta q_z$ 
-larger, so that $L \approx 31$ \AA\ might be the lower bound on the true $L$. 
+{\jn We note that mosaic spread of the sample would make the apparent $\Delta q_z$ 
+larger, but negligibly so as the angle subtended is $sin^{-1}(0.4/1.5)=15\textdegree$, far larger than the
+mosaicity.} 
 
 Finally, Fig.~\ref{fig:twaxs_qzplot} plots $q_z$ swath along the weaker 
 Bragg rod and along the entire ripple WAXS pattern. 
 We found no obvious intensity maxima
-near the equator, asserting that the weaker peak was also
-off the equator as discussed in Sec.~\ref{sec:nGIWAXS_results}.
-We also found no sign of a third peak.
+near the equator, confirming that the center of the weaker Bragg rod also 
+has non-zero $q_z$ as was suggested in Sec.~\ref{sec:nGIWAXS_results}.
+There was also no sign of a third feature.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.44\textwidth]{figures/ripple/tWAXS/twaxs_gel_ccd}
   \includegraphics[width=0.54\textwidth]{figures/ripple/tWAXS/twaxs_gel_q}
   \caption[Transmission WAXS of the DMPC gel phase]
-  {Transmission WAXS of the DMPC gel $L_{\beta I}$ phase observed on
+  {Transmission WAXS at fixed angle $\omega$=45\textdegree of the DMPC gel 
+  $L_{\beta I}$ phase observed on
   the CCD detector (left) and its corresponding pattern in the sample $q$-space
   (right). Bragg rods were indexed as (2,0), (1,1) and (1,-1). The satellite 
   peaks of (1,$\pm$1) reflections were also labeled. The black region in
-  the right image corresponds to $q$-space that was not probed. The edges
+  the right image corresponds to inaccesible $q$-space at 
+  $\omega$=45\textdegree. The edges
   of the sample $q$-space image were distorted due to the nonlinear relation
   between the detector pixels and the sample $q$-space as discussed in 
   Sec.~\ref{sec:nGIWAXS_results}. A ring of intensity
   at $q \approx$ 0.9 \AA$^{-1}$ is due to imperfect subtraction of the mylar
-  scattering. Residual mylar scattering is also visible near the (2,0) Bragg 
-  rod.}
+  scattering. Residual mylar scattering is also visible near and at slightly 
+  larger $q$ than the (2,0) Bragg rod.}
   \label{fig:twaxs_gel}
 \end{figure}
 
@@ -2571,7 +2592,8 @@ We also found no sign of a third peak.
   \centering
   \includegraphics[trim=20 0 10 0,clip,width=0.5\textwidth]{figures/ripple/tWAXS/twaxs_ripple}
   \caption[tWAXS image of the DMPC ripple phase]{tWAXS image of the DMPC
-  ripple phase at 18 \textcelsius\ and $D$ = 60.3 \AA.}
+  ripple phase at 18 \textcelsius\ and $D$ = 60.3 \AA. 
+  {\jn ${\Delta}q_r^{res}=?$.}}
   \label{fig:twaxs_ripple}
 \end{figure}
 
@@ -2592,7 +2614,7 @@ We also found no sign of a third peak.
   \caption[]{(left) $q_z$ swath of the gel (2,0) Bragg rod. The solid line is
   a Gaussian fit with the FWHM of 0.23 \AA$^{-1}$. 
   (right) $q_z$ swath of the ripple peak along the stronger peak 
-  (red solid squares) and the gel (2,0) peak scaled and shifted to guide 
+  (red solid squares) and the gel (2,0) peak scaled and shifted in $q_z$ to guide 
    visual comparison (open black circles).}
   \label{fig:twaxs_gel_qz}
 \end{figure}
@@ -2602,7 +2624,12 @@ We also found no sign of a third peak.
   \includegraphics[width=0.45\textwidth]{figures/ripple/tWAXS/twaxs_weak_qz}
   \includegraphics[width=0.45\textwidth]{figures/ripple/tWAXS/twaxs_both_qz}
   \caption{$q_z$ swath along the weaker peak (left) and 
-  along the entire ripple WAXS pattern (right).}
+  along the entire ripple WAXS pattern (right). 
+  {\jn Your previous caption gave more detail.  
+  In either case, the normalization between left and right looks misleading.  
+  Have to emphasize averages.  Also, you should use Origin to deconvolute the 
+  peaks.  Also, attach arrows on the figures with "strong", "weak" on the 
+  left and "all" on the right.}}
   \label{fig:twaxs_qzplot}
 \end{figure}  
 
@@ -2628,7 +2655,13 @@ We also found no sign of a third peak.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Thin Rod Model}
-\subsection{Gel phase model}
+We attempt to understand the WAXS data by considering models for the chain 
+packing.  As the prevailing hypothesis is that the major arm of the ripple is 
+like a gel phase, we begin by reviewing gel phase models in the next subsection.  
+We then consider the scattering consequences of tilting these models out of 
+plane by the angle $\xi\approx$~12{\textdegree} obtained from the LAXS analysis.
+
+\subsection{Gel phase model}\label{sec:gel_model}
 The fully hydrated gel phase of DMPC consists of hydrocarbon chains that are 
 basically straight and cooperatively tilted by an angle $\theta$ from the 
 bilayer normal \cite{ref:Smith88,ref:Tristram93,ref:Sun94,Tristram-Nagle02}. 
@@ -2733,7 +2766,8 @@ primary reflections on each side of the merician. For the $L_{{\beta}F}$ phase
 $(1\pm1)$ and $(-1\pm1)$ are pairwise identical, so there are four primary peaks 
 on each side of the meridian.
 
-\subsection{Ripple model}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ripple model}\label{sec:ripple_model}
 A reasonable hypothesis is that the major arm of the ripple has similar 
 internal structure to a gel phase, with the major   difference that the plane 
 of the major arm is tilted relative to the substrate.  That suggests that the 
@@ -2743,8 +2777,26 @@ because the operations of tilting and in-plane powder averaging do not commute.
 It is necessary first to tilt the gel phase $\bold{q}$-space pattern and then to 
 powder average it about the laboratory $k_z$ axis.  
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/ripple/thin_rod_model/unit_cell_combined}
+  \caption[Thin rod model]{
+  (left) Projection of the unit cell ($a$, $b$) on the laboratory ($x$, $y$) plane.  
+  The unit cell is rotated by $\zeta$ compared to $a$ being parallel to $x$ and the 
+  directions of chain tilt is rotated by $\phi$ from the $a$ axis. 
+  (right) Without loss of generality, the ripple direction is shown along 
+  the $y$ axis and the major side is tilted by $\xi$.  Supposing that the chains 
+  are tilted in the $y$ direction only, then the corresponding gel phase could 
+  be any L$_{\beta\text{L}}$ phase constrained only by 
+  $\phi$ + $\zeta$ = $\pi/2$, including the 
+  special L$_{\beta\text{I}}$ phase with $\phi=\pi/2$ and $\zeta=0$ and the 
+  special L$_{\beta\text{F}}$ phase with $\phi=0$ and $\zeta=\pi/2$.}
+  \label{fig:thin_rod_model}
+\end{figure}
+
 Furthermore, the axis for tilting matters, so it is important to define all 
-angles carefully.  We continue to define the chain tilt angle relative to the 
+angles carefully as shown in Fig.\ref{fig:thin_rod_model}.  
+We continue to define the chain tilt angle relative to the 
 bilayer normal by $\theta$.  The tilt of the major arm will be defined by a 
 rotation angle $\xi$ about an axis in the $(x,y)$ plane and the angle that 
 this axis makes with the $x$ axis will be defined to be $\zeta$.  Starting 
@@ -2801,17 +2853,7 @@ $b=acos{\theta}/\sqrt{3}$ for the $P_{{\beta}F}^{\zeta}$ phases.  These
 simplifications allow us to focus on the chain tilt angle $\theta$ and the 
 tilt $\xi$ of the major side for four cases of $(\phi,\zeta)$ and the 
 observable orders $({\pm}2,0)$ and (${\pm}1,{\pm}1)$.  The following table 
-shows the values of $q_z^{mn}$, all divided by $2\pi/a$, for the various 
-phases that include lattice orientations $\zeta$.  
-
-Interestingly, tilting the gel phase to form putative ripple major arms breaks 
-the degeneracy of some of the gel phase rings.  Most notably, all the 
-degeneracies are broken in the $P_{{\beta}I}^{\zeta=\pi/2}$ special case and 
-none are broken in $P_{{\beta}F}^{\zeta=\pi/2}$.  The magnitude of these 
-symmmetry breaking are typically $4{\pi}sin{\xi}/a {\approx} 0.32 {\AA}^{-1}$  
-for $\xi=12$ degrees, so Bragg rods overlap considerably, making clear 
-identification of the sample phase challenging.
-\vspace{0.5cm}
+shows the values of $q_z^{mn}$, all divided by $2\pi/a$.  
 
 \begin{table}[htbp]
 \centering
@@ -2834,79 +2876,79 @@ $L_{{\beta}F}$ & $\pm2tan\theta$ & $tan\theta$ & $-tan\theta$ \\
    $P_{{\beta}F}^{\zeta=\pi/2}$ & $\pm2(tan{\theta}$cos$\xi+$sin$\xi$) & $tan{\theta}cos{\xi}+sin{\xi}$ & $-(tan{\theta}cos{\xi}+sin{\xi})$\\
   \hline
 \end{tabular}
-\caption{}
+\caption{$q_z^{hk}$ divided by 2$\pi/a$. 
+{\jn remember to give $a$ values someplane.}}
 \label{tab:special_cases}
+\end{table}
+
+Importantly, tilting the gel phase to form putative ripple major arms breaks 
+the degeneracy of many of the gel phase rings.  Most notably, all the 
+degeneracies are broken in the $P_{{\beta}I}^{\zeta=\pi/2}$ special case 
+whereas none are broken in $P_{{\beta}F}^{\zeta=\pi/2}$.  The magnitude of the 
+$q_z$ symmmetry breaking is typically 
+$(4{\pi}/a)sin{\xi} {\approx}$ 0.32 {\AA}$^{-1}$  
+for $\xi=12$ degrees.  
+As ${\Delta}q_z\approx$0.4{\AA}, broken symmetry Bragg rods would be predicted 
+to overlap considerably.  This could blur them into apparently single Bragg 
+rods, but with larger ${\Delta}q_z$ than the intrinsic value of each Bragg rod. 
+
+\section{WAXS Results}\label{sec:waxs_results}
+Table~\ref{tab:waxs_structure} lists our new WAXS results for the ripple phase 
+and some older results for the gel phase \cite{Tristram-Nagle02}. As for the 
+well hydrated \LbetaI\ gel phase, the total $q$ for independent 
+reflections is different due to orthorhombic symmetry breaking of hexagonal 
+chain packing, but the difference is smaller for our ripple data, so we have 
+ignored this in our models in Sec.~\ref{sec:ripple_model}.  
+Our experimental result for ${\Delta}q_z$ in Sec.~\ref{sec:tWAXS_results} for the two ripple Bragg 
+rods corresponds to scattering units with length $L_z$ equal to the hydrocarbon 
+thickness that is often called 2$D_c$. Overlap of Bragg rods required by the 
+symmetry breaking that occurs in three of the four models described 
+in Sec.~\ref{sec:ripple_model} would require that each Bragg rod arise from a coherent scattering 
+length even larger than a bilayer. As that is an unorthodox possibility, let 
+us focus on the only case in Table~\ref{tab:special_cases} that does not have 
+symmetry breaking, namely the $P_{\beta F}^{\zeta=\pi/2}$ phase. For this 
+phase $q_z^{20}$ is twice as large as for $q_z^{{\pm}11}$,
+which is consistent with the ratio of the experimental estimated peak 
+positions, $q_z$ = 0.2 $\pm$ 0.01 and 0.12 $\pm$ 0.02. 
+Using our LAXS result $\xi$ = 12\textdegree\ from Table~\ref{tab:LAXS_summary} 
+and the experimental values in Table~\ref{tab:nGIWAXS_summary} gives 
+%$a$ = 8.95 \AA\ and 
+$\theta$ = 19.7\textdegree. This is considerably smaller than for the well 
+hydrated \LbetaI\ phase. Table~\ref{tab:waxs_structure} also has an entry 
+for the \LbetaF\ gel phase that was obtained from Fig.~6 in \cite{Tristram-Nagle02} for a 
+sample that had been partially dehydrated so that the lamellar $D$ spacing was 
+7~\AA\ smaller and the tilt angle had decreased to 20\textdegree. The ripple 
+samples that we have focussed on also have $D$ spacings about 7~\AA\ smaller 
+than full hydration. {\jn Get ref to $D_{FH}$.} We therefore advance the 
+hypothesis that our ripple samples have major arms that are like the 
+$L_{\beta F}$ gel phase rather than like the $L_{\beta I}$ gel phase.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccccccc}
+    \hline
+     & ($m$, $n$) & $q$ & $d_{cc}$ & $q_z$ & $\theta$ & $2D_c$ & $l_{ch}$ \\
+     & & (\AA$^{-1}$) & (\AA) & (\AA$^{-1}$) & & (\AA) & (\AA) \\
+    \hline
+    \multirow{2}{*}{\LbetaI} & (2, 0) & 1.479 & 4.25 & 0 & \multirow{2}{*}{32.3\textdegree} & \multirow{2}{*}{30.1} & \multirow{2}{*}{17.8} \\
+     & (1, 1) & 1.536 & 4.09 & 0.720 \\
+    \hline
+    \LbetaF & $-$ & $-$ & $-$ & $-$ & 20.4\textdegree & 33.4 & 17.8 \\
+    \hline
+    \multirow{2}{*}{$P_{\beta F}^{\zeta=\pi/2}$} & strong & 1.491 & 4.21 & 0.20 & \multirow{2}{*}{19.7\textdegree} & \multirow{2}{*}{31.0} & \multirow{2}{*}{16.5} \\
+     & weak & 1.460 & 4.30 & 0.10 \\
+    \hline
+  \end{tabular}
+  \caption{Quantities for chain packing structure in the major arm 
+  {\jn $d_{cc}$ is wrong}}
+  \label{tab:waxs_structure}
 \end{table}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{figures/ripple/thin_rod_model/unit_cell_combined}
-  \caption[Thin rod model]{
-  (left) Projection of the unit cell ($a$, $b$) on the laboratory ($x$, $y$) plane.  
-  The unit cell is rotated by $\zeta$ compared to parallel $a$ and $x$ and the 
-  directions of chain tilt is rotated by $\phi$ from the $a$ axis. 
-  (right) Without loss of generality, the ripple direction is shown along 
-  the $y$ axis and the major side is tilted by $\xi$.  Supposing that the chains 
-  are tilted in the $y$ direction only, then the corresponding gel phase could 
-  be any L$_{\beta\text{L}}$ phase constrained only by 
-  $\phi$ + $\zeta$ = $\pi/2$, including the 
-  special L$_{\beta\text{I}}$ phase with $\phi=\pi/2$ and $\zeta=0$ and the 
-  special L$_{\beta\text{F}}$ phase with $\phi=0$ and $\zeta=\pi/2$.}
-  \label{fig:thin_rod_model}
-\end{figure}
-
-\section{Interpretation of WAXS}
-Our measured nGIWAXS pattern from the ripple phase described in
-Sec.~\ref{sec:nGIWAXS_ripple_phase} revealed two sharp peaks whose centers 
-were well above the equator. The only $P_{\beta}$ phase among the special
-cases considered so far (Table~\ref{tab:special_cases})
-that is compatible with our nGIWAXS data is $P_{\beta F}^{\zeta=\pi/2}$.
-In this phase, the $q_z$ value of the (2, 0) peak is twice larger than ($\pm$1, 1),
-which is consistent with our estimated peak positions, $q_z$ = 0.2 $\pm$ 0.01 and
-0.12 $\pm$ 0.2. Then, the stronger peak can be indexed as (2, 0) and
-the weaker one as (1, $\pm$1). The total $q$ of  
-$P_{\beta F}^{\zeta=\pi/2}$ is $4\pi/(a\cos\theta)$. Using $\xi$ = 12\textdegree\ 
-from Table~\ref{tab:LAXS_summary}, we can solve a set of two equations
-for $q^{20}$ and $q_z^{20}$ involving $a$ and $\theta$, whose solution is
-$a$ = 8.95 \AA\ and $\theta$ = 19.7\textdegree. From this value of $\theta$
-and the value of $\DHH$ = 41 \AA\ from Table~\ref{tab:LAXS_summary},
-the chain length $L$ can be estimated using $L=\DHH/\cos\theta$, which gives
-$L$ = 43.5 \AA\.
-Tristram-Nagle \textit{et al.}~\cite{Tristram-Nagle02} reported
-for the DMPC \LbetaI\ phase
-the bilayer thickness $\DHH$ = 40.1 \AA\, chain tilt angle $\theta$ = 
-32.3\textdegree, and hydrocarbon thickness $2D_c$ = 30.3 \AA.
-These values correspond to the chain length $L_\text{chian}$ = 17.9 \AA.
-
-
-Compared to the \LbetaI\ phase, our estimated chain length $L$ in the 
-$P_\beta$ phase is smaller by about 4 \AA. 
-This difference is consistent with the total $q$ values
-of the $P_{\beta F}^{\zeta=\pi/2}$ peaks smaller than those of the \LbetaI\ peaks
-(Table~\ref{tab:nGIWAXS_summary}),
-indicating that the chain-chain distance is larger in the 
-$P_{\beta F}^{\zeta=\pi/2}$ phase, which in turn implies that chains
-in the $P_{\beta F}^{\zeta=\pi/2}$ phase are more disordered. This is 
-reasonable because chains in the kink region are expected to be disordered,
-which could cause the chain packing in the major arm to be different
-from the gel phase. This may also explain the observed peak widths 
-shown in Table~\ref{tab:nGIWAXS_summary} being larger than the width of
-the \LbetaI\ (2, 0) peak. 
-
-While the positions of the observed Bragg rods are consistent
-with a prediction of our thin model, 
-integrated intensities are not. Our model shows
-that the Bragg rod at smaller $q_z$ is a superposition of (1, 1) and (1, -1) rods,
-giving a multiplicity factor of 2 for that rod.
-This means that integrated intensity of the weaker Bragg rod should be twice 
-that of the stronger one, which is opposite of our results.
-
-\newpage
-
-\begin{figure}[htbp]
-  \centering
   \includegraphics[width=0.5\textwidth]{figures/ripple/thin_rod_model/chain_length}
-  \caption{Definitions of structural quantities. Chains are tilted with respect
+  \caption{Definitions of structural quantities appearing in Table~\ref{tab:waxs_structure}. 
+  Chains are tilted with respect
   to the bilayer normal $z$ direction by $\theta$. $\DHH$ is the distance
   between the maxima in an electron density profile. 
   The distance between adjacent CH$_2$ groups
@@ -2916,25 +2958,38 @@ that of the stronger one, which is opposite of our results.
   \label{fig:chain_length}
 \end{figure}
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{cccccccc}
-    \hline
-     & ($m$, $n$) & $q$ & $d_{cc}$ & $q_z$ & $\theta$ & $2D_c$ & $L_\text{chain}$ \\
-     & & (\AA$^{-1}$) & (\AA) & (\AA$^{-1}$) & & (\AA) & (\AA) \\
-    \hline
-    \multirow{2}{*}{\LbetaI} & (2, 0) & 1.479 & 4.25 & 0 & \multirow{2}{*}{32.3\textdegree} & \multirow{2}{*}{30.1} & \multirow{2}{*}{17.8} \\
-     & (1, 1) & 1.536 & 4.09 & 0.720 \\ 
-    \hline
-    \LbetaF & $-$ & $-$ & $-$ & $-$ & 20.4\textdegree & 33.4 & 17.8 \\  
-    \hline    
-    \multirow{2}{*}{$P_{\beta F}^{\zeta=\pi/2}$} & strong & 1.491 & 4.21 & 0.20 & \multirow{2}{*}{19.7\textdegree} & \multirow{2}{*}{31.2} & \multirow{2}{*}{16.5} \\
-     & weak & 1.460 & 4.30 & 0.10 \\    
-    \hline
-  \end{tabular}
-  \caption{}
-  \label{tab:waxs_structure}
-\end{table}
+A further test of this hypothesis is that the thickness of the major arm is 
+consistent with our LAXS result that gave a head-head thickness 
+$\DHH$ = 41 \AA\ from Table~\ref{tab:LAXS_summary}. In the gel phase, the 
+distance from the peak in the electron density profile to the Gibbs dividing 
+surface for the hydrocarbon core has been found to be about 5 \AA
+~\cite{Tristram-Nagle02}, so we estimate the ripple hydrocarbon thickness 
+2$D_c$ to be 31 \AA, a bit larger than the gel phase value. However, the 
+smaller tilt angle implies that the chain length $l_{ch}$ is smaller, using 
+$l_{ch}=D_c/cos{\theta}$ with values shown in Table~\ref{tab:waxs_structure}.  
+This difference is reasonable as the ripple phase occurs at higher temperature 
+and more rotameric defects would be expected to occur.  Indeed, one 
+$g^+tg^-$ kink per chain would reduce the chain length by 1.27~\AA\ which 
+accounts for the difference in $l_ch$ in Table~\ref{tab:waxs_structure}.  
+Chain shortening disorder is also consistent with the larger distance 
+$d_{cc}$ between neighboring ripple chains in Table \ref{tab:waxs_structure}.  
+More disorder is also consistent with the shorter chain-chain correlation 
+length implied by the larger ${\Delta}q_r$ in Table~\ref{tab:nGIWAXS_summary}.
+
+While the positions of the observed peaks are consistent
+with the major arm of the ripple being a slightly disordered and tilted 
+$L_{\beta F}$ structure, 
+the relative intensities in those Bragg rods peaks do not easily conform. 
+In the $L_{\beta F}$ structure the Bragg rod with peak at smaller $q_z$ is a 
+superposition of the (1, 1) and (-1, 1) Bragg rods whereas the rod with peak 
+at larger $q_z$ arises only from the (2,0) rod.  When the chains are modeled as 
+thin rods, the relative intensities 
+of (2, 0), (1, 1) and (-1, 1) would all be equal, giving a factor of 2 in the 
+ratio of observed intensities, but the experimental relative intensity ratio 
+is at most 2/3. Of course, all-trans chains are not thin rods but the carbons 
+zigzag in a plane, and there have been recent calculations that suggest that 
+these intensity ratios can vary considerably depending on yet another angle, 
+the azimuthal rotation of the chains about their long axis \cite{ref:Akabori14,ref:Watkins14}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -3056,8 +3111,10 @@ as previously argued in Ref.~\cite{ref:Cunningham98},
 subtraction of the fluid phase pattern from the ripple pattern would result
 in an asymmetric shape of the ripple Bragg peaks, which is not very reasonable.
 
-Another type of chain packing, possibly with atypical bilayer profile, for the minor arm 
-is the chain interdigitation proposed by de Vries \textit{et al.} \cite{ref:deVries05}.
+An interesting kind of chain packing shown in Fig.\ref{fig:nGIWAXS_comparison} 
+was reported from an MD simulation \cite{ref:deVries05}. This introduced the 
+possibility that the thinner minor arm might consist of interdigitated chains 
+rather then disordered fluid chains.  
 Figure~\ref{fig:interdigitation_comparison} compares the electron density
 profiles in the minor arm with that of the DHPC L$_\beta\text{I}$ interdigitated phase
 reported by \cite{ref:Guler09}. Absence of the methyl trough can be seen in
@@ -3066,7 +3123,7 @@ headgroups are much narrower in the DHPC L$_\beta\text{I}$ phase. The widths
 of the ''headgroups'' in the minor arm profile are about 10 \AA, comparable
 with those in the major arm profile. While Fig.~\ref{fig:interdigitation_comparison}
 suggests that interdigitated chains are not completely inconsistent with 
-out results in terms of an overall shape of the density profile, 
+our results in terms of an overall shape of the density profile, 
 our nGIWAXS pattern clearly eliminates the packing proposed in 
 Ref.~\cite{ref:deVries05}. Figure~\ref{fig:nGIWAXS_comparison} compares
 the calculated wide angle pattern from their atomistic MD simulations
@@ -3122,9 +3179,12 @@ de Vries \textit{et al.} \cite{ref:deVries05}.
   \qquad
   \includegraphics[width=0.35\textwidth]{figures/ripple/discussion/ripple_waxs}
   \caption{Comparison of the wide angle (WAXS) pattern predicted by the 
-  ripple phase structure proposed in Ref.~\cite{ref:deVries05} (left) and
-  our measured WAXS (right). In the left, the interdigitated chains scatter 
-  coherently, giving rise to a Bragg peak at $q_z \approx 0.4$ \AA$^{-1}$,
+  ripple phase structure proposed in Ref.~\cite{ref:deVries05} 
+  (upper left, with black corresponding to highest intensity) and
+  our measured WAXS (right, white corresponding to highest intensity). 
+  Lower left is a snapshot from Ref.~\cite{ref:deVries05} that shows 
+  interdigitated chains.  The maximal scattering in the upper left  was at 
+  $q_z \approx 0.4$ \AA$^{-1}$,
   while $q_z$ values of the observed peaks in our data were 0.12 \AA$^{-1}$
   and 0.2 \AA$^{-1}$.}
   \label{fig:nGIWAXS_comparison}
