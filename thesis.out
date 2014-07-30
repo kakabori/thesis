@@ -2,28 +2,6 @@
 \BOOKMARK [1][-]{section.1.1}{Lipid bilayer}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Tat peptide}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{P' ripple phase}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Structural Perturbation of Lipid Bilayers Due to Tat Peptide}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Materials and Methods}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.1}{Stock Solutions}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.2}{Thin Film Samples}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.3}{Volume Measurements}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.4}{X-ray setup}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.5}{Analysis of Diffuse Scattering}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.6}{Modeling the Bilayer Structure}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.7}{Molecular Dynamics Simulation}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Analysis of Molecular Dynamics Simulation Data}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{SIMtoEXP program}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Local Thinning of Membranes}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.3}{Lateral Decay Length of Membrane Thinning}{section.2.3}% 18
-\BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.4.1}{Bending and Bulk Modulus}{section.2.4}% 20
-\BOOKMARK [2][-]{subsection.2.4.2}{Form Factors}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.3}{Volume}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.4}{Electron Density Profile Modeling}{section.2.4}% 23
-\BOOKMARK [2][-]{subsection.2.4.5}{Molecular Dynamics Simulations}{section.2.4}% 24
-\BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 26
 \BOOKMARK [0][-]{chapter.3}{Ripple Phase}{}% 27
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
 \BOOKMARK [2][-]{subsection.3.1.1}{Some history}{section.3.1}% 29
@@ -54,18 +32,9 @@
 \BOOKMARK [1][-]{section.3.9}{Thin Rod Model}{chapter.3}% 54
 \BOOKMARK [2][-]{subsection.3.9.1}{Gel phase model}{section.3.9}% 55
 \BOOKMARK [2][-]{subsection.3.9.2}{Ripple model}{section.3.9}% 56
-\BOOKMARK [1][-]{section.3.10}{Discussion}{chapter.3}% 57
-\BOOKMARK [2][-]{subsection.3.10.1}{Major arm}{section.3.10}% 58
-\BOOKMARK [2][-]{subsection.3.10.2}{Minor arm}{section.3.10}% 59
-\BOOKMARK [1][-]{section.3.11}{Conclusion}{chapter.3}% 60
-\BOOKMARK [0][-]{section*.127}{Appendices}{}% 61
-\BOOKMARK [0][-]{Appendix.a.A}{}{}% 62
-\BOOKMARK [1][-]{section.a.A.1}{More results from chapter 2}{Appendix.a.A}% 63
-\BOOKMARK [1][-]{section.a.A.2}{Mosaic Spread for NFIT analysis}{Appendix.a.A}% 64
-\BOOKMARK [2][-]{subsection.a.A.2.1}{Mosaic Spread: Calculation}{section.a.A.2}% 65
-\BOOKMARK [2][-]{subsection.a.A.2.2}{Mosaic Spread: Near Equivalence of Two Methods}{section.a.A.2}% 66
-\BOOKMARK [2][-]{subsection.a.A.2.3}{NFIT}{section.a.A.2}% 67
-\BOOKMARK [1][-]{section.a.A.3}{Derivation of the contour part of the form factor}{Appendix.a.A}% 68
-\BOOKMARK [1][-]{section.a.A.4}{Derivation of the transbilayer part of the form factor in the 2G hybrid model}{Appendix.a.A}% 69
-\BOOKMARK [1][-]{section.a.A.5}{Correction due to refractive index}{Appendix.a.A}% 70
-\BOOKMARK [1][-]{section.a.A.6}{Thin Rod Model of the ripple phase}{Appendix.a.A}% 71
+\BOOKMARK [1][-]{section.3.10}{Interpretation of WAXS}{chapter.3}% 57
+\BOOKMARK [1][-]{section.3.11}{Discussion}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.11.1}{Major arm}{section.3.11}% 59
+\BOOKMARK [2][-]{subsection.3.11.2}{Minor arm}{section.3.11}% 60
+\BOOKMARK [1][-]{section.3.12}{Conclusion}{chapter.3}% 61
+\BOOKMARK [0][-]{section*.88}{Appendices}{}% 62

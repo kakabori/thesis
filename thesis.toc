@@ -37,9 +37,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{74}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Energy dispersion}{75}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{75}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{LAXS}{75}{section*.59}
-\contentsline {paragraph}{nGIWAXS}{77}{section*.62}
-\contentsline {paragraph}{tWAXS}{77}{section*.66}
+\contentsline {paragraph}{LAXS}{75}{section*.19}
+\contentsline {paragraph}{nGIWAXS}{77}{section*.22}
+\contentsline {paragraph}{tWAXS}{77}{section*.26}
 \contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering Experiment}{82}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering nGIWAXS}{84}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Transmission Wide Angle X-ray Scattering tWAXS}{84}{subsection.3.2.5}
@@ -64,11 +64,12 @@
 \contentsline {section}{\numberline {3.9}Thin Rod Model}{143}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Gel phase model}{143}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Ripple model}{145}{subsection.3.9.2}
-\contentsline {section}{\numberline {3.10}Discussion}{150}{section.3.10}
-\contentsline {subsection}{\numberline {3.10.1}Major arm}{150}{subsection.3.10.1}
-\contentsline {subsection}{\numberline {3.10.2}Minor arm}{152}{subsection.3.10.2}
-\contentsline {section}{\numberline {3.11}Conclusion}{157}{section.3.11}
-\contentsline {chapter}{Appendices}{159}{section*.127}
+\contentsline {section}{\numberline {3.10}Interpretation of WAXS}{147}{section.3.10}
+\contentsline {section}{\numberline {3.11}Discussion}{151}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Major arm}{151}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Minor arm}{153}{subsection.3.11.2}
+\contentsline {section}{\numberline {3.12}Conclusion}{158}{section.3.12}
+\contentsline {chapter}{Appendices}{160}{section*.88}
 \contentsline {chapter}{\numberline {A}}{160}{Appendix.a.A}
 \contentsline {section}{\numberline {A.1}More results from chapter 2}{160}{section.a.A.1}
 \contentsline {section}{\numberline {A.2}Mosaic Spread for NFIT analysis}{163}{section.a.A.2}
