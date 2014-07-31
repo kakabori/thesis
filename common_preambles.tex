@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%% common packages are included here %%%%%%%%%%%%%%%%%
 %\usepackage[pdftex,draft]{graphicx}
 \usepackage[pdftex]{graphicx}
-\usepackage{epstopdf}
+%\usepackage{epstopdf}
 \usepackage{tabularx}
 \usepackage[lofdepth,lotdepth]{subfig} % subfloat
 \usepackage{bm} % bold math
@@ -24,7 +24,6 @@
 \usepackage{cite}
 \usepackage{notoccite}
 \usepackage{multirow}
-%\usepackage[numbers,sort&compress]{natbib}
 \usepackage[pdftex]{hyperref}
 \usepackage{glossaries}
 
@@ -34,6 +33,10 @@
 \onehalfspacing
 %\doublespacing
 \setcounter{secnumdepth}{3}
+
+% Hyphenation
+\hyphenation{multi-lamellar}
+\hyphenation{table}
 
 %%%%%%%%%%%%%%%%%%% new commands are defined here %%%%%%%%%%%%%%%%%%%%%
 \newcommand{\dg}{$^{\circ}$} % degree symbol
@@ -63,10 +66,6 @@
 \newcommand{\ds}[1]{\displaystyle{#1}}%
 \newcommand{\+}{^{\dagger}}%                                
 \newcommand{\partiald}[3][]{{\partial^{#1}#2 \over \partial {#3}^{#1}}}%
-
-% Hyphenation
-\hyphenation{multi-lamellar}
-\hyphenation{table}
 
 \newcommand{\jn}{\color{red}}
 

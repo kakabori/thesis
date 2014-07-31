@@ -1,0 +1,690 @@
+\ifglsentryexists{a1}{}%
+{%
+\gls@defglossaryentry{a1}%
+{%
+name={$\mathbf {a_1}$},%
+sort={$\mathbf {a_1}$},%
+type={main},%
+first={$\protect \mathbf {a_1}$},%
+firstplural={$\protect \mathbf {a_1}$s},%
+text={$\protect \mathbf {a_1}$},%
+plural={$\protect \mathbf {a_1}$s},%
+description={monoclinic unit cell vector},%
+descriptionplural={monoclinic unit cell vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{a2}{}%
+{%
+\gls@defglossaryentry{a2}%
+{%
+name={$\mathbf {a_2}$},%
+sort={$\mathbf {a_2}$},%
+type={main},%
+first={$\protect \mathbf {a_2}$},%
+firstplural={$\protect \mathbf {a_2}$s},%
+text={$\protect \mathbf {a_2}$},%
+plural={$\protect \mathbf {a_2}$s},%
+description={monoclinic unit cell vector},%
+descriptionplural={monoclinic unit cell vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{theta}{}%
+{%
+\gls@defglossaryentry{theta}%
+{%
+name={$\theta $},%
+sort={$\theta $},%
+type={main},%
+first={$\theta $},%
+firstplural={$\theta $s},%
+text={$\theta $},%
+plural={$\theta $s},%
+description={chain tilt angle},%
+descriptionplural={chain tilt angle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DHH}{}%
+{%
+\gls@defglossaryentry{DHH}%
+{%
+name={\DHH },%
+sort={\DHH },%
+type={main},%
+first={D_\protect \textrm {HH}},%
+firstplural={D_\protect \textrm {HH}s},%
+text={D_\protect \textrm {HH}},%
+plural={D_\protect \textrm {HH}s},%
+description={head-to-head distance},%
+descriptionplural={head-to-head distance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{a}{}%
+{%
+\gls@defglossaryentry{a}%
+{%
+name={$\mathbf {a}$},%
+sort={$\mathbf {a}$},%
+type={main},%
+first={$\protect \mathbf {a}$},%
+firstplural={$\protect \mathbf {a}$s},%
+text={$\protect \mathbf {a}$},%
+plural={$\protect \mathbf {a}$s},%
+description={orthorhombic unit cell vector},%
+descriptionplural={orthorhombic unit cell vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{b}{}%
+{%
+\gls@defglossaryentry{b}%
+{%
+name={$\mathbf {b}$},%
+sort={$\mathbf {b}$},%
+type={main},%
+first={$\protect \mathbf {b}$},%
+firstplural={$\protect \mathbf {b}$s},%
+text={$\protect \mathbf {b}$},%
+plural={$\protect \mathbf {b}$s},%
+description={orthorhombic unit cell vector},%
+descriptionplural={orthorhombic unit cell vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Dc}{}%
+{%
+\gls@defglossaryentry{Dc}%
+{%
+name={$D_c$},%
+sort={$D_c$},%
+type={main},%
+first={$D_c$},%
+firstplural={$D_c$s},%
+text={$D_c$},%
+plural={$D_c$s},%
+description={hydrocarbon chain length},%
+descriptionplural={hydrocarbon chain length},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{AL}{}%
+{%
+\gls@defglossaryentry{AL}%
+{%
+name={\AL },%
+sort={\AL },%
+type={main},%
+first={A_\protect \textrm {L}},%
+firstplural={A_\protect \textrm {L}s},%
+text={A_\protect \textrm {L}},%
+plural={A_\protect \textrm {L}s},%
+description={area per lipid},%
+descriptionplural={area per lipid},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Kc}{}%
+{%
+\gls@defglossaryentry{Kc}%
+{%
+name={$K_c$},%
+sort={$K_c$},%
+type={main},%
+first={$K_c$},%
+firstplural={$K_c$s},%
+text={$K_c$},%
+plural={$K_c$s},%
+description={bending modulus},%
+descriptionplural={bending modulus},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{B}{}%
+{%
+\gls@defglossaryentry{B}%
+{%
+name={$B$},%
+sort={$B$},%
+type={main},%
+first={$B$},%
+firstplural={$B$s},%
+text={$B$},%
+plural={$B$s},%
+description={bulk modulus},%
+descriptionplural={bulk modulus},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DPP}{}%
+{%
+\gls@defglossaryentry{DPP}%
+{%
+name={\DPP },%
+sort={\DPP },%
+type={main},%
+first={D_\protect \textrm {PP}},%
+firstplural={D_\protect \textrm {PP}s},%
+text={D_\protect \textrm {PP}},%
+plural={D_\protect \textrm {PP}s},%
+description={PC-PC distance / phosphate-phosphate distance / phosphorus-phosphorus distance},%
+descriptionplural={PC-PC distance / phosphate-phosphate distance / phosphorus-phosphorus distance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{q}{}%
+{%
+\gls@defglossaryentry{q}%
+{%
+name={$\mathbf {q}$},%
+sort={$\mathbf {q}$},%
+type={main},%
+first={$\protect \mathbf {q}$},%
+firstplural={$\protect \mathbf {q}$s},%
+text={$\protect \mathbf {q}$},%
+plural={$\protect \mathbf {q}$s},%
+description={momentum transfer vector},%
+descriptionplural={momentum transfer vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kin}{}%
+{%
+\gls@defglossaryentry{kin}%
+{%
+name={\kin },%
+sort={\kin },%
+type={main},%
+first={\protect \mathbf {k}_{\protect \mathrm {in}}},%
+firstplural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
+text={\protect \mathbf {k}_{\protect \mathrm {in}}},%
+plural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
+description={incoming wave vector},%
+descriptionplural={incoming wave vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{VTat}{}%
+{%
+\gls@defglossaryentry{VTat}%
+{%
+name={$\VTat $},%
+sort={$\VTat $},%
+type={main},%
+first={$V_\protect \textrm {Tat}$},%
+firstplural={$V_\protect \textrm {Tat}$s},%
+text={$V_\protect \textrm {Tat}$},%
+plural={$V_\protect \textrm {Tat}$s},%
+description={volume of Tat},%
+descriptionplural={volume of Tat},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{chisqr}{}%
+{%
+\gls@defglossaryentry{chisqr}%
+{%
+name={$\chi ^2$},%
+sort={$\chi ^2$},%
+type={main},%
+first={$\chi ^2$},%
+firstplural={$\chi ^2$s},%
+text={$\chi ^2$},%
+plural={$\chi ^2$s},%
+description={goodness of fit},%
+descriptionplural={goodness of fit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{a}{}%
+{%
+\gls@defglossaryentry{a}%
+{%
+name={$\mathbf {a}$},%
+sort={$\mathbf {a}$},%
+type={main},%
+first={$\protect \mathbf {a}$},%
+firstplural={$\protect \mathbf {a}$s},%
+text={$\protect \mathbf {a}$},%
+plural={$\protect \mathbf {a}$s},%
+description={orthorhombic unit cell vector},%
+descriptionplural={orthorhombic unit cell vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{zTat}{}%
+{%
+\gls@defglossaryentry{zTat}%
+{%
+name={$\zTat $},%
+sort={$\zTat $},%
+type={main},%
+first={$z_\protect \textrm {Tat}$},%
+firstplural={$z_\protect \textrm {Tat}$s},%
+text={$z_\protect \textrm {Tat}$},%
+plural={$z_\protect \textrm {Tat}$s},%
+description={position of Tat measured from the bilayer center},%
+descriptionplural={position of Tat measured from the bilayer center},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Dphos}{}%
+{%
+\gls@defglossaryentry{Dphos}%
+{%
+name={$\Dphos $},%
+sort={$\Dphos $},%
+type={main},%
+first={$D_\protect \text {phos}$},%
+firstplural={$D_\protect \text {phos}$s},%
+text={$D_\protect \text {phos}$},%
+plural={$D_\protect \text {phos}$s},%
+description={phosphorus-phosphorus distance in the suppressed region},%
+descriptionplural={phosphorus-phosphorus distance in the suppressed region},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Dphos0}{}%
+{%
+\gls@defglossaryentry{Dphos0}%
+{%
+name={$\Dphos ^0$},%
+sort={$\Dphos ^0$},%
+type={main},%
+first={$D_\protect \text {phos}^0$},%
+firstplural={$D_\protect \text {phos}^0$s},%
+text={$D_\protect \text {phos}^0$},%
+plural={$D_\protect \text {phos}^0$s},%
+description={phosphorus-phosphorus distance in the unperturbed region},%
+descriptionplural={phosphorus-phosphorus distance in the unperturbed region},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{zphos}{}%
+{%
+\gls@defglossaryentry{zphos}%
+{%
+name={$\zphos $},%
+sort={$\zphos $},%
+type={main},%
+first={$z_\protect \textrm {phos}$},%
+firstplural={$z_\protect \textrm {phos}$s},%
+text={$z_\protect \textrm {phos}$},%
+plural={$z_\protect \textrm {phos}$s},%
+description={phosphorus $z$ position in the suppressed region},%
+descriptionplural={phosphorus $z$ position in the suppressed region},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{HTat}{}%
+{%
+\gls@defglossaryentry{HTat}%
+{%
+name={$\HTat $},%
+sort={$\HTat $},%
+type={main},%
+first={$H_\protect \textrm {Tat}$},%
+firstplural={$H_\protect \textrm {Tat}$s},%
+text={$H_\protect \textrm {Tat}$},%
+plural={$H_\protect \textrm {Tat}$s},%
+description={height of Tat cylinder},%
+descriptionplural={height of Tat cylinder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RTat}{}%
+{%
+\gls@defglossaryentry{RTat}%
+{%
+name={$\RTat $},%
+sort={$\RTat $},%
+type={main},%
+first={$R_\protect \textrm {Tat}$},%
+firstplural={$R_\protect \textrm {Tat}$s},%
+text={$R_\protect \textrm {Tat}$},%
+plural={$R_\protect \textrm {Tat}$s},%
+description={radius of Tat cylinder},%
+descriptionplural={radius of Tat cylinder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{qz}{}%
+{%
+\gls@defglossaryentry{qz}%
+{%
+name={$q_z$},%
+sort={$q_z$},%
+type={main},%
+first={$q_z$},%
+firstplural={$q_z$s},%
+text={$q_z$},%
+plural={$q_z$s},%
+description={$q$-axis perpendicular to substrate},%
+descriptionplural={$q$-axis perpendicular to substrate},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

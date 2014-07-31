@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="691.98523"
-   height="395.29028"
+   width="695.69226"
+   height="392.43872"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="linear_model.svg">
   <defs
      id="defs4">
@@ -39,9 +39,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="262.70207"
-     inkscape:cy="247.75432"
+     inkscape:zoom="1.4"
+     inkscape:cx="326.88689"
+     inkscape:cy="182.12135"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -52,7 +52,7 @@
      inkscape:window-width="1392"
      inkscape:window-height="838"
      inkscape:window-x="1"
-     inkscape:window-y="7"
+     inkscape:window-y="24"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -62,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,7 +70,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-59.293342,-174.00047)">
+     transform="translate(-59.293342,-176.85204)">
     <g
        id="g3023"
        transform="translate(-21.428571,-8.5714286)"
@@ -137,12 +137,12 @@
        id="path4437"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4,8;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 8;stroke-dashoffset:0"
        d="m 556.59405,300.30922 0,228.78832"
        id="path4439"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4,8;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 8;stroke-dashoffset:0"
        d="m 687.91642,300.30918 0,228.78844"
        id="path4441"
        inkscape:connector-curvature="0" />
@@ -157,9 +157,9 @@
          id="tspan4445"
          x="467.70062"
          y="559.40771"
-         style="font-size:32px;-inkscape-font-specification:Times New Roman;font-family:Times New Roman">R<tspan
-   style="font-size:65.00091553000000000%;baseline-shift:sub;-inkscape-font-specification:Times New Roman;font-family:Times New Roman"
-   id="tspan4906">1</tspan></tspan></text>
+         style="font-size:32px;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3030">Tat</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
@@ -171,8 +171,8 @@
          id="tspan4445-0"
          x="542.79639"
          y="560.63281"
-         style="font-size:32px;-inkscape-font-specification:Times New Roman;font-family:Times New Roman">R<tspan
-   style="font-size:65.00091553000000000%;baseline-shift:sub;-inkscape-font-specification:Times New Roman;font-family:Times New Roman"
+         style="font-size:32px;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-size:65.00091553%;baseline-shift:sub;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
    id="tspan4908">2</tspan></tspan></text>
     <text
        xml:space="preserve"
@@ -185,8 +185,8 @@
          id="tspan4477"
          x="676.80219"
          y="561.42804"
-         style="font-size:32px;-inkscape-font-specification:Times New Roman;font-family:Times New Roman">R<tspan
-   style="font-size:65.00091553000000000%;baseline-shift:sub;-inkscape-font-specification:Times New Roman;font-family:Times New Roman"
+         style="font-size:32px;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-size:65.00091553%;baseline-shift:sub;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
    id="tspan4910">3</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.00486255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.01945028, 8.03890054;stroke-dashoffset:0"
@@ -236,15 +236,15 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot3022"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Times New Roman;font-style:normal;font-weight:normal;font-size:28px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"><flowRegion
          id="flowRegion3024"><rect
            id="rect3026"
            width="265.6701"
            height="49.497475"
            x="398.00009"
            y="359.93494" /></flowRegion><flowPara
-         id="flowPara3028"></flowPara></flowRoot>    <path
-       style="fill:none;stroke:#000000;stroke-width:1.005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.005,3.01499999;stroke-dashoffset:0"
+         id="flowPara3028" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1.005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.005, 3.01499999;stroke-dashoffset:0"
        d="m 688.29968,321.80338 c -310.48957,0 -310.48957,0 -310.48957,0"
        id="path4437-4-1"
        inkscape:connector-curvature="0" />
@@ -287,5 +287,38 @@
        d="m 357.98675,334.52422 4.29316,-12.87943 -3.78808,-12.62692"
        id="path3883-8"
        inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="385.0076"
+       y="469.29074"
+       id="text3032"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3034"
+         x="385.0076"
+         y="469.29074">suppressed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="485.72192"
+       y="445.71939"
+       id="text3036"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3038"
+         x="485.72192"
+         y="445.71939">boundary</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="573.57898"
+       y="427.86215"
+       id="text3040"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3042"
+         x="573.57898"
+         y="427.86215">unperturbed</tspan></text>
   </g>
 </svg>
