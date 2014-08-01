@@ -680,6 +680,7 @@ allowed model parameters with upper and lower bounds in
 the SDP program.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \subsection{Molecular Dynamics Simulation}\label{sec:sim_methods}
 This section describes the MD simulations performed by Dr. Kun Huang, who was
 a graduate student of Prof. Angel Garcia at Rensselaer Polytechnic Institute
@@ -1169,14 +1170,14 @@ electron density profiles for DOPC with Tat.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_XFF1} 
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_EDP1} 
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1} 
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_XFF1} 
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_EDP1} 
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_62to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_62to1_3p0_EDP1} 
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_28to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_28to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPC_Tat_16to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPC_Tat_16to1_3p0_EDP1}
   \caption{Best fits to DOPC form factors (left) and the corresponding 
   electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
   and 0.059 (from top to bottom).
@@ -1327,8 +1328,7 @@ increased, similarly to DOPC/Tat systems shown in Fig.~\ref{fig:DOPC_Tat_total_E
     $\AL$ & 71.5 & 72.4 & 72.5 & 72.7 & 73.6 & 74.0 & 74.4 & 73.6 & 73.5 & 73.9 \\
     \hline
   \end{tabular}
-  \caption{Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. $\Delta z_1 = \zPC-\zCG$
-  and $\Delta z_2 = \zCG-\zHC$.
+  \caption{Fitting Results for DOPC:DOPE (1:1) membranes for the THG model. 
   Units of all symbols are \AA\ except for $\chi^2$ (unitless) and $\AL$ (\AA$^2$).}
   \label{tab:DOPCDOPE1to1_fit_results}
 \end{table}
@@ -1431,20 +1431,30 @@ The MD simulations performed by Dr. Kun Huang suggested that
 the interior positions of Tat were artifacts of our model, at least for DOPC
 bilayers. The simulation results are found in Sec.~\ref{sec:MD_results}.
 
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
+%  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2}
+%  \caption{$\chi^2$ as a function of $\zTat$ for DOPC, DOPC:DOPE (3:1), and 
+%  DOPC:DOPE (1:1) (from left to right) 
+%  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
+%  $\sigmaTat = 3.0$. The THG model (black squares) and the THC model (red circles).}
+%  \label{fig:DOPC_Tat_X2}
+%\end{figure}
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_62to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_62to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_28to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_28to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE3to1_Tat_16to1_3p0_X2}
-  \includegraphics[width=0.3\textwidth]{figures/Tat/SDP_Results/X2/DOPCDOPE1to1_Tat_16to1_3p0_X2}
-  \caption{$\chi^2$ as a function of $\zTat$ for DOPC, DOPC:DOPE (3:1), and 
-  DOPC:DOPE (1:1) (from left to right) 
-  with $\xTat$ = 0.016, 0.034, and 0.059 (from top to bottom). 
+  \includegraphics[width=\textwidth]{figures/Tat/SDP_Results/X2/X2}
+  \caption{$\chi^2$ as a function of $\zTat$ for DOPC (left column), 
+  DOPC:DOPE (3:1) (middle), and DOPC:DOPE (1:1) (right) 
+  with $\xTat$ = 0.016 (top row), 0.034 (middle), and 0.059 (bottom). 
   $\sigmaTat = 3.0$. The THG model (black squares) and the THC model (red circles).}
   \label{fig:DOPC_Tat_X2}
 \end{figure}
@@ -1469,9 +1479,10 @@ is in Tat position $\zTat$. Figure~\ref{fig:zTat_bound} plots $\zTat$ as a funct
 of Tat mole fraction $\xTat$ for both fits with and without lower bounds.
 While $\zTat$ increased as $\xTat$ increased for fits without bounds, $\zTat$
 stayed more or less constant for fits with the bounds. Moreover, 
-for fits with the lower bounds, 
-Tat was located closer to the PC headgroup than the CG headgroup. Thus,
-depth of Tat insertion was affected strongly by the lipid headgroup widths.
+Table~\ref{tab:bound_DOPC} shows that 
+Tat was located closer to the PC headgroup than the CG headgroup
+for fits with the lower bounds. Thus,
+depth of Tat insertion was influenced strongly by the lipid headgroup widths.
 In order to gain better understanding of location of Tat in DOPC bilayers,
 we now turn to MD simulations.
 
@@ -1518,33 +1529,36 @@ we now turn to MD simulations.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_62to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_62to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_28to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_28to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE3to1_Tat_16to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1} 
+  %\includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE3to1_Tat_16to1_3p0_EDP1}
   \caption{Best fits to DOPC:DOPE (3:1) form factors (left) and the corresponding 
   electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
-  and 0.059 (from top to bottom).}
+  and 0.059 (from top to bottom).
+  The Tat EDP is a solid black line with diagonal line underfill.}
   \label{fig:DOPCDOPE3to1_Tat_XFF1}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1}
-  \includegraphics[width=0.45\textwidth,valign=t]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1}
-  \includegraphics[width=0.45\textwidth,valign=t]{./figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_62to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_62to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_28to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_28to1_3p0_EDP1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/XFF/DOPCDOPE1to1_Tat_16to1_3p0_XFF1}
+  \includegraphics[trim=5 30 0 0,clip=true,width=0.47\textwidth]{figures/Tat/SDP_Results/EDP/DOPCDOPE1to1_Tat_16to1_3p0_EDP1}
   \caption{Best fits to DOPC:DOPE (1:1) form factors (left) and the corresponding 
   electron density profiles (right) with $\xTat$ = 0, 0.016, 0.034, 
-  and 0.059 (from top to bottom).}
+  and 0.059 (from top to bottom).
+  The Tat EDP is a solid black line with diagonal line underfill.}
   \label{fig:DOPCDOPE1to1_Tat_XFF1}
 \end{figure}
 
@@ -1571,30 +1585,32 @@ we now turn to MD simulations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Molecular Dynamics Simulations}\label{sec:MD_results}
-Due to the slow relaxation in lipid bilayers and limited accuracy of the force 
-field, a good agreement between experimental and MD simulation calculated 
-form factors may be difficult to reach. Consequently, we carried out several 
+Due to slow relaxation in lipid bilayers and limited force field accuracy, 
+good agreement may be difficult to reach between experimental and MD simulation 
+calculated form factors. Consequently, we carried out several 
 constrained simulations at various $\AL$ and $\zTat$ as described
 in Sec.~\ref{sec:sim_methods}. 
-We then compared the simulated form factor $F(q_z)$ with the
-experimentally measured one. Figure~\ref{fig:MD_dopc_sim-exp} shows such
-comparison for a DOPC bilayer. As discussed in Sec.~\ref{sec:SDP_results}, 
-the simulated form factor
-shifted to larger $q_z$ as the area per lipid was increased. 
-From this comparison, we found the simulation
-at $\AL$ = 70 \AA$^2$ to be the best match with the experimental form
-factor, yielding the lowest $\chi^2$. 
-However, the form factor for $\AL$ = 72 \AA$^2$ matched the experiment
-better than that for 70 \AA$^2$ near $q_z$ = 0.3 \AA$^{-1}$, which 
-suggests that a better match might lie between 70 and 72 \AA$^2$. 
+We then compared the simulated and experimental form factors $F(q_z)$. 
+Figure~\ref{fig:MD_dopc_sim-exp}  
+compares simulated and experimental DOPC form factors. 
+The simulated form factor
+shifted to larger $q_z$ as the area per lipid increased,
+consistent with results in Sec.~\ref{sec:SDP_results}. 
+We determined that the simulation
+at $\AL$ = 70~\AA$^2$ best reproduced the experimental form
+factor, yielding the smallest $\chi^2$ value. 
+However, the simulated form factor for $\AL$ = 72~\AA$^2$ best matched the experimental
+form factor near $q_z$ = 0.3~\AA$^{-1}$, 
+which suggests that a better match might lie between 70 and 72 \AA$^2$. 
 This case was not investigated further.
 The electron density profile from the best matching simulation is shown in 
-Fig.~\ref{fig:MD_dopc_70_PC-CG} with the atoms in the simulation parsed
-into the same component groups as in the model used in Sec.~\ref{sec:SDP_results}.
+Fig.~\ref{fig:MD_dopc_70_PC-CG} with atoms in the simulation parsed
+into the same molecular component groups as in the model used in 
+Sec.~\ref{sec:SDP_results}.
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.6\textwidth]{figures/Tat/MD_Results/xff/dopc_sim-exp}
+  \includegraphics[width=0.7\textwidth]{figures/Tat/MD_Results/xff/dopc_sim-exp}
   \caption{MD simulated form factors for DOPC at $\AL$ = 68 \AA$^2$ (blue solid line), 
   70 \AA$^2$ (red solid line), and 72 \AA$^2$ (green solid line)
   compared to the experimental form factor (open circles) scaled vertically
@@ -1602,9 +1618,9 @@ into the same component groups as in the model used in Sec.~\ref{sec:SDP_results
   \label{fig:MD_dopc_sim-exp}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.6\textwidth]{figures/Tat/MD_Results/edp/dopc_70_PC-CG}
+  \includegraphics[width=0.7\textwidth]{figures/Tat/MD_Results/edp/dopc_70_PC-CG}
   \caption{Simulated, symmetrized electron density profile for DOPC at 
   $\AL$ = 70~\AA$^2$ as a function of the distance from the bilayer center. 
   Each component profile is labeled with its name: PC (phosphate-choline),
@@ -1613,35 +1629,34 @@ into the same component groups as in the model used in Sec.~\ref{sec:SDP_results
   \label{fig:MD_dopc_70_PC-CG}
 \end{figure}
 
-Simulated form factors for DOPC:Tat (128:2, $\xTat$ = 0.015),
-where there is one Tat in each monolayer with 64 DOPCs are shown in 
+Simulated form factors $|\Fsim|$ (see Sec.~\ref{sec:SIMtoEXP}) 
+for DOPC:Tat (2 Tat molecules in 128 DOPC molecules),
+where there is one Tat in each monolayer, are shown in 
 Fig.~\ref{fig:MD_dopc-tat2_sim-exp}, and 
-those for DOPC:Tat (128:4, $\xTat$ = 0.03) are shown in 
-Fig.~\ref{fig:MD_dopc-tat4_sim-exp}.
-In many cases, the relative amplitude of the second lobe compared to the 
-third lobe for simulated form factors was larger than that for the experimental
-form factor. Quantitative comparison of simulated form 
-factors to the experimental form factor is summarized in 
+$|\Fsim|$ for DOPC:Tat (4 Tat in 128 DOPC) are shown in 
+Fig.~\ref{fig:MD_dopc-tat4_sim-exp} 
+for $\zTat$ constrained to 18, 16, and 14 \AA.
+For DOPC:Tat (128:2), $|\Fsim|$ overshot and undershot in the second and 
+third lobe regions, respectively. 
+For DOPC:Tat (128:4), $|\Fsim|$ agreed well with $|\Fexp|$ in the second 
+lobe region but undershot in the third lobe region.
+Quantitative comparison of simulated form 
+factors to the experimental form factor is shown in 
 Table~\ref{tab:MD_sim-exp}. We found the best match
 at $\AL$ = 72 \AA$^2$ and $\zTat = 18$ \AA\ for DOPC:Tat (128:2).
-The best match for DOPC/Tat (128:4) was found when Tats were 
+The best match for DOPC:Tat (128:4) was found when Tats were 
 constrained at 18 \AA\ away from the bilayer center with $\AL$ = 76 \AA$^2$.
-The agreement worsened as Tat was constrained to be closer to the
-center of the bilayer.
-When Tats were constrained at 5 \AA\ away from the bilayer center, we
-observed a spontaneous formation of water pores in the MD simulation. However, 
-as shown in Fig.~\ref{fig:figure4} the corresponding form factor calculated 
-from MD simulations did not match well with experiments.
-Fig.~\ref{fig:DHH_DPP_AL_zTat} plots the bilayer thickness defined as $\DHH$
-and $\DPP$, area per lipid $\AL$, and Tat position $\zTat$ with results
-from modeling approach in Sec.~\ref{sec:SDP_results}.
-Consistent with the modeling approach, a decrease in the bilayer thickness
-and increase in the area per lipid
-were indicated from the simulations as Tat concentration increased.
-Tat position is found in the headgroup position in both simulations 
-and modeling, but $\zTat$ is somewhat larger in simulations.
+At both Tat concentrations, the agreement worsened when Tat was constrained 
+to be closer to the center of the bilayer.
+When Tats were constrained to be 5 \AA\ from the bilayer center, we
+observed a formation of water pores in the simulation. However, 
+as shown in Fig.~\ref{fig:figure4}, the corresponding simulated form factor 
+did not agree well with the experimental form factor.
+Thus, comparison of the experimental and simulated form factors indicates that
+Tat is located in the headgroup position; Tat is not located in the hydrocarbon 
+region.
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat2_72_sim-exp1}
   \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat2_74_sim-exp1}
@@ -1654,7 +1669,7 @@ and modeling, but $\zTat$ is somewhat larger in simulations.
   \label{fig:MD_dopc-tat2_sim-exp}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[p]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat4_74_sim-exp1}
   \includegraphics[width=0.8\textwidth]{figures/Tat/MD_Results/xff/dopc-tat4_76_sim-exp1}
@@ -1667,7 +1682,7 @@ and modeling, but $\zTat$ is somewhat larger in simulations.
   \label{fig:MD_dopc-tat4_sim-exp}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[p]
   \centering
   \begin{tabular}{cccc}
     \multicolumn{4}{c}{$\xTat=0.015$} \\
@@ -1740,68 +1755,122 @@ and modeling, but $\zTat$ is somewhat larger in simulations.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/Tat/MD_Results/pore}
+  \includegraphics[width=\textwidth]{figures/Tat/MD_Results/pore}
   \caption{MD simulated form factors (red solid lines in A and C) of $\xTat$=0.030,
   with Tat fixed at $\zTat$= 18 \AA\ (panel A) and 5 \AA\ (panel C) from the bilayer center compared to
-  experimental form factors (open circles) scaled vertically to provide the best fit to the
-  simulations. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
-  represented as grey sticks on a white background, Tats are yellow, phosphate groups are red and
+  experimental form factors (open circles) scaled vertically to best fit the
+  simulated form factors. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
+  represented as grey sticks on a white background, Tats are yellow, phosphate groups are red, and
   water is blue.}
   \label{fig:figure4}
 \end{figure}
 
+Fig.~\ref{fig:DHH_DPP_AL_zTat} plots the bilayer thickness defined as $\DHH$
+and $\DPP$, area per lipid $\AL$, and Tat position $\zTat$ with results
+from the modeling approach in Sec.~\ref{sec:SDP_results}.
+Consistent with the modeling, simulation indicated decreasing bilayer thickness
+and increasing area per lipid as Tat concentration increased.
+Tat is found in the headgroup position in both simulations 
+and modeling, but $\zTat$ is consistently larger in simulations.
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/Tat/MD_Results/DHH_DPP_AL_zTat}
-  \caption{}
+  \includegraphics[width=\textwidth]{figures/Tat/MD_Results/DHH_DPP_AL_zTat}
+  \caption{A. Bilayer thickness, $\DPP$; B. Bilayer thickness, $\DHH$; 
+  C. Area/lipid, $\AL$; D. Twice the Tat location, $2\zTat$: all plotted vs. 
+  Tat mole fraction $\xTat$.  Error bars are standard deviations from imposing 
+  Tat Gaussian widths, $\sigma$ = 2.5, 3.0, or 3.5 \AA.   
+  Inverted blue triangles connected with a dotted line are results from MD simulations, 
+  averaging the best fits to the X-ray data for each parameter, with standard 
+  deviations shown. Samples are listed in the legend in panel A.}
   \label{fig:DHH_DPP_AL_zTat}
 \end{figure}
 
-The average bilayer thickness defined by the average phosphorus-phosphorus 
-distance $\langle\Dphos\rangle$ is shown in Table~\ref{tab:local_thickness} 
-for simulations with $\zTat$ = 16 and 18 \AA$^2$. 
-$\langle\Dphos\rangle$ was measured from a plot of
-the electron density profile of phosphorus atoms using
-the SIMtoEXP software. 
+\newpage
 We also obtained local phosphorus-phosphorus distance $\Dphos$
-using the methods described in Sec.~\ref{sec:local_thinning}. 
-As the $\Dphos$ column shows, the membrane thickness
-was smaller near the Tats compared to the average thickness $\langle\Dphos\rangle$.
-Decrease in the membrane thickness $\Delta t = \langle\Dphos^0\rangle - \Dphos$
-with respect to the thickness $\langle\Dphos^0\rangle$ of a pure DOPC bilayer
+(see Fig.~\ref{fig:Dphos_dimensions})
+shown in Table~\ref{tab:local_thickness} 
+using the methods described in Sec.~\ref{sec:local_thinning}.
+For comparison, 
+the average bilayer thickness defined by the average phosphorus-phosphorus 
+distance $\langle\Dphos\rangle$ is also shown in Table~\ref{tab:local_thickness} 
+for simulations with $\zTat$ = 16 \AA\ and 18 \AA. 
+$\langle\Dphos\rangle$ was measured using
+the electron density profile of phosphorus atoms. 
+The $\Dphos$ column shows that the membrane thickness
+was smaller near Tats as compared to the average thickness given in the
+$\langle\Dphos\rangle$ column.
+A decrease in the local membrane thickness 
+$\Delta t = \langle\Dphos^0\rangle - \Dphos$
+with respect to the average thickness $\langle\Dphos^0\rangle$ = 36.3~\AA\ 
+of a pure DOPC bilayer
 was larger for higher concentrations of Tat.
+
 Assuming that the two leaflets are decoupled, we also estimated the position
-of phosphorus atoms $\zphos$ from the bilayer center near the Tats 
+of phosphorus atoms $\zphos$ near Tats 
 using $\zphos = \Dphos - \langle\Dphos^0\rangle/2$, shown in the $\zphos$ column
 in Table~\ref{tab:local_thickness}. 
+The $\zphos$ values are smaller than $\Dphos /2$
+because it is assumed that lipids in the other leaflet are unperturbed,
+having thickness = $\langle\Dphos^0\rangle$.
 The calculation of $\zphos$ assumes that Tat in different leaflets do not
 overlap in the plane, which might not be reasonable at the higher concentration.
-Values in the $\zguan$ column were obtained
+Therefore, smaller values of $\zphos$ at higher Tat concentration
+may partly be due to the bilayer compressing both from above and below.
+
+Table~\ref{tab:local_thickness} also lists
+the position of guanidinium groups averaged
+over all arginine in the $\zguan$ column. $\zguan$ was obtained
 from the peak position of the electron density profile of the guanidinium groups 
-as shown in Fig.~\ref{fig:charged-groups}.
+as shown in Fig.~\ref{fig:charged-groups}. As Fig.~\ref{fig:charged-groups} shows,
+the distribution of the guanidinium groups was broad and 
+asymmetric with its peak at smaller $z$ than the center
+of the distribution, indicating that more arginines are located closer to the
+hydrocarbon region than the water. This is in contrast with amine groups
+in lysines whose distribution was peaked in the water region as shown by
+the blue curve in Fig.~\ref{fig:charged-groups}.
+Table~\ref{tab:local_thickness} shows that $\zguan > \zphos$ but
+$\zguan < \langle\Dphos\rangle/2$, indicating that the guanidinium group 
+can be considered inside or outside of the phosphorus atoms depending on
+whether local $\zphos$ or average thickness $\langle\Dphos\rangle/2$ is considered.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/Tat/MD_Results/dimensions}
+  \caption{Definitions of quantities relevant to Table~\ref{tab:local_thickness}.
+  The black solid line is the profile of the phosphorus position.
+  The red solid line indicates the peak position of the guanidinium 
+  distribution. Dotted lines are the phosphorus position averaged over all
+  lipids in each monolayer. In this picture, Tat is assumed to influence
+  lipids only in the monolayer it binds.}
+  \label{fig:Dphos_dimensions}
+\end{figure} 
 
 \begin{table}[htbp]
   \centering
   \begin{tabular}{ccccccccc}
     \hline
     \rule{0pt}{14pt} % add extra space  
-    $\xTat$ & $\AL$ & $\zTat$ & $\chi^2$ & $\langle\Dphos\rangle$ & $\Dphos$ & $\Delta t$ & $\zphos$ & $\zguan$ \\
-    \hline
-    0     & 70 &    &      & 36.3 \\
-    0.015 & 72 & 18 & 18.0 & 35.6 & 32.8 & 3.5 & 14.7 & 15.5 \\ 
-    0.015 & 72 & 16 & 24.9 & 36.1 & 33.0 & 3.3 & 14.9 & 14.5 \\
-    0.015 & 74 & 18 & 21.3 & 35.0 & 33.0 & 3.3 & 14.9 & 16.5 \\
-    0.015 & 74 & 16 & 25.9 & 35.0 & 32.1 & 4.2 & 14.0 & 13.5 \\
-    0.030 & 74 & 18 & 24.3 & 35.3 & 32.6 & 3.7 & 14.5 & 15.5 \\ 
-    0.030 & 74 & 16 & 40.1 & 35.3 & 31.2 & 5.1 & 13.1 & 13.5 \\
-    0.030 & 76 & 18 & 14.8 & 34.2 & 32.0 & 4.3 & 13.9 & 16.5 \\
-    0.030 & 76 & 16 & 30.4 & 34.9 & 31.4 & 4.9 & 13.3 & 14.5 \\
+    $\xTat$ & $\AL$ & $\zTat$ & $\langle\Dphos\rangle$/2 & $\Dphos$/2 & $\Delta t$ & $\zphos$ & $\zguan$ & $\chi^2$ \\
+    \hline   
+    0.015 & 72 & 18 & 17.8 & 16.4 & 3.5 & 14.7 & 15.5 & 18.0 \\ 
+    0.015 & 72 & 16 & 18.1 & 16.5 & 3.3 & 14.9 & 14.5 & 24.9 \\
+    \hdashline
+    0.015 & 74 & 18 & 17.5 & 16.5 & 3.3 & 14.9 & 16.5 & 21.3 \\
+    0.015 & 74 & 16 & 17.5 & 16.1 & 4.2 & 14.0 & 13.5 & 25.9 \\
+    \hline                                                   
+    0.030 & 74 & 18 & 17.7 & 16.3 & 3.7 & 14.5 & 15.5 & 24.3 \\ 
+    0.030 & 74 & 16 & 17.7 & 15.6 & 5.1 & 13.1 & 13.5 & 40.1 \\
+    \hdashline
+    0.030 & 76 & 18 & 17.1 & 16.0 & 4.3 & 13.9 & 16.5 & 14.8 \\
+    0.030 & 76 & 16 & 17.5 & 15.7 & 4.9 & 13.3 & 14.5 & 30.4 \\
     \hline
   \end{tabular}
   \caption{Local bilayer structural quantities obtained at various
-  constrained $\AL$ and $\zTat$.
+  constrained $\AL$ and $\zTat$ at different Tat mole fraction $\xTat$.
   Units of all symbols are \AA\ except for $\xTat$ (unitless), 
-  $\chi^2$ (unitless), and $\AL$ (\AA$^2$).  
+  $\chi^2$ (unitless), and $\AL$ (\AA$^2$). 
+  $\langle\Dphos^0\rangle/2$ = 18.2 \AA.
   }
   \label{tab:local_thickness}
 \end{table}
@@ -1820,13 +1889,14 @@ as shown in Fig.~\ref{fig:charged-groups}.
   \label{fig:charged-groups}
 \end{figure}
 
-Table~\ref{tab:lateral_decay} shows the lateral decay length of Tat 
-perturbation estimated using the method described in Sec.~\ref{sec:lateral_decay}.
-The $\HTat$ column gives the values of FWHM of Tat electron density profile.
-The $\RTat$ column was calculated by assuming that Tat is a cylinder whose
-radius $\RTat$ is calculated from the height $\HTat$ using the experimentally 
-measured volume of Tat. A cylindrical shape was chosen to reflect the azimuthal symmetry
-of the membrane. We did not consider other rotationally symmetric shapes.
+Table~\ref{tab:lateral_decay} shows the Tat perturbation lateral decay length 
+$R_2$ estimated using the method described in Sec.~\ref{sec:lateral_decay}.
+The $\HTat$ column lists the FWHM values of the Tat electron density profile.
+The $\RTat$ column was calculated by assuming that Tat is a cylinder with
+radius $\RTat$ and height $\HTat$ with the experimentally 
+measured Tat volume. 
+A cylindrical shape was chosen to reflect the azimuthal symmetry
+of the fluid bilayer. We did not consider other rotationally symmetric shapes.
 The calculation of $R_2$ involves an assumption that Tats in different leaflets
 do not overlap in the $xy$-plane, which might not be justified at the higher 
 concentration. Therefore, values of $R_2$ for $\xTat$ = 0.030 are omitted in the table.
@@ -1840,29 +1910,34 @@ concentration. Therefore, values of $R_2$ for $\xTat$ = 0.030 are omitted in the
     \hline
     0.015 & 72 & 18 & 9.2 & 8.1 & 15.0 \\  
     0.015 & 72 & 16 & 9.4 & 8.0 & 9.0  \\
+    \hdashline
     0.015 & 74 & 18 & 8.6 & 8.3 & 23.9 \\
     0.015 & 74 & 16 & 7.6 & 8.9 & 20.4 \\
+    \hline
     0.030 & 74 & 18 & 7.6 & 8.9 & NA  \\
     0.030 & 74 & 16 & 7.7 & 8.8 & NA  \\
+    \hdashline
     0.030 & 76 & 18 & 7.6 & 8.9 & NA  \\
     0.030 & 76 & 16 & 7.8 & 8.7 & NA  \\
     \hline
   \end{tabular}
-  \caption{Lateral decay length of Tat perturbation. $R_3$ = 38 \AA.}
+  \caption{Lateral decay length of Tat perturbation. 
+  The simulation box size $R_3$ = 38 \AA (see Sec.~\ref{sec:lateral_decay}).}
   \label{tab:lateral_decay}
 \end{table}
 
-The $\chi^2$ obtained by comparison to experiment indicated that the best 
-$\zTat$ lay between the simulated values of 16 \AA\ and 18 \AA, and
-the best $A_L$ lay between the simulated values of 72 \AA$^2$ and 
+The $\chi^2$ values obtained by comparing $|\Fsim|$ to $|\Fexp|$ 
+indicated that
+Tat lay between the simulated values of 16 \AA\ and 18 \AA, and
+$A_L$ lay between the simulated values of 72 \AA$^2$ and 
 74 \AA$^2$, so averages were obtained from these four combinations of $\zTat$ and 
 $A_L$, weighted inversely with their $\chi^2$.
-Fig.~\ref{fig:figure9} summarizes the results for how Tat affects a DOPC bilayer
+Fig.~\ref{fig:figure9} summarizes Tat's affect on a DOPC bilayer,
 based on the weighted average values shown in Table~\ref{tab:MD_summary}.
-Tat modeled as a cylinder with height $\HTat$ = 8.7 \AA\ 
-and radius $\RTat$ = 8.3 \AA\ is centered at $\zTat$ = 17.1 \AA.
-The phosphorus atoms within the perturbed region are positioned at 
-$\zphos$ = 14.6 \AA.
+Tat is modeled as a cylinder with height $\HTat$ = 8.7 \AA\ 
+and radius $\RTat$ = 8.3 \AA\ centered at $\zTat$ = 17.1 \AA.
+The phosphorus atoms within the suppressed region (see Sec.~\ref{sec:lateral_decay}) 
+are positioned at $\zphos$ = 14.6 \AA.
 Assuming a simple linear ramp in $\zphos$, Fig.~\ref{fig:figure9} 
 indicates a ring of boundary lipids that extends twice as far in $R$ as Tat 
 itself. Although the guanidinium electron density profile was broad 
@@ -1871,7 +1946,7 @@ away from the bilayer relative to the center of Tat,
 more were pointing towards the bilayer center as 
 indicated in Fig.~\ref{fig:figure9}.
 
-\begin{table}
+\begin{table}[htbp]
   \centering
   \begin{tabular}{ccccccccccc}
     \hline
@@ -1883,7 +1958,7 @@ indicated in Fig.~\ref{fig:figure9}.
     \hline
   \end{tabular}
   \caption{Weighted average quantities.
-  Units of all symbols are \AA\ except for $\xTat$ (unitless), 
+  Units of all symbols are \AA\ except for $\xTat$ (unitless)
   and $\AL$ (\AA$^2$).}
   \label{tab:MD_summary}
 \end{table}
@@ -1924,20 +1999,6 @@ indicated in Fig.~\ref{fig:figure9}.
 %    \put(-20,50){16 \AA}
 %  \end{overpic}
 
-%\begin{figure}[htbp]
-%  \centering
-%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_62to1_3p0_bound_X2}
-%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_28to1_3p0_bound_X2}
-%  \includegraphics[width=0.5\textwidth]{figures/Tat/SDP_Results/X2/DOPC_Tat_16to1_3p0_bound_X2}
-%  \caption{MD simulated form factors (red solid lines in A and C) for DOPC with
-%  $\xTat = 0.030$,
-%with Tat fixed at ZTat= 18 Å (panel A) and 5 Å (panel C) from the bilayer center compared to
-%experimental form factors (open circles) scaled vertically to provide the best fit to the
-%simulations. Corresponding snapshots are shown in Panels B and D in which the lipid chains are
-%represented as grey sticks on a white background, Tats are yellow, phosphate groups are red and
-%water is blue.}
-%  \label{fig:DOPC_MD_EXP}
-%\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}\label{sec:discussion}
@@ -1962,37 +2023,47 @@ prove that Tat affects
 membrane structure, and the shift of the zero positions to higher $q_z$ 
 suggests thinning. Thinning is substantiated by quantitative analysis
 of the X-ray data and by MD simulations. 
-Fig.~\ref{fig:DHH_DPP} shows that the average 
-membrane thickness, as measured by the distance $\DPP$ between phosphocholines 
-or the distance $\DHH$ between the maxima in the 
-electron density profiles of opposite surfaces, decreases with increasing 
-Tat concentration. 
+Fig.~\ref{fig:DHH_DPP_AL_zTat}A shows that the average membrane thickness, 
+as measured by the distance $\DPP$ between phosphocholines on opposite surfaces, 
+decreases with increasing Tat concentration. 
+Similar thinning is shown in Fig.~\ref{fig:DHH_DPP_AL_zTat}B for the distance 
+$\DHH$ between the maxima in the electron density profiles of opposite surfaces.  
 Compared to $\DPP$, $\DHH$ is 
 pulled towards both the carbonyl/glycerol groups and Tat because both have 
-electron densities ($\sim$0.4 e/\AA$^3$) greater than water ($\sim$0.33 e/\AA$^3$) or 
-hydrocarbon ($\sim$0.3 e/\AA$^3$). Although the thinning shown in Fig.~\ref{fig:DHH_DPP}
+electron densities ($\sim$0.4~e/\AA$^3$) greater than water ($\sim$0.33~e/\AA$^3$) or 
+hydrocarbon ($\sim$0.3~e/\AA$^3$). 
+Although the thinning shown in Figs.~\ref{fig:DHH_DPP_AL_zTat}A 
+and \ref{fig:DHH_DPP_AL_zTat}B
 is not large, it obviously requires interaction of Tat with the bilayers. 
-Fig.~\ref{fig:AL} shows that $\AL$ increases with increasing Tat concentration, by both 
-model fitting and MD simulations.
+Fig.~\ref{fig:DHH_DPP_AL_zTat}C shows that $\AL$ increases with increasing 
+Tat concentration, by both model fitting and MD simulations.
+In a recent experimental and simulation study of the decapeptide of arginine, 
+a similar thinning of 10\% and 12\% was observed for neutral and negatively charged 
+bilayers, respectively \cite{Vazdar13}.
 
 It is of considerable interest to learn where Tat resides, on average, in the 
 membrane, as this would establish a base position from which translocation 
 would be initiated. We have combined our two main methods, MD simulations and 
 X-ray scattering, to address this question. In general, Tats locate at the 
-bilayer/water interface as indicated in Sec.~\ref{sec:SDP_results}, 
+bilayer/water interface as indicated in Sec.~\ref{sec:MD_results}, 
 and they are close to 
 the phosphocholine headgroup region by comparing the simulated 2$\zTat$
-to $\DPP$ in Fig.~\ref{fig:DPP_2zTat}. 
+to $\DPP$ in Fig.~\ref{fig:DHH_DPP_AL_zTat}D with Fig.~\ref{fig:DHH_DPP_AL_zTat}A. 
 Although the SDP modeling of the X-ray data obtains 
 excellent fits to the experimental form factors for a model with Tat deep in 
 the hydrocarbon interior (Fig.~\ref{fig:DOPC_Tat_X2}), 
 the corresponding MD simulation 
-(shown in Fig. 4.C) eliminates this spurious result. 
-Fig. 7D also shows that modeling gives smaller values for $\zTat$ than the simulation. 
+(shown in Fig.~\ref{fig:figure4}) eliminates this spurious result. 
+Figure~\ref{fig:DHH_DPP_AL_zTat}D also shows that modeling gives smaller values 
+for $\zTat$ than the simulation. 
 The modeling result is supportive of the original simulation result of 
 Herce and Garcia that Tat resides closer to the bilayer center than do the 
 phosphocholine groups \cite{Herce07}. That is a base position that would be a
 possibly important precursor to translocation, as would the larger $\AL$.
+In a recent multi-scale simulation, it was found that arginines bind deeply to 
+the glycerol-carbonyl groups as well as to the phosphate, while lysines bind 
+only to the level of the phosphates \cite{Wu13}.  
+This is in good agreement with our results, shown in Fig.~\ref{fig:charged-groups}.
 
 Several groups have carried out calculations and MD simulations showing that 
 the cost of moving an arginine group from water to the bilayer center is 
@@ -2010,23 +2081,27 @@ in the interfacial region than in water, roughly by 3 kcal/mole, depending
 upon the lipid \cite{Johansson09,Roux07}. 
 Our results therefore appear energetically reasonable.
 
-One concern with diffraction experiments on samples consisting of adjacent bilayers in a
-stack or in a multilamellar vesicle is that the samples have to be partially dried to obtain
-conventional diffraction data. But then there is no pure water layer between adjacent bilayers, so
-a hydrophilic peptide is forced into the interfacial, partially hydrophilic region of the lipid
-bilayer. In contrast, by using diffuse scattering, we obtained structure from experimental
-samples that had a range of lamellar $D$ spacings (see Fig.~\ref{fig:figure2} caption) that were considerably
-larger than the thickness of the bilayer in Fig.~\ref{fig:DHH_DPP}, 
-thereby providing an ample pure water space,
-typically greater than 20\AA. The result that $2\zTat$ shown in Fig.~\ref{fig:DPP_2zTat} 
-is so much smaller than our
-repeat spacings shows that Tat preferentially associates with the membrane rather than
-dissociating into water.
+One concern with diffraction experiments on samples consisting of adjacent 
+bilayers in a stack or in a multilamellar vesicle is that the samples have 
+to be partially dried to obtain conventional diffraction data. But then there 
+is no pure water layer between adjacent bilayers, so a hydrophilic peptide is 
+forced into the interfacial, partially hydrophilic region of the lipid
+bilayer. In contrast, by using diffuse scattering, we obtained structure from 
+experimental samples that had a range of lamellar $D$ spacings 
+(see Fig.~\ref{fig:figure2} caption) that were considerably
+larger than the thickness of the bilayer in 
+Fig.~\ref{fig:DHH_DPP_AL_zTat}A, thereby providing an ample pure water space,
+typically greater than 20\AA. The result that $2\zTat$ shown in 
+Fig.~\ref{fig:DHH_DPP_AL_zTat}D is so much smaller than our
+repeat spacings shows that Tat preferentially associates with the membrane 
+rather than dissociating into water.
 
-We analyzed the secondary structures of Tats from MD simulations using the Define Secondary
-Structure of Proteins (DSSP) program \cite{Kabsch83}. Data from the MD simulation which has the best fit
-to experimental X-ray form factors show that Tat contains neither $\beta$ nor $\alpha$-helix structures.
-It appears that the membrane does not influence the conformation of solubilized Tat. 
+We analyzed the secondary structures of Tats from MD simulations using the 
+Define Secondary Structure of Proteins (DSSP) program \cite{Kabsch83}. Data 
+from the MD simulation which has the best fit to experimental X-ray form 
+factors show that Tat contains neither $\beta$ nor $\alpha$-helix structures.
+It appears that the membrane does not influence the conformation of solubilized 
+Tat. 
 
 Given our structural and elastic moduli results, we now compare to other 
 experiments in the literature. In 2008, the Wong group implicated Tat’s 
@@ -2046,16 +2121,17 @@ important for Tat translocation. Yet Tat does translocate across
 membranes in their experiments only with PE in the membrane, so the ability to 
 induce saddle-splay curvature may also be required for Tat’s translocation. 
 An X-ray, neutron and AFM study reported thickening upon initial Tat binding, 
-in contradiction to our result in Fig.~\ref{fig:DHH_DPP} that shows thinning \cite{Choi12}. 
+in contradiction to our result in Fig.~\ref{fig:DHH_DPP_AL_zTat}B that shows 
+thinning \cite{Choi12}. 
 We suggest that this difference was caused by their using stiff gel phase DPPC 
 lipid that did not allow bound Tat to perturb the bilayer. 
 Using a variety of techniques, including high sensitivity isothermal titration 
-calorimetry and 2H- and 31P-NMR, Ziegler \textit{et al.} \cite{Ziegler03}
+calorimetry and $^2$H- and $^{31}$P-NMR, Ziegler \textit{et al.} \cite{Ziegler03}
 presented evidence that the lipid bilayer remains intact upon Tat binding
 and our results confirm this. Finally, we compare our structural results to 
 those obtained by solid state NMR, although at a lower hydration level than in 
 our sample. Su \textit{et al.} \cite{Su10} found that Tat lies parallel to the 
-bilayer surface in the headgroup region of DMPC/DMPG (8:7) bilayers,
+bilayer surface in the headgroup region of DMPC:DMPG (8:7) bilayers,
 similar to our cartoon in Fig.~\ref{fig:figure9}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2078,6 +2154,6 @@ significantly change the average structure of the membrane in which it occurs.
 Although our results in this paper do not reveal a kinetically competent 
 pathway, they do show that Tat is drawn to the surface of the membrane, and is 
 therefore ready for translocation at a region of local thinning. And they show 
-that these interactions tend to soften the membrane and increase the 
+that these interactions tend to soften the membrane and increase
 the area per lipid $\AL$, thereby likely reducing the energy barrier for 
 passive translocation.

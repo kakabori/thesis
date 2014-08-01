@@ -118,7 +118,7 @@ M.~B. Schneider, W.~K. Chan, and W.~W. Webb, ``Fast diffusion along defects and
 
 \bibitem{Fischer05}
 R.~Fischer, M.~Fotin-Mleczek, H.~Hufnagel, and R.~Brock, ``Break on through to
-  the other side—biophysics and cell biology shed light on cell-penetrating
+  the other side: Biophysics and cell biology shed light on cell-penetrating
   peptides,'' {\em ChemBioChem}, vol.~6, no.~12, pp.~2126--2142, 2005.
 
 \bibitem{Joliot04}
@@ -126,7 +126,7 @@ A.~Joliot and A.~Prochiantz, ``Transduction peptides: from technology to
   physiology,'' {\em Nat Cell Biol}, vol.~6, no.~3, 2004.
 
 \bibitem{Lindgren00}
-M.~Lindgren, M.~Hällbrink, A.~Prochiantz, and Ülo Langel, ``Cell-penetrating
+M.~Lindgren, M.~Hällbrink, A.~Prochiantz, and U.~Langel, ``Cell-penetrating
   peptides,'' {\em Trends in Pharmacological Sciences}, vol.~21, no.~3, pp.~99
   -- 103, 2000.
 
@@ -140,7 +140,7 @@ M.~Green and P.~M. Loewenstein, ``Autonomous functional domains of chemically
   Cell}, vol.~55, no.~6, pp.~1179 -- 1188, 1988.
 
 \bibitem{Vives97}
-E.~Vivès, P.~Brodin, and B.~Lebleu, ``Hiv-1 tat protein basic domain rapidly
+E.~Vives, P.~Brodin, and B.~Lebleu, ``Hiv-1 tat protein basic domain rapidly
   translocates through the plasma membrane and accumulates in the cell
   nucleus,'' {\em Journal of Biological Chemistry}, vol.~272, no.~25,
   pp.~16010--16017, 1997.
@@ -215,10 +215,10 @@ A.~Fittipaldi and M.~Giacca, ``Transcellular protein transduction using the tat
 
 \bibitem{Liu00}
 Y.~Liu, M.~Jones, C.~M. Hingtgen, G.~Bu, N.~Laribee, R.~E. Tanzi, R.~D. Moir,
-  A.~Nath, and J.~J. He, ``Uptake of hiv-1 tat protein mediated by low-density
-  lipoprotein receptor-related protein disrupts the neuronal metabolic balance
-  of the receptor ligands,'' {\em Nature medicine}, vol.~6, no.~12,
-  pp.~1380--1387, 2000.
+  A.~Nath, and J.~J. He, ``Uptake of {HIV-1} tat protein mediated by
+  low-density lipoprotein receptor-related protein disrupts the neuronal
+  metabolic balance of the receptor ligands,'' {\em Nature medicine}, vol.~6,
+  no.~12, pp.~1380--1387, 2000.
 
 \bibitem{Torchilin01}
 V.~P. Torchilin, R.~Rammohan, V.~Weissig, and T.~S. Levchenko, ``Tat peptide on
@@ -269,15 +269,15 @@ P.~E.~G. Thoren, D.~Persson, E.~K. Esbjorner, M.~Goksor, P.~Lincoln, and
   peptides,'' {\em Biochemistry}, vol.~43, no.~12, pp.~3471--3489, 2004.
 
 \bibitem{Kramer03}
-S.~Kr{\"a}mer and H.~Wunderli-Allenspach, ``No entry for tat (44--57) into
+S.~Kr{\"a}mer and H.~Wunderli-Allenspach, ``No entry for {TAT} (44--57) into
   liposomes and intact mdck cells: novel approach to study membrane permeation
   of cell-penetrating peptides,'' {\em Biochimica et Biophysica Acta
   (BBA)-Biomembranes}, vol.~1609, no.~2, pp.~161--169, 2003.
 
 \bibitem{Ciobanasu10}
-C.~Ciobanasu, J.~P. Siebrasse, and U.~Kubitscheck, ``Cell-penetrating hiv1 tat
-  peptides can generate pores in model membranes,'' {\em Biophysical Journal},
-  vol.~99, no.~1, pp.~153--62, 2010.
+C.~Ciobanasu, J.~P. Siebrasse, and U.~Kubitscheck, ``Cell-penetrating {HIV1
+  TAT} peptides can generate pores in model membranes,'' {\em Biophysical
+  Journal}, vol.~99, no.~1, pp.~153--62, 2010.
 
 \bibitem{Gurnev13}
 P.~A. Gurnev, S.-T. Yang, K.~C. Melikov, L.~V. Chernomordik, and S.~M.
@@ -306,12 +306,12 @@ S.~Shojania and J.~D. O'Neil, ``Hiv-1 tat is a natively unfolded protein - the
 
 \bibitem{Bayer95}
 P.~Bayer, M.~Kraft, A.~Ejchart, M.~Westendorp, R.~Frank, and P.~Rosch,
-  ``Structural studies of hiv-1 tat protein,'' {\em Journal of Molecular
+  ``Structural studies of {HIV-1 Tat} protein,'' {\em Journal of Molecular
   Biology}, vol.~247, no.~4, pp.~529--535, 1995.
 
 \bibitem{Yesylevskyy09}
 S.~Yesylevskyy, S.~J. Marrink, and A.~E. Mark, ``Alternative mechanisms for the
-  interaction of the cell-penetrating peptides penetratin and the tat peptide
+  interaction of the cell-penetrating peptides penetratin and the {TAT} peptide
   with lipid bilayers,'' {\em Biophysical Journal}, vol.~97, no.~1, pp.~40--49,
   2009.
 
@@ -355,10 +355,10 @@ Y.~Liu, {\em NEW METHOD TO OBTAIN STRUCTURE OF BIOMEMBRANES USING DIFFUSE
 \newblock PhD thesis, Carnegie Mellon University, 2003.
 
 \bibitem{Kucerka08}
-N.~Kučerka, J.~F. Nagle, J.~N. Sachs, S.~E. Feller, J.~Pencer, A.~Jackson, and
-  J.~Katsaras, ``Lipid bilayer structure determined by the simultaneous
-  analysis of neutron and x-ray scattering data,'' {\em Biophysical Journal},
-  vol.~95, no.~5, pp.~2356 -- 2367, 2008.
+N.~Ku{\v{c}}erka, J.~F. Nagle, J.~N. Sachs, S.~E. Feller, J.~Pencer,
+  A.~Jackson, and J.~Katsaras, ``Lipid bilayer structure determined by the
+  simultaneous analysis of neutron and x-ray scattering data,'' {\em
+  Biophysical Journal}, vol.~95, no.~5, pp.~2356 -- 2367, 2008.
 
 \bibitem{Braun13}
 A.~R. Braun, J.~N. Sachs, and J.~F. Nagle, ``Comparing simulations of lipid
@@ -396,9 +396,9 @@ W.~L. Jorgensen, J.~Chandrasekhar, J.~D. Madura, R.~W. Impey, and M.~L. Klein,
   {\em Journal of Chemical Physics}, vol.~79, no.~2, pp.~926--935, 1983.
 
 \bibitem{Kucerka10}
-N.~Kučerka, J.~Katsaras, and J.~Nagle, ``Comparing membrane simulations to
-  scattering experiments: Introducing the simtoexp software,'' {\em Journal of
-  Membrane Biology}, vol.~235, no.~1, pp.~43--50, 2010.
+N.~Ku{\v{c}}erka, J.~Katsaras, and J.~Nagle, ``Comparing membrane simulations
+  to scattering experiments: Introducing the {SIMtoEXP} software,'' {\em
+  Journal of Membrane Biology}, vol.~235, no.~1, pp.~43--50, 2010.
 
 \bibitem{Miyamoto92}
 S.~Miyamoto and P.~A. Kollman, ``Settle: an analytical version of the shake and
@@ -453,6 +453,20 @@ S.~Tristram-Nagle and J.~F. Nagle, ``Hiv-1 fusion peptide decreases bending
   energy and promotes curved fusion intermediates,'' {\em Biophysical Journal},
   vol.~93, no.~6, pp.~2048--2055, 2007.
 
+\bibitem{Vazdar13}
+M.~Vazdar, E.~Wernersson, M.~Khabiri, L.~Cwiklik, P.~Jurkiewicz, M.~Hof,
+  E.~Mann, S.~Kolusheva, R.~Jelinek, and P.~Jungwirth, ``Aggregation of
+  oligoarginines at phospholipid membranes: Molecular dynamics simulations,
+  time-dependent fluorescence shift, and biomimetic colorimetric assays,'' {\em
+  The Journal of Physical Chemistry B}, vol.~117, no.~39, pp.~11530--11540,
+  2013.
+
+\bibitem{Wu13}
+Z.~Wu, Q.~Cui, and A.~Yethiraj, ``Why do arginine and lysine organize lipids
+  differently? insights from coarse-grained and atomistic simulations,'' {\em
+  The Journal of Physical Chemistry B}, vol.~117, no.~40, pp.~12145--12156,
+  2013.
+
 \bibitem{Li08}
 L.~B. Li, I.~Vorobyov, and T.~W. Allen, ``Potential of mean force and pk(a)
   profile calculation for a lipid membrane-exposed arginine side chain,'' {\em
@@ -500,6 +514,12 @@ D.~Choi, J.~H. Moon, H.~Kim, B.~J. Sung, M.~W. Kim, G.~Y. Tae, S.~K. Satija,
   Lam, K.~Y.~C. Lee, and K.~Shin, ``Insertion mechanism of cell-penetrating
   peptides into supported phospholipid membranes revealed by x-ray and neutron
   reflection,'' {\em Soft Matter}, vol.~8, no.~32, pp.~8294--8297, 2012.
+
+\bibitem{Ziegler03}
+A.~Ziegler, X.~L. Blatter, A.~Seelig, and J.~Seelig, ``Protein transduction
+  domains of hiv-1 and siv tat interact with charged lipid vesicles. binding
+  mechanism and thermodynamic analysis,'' {\em Biochemistry}, vol.~42, no.~30,
+  pp.~9185--94, 2003.
 
 \bibitem{Huang13}
 K.~Huang and A.~E. Garcia, ``Free energy of translocating an arginine-rich

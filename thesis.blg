@@ -9,47 +9,47 @@ A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "Ziegler"
+Warning--I didn't find a database entry for "ref:Nagle00"
 Warning--I didn't find a database entry for ""
-You've used 126 entries,
+You've used 129 entries,
             1876 wiz_defined-function locations,
-            1312 strings with 29363 characters,
-and the built_in function-call counts, 44348 in all, are:
-= -- 4630
-> -- 1669
+            1329 strings with 30170 characters,
+and the built_in function-call counts, 45629 in all, are:
+= -- 4758
+> -- 1726
 < -- 0
-+ -- 602
-- -- 476
-* -- 3286
-:= -- 5953
-add.period$ -- 130
-call.type$ -- 126
-change.case$ -- 120
++ -- 622
+- -- 493
+* -- 3385
+:= -- 6125
+add.period$ -- 133
+call.type$ -- 129
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 126
-duplicate$ -- 2204
-empty$ -- 3765
-format.name$ -- 476
-if$ -- 10991
+cite$ -- 129
+duplicate$ -- 2265
+empty$ -- 3868
+format.name$ -- 493
+if$ -- 11308
 int.to.chr$ -- 0
-int.to.str$ -- 126
-missing$ -- 122
-newline$ -- 385
-num.names$ -- 122
-pop$ -- 174
+int.to.str$ -- 129
+missing$ -- 125
+newline$ -- 394
+num.names$ -- 125
+pop$ -- 177
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1931
+skip$ -- 1988
 stack$ -- 0
-substring$ -- 3831
-swap$ -- 1222
+substring$ -- 3949
+swap$ -- 1259
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 397
-width$ -- 129
-write$ -- 1354
+while$ -- 406
+width$ -- 132
+write$ -- 1387
 (There were 2 warnings)

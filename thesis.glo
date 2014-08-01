@@ -1,7 +1,2 @@
-\glossaryentry{$\chi ^2$?\glossentry{chisqr}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{$\Dphos $?\glossentry{Dphos}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{$\HTat $?\glossentry{HTat}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{$\RTat $?\glossentry{RTat}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{$\zphos $?\glossentry{zphos}|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{$\mathbf {a_1}$?\glossentry{a1}|setentrycounter[]{page}\glsnumberformat}{68}
-\glossaryentry{$\mathbf {a_2}$?\glossentry{a2}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{$\mathbf {a_1}$?\glossaryentryfield{a1}{\glsnamefont{$\mathbf {a_1}$}}{monoclinic unit cell vector}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{$\mathbf {a_2}$?\glossaryentryfield{a2}{\glsnamefont{$\mathbf {a_2}$}}{monoclinic unit cell vector}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
