@@ -1,8 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: abstract.aux
-A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: chap_01.aux
 A level-1 auxiliary file: chap_02.aux
 A level-1 auxiliary file: chap_03.aux
@@ -13,7 +11,7 @@ Warning--I didn't find a database entry for "ref:Nagle00"
 Warning--I didn't find a database entry for ""
 You've used 129 entries,
             1876 wiz_defined-function locations,
-            1329 strings with 30170 characters,
+            1327 strings with 30139 characters,
 and the built_in function-call counts, 45629 in all, are:
 = -- 4758
 > -- 1726
