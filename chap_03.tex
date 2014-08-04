@@ -1840,7 +1840,7 @@ Then, for our data set, minima in the $\chi^2$ space are normally found
 with values of $A$ and $\xM$ that result in $\FC(\mathbf{q})$ similar to the 
 one shown in Fig.~\ref{fig:FC}.
 This analysis 
-suggests that better fis to those underestimated orders may require a different model
+suggests that better fits to those underestimated orders may require a different model
 for the contour part of the form factor rather than trying various
 models for the transbilayer part of the form factor $\FT(\mathbf{q})$. 
 Since the sawtooth profile is a very reasonable assumption, an improvement
@@ -1897,7 +1897,7 @@ phases for calculating an electron density profile.
 
 \subsection{Results for the phase factors}\label{sec:LAXS_phases_results}
 It is important to emphasize that the goal of model fitting is to obtain the 
-best phase factors, not to obtain the best physical values for these 
+best phase factors $\Phi_{hk}$, not to obtain the best physical values for these 
 structural parameters.  The best values of those parameters will be obtained 
 in the next section~\ref{sec:LAXS_edp} by combining the phase factors we 
 determine in this subsection with the experimental $|F_{hk}|$.  
@@ -2015,13 +2015,217 @@ phase combinations to extract the best structural parameters.
 \newpage
 \section{Electron density profiles and coarse grained bilayer structure}\label{sec:LAXS_edp}
 Figure~\ref{fig:Fit5_2D_edp} plots a two dimensional electron density map calculated
-using the phases obtained from Fit5 and our experimental form factors.
-The density profile shows the sawtooth profile that has been reported by
+using Eq.~(\ref{eq:Fourier_reconstruction})
+with the phase factors (PF) obtained from Fit5 (Table~\ref{tab:LAXS_fits1} and \ref{tab:LAXS_fits2}) 
+and our experimental form factors.
+The headgroups are electron dense and shown by white bands, which clearly indicate
+the sawtooth profile that has been reported by
 previous X-ray diffraction studies \cite{ref:Sun96,ref:Sengupta03,ref:Pabst04}.
 Another distinct feature seen in Fig.~\ref{fig:Fit5_2D_edp} is the 
 presence of the methyl trough in the major arm, 
 manifested by a black band along the bilayer center extending from 
 $x \approx -50$ \AA\ to 50 \AA, which is not present in the minor arm.
+The red lines follow the electron density peak $z$ position for the bilayer
+centered at $z$ = 0, which define the headgroup $z$ positions $\zhead$ as a function of $x$.
+The $\zhead$ profile in the upper leaflet takes maximum and minimum values
+at ($x_\text{min}$,~$z_\text{min}$)~=~(-53~\AA,~10.4~\AA) and 
+($x_\text{max}$,~$z_\text{max}$)~=~(44~\AA,~28.6~\AA)
+(see Fig.~\ref{fig:PF5_headgroup}).
+We then define the ripple amplitude $A \equiv z_\text{max}-z_\text{min}$ = 18.2~\AA\ and
+the major arm length projected on the $x$-axis $\xM \equiv x_\text{max}-x_\text{min}$ = 97~\AA.
+These values are substantially different from the values obtained in the model fitting 
+procedure ($A$~=~21.5~\AA\ and $\xM$~=~102.9~\AA; see Table~\ref{tab:LAXS_models}), 
+so it is important to extract these structural parameters from the 
+experimental electron density map. 
+These values lead to the major arm tilt angle $\xiM$~=~10.6\textdegree\ and 
+the minor arm tilt angle $\xim$~=~20.8\textdegree\
+(see Fig.~\ref{fig:unit_cell} for definitions).
+The $\zhead$ profile shows an unphysical zigzag feature in the minor arm region,
+suggesting that the phase factors otabined in Fit5~(called PF5) are not perfect. This is also
+seen as a sharp turn in the relative electron density along the headgroups 
+$\rhohead$ plotted in Fig.~\ref{fig:PF5_headgroup}. 
+The $\rhohead$ profile also shows an oscillation with wavelength $\sim$25 \AA\
+in the major arm region,
+a feature which might be removed by correcting one or more phase factors.
+
+To compare the structure obtained from $|F_{hk}^\text{un}|$ to $|F_{hk}^\text{ori}|$,
+we constructed four data sets shown in Table~\ref{tab:cmu_vs_wackwebb1}.
+The column I lists the form factors with the phases reported in Sun \textit{et al.} \cite{ref:Sun96};
+the set of $(h,k)$ in this column constitutes a low resolution set.
+The column IV is the form factors from the oriented sample with the phase factors
+of its low resolution set identical to the column I while the rest of phase factors
+are taken from PF5 (see the Fit5 column in Table~\ref{tab:LAXS_fits1} and 
+\ref{tab:LAXS_fits2} for the phase factors of PF5).
+The column II was constructed by adding to the low resolution set from the 
+unoriented sample (column I) the form factors from the oriented sample (column IV), 
+and the column III is a low resolution set of the column IV.
+Figure~\ref{fig:low-res_comparison} compares $\zhead$ and $\rhohead$ obtained
+using $F_{hk}$ in the column I and III.
+$A = $17~\AA\ and $\xM = $89~\AA\ was obtained using the column I, and 18.1~\AA\
+and 91~\AA\ using the column III.
+These differences are largely due to the different
+ripple wavelengths $\lambda_r$ in the unoriented and oriented data sets. 
+Figure~\ref{fig:un_vs_ori} compares the $\zhead$ profile obtained using the
+column II and IV. It shows that the difference in $\zhead$ between the unoriented
+and oriented data becomes negligible when the high resolution data are included.
+This means that the structural parameters such as $A$, $\xM$, and the major and
+minor arm thicknesses obtained using our measured form factors from the
+oriented sample are not affected by some disagreement between $|F_{hk}^\text{un}|$
+and $|F_{hk}^\text{ori}|$ shown in Table~\ref{tab:cmu_vs_wack}.
+Figure~\ref{fig:high_vs_low} compares $\zhead$ and $\rhohead$ obtained using 
+the column III and IV. It shows that when a high resolution set is included
+in calculating the electron density map, major arms become longer by 
+$\sim$6~\AA, leading to shorter and steeper minor arms.
+
+\begin{landscape}
+\begin{figure}[htbp]
+%\begin{sidewaysfigure}
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/ripple/LAXS/Fit5_2D_edp}
+  \caption[Two dimensional electron density map calculated using Eq.~(\ref{eq:Fourier_reconstruction})
+  with the phase factors (PF) obtained from Fit5 (Table~\ref{tab:LAXS_fits1} and \ref{tab:LAXS_fits2}) 
+  and our experimental form factors]
+  {Two dimensional electron density map calculated using Eq.~(\ref{eq:Fourier_reconstruction})
+  with the phase factors (PF) obtained from Fit5 (Table~\ref{tab:LAXS_fits1} and \ref{tab:LAXS_fits2}) 
+  and our experimental form factors. 
+  White is most electron dense and black is least electron dense. 
+  A unit cell is shown with a solid yellow line. 
+  Dash lines A and B are the slices plotted in  Fig.~\ref{fig:major_diff_models} 
+  and Fig.~\ref{fig:minor_diff_models}, respectively.}
+  \label{fig:Fit5_2D_edp}
+%\end{sidewaysfigure}
+\end{figure}
+\end{landscape}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/ripple/LAXS/PF5_headgroup}
+  \caption{Headgroup $z$ positions $\zhead$ as a function of $x$ for the upper and lower leaflets,
+  also shown as red lines in Fig.~\ref{fig:Fit5_2D_edp}, and
+  relative electron density $\rhohead$ along the upper leaflet headgroups.
+  Black circles are the points with maximum and minimum $z$ values that define the boundaries between 
+  the major and minor arms. 
+  $A = z_\text{max}-z_\text{min}$ and $x_M = x_\text{max}-x_\text{min}$.
+  ($x_\text{min}$, $z_\text{min}$) = (-53~\AA, 10.4~\AA) and 
+  ($x_\text{max}$, $z_\text{max}$) = (44~\AA, 28.6~\AA).}  
+  \label{fig:PF5_headgroup}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{rrrrrr}
+    \hline
+    \multicolumn{1}{c}{$h$} & \multicolumn{1}{c}{$k$} & \multicolumn{1}{c}{I} & \multicolumn{1}{c}{II} & \multicolumn{1}{c}{III} & \multicolumn{1}{c}{IV} \\
+    \hline    
+    1      & -1     & -60.8  & -60.8  & -86.3  & -86.3  \\
+    1      & 0      & -100.0 & -100.0 & -100.0 & -100.0 \\
+    1      & 1      & 26.9   & 26.9   & 43.1   & 43.1   \\
+    1      & 2      & *      & *      & *      & *      \\
+    1      & 3      & 7.6    & 7.6    & 8.8    & 8.8    \\
+    2      & -2     & -15.1  & -15.1  & -18.0  & -18.0  \\
+    2      & -1     & -71.2  & -71.2  & -76.0  & -76.0  \\
+    2      & 0      & -39.7  & -39.7  & -28.7  & -28.7  \\
+    2      & 1      & 33.9   & 33.9   & 39.5   & 39.5   \\
+    2      & 2      & -22.7  & -22.7  & -24.6  & -24.6  \\
+    2      & 3      & 14.2   & 14.2   & 14.6   & 14.6   \\
+    2      & 4      & -7.8   & -7.8   & -9.2   & -9.2   \\
+    2      & 5      & --     & 5.6    & --     & 5.6    \\
+    2      & 6      & --     & -4.1   & --     & -4.1   \\
+    3      & -2     & 29.3   & 29.3   & 33.2   & 33.2   \\
+    3      & -1     & 44.2   & 44.2   & 45.9   & 45.9   \\
+    3      & 0      & 12     & 12     & 13.2   & 13.2   \\
+    3      & 1      & *      & *      & *      & *      \\
+    3      & 2      & 10.5   & 10.5   & 10.2   & 10.2   \\
+    3      & 3      & -14.9  & -14.9  & -13.6  & -13.6  \\
+    3      & 4      & 10     & 10     & 13.0   & 13.0   \\
+    3      & 5      & --     & -9.6   & --     & -9.6   \\
+    3      & 6      & --     & 5.6    & --     & 5.6    \\
+    \hline
+  \end{tabular}%
+  \caption{Four data sets constructed to compare the unoriented to
+  the oriented data sets. $h > 3$ are omitted.}
+  \label{tab:cmu_vs_wackwebb1}%
+\end{table}%
+
+%\begin{table}
+%  \centering
+%  \begin{tabular}{rrrrrr}
+%    5      & -3     & --     & -15.6  & --     & -15.6 \\
+%    5      & -2     & --     & -16.31 & --     & -16.31 \\
+%    5      & -1     & --     & 7.49   & --     & 7.49 \\
+%    5      & 0      & --     & 6.54   & --     & 6.54 \\
+%    5      & 1      & --     & -6.37  & --     & -6.37 \\
+%    6      & -4     & --     & 5.91   & --     & 5.91 \\
+%    6      & -3     & --     & 5.94   & --     & 5.94 \\
+%    6      & -2     & --     & 3.84   & --     & 3.84 \\
+%    6      & -1     & --     & -3.45  & --     & -3.45 \\
+%    6      & 0      & --     & 3.43   & --     & 3.43 \\
+%    6      & 1      & --     & 3.87   & --     & 3.87 \\
+%    6      & 2      & --     & *      & --     & * \\
+%    6      & 3      & --     & 3.49   & --     & 3.49 \\
+%    6      & 4      & --     & -3.38  & --     & -3.38 \\
+%    7      & -4     & --     & -9.97  & --     & -9.97 \\
+%    7      & -3     & --     & -8.13  & --     & -8.13 \\
+%    7      & -2     & --     & 4.24   & --     & 4.24 \\
+%    7      & -1     & --     & 3.58   & --     & 3.58 \\
+%    7      & 0      & --     & -2.82  & --     & -2.82 \\
+%    8      & 0      & --     & *      & --     & * \\
+%    9      & -5     & --     & -6.1   & --     & -6.1 \\
+%    9      & -4     & --     & -5.6   & --     & -5.6 \\
+%    9      & -3     & --     & *      & --     & * \\
+%    9      & -2     & --     & 3.02   & --     & 3.02 \\
+%    9      & -1     & --     & *      & --     & *0 \\
+%    9      & 0      & --     & 2.19   & --     & 2.19 \\ 
+%  \end{tabular}
+%  \caption{Add caption}
+%  \label{tab:cmu_vs_wackwebb2}
+%\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/ripple/LAXS/low-res_comparison}
+  \caption{Headgroup $z$ positions $\zhead$ and relative electron density
+  $\rhohead$ as a function of $x$ obtained 
+  using $F_{hk}$ in the column I (blue) and column III (green).
+  $A$~=~17~\AA\ and $\xM$~=~89~\AA\ for the blue profile and 18.1~\AA\ and 91~\AA\
+  for the green profile.
+  $\lambda_r = 141.7$~\AA\ for the blue and 145.0~\AA\ for the green profile.}
+  \label{fig:low-res_comparison}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/un_vs_ori}
+  \caption{$\zhead(x)$ obtained using $F_{hk}$ in the column II (cyan)
+  and column IV (magenta).}
+  \label{fig:un_vs_ori}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/high_vs_low}
+  \caption{$\zhead(x)$ obtained using $F_{hk}$ in the column III (green, same as in Fig.~\ref{fig:low-res_comparison}) 
+  and the column IV (magenta, same as in Fig.~\ref{fig:un_vs_ori}).
+  $A$~=~18.1~\AA\ and $\xM$~=~91~\AA\ for the green profile and 18.1~\AA\ and 97~\AA\
+  for the magenta profile.
+  }
+  \label{fig:high_vs_low}
+\end{figure}
+
+Figure~\ref{fig:PF1_2D_edp}--\ref{fig:PF7_2D_edp} show electron density maps
+calculated using the phase factors obtained from various fits listed in
+Table~\ref{tab:LAXS_fits1} and \ref{tab:LAXS_fits1}. 
+The corresponding $\zhead(x)$ profiles plotted in 
+Fig.~\ref{fig:PF1_headgroup}--\ref{fig:PF7_headgroup} show a range of $A$ and $\xM$,
+which are summarized in Table~\ref{tab:LAXS_DHH}.
+The average values of $A$, $\xM$, $\xiM$, and $\xim$ are 
+18.5 \AA, 99.2 \AA, 10.5\textdegree, and 22.0\textdegree, respectively.
+A similar zigzag feature seen in Fig.~\ref{fig:PF5_headgroup} is present
+in some but not all profiles, indicating that this feature is an artifact 
+due to incorrect phase factors.
+The $\rhohead(x)$ profiles show a plateau in the major arm except for some
+oscillation, and they show a dip in the minor arm.
+
 To obtain the thickness of the bilayer in the major arm, 
 electron density profiles calculated
 using the phases from various fits are 
@@ -2038,30 +2242,141 @@ Slice B is
 along the normal to the minor arm and is centered in the middle of the
 hydrocarbon region. It indicates that $D_\text{HH}^\text{minor}$ is
 29.2--31.0 \AA\ in the minor arm.
-Table~\ref{tab:LAXS_DHH} summarizes these results along with calculated
-tilt angles of the major and minor arms, $\alpha_M$ and $\alpha_m$, respectively,
-where $\alpha_M=\arctan(A/\xM)$ and $\alpha_m=\arctan(A/\xm)=\arctan(A/(\lambda_r-\xM))$
-(see Fig.~\ref{fig:unit_cell}). Table~\ref{tab:LAXS_models} and \ref{tab:LAXS_DHH}
-imply that the amplitude and lengths of the sawtooth profile in Fit2 are 
-quite different from other fits. However, as Fig.~\ref{fig:Fit2_2D_edp} shows,
-the calculated density profile is overall similar to the one obtained from Fit5
-shown in Fig.~\ref{fig:Fit5_2D_edp}. In fact, electron density profiles calculated
-using Fit1--7 all indicate that $\alpha_M \approx 12$\textdegree\ and
-$\alpha_m \approx 27$\textdegree. 
+These results are summarized in Table~\ref{tab:LAXS_DHH}.
+
+As noted in Sec.~\ref{sec:LAXS_phases_results}, fits to ($h, k$) = (3, 0), (6, 0)--(6, 4),
+and (9, 0) were not great. We also noticed that the phase of (1, 3) was unstable. 
+To study how the electron density profile varies as the phase factors of those orders are varied,
+we deliberately reversed various sets of those phase factors and recalculated the electron 
+density map. Figure~\ref{fig:major_phase_variation}
+and \ref{fig:minor_phase_variation} show the major and minor arm electron density
+profiles for some combinations of the phases based on PF5. 
+In PF5a, we inverted the phase of (3, 0), 
+keeping the rest of the phase factors the same as PF5,
+and in PF5b the phases of 
+(1, 3), (3, 0), (6, 0), and (9, 0) were inverted.
+In PF5c, we further reversed the sign of (6, 1--4) from PF5b.
+Essentially, we obtained approximately the same $D_\text{HH}^\text{major}$
+among three cases. In contrast, the variation in $D_\text{HH}^\text{minor}$ was
+larger, and in PF5c, $D_\text{HH}^\text{minor}$ = 31.8 \AA.
+Also, presence of the terminal methyl trough in the major arm was robust, but
+the profile of the chain regions in the minor arm was not.
+
+In summary, we observed that the thickness of the minor arm was 
+smaller than that of the major arm and these thicknesses did not vary 
+considerably among different phase factors. 
+The electron density profile in the major 
+arm showed clear separation of the headgroup and chains while that in the minor 
+arm did not. 
+Furthermore, the terminal methyl trough like feature in the major arm was 
+quite robust, but 
+whether the minor arm has a small dip or rise in the density at the bilayer center
+could not be determined. 
+Figure~\ref{fig:major_arm_overlay} plots seven major arm electron density profiles 
+obtained with various combinations of the phase factors, and
+Fig.~\ref{fig:minor_arm_overlay} plots equivalent curves for the minor arm.
+Table~\ref{tab:LAXS_summary} summarizes
+the final structural results.
+
+\begin{landscape}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/ripple/LAXS/Fit1_2D_edp}
+  \caption[]{Two dimensional electron density map calculated using the phase
+  factors obtained from Fit1 (PF1).}
+  \label{fig:PF1_2D_edp}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/ripple/LAXS/Fit2_2D_edp}
+  \caption[Two dimensional electron density map calculated using the phase
+  factors obtained from Fit2 (PF2).]
+  {Two dimensional electron density profile calculated using the phases
+  predicted by Fit2.}
+  \label{fig:PF2_2D_edp}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/ripple/LAXS/Fit3_2D_edp}
+  \caption[]{Two dimensional electron density map calculated using the phase
+  factors obtained from Fit3 (PF3).}
+  \label{fig:PF3_2D_edp}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/ripple/LAXS/Fit7_2D_edp}
+  \caption[]{Two dimensional electron density map calculated using the phase
+  factors obtained from Fit7 (PF7).}
+  \label{fig:PF7_2D_edp}
+\end{figure} 
+\end{landscape}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit5_2D_edp}
-  \caption[Two dimensional electron density profile calculated using the phases
-  predicted by the 2G hybrid model (Fit5)]
-  {Two dimensional electron density profile calculated using the phases
-  predicted by the 2G hybrid model (Fit5). White is most electron dense
-  and black is least electron dense. A unit cell is shown with a solid yellow 
-  line. Dash lines A and B are the slices plotted in 
-  Fig.~\ref{fig:major_diff_models} and Fig.~\ref{fig:minor_diff_models},
-  respectively.}
-  \label{fig:Fit5_2D_edp}
+  \includegraphics[width=0.8\textwidth]{figures/ripple/LAXS/PF1_headgroup}
+  \caption{$\zhead(x)$ and $\rhohead(x)$ obtained from the electron density map
+  shown in Fig.~\ref{fig:PF1_2D_edp}.
+  $A = 19.1$~\AA\ and $x_M = 99$~\AA.}
+  \label{fig:PF1_headgroup}
 \end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/ripple/LAXS/PF2_headgroup}
+  \caption{$\zhead(x)$ and $\rhohead(x)$ obtained from the electron density map
+  shown in Fig.~\ref{fig:PF2_2D_edp}.
+  $A = 18.2$~\AA\ and $x_M = 98$~\AA.}
+  \label{fig:PF2_headgroup}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/ripple/LAXS/PF3_headgroup}
+  \caption{$\zhead(x)$ and $\rhohead(x)$ obtained from the electron density map
+  shown in Fig.~\ref{fig:PF3_2D_edp}.
+  $A = 18.3$~\AA\ and $x_M = 100$~\AA.}
+  \label{fig:PF3_headgroup}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/ripple/LAXS/PF7_headgroup}
+  \caption{$\zhead(x)$ and $\rhohead(x)$ obtained from the electron density map
+  shown in Fig.~\ref{fig:PF7_2D_edp}.
+  $A = 18.5$~\AA\ and $x_M = 102$~\AA.}
+  \label{fig:PF7_headgroup}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccccccccc}
+    \hline
+     & PF1 & PF2 & PF3 & PF5 & PF7 & III \\
+    \hline
+    $A$   & 19.1 & 18.2 & 18.3 & 18.2 & 18.5 & 18.1 \\
+    $\xM$ & 99   & 98   & 100  & 97   & 102  & 91  \\
+    $\xiM$ & 10.9\textdegree & 10.5\textdegree & 10.4\textdegree  & 10.6\textdegree  & 10.3\textdegree & 11.2\textdegree \\
+    $\xim$ & 22.5\textdegree & 21.2\textdegree & 22.1\textdegree  & 20.8\textdegree  & 23.3\textdegree & 18.5\textdegree \\
+    $\DHH^\text{major}$ & 42.0 & 41.0 & 40.0 & 40.6 & 41.8 & 38 \\
+    $\DHH^\text{minor}$ & 30.8 & 31.0 & 29.2 & 29.2 & 31.0 & 31 \\
+    $\chi^2$ & 11996 & 9664 & 19458 & 8525 & 8883 \\    
+    \hline
+  \end{tabular}
+  \caption{Structural quantities obtained using various phase factors. 
+  The units of $A$, $\xM$, $\DHH^\text{major}$,
+  and $\DHH^\text{minor}$ are \AA. The column III is a low resolution set
+  from Table~\ref{tab:cmu_vs_wackwebb1}.}
+  \label{tab:LAXS_DHH}
+\end{table}
 
 \begin{figure}[htbp]
   \centering
@@ -2086,61 +2401,24 @@ $\alpha_m \approx 27$\textdegree.
   \label{fig:minor_diff_models}
 \end{figure}
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{cccccccccccc}
-    \hline
-          & Fit1  & Fit2  & Fit3  & Fit4  & Fit5  & Fit6  & Fit7 & I & II & III \\
-    \hline
-    $\chi^2$ & 11996 & 9664  & 19458 & 8827  & 8525  & 8905  & 8883 & & 1364 & 8131\\
-    $D_\text{HH}^\text{major}$ & 42.0  & 41.0  & 40.0  & 40.6  & 40.6  & 41.8  & 41.8 & 38 & 38.0 & 41.8 \\
-    $D_\text{HH}^\text{minor}$ & 30.8  & 31.0  & 29.2  & 29.2  & 29.2  & 31.0  & 31.0 & 31 & 28.6 & 30.6 \\
-    $\alpha_M$ & 11.7\textdegree  & 11.5\textdegree  & 13.4\textdegree  & 11.7\textdegree  & 11.8\textdegree  & 11.8\textdegree  & 11.8\textdegree & 10.5\textdegree & 11.5\textdegree & 11.5\textdegree \\
-    $\alpha_m$ & 23.7\textdegree  & 42.7\textdegree  & 22.9\textdegree  & 27.7\textdegree  & 27.1\textdegree  & 26.5\textdegree  & 26.9\textdegree & 26.1\textdegree & 28.1\textdegree & 25.1\textdegree \\
-    \hline
-  \end{tabular}
-  \caption{Ripple structural quantities. \\
-  I: Results from Sun \textit{et al.} \\
-  II: Used only up to $(h,k)$ = (3, 4) \\ 
-  III: Replaced lower order $|F_{hk}|$ with those from Wack and Webb, keeping the same relative error
-  }
-  \label{tab:LAXS_DHH}
-\end{table}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit2_2D_edp}
-  \caption[Two dimensional electron density map calculated using the phases
-  predicted by Fit2]
-  {Two dimensional electron density profile calculated using the phases
-  predicted by Fit2.}
-  \label{fig:Fit2_2D_edp}
-\end{figure}
 
-As noted in a previous paragraph, fits to ($h, k$) = (3, 0), (6, 0)--(6, 4),
-and (9, 0) were not great. We also noticed that the phase of (1, 3) was unstable. To study
-how the electron density profile varies as we vary the phases of those peaks,
-we deliberately reversed the sign of the phases. Figure~\ref{fig:major_phase_variation}
-and \ref{fig:minor_phase_variation} show the effect of such operations
-starting with the phases obtained by Fit5. 
-In Fit5a, we inverted the phase of (3, 0) and in Fit5b, the phases of 
-(1, 3), (3, 0), (6, 0), and (9, 0) were inverted.
-In Fit5c, we further reversed the sign of (6, 1--4) from Fit5b.
-Essentially, we obtained approximately the same $D_\text{HH}^\text{major}$
-among three cases. In contrast, the variation in $D_\text{HH}^\text{minor}$ was
-larger, and in Fit5c, $D_\text{HH}^\text{minor}$ = 31.8 \AA.
-Also, presence of the terminal methyl trough in the major arm was robust, but
-the profile of the chain regions in the minor arm was not.
+%\begin{figure}]htbp]
+%  \centering
+%  \includegraphics[width=0.8\textwidth]{figures/ripple/LAXS/PF5_vs_PF12}
+%  \caption{PF5 (red) vs PF12 (green)}
+%  \label{fig:PF5_vs_PF12}
+%\end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/major_phase_variation}
   \caption{Variation in the electron density profile along Slice A. 
-  Reversing the sign of the (3, 0) phase in Fit5 
-  resulted in the red dashed profile (Fit5a). Reversing the sign of the 
+  Reversing the sign of the (3, 0) phase in PF5 
+  resulted in the red dashed profile (PF5a). Reversing the sign of the 
   (1, 3), (3, 0), (6, 0), and (9, 0) resulted in the green dash-dotted profile
-  (Fit5b). Reversing the sign of the (1, 3), (3, 0), (6, 0--4), and (9, 0)
-  resulted in the blue short dashed profile (Fit5c). 
+  (PF5b). Reversing the sign of the (1, 3), (3, 0), (6, 0--4), and (9, 0)
+  resulted in the blue short dashed profile (PF5c). 
   The distance $r$ is measured from the bilayer center.}
   \label{fig:major_phase_variation}
 \end{figure}
@@ -2149,39 +2427,41 @@ the profile of the chain regions in the minor arm was not.
   \centering
   \includegraphics[width=0.7\textwidth]{figures/ripple/LAXS/minor_phase_variation}
   \caption{Variation in the electron density profile along Slice B.
-  Reversing the sign of the (3, 0) phase in Fit5 
-  resulted in the red dashed profile (Fit5a). Reversing the sign of the 
+  Reversing the sign of the (3, 0) phase in PF5 
+  resulted in the red dashed profile (PF5a). Reversing the sign of the 
   (1, 3), (3, 0), (6, 0), and (9, 0) resulted in the green dash-dotted profile
-  (Fit5b). Reversing the sign of the (1, 3), (3, 0), (6, 0--4), and (9, 0)
-  resulted in the blue short dashed profile (Fit5c). 
+  (PF5b). Reversing the sign of the (1, 3), (3, 0), (6, 0--4), and (9, 0)
+  resulted in the blue short dashed profile (PF5c). 
   The distance $r$ is measured from the bilayer center.}
   \label{fig:minor_phase_variation}
 \end{figure}
 
-In summary, we observed that the thickness of the minor arm was 
-smaller than that of the major arm and these thicknesses did not vary 
-much among different models and fits. 
-The electron density profile in the major 
-arm showed clear separation of the headgroup and chains while that in the minor 
-arm did not. 
-Furthermore, the terminal methyl trough like feature in the major arm was 
-quite robust, but 
-whether the minor arm has a small dip or rise in the density at the bilayer center
-could not be determined. 
-Obtaining a robust electron density profile in the minor
-arm may require an improved model. Table~\ref{tab:LAXS_summary} summarizes
-the final structural results.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/ripple/LAXS/major_arm_overlay}
+  \caption{Major arm electron density profiles from PF1, 2, 3, 5, 7, 
+  5a, 5b, and 5c. Curves are normalized at the headgroup peaks.}
+  \label{fig:major_arm_overlay}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/ripple/LAXS/minor_arm_overlay}
+  \caption{Minor arm electron density profiles from PF1, 2, 3, 5, 7, 
+  5a, 5b, and 5c. Curves are scaled to each other at the headgroup peaks.}
+  \label{fig:minor_arm_overlay}
+\end{figure}
 
 \begin{table}[htbp]
   \centering
   \begin{tabular}{cc}
     \hline
-    $\xM$ & 101 $\pm$ 2 \AA \\
-    $A$ & 21 $\pm$ 1 \AA \\
+    $\xM$ & 99 $\pm$ 2 \AA \\
+    $A$ & 18.5 $\pm$ 0.4 \AA \\
     $D_\text{HH}^\text{major}$ & 41 $\pm$ 1 \AA \\
     $D_\text{HH}^\text{minor}$ & 30.5 $\pm$ 1.5 \AA \\
-    $\alpha_M$ & 12\textdegree\ $\pm$ 1\textdegree \\
-    $\alpha_m$ & 27\textdegree\ $\pm$ 1\textdegree \\
+    $\xiM$ & 10.5\textdegree\ $\pm$ 0.3\textdegree \\
+    $\alpha_m$ & 22\textdegree\ $\pm$ 1\textdegree \\
     $D$ & 57.8 \AA \\
     $\lambda_r$ & 145.0 \AA \\
     $\gamma$ & 98.2\textdegree \\
@@ -2190,30 +2470,6 @@ the final structural results.
   \caption{Estimated structural quantities}
   \label{tab:LAXS_summary}
 \end{table}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit1_2D_edp}
-  \caption[]{Two dimensional electron density map calculated using the phases
-  predicted by Fit1}
-  \label{fig:Fit1_2D_edp}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit3_2D_edp}
-  \caption[]{Two dimensional electron density map calculated using the phases
-  predicted by Fit3}
-  \label{fig:Fit3_2D_edp}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.9\textwidth]{figures/ripple/LAXS/Fit7_2D_edp}
-  \caption[]{Two dimensional electron density map calculated using the phases
-  predicted by Fit7}
-  \label{fig:Fit7_2D_edp}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{nGIWAXS: analysis}

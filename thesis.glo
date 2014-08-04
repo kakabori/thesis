@@ -1,2 +1,3 @@
-\glossaryentry{$\mathbf {a_1}$?\glossaryentryfield{a1}{\glsnamefont{$\mathbf {a_1}$}}{monoclinic unit cell vector}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
-\glossaryentry{$\mathbf {a_2}$?\glossaryentryfield{a2}{\glsnamefont{$\mathbf {a_2}$}}{monoclinic unit cell vector}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{$\mathbf {a_1}$?\glossentry{a1}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{$\mathbf {a_2}$?\glossentry{a2}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FWHM?\glossentry{FWHM}|setentrycounter[]{page}\glsnumberformat}{85}

@@ -448,19 +448,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{a}{}%
+\ifglsentryexists{a_sim}{}%
 {%
-\gls@defglossaryentry{a}%
+\gls@defglossaryentry{a_sim}%
 {%
-name={$\mathbf {a}$},%
-sort={$\mathbf {a}$},%
+name={$a$},%
+sort={$a$},%
 type={main},%
-first={$\protect \mathbf {a}$},%
-firstplural={$\protect \mathbf {a}$s},%
-text={$\protect \mathbf {a}$},%
-plural={$\protect \mathbf {a}$s},%
-description={orthorhombic unit cell vector},%
-descriptionplural={orthorhombic unit cell vector},%
+first={$a$},%
+firstplural={$a$s},%
+text={$a$},%
+plural={$a$s},%
+description={overall scaling factor in SIMtoEXP},%
+descriptionplural={overall scaling factor in SIMtoEXP},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -671,6 +671,36 @@ text={$q_z$},%
 plural={$q_z$s},%
 description={$q$-axis perpendicular to substrate},%
 descriptionplural={$q$-axis perpendicular to substrate},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{FWHM}{}%
+{%
+\gls@defglossaryentry{FWHM}%
+{%
+name={FWHM},%
+sort={FWHM},%
+type={main},%
+first={FWHM},%
+firstplural={FWHMs},%
+text={FWHM},%
+plural={FWHMs},%
+description={full width half maximum},%
+descriptionplural={full width half maximum},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
