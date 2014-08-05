@@ -1,8 +1,41 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossaryentryfield{A}{\glsnamefont{$A$}}{ripple amplitude}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
+\glossaryentryfield{D}{\glsnamefont{$D$}}{lamellar repeat distance}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70\delimN 71}}}%
+\glossaryentryfield{gamma}{\glsnamefont{$\gamma $}}{oblique angle}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
+\glossaryentryfield{lambdar}{\glsnamefont{$\lambda _r$}}{ripple wavelength}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70\delimN 71}}}%
 \glossaryentryfield{a1}{\glsnamefont{$\mathbf {a_1}$}}{monoclinic unit cell vector}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{71}}}%
 \glossaryentryfield{a2}{\glsnamefont{$\mathbf {a_2}$}}{monoclinic unit cell vector}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{psi}{\glsnamefont{$\psi $}}{chain tilt angle with respect to the $z$ direction}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{xM}{\glsnamefont{$\xM $}}{projected length of the major arm}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{DLPC}{\glsnamefont{DLPC}}{dilauroylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
+\glossaryentryfield{DMPC}{\glsnamefont{DMPC}}{dimyristoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
+\glossaryentryfield{DPPC}{\glsnamefont{DMPC}}{dipalmitoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{72}}}%
+\glossaryentryfield{DOPC}{\glsnamefont{DOPC}}{dioleoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{86}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{PC}{\glsnamefont{PC}}{phosphatidylcholines}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{PE}{\glsnamefont{PE}}{phosphatidylethanolamine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{PG}{\glsnamefont{PG}}{phosphatidylglycerol}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{POPC}{\glsnamefont{POPC}}{palmitoyloleoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{72}}}%
 \end{theglossary}\glossarypostamble
