@@ -526,6 +526,12 @@ K.~Huang and A.~E. Garcia, ``Free energy of translocating an arginine-rich
   cell-penetrating peptide across a lipid bilayer suggests pore formation,''
   {\em Biophysical Journal}, vol.~104, no.~2, pp.~412--420, 2013.
 
+\bibitem{ref:Katsaras00}
+J.~Katsaras, S.~Tristram-Nagle, Y.~Liu, R.~Headrick, E.~Fontes, P.~Mason, and
+  J.~F. Nagle, ``Clarification of the ripple phase of lecithin bilayers using
+  fully hydrated, aligned samples,'' {\em Physical Review E}, vol.~61, no.~5,
+  p.~5668, 2000.
+
 \bibitem{ref:Janiak76}
 M.~J. Janiak, D.~M. Small, and G.~G. Shipley, ``Nature of the thermal
   pretransition of synthetic phospholipids: dimyristoyl- and
@@ -576,26 +582,20 @@ P.~Mason, B.~Gaulin, R.~Epand, G.~Wignall, and J.~Lin, ``Small angle neutron
   phospholipid dipalmitoylphosphatidylcholine,'' {\em Physical Review E},
   vol.~59, no.~3, p.~3361, 1999.
 
+\bibitem{ref:Li06}
+L.~Li and J.-X. Cheng, ``Coexisting stripe-and patch-shaped domains in giant
+  unilamellar vesicles,'' {\em Biochemistry}, vol.~45, no.~39,
+  pp.~11819--11826, 2006.
+
 \bibitem{ref:Hentschel91}
 M.~P. Hentschel and F.~Rustichelli, ``Structure of the ripple phase
   {P$_\beta'$} in hydrated phosphatidylcholine multimembranes,'' {\em Phys.
   Rev. Lett.}, vol.~66, pp.~903--906, Feb 1991.
 
-\bibitem{ref:Katsaras00}
-J.~Katsaras, S.~Tristram-Nagle, Y.~Liu, R.~Headrick, E.~Fontes, P.~Mason, and
-  J.~F. Nagle, ``Clarification of the ripple phase of lecithin bilayers using
-  fully hydrated, aligned samples,'' {\em Physical Review E}, vol.~61, no.~5,
-  p.~5668, 2000.
-
 \bibitem{ref:Sengupta03}
 K.~Sengupta, V.~A. Raghunathan, and J.~Katsaras, ``Structure of the ripple
   phase of phospholipid multibilayers,'' {\em Phys. Rev. E}, vol.~68,
   p.~031710, Sep 2003.
-
-\bibitem{ref:Li06}
-L.~Li and J.-X. Cheng, ``Coexisting stripe-and patch-shaped domains in giant
-  unilamellar vesicles,'' {\em Biochemistry}, vol.~45, no.~39,
-  pp.~11819--11826, 2006.
 
 \bibitem{ref:deVries05}
 A.~H. de~Vries, S.~Yefimov, A.~E. Mark, and S.~J. Marrink, ``Molecular
@@ -620,6 +620,12 @@ J.~Katsaras and V.~A. Raghunathan, ``Molecular chirality and the “ripple”
 
 \bibitem{ref:cxro}
 \url{http://henke.lbl.gov/optical\_constants}.
+
+\bibitem{ref:Guler09}
+S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
+  S.~Tristram-Nagle, ``Effects of ether vs. ester linkage on lipid bilayer
+  structure and water permeability,'' {\em Chemistry and physics of lipids},
+  vol.~160, no.~1, pp.~33--44, 2009.
 
 \bibitem{ref:lmfit}
 \url{http://cars9.uchicago.edu/software/python/lmfit/}.
@@ -670,12 +676,6 @@ E.~B. Watkins, C.~E. Miller, W.-P. Liao, and T.~L. Kuhl, ``Equilibrium or
 \bibitem{ref:Warren69}
 B.~E. Warren, {\em X-ray Diffraction}.
 \newblock Courier Dover Publications, 1969.
-
-\bibitem{ref:Guler09}
-S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
-  S.~Tristram-Nagle, ``Effects of ether vs. ester linkage on lipid bilayer
-  structure and water permeability,'' {\em Chemistry and physics of lipids},
-  vol.~160, no.~1, pp.~33--44, 2009.
 
 \bibitem{ref:Watkins11}
 E.~Watkins, C.~Miller, J.~Majewski, and T.~Kuhl, ``Membrane texture induced by

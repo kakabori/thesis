@@ -17,7 +17,20 @@ sDist = 169.8;
 beamX = 32;
 beamZ = 110; % same as X_cen = 1024 - 110 + 1 = 915;
 
-% % ripple phase data
+%% ripple phase data
+a = slurp('ripple_060_cz.tif', 'c');
+b = slurp('ripple_061_cz.tif', 'c');
+tmp = a - b;
+tmp = rotateAround(tmp, 915, 32, -0.97, 'bicubic');
+tmp = flipud(tmp);
+waxs = transform_ccd2q(tmp, [1.3 1.61], [0 0.81], 0.0022, 0.0022, 0.2, beamX, beamZ);
+waxs.Int = int64(waxs.Int);
+figure
+qshow(waxs, [0 1500]);
+saveTightFigure(gcf, 'ripple_waxs_low-res.pdf');
+%axis([1 1.8 0 1])
+
+%% ripple phase data
 % a = slurp('ripple_060_cz.tif', 'c');
 % a = flipud(a);
 % fig1 = figure;
@@ -60,50 +73,50 @@ beamZ = 110; % same as X_cen = 1024 - 110 + 1 = 915;
 % %saveas(fig4, 'ripple_060.pdf');
 % %saveTightFigure(fig4, 'ripple_060.pdf')
 
-% fluid phase data
-a = slurp('fluid_036_cz.tif', 'c');
-a = flipud(a);
-figure
-imagesc(a, [0 3000])
-colormap(gray)
-set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
-xlabel('p_x', 'interpreter', 'tex');
-ylabel('p_z', 'interpreter', 'tex');
-axis image
-axis xy
-saveTightFigure(gcf, 'fluid_036.pdf')
-
-b = slurp('fluid_039_cz.tif', 'c');
-b = flipud(b);
-figure
-imagesc(b, [0 3000])
-colormap(gray)
-set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
-xlabel('p_x', 'interpreter', 'tex');
-ylabel('p_z', 'interpreter', 'tex');
-axis image
-axis xy
-saveTightFigure(gcf, 'fluid_039.pdf')
-
-tmp = a - b;
-figure
-imagesc(tmp, [0 1000])
-colormap(gray)
-set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
-xlabel('p_x', 'interpreter', 'tex');
-ylabel('p_z', 'interpreter', 'tex');
-axis image
-axis xy
-saveTightFigure(gcf, 'fluid_036_ccd.pdf')
-
-tmp = flipud(tmp);
-tmp = rotateAround(tmp, 915, 32, -0.97, 'bicubic');
-waxs2 = transform_ccd2q(tmp, [0 2.2], [0 2], 0.0022, 0.0022, 0.5);
-waxs2.Int = int64(waxs2.Int);
-figure
-qshow(waxs2, [0 1000]);
-saveTightFigure(gcf, 'fluid_036_q.pdf')
-
+% % fluid phase data
+% a = slurp('fluid_036_cz.tif', 'c');
+% a = flipud(a);
+% figure
+% imagesc(a, [0 3000])
+% colormap(gray)
+% set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
+% xlabel('p_x', 'interpreter', 'tex');
+% ylabel('p_z', 'interpreter', 'tex');
+% axis image
+% axis xy
+% saveTightFigure(gcf, 'fluid_036.pdf')
+% 
+% b = slurp('fluid_039_cz.tif', 'c');
+% b = flipud(b);
+% figure
+% imagesc(b, [0 3000])
+% colormap(gray)
+% set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
+% xlabel('p_x', 'interpreter', 'tex');
+% ylabel('p_z', 'interpreter', 'tex');
+% axis image
+% axis xy
+% saveTightFigure(gcf, 'fluid_039.pdf')
+% 
+% tmp = a - b;
+% figure
+% imagesc(tmp, [0 1000])
+% colormap(gray)
+% set(gca, 'TickDir', 'out', 'FontSize', 16, 'FontName', 'Times New Roman')
+% xlabel('p_x', 'interpreter', 'tex');
+% ylabel('p_z', 'interpreter', 'tex');
+% axis image
+% axis xy
+% saveTightFigure(gcf, 'fluid_036_ccd.pdf')
+% 
+% tmp = flipud(tmp);
+% tmp = rotateAround(tmp, 915, 32, -0.97, 'bicubic');
+% waxs2 = transform_ccd2q(tmp, [0 2.2], [0 2], 0.0022, 0.0022, 0.5);
+% waxs2.Int = int64(waxs2.Int);
+% figure
+% qshow(waxs2, [0 1000]);
+% saveTightFigure(gcf, 'fluid_036_q.pdf')
+% 
 % k = 0;
 % for i = 0.09:0.1:0.6
 %   figure 
