@@ -180,7 +180,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="-24.264477"
+     inkscape:cx="57.204044"
      inkscape:cy="107.82932"
      inkscape:document-units="px"
      inkscape:current-layer="g2990"
@@ -204,7 +204,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -349,17 +349,17 @@
       <text
          xml:space="preserve"
          style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-         x="252.16037"
-         y="485.22449"
+         x="259.30322"
+         y="486.29593"
          id="text3840-6"
          sodipodi:linespacing="125%"
          transform="matrix(0.94003289,-0.34108381,0.34108381,0.94003289,0,0)"><tspan
            sodipodi:role="line"
            id="tspan3842-5"
-           x="252.16037"
-           y="485.22449">L<tspan
+           x="259.30322"
+           y="486.29593">ℓ<tspan
    style="font-size:7.80010986px;baseline-shift:sub"
-   id="tspan4488">chain</tspan></tspan></text>
+   id="tspan3052">ch</tspan></tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.00000001, 2.00000007;stroke-dashoffset:0"
          d="m 314.2332,358.76536 20.17304,55.59725"
