@@ -92,9 +92,9 @@ Unsaturation leads to packing frustration and lowers the melting
 temperature. DOPC at room temperature forms a $L_{\alpha}$ fluid phase.
 In mammalian cells, most lipids are unsaturated.
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/lipid_structure}
+  \includegraphics[width=0.5\textwidth]{figures/lipid_structure}
   \caption{Lipid structures of DOPC (top), DOPE (middle),
   and DMPC (bottom). Images are from Avanti Polar Lipids.}
   \label{fig:lipid_structure}
@@ -141,7 +141,7 @@ We studied the transverse location of Tat within model lipid membranes
 by X-ray scattering
 combined with MD simulations. This study is described in chapter 2.
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{figures/HIV_lifecycle}
   \caption{HIV-1 life cycle, adapted from Ref.~\cite{Freed98}
@@ -157,31 +157,76 @@ This phase was termed $P_\beta'$
 and is commonly called the ripple phase \cite{ref:Tardieu73}. 
 The $P_{\beta'}$--$L_{\beta'}$ transition is often
 called the pre-transition \cite{ref:Wack89} or lower transition \cite{Nagle00}.
-The topography of the membrane ripples has been directly
-visualized by freeze fracture electron microscopy experiments 
-\cite{ref:Luna77,ref:Copeland80,ref:Ruppel83,ref:Zasadzinski87,ref:Zasadzinski88}.
-The wavelength of the height modulation is about 140 \AA\ for 
-dimyristoylphosphatidylcholine (DMPC),
-which has 14 carbons in the hydrocarbon chains \cite{ref:Wack89}.
-There has been evidence that molecular conformation in the ripple phase is not 
-unique. NMR signals in the ripple phase were consistent
-with a superposition of signals observed in the fluid and gel phases
-\cite{ref:Wittebort81}.
-Lateral diffusion measurements found two distinct rates,
-with diffusion coefficients characteristic of fluid and gel phases
-\cite{ref:Schneider83}. 
+The ripple phase has fascinated many researchers in condensed matter physics
+and physical chemistry as an example of periodically modulated phases,
+with many theoretical papers attempting to explain the formation
+of the ripples 
+\cite{ref:Doniach79,ref:Marder84,ref:Hawton86,ref:Carlson87,ref:Goldstein88,ref:McCullough90,ref:Honda91,ref:Lubensky93,ref:Kamal11}
+and a few simulation papers to shed light on molecular organization \cite{ref:deVries05}.
+%From an accurate ripple structure, some indication of the energetcis of the ripple 
+%formation may be obtained by comparing the relative size of the ripple wavelength
+%and the ripple amplitude to the size of lipid molecules and the bilayer thickness 
+%\cite{ref:Goldstein88}.
+Despite many systematic studies over the past three decades
+\cite{ref:Tardieu73,ref:Janiak76,ref:Copeland80,ref:Ruppel83,ref:Zasadzinski87,ref:Wack89,ref:Sun96,ref:Katsaras00,ref:Sengupta03}, 
+a complete understanding of its origin and molecular details is still lacking.
+
+Most studies have been performed on PCs, which readily form multilamellae
+with definite interbilayer distance when dispersed in water \cite{Nagle00}.
+PCs have a fairly bulky headgroup, creating a size mismatch with its acyl chains,
+especially below the main phase transition. This is believed to be the 
+reason why the acyl chains are tilted in the gel phase of PCs \cite{Nagle00,ref:Mcintosh80}.
+It has been proposed that the driving force for the ripple formation is also 
+coupled to this size mismatch, with headgroup hydration playing an important role
+\cite{ref:Cevc91,ref:Carlson87}.
+It is not yet established whether the chains remain tilted in the ripple phase \cite{ref:Sun96}.
+
+Generally, it is assumed that the lipids in the ripple phase are mainly in all-trans
+configuration, as in the gel phase \cite{ref:Sengupta03}.
+However, many studies point to the coexistence of fluid and gel regions
+\cite{ref:Wittebort81,ref:Schneider83,ref:Sun96,ref:Marsh80,ref:Cunningham98,ref:Rappolt00}.
+An X-ray structural study has reported that the ripples are composed of 
+a longer sawtooth arm with characteristics similar to a gel phase bilayer 
+and a shorter arm that is thinner and less densely packed, more compatible with
+a fluid phase bilayer \cite{ref:Sun96}.
+Changes of bilayer packing along the ripple direction were also reported in
+molecular dynamics simulations \cite{ref:deVries05}.
+Yet, coexistence of different bilayer packing has not become an established knowledge.
+ 
+Studies of the ripple phase are normally done on multilamellar systems, but
+some works have reported the existence of ripples in unilamellar vesicles
+\cite{ref:Mason99,ref:Parente84}.
 We studied the electron density distribution and chain packing 
-of the asymmetric DMPC ripple phase using low and wide angle X-ray scattering.
+of the asymmetric DMPC ripple phase formed by an oriented multilamellar sample
+using synchrotron low and wide angle X-ray scattering.
+Advantage of studying multilamellar systems with X-rays 
+is the coherent out-of-plane diffraction peaks that lead to a detailed
+bilayer structure \cite{ref:Sun96} and in-plane chain correlation scattering 
+that can be analyzed to elucidate the molecular organization within 
+the rippling bilayers, as was successfully done for the gel phase \cite{ref:Smiwth88,ref:Tristram93}.
+Especially, an oriented sample gives rise to very intense diffraction peaks
+compared to an unoriented sample. With careful analysis, high resolution
+structure can be obtained.
+Our aim was to study whether all-trans chains are tilted with respect to 
+the bilayer normal and to elucidate the coexistence of different bilayer packing.
 The ripple phase is discussed in chapter 3. 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/ripple_cartoon}
-  \caption{Schematic of the $P_{\beta'}$ ripple phase. In this phase, 
-  bilayers assume a periodic height modulation with a sawtooth shape.
-  The longer side of a sawtooth is called the major arm, and the shorter
-  side is called the minor arm. It is generally assumed that chains are
-  in an all-trans conformation in the major arm, but the molecular packing
-  in the minor arm is unknown.}
-  \label{fig:ripple_cartoon}
-\end{figure}
+%There has been evidence that molecular conformation in the ripple phase is not 
+%unique. NMR signals in the ripple phase were consistent
+%with a superposition of signals observed in the fluid and gel phases
+%\cite{ref:Wittebort81}.
+%Lateral diffusion measurements found two distinct rates,
+%with diffusion coefficients characteristic of fluid and gel phases
+%\cite{ref:Schneider83}. 
+
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.7\textwidth]{figures/ripple_cartoon}
+%  \caption{Schematic of the $P_{\beta'}$ ripple phase. In this phase, 
+%  bilayers assume a periodic height modulation with a sawtooth shape.
+%  The longer side of a sawtooth is called the major arm, and the shorter
+%  side is called the minor arm. It is generally assumed that chains are
+%  in an all-trans conformation in the major arm, but the molecular packing
+%  in the minor arm is unknown.}
+%  \label{fig:ripple_cartoon}
+%\end{figure}
