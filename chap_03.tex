@@ -3380,7 +3380,8 @@ the azimuthal rotation of the chains about their long axis \cite{ref:Akabori14,r
 \section{Discussion}\label{sec:ripple_discussion}
 \subsection{Major arm}
 There has been a number of evidence to suggest that the major arm is like 
-the gel phase. Figure~\ref{fig:gel_comparison} compares our electron density
+the gel phase \cite{ref:Tardieu73,ref:Schneider83,ref:Sun96,ref:Riske09}. 
+Figure~\ref{fig:gel_comparison} compares our electron density
 profile in the major arm to the DMPC gel phase profile reported by 
 Tristram-Nagle \textit{et al.} \cite{Tristram-Nagle02}. 
 It shows that the density profile of the major arm is similar to that 
@@ -3392,16 +3393,8 @@ which could be a sign that the terminal methyl is slightly more disordered
 in the ripple phase than in the gel phase.
 As discussed in
 Sec.~\ref{sec:LAXS_edp}, however, small features in the ripple profile were not
-reliable because they depended on which fitting results were used
-to produce the electron density profile.
-An important point we can make based on Fig.~\ref{fig:gel_comparison} 
-is that chains must be tilted by some amount with respect to the local bilayer
-normal. If we use the distance between the centers of the headgroups as the
-bilayer thickenss, we have about 38 \AA\ for the gel phase and 40 \AA\
-for the ripple phase. Because chains are tilted by 30\textdegree\ in the 
-L$_{\beta I}$ phase, the chain tilt angle $\theta_t$ in the ripple major 
-arm is roughly estimated to be 25\textdegree\ $\pm$ 1\textdegree. This constraint on $\theta_t$
-and the measured $\alpha_M$ are important in understanding the nGIWAXS data.
+reliable because they depended on which phase factors were used
+to calculate the electron density profile.
 
 \begin{figure}[htbp]
   \centering
@@ -3410,7 +3403,7 @@ and the measured $\alpha_M$ are important in understanding the nGIWAXS data.
   \caption{Comparison of the electron density profiles of the DMPC gel phase (left)
   and the major arm in the ripple phase (right). The DMPC profile is taken from 
   Ref.~\cite{Tristram-Nagle02}. The ripple major arm profiles were calculated 
-  using the phases predicted by Fit2, 5, and 7 (black, red, and green, respectively). 
+  using the phase factors obtained from Fit2, 5, and 7 (black, red, and green, respectively). 
   The ripple profiles are scaled to match 
   with the gel phase profile.}
   \label{fig:gel_comparison}
@@ -3434,7 +3427,63 @@ inconsistent with this picture and instead consistent with normal
 gel phase packing where chains in different leaflets constitute long coherently
 scattering entities.
 
-\textcolor{red}{Regarding indexing the wide angle peaks}
+With the thin rod model developed in Sec.~\ref{sec:ripple_model}, we indexed 
+the stronger Bragg rod as (2, 0) and weaker one as (1, $\pm$1). 
+The chain tilt angle $\theta=18.5$\textdegree\
+(see Table~\ref{tab:waxs_structure}) is consistent with the gel 
+$L_{\beta F}$ phase, which is supportive of our interpretation.
+With the result from tWAXS analysis, Fig~.\ref{fig:major-arm_cartoon} sketches
+our proposed chain packing in the major arm, where
+chains are tilted in the $xz$-plane, toward the ripple $x$ direction.
+Fig~.\ref{fig:major-arm_cartoon} also compares our proposed packing with
+the one proposed by Sengupta \textit{et al.} \cite{ref:Sengupta03},
+where chains in the major arm are parallel to the bilayer normal.
+As Fig.~\ref{fig:gel_comparison} shows, the major arm thickness is 
+comparable to the gel phase bilayer thickness, indicating that chains are
+tilted with respect to the bilayer normal.
+Sengupta \textit{et al.} proposed the chain packing based on analysis of the 
+LAXS data; specifically, the best fit $\psi$ value led to their conclusion. 
+However, as we emphasized in Sec.~\ref{sec:LAXS_phases_results},
+a model should only be used to obtain the phase factors, and the model parameter
+values should not be used to infer the actual bilayer structure.
+This was also evidenced by the values of the ripple amplitude $A$ measured 
+from the calculated
+electron density maps in Table~\ref{tab:LAXS_DHH}, which were more than
+3 \AA\ smaller than the model parameter $A$ obtained from the best fits
+in Table~\ref{tab:LAXS_models}.
+
+Kamal \textit{et al.} developed a Landau-Ginzburg theory that allows 
+a coupling of the lipid tilt field to the chain conformation field.
+Their predicted chain packing in the major arm is shown in 
+Fig.~\ref{fig:major-arm_cartoon} (bottom), which compares favorably 
+with our proposed chain packing shown in Fig.~\ref{fig:major-arm_cartoon} (top).
+This theory predicts disordered chains in the minor arm. We discuss
+the chain packing in the minor arm in the next subsection.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/ripple/discussion/major-arm_cartoon}
+  \includegraphics[width=0.5\textwidth]{figures/ripple/discussion/Sengupta_cartoon}  
+  \includegraphics[width=0.5\textwidth]{figures/ripple/discussion/Kamal_cartoon}
+  \caption[Chain packing in the major arm proposed in this thesis]
+  {(top) Chain packing in the major arm proposed in this thesis.
+  Chains are drawn as solid, straight lines, and headgroups as solid circles.
+  Solid curves indicate the headgroup $z$ positions in the upper and 
+  lower leaflets.
+  The dashed line indicates the bilayer midplane in the major arm.
+  Chains are titled by 18.4\textdegree\ with respect to the bilayer normal. 
+  Chains in the upper and lower leaflets are coupled and scatter coherently. 
+  (middle) Corresponding chain packing proposed by
+  Sengupta \textit{et al.}, reproduced from \cite{ref:Sengupta03}. 
+  Contours drawn are contour lines of the electron density map.
+  Chains are parallel to the bilayer normal of the major arm.
+  (bottom) Theoretical chain packing predicted by Kamal \textit{et al.}
+  \cite{ref:Kamal11}.
+  Chains are all-trans in the major arm while they are disordered in the 
+  minor arm. The predicted major arm packing compares favorably with our 
+  proposed packing.}
+  \label{fig:major-arm_cartoon}
+\end{figure}
 
 The chain-chain correlation length can be estimated by using the Scherrer equation 
 \cite{ref:Warren69},
@@ -3475,68 +3524,66 @@ model the finite size effect rigorously. This could lead to a prediction
 for the peak shape that is not Gaussian assumed by the Scherrer equation 
 \cite{ref:Warren69}, which we did not consider.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{figures/ripple/discussion/Sengupta_cartoon}
-  \includegraphics[width=0.8\textwidth]{figures/ripple/discussion/major-arm_cartoon}
-  \caption{(top) Chain packing in the major arm proposed by
-  Sengupta \textit{et al.}, reproduced from \cite{ref:Sengupta03}.
-  Chais are drawn as solid, straight lines, and headgroups as solid circles.
-  Contours drawn are contour lines of the electron density map.
-  Chains are parallel to the bilayer normal of the major arm.
-  (bottom) Corresponding chain packing proposed in this thesis.
-  Solid curves indicate the headgroup $z$ positions in the upper and 
-  lower leaflets.
-  The dashed line indicates the bilayer midplane in the major arm.
-  Chains are titled by 18.4\textdegree\ toward the positive $x$ direction.}
-  \label{fig:major-arm_cartoon}
-\end{figure}
-
 \subsection{Minor arm}
 Some previous work have suggested that chains in the minor arm are disordered 
-and fluid as in the L$_\alpha$ fluid phase.
+and fluid similarly to the L$_\alpha$ fluid phase \cite{ref:Schneider83,ref:Sun96,ref:Pabst04,ref:Riske09}.
 Figure~\ref{fig:fluid_comparison} compares our electron density profiles
 in the minor arm to the DMPC fluid phase profile reported by 
 Kucerka \textit{et al.} \cite{Kucerka05_BPJ}.
 Unlike in the case for the major arm, the density profile in the minor arm
-does not resemble that of the fluid phase at all. This radically different
-profile of the minor arm is not an artifact as we successfully obtained 
-a typical bilayer profile for the major arm.
-Inconsistency of the minor arm being like the fluid phase is also seen in our nGIWAXS data.
-Figure~\ref{fig:fluid_vs_ripple} compares observed WAXS patterns of the ripple and 
-fluid phase. The fluid phase pattern was centered at $q_r$ = 1.4 \AA$^{-1}$, where
-there is no obvious feature in the WAXS pattern of the ripple phase. While one
-could argue that the fluid phase pattern can be scaled down to match the tail
-of the ripple Bragg peaks, thereby making the two consistent with each other, 
-as previously argued in Ref.~\cite{ref:Cunningham98}, 
-subtraction of the fluid phase pattern from the ripple pattern would result
-in an asymmetric shape of the ripple Bragg peaks, which is not very reasonable.
+does not resemble that of the fluid phase. 
+However, as we discussed in Sec.~\ref{LAXS_edp}, the electron density profile
+for the minor arm was less robust than for the major arm,
+so correcting the phase factors might lead to a profile more similar 
+to the one shown in Fig.~\ref{fig:fluid_comparison} (left).
 
-An interesting kind of chain packing shown in Fig.\ref{fig:nGIWAXS_comparison} 
-was reported from an MD simulation \cite{ref:deVries05}. This introduced the 
-possibility that the thinner minor arm might consist of interdigitated chains 
-rather then disordered fluid chains.  
-Figure~\ref{fig:interdigitation_comparison} compares the electron density
-profiles in the minor arm with that of the DHPC L$_\beta\text{I}$ interdigitated phase
-reported by \cite{ref:Guler09}. Absence of the methyl trough can be seen in
-both L$_\beta\text{I}$ phase and the ripple minor arm, but the widths of the
-headgroups are much narrower in the DHPC L$_\beta\text{I}$ phase. The widths
-of the ''headgroups'' in the minor arm profile are about 10 \AA, comparable
-with those in the major arm profile. While Fig.~\ref{fig:interdigitation_comparison}
-suggests that interdigitated chains are not completely inconsistent with 
-our results in terms of an overall shape of the density profile, 
-our nGIWAXS pattern clearly eliminates the packing proposed in 
-Ref.~\cite{ref:deVries05}. Figure~\ref{fig:nGIWAXS_comparison} compares
-the calculated wide angle pattern from their atomistic MD simulations
-to our measured nGIWAXS pattern from the ripple phase. As noted in
-Ref.~\cite{ref:deVries05}, interdigitated chains in the minor arm scatter
-coherently, giving rise to a Bragg peak centered at $q_z \approx$ 0.4 \AA$^{-1}$.
-This off-equator Bragg peak is due to chains being tilted by about 20\textdegree\
-with respect to the stacking $z$ direction though they
-are essentially parallel to the local bilayer normal.
-We saw no sign of a Bragg peak at such large $q_z$ in our nGIWAXS
-data, so our wide angle data do not support the structure proposed by
-de Vries \textit{et al.} \cite{ref:deVries05}.
+While the electron density profiles obtained through analysis of the LAXS data
+are not very supportive of the fluid phase like minor arm,
+our nGIWAXS data can be understood as scattering
+arising from the gel like major arm and the fluid like minor arm. 
+As Fig.~\ref{fig:strong_peak} and \ref{fig:weak_peak} show,
+the nGIWAXS pattern is consistent with a superposition of 
+the two Bragg rods due to the major arm and
+a broad peak similar to the fluid phase 
+WAXS pattern shown in Fig.~\ref{fig:fluid_qr}. 
+Table~\ref{tab:nGIWAXS_summary} shows that 
+the width of the diffuse scattering in the fluid phase is approximately twice
+larger than the estimated width of the broad peak in the ripple phase.
+This difference can be understood by assuming that chains in the minor arm
+are less disordered than in the fluid phase, which would yield a narrower
+scattering feature. 
+This assumption is reasonable because the ripple phase is a lower temperature
+phase than the fluid phase and the short length of minor arm along the 
+ripple direction might restrict the motion of disordered chains. 
+This assumption would also explain the estimated position 
+of the broad peak being larger than that of the fluid phase WAXS
+(see Table~\ref{tab:nGIWAXS_summary})
+because the less disordering of chains results in a smaller average chain-chain
+distance, leading to a larger $q$ value of an associated scattering.
+
+The existence of the broad peak in the ripple nGIWAXS hinges
+on an assumption that the Bragg rod profiles in $q_r$ are Lorentzians 
+as we assumed in Fig.~\ref{fig:strong_peak} and ~\ref{fig:weak_peak}.
+Since the $L_{\beta I}$ (2, 0) Bragg rod profile in $q_r$ was fitted very well
+with a Lorentzian (Fig.~\ref{fig:gel_phase}), this functional form is
+not unreasonable for the Bragg rods in the ripple phase.
+The thin rod model considered in Sec.~\ref{sec:ripple_model} predicts
+a delta function in $q_r$, and the Scherrer particle broadening leads to
+a Gaussian profile \cite{ref:Warren69}. 
+Therefore, supporting a Lorentzian profile would require
+a more rigorous calculation of Bragg rod scattering including a finite size effect
+due to the major arm shape and/or slight disordering of chains discussed in
+Sec.~\ref{sec:waxs_results}. 
+
+%Inconsistency of the minor arm being like the fluid phase is also seen in our nGIWAXS data.
+%Figure~\ref{fig:fluid_vs_ripple} compares observed WAXS patterns of the ripple and 
+%fluid phase. The fluid phase pattern was centered at $q_r$ = 1.4 \AA$^{-1}$, where
+%there is no obvious feature in the WAXS pattern of the ripple phase. While one
+%could argue that the fluid phase pattern can be scaled down to match the tail
+%of the ripple Bragg peaks, thereby making the two consistent with each other, 
+%as previously argued in Ref.~\cite{ref:Cunningham98}, 
+%subtraction of the fluid phase pattern from the ripple pattern would result
+%in an asymmetric shape of the ripple Bragg peaks, which is not very reasonable.
 
 \begin{figure}[htbp]
   \centering
@@ -3551,14 +3598,54 @@ de Vries \textit{et al.} \cite{ref:deVries05}.
   \label{fig:fluid_comparison}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.5\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
-  \caption{Comparison of the ripple (black) and fluid (red) phase WAXS at $q_z$ = 0.012 \AA$^{-1}$.
-  The fluid phase data were taken with the low resolution setup and scaled 
-  vertically to enable visual comparison.}
-  \label{fig:fluid_vs_ripple}
-\end{figure}
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/ripple/nGIWAXS/fluid_vs_ripple}
+%  \caption{Comparison of the ripple (black) and fluid (red) phase WAXS at $q_z$ = 0.012 \AA$^{-1}$.
+%  The fluid phase data were taken with the low resolution setup and scaled 
+%  vertically to enable visual comparison.}
+%  \label{fig:fluid_vs_ripple}
+%\end{figure}
+
+An interesting kind of chain packing shown in Fig.\ref{fig:nGIWAXS_comparison} 
+was reported from an MD simulation \cite{ref:deVries05}. This introduced the 
+possibility that the thinner minor arm might consist of interdigitated chains 
+rather then disordered fluid chains.  
+Figure~\ref{fig:interdigitation_comparison} compares the electron density
+profiles in the minor arm with that of the DHPC L$_\beta\text{I}$ interdigitated phase
+reported by \cite{ref:Guler09}. Absence of the methyl trough can be seen in
+both L$_\beta\text{I}$ phase and the ripple minor arm, but the widths of the
+headgroups are much narrower in the DHPC L$_\beta\text{I}$ phase. The widths
+of the ``headgroups'' in the minor arm profile are about 10 \AA, comparable
+with those in the major arm profile.
+
+While Fig.~\ref{fig:interdigitation_comparison}
+suggests that interdigitated chains are not completely inconsistent with 
+our results in terms of an overall density profile shape, 
+our nGIWAXS pattern is not supportive of the packing proposed in 
+\cite{ref:deVries05}. Figure~\ref{fig:nGIWAXS_comparison} compares
+their calculated WAXS pattern from the atomistic MD simulations
+to our measured nGIWAXS pattern from the ripple phase. As noted in
+\cite{ref:deVries05}, interdigitated chains in the minor arm scatter
+coherently, giving rise to a Bragg rod centered at $q_z \approx$ 0.4 \AA$^{-1}$.
+This off-equator Bragg rod is due to chains being tilted by about 20\textdegree\
+with respect to the stacking $z$ direction though they
+are essentially parallel to the local bilayer normal.
+We saw no sign of a Bragg rod at such a large $q_z$ value in our nGIWAXS
+data. 
+Moreover, the two observed Bragg rods can be understood as arising from
+the chains in the major arm alone. 
+Therefore, our nGIWAXS data do not support the structure proposed by
+de Vries \textit{et al.} \cite{ref:deVries05} although
+the electron density profiles in the minor arm shown in 
+Fig.~\ref{fig:interdigitation_comparison} are consistent with
+an interdigitated structure.
+Resolving this conflict might require a more accurate electron density
+map with correct phase factors, and/or a rigorous calculation of a WAXS pattern
+from the minor arm, 
+allowing a possibility to place an interdigitated chain lattice differently from
+the simulation as we did for the hexagonal lattice in the major arm 
+using the variable $\zeta$. 
 
 \begin{figure}[htbp]
   \centering
@@ -3586,10 +3673,10 @@ de Vries \textit{et al.} \cite{ref:deVries05}.
   our measured WAXS (C, white corresponding to highest intensity).
   B is a simulation snapshot from \cite{ref:deVries05} that shows 
   interdigitated chains in the minor arm.  
-  The maximal scattering in the upper left  was at 
-  $q_z \approx 0.4$ \AA$^{-1}$,
-  while $q_z$ values of the observed peaks in our data were 0.12 \AA$^{-1}$
-  and 0.2 \AA$^{-1}$.}
+  The red arrows indicate the position of 
+  the maximal scattering observed in A, which is at $q_z \approx 0.4$ \AA$^{-1}$.
+  The $q_z$ values of the observed peaks in our data were 0.12
+  and 0.2 \AA$^{-1}$, indicated by cyan arrows.}
   \label{fig:nGIWAXS_comparison}
 \end{figure}
 

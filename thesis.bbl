@@ -74,6 +74,16 @@ H.~D. Herce and A.~E. Garcia, ``Molecular dynamics simulations suggest a
 E.~O. Freed, ``Hiv-1 gag proteins: diverse functions in the virus life cycle,''
   {\em Virology}, vol.~251, no.~1, pp.~1--15, 1998.
 
+\bibitem{ref:Wack89}
+D.~C. Wack and W.~W. Webb, ``Synchrotron x-ray study of the modulated lamellar
+  phase p$\beta${}' in the lecithin-water system,'' {\em Phys. Rev. A},
+  vol.~40, pp.~2712--2730, Sep 1989.
+
+\bibitem{Nagle00}
+J.~F. Nagle and S.~Tristram-Nagle, ``Structure of lipid bilayers,'' {\em
+  Biochimica et Biophysica Acta (BBA) - Reviews on Biomembranes}, vol.~1469,
+  no.~3, pp.~159 -- 195, 2000.
+
 \bibitem{ref:Luna77}
 E.~J. Luna and H.~M. McConnell, ``The intermediate monoclinic phase of
   phosphatidylcholines,'' {\em Biochimica et Biophysica Acta
@@ -100,11 +110,6 @@ J.~Zasadzinski and M.~Schneider, ``Ripple wavelength, amplitude, and
 J.~Zasadzinski, J.~Schneir, J.~Gurley, V.~Elings, and P.~Hansma, ``Scanning
   tunneling microscopy of freeze-fracture replicas of biomembranes,'' {\em
   Science}, vol.~239, no.~4843, pp.~1013--1015, 1988.
-
-\bibitem{ref:Wack89}
-D.~C. Wack and W.~W. Webb, ``Synchrotron x-ray study of the modulated lamellar
-  phase p$\beta${}' in the lecithin-water system,'' {\em Phys. Rev. A},
-  vol.~40, pp.~2712--2730, Sep 1989.
 
 \bibitem{ref:Wittebort81}
 R.~Wittebort, C.~Schmidt, and R.~Griffin, ``Solid-state carbon-13 nuclear
@@ -621,6 +626,10 @@ J.~Katsaras and V.~A. Raghunathan, ``Molecular chirality and the “ripple”
 \bibitem{ref:cxro}
 \url{http://henke.lbl.gov/optical\_constants}.
 
+\bibitem{ref:Warren69}
+B.~E. Warren, {\em X-ray Diffraction}.
+\newblock Courier Dover Publications, 1969.
+
 \bibitem{ref:Guler09}
 S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
   S.~Tristram-Nagle, ``Effects of ether vs. ester linkage on lipid bilayer
@@ -634,6 +643,11 @@ S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
 M.~Wiener, R.~Suter, and J.~Nagle, ``Structure of the fully hydrated gel phase
   of dipalmitoylphosphatidylcholine,'' {\em Biophysical Journal}, vol.~55,
   no.~2, pp.~315 -- 325, 1989.
+
+\bibitem{ref:Worthington73}
+C.~Worthington, G.~King, and T.~McIntosh, ``Direct structure determination of
+  multilayered membrane-type systems which contain fluid layers,'' {\em
+  Biophysical Journal}, vol.~13, no.~5, pp.~480 -- 494, 1973.
 
 \bibitem{ref:Pabst04}
 G.~Pabst, H.~Amenitsch, D.~Kharakoz, P.~Laggner, and M.~Rappolt, ``Structure
@@ -673,9 +687,16 @@ E.~B. Watkins, C.~E. Miller, W.-P. Liao, and T.~L. Kuhl, ``Equilibrium or
   bilayers, and membranes,'' {\em ACS Nano}, vol.~8, no.~4, pp.~3181--3191,
   2014.
 
-\bibitem{ref:Warren69}
-B.~E. Warren, {\em X-ray Diffraction}.
-\newblock Courier Dover Publications, 1969.
+\bibitem{ref:Riske09}
+K.~A. Riske, R.~P. Barroso, C.~C. Vequi-Suplicy, R.~Germano, V.~B. Henriques,
+  and M.~T. Lamy, ``Lipid bilayer pre-transition as the beginning of the
+  melting process,'' {\em Biochimica et Biophysica Acta (BBA) - Biomembranes},
+  vol.~1788, no.~5, pp.~954 -- 963, 2009.
+
+\bibitem{ref:Kamal11}
+M.~A. Kamal, A.~Pal, V.~Raghunathan, and M.~Rao, ``Theory of the asymmetric
+  ripple phase in achiral lipid membranes,'' {\em EPL (Europhysics Letters)},
+  vol.~95, no.~4, p.~48004, 2011.
 
 \bibitem{ref:Watkins11}
 E.~Watkins, C.~Miller, J.~Majewski, and T.~Kuhl, ``Membrane texture induced by

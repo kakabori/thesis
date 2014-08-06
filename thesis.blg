@@ -9,45 +9,45 @@ The style file: ieeetr.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "ref:Nagle00"
 Warning--I didn't find a database entry for ""
-You've used 129 entries,
+You've used 133 entries,
             1876 wiz_defined-function locations,
-            1327 strings with 30139 characters,
-and the built_in function-call counts, 45629 in all, are:
-= -- 4758
-> -- 1726
+            1352 strings with 30905 characters,
+and the built_in function-call counts, 47073 in all, are:
+= -- 4908
+> -- 1779
 < -- 0
-+ -- 622
-- -- 493
-* -- 3385
-:= -- 6125
-add.period$ -- 133
-call.type$ -- 129
-change.case$ -- 123
++ -- 641
+- -- 508
+* -- 3489
+:= -- 6316
+add.period$ -- 137
+call.type$ -- 133
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 129
-duplicate$ -- 2265
-empty$ -- 3868
-format.name$ -- 493
-if$ -- 11308
+cite$ -- 133
+duplicate$ -- 2341
+empty$ -- 3990
+format.name$ -- 508
+if$ -- 11673
 int.to.chr$ -- 0
-int.to.str$ -- 129
-missing$ -- 125
-newline$ -- 394
-num.names$ -- 125
-pop$ -- 177
+int.to.str$ -- 133
+missing$ -- 129
+newline$ -- 406
+num.names$ -- 129
+pop$ -- 182
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1988
+skip$ -- 2056
 stack$ -- 0
-substring$ -- 3949
-swap$ -- 1259
+substring$ -- 4067
+swap$ -- 1303
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 406
-width$ -- 132
-write$ -- 1387
+while$ -- 417
+width$ -- 136
+write$ -- 1431
 (There were 2 warnings)
