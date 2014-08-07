@@ -1,5 +1,10 @@
 \begin{thebibliography}{100}
 
+\bibitem{Nagle00}
+J.~F. Nagle and S.~Tristram-Nagle, ``Structure of lipid bilayers,'' {\em
+  Biochimica et Biophysica Acta (BBA) - Reviews on Biomembranes}, vol.~1469,
+  no.~3, pp.~159 -- 195, 2000.
+
 \bibitem{ref:Fahey78}
 P.~Fahey and W.~Webb, ``Lateral diffusion in phospholipid bilayer membranes and
   multilamellar liquid crystals,'' {\em Biochemistry}, vol.~17, no.~15,
@@ -78,11 +83,6 @@ E.~O. Freed, ``Hiv-1 gag proteins: diverse functions in the virus life cycle,''
 D.~C. Wack and W.~W. Webb, ``Synchrotron x-ray study of the modulated lamellar
   phase p$\beta${}' in the lecithin-water system,'' {\em Phys. Rev. A},
   vol.~40, pp.~2712--2730, Sep 1989.
-
-\bibitem{Nagle00}
-J.~F. Nagle and S.~Tristram-Nagle, ``Structure of lipid bilayers,'' {\em
-  Biochimica et Biophysica Acta (BBA) - Reviews on Biomembranes}, vol.~1469,
-  no.~3, pp.~159 -- 195, 2000.
 
 \bibitem{ref:Doniach79}
 S.~Doniach, ``A thermodynamic model for the monoclinic (ripple) phase of
@@ -744,6 +744,11 @@ W.-J. Sun, R.~M. Suter, M.~A. Knewtson, C.~R. Worthington, S.~Tristram-Nagle,
   R.~Zhang, and J.~F. Nagle, ``Order and disorder in fully hydrated unoriented
   bilayers of gel-phase dipalmitoylphosphatidylcholine,'' {\em Phys. Rev. E},
   vol.~49, pp.~4665--4676, May 1994.
+
+\bibitem{ref:Zhang95}
+R.~Zhang, W.~Sun, S.~Tristram-Nagle, R.~Headrick, R.~M. Suter, and J.~F. Nagle,
+  ``Critical fluctuations in membranes,'' {\em Physical review letters},
+  vol.~74, no.~14, p.~2832, 1995.
 
 \bibitem{ref:Watkins14}
 E.~B. Watkins, C.~E. Miller, W.-P. Liao, and T.~L. Kuhl, ``Equilibrium or
