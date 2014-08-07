@@ -8,45 +8,45 @@ A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for ""
-You've used 146 entries,
+You've used 152 entries,
             1876 wiz_defined-function locations,
-            1427 strings with 33030 characters,
-and the built_in function-call counts, 51111 in all, are:
-= -- 5343
-> -- 1903
+            1465 strings with 34015 characters,
+and the built_in function-call counts, 53368 in all, are:
+= -- 5596
+> -- 1958
 < -- 0
-+ -- 688
-- -- 542
-* -- 3765
-:= -- 6854
-add.period$ -- 150
-call.type$ -- 146
-change.case$ -- 140
++ -- 709
+- -- 557
+* -- 3920
+:= -- 7137
+add.period$ -- 157
+call.type$ -- 152
+change.case$ -- 146
 chr.to.int$ -- 0
-cite$ -- 146
-duplicate$ -- 2568
-empty$ -- 4343
-format.name$ -- 542
-if$ -- 12692
+cite$ -- 152
+duplicate$ -- 2687
+empty$ -- 4540
+format.name$ -- 557
+if$ -- 13265
 int.to.chr$ -- 0
-int.to.str$ -- 146
-missing$ -- 142
-newline$ -- 445
-num.names$ -- 142
-pop$ -- 201
+int.to.str$ -- 152
+missing$ -- 148
+newline$ -- 464
+num.names$ -- 148
+pop$ -- 207
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2247
+skip$ -- 2358
 stack$ -- 0
-substring$ -- 4361
-swap$ -- 1426
+substring$ -- 4589
+swap$ -- 1498
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 455
-width$ -- 149
-write$ -- 1574
+while$ -- 474
+width$ -- 155
+write$ -- 1641
 (There was 1 warning)

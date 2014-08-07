@@ -20,15 +20,13 @@
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{DLPC}{\glsnamefont{DLPC}}{dilauroylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{70}}}%
-\glossaryentryfield{DMPC}{\glsnamefont{DMPC}}{dimyristoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{70}}}%
-\glossaryentryfield{DPPC}{\glsnamefont{DMPC}}{dipalmitoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{73}}}%
 \glossaryentryfield{DOPC}{\glsnamefont{DOPC}}{dioleoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{72}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{72}}}%
+\glossaryentryfield{DPPC}{\glsnamefont{DPPC}}{dipalmitoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{73}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{87}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{86}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PC}{\glsnamefont{PC}}{phosphatidylcholines}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{72}}}%

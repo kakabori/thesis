@@ -108,9 +108,9 @@ R.~E. Goldstein and S.~Leibler, ``Model for lamellar phases of interacting
   1988.
 
 \bibitem{ref:McCullough90}
-W.~S. McCullough and H.~Scott, ``Statistical-mechanical theory of the ripple
-  phase of lipid bilayers,'' {\em Physical review letters}, vol.~65, no.~7,
-  p.~931, 1990.
+W.~S. McCullough and H.~L. Scott, ``Statistical-mechanical theory of the ripple
+  phase of lipid bilayers,'' {\em Phys. Rev. Lett.}, vol.~65, pp.~931--934, Aug
+  1990.
 
 \bibitem{ref:Honda91}
 K.~Honda and H.~Kimura, ``Theory on formation of the ripple phase in bilayer
@@ -120,6 +120,11 @@ K.~Honda and H.~Kimura, ``Theory on formation of the ripple phase in bilayer
 \bibitem{ref:Lubensky93}
 T.~Lubensky and F.~MacKintosh, ``Theory of “ripple” phases of lipid
   bilayers,'' {\em Physical review letters}, vol.~71, no.~10, p.~1565, 1993.
+
+\bibitem{ref:Sengupta01}
+K.~Sengupta, V.~Raghunathan, and Y.~Hatwalne, ``Role of tilt order in the
+  asymmetric ripple phase of phospholipid bilayers,'' {\em Physical review
+  letters}, vol.~87, no.~5, pp.~055705\_1--055705\_4, 2001.
 
 \bibitem{ref:Kamal11}
 M.~A. Kamal, A.~Pal, V.~Raghunathan, and M.~Rao, ``Theory of the asymmetric
@@ -131,6 +136,22 @@ A.~H. de~Vries, S.~Yefimov, A.~E. Mark, and S.~J. Marrink, ``Molecular
   structure of the lecithin ripple phase,'' {\em Proceedings of the National
   Academy of Sciences of the United States of America}, vol.~102, no.~15,
   pp.~5392--5396, 2005.
+
+\bibitem{ref:Lenz07}
+O.~Lenz and F.~Schmid, ``Structure of symmetric and asymmetric ``ripple''
+  phases in lipid bilayers,'' {\em Phys. Rev. Lett.}, vol.~98, p.~058104, Jan
+  2007.
+
+\bibitem{ref:Scott84}
+H.~L. Scott, ``Monte carlo studies of a general model for lipid bilayer
+  condensed phases,'' {\em The Journal of Chemical Physics}, vol.~80, no.~5,
+  pp.~2197--2202, 1984.
+
+\bibitem{ref:Debnath09}
+A.~Debnath, K.~G. Ayappa, V.~Kumaran, and P.~K. Maiti, ``The influence of
+  bilayer composition on the gel to liquid crystalline transition,'' {\em The
+  Journal of Physical Chemistry B}, vol.~113, no.~31, pp.~10660--10668, 2009.
+\newblock PMID: 19594148.
 
 \bibitem{ref:Janiak76}
 M.~J. Janiak, D.~M. Small, and G.~G. Shipley, ``Nature of the thermal
@@ -176,6 +197,11 @@ T.~McIntosh, ``Differences in hydrocarbon chain tilt between hydrated
   phosphatidylethanolamine and phosphatidylcholine bilayers. a molecular
   packing model,'' {\em Biophysical journal}, vol.~29, no.~2, pp.~237--245,
   1980.
+
+\bibitem{ref:Nagle76}
+J.~Nagle, ``Theory of lipid monolayer and bilayer phase transitions: Effect of
+  headgroup interactions,'' {\em The Journal of Membrane Biology}, vol.~27,
+  no.~1, pp.~233--250, 1976.
 
 \bibitem{ref:Cevc91}
 G.~Cevc, ``Polymorphism of the bilayer membranes in the ordered phase and the
@@ -667,15 +693,15 @@ L.~Li and J.-X. Cheng, ``Coexisting stripe-and patch-shaped domains in giant
   unilamellar vesicles,'' {\em Biochemistry}, vol.~45, no.~39,
   pp.~11819--11826, 2006.
 
+\bibitem{ref:Sengupta00}
+K.~Sengupta, V.~Raghunathan, and J.~Katsaras, ``Novel structural features of
+  the ripple phase of phospholipids,'' {\em EPL (Europhysics Letters)},
+  vol.~49, no.~6, p.~722, 2000.
+
 \bibitem{ref:Hentschel91}
 M.~P. Hentschel and F.~Rustichelli, ``Structure of the ripple phase
   {P$_\beta'$} in hydrated phosphatidylcholine multimembranes,'' {\em Phys.
   Rev. Lett.}, vol.~66, pp.~903--906, Feb 1991.
-
-\bibitem{ref:Lenz07}
-O.~Lenz and F.~Schmid, ``Structure of symmetric and asymmetric ``ripple''
-  phases in lipid bilayers,'' {\em Phys. Rev. Lett.}, vol.~98, p.~058104, Jan
-  2007.
 
 \bibitem{ref:Chen95}
 C.-M. Chen, T.~Lubensky, and F.~MacKintosh, ``Phase transitions and modulated
@@ -686,6 +712,11 @@ C.-M. Chen, T.~Lubensky, and F.~MacKintosh, ``Phase transitions and modulated
 J.~Katsaras and V.~A. Raghunathan, ``Molecular chirality and the “ripple”
   phase of phosphatidylcholine multibilayers,'' {\em Phys. Rev. Lett.},
   vol.~74, pp.~2022--2025, Mar 1995.
+
+\bibitem{ref:Sengupta99}
+K.~Sengupta, V.~Raghunathan, and J.~Katsaras, ``Structure of the ripple phase
+  in chiral and racemic dimyristoylphosphatidylcholine multibilayers,'' {\em
+  Physical Review E}, vol.~59, no.~2, p.~2455, 1999.
 
 \bibitem{ref:cxro}
 \url{http://henke.lbl.gov/optical\_constants}.
