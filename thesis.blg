@@ -8,11 +8,10 @@ A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "ref:Nagle00"
-Warning--I didn't find a database entry for "ref:Smiwth88"
 Warning--I didn't find a database entry for ""
 You've used 145 entries,
             1876 wiz_defined-function locations,
-            1426 strings with 32901 characters,
+            1424 strings with 32877 characters,
 and the built_in function-call counts, 50806 in all, are:
 = -- 5316
 > -- 1883
@@ -51,4 +50,4 @@ warning$ -- 0
 while$ -- 453
 width$ -- 148
 write$ -- 1563
-(There were 3 warnings)
+(There were 2 warnings)
