@@ -3377,14 +3377,15 @@ chain packing, but the difference is smaller for our ripple data, so we have
 ignored this in our models in Sec.~\ref{sec:ripple_model}.  
 Our experimental result for ${\Delta}q_z$ in Sec.~\ref{sec:tWAXS_results} for the two ripple Bragg 
 rods corresponds to scattering units with length $L_z$ equal to the hydrocarbon 
-thickness that is often called 2$D_c$. Overlap of Bragg rods required by the 
+thickness that is often called 2$D_c$ (see Fig.~\ref{fig:chain_length}). 
+Overlap of Bragg rods required by the 
 symmetry breaking that occurs in three of the four models described 
 in Sec.~\ref{sec:ripple_model} would require that each Bragg rod arise from a coherent scattering 
 length even larger than a bilayer. As that is an unorthodox possibility, let 
 us focus on the only case in Table~\ref{tab:special_cases} that does not have 
 symmetry breaking, namely the $P_{\beta F}^{\zeta=\pi/2}$ phase. For this 
 phase $q_z^{20}$ is twice as large as for $q_z^{{\pm}11}$,
-which is consistent with the ratio of the experimental estimated peak 
+which is consistent with the ratio of the experimental peak 
 positions, $q_z$ = 0.2 $\pm$ 0.01 and 0.12 $\pm$ 0.02. 
 Using our LAXS result $\xiM$ = 10.5\textdegree\ from Table~\ref{tab:LAXS_summary} 
 and the experimental values in Table~\ref{tab:nGIWAXS_summary} gives 
@@ -3394,11 +3395,25 @@ hydrated \LbetaI\ phase. Table~\ref{tab:waxs_structure} also has an entry
 for the \LbetaF\ gel phase that was obtained from Fig.~6 in \cite{Tristram-Nagle02} for a 
 sample that had been partially dehydrated so that the lamellar $D$ spacing was 
 7~\AA\ smaller and the tilt angle had decreased to 20\textdegree. The ripple 
-samples that we have focussed on also have $D$ spacings about 7~\AA\ smaller 
+samples that we have focused on also have $D$ spacings about 7~\AA\ smaller 
 than full hydration ($D_\text{FH}\approx 66.0$~\AA \cite{ref:Zhang95}).  
 We therefore advance the 
 hypothesis that our ripple samples have major arms that are like the 
 $L_{\beta F}$ gel phase rather than like the $L_{\beta I}$ gel phase.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/ripple/thin_rod_model/chain_length}
+  \caption{Definitions of structural quantities appearing in Table~\ref{tab:waxs_structure}. 
+  Chains are tilted with respect
+  to the bilayer normal $z$ direction by $\theta$. $\DHH$ is the distance
+  between the maxima in an electron density profile. 
+  The distance between adjacent CH$_2$ groups
+  is 1.27 \AA\ measured along the chain tilt direction. 
+  $\lch$ = 14$\times$(1.27 \AA) in the gel phase.
+  $D_c$ = $\lch\cos\theta$.}
+  \label{fig:chain_length}
+\end{figure}
 
 A further test of this hypothesis is that the thickness of the major arm is 
 consistent with our LAXS result that gave a head-head thickness 
@@ -3412,9 +3427,10 @@ $\lch=D_c/cos{\theta}$ with values shown in Table~\ref{tab:waxs_structure}.
 This difference is reasonable as the ripple phase occurs at higher temperature 
 and more rotameric defects would be expected to occur.  Indeed, one 
 $g^+tg^-$ kink per chain would reduce the chain length by 1.27~\AA\ which could
-account for the difference in $\lch$ in Table~\ref{tab:waxs_structure}.  
+account for the difference in $\lch$ in Table~\ref{tab:waxs_structure}
+between the gel and ripple phases.  
 Chain shortening disorder is also consistent with the larger distance 
-$d_{cc}$ between neighboring ripple chains in Table \ref{tab:waxs_structure}.  
+between neighboring ripple chains $d_{cc}$ in Table \ref{tab:waxs_structure}.  
 More disorder is also consistent with the shorter chain-chain correlation 
 length implied by the larger ${\Delta}q_r$ in Table~\ref{tab:nGIWAXS_summary}.
 
@@ -3457,19 +3473,7 @@ the azimuthal rotation of the chains about their long axis \cite{ref:Akabori14,r
   \label{tab:waxs_structure}
 \end{table}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.4\textwidth]{figures/ripple/thin_rod_model/chain_length}
-  \caption{Definitions of structural quantities appearing in Table~\ref{tab:waxs_structure}. 
-  Chains are tilted with respect
-  to the bilayer normal $z$ direction by $\theta$. $\DHH$ is the distance
-  between the maxima in an electron density profile. 
-  The distance between adjacent CH$_2$ groups
-  is 1.27 \AA\ measured along the chain tilt direction. 
-  $\lch$ = 14$\times$(1.27 \AA) in the gel phase.
-  $D_c$ = $\lch\cos\theta$.}
-  \label{fig:chain_length}
-\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -3486,7 +3490,7 @@ although the ripple profile does not show distinction
 between the phosphate and carbonyl-glycerol headgroups as in the gel phase.
 Also, the terminal methyl trough appears to be wider in the ripple major arm,
 which could be a sign that the terminal methyl is more disordered
-in the ripple phase than in the gel phase as suggested in Sec.~\ref{sec:waxs_results}.
+in the ripple phase than in the gel phase.
 As discussed in
 Sec.~\ref{sec:LAXS_edp}, however, small features in the ripple profile are not
 reliable because they depended on which phase factors were used
@@ -3500,15 +3504,15 @@ to calculate the electron density profile.
   and the major arm in the ripple phase (right). The left figure is taken from 
   \cite{Tristram-Nagle02}. The ripple major arm profiles were calculated 
   using the phase factors obtained from Fit2, 5, and 7 (black, red, and green, respectively). 
-  The ripple profiles are scaled to match 
-  with the gel phase profile.}
+  The ripple profiles are scaled vertically to match 
+  with the gel phase profile. \textcolor{red}{reduce # of tick marks}}
   \label{fig:gel_comparison}
 \end{figure}
 
 While the electron density profile derived from the LAXS data indicates that 
 chains are gel-like in the major arm, it does not show whether or not chains 
 in different leaflets are coupled. To answer this question, we turned to
-tWAXS where we were able to carefully measure the length of 
+tWAXS where we were able to measure the length of 
 observed Bragg rods. Figure~\ref{fig:twaxs_gel_qz} shows that the lengths of the Bragg
 rods in the ripple and gel phases are approximately the same, indicating that
 chains in different leaflets in the ripple major arm also scatter coherently.
@@ -3559,15 +3563,18 @@ the chain packing in the minor arm in the next subsection.
   The dashed line indicates the bilayer midplane in the major arm.
   Chains are tilted by 18.4\textdegree\ with respect to the bilayer normal. 
   Chains in the upper and lower leaflets are coupled and scatter coherently. 
-  (middle) Corresponding chain packing proposed by
+  (bottom) Corresponding chain packing proposed by
   Sengupta \textit{et al.}, reproduced from \cite{ref:Sengupta03}. 
   Contours drawn are contour lines of the electron density map.
   Chains are parallel to the bilayer normal of the major arm.
-  (bottom) Theoretical chain packing predicted by Kamal \textit{et al.}
-  \cite{ref:Kamal11}.
-  Chains are all-trans in the major arm while they are disordered in the 
-  minor arm. The predicted major arm packing compares favorably with our 
-  proposed packing.}
+  \textcolor{red}{superimpose ours on top of our EDM. Expand Sengputa's
+  about the unit cell.
+%  (bottom) Theoretical chain packing predicted by Kamal \textit{et al.}
+%  \cite{ref:Kamal11}.
+%  Chains are all-trans in the major arm while they are disordered in the 
+%  minor arm. The predicted major arm packing compares favorably with our 
+%  proposed packing.
+  }
   \label{fig:major-arm_cartoon}
 \end{figure}
 
