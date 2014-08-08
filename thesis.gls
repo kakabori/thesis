@@ -26,7 +26,7 @@
 		\setentrycounter[]{page}\glsnumberformat{73}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{86}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{87}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PC}{\glsnamefont{PC}}{phosphatidylcholines}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{72}}}%
@@ -35,5 +35,5 @@
 \glossaryentryfield{PG}{\glsnamefont{PG}}{phosphatidylglycerol}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{72}}}%
 \glossaryentryfield{POPC}{\glsnamefont{POPC}}{palmitoyloleoylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{72}}}%
+		\setentrycounter[]{page}\glsnumberformat{73}}}%
 \end{theglossary}\glossarypostamble
