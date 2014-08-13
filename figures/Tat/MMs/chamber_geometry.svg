@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="ChamberGeometry.svg">
+   sodipodi:docname="chamber_geometry.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -22,9 +22,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2657211"
-     inkscape:cx="393.28349"
-     inkscape:cy="246.97214"
+     inkscape:zoom="0.89499997"
+     inkscape:cx="383.6193"
+     inkscape:cy="225.9694"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -32,8 +32,8 @@
      units="in"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="1440"
+     inkscape:window-height="876"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -178,7 +178,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -188,7 +188,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <rect
-       style="fill:#646464;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect3978"
        width="20.541649"
        height="161.96301"
@@ -250,7 +250,7 @@
        height="81.833672"
        width="35.456158"
        id="rect4395"
-       style="fill:#00ff00;fill-opacity:1;stroke:none" />
+       style="fill:#646464;fill-opacity:1;stroke:none" />
     <text
        sodipodi:linespacing="147%"
        id="text4405"
@@ -315,6 +315,13 @@
        id="path4540-9"
        d="m 406.27885,268.44149 c 405.21592,0 405.21592,0 405.21592,0"
        style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-mid:none;marker-end:url(#Arrow1Lend)" />
+    <rect
+       y="513.64594"
+       x="398.70468"
+       height="81.833672"
+       width="12.84059"
+       id="rect4395-9"
+       style="fill:#00ff00;fill-opacity:1;stroke:none" />
     <path
        inkscape:connector-curvature="0"
        id="path3757-1-6-4"

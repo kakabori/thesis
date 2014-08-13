@@ -1,3 +1,8 @@
+\glossaryentry{$\chi ^2$?\glossaryentryfield{chisqr}{\glsnamefont{$\chi ^2$}}{goodness of fit}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{$\Dphos $?\glossaryentryfield{Dphos}{\glsnamefont{$\Dphos $}}{phosphorus-phosphorus distance in the suppressed region}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{$\HTat $?\glossaryentryfield{HTat}{\glsnamefont{$\HTat $}}{height of Tat cylinder}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{$\RTat $?\glossaryentryfield{RTat}{\glsnamefont{$\RTat $}}{radius of Tat cylinder}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{$\zphos $?\glossaryentryfield{zphos}{\glsnamefont{$\zphos $}}{phosphorus $z$ position in the suppressed region}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{DLPC?\glossaryentryfield{DLPC}{\glsnamefont{DLPC}}{dilauroylphosphatidylcholine}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
 \glossaryentry{$\lambda _r$?\glossaryentryfield{lambdar}{\glsnamefont{$\lambda _r$}}{ripple wavelength}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
 \glossaryentry{$D$?\glossaryentryfield{D}{\glsnamefont{$D$}}{lamellar repeat distance}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
@@ -16,4 +21,4 @@
 \glossaryentry{PE?\glossaryentryfield{PE}{\glsnamefont{PE}}{phosphatidylethanolamine}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{POPC?\glossaryentryfield{POPC}{\glsnamefont{POPC}}{palmitoyloleoylphosphatidylcholine}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{DPPC?\glossaryentryfield{DPPC}{\glsnamefont{DPPC}}{dipalmitoylphosphatidylcholine}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{FWHM?\glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{FWHM?\glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }|setentrycounter[]{page}\glsnumberformat}{86}

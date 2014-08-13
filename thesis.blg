@@ -7,44 +7,44 @@ A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
-You've used 154 entries,
+You've used 156 entries,
             1876 wiz_defined-function locations,
-            1476 strings with 34284 characters,
-and the built_in function-call counts, 53991 in all, are:
-= -- 5668
-> -- 1967
+            1484 strings with 34660 characters,
+and the built_in function-call counts, 54677 in all, are:
+= -- 5743
+> -- 1979
 < -- 0
-+ -- 713
-- -- 559
-* -- 3961
-:= -- 7216
-add.period$ -- 159
-call.type$ -- 154
-change.case$ -- 148
++ -- 718
+- -- 562
+* -- 4005
+:= -- 7300
+add.period$ -- 160
+call.type$ -- 156
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 154
-duplicate$ -- 2721
-empty$ -- 4600
-format.name$ -- 559
-if$ -- 13425
+cite$ -- 156
+duplicate$ -- 2759
+empty$ -- 4666
+format.name$ -- 562
+if$ -- 13603
 int.to.chr$ -- 0
-int.to.str$ -- 154
-missing$ -- 150
-newline$ -- 470
-num.names$ -- 150
-pop$ -- 209
+int.to.str$ -- 156
+missing$ -- 152
+newline$ -- 475
+num.names$ -- 152
+pop$ -- 213
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2387
+skip$ -- 2422
 stack$ -- 0
-substring$ -- 4649
-swap$ -- 1516
+substring$ -- 4721
+swap$ -- 1538
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 481
-width$ -- 157
-write$ -- 1663
+while$ -- 487
+width$ -- 159
+write$ -- 1682

@@ -14,8 +14,9 @@ addpath(genpath('~/WinE/chess11'));
 wavelength = 1.176;
 pixelSize = 0.07113;
 %sDist = 158.6;
-sDist = 160.6;
+sDist = 161.8;
 
+%% Ripple phase 
 a = slurp('waxs_003_cz.tif', 'c');
 b = slurp('bkgd_002_cz.tif', 'c');
 a = a - 110;
@@ -49,6 +50,10 @@ figure
 [qr, Int] = qrplot_q(twaxs1, [0.11 0.13]);
 dlmwrite('twaxs_ripple_qr_weak.dat', [qr Int]);
 
+figure
+[qr, Int] = qrplot_q(twaxs1, [0.19 0.21]);
+dlmwrite('twaxs_ripple_qr_strong.dat', [qr Int]);
+
 % k = 0;
 % for i = -0.05:0.02:0.21
 %   figure;
@@ -74,7 +79,7 @@ dlmwrite('twaxs_ripple_qr_weak.dat', [qr Int]);
 % saveTightFigure(gcf, strcat('twaxs_qrplot2.pdf'))
   
 
-
+%% Gel phase
 a = slurp('gel_020_cz.tif', 'c');
 b = slurp('bkgd_005_cz.tif', 'c');
 a = flipud(a);
@@ -103,3 +108,7 @@ saveTightFigure(gcf, 'twaxs_gel_q.pdf');
 figure
 [qz, Int] = qzplot_q(twaxs2, [1.47 1.51]);
 dlmwrite('twaxs_gel_qz_20.dat', [qz Int]);
+
+figure
+[qr, Int] = qrplot_q(twaxs2, [-0.05 0.05]);
+dlmwrite('twaxs_gel_qr_20.dat', [qr Int]);

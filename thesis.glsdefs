@@ -58,6 +58,186 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{D}{}%
+{%
+\gls@defglossaryentry{D}%
+{%
+name={$D$},%
+sort={$D$},%
+type={main},%
+first={$D$},%
+firstplural={$D$s},%
+text={$D$},%
+plural={$D$s},%
+description={lamellar repeat distance},%
+descriptionplural={lamellar repeat distance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{lambdar}{}%
+{%
+\gls@defglossaryentry{lambdar}%
+{%
+name={$\lambda _r$},%
+sort={$\lambda _r$},%
+type={main},%
+first={$\lambda _r$},%
+firstplural={$\lambda _r$s},%
+text={$\lambda _r$},%
+plural={$\lambda _r$s},%
+description={ripple wavelength},%
+descriptionplural={ripple wavelength},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gamma}{}%
+{%
+\gls@defglossaryentry{gamma}%
+{%
+name={$\gamma $},%
+sort={$\gamma $},%
+type={main},%
+first={$\gamma $},%
+firstplural={$\gamma $s},%
+text={$\gamma $},%
+plural={$\gamma $s},%
+description={oblique angle},%
+descriptionplural={oblique angle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{A}{}%
+{%
+\gls@defglossaryentry{A}%
+{%
+name={$A$},%
+sort={$A$},%
+type={main},%
+first={$A$},%
+firstplural={$A$s},%
+text={$A$},%
+plural={$A$s},%
+description={ripple amplitude},%
+descriptionplural={ripple amplitude},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{psi}{}%
+{%
+\gls@defglossaryentry{psi}%
+{%
+name={$\psi $},%
+sort={$\psi $},%
+type={main},%
+first={$\psi $},%
+firstplural={$\psi $s},%
+text={$\psi $},%
+plural={$\psi $s},%
+description={chain tilt angle with respect to the $z$ direction},%
+descriptionplural={chain tilt angle with respect to the $z$ direction},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{xM}{}%
+{%
+\gls@defglossaryentry{xM}%
+{%
+name={$\xM $},%
+sort={$\xM $},%
+type={main},%
+first={$x_\protect \textrm {M}$},%
+firstplural={$x_\protect \textrm {M}$s},%
+text={$x_\protect \textrm {M}$},%
+plural={$x_\protect \textrm {M}$s},%
+description={projected length of the major arm},%
+descriptionplural={projected length of the major arm},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{theta}{}%
 {%
 \gls@defglossaryentry{theta}%
@@ -328,6 +508,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{kin}{}%
+{%
+\gls@defglossaryentry{kin}%
+{%
+name={\kin },%
+sort={\kin },%
+type={main},%
+first={\protect \mathbf {k}_{\protect \mathrm {in}}},%
+firstplural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
+text={\protect \mathbf {k}_{\protect \mathrm {in}}},%
+plural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
+description={incoming wave vector},%
+descriptionplural={incoming wave vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kout}{}%
+{%
+\gls@defglossaryentry{kout}%
+{%
+name={$\kout $},%
+sort={$\kout $},%
+type={main},%
+first={$\protect \mathbf {k}_{\protect \mathrm {out}}$},%
+firstplural={$\protect \mathbf {k}_{\protect \mathrm {out}}$s},%
+text={$\protect \mathbf {k}_{\protect \mathrm {out}}$},%
+plural={$\protect \mathbf {k}_{\protect \mathrm {out}}$s},%
+description={outgoing wave vector},%
+descriptionplural={outgoing wave vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{q}{}%
 {%
 \gls@defglossaryentry{q}%
@@ -358,19 +598,79 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{kin}{}%
+\ifglsentryexists{qx}{}%
 {%
-\gls@defglossaryentry{kin}%
+\gls@defglossaryentry{qx}%
 {%
-name={\kin },%
-sort={\kin },%
+name={$q_x$},%
+sort={$q_x$},%
 type={main},%
-first={\protect \mathbf {k}_{\protect \mathrm {in}}},%
-firstplural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
-text={\protect \mathbf {k}_{\protect \mathrm {in}}},%
-plural={\protect \mathbf {k}_{\protect \mathrm {in}}s},%
-description={incoming wave vector},%
-descriptionplural={incoming wave vector},%
+first={$q_x$},%
+firstplural={$q_x$s},%
+text={$q_x$},%
+plural={$q_x$s},%
+description={$q$-axis perpendicular to the incoming beam, but parallel to the substrate},%
+descriptionplural={$q$-axis perpendicular to the incoming beam, but parallel to the substrate},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{qy}{}%
+{%
+\gls@defglossaryentry{qy}%
+{%
+name={$q_y$},%
+sort={$q_y$},%
+type={main},%
+first={$q_y$},%
+firstplural={$q_y$s},%
+text={$q_y$},%
+plural={$q_y$s},%
+description={$q$-axis parallel to the incoming beam},%
+descriptionplural={$q$-axis parallel to the incoming beam},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{qz}{}%
+{%
+\gls@defglossaryentry{qz}%
+{%
+name={$q_z$},%
+sort={$q_z$},%
+type={main},%
+first={$q_z$},%
+firstplural={$q_z$s},%
+text={$q_z$},%
+plural={$q_z$s},%
+description={$q$-axis perpendicular to substrate},%
+descriptionplural={$q$-axis perpendicular to substrate},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -658,19 +958,199 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{qz}{}%
+\ifglsentryexists{AFM}{}%
 {%
-\gls@defglossaryentry{qz}%
+\gls@defglossaryentry{AFM}%
 {%
-name={$q_z$},%
-sort={$q_z$},%
+name={AFM},%
+sort={AFM},%
 type={main},%
-first={$q_z$},%
-firstplural={$q_z$s},%
-text={$q_z$},%
-plural={$q_z$s},%
-description={$q$-axis perpendicular to substrate},%
-descriptionplural={$q$-axis perpendicular to substrate},%
+first={AFM},%
+firstplural={AFMs},%
+text={AFM},%
+plural={AFMs},%
+description={atomic force microscopy},%
+descriptionplural={atomic force microscopy},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CCD}{}%
+{%
+\gls@defglossaryentry{CCD}%
+{%
+name={CCD},%
+sort={CCD},%
+type={main},%
+first={CCD},%
+firstplural={CCDs},%
+text={CCD},%
+plural={CCDs},%
+description={charge coupled device},%
+descriptionplural={charge coupled device},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CHESS}{}%
+{%
+\gls@defglossaryentry{CHESS}%
+{%
+name={CHESS},%
+sort={CHESS},%
+type={main},%
+first={CHESS},%
+firstplural={CHESSs},%
+text={CHESS},%
+plural={CHESSs},%
+description={Cornell High Energy Synchrotron Source},%
+descriptionplural={Cornell High Energy Synchrotron Source},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DPPC}{}%
+{%
+\gls@defglossaryentry{DPPC}%
+{%
+name={DPPC},%
+sort={DPPC},%
+type={main},%
+first={DPPC},%
+firstplural={DPPCs},%
+text={DPPC},%
+plural={DPPCs},%
+description={dipalmitoylphosphatidylcholine},%
+descriptionplural={dipalmitoylphosphatidylcholine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DMPC}{}%
+{%
+\gls@defglossaryentry{DMPC}%
+{%
+name={DMPC},%
+sort={DMPC},%
+type={main},%
+first={DMPC},%
+firstplural={DMPCs},%
+text={DMPC},%
+plural={DMPCs},%
+description={dimyristoylphosphatidylcholine},%
+descriptionplural={dimyristoylphosphatidylcholine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DLPC}{}%
+{%
+\gls@defglossaryentry{DLPC}%
+{%
+name={DLPC},%
+sort={DLPC},%
+type={main},%
+first={DLPC},%
+firstplural={DLPCs},%
+text={DLPC},%
+plural={DLPCs},%
+description={dilauroylphosphatidylcholine},%
+descriptionplural={dilauroylphosphatidylcholine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DOPC}{}%
+{%
+\gls@defglossaryentry{DOPC}%
+{%
+name={DOPC},%
+sort={DOPC},%
+type={main},%
+first={DOPC},%
+firstplural={DOPCs},%
+text={DOPC},%
+plural={DOPCs},%
+description={dioleoylphosphatidylcholine},%
+descriptionplural={dioleoylphosphatidylcholine},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -701,6 +1181,396 @@ text={FWHM},%
 plural={FWHMs},%
 description={full width half maximum},%
 descriptionplural={full width half maximum},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LAXS}{}%
+{%
+\gls@defglossaryentry{LAXS}%
+{%
+name={LAXS},%
+sort={LAXS},%
+type={main},%
+first={LAXS},%
+firstplural={LAXSs},%
+text={LAXS},%
+plural={LAXSs},%
+description={low angle X-ray scattering},%
+descriptionplural={low angle X-ray scattering},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MD}{}%
+{%
+\gls@defglossaryentry{MD}%
+{%
+name={MD},%
+sort={MD},%
+type={main},%
+first={MD},%
+firstplural={MDs},%
+text={MD},%
+plural={MDs},%
+description={molecular dynamics},%
+descriptionplural={molecular dynamics},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Mo}{}%
+{%
+\gls@defglossaryentry{Mo}%
+{%
+name={Mo},%
+sort={Mo},%
+type={main},%
+first={Mo},%
+firstplural={Mos},%
+text={Mo},%
+plural={Mos},%
+description={molybdenum},%
+descriptionplural={molybdenum},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MLV}{}%
+{%
+\gls@defglossaryentry{MLV}%
+{%
+name={MLV},%
+sort={MLV},%
+type={main},%
+first={MLV},%
+firstplural={MLVs},%
+text={MLV},%
+plural={MLVs},%
+description={multilamellar vesicle},%
+descriptionplural={multilamellar vesicle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NMR}{}%
+{%
+\gls@defglossaryentry{NMR}%
+{%
+name={NMR},%
+sort={NMR},%
+type={main},%
+first={NMR},%
+firstplural={NMRs},%
+text={NMR},%
+plural={NMRs},%
+description={nuclear magnetic resonance},%
+descriptionplural={nuclear magnetic resonance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nGIWAXS}{}%
+{%
+\gls@defglossaryentry{nGIWAXS}%
+{%
+name={nGIWAXS},%
+sort={nGIWAXS},%
+type={main},%
+first={nGIWAXS},%
+firstplural={nGIWAXSs},%
+text={nGIWAXS},%
+plural={nGIWAXSs},%
+description={near grazing incidence wide angle X-ray scattering},%
+descriptionplural={near grazing incidence wide angle X-ray scattering},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{POPC}{}%
+{%
+\gls@defglossaryentry{POPC}%
+{%
+name={POPC},%
+sort={POPC},%
+type={main},%
+first={POPC},%
+firstplural={POPCs},%
+text={POPC},%
+plural={POPCs},%
+description={palmitoyloleoylphosphatidylcholine},%
+descriptionplural={palmitoyloleoylphosphatidylcholine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PC}{}%
+{%
+\gls@defglossaryentry{PC}%
+{%
+name={PC},%
+sort={PC},%
+type={main},%
+first={PC},%
+firstplural={PCs},%
+text={PC},%
+plural={PCs},%
+description={phosphatidylcholines},%
+descriptionplural={phosphatidylcholines},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PG}{}%
+{%
+\gls@defglossaryentry{PG}%
+{%
+name={PG},%
+sort={PG},%
+type={main},%
+first={PG},%
+firstplural={PGs},%
+text={PG},%
+plural={PGs},%
+description={phosphatidylglycerol},%
+descriptionplural={phosphatidylglycerol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PE}{}%
+{%
+\gls@defglossaryentry{PE}%
+{%
+name={PE},%
+sort={PE},%
+type={main},%
+first={PE},%
+firstplural={PEs},%
+text={PE},%
+plural={PEs},%
+description={phosphatidylethanolamine},%
+descriptionplural={phosphatidylethanolamine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tWAXS}{}%
+{%
+\gls@defglossaryentry{tWAXS}%
+{%
+name={tWAXS},%
+sort={tWAXS},%
+type={main},%
+first={tWAXS},%
+firstplural={tWAXSs},%
+text={tWAXS},%
+plural={tWAXSs},%
+description={transmission wide angle X-ray scattering},%
+descriptionplural={transmission wide angle X-ray scattering},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ULV}{}%
+{%
+\gls@defglossaryentry{ULV}%
+{%
+name={ULV},%
+sort={ULV},%
+type={main},%
+first={ULV},%
+firstplural={ULVs},%
+text={ULV},%
+plural={ULVs},%
+description={unilamellar vesicle},%
+descriptionplural={unilamellar vesicle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{WAXS}{}%
+{%
+\gls@defglossaryentry{WAXS}%
+{%
+name={WAXS},%
+sort={WAXS},%
+type={main},%
+first={WAXS},%
+firstplural={WAXSs},%
+text={WAXS},%
+plural={WAXSs},%
+description={wide angle X-ray scattering},%
+descriptionplural={wide angle X-ray scattering},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

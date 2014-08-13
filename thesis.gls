@@ -5,6 +5,14 @@
 		\setentrycounter[]{page}\glsnumberformat{70}}}%
 \glossaryentryfield{D}{\glsnamefont{$D$}}{lamellar repeat distance}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{70\delimN 71}}}%
+\glossaryentryfield{Dphos}{\glsnamefont{$\Dphos $}}{phosphorus-phosphorus distance in the suppressed region}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
+\glossaryentryfield{HTat}{\glsnamefont{$\HTat $}}{height of Tat cylinder}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
+\glossaryentryfield{RTat}{\glsnamefont{$\RTat $}}{radius of Tat cylinder}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
+\glossaryentryfield{chisqr}{\glsnamefont{$\chi ^2$}}{goodness of fit}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
 \glossaryentryfield{gamma}{\glsnamefont{$\gamma $}}{oblique angle}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{70}}}%
 \glossaryentryfield{lambdar}{\glsnamefont{$\lambda _r$}}{ripple wavelength}{\relax }{\glossaryentrynumbers{\relax 
@@ -16,7 +24,9 @@
 \glossaryentryfield{psi}{\glsnamefont{$\psi $}}{chain tilt angle with respect to the $z$ direction}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{71}}}%
 \glossaryentryfield{xM}{\glsnamefont{$\xM $}}{projected length of the major arm}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{71}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
+\glossaryentryfield{zphos}{\glsnamefont{$\zphos $}}{phosphorus $z$ position in the suppressed region}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{29}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{DLPC}{\glsnamefont{DLPC}}{dilauroylphosphatidylcholine}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{70}}}%
@@ -26,7 +36,7 @@
 		\setentrycounter[]{page}\glsnumberformat{73}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FWHM}{\glsnamefont{FWHM}}{full width half maximum}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{87}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{86}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{PC}{\glsnamefont{PC}}{phosphatidylcholines}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{72}}}%

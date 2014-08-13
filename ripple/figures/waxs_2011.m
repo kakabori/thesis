@@ -23,12 +23,20 @@ b = slurp('ripple_061_cz.tif', 'c');
 tmp = a - b;
 tmp = rotateAround(tmp, 915, 32, -0.97, 'bicubic');
 tmp = flipud(tmp);
-waxs = transform_ccd2q(tmp, [1.3 1.61], [0 0.81], 0.0022, 0.0022, 0.2, beamX, beamZ);
+waxs = transform_ccd2q(tmp, [0.0 2.01], [0 2.01], 0.0022, 0.0022, 0.2, beamX, beamZ);
 waxs.Int = int64(waxs.Int);
 figure
-qshow(waxs, [0 1500]);
+qshow(waxs, [0 500]);
 saveTightFigure(gcf, 'ripple_waxs_low-res.pdf');
 %axis([1 1.8 0 1])
+
+figure
+[qr, Int] = qrplot_q(waxs, [0.11 0.13]);
+dlmwrite('ripple_waxs_low-res_weak.dat', [qr Int]);
+
+figure
+[qr, Int] = qrplot_q(waxs, [0.19 0.21]);
+dlmwrite('ripple_waxs_low-res_strong.dat', [qr Int]);
 
 %% ripple phase data
 % a = slurp('ripple_060_cz.tif', 'c');
@@ -73,7 +81,7 @@ saveTightFigure(gcf, 'ripple_waxs_low-res.pdf');
 % %saveas(fig4, 'ripple_060.pdf');
 % %saveTightFigure(fig4, 'ripple_060.pdf')
 
-% % fluid phase data
+%% fluid phase data
 % a = slurp('fluid_036_cz.tif', 'c');
 % a = flipud(a);
 % figure

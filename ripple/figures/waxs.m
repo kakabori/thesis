@@ -17,6 +17,8 @@ sDist = 220.6;
 beamX = -241;
 beamZ = 96; % same as X_cen = 1024 - 96 + 1 = 929;
 
+%% ripple pahse
+% D = 59.2
 a = slurp('dmpc1_046_cz.tif', 'c');
 b = slurp('dmpc1_047_cz.tif', 'c');
 tmp = a - b;
@@ -30,7 +32,27 @@ fig1 = figure;
 qshow(waxs1, [0 50]);
 %saveTightFigure(fig1, 'dmpc1_046.pdf');
 
-% ripple phase data
+figure
+[q, I] = sector_q(waxs1, [1 2], [5 15]);
+dlmwrite('sector1.dat', [q I]);
+figure
+[q, I] = sector_q(waxs1, [1 2], [15 25]);
+dlmwrite('sector2.dat', [q I]);
+figure
+[q, I] = sector_q(waxs1, [1 2], [25 35]);
+dlmwrite('sector3.dat', [q I]);
+figure
+[q, I] = sector_q(waxs1, [1 2], [35 45]);
+dlmwrite('sector4.dat', [q I]);
+figure
+[q, I] = sector_q(waxs1, [1 2], [45 55]);
+dlmwrite('sector5.dat', [q I]);
+figure
+[q, I] = sector_q(waxs1, [1 2], [55 65]);
+dlmwrite('sector6.dat', [q I]);
+
+
+% D = 60.8
 a = slurp('dmpc1_052_cz.tif', 'c');
 b = slurp('dmpc1_053_cz.tif', 'c');
 tmp = a - b;
