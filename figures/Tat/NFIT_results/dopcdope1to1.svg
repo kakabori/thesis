@@ -10,12 +10,15 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="536"
-   height="815"
+   width="525.71436"
+   height="811.42853"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="dopcdope1to1.svg"
+   inkscape:export-filename="C:\Documents and Settings\Owner\My Documents\work\thesis\figures\Tat\NFIT_results\dopcdope1to1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <mask
@@ -31,6 +34,18 @@
          height="1"
          width="1" />
     </mask>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3780">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.99999983, 3.99999983;stroke-dashoffset:0"
+         id="rect3782"
+         width="412.61569"
+         height="636.86322"
+         x="8.2971783"
+         y="-646.95435"
+         transform="scale(1,-1)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -40,8 +55,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="503.09219"
-     inkscape:cy="342.29701"
+     inkscape:cx="436.70222"
+     inkscape:cy="352.58615"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -50,9 +65,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1312"
-     inkscape:window-height="944"
-     inkscape:window-x="135"
-     inkscape:window-y="92"
+     inkscape:window-height="763"
+     inkscape:window-x="-368"
+     inkscape:window-y="145"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -70,11 +85,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-6.2857156,-234.8622)">
+     transform="translate(-16.285732,-244.14797)">
     <g
-       transform="matrix(1.2741017,0,0,-1.2741017,2.8571442,1061.2907)"
+       transform="matrix(1.2741017,0,0,-1.2741017,5.7142829,1068.4336)"
        inkscape:label="figure1"
-       id="g3012">
+       id="g3012"
+       clip-path="url(#clipPath3780)">
       <g
          id="g3014">
         <g

@@ -13,8 +13,11 @@
    height="326.92368"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="stack.svg"
+   inkscape:export-filename="C:\Documents and Settings\Owner\My Documents\work\thesis\figures\Tat\MMs\stack.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4">
     <marker
@@ -82,8 +85,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="244.26562"
-     inkscape:cy="198.05535"
+     inkscape:cx="133.90848"
+     inkscape:cy="140.91249"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -94,9 +97,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1280"
-     inkscape:window-height="776"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-height="744"
+     inkscape:window-x="-4"
+     inkscape:window-y="896"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -245,14 +248,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="269.71072"
-       y="478.09045"
+       x="259.71072"
+       y="516.09045"
        id="text4482"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4484"
-         x="269.71072"
-         y="478.09045"
+         x="259.71072"
+         y="516.09045"
          style="font-size:32px">u<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
    id="tspan4490">n</tspan>(x,y)</tspan></text>
@@ -281,7 +284,7 @@
        id="path3971-4-2-3"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2,4;stroke-dashoffset:0"
        d="m 110.71429,473.79075 c 22.02165,6.65925 46.69976,10.49989 70.0952,10.21774 21.65423,-0.26114 42.17342,-4.27137 59.33971,-7.63139 7.7184,-1.51075 19.58423,-4.42112 28.54908,-5.13411 10.11335,-0.80432 19.31249,-1.6818 28.05749,-0.38136 29.01407,4.31458 52.82998,17.65455 76.18856,19.33837 4.30038,0.30999 9.60777,0.12792 13.63218,-0.79957"
        id="path4610"
        inkscape:connector-curvature="0"

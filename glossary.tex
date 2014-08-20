@@ -1,63 +1,145 @@
-\newglossaryentry{a1}{name=$\mathbf{a_1}$, description={monoclinic unit cell vector}}
-\newglossaryentry{a2}{name=$\mathbf{a_2}$, description={monoclinic unit cell vector}}
-\newglossaryentry{D}{name=$D$, description={lamellar repeat distance}}
-\newglossaryentry{lambdar}{name=$\lambda_r$, description={ripple wavelength}}
-\newglossaryentry{gamma}{name=$\gamma$, description={oblique angle}}
+% Notations
 \newglossaryentry{A}{name=$A$, description={ripple amplitude}}
-\newglossaryentry{psi}{name=$\psi$, description={chain tilt angle with respect to the $z$ direction}}
-\newglossaryentry{xM}{name=$\xM$, description={projected length of the major arm}}
-
-\newglossaryentry{theta}{name=$\theta$, description={chain tilt angle}}
-\newglossaryentry{DHH}{name=$\DHH$, description={head-to-head distance}}
+\newglossaryentry{Atheta}{name=$A(\theta)$, description={absorption factor}}
+\newglossaryentry{a1}{name=$\mathbf{a_1}$, description={monoclinic unit cell vector}}
+\newglossaryentry{a2}{name=$\mathbf{a_2}$, description={monoclinic unit cell vector (ripple wavevector)}}
+\newglossaryentry{AL}{name=$\AL$, description={area per lipid}}
+\newglossaryentry{a_sim}{name=$a$, description={overall scaling factor in SIMtoEXP}}
 \newglossaryentry{a}{name=$\mathbf{a}$, description={orthorhombic unit cell vector}}
 \newglossaryentry{b}{name=$\mathbf{b}$, description={orthorhombic unit cell vector}}
-\newglossaryentry{Dc}{name=$\Dc$, description={hydrocarbon chain length}}
-\newglossaryentry{AL}{name=$\AL$, description={area per lipid}}
-\newglossaryentry{Kc}{name=$\Kc$, description={bending modulus}}
 \newglossaryentry{B}{name=$B$, description={bulk modulus}}
-\newglossaryentry{DPP}{name=$\DPP$, description={PC-PC distance / phosphate-phosphate distance / phosphorus-phosphorus distance}}
 
-\newglossaryentry{kin}{name=$\kin$, description={incoming wave vector}}
-\newglossaryentry{kout}{name=$\kout$, description={outgoing wave vector}}
-\newglossaryentry{q}{name=$\mathbf{q}$, description={momentum transfer vector}}
-\newglossaryentry{qx}{name=$q_x$, description={$q$-axis perpendicular to the incoming beam, but parallel to the substrate}}
-\newglossaryentry{qy}{name=$q_y$, description={$q$-axis parallel to the incoming beam}}
-\newglossaryentry{qz}{name=$q_z$, description={$q$-axis perpendicular to substrate}}
-
-
-
-
-\newglossaryentry{VTat}{name=$\VTat$, description={volume of Tat}}
 \newglossaryentry{chisqr}{name=$\chi^2$, description={goodness of fit}}
-\newglossaryentry{a_sim}{name=$a$, description={overall scaling factor in SIMtoEXP}}
+\newglossaryentry{chi}{name=$\chi$, description={angle measured from the meridian on a CCD detector}}
+\newglossaryentry{ci}{name=$c_i$, description={amplitude of the volume probability distribution for molecular component $i$}}
 
-% MD simulations
-\newglossaryentry{zTat}{name=$\zTat$, description={position of Tat measured from the bilayer center}}
+\newglossaryentry{Deltaqr}{name=$\Delta q_r$, description={instrumental resolution in $q_r$}}
+\newglossaryentry{Deltaqz}{name=$\Delta q_z$, description={instrumental resolution in $q_z$}}
+\newglossaryentry{Deltaomega}{name=$\Delta\omega$, description={range of $\omega$ over which a sample is rotated}}
+\newglossaryentry{D}{name=$D$, description={lamellar repeat distance}}
+\newglossaryentry{Dspacing}{name=$D$-spacing, description={lamellar repeat distance, $D$}}
+\newglossaryentry{Dc}{name=$\Dc$, description={hydrocarbon chain length}}
+\newglossaryentry{DHH}{name=$D_\textrm{HH}$, description={head-to-head distance}}
 \newglossaryentry{Dphos}{name=$\Dphos$, description={phosphorus-phosphorus distance in the suppressed region}}
 \newglossaryentry{Dphos0}{name=$\Dphos^0$, description={phosphorus-phosphorus distance in the unperturbed region}}
-\newglossaryentry{zphos}{name=$\zphos$, description={phosphorus $z$ position in the suppressed region}}
-\newglossaryentry{HTat}{name=$\HTat$, description={height of Tat cylinder}}
+\newglossaryentry{DPP}{name=$\DPP$, description={PC-PC, phosphate-phosphate, or phosphorus-phosphorus distance}}
+
+\newglossaryentry{f1}{name=$f_1$, description={ratio of the minor to the major arm electron densities}}
+\newglossaryentry{f2}{name=$f_2$, description={ratio of the kink region to the major arm electron densities}}
+\newglossaryentry{Fq}{name=$F(\mathbf{q})$, description={X-ray form factor}}
+\newglossaryentry{Fsim}{name=$F^\textrm{sim}(q_z)$, description={simulated X-ray form factor}}
+\newglossaryentry{Fexp}{name=$F^\textrm{exp}(q_z)$, description={experimentally measured X-ray form factor}}
+\newglossaryentry{Fhk}{name=$F_{hk}$, description={X-ray form factor for the $(h,k)$ reflection}}
+\newglossaryentry{Fhkori}{name=$F_{hk}^\textrm{ori}$, description={$F_{hk}$ for the oriented sample}}
+\newglossaryentry{Fhkun}{name=$F_{hk}^\textrm{un}$, description={$F_{hk}$ for the unoriented sample}}
+\newglossaryentry{FC}{name=$F_C(\mathbf{q})$, description={contour part of the X-ray form factor}}
+\newglossaryentry{FT}{name=$F_T(\mathbf{q})$, description={transbilayer part of the X-ray form factor}}
+
+\newglossaryentry{gamma}{name=$\gamma$, description={oblique angle}}
+
+\newglossaryentry{hk}{name={$(h,k)$}, description={ripple phase Miller indices}}
+\newglossaryentry{h}{name=$h$, description={ripple phase Miller index}}
+\newglossaryentry{HTat}{name=$\HTat$, description={Tat cylinder height}}
+
+\newglossaryentry{Iq}{name=$I(\mathbf{q})$, description={measured intensity}}
+\newglossaryentry{Ihkobs}{name=$I_{hk}^\textrm{obs}$, description={observed intensity for the $(h,k)$ reflection}}
+
+\newglossaryentry{Kc}{name=$\Kc$, description={bending modulus}}
+\newglossaryentry{k}{name=$k$, description={ripple phase Miller index}}
+\newglossaryentry{kin}{name=$\kin$, description={incoming wavevector}}
+\newglossaryentry{kout}{name=$\kout$, description={outgoing wavevector}}
+
+\newglossaryentry{lambda}{name=$\lambda$, description={X-ray wavelength}}
+\newglossaryentry{lambdar}{name=$\lambda_r$, description={ripple wavelength}}
+\newglossaryentry{mu}{name=$\mu$, description={X-ray absorption length}}
+
+\newglossaryentry{omega}{name=$\omega$, description={beam incident angle}}
+\newglossaryentry{phi}{name=$\phi$, description={angle measured from the equator or in-plane chain tilt direction}}
+\newglossaryentry{Phihk}{name=$\Phi_{hk}$, description={X-ray phase factor for the $(h,k)$ reflection}}
+\newglossaryentry{psi}{name=$\psi$, description={chain tilt angle with respect to the $z$ direction}}
+\newglossaryentry{px}{name=$p_x$, description={horizontal CCD pixel}}
+\newglossaryentry{pz}{name=$p_z$, description={vertical CCD pixel}}
+
+\newglossaryentry{q}{name=$\mathbf{q}$, description={X-ray momentum transfer vector}}
+\newglossaryentry{qx}{name=$q_x$, description={in-plane $q$-space coordinate perpendicular to the beam direction}}
+\newglossaryentry{qy}{name=$q_y$, description={in-plane $q$-space coordinate}}
+\newglossaryentry{qz}{name=$q_z$, description={$q$-space coordinate perpendicular to the substrate}}
+\newglossaryentry{qr}{name=$q_r$, description={azimuthal in-plane $q$-space coordinate; $q_r=\sqrt{q_x^2+q_y^2}$}}
+\newglossaryentry{qhkr}{name=$q_{hk}^r$, description={$q_r$ value of the $(h,k)$ reflection}}
+\newglossaryentry{qhkz}{name=$q_{hk}^z$, description={$q_z$ value of the $(h,k)$ reflection}}
+
+\newglossaryentry{rhoi}{name=$\rho_i$, description={average electron density of molecular component $i$}}
+\newglossaryentry{rhoxz}{name={$\rho(x,z)$}, description={ripple electron density map}}
+\newglossaryentry{rhoz}{name=$\rho(z)$, description={bilayer electron density profile normal to the membrane plane}}
+\newglossaryentry{rhoHi}{name=$\rho_{\textrm{H}i}$, description={electron density of the $i^\textrm{th}$ headgroup Gaussian in the 2G hybrid model}}
+\newglossaryentry{rhoM}{name=$\rho_\textrm{M}$, description={electron density of the terminal methyl Gaussian in the 2G hybrid model}}
+\newglossaryentry{rhoHead}{name=$\rho_\textrm{Head}(x)$, description={electron density profile along the headgroup positions}}
+
 \newglossaryentry{RTat}{name=$\RTat$, description={radius of Tat cylinder}}
+\newglossaryentry{R2}{name=$R_2$, description={outer radius of the boundary region}}
+\newglossaryentry{R3}{name=$R_3$, description={outer radius of the unperturbed region}}
 
+\newglossaryentry{sigmaHi}{name=$\sigma_{\textrm{H}i}$, description={width of the $i^\textrm{th}$ Gaussian in the 2G hybrid model}}
+\newglossaryentry{sigmaM}{name=$\sigma_\textrm{M}$, description={width of the terminal methyl Gaussian in the 2G hybrid model}}
+\newglossaryentry{sigmaF}{name=$\sigma_F$, description={uncertainties on X-ray form factors}}
+\newglossaryentry{sigmaI}{name=$\sigma_I$, description={uncertainties on observed intensities}}
+\newglossaryentry{sigmai}{name=$\sigma_i$, description={volume probability distribution width for molecular component $i$}}
+\newglossaryentry{Sq}{name=$S(\mathbf{q})$, description={X-ray structure factor}}
+\newglossaryentry{T}{name=$T$, description={temperature}}
+\newglossaryentry{theta}{name=$\theta$, description={chain tilt angle or X-ray scattering angle}}
+\newglossaryentry{VHL}{name=$V_\textrm{HL}$, description={lipid headgroup volume}}
+\newglossaryentry{Vi}{name=$V_i$, description={volume of molecular component $i$}}
+\newglossaryentry{VTat}{name=$\VTat$, description={Tat volume}}
+\newglossaryentry{VL}{name=$\VL$, description={lipid volume}}
 
+\newglossaryentry{ws}{name=$w_s$, description={sample width along the beam direction}}
+
+\newglossaryentry{xiM}{name=$\xiM$, description={ripple major arm tilt angle}}
+\newglossaryentry{xim}{name=$\xim$, description={ripple minor arm tilt angle}} 
+\newglossaryentry{xM}{name=$\xM$, description={projected length of the major arm}}
+\newglossaryentry{xTat}{name=$\xTat$, description={Tat mole fraction}}
+
+\newglossaryentry{zHead}{name=$z_\textrm{Head}(x)$, description={headgroup $z$ positions}}
+\newglossaryentry{zi}{name=$z_i$, description={center of the volume probability distribution for molecular component $i$}}
+\newglossaryentry{zphos}{name=$\zphos$, description={phosphorus $z$ position in the suppressed region}}
+\newglossaryentry{zphos0}{name=$\zphos^0$, description={phosphorus $z$ position in the unperturbed region}}
+\newglossaryentry{zTat}{name=$\zTat$, description={Tat position measured from the bilayer center}}
+\newglossaryentry{zguan}{name=$\zguan$, description={guanidinium peak position}}
+\newglossaryentry{ZHi}{name=$Z_{\textrm{H}i}$, description={center of $i^\textrm{th}$ Gaussian in the 2G hybrid model}} 
+
+% Acronyms
 \newglossaryentry{AFM}{name=AFM, description={atomic force microscopy}}
 \newglossaryentry{CCD}{name=CCD, description={charge coupled device}}
+\newglossaryentry{CD}{name=CD, description={circular dichroism}}
+\newglossaryentry{CG}{name=CG, description={carbonyl/glycerol}}
 \newglossaryentry{CHESS}{name=CHESS, description={Cornell High Energy Synchrotron Source}}
+\newglossaryentry{CPP}{name=CPP, description={cell penetrating peptide}}
 \newglossaryentry{DPPC}{name=DPPC, description={dipalmitoylphosphatidylcholine}}
 \newglossaryentry{DMPC}{name=DMPC, description={dimyristoylphosphatidylcholine}}
 \newglossaryentry{DLPC}{name=DLPC, description={dilauroylphosphatidylcholine}}
 \newglossaryentry{DOPC}{name=DOPC, description={dioleoylphosphatidylcholine}}
+\newglossaryentry{DOPE}{name=DOPE, description={dioleoylphosphatidylethanolamine}}
+\newglossaryentry{DOPG}{name=DOPG, description={dioleoylphosphatidylglycerol}}
+\newglossaryentry{EDP}{name=EDP, description={electron density profile}}
 \newglossaryentry{FWHM}{name=FWHM, description={full width half maximum}}
+\newglossaryentry{GUV}{name=GUV, description={giant unilamellar vesicle}}
+\newglossaryentry{HC}{name=HC, description={hydrocarbon chain}}
 \newglossaryentry{LAXS}{name=LAXS, description={low angle X-ray scattering}}
+\newglossaryentry{LUV}{name=LUV, description={large unilamellar vesicle}}
 \newglossaryentry{MD}{name=MD, description={molecular dynamics}}
-\newglossaryentry{Mo}{name=Mo, description={molybdenum}}
+%\newglossaryentry{Mo}{name=Mo, description={molybdenum}}
 \newglossaryentry{MLV}{name=MLV, description={multilamellar vesicle}}
 \newglossaryentry{NMR}{name=NMR, description={nuclear magnetic resonance}}
 \newglossaryentry{nGIWAXS}{name=nGIWAXS, description={near grazing incidence wide angle X-ray scattering}}
 \newglossaryentry{POPC}{name=POPC, description={palmitoyloleoylphosphatidylcholine}}
-\newglossaryentry{PC}{name=PC, description={phosphatidylcholines}}
+\newglossaryentry{PC}{name=PC, description={phosphatidylcholine or phosphate/choline}}
 \newglossaryentry{PG}{name=PG, description={phosphatidylglycerol}}
 \newglossaryentry{PE}{name=PE, description={phosphatidylethanolamine}}
+\newglossaryentry{PS}{name=PS, description={phosphatidylserine}}
+\newglossaryentry{PF}{name=PF, description={phase factor}}
+\newglossaryentry{Tat}{name=Tat, description={transactivator of translation}}
+\newglossaryentry{THC}{name=THC, description={Tat in hydrocarbon chain model}}
+\newglossaryentry{THG}{name=THG, description={Tat in headgroup model}}
 \newglossaryentry{tWAXS}{name=tWAXS, description={transmission wide angle X-ray scattering}}
 \newglossaryentry{ULV}{name=ULV, description={unilamellar vesicle}}
 \newglossaryentry{WAXS}{name=WAXS, description={wide angle X-ray scattering}}

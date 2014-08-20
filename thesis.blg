@@ -1,6 +1,7 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: chap_01.aux
 A level-1 auxiliary file: chap_02.aux
 A level-1 auxiliary file: chap_03.aux
@@ -9,42 +10,42 @@ The style file: ieeetr.bst
 Database file #1: thesis.bib
 You've used 156 entries,
             1876 wiz_defined-function locations,
-            1484 strings with 34660 characters,
-and the built_in function-call counts, 54677 in all, are:
-= -- 5743
+            1490 strings with 34635 characters,
+and the built_in function-call counts, 54665 in all, are:
+= -- 5745
 > -- 1979
 < -- 0
 + -- 718
 - -- 562
-* -- 4005
-:= -- 7300
-add.period$ -- 160
+* -- 4006
+:= -- 7301
+add.period$ -- 161
 call.type$ -- 156
 change.case$ -- 150
 chr.to.int$ -- 0
 cite$ -- 156
-duplicate$ -- 2759
-empty$ -- 4666
+duplicate$ -- 2757
+empty$ -- 4663
 format.name$ -- 562
-if$ -- 13603
+if$ -- 13597
 int.to.chr$ -- 0
 int.to.str$ -- 156
 missing$ -- 152
-newline$ -- 475
+newline$ -- 476
 num.names$ -- 152
-pop$ -- 213
+pop$ -- 211
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2422
+skip$ -- 2419
 stack$ -- 0
-substring$ -- 4721
-swap$ -- 1538
+substring$ -- 4717
+swap$ -- 1536
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 487
+while$ -- 488
 width$ -- 159
-write$ -- 1682
+write$ -- 1685

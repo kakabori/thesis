@@ -1,0 +1,127 @@
+\documentclass[12pt,twoside]{report}
+
+\input{common_preambles}  
+\input{newcommand_Tat}
+\input{newcommand_ripple}          
+
+%\includeonly{chap_02}
+
+\topmargin -0.3in
+\oddsidemargin 0.5in
+\evensidemargin 0.5in
+\textheight 8.5in
+\textwidth 6.0in
+%
+% ====================================================================
+%     The following commands tend to keep LaTex happier in the 
+%     placement of figures, tables, etc
+% ====================================================================
+%
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{9}
+
+\renewcommand{\glsnamefont}[1]{\mdseries #1}
+% 
+% ====================================================================
+%     Some of the things we need for the title page
+% ====================================================================
+%
+\author{\\
+	\\
+	\\
+	by \\
+	\\
+      	Kiyotaka Akabori \\
+	\\
+	\\
+	\\
+	\\
+	\\
+        Submitted in partial fulfillment of the \\
+        requirements for the degree of \\
+        Doctor of Philosophy \\
+        at \\
+        Carnegie Mellon University \\
+        Department of Physics \\
+        Pittsburgh, Pennsylvania \\
+	\\
+        \\
+	Advised by Professor John F. Nagle \\
+	and 
+	Professor Stephanie Tristram-Nagle
+	\\
+	\\
+}
+
+\title{\bf{
+Structure determination of HIV-1 Tat/fluid phase membranes
+and DMPC ripple phase using X-ray scattering
+}}
+\date{\today}
+
+
+\renewcommand*{\glspostdescription}{}
+\newglossarystyle{mystyle}{%
+  \glossarystyle{list}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \item[\glsentryitem{##1}\glstarget{##1}{##2}]%
+       \hspace{1cm}##3\glspostdescription\space ##5}%
+}
+%\makeglossaries
+\makenoidxglossaries
+\input{glossary}
+\glsaddall
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} 
+
+%\thispagestyle{empty}
+
+\maketitle
+
+% ====================================================================
+%     Generates one blank page before the 'Abstract'
+% ====================================================================
+
+%\thispagestyle{empty} \cleardoublepage
+
+%\include{abstract}
+
+
+%\thispagestyle{empty} \cleardoublepage
+
+\pagenumbering{roman}
+
+%\include{acknowledgments}
+
+\tableofcontents 
+
+\listoftables
+
+\listoffigures
+
+%\printglossary[sort=def,style=mystyle,nonumberlist]
+\printnoidxglossary[sort=def,style=mystyle]
+
+\clearpage 
+
+\pagenumbering{arabic}
+
+
+\include{chap_01}
+\include{chap_02}
+\include{chap_03}
+\begin{appendices}
+  \include{appendix}
+\end{appendices}
+
+\bibliography{thesis}
+\bibliographystyle{ieeetr}
+%\bibliographystyle{apsrev4-1}
+
+\end{document}

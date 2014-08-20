@@ -14,8 +14,11 @@
    height="489.5144"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="ripple083and085.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ripple083and085.svg"
+   inkscape:export-filename="C:\Documents and Settings\Owner\My Documents\work\thesis\figures\ripple\ripple083and085.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,16 +28,16 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="199.124"
-     inkscape:cy="205.94367"
+     inkscape:cy="120.22938"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     inkscape:window-x="-4"
+     inkscape:window-y="896"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -280,7 +283,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1354,7 +1357,7 @@
          x="-422.52039"
          y="71.543076">q<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan4578">z</tspan> (Å<tspan
+   id="tspan4578">z</tspan> (Å<tspan
    style="font-size:18px;baseline-shift:super"
    id="tspan3740">-1</tspan>)</tspan></text>
     <text
@@ -1370,7 +1373,7 @@
          y="653.11786"
          style="font-size:18px;fill:#000000;fill-opacity:1;stroke:none">q<tspan
    style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan4582">r</tspan> (Å<tspan
+   id="tspan4582">r</tspan> (Å<tspan
    style="font-size:18px;baseline-shift:super;fill:#000000;fill-opacity:1;stroke:none"
    id="tspan3748">-1</tspan>)</tspan></text>
     <text

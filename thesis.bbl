@@ -6,14 +6,14 @@ J.~F. Nagle and S.~Tristram-Nagle, ``Structure of lipid bilayers,'' {\em
   no.~3, pp.~159 -- 195, 2000.
 
 \bibitem{ref:Fahey78}
-P.~F. Fahey and W.~W. Webb, ``Lateral diffusion in phospholipid bilayer
-  membranes and multilamellar liquid crystals,'' {\em Biochemistry}, vol.~17,
-  no.~15, pp.~3046--3053, 1978.
+P.~Fahey and W.~Webb, ``Lateral diffusion in phospholipid bilayer membranes and
+  multilamellar liquid crystals,'' {\em Biochemistry}, vol.~17, no.~15,
+  pp.~3046--3053, 1978.
 
 \bibitem{ref:Smith88}
 G.~S. Smith, E.~B. Sirota, C.~R. Safinya, and N.~A. Clark, ``Structure of the
   {$L_{\beta'}$} phases in a hydrated phosphatidylcholine multimembrane,'' {\em
-  Physical Review Letters}, vol.~60, pp.~813--816, Feb 1988.
+  Phys. Rev. Lett.}, vol.~60, pp.~813--816, Feb 1988.
 
 \bibitem{ref:Tardieu73}
 A.~Tardieu, V.~Luzzati, and F.~Reman, ``Structure and polymorphism of the
@@ -21,19 +21,18 @@ A.~Tardieu, V.~Luzzati, and F.~Reman, ``Structure and polymorphism of the
   Journal of Molecular Biology}, vol.~75, no.~4, pp.~711 -- 733, 1973.
 
 \bibitem{ref:Tristram93}
-S.~Tristram-Nagle, R.~Zhang, R.~M. Suter, C.~R. Worthington, W.~J. Sun, and
-  J.~F. Nagle, ``Measurement of chain tilt angle in fully hydrated bilayers of
-  gel phase lecithins,'' {\em Biophysical Journal}, vol.~64, no.~4,
-  pp.~1097--1109, 1993.
+S.~Tristram-Nagle, R.~Zhang, R.~Suter, C.~Worthington, W.~Sun, and J.~Nagle,
+  ``Measurement of chain tilt angle in fully hydrated bilayers of gel phase
+  lecithins,'' {\em Biophysical journal}, vol.~64, no.~4, pp.~1097--1109, 1993.
 
 \bibitem{Tristram-Nagle02}
 S.~Tristram-Nagle, Y.~Liu, J.~Legleiter, and J.~F. Nagle, ``Structure of gel
-  phase {DMPC} determined by {X-ray} diffraction,'' {\em Biophysical Journal},
+  phase {DMPC} determined by x-ray diffraction,'' {\em Biophysical Journal},
   vol.~83, no.~6, pp.~3324 -- 3335, 2002.
 
 \bibitem{ref:Chernomordik03}
 L.~V. Chernomordik and M.~M. Kozlov, ``Protein-lipid interplay in fusion and
-  fission of biological membranes,'' {\em Annual review of biochemistry},
+  fission of biological membranes*,'' {\em Annual review of biochemistry},
   vol.~72, no.~1, pp.~175--207, 2003.
 
 \bibitem{ref:Dowhan97}
@@ -42,24 +41,24 @@ W.~Dowhan, ``Molecular basis for membrane phospholipid diversity: why are there
   pp.~199--232, 1997.
 
 \bibitem{Vaishnav91}
-Y.~N. Vaishnav and F.~Wong-Staal, ``The biochemistry of {AIDS},'' {\em Annual
+Y.~N. Vaishnav and F.~Wong-Staal, ``The biochemistry of aids,'' {\em Annual
   review of biochemistry}, vol.~60, no.~1, pp.~577--630, 1991.
 
 \bibitem{Raha05}
-T.~Raha, S.~G. Cheng, and M.~R. Green, ``{HIV-1} {Tat} stimulates transcription
+T.~Raha, S.~G. Cheng, and M.~R. Green, ``Hiv-1 tat stimulates transcription
   complex assembly through recruitment of tbp in the absence of tafs,'' {\em
   PLoS biology}, vol.~3, no.~2, p.~e44, 2005.
 
 \bibitem{Macias09}
 D.~Mac{\'\i}as, R.~Oya, L.~Saniger, F.~Mart{\'\i}n, and F.~Luque, ``A
   lentiviral vector that activates latent human immunodeficiency virus-1
-  proviruses by the overexpression of {Tat} and that kills the infected
-  cells,'' {\em Human gene therapy}, vol.~20, no.~11, pp.~1259--1268, 2009.
+  proviruses by the overexpression of tat and that kills the infected cells,''
+  {\em Human gene therapy}, vol.~20, no.~11, pp.~1259--1268, 2009.
 
 \bibitem{Ruben89}
 S.~Ruben, A.~Perkins, R.~Purcell, K.~Joung, R.~Sia, R.~Burghoff, W.~Haseltine,
   and C.~Rosen, ``Structural and functional characterization of human
-  immunodeficiency virus {Tat} protein.,'' {\em Journal of Virology}, vol.~63,
+  immunodeficiency virus tat protein.,'' {\em Journal of virology}, vol.~63,
   no.~1, pp.~1--8, 1989.
 
 \bibitem{Hauber87}
@@ -77,22 +76,23 @@ S.~Futaki, T.~Suzuki, W.~Ohashi, T.~Yagami, S.~Tanaka, K.~Ueda, and Y.~Sugiura,
 \bibitem{Grabe04}
 M.~Grabe, H.~Lecar, Y.~N. Jan, and L.~Y. Jan, ``A quantitative assessment of
   models for voltage-dependent gating of ion channels,'' {\em Proceedings of
-  the National Academy of Sciences}, vol.~101, no.~51, pp.~17640--17645, 2004.
+  the National Academy of Sciences of the United States of America}, vol.~101,
+  no.~51, pp.~17640--17645, 2004.
 
 \bibitem{Herce07}
 H.~D. Herce and A.~E. Garcia, ``Molecular dynamics simulations suggest a
-  mechanism for translocation of the {HIV-1} {Tat} peptide across lipid
-  membranes,'' {\em Proceedings of the National Academy of Sciences}, vol.~104,
-  no.~52, pp.~20805--20810, 2007.
+  mechanism for translocation of the hiv-1 tat peptide across lipid
+  membranes,'' {\em Proceedings of the National Academy of Sciences of the
+  United States of America}, vol.~104, no.~52, pp.~20805--20810, 2007.
 
 \bibitem{Freed98}
-E.~O. Freed, ``{HIV-1} gag proteins: diverse functions in the virus life
-  cycle,'' {\em Virology}, vol.~251, no.~1, pp.~1--15, 1998.
+E.~O. Freed, ``Hiv-1 gag proteins: diverse functions in the virus life cycle,''
+  {\em Virology}, vol.~251, no.~1, pp.~1--15, 1998.
 
 \bibitem{ref:Wack89}
-D.~C. Wack and W.~W. Webb, ``Synchrotron {X-ray} study of the modulated
-  lamellar phase {$P_{\beta'}$} in the lecithin-water system,'' {\em Physical
-  Review A}, vol.~40, pp.~2712--2730, Sep 1989.
+D.~C. Wack and W.~W. Webb, ``Synchrotron x-ray study of the modulated lamellar
+  phase p$\beta${}' in the lecithin-water system,'' {\em Phys. Rev. A},
+  vol.~40, pp.~2712--2730, Sep 1989.
 
 \bibitem{ref:Doniach79}
 S.~Doniach, ``A thermodynamic model for the monoclinic (ripple) phase of
@@ -100,28 +100,27 @@ S.~Doniach, ``A thermodynamic model for the monoclinic (ripple) phase of
   vol.~70, no.~10, pp.~4587--4596, 1979.
 
 \bibitem{ref:Marder84}
-M.~Marder, H.~L. Frisch, J.~S. Langer, and H.~M. McConnell, ``Theory of the
-  intermediate rippled phase of phospholipid bilayers,'' {\em Proceedings of
-  the National Academy of Sciences}, vol.~81, no.~20, pp.~6559--6561, 1984.
+M.~Marder, H.~Frisch, J.~Langer, and H.~McConnell, ``Theory of the intermediate
+  rippled phase of phospholipid bilayers,'' {\em Proceedings of the National
+  Academy of Sciences}, vol.~81, no.~20, pp.~6559--6561, 1984.
 
 \bibitem{ref:Hawton86}
-M.~H. Hawton and W.~J. Keeler, ``{van der Waals} energy of lecithins in the
-  ripple phase,'' {\em Physical Review A}, vol.~33, no.~5, p.~3333, 1986.
+M.~Hawton and W.~Keeler, ``van der waals energy of lecithins in the ripple
+  phase,'' {\em Physical Review A}, vol.~33, no.~5, p.~3333, 1986.
 
 \bibitem{ref:Carlson87}
-J.~M. Carlson and J.~P. Sethna, ``Theory of the ripple phase in hydrated
-  phospholipid bilayers,'' {\em Physical Review A}, vol.~36, no.~7, p.~3359,
-  1987.
+J.~Carlson and J.~Sethna, ``Theory of the ripple phase in hydrated phospholipid
+  bilayers,'' {\em Physical Review A}, vol.~36, no.~7, p.~3359, 1987.
 
 \bibitem{ref:Goldstein88}
 R.~E. Goldstein and S.~Leibler, ``Model for lamellar phases of interacting
-  lipid membranes,'' {\em Physical Review Letters}, vol.~61, no.~19, p.~2213,
+  lipid membranes,'' {\em Physical review letters}, vol.~61, no.~19, p.~2213,
   1988.
 
 \bibitem{ref:McCullough90}
 W.~S. McCullough and H.~L. Scott, ``Statistical-mechanical theory of the ripple
-  phase of lipid bilayers,'' {\em Physical Review Letters}, vol.~65,
-  pp.~931--934, Aug 1990.
+  phase of lipid bilayers,'' {\em Phys. Rev. Lett.}, vol.~65, pp.~931--934, Aug
+  1990.
 
 \bibitem{ref:Honda91}
 K.~Honda and H.~Kimura, ``Theory on formation of the ripple phase in bilayer
@@ -129,28 +128,29 @@ K.~Honda and H.~Kimura, ``Theory on formation of the ripple phase in bilayer
   pp.~1212--1215, 1991.
 
 \bibitem{ref:Lubensky93}
-T.~C. Lubensky and F.~C. MacKintosh, ``Theory of “ripple” phases of lipid
-  bilayers,'' {\em Physical Review Letters}, vol.~71, no.~10, p.~1565, 1993.
+T.~Lubensky and F.~MacKintosh, ``Theory of “ripple” phases of lipid
+  bilayers,'' {\em Physical review letters}, vol.~71, no.~10, p.~1565, 1993.
 
 \bibitem{ref:Sengupta01}
 K.~Sengupta, V.~Raghunathan, and Y.~Hatwalne, ``Role of tilt order in the
-  asymmetric ripple phase of phospholipid bilayers,'' {\em Physical Review
-  Letters}, vol.~87, no.~5, pp.~055705\_1--055705\_4, 2001.
+  asymmetric ripple phase of phospholipid bilayers,'' {\em Physical review
+  letters}, vol.~87, no.~5, pp.~055705\_1--055705\_4, 2001.
 
 \bibitem{ref:Kamal11}
-M.~A. Kamal, A.~Pal, V.~A. Raghunathan, and M.~Rao, ``Theory of the asymmetric
-  ripple phase in achiral lipid membranes,'' {\em Europhysics Letters},
+M.~A. Kamal, A.~Pal, V.~Raghunathan, and M.~Rao, ``Theory of the asymmetric
+  ripple phase in achiral lipid membranes,'' {\em EPL (Europhysics Letters)},
   vol.~95, no.~4, p.~48004, 2011.
 
 \bibitem{ref:deVries05}
 A.~H. de~Vries, S.~Yefimov, A.~E. Mark, and S.~J. Marrink, ``Molecular
   structure of the lecithin ripple phase,'' {\em Proceedings of the National
-  Academy of Sciences}, vol.~102, no.~15, pp.~5392--5396, 2005.
+  Academy of Sciences of the United States of America}, vol.~102, no.~15,
+  pp.~5392--5396, 2005.
 
 \bibitem{ref:Lenz07}
 O.~Lenz and F.~Schmid, ``Structure of symmetric and asymmetric ``ripple''
-  phases in lipid bilayers,'' {\em Physical Review Letters}, vol.~98,
-  p.~058104, Jan 2007.
+  phases in lipid bilayers,'' {\em Phys. Rev. Lett.}, vol.~98, p.~058104, Jan
+  2007.
 
 \bibitem{ref:Scott84}
 H.~L. Scott, ``Monte carlo studies of a general model for lipid bilayer
@@ -199,14 +199,14 @@ J.~Katsaras, S.~Tristram-Nagle, Y.~Liu, R.~Headrick, E.~Fontes, P.~Mason, and
 
 \bibitem{ref:Sengupta03}
 K.~Sengupta, V.~A. Raghunathan, and J.~Katsaras, ``Structure of the ripple
-  phase of phospholipid multibilayers,'' {\em Physical Review E}, vol.~68,
+  phase of phospholipid multibilayers,'' {\em Phys. Rev. E}, vol.~68,
   p.~031710, Sep 2003.
 
 \bibitem{ref:Mason99}
-P.~C. Mason, B.~D. Gaulin, R.~M. Epand, G.~D. Wignall, and J.~S. Lin, ``Small
-  angle neutron scattering and calorimetric studies of large unilamellar
-  vesicles of the phospholipid dipalmitoylphosphatidylcholine,'' {\em Physical
-  Review E}, vol.~59, no.~3, p.~3361, 1999.
+P.~Mason, B.~Gaulin, R.~Epand, G.~Wignall, and J.~Lin, ``Small angle neutron
+  scattering and calorimetric studies of large unilamellar vesicles of the
+  phospholipid dipalmitoylphosphatidylcholine,'' {\em Physical Review E},
+  vol.~59, no.~3, p.~3361, 1999.
 
 \bibitem{ref:Parente84}
 R.~A. Parente and B.~R. Lentz, ``Phase behavior of large unilamellar vesicles
@@ -214,9 +214,9 @@ R.~A. Parente and B.~R. Lentz, ``Phase behavior of large unilamellar vesicles
   pp.~2353--2362, 1984.
 
 \bibitem{ref:Mcintosh80}
-T.~J. McIntosh, ``Differences in hydrocarbon chain tilt between hydrated
+T.~McIntosh, ``Differences in hydrocarbon chain tilt between hydrated
   phosphatidylethanolamine and phosphatidylcholine bilayers. a molecular
-  packing model,'' {\em Biophysical Journal}, vol.~29, no.~2, pp.~237--245,
+  packing model,'' {\em Biophysical journal}, vol.~29, no.~2, pp.~237--245,
   1980.
 
 \bibitem{ref:Nagle76}
@@ -237,8 +237,8 @@ R.~Wittebort, C.~Schmidt, and R.~Griffin, ``Solid-state carbon-13 nuclear
 
 \bibitem{ref:Schneider83}
 M.~B. Schneider, W.~K. Chan, and W.~W. Webb, ``Fast diffusion along defects and
-  corrugations in phospholipid {$P_{\beta'}$}, liquid crystals,'' {\em
-  Biophysical Journal}, vol.~43, no.~2, pp.~157--165, 1983.
+  corrugations in phospholipid p beta, liquid crystals,'' {\em Biophysical
+  journal}, vol.~43, no.~2, pp.~157--165, 1983.
 
 \bibitem{ref:Marsh80}
 D.~Marsh, ``Molecular motion in phospholipid bilayers in the gel phase: long
@@ -263,7 +263,7 @@ R.~Fischer, M.~Fotin-Mleczek, H.~Hufnagel, and R.~Brock, ``Break on through to
 
 \bibitem{Joliot04}
 A.~Joliot and A.~Prochiantz, ``Transduction peptides: from technology to
-  physiology,'' {\em Nature Cell Biology}, vol.~6, no.~3, 2004.
+  physiology,'' {\em Nat Cell Biol}, vol.~6, no.~3, 2004.
 
 \bibitem{Lindgren00}
 M.~Lindgren, M.~Hällbrink, A.~Prochiantz, and U.~Langel, ``Cell-penetrating
@@ -271,17 +271,17 @@ M.~Lindgren, M.~Hällbrink, A.~Prochiantz, and U.~Langel, ``Cell-penetrating
   -- 103, 2000.
 
 \bibitem{Frankel88}
-A.~D. Frankel and C.~O. Pabo, ``Cellular uptake of the {Tat} protein from human
+A.~D. Frankel and C.~O. Pabo, ``Cellular uptake of the tat protein from human
   immunodeficiency virus,'' {\em Cell}, vol.~55, no.~6, pp.~1189 -- 1193, 1988.
 
 \bibitem{Green88}
 M.~Green and P.~M. Loewenstein, ``Autonomous functional domains of chemically
-  synthesized human immunodeficiency virus {Tat} trans-activator protein,''
-  {\em Cell}, vol.~55, no.~6, pp.~1179 -- 1188, 1988.
+  synthesized human immunodeficiency virus tat trans-activator protein,'' {\em
+  Cell}, vol.~55, no.~6, pp.~1179 -- 1188, 1988.
 
 \bibitem{Vives97}
-E.~Vives, P.~Brodin, and B.~Lebleu, ``{HIV-1} {Tat} protein basic domain
-  rapidly translocates through the plasma membrane and accumulates in the cell
+E.~Vives, P.~Brodin, and B.~Lebleu, ``Hiv-1 tat protein basic domain rapidly
+  translocates through the plasma membrane and accumulates in the cell
   nucleus,'' {\em Journal of Biological Chemistry}, vol.~272, no.~25,
   pp.~16010--16017, 1997.
 
@@ -299,35 +299,34 @@ F.~Duchardt, M.~Fotin-Mleczek, H.~Schwarz, R.~Fischer, and R.~Brock, ``A
 \bibitem{Tunnemann06}
 G.~Tünnemann, R.~M. Martin, S.~Haupt, C.~Patsch, F.~Edenhofer, and M.~C.
   Cardoso, ``Cargo-dependent mode of uptake and bioavailability of
-  {Tat}-containing proteins and peptides in living cells,'' {\em The FASEB
+  tat-containing proteins and peptides in living cells,'' {\em The FASEB
   Journal}, vol.~20, no.~11, pp.~1775--1784, 2006.
 
 \bibitem{Ziegler05}
 A.~Ziegler, P.~Nervi, M.~Dürrenberger, and J.~Seelig, ``The cationic
-  cell-penetrating peptide {CPPTat} derived from the {HIV-1} protein {Tat} is
-  rapidly transported into living fibroblasts:  optical, biophysical, and
-  metabolic evidence†,'' {\em Biochemistry}, vol.~44, no.~1, pp.~138--148,
-  2005.
+  cell-penetrating peptide cpptat derived from the hiv-1 protein tat is rapidly
+  transported into living fibroblasts:  optical, biophysical, and metabolic
+  evidence†,'' {\em Biochemistry}, vol.~44, no.~1, pp.~138--148, 2005.
 \newblock PMID: 15628854.
 
 \bibitem{Wadia04}
-J.~S. Wadia, R.~V. Stan, and S.~F. Dowdy, ``Transducible {Tat-HA} fusogenic
-  peptide enhances escape of {Tat}-fusion proteins after lipid raft
+J.~S. Wadia, R.~V. Stan, and S.~F. Dowdy, ``Transducible tat-ha fusogenic
+  peptide enhances escape of tat-fusion proteins after lipid raft
   macropinocytosis,'' {\em Nature Medicine}, vol.~10, no.~3, pp.~310--315,
   2004.
 
 \bibitem{Kaplan05}
-I.~M. Kaplan, J.~S. Wadia, and S.~F. Dowdy, ``Cationic {Tat} peptide
-  transduction domain enters cells by macropinocytosis,'' {\em Journal of
-  Controlled Release}, vol.~102, no.~1, pp.~247--253, 2005.
+I.~M. Kaplan, J.~S. Wadia, and S.~F. Dowdy, ``Cationic tat peptide transduction
+  domain enters cells by macropinocytosis,'' {\em Journal of Controlled
+  Release}, vol.~102, no.~1, pp.~247--253, 2005.
 
 \bibitem{Mann91}
-D.~A. Mann and A.~D. Frankel, ``Endocytosis and targeting of exogenous {HIV-1}
-  {Tat} protein.,'' {\em The EMBO journal}, vol.~10, no.~7, p.~1733, 1991.
+D.~A. Mann and A.~D. Frankel, ``Endocytosis and targeting of exogenous hiv-1
+  tat protein.,'' {\em The EMBO journal}, vol.~10, no.~7, p.~1733, 1991.
 
 \bibitem{Richard05}
 J.~P. Richard, K.~Melikov, H.~Brooks, P.~Prevot, B.~Lebleu, and L.~V.
-  Chernomordik, ``Cellular uptake of unconjugated {Tat} peptide involves
+  Chernomordik, ``Cellular uptake of unconjugated tat peptide involves
   clathrin-dependent endocytosis and heparan sulfate receptors,'' {\em Journal
   of Biological Chemistry}, vol.~280, no.~15, pp.~15300--15306, 2005.
 
@@ -339,63 +338,63 @@ S.~W. Jones, R.~Christison, K.~Bundell, C.~J. Voyce, S.~Brockbank, P.~Newham,
 
 \bibitem{Vendeville04}
 A.~Vendeville, F.~Rayne, A.~Bonhoure, N.~Bettache, P.~Montcourrier, and
-  B.~Beaumelle, ``{HIV-1} {Tat} enters {T} cells using coated pits before
+  B.~Beaumelle, ``Hiv-1 tat enters t cells using coated pits before
   translocating from acidified endosomes and eliciting biological responses,''
-  {\em Molecular Biology of the Cell}, vol.~15, no.~5, pp.~2347--2360, 2004.
+  {\em Molecular biology of the cell}, vol.~15, no.~5, pp.~2347--2360, 2004.
 
 \bibitem{Foerg05}
 C.~Foerg, U.~Ziegler, J.~Fernandez-Carneado, E.~Giralt, R.~Rennert, A.~G.
   Beck-Sickinger, and H.~P. Merkle, ``Decoding the entry of two novel
-  cell-penetrating peptides in {HeLa} cells: lipid raft-mediated endocytosis
-  and endosomal escape,'' {\em Biochemistry}, vol.~44, no.~1, pp.~72--81, 2005.
+  cell-penetrating peptides in hela cells: lipid raft-mediated endocytosis and
+  endosomal escape,'' {\em Biochemistry}, vol.~44, no.~1, pp.~72--81, 2005.
 
 \bibitem{Fittipaldi05}
-A.~Fittipaldi and M.~Giacca, ``Transcellular protein transduction using the
-  {Tat} protein of {HIV-1},'' {\em Advanced Drug Delivery Reviews}, vol.~57,
-  no.~4, pp.~597--608, 2005.
+A.~Fittipaldi and M.~Giacca, ``Transcellular protein transduction using the tat
+  protein of hiv-1,'' {\em Advanced drug delivery reviews}, vol.~57, no.~4,
+  pp.~597--608, 2005.
 
 \bibitem{Liu00}
 Y.~Liu, M.~Jones, C.~M. Hingtgen, G.~Bu, N.~Laribee, R.~E. Tanzi, R.~D. Moir,
-  A.~Nath, and J.~J. He, ``Uptake of {HIV-1} {Tat} protein mediated by
+  A.~Nath, and J.~J. He, ``Uptake of {HIV-1} tat protein mediated by
   low-density lipoprotein receptor-related protein disrupts the neuronal
-  metabolic balance of the receptor ligands,'' {\em Nature Medicine}, vol.~6,
+  metabolic balance of the receptor ligands,'' {\em Nature medicine}, vol.~6,
   no.~12, pp.~1380--1387, 2000.
 
 \bibitem{Torchilin01}
-V.~P. Torchilin, R.~Rammohan, V.~Weissig, and T.~S. Levchenko, ``{Tat} peptide
-  on the surface of liposomes affords their efficient intracellular delivery
-  even at low temperature and in the presence of metabolic inhibitors,'' {\em
+V.~P. Torchilin, R.~Rammohan, V.~Weissig, and T.~S. Levchenko, ``Tat peptide on
+  the surface of liposomes affords their efficient intracellular delivery even
+  at low temperature and in the presence of metabolic inhibitors,'' {\em
   Proceedings of the National Academy of Sciences}, vol.~98, no.~15,
   pp.~8786--8791, 2001.
 
 \bibitem{Torchilin03}
 V.~P. Torchilin, T.~S. Levchenko, R.~Rammohan, N.~Volodina,
   B.~Papahadjopoulos-Sternberg, and G.~G. D'Souza, ``Cell transfection in vitro
-  and in vivo with nontoxic {Tat} peptide-liposome--{DNA} complexes,'' {\em
+  and in vivo with nontoxic tat peptide-liposome--dna complexes,'' {\em
   Proceedings of the National Academy of Sciences}, vol.~100, no.~4,
   pp.~1972--1977, 2003.
 
 \bibitem{Rudolph03}
 C.~Rudolph, C.~Plank, J.~Lausier, U.~Schillinger, R.~H. M{\"u}ller, and
-  J.~Rosenecker, ``Oligomers of the arginine-rich motif of the {HIV-1} {Tat}
-  protein are capable of transferring plasmid {DNA} into cells,'' {\em Journal
-  of Biological Chemistry}, vol.~278, no.~13, pp.~11411--11418, 2003.
+  J.~Rosenecker, ``Oligomers of the arginine-rich motif of the hiv-1 tat
+  protein are capable of transferring plasmid dna into cells,'' {\em Journal of
+  Biological Chemistry}, vol.~278, no.~13, pp.~11411--11418, 2003.
 
 \bibitem{Chauhan07}
 A.~Chauhan, A.~Tikoo, A.~K. Kapur, and M.~Singh, ``The taming of the cell
-  penetrating domain of the {HIV} {Tat}: myths and realities,'' {\em Journal of
+  penetrating domain of the hiv tat: myths and realities,'' {\em Journal of
   Controlled Release}, vol.~117, no.~2, pp.~148--162, 2007.
 
 \bibitem{Sabatier91}
 J.~Sabatier, E.~Vives, K.~Mabrouk, A.~Benjouad, H.~Rochat, A.~Duval, B.~Hue,
-  and E.~Bahraoui, ``Evidence for neurotoxic activity of {Tat} from human
+  and E.~Bahraoui, ``Evidence for neurotoxic activity of tat from human
   immunodeficiency virus type 1.,'' {\em Journal of virology}, vol.~65, no.~2,
   pp.~961--967, 1991.
 
 \bibitem{Mishra08}
-A.~Mishra, V.~D. Gordon, L.~H. Yang, R.~Coridan, and G.~C.~L. Wong, ``{HIV}
-  {Tat} forms pores in membranes by inducing saddle-splay curvature: Potential
-  role of bidentate hydrogen bonding,'' {\em Angewandte Chemie-International
+A.~Mishra, V.~D. Gordon, L.~H. Yang, R.~Coridan, and G.~C.~L. Wong, ``Hiv tat
+  forms pores in membranes by inducing saddle-splay curvature: Potential role
+  of bidentate hydrogen bonding,'' {\em Angewandte Chemie-International
   Edition}, vol.~47, no.~16, pp.~2986--2989, 2008.
 
 \bibitem{Yang10}
@@ -410,21 +409,21 @@ P.~E.~G. Thoren, D.~Persson, E.~K. Esbjorner, M.~Goksor, P.~Lincoln, and
   peptides,'' {\em Biochemistry}, vol.~43, no.~12, pp.~3471--3489, 2004.
 
 \bibitem{Kramer03}
-S.~Kr{\"a}mer and H.~Wunderli-Allenspach, ``No entry for {Tat} (44--57) into
+S.~Kr{\"a}mer and H.~Wunderli-Allenspach, ``No entry for {TAT} (44--57) into
   liposomes and intact mdck cells: novel approach to study membrane permeation
   of cell-penetrating peptides,'' {\em Biochimica et Biophysica Acta
   (BBA)-Biomembranes}, vol.~1609, no.~2, pp.~161--169, 2003.
 
 \bibitem{Ciobanasu10}
-C.~Ciobanasu, J.~P. Siebrasse, and U.~Kubitscheck, ``Cell-penetrating {HIV-1}
-  {Tat} peptides can generate pores in model membranes,'' {\em Biophysical
+C.~Ciobanasu, J.~P. Siebrasse, and U.~Kubitscheck, ``Cell-penetrating {HIV1
+  TAT} peptides can generate pores in model membranes,'' {\em Biophysical
   Journal}, vol.~99, no.~1, pp.~153--62, 2010.
 
 \bibitem{Gurnev13}
 P.~A. Gurnev, S.-T. Yang, K.~C. Melikov, L.~V. Chernomordik, and S.~M.
   Bezrukov, ``Cationic cell-penetrating peptide binds to planar lipid bilayers
   containing negatively charged lipids but does not induce conductive pores,''
-  {\em Biophysical Journal}, vol.~104, no.~9, pp.~1933--1939, 2013.
+  {\em Biophysical journal}, vol.~104, no.~9, pp.~1933--1939, 2013.
 
 \bibitem{Herce09}
 H.~D. Herce, A.~E. Garcia, J.~Litt, R.~S. Kane, P.~Martin, N.~Enrique,
@@ -436,23 +435,23 @@ H.~D. Herce, A.~E. Garcia, J.~Litt, R.~S. Kane, P.~Martin, N.~Enrique,
 \bibitem{Su10}
 Y.~C. Su, A.~J. Waring, P.~Ruchala, and M.~Hong, ``Membrane-bound dynamic
   structure of an arginine-rich cell-penetrating peptide, the protein
-  transduction domain of {HIV} {Tat}, from solid-state {NMR},'' {\em
-  Biochemistry}, vol.~49, no.~29, pp.~6009--6020, 2010.
+  transduction domain of hiv tat, from solid-state nmr,'' {\em Biochemistry},
+  vol.~49, no.~29, pp.~6009--6020, 2010.
 
 \bibitem{Shojania06}
-S.~Shojania and J.~D. O'Neil, ``{HIV-1} {Tat} is a natively unfolded protein -
-  the solution conformation and dynamics of reduced {HIV-1} {Tat}-(1-72) by
-  {NMR} spectroscopy,'' {\em Journal of Biological Chemistry}, vol.~281,
-  no.~13, pp.~8347--8356, 2006.
+S.~Shojania and J.~D. O'Neil, ``Hiv-1 tat is a natively unfolded protein - the
+  solution conformation and dynamics of reduced hiv-1 tat-(1-72) by nmr
+  spectroscopy,'' {\em Journal of Biological Chemistry}, vol.~281, no.~13,
+  pp.~8347--8356, 2006.
 
 \bibitem{Bayer95}
 P.~Bayer, M.~Kraft, A.~Ejchart, M.~Westendorp, R.~Frank, and P.~Rosch,
-  ``Structural studies of {HIV-1} {Tat} protein,'' {\em Journal of Molecular
+  ``Structural studies of {HIV-1 Tat} protein,'' {\em Journal of Molecular
   Biology}, vol.~247, no.~4, pp.~529--535, 1995.
 
 \bibitem{Yesylevskyy09}
 S.~Yesylevskyy, S.~J. Marrink, and A.~E. Mark, ``Alternative mechanisms for the
-  interaction of the cell-penetrating peptides penetratin and the {Tat} peptide
+  interaction of the cell-penetrating peptides penetratin and the {TAT} peptide
   with lipid bilayers,'' {\em Biophysical Journal}, vol.~97, no.~1, pp.~40--49,
   2009.
 
@@ -464,19 +463,19 @@ E.~D. Jarasch, C.~E. Reilly, P.~Comes, J.~Kartenbeck, and W.~W. Franke,
 
 \bibitem{Tristram-Nagle07_MMB}
 S.~A. Tristram-Nagle, ``Preparation of oriented, fully hydrated lipid samples
-  for structure determination using {X-ray} scattering,'' {\em Methods of
-  Molecular Biology}, vol.~400, pp.~63--75, 2007.
+  for structure determination using x-ray scattering,'' {\em Methods Mol Biol},
+  vol.~400, pp.~63--75, 2007.
 
 \bibitem{Kucerka05_BPJ}
 N.~Ku{\v{c}}erka, Y.~Liu, N.~Chu, H.~I. Petrache, S.~Tristram-Nagle, and J.~F.
   Nagle, ``Structure of fully hydrated fluid phase {DMPC} and {DLPC} lipid
   bilayers using {X-ray} scattering from oriented multilamellar arrays and from
-  unilamellar vesicles,'' {\em Biophysical Journal}, vol.~88, no.~4,
+  unilamellar vesicles,'' {\em Biophysical journal}, vol.~88, no.~4,
   pp.~2626--2637, 2005.
 
 \bibitem{Barna99}
 S.~Barna, M.~Tate, S.~Gruner, and E.~Eikenberry, ``Calibration procedures for
-  charge-coupled device {X-ray} detectors,'' {\em Review of Scientific
+  charge-coupled device x-ray detectors,'' {\em Review of Scientific
   Instruments}, vol.~70, no.~7, pp.~2927--2934, 1999.
 
 \bibitem{Lyatskaya01}
@@ -491,20 +490,20 @@ Y.~F. Liu and J.~F. Nagle, ``Diffuse scattering provides material parameters
   vol.~69, no.~4, pp.~040901--040904(R), 2004.
 
 \bibitem{Liu03}
-Y.~Liu, {\em New method to obtain strcuture of biomembranes using diffuse
-  {X-ray} scattering: application to fluid phase {DOPC} lipid bilayers}.
+Y.~Liu, {\em NEW METHOD TO OBTAIN STRUCTURE OF BIOMEMBRANES USING DIFFUSE
+  Х-RAY SCATTERING: APPLICATION TO FLUID PHASE DOPC LIPID BILAYERS}.
 \newblock PhD thesis, Carnegie Mellon University, 2003.
 
 \bibitem{Kucerka08}
 N.~Ku{\v{c}}erka, J.~F. Nagle, J.~N. Sachs, S.~E. Feller, J.~Pencer,
   A.~Jackson, and J.~Katsaras, ``Lipid bilayer structure determined by the
-  simultaneous analysis of neutron and {X-ray} scattering data,'' {\em
+  simultaneous analysis of neutron and x-ray scattering data,'' {\em
   Biophysical Journal}, vol.~95, no.~5, pp.~2356 -- 2367, 2008.
 
 \bibitem{Braun13}
 A.~R. Braun, J.~N. Sachs, and J.~F. Nagle, ``Comparing simulations of lipid
-  bilayers to scattering data: The gromos 43a1-s3 force field,'' {\em Journal
-  of Physical Chemistry B}, vol.~117, no.~17, pp.~5065--5072, 2013.
+  bilayers to scattering data: The gromos 43a1-s3 force field,'' {\em The
+  Journal of Physical Chemistry B}, vol.~117, no.~17, pp.~5065--5072, 2013.
 
 \bibitem{minuit}
 \url{http://lcgapp.cern.ch/project/cls/work-packages/mathlibs/minuit/index.html}.
@@ -516,13 +515,13 @@ B.~Hess, C.~Kutzner, D.~van~der Spoel, and E.~Lindahl, ``Gromacs 4: Algorithms
   pp.~435--447, 2008.
 
 \bibitem{Jambeck12_JPCB}
-J.~P.~M. Jambeck and A.~P. Lyubartsev, ``Derivation and systematic validation
-  of a refined all-atom force field for phosphatidylcholine lipids,'' {\em
+J.~P.~M. Jämbeck and A.~P. Lyubartsev, ``Derivation and systematic validation
+  of a refined all-atom force field for phosphatidylcholine lipids,'' {\em The
   Journal of Physical Chemistry B}, vol.~116, no.~10, pp.~3164--3179, 2012.
 
 \bibitem{Jambeck12_JCTC}
-J.~P.~M. Jambeck and A.~P. Lyubartsev, ``An extension and further validation of
-  an all-atomistic force field for biological membranes,'' {\em Journal of
+J.~P.~M. Jämbeck and A.~P. Lyubartsev, ``An extension and further validation
+  of an all-atomistic force field for biological membranes,'' {\em Journal of
   Chemical Theory and Computation}, vol.~8, no.~8, pp.~2938--2948, 2012.
 
 \bibitem{Hornak06}
@@ -543,22 +542,22 @@ N.~Ku{\v{c}}erka, J.~Katsaras, and J.~Nagle, ``Comparing membrane simulations
 
 \bibitem{Miyamoto92}
 S.~Miyamoto and P.~A. Kollman, ``Settle: an analytical version of the shake and
-  rattle algorithm for rigid water models,'' {\em Journal of Computational
-  Chemistry}, vol.~13, no.~8, pp.~952--962, 1992.
+  rattle algorithm for rigid water models,'' {\em Journal of computational
+  chemistry}, vol.~13, no.~8, pp.~952--962, 1992.
 
 \bibitem{Hess97}
 B.~Hess, H.~Bekker, H.~J.~C. Berendsen, and J.~G. E.~M. Fraaije, ``Lincs: A
-  linear constraint solver for molecular simulations,'' {\em Journal of
-  Computational Chemistry}, vol.~18, no.~12, pp.~1463--1472, 1997.
+  linear constraint solver for molecular simulations,'' {\em J Comput Chem},
+  vol.~18, no.~12, pp.~1463--1472, 1997.
 
 \bibitem{Darden93}
-T.~Darden, D.~York, and L.~Pedersen, ``Particle mesh {Ewald}: An n⋅ log (n)
-  method for {Ewald} sums in large systems,'' {\em The Journal of Chemical
-  Physics}, vol.~98, no.~12, pp.~10089--10092, 1993.
+T.~Darden, D.~York, and L.~Pedersen, ``Particle mesh ewald: An n⋅ log (n)
+  method for ewald sums in large systems,'' {\em The Journal of chemical
+  physics}, vol.~98, no.~12, pp.~10089--10092, 1993.
 
 \bibitem{Bussi07}
 G.~Bussi, D.~Donadio, and M.~Parrinello, ``Canonical sampling through velocity
-  rescaling,'' {\em The Journal of Chemical Physics}, vol.~126, no.~1,
+  rescaling,'' {\em The Journal of chemical physics}, vol.~126, no.~1,
   p.~014101, 2007.
 
 \bibitem{Parrinello81}
@@ -568,13 +567,13 @@ M.~Parrinello and A.~Rahman, ``Polymorphic transitions in single crystals: A
 
 \bibitem{Kucerka06}
 N.~Ku{\v{c}}erka, S.~Tristram-Nagle, and J.~F. Nagle, ``Closer look at
-  structure of fully hydrated fluid phase {DPPC} bilayers,'' {\em Biophysical
-  Journal}, vol.~90, no.~11, pp.~L83--L85, 2006.
+  structure of fully hydrated fluid phase dppc bilayers,'' {\em Biophysical
+  journal}, vol.~90, no.~11, pp.~L83--L85, 2006.
 
 \bibitem{Kucerka05_JMB}
 N.~Ku{\v{c}}erka, S.~Tristram-Nagle, and J.~F. Nagle, ``Structure of fully
   hydrated fluid phase lipid bilayers with monounsaturated chains,'' {\em The
-  Journal of Membrane Biology}, vol.~208, no.~3, pp.~193--202, 2005.
+  Journal of membrane biology}, vol.~208, no.~3, pp.~193--202, 2005.
 
 \bibitem{Tristram-Nagle86}
 S.~Tristram-Nagle, C.-P. Yang, and J.~F. Nagle, ``Thermodynamic studies of
@@ -590,7 +589,7 @@ A.~C.~V. Johansson and E.~Lindahl, ``The role of lipid composition for
   Chemical Physics}, vol.~130, no.~18, 2009.
 
 \bibitem{Tristram-Nagle07_BPJ}
-S.~Tristram-Nagle and J.~F. Nagle, ``{HIV-1} fusion peptide decreases bending
+S.~Tristram-Nagle and J.~F. Nagle, ``Hiv-1 fusion peptide decreases bending
   energy and promotes curved fusion intermediates,'' {\em Biophysical Journal},
   vol.~93, no.~6, pp.~2048--2055, 2007.
 
@@ -653,15 +652,14 @@ W.~Kabsch and C.~Sander, ``Dictionary of protein secondary structure: pattern
 D.~Choi, J.~H. Moon, H.~Kim, B.~J. Sung, M.~W. Kim, G.~Y. Tae, S.~K. Satija,
   B.~Akgun, C.~J. Yu, H.~W. Lee, D.~R. Lee, J.~M. Henderson, J.~W. Kwong, K.~L.
   Lam, K.~Y.~C. Lee, and K.~Shin, ``Insertion mechanism of cell-penetrating
-  peptides into supported phospholipid membranes revealed by {X-ray} and
-  neutron reflection,'' {\em Soft Matter}, vol.~8, no.~32, pp.~8294--8297,
-  2012.
+  peptides into supported phospholipid membranes revealed by x-ray and neutron
+  reflection,'' {\em Soft Matter}, vol.~8, no.~32, pp.~8294--8297, 2012.
 
 \bibitem{Ziegler03}
 A.~Ziegler, X.~L. Blatter, A.~Seelig, and J.~Seelig, ``Protein transduction
-  domains of {HIV-1} and {SIV Tat} interact with charged lipid vesicles.
-  binding mechanism and thermodynamic analysis,'' {\em Biochemistry}, vol.~42,
-  no.~30, pp.~9185--94, 2003.
+  domains of hiv-1 and siv tat interact with charged lipid vesicles. binding
+  mechanism and thermodynamic analysis,'' {\em Biochemistry}, vol.~42, no.~30,
+  pp.~9185--94, 2003.
 
 \bibitem{Huang13}
 K.~Huang and A.~E. Garcia, ``Free energy of translocating an arginine-rich
@@ -681,9 +679,8 @@ M.~J. Janiak, D.~M. Small, and G.~G. Shipley, ``Temperature and compositional
 
 \bibitem{ref:Yao91}
 H.~Yao, S.~Matuoka, B.~Tenchov, and I.~Hatta, ``Metastable ripple phase of
-  fully hydrated dipalmitoylphosphatidylcholine as studied by small angle
-  {X-ray} scattering,'' {\em Biophysical Journal}, vol.~59, no.~1,
-  pp.~252--255, 1991.
+  fully hydrated dipalmitoylphosphatidylcholine as studied by small angle x-ray
+  scattering,'' {\em Biophysical journal}, vol.~59, no.~1, pp.~252--255, 1991.
 
 \bibitem{ref:Mortensen88}
 K.~Mortensen, W.~Pfeiffer, E.~Sackmann, and W.~Knoll, ``Structural properties
@@ -699,7 +696,7 @@ J.~P. Bradshaw, M.~S. Edenborough, P.~J. Sizer, and A.~Watts, ``Observation of
 
 \bibitem{ref:Woodward96}
 J.~Woodward~IV and J.~Zasadzinski, ``Amplitude, wave form, and temperature
-  dependence of bilayer ripples in the {$P_{\beta'}$} phase,'' {\em Physical
+  dependence of bilayer ripples in the p $\beta$′ phase,'' {\em Physical
   Review E}, vol.~53, no.~4, p.~R3044, 1996.
 
 \bibitem{ref:Zasadzinski88}
@@ -714,22 +711,22 @@ L.~Li and J.-X. Cheng, ``Coexisting stripe-and patch-shaped domains in giant
 
 \bibitem{ref:Sengupta00}
 K.~Sengupta, V.~Raghunathan, and J.~Katsaras, ``Novel structural features of
-  the ripple phase of phospholipids,'' {\em Europhysics Letters}, vol.~49,
-  no.~6, p.~722, 2000.
+  the ripple phase of phospholipids,'' {\em EPL (Europhysics Letters)},
+  vol.~49, no.~6, p.~722, 2000.
 
 \bibitem{ref:Hentschel91}
 M.~P. Hentschel and F.~Rustichelli, ``Structure of the ripple phase
-  {$P_{\beta'}$} in hydrated phosphatidylcholine multimembranes,'' {\em
-  Physical Review Letters}, vol.~66, pp.~903--906, Feb 1991.
+  {P$_\beta'$} in hydrated phosphatidylcholine multimembranes,'' {\em Phys.
+  Rev. Lett.}, vol.~66, pp.~903--906, Feb 1991.
 
 \bibitem{ref:Chen95}
-C.~M. Chen, T.~C. Lubensky, and F.~C. MacKintosh, ``Phase transitions and
-  modulated phases in lipid bilayers,'' {\em Physical Review E}, vol.~51,
-  no.~1, p.~504, 1995.
+C.-M. Chen, T.~Lubensky, and F.~MacKintosh, ``Phase transitions and modulated
+  phases in lipid bilayers,'' {\em Physical Review E}, vol.~51, no.~1, p.~504,
+  1995.
 
 \bibitem{ref:Katsaras95}
 J.~Katsaras and V.~A. Raghunathan, ``Molecular chirality and the “ripple”
-  phase of phosphatidylcholine multibilayers,'' {\em Physical Review Letters},
+  phase of phosphatidylcholine multibilayers,'' {\em Phys. Rev. Lett.},
   vol.~74, pp.~2022--2025, Mar 1995.
 
 \bibitem{ref:Riske09}
@@ -747,22 +744,22 @@ K.~Sengupta, V.~Raghunathan, and J.~Katsaras, ``Structure of the ripple phase
 \url{http://henke.lbl.gov/optical\_constants}.
 
 \bibitem{ref:Warren69}
-B.~E. Warren, {\em {X-ray} Diffraction}.
+B.~E. Warren, {\em X-ray Diffraction}.
 \newblock Courier Dover Publications, 1969.
 
 \bibitem{ref:Guler09}
 S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
   S.~Tristram-Nagle, ``Effects of ether vs. ester linkage on lipid bilayer
-  structure and water permeability,'' {\em Chemistry and Physics of Lipids},
+  structure and water permeability,'' {\em Chemistry and physics of lipids},
   vol.~160, no.~1, pp.~33--44, 2009.
 
 \bibitem{ref:lmfit}
 \url{http://cars9.uchicago.edu/software/python/lmfit/}.
 
 \bibitem{ref:Wiener89}
-M.~C. Wiener, R.~M. Suter, and J.~F. Nagle, ``Structure of the fully hydrated
-  gel phase of dipalmitoylphosphatidylcholine,'' {\em Biophysical Journal},
-  vol.~55, no.~2, pp.~315 -- 325, 1989.
+M.~Wiener, R.~Suter, and J.~Nagle, ``Structure of the fully hydrated gel phase
+  of dipalmitoylphosphatidylcholine,'' {\em Biophysical Journal}, vol.~55,
+  no.~2, pp.~315 -- 325, 1989.
 
 \bibitem{ref:Worthington73}
 C.~Worthington, G.~King, and T.~McIntosh, ``Direct structure determination of
@@ -770,14 +767,14 @@ C.~Worthington, G.~King, and T.~McIntosh, ``Direct structure determination of
   Biophysical Journal}, vol.~13, no.~5, pp.~480 -- 494, 1973.
 
 \bibitem{ref:Pabst04}
-G.~Pabst, H.~Amenitsch, D.~P. Kharakoz, P.~Laggner, and M.~Rappolt, ``Structure
+G.~Pabst, H.~Amenitsch, D.~Kharakoz, P.~Laggner, and M.~Rappolt, ``Structure
   and fluctuations of phosphatidylcholines in the vicinity of the main phase
   transition,'' {\em Physical Review E}, vol.~70, no.~2, p.~021908, 2004.
 
 \bibitem{ref:Mills08}
 T.~T. Mills, G.~E. Toombes, S.~Tristram-Nagle, D.-M. Smilgies, G.~W. Feigenson,
   and J.~F. Nagle, ``Order parameters and areas in fluid-phase oriented lipid
-  membranes using wide angle {X-ray} scattering,'' {\em Biophysical Journal},
+  membranes using wide angle x-ray scattering,'' {\em Biophysical journal},
   vol.~95, no.~2, pp.~669--681, 2008.
 
 \bibitem{ref:Vineyard82}
@@ -786,24 +783,24 @@ G.~H. Vineyard, ``Grazing-incidence diffraction and the distorted-wave
   no.~8, p.~4146, 1982.
 
 \bibitem{ref:Miller08}
-C.~E. Miller, J.~Majewski, E.~B. Watkins, D.~J. Mulder, T.~Gog, and T.~L. Kuhl,
-  ``Probing the local order of single phospholipid membranes using grazing
-  incidence {X-ray} diffraction,'' {\em Physical Review Letters}, vol.~100,
-  no.~5, p.~058103, 2008.
+C.~Miller, J.~Majewski, E.~Watkins, D.~Mulder, T.~Gog, and T.~Kuhl, ``Probing
+  the local order of single phospholipid membranes using grazing incidence
+  x-ray diffraction,'' {\em Physical review letters}, vol.~100, no.~5,
+  p.~058103, 2008.
 
 \bibitem{ref:Akabori14}
 K.~Akabori and J.~F. Nagle, ``Comparing lipid membranes in different
   environments,'' {\em ACS Nano}, vol.~8, no.~4, pp.~3123--3127, 2014.
 
 \bibitem{ref:Sun94}
-W.~J. Sun, R.~M. Suter, M.~A. Knewtson, C.~R. Worthington, S.~Tristram-Nagle,
+W.-J. Sun, R.~M. Suter, M.~A. Knewtson, C.~R. Worthington, S.~Tristram-Nagle,
   R.~Zhang, and J.~F. Nagle, ``Order and disorder in fully hydrated unoriented
-  bilayers of gel-phase dipalmitoylphosphatidylcholine,'' {\em Physical Review
-  E}, vol.~49, pp.~4665--4676, May 1994.
+  bilayers of gel-phase dipalmitoylphosphatidylcholine,'' {\em Phys. Rev. E},
+  vol.~49, pp.~4665--4676, May 1994.
 
 \bibitem{ref:Zhang95}
-R.~Zhang, W.~J. Sun, S.~Tristram-Nagle, R.~L. Headrick, R.~M. Suter, and J.~F.
-  Nagle, ``Critical fluctuations in membranes,'' {\em Physical Review Letters},
+R.~Zhang, W.~Sun, S.~Tristram-Nagle, R.~Headrick, R.~M. Suter, and J.~F. Nagle,
+  ``Critical fluctuations in membranes,'' {\em Physical review letters},
   vol.~74, no.~14, p.~2832, 1995.
 
 \bibitem{ref:Trauble71}
@@ -812,8 +809,8 @@ H.~Träuble and D.~H. Haynes, ``The volume change in lipid bilayer lamellae at
   Physics of Lipids}, vol.~7, no.~4, pp.~324 -- 335, 1971.
 
 \bibitem{ref:Nagle80}
-J.~F. Nagle, ``Theory of the main lipid bilayer phase-transition,'' {\em Annual
-  Review of Physical Chemistry}, vol.~{31}, pp.~{157--195}, {1980}.
+J.~F. Nagle, ``Theory of the main lipid bilayer phase transition,'' {\em Annual
+  Review of Physical Chemistry}, vol.~31, no.~1, pp.~157--196, 1980.
 
 \bibitem{ref:Watkins14}
 E.~B. Watkins, C.~E. Miller, W.-P. Liao, and T.~L. Kuhl, ``Equilibrium or
@@ -822,14 +819,15 @@ E.~B. Watkins, C.~E. Miller, W.-P. Liao, and T.~L. Kuhl, ``Equilibrium or
   2014.
 
 \bibitem{Rodriguez-Navarro07}
-A.~B. Rodriguez-Navarro, ``{Registering pole figures using an {X-ray}
+A.~B. Rodriguez-Navarro, ``{Registering pole figures using an X-ray
   single-crystal diffractometer equipped with an area detector},'' {\em Journal
   of Applied Crystallography}, vol.~40, pp.~631--634, Jun 2007.
 
 \bibitem{Baker10}
 J.~L. Baker, L.~H. Jimison, S.~Mannsfeld, S.~Volkman, S.~Yin, V.~Subramanian,
   A.~Salleo, A.~P. Alivisatos, and M.~F. Toney, ``Quantification of thin film
-  crystallographic orientation using {X-ray} diffraction with an area
-  detector,'' {\em Langmuir}, vol.~26, no.~11, pp.~9146--9151, 2010.
+  crystallographic orientation using x-ray diffraction with an area detector,''
+  {\em Langmuir}, vol.~26, no.~11, pp.~9146--9151, 2010.
+\newblock PMID: 20361783.
 
 \end{thebibliography}

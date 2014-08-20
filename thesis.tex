@@ -4,7 +4,7 @@
 \input{newcommand_Tat}
 \input{newcommand_ripple}          
 
-%\includeonly{chap_03}
+%\includeonly{chap_02}
 
 \topmargin -0.3in
 \oddsidemargin 0.5in
@@ -24,6 +24,8 @@
 \setcounter{topnumber}{9}
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{9}
+
+\renewcommand{\glsnamefont}[1]{\mdseries #1}
 % 
 % ====================================================================
 %     Some of the things we need for the title page
@@ -61,12 +63,22 @@ Structure determination of HIV-1 Tat/fluid phase membranes
 and DMPC ripple phase using X-ray scattering
 }}
 \date{\today}
-\makeglossaries
+
+
+\renewcommand*{\glspostdescription}{}
+\newglossarystyle{mystyle}{%
+  \glossarystyle{list}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \item[\glsentryitem{##1}\glstarget{##1}{##2}]%
+       \hspace{1cm}##3\glspostdescription\space ##5}%
+}
+%\makeglossaries
+\makenoidxglossaries
+\input{glossary}
+\glsaddall
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document} 
-
-\input{glossary}
 
 %\thispagestyle{empty}
 
@@ -85,7 +97,7 @@ and DMPC ripple phase using X-ray scattering
 
 \pagenumbering{roman}
 
-%\include{acknowledgments}
+\include{acknowledgments}
 
 \tableofcontents 
 
@@ -93,7 +105,8 @@ and DMPC ripple phase using X-ray scattering
 
 \listoffigures
 
-\printglossaries
+%\printglossary[sort=def,style=mystyle,nonumberlist]
+\printnoidxglossary[sort=def,style=mystyle]
 
 \clearpage 
 
