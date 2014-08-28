@@ -131,7 +131,7 @@ their findings, the authors suggested that
 Tat translocation occurs via micropinocytosis \cite{Yesylevskyy09}. 
 
 In this thesis, I combined experimental low-angle X-ray scattering (\gls{LAXS}) 
-data with MD simulations to obtain the structure of fully hydrated, oriented 
+data with MD simulations from our collaborators to obtain the structure of fully hydrated, oriented 
 lipid bilayers with Tat added at several mole ratios. The lipid systems 
 were DOPC, DOPC:DOPE (3:1 mole ratio), DOPC:DOPE (1:1), DOPC:DOPS (3:1), and a 
 mimic of the nuclear membrane (POPC:POPE:POPS:SoyPI:Chol, 69:15:2:4:11 (mole ratio)). 
@@ -174,7 +174,7 @@ hours directly before hydrating in the X-ray hydration chamber
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Volume Measurements}\label{sec:volume_method}
-Multilamellar vesicles (MLVs) were prepared by mixing dried lipid mixtures with 
+Multilamellar vesicles (MLVs) were prepared by mixing dried lipid and Tat mixtures with 
 MilliQ water to a final concentration of 2-5 wt\% in nalgene vials and cycling 
 three times between 20 \textcelsius\ and 60 \textcelsius\ for ten minutes at 
 each temperature with vortexing. Pure Tat was dissolved in water at 0.4 wt\%.
@@ -225,8 +225,9 @@ samples.
 \end{table}
 
 The Tat volume $\VTat$ was calculated from the measured average density of a 
-Tat-water solution. Assuming that Tat
-in water does not change the volume of water molecules, the density
+Tat-water solution. 
+The partial specific volume of water in a system with excess water is the same 
+as the volume of bulk water. Then the density
 of a Tat-water solution is equal to the mass of a Tat-water solution divided
 by the sum of the volumes of water and Tat, 
 \begin{equation}
@@ -387,12 +388,33 @@ numerical computation, are found in Liu's thesis
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modeling the Bilayer Structure}\label{sec:SDP_method}
-In the case of X-rays, the bilayer features with the most contrast are the 
-electron-dense headgroups, providing the head-head spacing $\DHH$, %\gls{DHH},
-and the electron sparse terminal methyl groups at the bilayer center.
-Modeling of the bilayer structure was done similarly to the SDP model \cite{Kucerka08}.
-We used the SDP software developed by Dr. Norbert Ku\v{c}erka \cite{Kucerka08}. 
+The simplest way to represent the results of X-ray data in real space is to 
+Fourier transform the $F(q_z)$ form factors to obtain electron density profiles 
+$\rho(z)$. However, the $\rho(z)$ so obtained are on an arbitrary scale.  
+Furthermore, no information is obtained regarding the location of component 
+groups of the lipid or the location of added peptides.  
+Finally, Fourier reconstruction requires knowing the phase factors of individual 
+reflections; this latter concern is alleviated when diffuse scattering is 
+obtained as the zeros in $I(q_z)$ locate where the phase factors change sign.  
+Modeling uses the intensities, not the phase factors, obtains absolute electron densities, and 
+estimates where the different components of the system are located.  
+Early so-called strip models used constant $rho(z)$ in different $z$ regions
+\cite{King86}.  
+This has been improved by using error functions to smear the artificially sharp 
+edges of the strip model \cite{Heinrich14,Shekhar11}. 
+When the width of two error function interfaces are wide compared to the distances 
+between the edges, the profile becomes a Gaussian.  
+Models consisting of sums of Gaussians have been used \cite{Mitsui78}.  
+A hybrid model used positive Gaussians for the headgroup and a negative Gaussian 
+for the terminal methyl region superimposed on a modulated baseline for the water 
+and the hydrocarbon \cite{ref:Wiener89}, which was later replaced by 
+error functions for the hydrocarbons and for water \cite{Klauda06}.  
+This lab now uses the SDP method which imposes a volumetric constraint to account 
+for the water profile \cite{Kucerka08}.  
 
+The SDP method is applicable to joint fitting of neutron and X-ray scattering data 
+when a particular parsing of the component groups is employed.  
+For X-ray scattering data alone, a different parsing is more appropriate.  
 The parsing of DOPC into molecular components is shown in
 Fig.~\ref{fig:dopc_schematic}. The phosphate/choline (PC) and 
 carbonyl/glycerol (CG) components together make up the lipid headgroup
@@ -484,7 +506,7 @@ for THG and
 for THC. 
 
 Because X-rays measure the contrast between the bilayer and surrounding solvent, 
-water, the experimental form factor is compared to the water subtracted model
+the experimental form factor is compared to the water subtracted model
 form factor,
 \begin{equation}
   F(q_z) = 2\int_0^{\frac{D}{2}} \dz \pars{
@@ -763,7 +785,7 @@ Essentially, for each snapshot, the positional distribution of each atom
 averaged over the $xy$ plane is calculated. Then, the distribution is
 averaged over snapshots. The product of this distribution and the average
 electron density gives the electron density profile of the atom. The sum 
-over all the atoms provides the total electron density profile. This total
+over all the electrons provides the total electron density profile. This total
 electron density profile minus the average electron density of water
 is Fourier transformed to provide the X-ray form factor.
 \begin{equation}
@@ -797,8 +819,8 @@ These corrected $\chi^2$ values are reported in this chapter.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Local Thinning of Membranes}\label{sec:local_thinning}
 The SIMtoEXP program gives the average quantities for each leaflet. 
-While our X-ray data are sensitive to the average bilayer electron density,
-local information concerning Tat-bilayer interactions can be obtained from MD simulations.
+Our X-ray data are only sensitive to the average bilayer electron density;
+in contrast, local information concerning Tat-bilayer interactions can be obtained from MD simulations.
 In this section, we discuss a method to extract a local membrane thickness
 around the Tat peptides from the MD simulation trajectories. 
 
@@ -1070,11 +1092,11 @@ Sec.~\ref{sec:SDP_results}.
 \newpage
 \subsection{Volume}\label{sec:volume_results}
 Experimental and simulated volumes are given in Table~\ref{tab:volumes}. The simulated volume was
-obtained using the volume app in the SIMtoEXP program. The experimental Tat volume was
+obtained using the volume app (REF. for Petrache 97) in the SIMtoEXP program \cite{Kucerka10}. The experimental Tat volume was
 calculated from the measured density assuming that the lipid volume was the same as with no
 Tat. In general, there may be an interaction volume between the peptide and the lipid membrane
 as previously reported for bacteriorhodopsin \cite{Tristram-Nagle86}. As lipid was present in excess to Tat, the
-partial molecular volume of the lipid should be the same as with no Tat, so this way of
+partial molecular volume of the lipid is the same as with no Tat, so this way of
 calculating includes all the interaction volume in $\VTat$. Comparison of $\VTat$ in water with the
 result for 5:1 Lipid:Tat suggests that the interaction volume may be negative, consistent with a
 net attractive interaction with lipid. Understandably, values of $\VTat$ were unreliable for small
@@ -1899,7 +1921,7 @@ using $\zphos = \Dphos - \langle\Dphos^0\rangle/2$, shown in the $\zphos$ column
 in Table~\ref{tab:local_thickness}. 
 The $\zphos$ values are smaller than $\Dphos /2$
 because it is assumed that lipids in the other leaflet are unperturbed,
-having thickness = $\langle\Dphos^0\rangle$.
+having thickness = $\langle\Dphos^0\rangle/2$.
 The calculation of $\zphos$ assumes that Tat in different leaflets do not
 overlap in the plane, which might not be reasonable at the higher concentration.
 Therefore, smaller values of $\zphos$ at higher Tat concentration

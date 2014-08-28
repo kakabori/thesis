@@ -1,21 +1,43 @@
 \begin{abstract}
-This thesis has two focuses.
-The first part focuses on the structure of HIV-1 Tat perturbed membranes
-composed of neutral lipids dioleoylphosphatidylcholine.
+This thesis employs X-ray scattering to study the structure of two different stacked
+lipid membrane systems.
+The first part reports the effect on lipid bilayers of the Tat peptide
+Y$_{47}$GRKKRRQRRR$_{57}$ from the HIV-1 virus transactivator of translation (Tat) protein.
+Synergistic use of low angle X-ray scattering (LAXS) and atomistic molecular dynamics (MD)
+simulations indicated Tat peptide binding to neutral dioleoylphosphatidylcholine (DOPC)
+headgroups. This binding induced the nearby lipid phosphate groups to move 3 \AA\
+closer to the bilayer center. Many of the Tat arginines were as close to the bilayer 
+center as the locally thinned lipid phosphate 
+groups. Analysis of LAXS from DOPC, DOPC/dioleoylphosphatidylethanolamine (DOPE),
+DOPC/dioleoylphosphatidylserine (DOPS), and a mimic of the nuclear membrane
+indicated that the Tat peptide decreased the bilayer bending modulus $K_c$
+and increased the area per lipid, possibly facilitating Tat membrane translocation.
+Although a mechanism for translocation remains elusive, this study suggests that
+Tat translocates from the headgroup region.
 
-The second part focuses on the structure of the asymmetric ripple phase formed
-by dimyristoylphosphatidylcholine lipids. Our high resolution electron density 
-profile in the major arm obtained via the low angle X-ray scattering (LAXS) analysis
-agreed well with that of the gel $L_{\beta'}$ phase, showing that the chains 
-in the major arm are gel-like. The interpretion was further supported by 
-our wide angle X-ray scattering (WAXS) analysis with the thin rod model developed
-for the ripple major arm chains, which suggested that the chains were in the 
-$L_{\beta F}$ phase.
-The LAXS analysis also showed clear distinction between the major and minor arm electron
-density profiles, supporting the coexistence of different molecular organizations
-in the ripple phase. The minor arm electron density profile qualitatively
-agreed with the interdigitated chains proposed by a MD simulation. However, the 
-WAXS data were inconsistent with the proposed chain packing, but consistent 
-with fluid-like chains.
- 
+The second study presents the structure of the asymmetric ripple phase formed
+by dimyristoylphosphatidylcholine. 
+We determined the most detailed ripple phase structure by combining synchrotron 
+LAXS and wide angle X-ray scattering (WAXS) from highly aligned multilamellar samples.
+We derived three intensity corrections to calculate the X-ray form factors from 
+the 52 measured reflections.
+The LAXS analysis provided a high resolution two-dimensional electron density map.
+The ripple major arm was demonstrated to be consistent with the gel phase, 
+and the major and minor arm structures were clearly different, supporting the 
+coexistence of different molecular organizations.
+The minor arm electron density profile was qualitatively consistent
+with interdigitated chain packing previously proposed by MD simulations.
+Analysis of high resolution near grazing incidence WAXS showed that
+major arm hydrocarbon chains were tilted parallel to the ripple 
+plane by 18\textdegree\ with respect to the bilayer local normal, 
+toward the next nearest neighbor similarly to the gel $L_{\beta F}$ 
+rather than LbetaI phase.
+By measuring the Bragg rod lengths in transmission WAXS, we determined that 
+major arm chains in opposing leaflets were coupled.
+The LAXS and WAXS results together indicated that chains in the major arm
+were shorter by 1.3 \AA\ compared to the $L_{\beta'}$ phase, suggesting a
+gouche-trans-gouche kink in the ripple major arm.
+In contrast to the LAXS analysis, the measured nGIWAXS was consistent with 
+disordered chains in the minor arm similarly to the fluid $L_\alpha$ phase.
+
 \end{abstract}

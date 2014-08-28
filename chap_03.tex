@@ -45,17 +45,17 @@ in DMPC \cite{ref:Koynova96,ref:Katsaras00}.
 
 The equilibrium structure of the ripple phase in multilamellar samples has been 
 extensively studied by
-X-ray diffraction \cite{ref:Janiak76,ref:Janiak79,ref:Tardieu73,ref:Wack89,ref:Yao91,ref:Sun96,ref:Cunningham98},
+X-ray diffraction \cite{ref:Janiak76,ref:Janiak79,ref:Tardieu73,ref:Wack89,ref:Yao91,ref:Sun96,ref:Cunningham98,
+ref:Sengupta},
 neutron diffraction \cite{ref:Mortensen88,ref:Bradshaw89}, 
 freeze fracture electron microscopy \cite{ref:Woodward96,ref:Copeland80,ref:Ruppel83},
 and freeze fracture scanning tunneling microscopy \cite{ref:Zasadzinski88} techniques.
 In the scanning tunneling microscopy experiment \cite{ref:Zasadzinski88}, 
 the three-dimensional contours of the ripple phase $P_{\beta'}$ of
-DMPC were imaged, and $\lambda_r$ = 130 \AA\ and $A$ = 45 \AA\ were reported.
+DMPC were imaged.
 
 While many studies have used multilamellar samples, the ripple phase has been reported
-to also exist in unilamellar vesicles (ULVs) \cite{ref:Mason99,ref:Parente84},
-large ULVs,
+to also exist in large unilamellar vesicles (ULVs) \cite{ref:Mason99,ref:Parente84}
 %{\color{red}calorimetric study by Biltonen and others},
 and giant unilamellar vesicles (GUVs) \cite{ref:Li06}. 
 In a GUV composed of a mixture of DPPC and 
@@ -121,7 +121,7 @@ such as $A$ and $\xM$ as a function of hydration.
 %It is not clear whether the structure of these ripple formation top layers
 %is the same as that in a bulk sample such as MLVs and oriented samples.}
 
-While the structure of the asymmetric ripple has been well documented,
+While the coarse grained electron density map of the asymmetric ripple has been well documented,
 the molecular organization within the bilayers has been elusive.
 In \cite{ref:Sengupta00,ref:Sengupta03}, based on electron density profiles 
 and model parameters obtained by phasing reflections from oriented samples
@@ -237,8 +237,8 @@ in the Wack and Webb data from unoriented samples
 \cite{ref:Wack89} or the 23 reflections obtained by Sengpupta \textit{et al.}
 from oriented samples \cite{ref:Sengupta99}.  
 These remarkable data are shown in Fig.\ref{fig:ripple_laxs_images}, and 
-motivated an additional projectto obtain a high resolution electron density map, 
-improving upon the previous low resolution electron density map.
+motivated an additional project to obtain a high resolution electron density map, 
+improving upon the previous low resolution electron density map \cite{Sun96}.
 
 The extraction of bilayer form factors required to obtain electron density 
 profiles is rather more demanding for oriented samples than for unoriented 
@@ -2322,11 +2322,14 @@ measuring even more reflections.
   \centering
   \includegraphics[width=\textwidth]{figures/ripple/LAXS/PF5_headgroup}
   \caption[Headgroup $z$ positions $\zhead$ as a function of $x$ for the upper and lower leaflets,
-  also shown as red lines in Fig.~\ref{fig:Fit5_2D_edp}, and
+  also shown as red lines in Fig.~\ref{fig:Fit5_2D_edp}.
+  The upper panel shows the
   electron density $\rhohead$ along the upper leaflet headgroups]
   {Headgroup $z$ positions $\zhead$ as a function of $x$ for the upper and lower leaflets,
-  also shown as red lines in Fig.~\ref{fig:Fit5_2D_edp}, and
-  electron density $\rhohead$ along the upper leaflet headgroups.
+  also shown as red lines in Fig.~\ref{fig:Fit5_2D_edp}.
+  The upper panel shows the
+  electron density $\rhohead$ along the upper leaflet headgroup, also along a 
+  red line in Fig.~\ref{fig:Fit5_2D_edp}.
   Black circles are the points with maximum and minimum $z$ values that define the boundaries between 
   the major and minor arms. 
   $A = z_\text{max}-z_\text{min}$ and $x_M = x_\text{max}-x_\text{min}$.
@@ -3888,15 +3891,18 @@ On the other hand,
 Sengupta \textit{et al.} proposed that major arm chains are oriented
 nearly parallel to the bilayer normal \cite{ref:Sengupta00,ref:Sengupta03},
 see Fig.~\ref{fig:major-arm_cartoon} (bottom). 
-This chain orientation would lead to a bilayer thickness $\DHH=47.6$~\AA\
-with all-trans chains or 43.4~\AA\ with the disordered chains discussed in 
-Sec.~\ref{sec:waxs_results},
-both of which lead to a major arm thicker
-than $\DHH=41.2$~\AA, obtained from our LAXS analysis. 
+This chain orientation would lead to a bilayer thickness $\DHH=44.9$~\AA\
+with all-trans chains, somewhat thicker than our major arm of $\DHH=41.2$~\AA.  
+However, we have argued in Sec.~\ref{sec:waxs_results} that the chains must be 
+slightly disordered for our model; applying a similar argument to the
+model in \cite{ref:Sengupta00,ref:Sengupta03} would reduce their predicted 
+bilayer thickness to $\DHH=42.4$~\AA\, sufficiently close to our measured value 
+that thickness can not be used to rule out their model.  
+More importantly, the
 Bragg rod positions based on the chain orientation proposed by 
 Sengupta \textit{et al.} \cite{ref:Sengupta00,ref:Sengupta03}, 
-calculated using the thin rod model developed in Sec.~\ref{sec:ripple_model},
-are also inconsistent with the measured Bragg rod positions in our nGIWAXS data.
+%calculated using the thin rod model developed in Sec.~\ref{sec:ripple_model},
+are inconsistent with the measured Bragg rod positions in our nGIWAXS data.
 Sengupta \textit{et al.} proposed the chain packing based on their analysis of the 
 LAXS data from the unoriented sample \cite{ref:Wack89}:
 specifically,  
@@ -3907,8 +3913,9 @@ the stacking $z$ direction (see Sec.~\ref{sec:transbilayer})
 However, as we emphasized in Sec.~\ref{sec:LAXS_phases_results},
 a model should only be used to obtain the phase factors, and the model parameter
 values should not be used to infer the actual bilayer structure.
-Indeed, we also obtained the best fit $\psi$ value similar to the one obtained in \cite{ref:Sengupta00,ref:Sengupta03}
-(Table~\ref{tab:LAXS_models}), and naive interpretation of the $\psi$ value would
+Indeed, we also obtained the best fit $\psi$ value similar to the one obtained in 
+\cite{ref:Sengupta00,ref:Sengupta03} (Table~\ref{tab:LAXS_models}), 
+and naive interpretation of the $\psi$ value would
 lead to the same chain tilt proposed in \cite{ref:Sengupta00,ref:Sengupta03}.
 However, the nGIWAXS analysis led to a quite different chain tilt angle.
 This problem of inferring the actual structure from the model parameters 
@@ -4087,7 +4094,7 @@ Sec.~\ref{sec:waxs_results}.
   the DHPC interdigitated \LI\ phase (bottom) from \cite{ref:Guler09}. 
   The ripple minor arm profiles were calculated 
   using the phase factors predicted by Fit2, 5, and 7 (black, red, and green, respectively). 
-  The horizontal dashed line in the top panel marks $\rho(z)=0$.
+  The horizontal dashed line in the top panel marks $\rho(z)=\rho_\text{w}$.
   }
   \label{fig:minor_comparison}
 \end{figure}
@@ -4102,15 +4109,16 @@ Sec.~\ref{sec:waxs_results}.
 %\end{figure}
 
 An interesting chain packing shown in Fig.~\ref{fig:nGIWAXS_comparison} 
-was reported from an MD simulation \cite{ref:deVries05}. 
-Ref.~\cite{ref:deVries05} introduced the 
+was reported from an MD simulation \cite{ref:deVries05} that 
+introduced the 
 possibility that the thinner minor arm might consist of interdigitated chains 
-rather then disordered fluid chains.  
+rather than disordered fluid chains.  
 Figure~\ref{fig:minor_comparison} compares the electron density
 profiles in the minor arm with that of the dihexadecylphosphatidylcholine (DHPC) \LI\ interdigitated phase
 reported by \cite{ref:Guler09}. Absence of the methyl trough can be seen in
 both \LI\ phase and the ripple minor arm, but the widths of the
-headgroups are much narrower in the DHPC \LI\ phase. The widths
+headgroups are much narrower in the DHPC \LI\ phase because the electron density
+of the backbone is closer to that of water because there is no carbonyl group. The widths
 of the ``headgroups'' in the minor arm profile are about 10 \AA, comparable
 with those in the major arm profile shown in Fig.~\ref{fig:gel_comparison} 
 and in the $L_\alpha$ phase shown in Fig.~\ref{fig:minor_comparison} (middle).
@@ -4127,7 +4135,7 @@ their calculated WAXS pattern from the atomistic MD simulations
 to our measured nGIWAXS pattern from the ripple phase. As noted in
 \cite{ref:deVries05}, interdigitated chains in the minor arm scatter
 coherently, giving rise to a Bragg rod centered at $q_z \approx$ 0.4 \AA$^{-1}$.
-This off-equator Bragg rod is due to chains being tilted by about 20\textdegree\
+This off-equator Bragg rod would be due to chains being tilted by about 20\textdegree\
 with respect to the stacking $z$ direction though they
 are essentially parallel to the local bilayer normal.
 We saw no sign of a Bragg rod at such a large $q_z$ value in our nGIWAXS
@@ -4176,15 +4184,16 @@ We have obtained a high resolution electron density map for the asymmetric
 DMPC ripple phase by analyzing the LAXS diffraction pattern collected with
 synchrotron X-rays. 
 While the phase factors for some of the weak observed peaks
-remain ambiguous, the calculated electron density maps with various phase
+remain ambiguous, the calculated electron density maps with various choices
+of the ambiguous phase
 factors clearly showed an out-of-plane structure similar to the gel phase
 in the major arm. They also showed that the minor arm electron density profiles
-do not resemble a typical fluid phase profile, but are consistent with
-the interdigitated chains in terms of an overall shape.
+do not resemble a typical fluid phase profile, but are more consistent with
+interdigitated chains.
 Measured ripple amplitudes, major and minor arm lengths and thicknesses
 did not depend considerably on the various phase factors predicted by 
 different models and fits, and were therefore robust. 
-Our analysis also showed that the major arm is twice longer than the minor arm.
+Our analysis also confirms that the major arm is twice longer than the minor arm.
 
 A further effort should be made to obtain the correct phase factors for the 12 uncertain orders
 with an approach similar to the pattern recognition method
@@ -4204,10 +4213,10 @@ clear separation of the previously observed broad peak \cite{ref:Katsaras95}.
 The observed Bragg rods were indexed using our thin rod model developed 
 for the ripple phase and additional information obtained from the LAXS
 analysis, showing that the chains in the major arm are 
-tilted with respect to the bilayer normal (Fig.~\ref{fig:major-arm_cartoon}),
-which disagrees with the chain packing proposed in \cite{ref:Sengupta00,ref:Sengupta03}.
+tilted with respect to the bilayer normal (Fig.~\ref{fig:major-arm_cartoon});
+this disagrees with the chain packing proposed in \cite{ref:Sengupta00,ref:Sengupta03}.
 By combining the structural parameters obtained from the LAXS and WAXS studies,
-we have determined that chains in the major arm are more 
+we have suggested that chains in the major arm are slightly more 
 disordered than all-trans chains.
 The Bragg rod indexing suggests that the observed Bragg rods arise 
 from the major arm, and not from interdigitated chains 

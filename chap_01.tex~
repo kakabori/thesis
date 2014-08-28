@@ -12,9 +12,11 @@ followed by a brief overview of the ripple phase in Sec.~\ref{sec:ripple_phase}.
 
 
 \section{Lipid bilayer}\label{sec:lipid_bilayer}
+%Protein function essential for living organisms is regulated by cell membranes. 
 Membranes define the boundary between living cells
 and their surrounding environment, and from this position help 
-regulate intercellular transport. Cell membranes are composed of lipid bilayers.
+regulate intercellular transport. 
+The lipid bilayer is the structural backbone of biomembranes.
 Lipid bilayers are a self-assembly of lipids, which are 
 amphiphilic molecules that consist of a hydrophilic headgroup
 and hydrophobic chains (Fig.~\ref{fig:lipid}).
