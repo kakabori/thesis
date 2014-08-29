@@ -1,38 +1,38 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Amino acid data}}{14}{table.caption.15}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of electrons and volume per lipid}}{24}{table.caption.21}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Structural parameters for each component}}{24}{table.caption.22}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Tat basic structural parameters}}{24}{table.caption.23}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Volume results at 37 \textcelsius }}{39}{table.caption.32}
-\contentsline {table}{\numberline {2.6}{\ignorespaces Fitting results for DOPC membranes for the THG (Tat in headgroup) model}}{41}{table.caption.33}
-\contentsline {table}{\numberline {2.7}{\ignorespaces Fitting Results for DOPC:DOPE (3:1) membranes for the THG model}}{46}{table.caption.38}
-\contentsline {table}{\numberline {2.8}{\ignorespaces Fitting Results for DOPC:DOPE (1:1) membranes for the THG model}}{46}{table.caption.39}
-\contentsline {table}{\numberline {2.9}{\ignorespaces Fitting Results for the THG model with the lower bounds on the headgroup widths for DOPC membranes}}{52}{table.caption.45}
-\contentsline {table}{\numberline {2.10}{\ignorespaces Comparison of the simulated form factors to the experimental form factors}}{59}{table.caption.53}
-\contentsline {table}{\numberline {2.11}{\ignorespaces Local bilayer structural quantities obtained at various constrained $A_\textrm {L}$ and $z_\textrm {Tat}$ at different Tat mole fraction $x_\textrm {Tat}$}}{63}{table.caption.57}
-\contentsline {table}{\numberline {2.12}{\ignorespaces Lateral decay length of Tat perturbation}}{65}{table.caption.59}
-\contentsline {table}{\numberline {2.13}{\ignorespaces Weighted average quantities}}{65}{table.caption.60}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Amino acid data}}{15}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of electrons and volume per lipid}}{25}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Structural parameters for each component}}{25}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Tat basic structural parameters}}{26}{table.2.4}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Volume results at 37 \textcelsius }}{41}{table.2.5}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Fitting results for DOPC membranes for the THG (Tat in headgroup) model}}{43}{table.2.6}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Fitting Results for DOPC:DOPE (3:1) membranes for the THG model}}{48}{table.2.7}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Fitting Results for DOPC:DOPE (1:1) membranes for the THG model}}{48}{table.2.8}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Fitting Results for the THG model with the lower bounds on the headgroup widths for DOPC membranes}}{54}{table.2.9}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Comparison of the simulated form factors to the experimental form factors}}{61}{table.2.10}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Local bilayer structural quantities obtained at various constrained $A_\textrm {L}$ and $z_\textrm {Tat}$ at different Tat mole fraction $x_\textrm {Tat}$}}{65}{table.2.11}
+\contentsline {table}{\numberline {2.12}{\ignorespaces Lateral decay length of Tat perturbation}}{67}{table.2.12}
+\contentsline {table}{\numberline {2.13}{\ignorespaces Weighted average quantities}}{67}{table.2.13}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Beam divergence}}{80}{table.caption.65}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Energy dispersion}}{80}{table.caption.66}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Geometric broadening}}{86}{table.caption.79}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Instrumental resolution in $q_r$ and $q_z$}}{87}{table.caption.80}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Lattice constants for DMPC at $T=18.0$\nobreakspace {}\textcelsius \ reported by Wack and Webb \cite {ref:Wack89} except the colored entries, which are values from my best oriented sample at $T=18.0$\nobreakspace {}\textcelsius }}{98}{table.caption.86}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Correction factors for the raw intensities of the ripple LAXS peaks for thickness of an oriented sample $t$ = 10\nobreakspace {}$\mu $m and mosaic spread $\alpha _M$ = 0.05\textdegree }}{111}{table.caption.95}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Corrections for the intensities of the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})}}{112}{table.caption.96}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree }}{114}{table.caption.97}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$\nobreakspace {}\r A, $\lambda _r=145$\nobreakspace {}\r A, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1})}}{115}{table.caption.98}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Comparison of form factors $\left |F_{hk}^\text {un}\right |$ for the unoriented sample from Wack and Webb \cite {ref:Wack89} and $\left |F_{hk}^\text {ori}\right |$ from an oriented sample from this study}}{117}{table.caption.99}
-\contentsline {table}{\numberline {3.11}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$\relax }}{120}{table.caption.100}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Model parameters}}{122}{table.caption.101}
-\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 1 to 4}}{125}{table.caption.103}
-\contentsline {table}{\numberline {3.14}{\ignorespaces Form factors for $h$ = 5 to 9}}{126}{table.caption.104}
-\contentsline {table}{\numberline {3.15}{\ignorespaces Four data sets constructed to compare the unoriented to the oriented data sets}}{131}{table.caption.107}
-\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of the parameter values obtained from oriented vs unoriented and low vs high resolution}}{131}{table.caption.111}
-\contentsline {table}{\numberline {3.17}{\ignorespaces Structural quantities obtained using various phase factors}}{134}{table.caption.112}
-\contentsline {table}{\numberline {3.18}{\ignorespaces Estimated structural quantities}}{134}{table.caption.113}
-\contentsline {table}{\numberline {3.19}{\ignorespaces Wide angle peak positions and widths for the ripple phase with comparison to the gel and fluid phases}}{154}{table.caption.137}
-\contentsline {table}{\numberline {3.20}{\ignorespaces $q_z^{hk}$ divided by 2$\pi /a$.\relax }}{169}{table.caption.148}
-\contentsline {table}{\numberline {3.21}{\ignorespaces Quantities for chain packing structure in the major arm}}{172}{table.caption.150}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Beam divergence}}{82}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Energy dispersion}}{82}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Geometric broadening}}{88}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Instrumental resolution in $q_r$ and $q_z$}}{89}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Lattice constants for DMPC at $T=18.0$\nobreakspace {}\textcelsius \ reported by Wack and Webb \cite {ref:Wack89} except the colored entries, which are values from my best oriented sample at $T=18.0$\nobreakspace {}\textcelsius }}{100}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Correction factors for the raw intensities of the ripple LAXS peaks for thickness of an oriented sample $t$ = 10\nobreakspace {}$\mu $m and mosaic spread $\alpha _M$ = 0.05\textdegree }}{113}{table.3.6}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Corrections for the intensities of the ripple LAXS peaks (continued from Table\nobreakspace {}\ref {tab:LAXS_correction1})}}{114}{table.3.7}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Observed intensity for $h$ = 1 to 4 at $D=57.8$, $\lambda _r=145$, and $\gamma =98.2$\textdegree }}{116}{table.3.8}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Observed intensity for $h$ = 5 to 9 at $D=57.8$\nobreakspace {}\r A, $\lambda _r=145$\nobreakspace {}\r A, and $\gamma =98.2$\textdegree \ (continued from Table\nobreakspace {}\ref {tab:obs_intensity1})}}{117}{table.3.9}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Comparison of form factors $\left |F_{hk}^\text {un}\right |$ for the unoriented sample from Wack and Webb \cite {ref:Wack89} and $\left |F_{hk}^\text {ori}\right |$ from an oriented sample from this study}}{119}{table.3.10}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Definitions of $Z_\mathrm {CH_2}$ and $Z_\mathrm {W}$}}{122}{table.3.11}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Model parameters}}{124}{table.3.12}
+\contentsline {table}{\numberline {3.13}{\ignorespaces Form factors for $h$ = 1 to 4}}{127}{table.3.13}
+\contentsline {table}{\numberline {3.14}{\ignorespaces Form factors for $h$ = 5 to 9}}{128}{table.3.14}
+\contentsline {table}{\numberline {3.15}{\ignorespaces Four data sets constructed to compare the unoriented to the oriented data sets}}{133}{table.3.15}
+\contentsline {table}{\numberline {3.16}{\ignorespaces Summary of the parameter values obtained from oriented vs unoriented and low vs high resolution}}{133}{table.3.16}
+\contentsline {table}{\numberline {3.17}{\ignorespaces Structural quantities obtained using various phase factors}}{136}{table.3.17}
+\contentsline {table}{\numberline {3.18}{\ignorespaces Estimated structural quantities}}{136}{table.3.18}
+\contentsline {table}{\numberline {3.19}{\ignorespaces Wide angle peak positions and widths for the ripple phase with comparison to the gel and fluid phases}}{156}{table.3.19}
+\contentsline {table}{\numberline {3.20}{\ignorespaces $q_z^{hk}$ divided by 2$\pi /a$.}}{171}{table.3.20}
+\contentsline {table}{\numberline {3.21}{\ignorespaces Quantities for chain packing structure in the major arm}}{174}{table.3.21}
 \addvspace {10\p@ }

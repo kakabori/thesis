@@ -25,7 +25,7 @@
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{9}
 
-\renewcommand{\glsnamefont}[1]{\mdseries #1}
+
 % 
 % ====================================================================
 %     Some of the things we need for the title page
@@ -63,9 +63,6 @@ and DMPC ripple phase using X-ray scattering
 
 \date{\today}
 
-\newglossary[nlg]{notation}{not}{ntn}{Notation}
-
-\renewcommand*{\glsnamefont}[1]{\textmd{#1}}
 
 %\newglossarystyle{mystyle}{
 %  \glossarystyle{list}
@@ -75,28 +72,39 @@ and DMPC ripple phase using X-ray scattering
 %}
 
 %\makeglossaries
+
+%\setglossarystyle{long}
+%\newglossary[nlg]{notation}{not}{ntn}{Notation}
+%\renewcommand*{\glsnamefont}[1]{\textmd{#1}}
+%\renewcommand{\glsnamefont}[1]{\mdseries #1}
+
+\loadglsentries{glossary}
 \makenoidxglossaries
-\input{glossary}
-\glsaddall
+\setlength{\glsdescwidth}{1.0\hsize}
+%\glsaddall
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document} 
 
-\thispagestyle{empty}
+\pagestyle{empty}
 
 \maketitle
 
-% ====================================================================
-%     Generates one blank page before the 'Abstract'
-% ====================================================================
+\thispagestyle{empty} 
 
-\thispagestyle{empty} \cleardoublepage
+\cleardoublepage
+
+\thispagestyle{empty} 
 
 \include{abstract}
 
-\thispagestyle{empty} \cleardoublepage
+\thispagestyle{empty} 
+
+\cleardoublepage
 
 \include{acknowledgments}
+
+\pagestyle{plain}
 
 \pagenumbering{roman}
 
@@ -106,16 +114,21 @@ and DMPC ripple phase using X-ray scattering
 
 \listoffigures
 
-%\printglossary[sort=def,style=mystyle,nonumberlist]
+\begin{singlespace}
+\printnoidxglossary[sort=def,style=long,title=Notations]
+\printnoidxglossary[sort=def,type=\acronymtype,style=long]
+\end{singlespace}
+
+%\printglossary[style=super]
+%\printglossary[type=acronym]
 %\printnoidxglossary[sort=def,style=mystyle]
-\printnoidxglossary[sort=def]
-\printnoidxglossary[sort=def, type=acronym]
+%\printnoidxglossary[sort=def, style=longragged]
+%\printnoidxglossary[sort=def,type=acronym,style=list]
 
 
 \clearpage 
 
 \pagenumbering{arabic}
-
 
 \include{chap_01}
 \include{chap_02}
@@ -124,7 +137,7 @@ and DMPC ripple phase using X-ray scattering
   \include{appendix}
 \end{appendices}
 
-\bibliography{thesis}
+\bibliography{mybib}
 \bibliographystyle{ieeetr}
 %\bibliographystyle{apsrev4-1}
 

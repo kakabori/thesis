@@ -1,12 +1,17 @@
 %%%%%%%%%%%%%%%%% common packages are included here %%%%%%%%%%%%%%%%%
 %\usepackage[pdftex,draft]{graphicx}
 \usepackage[pdftex]{graphicx}
-%\usepackage{epstopdf}
-\usepackage{tabularx}
-\usepackage[lofdepth,lotdepth]{subfig} % subfloat
-\usepackage{bm} % bold math
+\usepackage{setspace}
+\usepackage{cite}
+\usepackage{textcomp,gensymb} % for \textcelsius, \textdegree, and \degree
 \usepackage{color}
-\usepackage[centertags]{amsmath}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{syntonly}
+\usepackage[toc,page]{appendix}
+\usepackage{pdflscape}
+
+%\usepackage{bm} % bold math
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -14,25 +19,28 @@
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{newlfont}
-\usepackage{textcomp,gensymb} % for \textcelsius, \textdegree, and \degree
-\usepackage{syntonly}
-\usepackage[toc,page]{appendix}
-\usepackage{setspace}
-\usepackage[export]{adjustbox}
-\usepackage[percent]{overpic}
-\usepackage{booktabs}
-\usepackage{cite}
 \usepackage{notoccite}
-\usepackage{multirow}
-\usepackage{arydshln}
-\usepackage{pdflscape}
-\usepackage{rotating}
-\usepackage{ulem}
+
+%\usepackage{epstopdf}
+%\usepackage[lofdepth,lotdepth]{subfig} % subfloat
+%\usepackage[export]{adjustbox}
+%\usepackage[percent]{overpic}
+%\usepackage{booktabs}
+
+%\usepackage{rotating}
+%\usepackage{ulem}
 % These two packages should be loaded last
+
 \usepackage[pdftex]{hyperref}
-\usepackage[nogroupskip,nopostdot,acronyms]{glossaries}
-\usepackage{glossary-mcols}
+\usepackage{longtable}
+\usepackage[nopostdot,acronym,shortcuts]{glossaries}
+%\usepackage{glossary-mcols}
+%\usepackage{glossary-longragged}
+%\usepackage{glossary-long}
+%\usepackage{glossary-list}
 %\setglossarystyle{mcolindex}
+
+\usepackage{arydshln}
 
 %%%%%%%%%%%%%%%%%%%% some declaration %%%%%%%%%%%%%%%%%%%%%
 \DeclareGraphicsExtensions{.png,.PNG,.pdf,.PDF,.jpg,.JPG,.eps,.EPS}
