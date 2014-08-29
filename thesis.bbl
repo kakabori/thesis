@@ -170,9 +170,9 @@ M.~J. Janiak, D.~M. Small, and G.~G. Shipley, ``Nature of the thermal
   1976.
 
 \bibitem{ref:Copeland80}
-B.~R. Copeland and H.~M. McConnel, ``The rippled structure in bilayer membranes
-  of phosphatidylcholine and binary mixtures of phosphatidylcholine and
-  cholesterol,'' {\em Biochimica et Biophysica Acta (BBA) - Biomembranes},
+B.~R. Copeland and H.~M. McConnell, ``The rippled structure in bilayer
+  membranes of phosphatidylcholine and binary mixtures of phosphatidylcholine
+  and cholesterol,'' {\em Biochimica et Biophysica Acta (BBA) - Biomembranes},
   vol.~599, no.~1, pp.~95 -- 109, 1980.
 
 \bibitem{ref:Ruppel83}
@@ -495,6 +495,38 @@ Y.~Liu, {\em New method to obtain strcuture of biomembranes using diffuse
   {X-ray} scattering: application to fluid phase {DOPC} lipid bilayers}.
 \newblock PhD thesis, Carnegie Mellon University, 2003.
 
+\bibitem{King86}
+G.~King and S.~White, ``Determining bilayer hydrocarbon thickness from neutron
+  diffraction measurements using strip-function models,'' {\em Biophysical
+  Journal}, vol.~49, no.~5, pp.~1047 -- 1054, 1986.
+
+\bibitem{Heinrich14}
+F.~Heinrich and M.~Lösche, ``Zooming in on disordered systems: Neutron
+  reflection studies of proteins associated with fluid membranes,'' {\em
+  Biochimica et Biophysica Acta (BBA) - Biomembranes}, vol.~1838, no.~9,
+  pp.~2341 -- 2349, 2014.
+\newblock Interfacially active peptides and proteins.
+
+\bibitem{Shekhar11}
+P.~Shekhar, H.~Nanda, M.~Lösche, and F.~Heinrich, ``Continuous distribution
+  model for the investigation of complex molecular architectures near
+  interfaces with scattering techniques,'' {\em Journal of Applied Physics},
+  vol.~110, no.~10, pp.~--, 2011.
+
+\bibitem{Mitsui78}
+T.~Mitsui, ``X-ray diffraction studies of membranes,'' {\em Advances in
+  biophysics}, vol.~10, p.~97—135, 1978.
+
+\bibitem{ref:Wiener89}
+M.~C. Wiener, R.~M. Suter, and J.~F. Nagle, ``Structure of the fully hydrated
+  gel phase of dipalmitoylphosphatidylcholine,'' {\em Biophysical Journal},
+  vol.~55, no.~2, pp.~315 -- 325, 1989.
+
+\bibitem{Klauda06}
+J.~B. Klauda, N.~Kučerka, B.~R. Brooks, R.~W. Pastor, and J.~F. Nagle,
+  ``Simulation-based methods for interpreting x-ray data from lipid bilayers,''
+  {\em Biophysical Journal}, vol.~90, no.~8, pp.~2796 -- 2807, 2006.
+
 \bibitem{Kucerka08}
 N.~Ku{\v{c}}erka, J.~F. Nagle, J.~N. Sachs, S.~E. Feller, J.~Pencer,
   A.~Jackson, and J.~Katsaras, ``Lipid bilayer structure determined by the
@@ -758,11 +790,6 @@ S.~Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle, and
 
 \bibitem{ref:lmfit}
 \url{http://cars9.uchicago.edu/software/python/lmfit/}.
-
-\bibitem{ref:Wiener89}
-M.~C. Wiener, R.~M. Suter, and J.~F. Nagle, ``Structure of the fully hydrated
-  gel phase of dipalmitoylphosphatidylcholine,'' {\em Biophysical Journal},
-  vol.~55, no.~2, pp.~315 -- 325, 1989.
 
 \bibitem{ref:Worthington73}
 C.~Worthington, G.~King, and T.~McIntosh, ``Direct structure determination of

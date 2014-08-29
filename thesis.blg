@@ -9,44 +9,47 @@ A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
-You've used 156 entries,
+Warning--I didn't find a database entry for "ref:Sengupta"
+Warning--I didn't find a database entry for "Sun96"
+You've used 161 entries,
             1876 wiz_defined-function locations,
-            1486 strings with 34691 characters,
-and the built_in function-call counts, 54677 in all, are:
-= -- 5743
-> -- 1979
+            1519 strings with 35640 characters,
+and the built_in function-call counts, 56465 in all, are:
+= -- 5938
+> -- 2030
 < -- 0
-+ -- 718
-- -- 562
-* -- 4005
-:= -- 7300
-add.period$ -- 160
-call.type$ -- 156
-change.case$ -- 150
++ -- 737
+- -- 576
+* -- 4122
+:= -- 7528
+add.period$ -- 166
+call.type$ -- 161
+change.case$ -- 155
 chr.to.int$ -- 0
-cite$ -- 156
-duplicate$ -- 2759
-empty$ -- 4666
-format.name$ -- 562
-if$ -- 13603
+cite$ -- 161
+duplicate$ -- 2858
+empty$ -- 4821
+format.name$ -- 576
+if$ -- 14063
 int.to.chr$ -- 0
-int.to.str$ -- 156
-missing$ -- 152
-newline$ -- 475
-num.names$ -- 152
-pop$ -- 213
+int.to.str$ -- 161
+missing$ -- 157
+newline$ -- 491
+num.names$ -- 157
+pop$ -- 219
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2422
+skip$ -- 2514
 stack$ -- 0
-substring$ -- 4721
-swap$ -- 1538
+substring$ -- 4873
+swap$ -- 1597
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 487
-width$ -- 159
-write$ -- 1682
+while$ -- 501
+width$ -- 164
+write$ -- 1738
+(There were 2 warnings)

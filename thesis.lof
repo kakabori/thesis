@@ -1,0 +1,117 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic representation of a lipid molecule\relax }}{1}{figure.caption.9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Experimental phase diagram of DMPC\nobreakspace {}\cite {ref:Smith88}}}{2}{figure.caption.10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Schematics of the structure of fluid $L_\alpha $ phase (left) and gel $L_{\beta '}$ phase (right)}}{3}{figure.caption.11}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Gel $L_{\beta '}$ phase chains projected onto the bilayer plane showing the chain tilt direction in $L_{\beta I}$\ (left), $L_{\beta F}$\ (middle), and $L_{\beta L}$\ (right) phases}}{4}{figure.caption.12}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Lipid structures of DOPC (top), DOPE (middle), and DMPC (bottom)}}{5}{figure.caption.13}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces HIV-1 life cycle, adapted from Ref.\nobreakspace {}\cite {Freed98}}}{7}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic diagram of a top view of the X-ray setup for LAXS experiments}}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces LAXS of DOPC:DOPE (1:1) with $x_\textrm {Tat}$ = 0.034 at 37 \textcelsius }}{17}{figure.caption.17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of an oriented stack of lipid bilayers}}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of DOPC showing each molecular component}}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A model electron density profile for DOPC with Tat}}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Our simple model to extract the local bilayer thickness from simulation trajectories}}{29}{figure.caption.24}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Simple model of the lateral decay of the membrane thickness perturbation due to Tat}}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Bilayer bending modulus, $K_c$, vs. Tat mole fraction $x_\textrm {Tat}$}}{33}{figure.caption.26}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Three form factors obtained for three different lateral positions on a DOPC/Tat mixture with Tat mole fraction $x_\textrm {Tat}$ = 0.016 (top)}}{34}{figure.caption.27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Form factors of DOPC with Tat mixtures (arbitrarily scaled and vertically displaced) with increasing Tat mole fractions $x_\textrm {Tat}$ indicated on figure legend}}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Form factors of DOPC:DOPE (3:1) with Tat mixtures}}{36}{figure.caption.29}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Form factors of DOPC:DOPE (1:1) with Tat mixtures}}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Form factors of DOPC:DOPS (3:1) (left) and nuclear membrane mimic (right) with Tat mixtures}}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Best fits to DOPC form factors (left) and the corresponding electron density profiles (right) with $x_\textrm {Tat}$ = 0, 0.016, 0.034, and 0.059 (from top to bottom)}}{42}{figure.caption.34}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Comparison of total electron density profiles corresponding to best fits using different Tat widths $\sigma _\textrm {Tat}$, 2.5 (red), 3.0 (black), and 3.5 (green)}}{44}{figure.caption.35}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Comparison of DOPC total electron density profiles at $x_\textrm {Tat}$ = 0 (black solid), 0.016 (red dash), 0.034 (green short dash), and 0.059 (blue dash dot)}}{45}{figure.caption.36}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Difference between total electron density profiles of DOPC with Tat and that of DOPC}}{45}{figure.caption.37}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Total electron density profiles for DOPC:DOPE (3:1) (left) and DOPC:DOPE (1:1) (right) with Tat mole fraction $x_\textrm {Tat}$ = 0 (black solid), 0.016 (red dash), 0.034 (green short dash), and 0.059 (blue dash dot)}}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Bilayer thickness, $D_\textrm {HH}$ (left) and $D_\textrm {PP}$ (right) plotted against Tat mole fraction $x_\textrm {Tat}$}}{48}{figure.caption.41}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Bilayer thickness, $D_\textrm {PP}$ (left) and twice Tat position $2z_\textrm {Tat}$ (right) plotted against Tat mole fraction $x_\textrm {Tat}$}}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Area per lipid plotted against Tat mole fraction $x_\textrm {Tat}$}}{49}{figure.caption.43}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces $\chi ^2$ as a function of $z_\textrm {Tat}$ for DOPC (left column), DOPC:DOPE (3:1) (middle), and DOPC:DOPE (1:1) (right) with $x_\textrm {Tat}$ = 0.016 (top row), 0.034 (middle), and 0.059 (bottom)}}{51}{figure.caption.44}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces $z_\textrm {Tat}$ as a function of Tat mole fraction $x_\textrm {Tat}$ for fits with lower bounds on the headgroup widths (red circles) and without lower bounds (black squares)}}{52}{figure.caption.46}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Best fits to DOPC:DOPE (3:1) form factors (left) and the corresponding electron density profiles (right) with $x_\textrm {Tat}$ = 0, 0.016, 0.034, and 0.059 (from top to bottom)}}{53}{figure.caption.47}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Best fits to DOPC:DOPE (1:1) form factors (left) and the corresponding electron density profiles (right) with $x_\textrm {Tat}$ = 0, 0.016, 0.034, and 0.059 (from top to bottom)}}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces MD simulated form factors for DOPC at $A_\textrm {L}$ = 68 \r A$^2$ (blue solid line), 70 \r A$^2$ (red solid line), and 72 \r A$^2$ (green solid line) compared to the experimental form factor (open circles) scaled vertically to best match the form factor for 70 \r A$^2$}}{56}{figure.caption.49}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Simulated, symmetrized electron density profile for DOPC at $A_\textrm {L}$ = 70\nobreakspace {}\r A$^2$ as a function of the distance from the bilayer center}}{56}{figure.caption.50}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces MD simulated form factors for DOPC with $x_\textrm {Tat}$ = 0.015 at $A_\textrm {L}$ = 72 \r A$^2$ (top) and 74 \r A$^2$ (bottom), with $z_\textrm {Tat}$ = 18 \r A\ (red solid lines), 16 \r A\ (green solid lines), and 14 \r A\ (blue solid lines) compared to the experimental form factor (open circles) scaled vertically to best match the form factor for $z_\textrm {Tat}$ = 18 \r A}}{57}{figure.caption.51}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces MD simulated form factors for DOPC with $x_\textrm {Tat}$ = 0.030 at $A_\textrm {L}$ = 74 \r A$^2$ (top) and 76 \r A$^2$ (bottom), with $z_\textrm {Tat}$ = 18 \r A\ (red solid lines), 16 \r A\ (green solid lines), and 14 \r A\ (blue solid lines) compared to the experimental form factor (open circles) scaled vertically to best match the form factor for $z_\textrm {Tat}$ = 18 \r A}}{58}{figure.caption.52}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces MD simulated form factors (red solid lines in A and C) of $x_\textrm {Tat}$=0.030, with Tat fixed at $z_\textrm {Tat}$= 18 \r A\ (panel A) and 5 \r A\ (panel C) from the bilayer center compared to experimental form factors (open circles) scaled vertically to best fit the simulated form factors}}{60}{figure.caption.54}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces A. Bilayer thickness, $D_\textrm {PP}$; B. Bilayer thickness, $D_\textrm {HH}$; C. Area/lipid, $A_\textrm {L}$; D. Twice the Tat location, $2z_\textrm {Tat}$: all plotted vs. Tat mole fraction $x_\textrm {Tat}$}}{61}{figure.caption.55}
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Definitions of quantities relevant to Table\nobreakspace {}\ref {tab:local_thickness}}}{63}{figure.caption.56}
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Electron density profiles of Tat (red), arginine (cyan), lysine (magenta), guanidinium groups (green), and amine groups (blue) for DOPC:Tat (128:2) at $A_\textrm {L}$ = 72 \r A$^2$ and $z_\textrm {Tat}$ = 18 \r A}}{64}{figure.caption.58}
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Location of Tat in DOPC bilayer}}{66}{figure.caption.61}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Lattice structure of the asymmetric ripple phase}}{72}{figure.caption.62}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 1 second exposure (left) and 60 second exposure (right) of the low angle X-ray scattering from the DMPC ripple phase in gray log intensity scales}}{77}{figure.caption.63}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Picture of an annealing chamber from the top (left) and side (right)}}{78}{figure.caption.64}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces LAXS geometry}}{81}{figure.caption.68}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The horizontal beam profile used in the 2013 low resolution study}}{82}{figure.caption.69}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The vertical beam profile used in the 2013 low resolution study}}{82}{figure.caption.70}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces In-plane geometric broadening due to the sample width $w_s$ and the beam width $\Delta x_\textrm {beam}$}}{83}{figure.caption.72}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The horizontal beam profile used in the 2013 high resolution experiment}}{84}{figure.caption.73}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The vertical beam profile used in the 2013 high resolution experiment}}{84}{figure.caption.74}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Geometric broadening in tWAXS}}{85}{figure.caption.76}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Top and side view of the beam on the sample in tWAXS}}{86}{figure.caption.77}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Projection of rectangular beam on the detector}}{86}{figure.caption.78}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces (top panels) CCD images of X-ray scattering taken with (left) and without (right) a nominally 25 $\mu $m thick Mo attenuator}}{89}{figure.caption.81}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Picture of the sample holder looking from above}}{92}{figure.caption.82}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Schematics of the sample holder in the transmission mode}}{92}{figure.caption.83}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Circular path followed by the sample as the angle of incidence $\omega $ was changed}}{93}{figure.caption.84}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Experimental scattering geometry}}{95}{figure.caption.85}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Ewald sphere construction to obtain relation between location of scattering peaks on the CCD and their $q$-space values}}{99}{figure.caption.87}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Trajectory of $k=0$ peak as the sample is rotated by $\omega $ is shown as a thick blue line}}{100}{figure.caption.88}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces $q$-space representations of Bragg peaks and Bragg rings for $h$ = 1 and 2 and $k$ = 0, 1, and 2 in $q_{hk}^z$ planes}}{101}{figure.caption.89}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces The path of X-rays within the sample}}{104}{figure.caption.90}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Absorption factors Eq.\nobreakspace {}\ref {eq:ang_abs_factor} as a function of $q_z \approx 4\pi \theta /\lambda $}}{106}{figure.caption.91}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Eq.\nobreakspace {}(\ref {eq:ang_abs_factor}) plotted as a function of $\omega $ for $\theta =\theta _B=0.58$\textdegree , corresponding to the $h=1$ Bragg angle for $D$ = 57.8 \r A}}{106}{figure.caption.92}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Contours of a mosaic spread distribution projected on the $\omega \chi $-plane, where $\chi -\chi _{hk}$ is an angle measured from a $(h,k)$ reflection on the detector ($\chi =\pi /2-\phi $ in Fig.\nobreakspace {}\ref {fig:laxs_setup}) and $\theta _{hk}$ is the Bragg angle for the $(h,k)$ reflection}}{108}{figure.caption.93}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Mosaic factor given by Eq.\nobreakspace {}(\ref {eq:mosaic_I2}) as a function of $q_z\approx 4\pi \theta /\lambda $}}{110}{figure.caption.94}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Two dimensional map of the contour part of the form factor $|F_\mathrm {C}(\mathbf {q})|$ given by Eq.\nobreakspace {}\ref {eq:FC}}}{123}{figure.caption.102}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Two dimensional electron density map calculated using Eq.\nobreakspace {}(\ref {eq:Fourier_reconstruction}) with the phase factors (PF) obtained from Fit5 (Table\nobreakspace {}\ref {tab:LAXS_fits1} and \ref {tab:LAXS_fits2}) and our experimental form factors, in linear grayscale}}{128}{figure.caption.105}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Headgroup $z$ positions $z_\text {Head}$ as a function of $x$ for the upper and lower leaflets, also shown as red lines in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}.}}{129}{figure.caption.106}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Comparison of low resolution structures obtained using the form factors from the unoriented (dashed orange) and oriented (solid green) samples}}{130}{figure.caption.108}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison of high resolution structures obtained using the form factors from the unoriented (solid cyan) and oriented (dashed magenta) samples}}{132}{figure.caption.109}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Comparison of low (solid green, same as in Fig.\nobreakspace {}\ref {fig:low-res_comparison}) and high (dashed magenta, same as in Fig.\nobreakspace {}\ref {fig:un_vs_ori}) resolution structures}}{132}{figure.caption.110}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit1 (PF1), in linear grayscale}}{135}{figure.caption.114}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Two dimensional electron density profile calculated using the phases factors obtained from Fit2 (PF2), in linear grayscale}}{136}{figure.caption.115}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit3 (PF3), in linear grayscale}}{137}{figure.caption.116}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit7 (PF7), in linear grayscale}}{138}{figure.caption.117}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF1_2D_edp} (PF1)}}{139}{figure.caption.118}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF2_2D_edp} (PF2)}}{139}{figure.caption.119}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF3_2D_edp} (PF3)}}{140}{figure.caption.120}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF7_2D_edp} (PF7)}}{140}{figure.caption.121}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Electron density profiles along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{141}{figure.caption.122}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Electron density profiles along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{142}{figure.caption.123}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Variation in the electron density profile along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{143}{figure.caption.124}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Variation in the electron density profile along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{143}{figure.caption.125}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Major arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{144}{figure.caption.126}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Minor arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{144}{figure.caption.127}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Data reduction of nGIWAXS data}}{146}{figure.caption.128}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Fluid phase WAXS plotted along $q_r$ at $q_z$ = 0.012 \r A$^{-1}$}}{147}{figure.caption.129}
+\contentsline {figure}{\numberline {3.48}{\ignorespaces (left) nGIWAXS image of the DMPC gel phase at 10 \textcelsius \ for $D$ = 57.7 \r A\ where the sample was in the L$_{\beta I}$ phase}}{148}{figure.caption.130}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces High resolution nGIWAXS of the DMPC ripple phase for $D$ = 60.8 \r A}}{150}{figure.caption.131}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces $q_r$ swaths of the ripple WAXS, each averaged over 0.02 \r A$^{-1}$ in $q_z$}}{151}{figure.caption.132}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces nGIWAXS of the DMPC ripple phase for $D$ = 59.2 \r A\ (left) and difference between $D$ = 59.2 \r A\ and 60.8 \r A\ (right)}}{152}{figure.caption.133}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Radial intensity profiles for various angles $\phi $}}{152}{figure.caption.134}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Peak profile in $q_r$ at $q_z$ = 0.2 \r A$^{-1}$ fitted to the sum of two Lorentzians}}{153}{figure.caption.135}
+\contentsline {figure}{\numberline {3.54}{\ignorespaces (left) Peak profile in $q_r$ at $q_z$ = 0.12 \r A$^{-1}$ fitted to the sum of two Lorentzian functions}}{153}{figure.caption.136}
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Low resolution nGIWAXS of the DMPC ripple phase for $D$ = 61.0 \r A}}{155}{figure.caption.138}
+\contentsline {figure}{\numberline {3.56}{\ignorespaces $q_r$ swaths along $q_z=0.020$ (left) and 0.012\nobreakspace {}\r A$^{-1}$ (right) of the low resolution nGIWAXS data shown in Fig.\nobreakspace {}\ref {fig:ripple_waxs_low-res}}}{156}{figure.caption.139}
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Transmission WAXS at fixed angle $\omega $\nobreakspace {}=\nobreakspace {}45\textdegree of the DMPC gel $L_{\beta I}$ phase observed on the CCD detector (left) and its corresponding pattern in the sample $q$-space (right)}}{157}{figure.caption.140}
+\contentsline {figure}{\numberline {3.58}{\ignorespaces $q_r$ swath of the (2,\nobreakspace {}0) Bragg rod at $q_z=0$\nobreakspace {}\r A$^{-1}$}}{158}{figure.caption.141}
+\contentsline {figure}{\numberline {3.59}{\ignorespaces tWAXS image of the DMPC ripple phase at 18 \textcelsius \ and $D$ = 60.3 \r A}}{160}{figure.caption.142}
+\contentsline {figure}{\numberline {3.60}{\ignorespaces (left) Peak profile of the ripple tWAXS in $q_r$ at $q_z=0.2$\nobreakspace {}\r A$^{-1}$}}{161}{figure.caption.143}
+\contentsline {figure}{\numberline {3.61}{\ignorespaces (left) $q_z$ swath of the gel (2,0) Bragg rod}}{161}{figure.caption.144}
+\contentsline {figure}{\numberline {3.62}{\ignorespaces $q_z$ swath averaged between 1.465 and 1.481 \r A$^{-1}$ (left) and between 1.465 and 1.51 \r A$^{-1}$ (right) in $q_r$}}{162}{figure.caption.145}
+\contentsline {figure}{\numberline {3.63}{\ignorespaces Lattice and geometry of thin rod model}}{164}{figure.caption.146}
+\contentsline {figure}{\numberline {3.64}{\ignorespaces (left) Projection of the unit cell ($a$, $b$) on the laboratory ($x$, $y$) plane}}{167}{figure.caption.147}
+\contentsline {figure}{\numberline {3.65}{\ignorespaces Definitions of structural quantities appearing in Table\nobreakspace {}\ref {tab:waxs_structure}}}{171}{figure.caption.149}
+\contentsline {figure}{\numberline {3.66}{\ignorespaces Comparison of the electron density profiles of the DMPC gel phase (left) and the major arm in the ripple phase (right)}}{173}{figure.caption.151}
+\contentsline {figure}{\numberline {3.67}{\ignorespaces (top) Chain packing in the major arm proposed in this thesis}}{176}{figure.caption.152}
+\contentsline {figure}{\numberline {3.68}{\ignorespaces Comparison of the electron density profiles of the minor arm in the ripple phase (top), the DMPC fluid phase (middle) reproduced from \cite {Kucerka05_BPJ}, and the DHPC interdigitated $L_I$\ phase (bottom) from \cite {ref:Guler09}}}{179}{figure.caption.153}
+\contentsline {figure}{\numberline {3.69}{\ignorespaces Comparison of the WAXS pattern predicted by the ripple phase structure proposed in \cite {ref:deVries05} (A, with black corresponding to highest intensity) and our measured WAXS (C, white corresponding to highest intensity)}}{181}{figure.caption.154}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Two dimensional view of mosaic spread (left) and notations used in this section (right)}}{186}{figure.caption.156}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of a two dimensional sample consisting of an ideal and tilted domains}}{188}{figure.caption.157}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Notations used in this section}}{191}{figure.caption.158}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Rocking scan trace in $q$-space.\relax }}{192}{figure.caption.159}

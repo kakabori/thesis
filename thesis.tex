@@ -63,14 +63,17 @@ and DMPC ripple phase using X-ray scattering
 
 \date{\today}
 
+\newglossary[nlg]{notation}{not}{ntn}{Notation}
 
-\renewcommand*{\glspostdescription}{}
-\newglossarystyle{mystyle}{%
-  \glossarystyle{list}%
-  \renewcommand*{\glossaryentryfield}[5]{%
-    \item[\glsentryitem{##1}\glstarget{##1}{##2}]%
-       \hspace{1cm}##3\glspostdescription\space ##5}%
-}
+\renewcommand*{\glsnamefont}[1]{\textmd{#1}}
+
+%\newglossarystyle{mystyle}{
+%  \glossarystyle{list}
+%  \renewcommand*{\glossaryentryfield}[5]{
+%    \item[\glsentryitem{##1}\glstarget{##1}{##2}]
+%    \hspace{1cm}##3\glspostdescription\space ##5}
+%}
+
 %\makeglossaries
 \makenoidxglossaries
 \input{glossary}
@@ -104,7 +107,10 @@ and DMPC ripple phase using X-ray scattering
 \listoffigures
 
 %\printglossary[sort=def,style=mystyle,nonumberlist]
-\printnoidxglossary[sort=def,style=mystyle]
+%\printnoidxglossary[sort=def,style=mystyle]
+\printnoidxglossary[sort=def]
+\printnoidxglossary[sort=def, type=acronym]
+
 
 \clearpage 
 
