@@ -22,9 +22,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="210.80686"
-     inkscape:cy="123.78011"
+     inkscape:zoom="1.979899"
+     inkscape:cx="252.78322"
+     inkscape:cy="135.44752"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -32,10 +32,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1024"
-     inkscape:window-height="744"
-     inkscape:window-x="896"
-     inkscape:window-y="1104"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1">
     <inkscape:grid
        originy="-414.07378px"
@@ -254,7 +254,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -337,7 +337,7 @@
          y="556.85706"
          x="378.8634"
          id="tspan4860"
-         sodipodi:role="line">17°</tspan></text>
+         sodipodi:role="line">18°</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4858-5"
@@ -378,22 +378,22 @@
     <text
        sodipodi:linespacing="125%"
        id="text4900"
-       y="448.16312"
-       x="502.85718"
+       y="441.09204"
+       x="500.33179"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
        xml:space="preserve"><tspan
          id="tspan4906"
-         y="448.16312"
-         x="502.85718"
+         y="441.09204"
+         x="500.33179"
          sodipodi:role="line">transmission mode</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4910"
-       y="431.4028"
+       y="425.4028"
        x="266.74545"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
        xml:space="preserve"><tspan
-         y="431.4028"
+         y="425.4028"
          x="266.74545"
          id="tspan4912"
          sodipodi:role="line">LAXS mode</tspan></text>
@@ -422,7 +422,7 @@
          y="407.74271"
          x="392.44427"
          id="tspan5340"
-         sodipodi:role="line">16.1 mm</tspan></text>
+         sodipodi:role="line">16.4 mm</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path5342"
@@ -470,7 +470,7 @@
          y="408.42551"
          x="550.03851"
          id="tspan5340-6"
-         sodipodi:role="line">158.6 mm</tspan></text>
+         sodipodi:role="line">158.3 mm</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path5450"
@@ -531,5 +531,39 @@
          x="182.14377"
          id="tspan4912-2-7"
          sodipodi:role="line">z</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="287.14285"
+       y="437.78839"
+       id="text3056"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3058"
+         x="287.14285"
+         y="437.78839"
+         style="font-size:14px">ω = 1°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="512.43262"
+       y="455.50177"
+       id="text3056-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3058-6"
+         x="512.43262"
+         y="455.50177"
+         style="font-size:14px">ω = -45°</tspan></text>
+    <path
+       style="opacity:0.6;fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 325.30382,433.51376 c 32.31195,-1.07779 32.31195,-1.07779 32.31195,-1.07779"
+       id="path3085"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.6;fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 481.35243,436.14266 c 23.26051,22.45378 23.26051,22.45378 23.26051,22.45378"
+       id="path3085-5"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
