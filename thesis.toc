@@ -58,24 +58,24 @@
 \contentsline {subsection}{\numberline {3.5.3}Some Results of Model Fitting}{123}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Results for the Phase Factors}{124}{subsection.3.5.4}
 \contentsline {section}{\numberline {3.6}Electron Density Profiles and Coarse Grained Bilayer Structure}{129}{section.3.6}
-\contentsline {section}{\numberline {3.7}nGIWAXS: Results}{147}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Fluid and Gel Phase}{147}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ripple Phase}{150}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}tWAXS: Results}{159}{section.3.8}
-\contentsline {section}{\numberline {3.9}Thin Rod Model}{165}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Gel Phase Model}{165}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Ripple Model}{168}{subsection.3.9.2}
-\contentsline {section}{\numberline {3.10}Combining WAXS and LAXS Results for the Major Arm}{172}{section.3.10}
-\contentsline {section}{\numberline {3.11}Discussion}{175}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}Major Arm}{175}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {3.11.2}Minor Arm}{179}{subsection.3.11.2}
-\contentsline {section}{\numberline {3.12}Conclusion}{184}{section.3.12}
-\contentsline {chapter}{Appendices}{186}{section*.12}
-\contentsline {chapter}{\numberline {A}}{187}{Appendix.a.A}
-\contentsline {section}{\numberline {A.1}Mosaic Spread for NFIT Analysis}{187}{section.a.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Mosaic Spread: Calculation}{187}{subsection.a.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Mosaic Spread: Near Equivalence of Two Methods}{192}{subsection.a.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}NFIT}{195}{subsection.a.A.1.3}
-\contentsline {section}{\numberline {A.2}Derivation of the Contour Part of the Form Factor}{197}{section.a.A.2}
-\contentsline {section}{\numberline {A.3}Derivation of the Transbilayer Part of the Form Factor in the 2G Hybrid Model}{200}{section.a.A.3}
-\contentsline {section}{\numberline {A.4}Correction due to Refractive Index}{202}{section.a.A.4}
+\contentsline {section}{\numberline {3.7}nGIWAXS: Results}{148}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Fluid and Gel Phase}{148}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ripple Phase}{151}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}tWAXS: Results}{160}{section.3.8}
+\contentsline {section}{\numberline {3.9}Thin Rod Model}{166}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Gel Phase Model}{166}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Ripple Model}{169}{subsection.3.9.2}
+\contentsline {section}{\numberline {3.10}Combining WAXS and LAXS Results for the Major Arm}{173}{section.3.10}
+\contentsline {section}{\numberline {3.11}Discussion}{176}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Major Arm}{176}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Minor Arm}{180}{subsection.3.11.2}
+\contentsline {section}{\numberline {3.12}Conclusion}{185}{section.3.12}
+\contentsline {chapter}{Appendices}{187}{section*.12}
+\contentsline {chapter}{\numberline {A}}{188}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Mosaic Spread for NFIT Analysis}{188}{section.a.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Mosaic Spread: Calculation}{188}{subsection.a.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Mosaic Spread: Near Equivalence of Two Methods}{193}{subsection.a.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}NFIT}{196}{subsection.a.A.1.3}
+\contentsline {section}{\numberline {A.2}Derivation of the Contour Part of the Form Factor}{198}{section.a.A.2}
+\contentsline {section}{\numberline {A.3}Derivation of the Transbilayer Part of the Form Factor in the 2G Hybrid Model}{201}{section.a.A.3}
+\contentsline {section}{\numberline {A.4}Correction due to Refractive Index}{203}{section.a.A.4}

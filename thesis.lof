@@ -51,7 +51,7 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces The horizontal beam profile used in the 2013 high resolution experiment}}{86}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces The vertical beam profile used in the 2013 high resolution experiment}}{86}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Geometric broadening in tWAXS}}{87}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Top and side view of the beam on the sample in tWAXS}}{88}{figure.3.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Top (left) and side (right) views of the beam on the sample in tWAXS}}{88}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Projection of rectangular beam on the detector}}{88}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces (top panels) CCD images of X-ray scattering taken with (left) and without (right) a nominally 25 $\mu $m thick Mo attenuator}}{91}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Picture of the sample holder looking from above}}{94}{figure.3.14}
@@ -68,50 +68,50 @@
 \contentsline {figure}{\numberline {3.25}{\ignorespaces Mosaic factor given by Eq.\nobreakspace {}(\ref {eq:mosaic_I2}) as a function of $q_z\approx 4\pi \theta /\lambda $}}{112}{figure.3.25}
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Two dimensional map of the contour part of the form factor $|F_\mathrm {C}(\mathbf {q})|$ given by Eq.\nobreakspace {}\ref {eq:FC}}}{125}{figure.3.26}
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Two dimensional electron density map calculated using Eq.\nobreakspace {}(\ref {eq:Fourier_reconstruction}) with the phase factors (PF) obtained from Fit5 (Table\nobreakspace {}\ref {tab:LAXS_fits1} and \ref {tab:LAXS_fits2}) and our experimental form factors, in linear grayscale}}{130}{figure.3.27}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Headgroup $z$ positions $z_\text {Head}$ as a function of $x$ for the upper and lower leaflets, also shown as red lines in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}.}}{131}{figure.3.28}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Comparison of low resolution structures obtained using the form factors from the unoriented (dashed orange) and oriented (solid green) samples}}{132}{figure.3.29}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison of high resolution structures obtained using the form factors from the unoriented (solid cyan) and oriented (dashed magenta) samples}}{134}{figure.3.30}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Comparison of low (solid green, same as in Fig.\nobreakspace {}\ref {fig:low-res_comparison}) and high (dashed magenta, same as in Fig.\nobreakspace {}\ref {fig:un_vs_ori}) resolution structures}}{134}{figure.3.31}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit1 (PF1), in linear grayscale}}{137}{figure.3.32}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Two dimensional electron density profile calculated using the phases factors obtained from Fit2 (PF2), in linear grayscale}}{138}{figure.3.33}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit3 (PF3), in linear grayscale}}{139}{figure.3.34}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit7 (PF7), in linear grayscale}}{140}{figure.3.35}
-\contentsline {figure}{\numberline {3.36}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF1_2D_edp} (PF1)}}{141}{figure.3.36}
-\contentsline {figure}{\numberline {3.37}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF2_2D_edp} (PF2)}}{141}{figure.3.37}
-\contentsline {figure}{\numberline {3.38}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF3_2D_edp} (PF3)}}{142}{figure.3.38}
-\contentsline {figure}{\numberline {3.39}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF7_2D_edp} (PF7)}}{142}{figure.3.39}
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Electron density profiles along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{143}{figure.3.40}
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Electron density profiles along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{144}{figure.3.41}
-\contentsline {figure}{\numberline {3.42}{\ignorespaces Variation in the electron density profile along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{145}{figure.3.42}
-\contentsline {figure}{\numberline {3.43}{\ignorespaces Variation in the electron density profile along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{145}{figure.3.43}
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Major arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{146}{figure.3.44}
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Minor arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{146}{figure.3.45}
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Data reduction of nGIWAXS data}}{148}{figure.3.46}
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Fluid phase WAXS plotted along $q_r$ at $q_z$ = 0.012 \r A$^{-1}$}}{149}{figure.3.47}
-\contentsline {figure}{\numberline {3.48}{\ignorespaces (left) nGIWAXS image of the DMPC gel phase at 10 \textcelsius \ for $D$ = 57.7 \r A\ where the sample was in the L$_{\beta I}$ phase}}{150}{figure.3.48}
-\contentsline {figure}{\numberline {3.49}{\ignorespaces High resolution nGIWAXS of the DMPC ripple phase for $D$ = 60.8 \r A}}{152}{figure.3.49}
-\contentsline {figure}{\numberline {3.50}{\ignorespaces $q_r$ swaths of the ripple WAXS, each averaged over 0.02 \r A$^{-1}$ in $q_z$}}{153}{figure.3.50}
-\contentsline {figure}{\numberline {3.51}{\ignorespaces nGIWAXS of the DMPC ripple phase for $D$ = 59.2 \r A\ (left) and difference between $D$ = 59.2 \r A\ and 60.8 \r A\ (right)}}{154}{figure.3.51}
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Radial intensity profiles for various angles $\phi $}}{154}{figure.3.52}
-\contentsline {figure}{\numberline {3.53}{\ignorespaces Peak profile in $q_r$ at $q_z$ = 0.2 \r A$^{-1}$ fitted to the sum of two Lorentzians}}{155}{figure.3.53}
-\contentsline {figure}{\numberline {3.54}{\ignorespaces (left) Peak profile in $q_r$ at $q_z$ = 0.12 \r A$^{-1}$ fitted to the sum of two Lorentzian functions}}{155}{figure.3.54}
-\contentsline {figure}{\numberline {3.55}{\ignorespaces Low resolution nGIWAXS of the DMPC ripple phase for $D$ = 61.0 \r A}}{157}{figure.3.55}
-\contentsline {figure}{\numberline {3.56}{\ignorespaces $q_r$ swaths along $q_z=0.020$ (left) and 0.012\nobreakspace {}\r A$^{-1}$ (right) of the low resolution nGIWAXS data shown in Fig.\nobreakspace {}\ref {fig:ripple_waxs_low-res}}}{158}{figure.3.56}
-\contentsline {figure}{\numberline {3.57}{\ignorespaces Transmission WAXS at fixed angle $\omega $\nobreakspace {}=\nobreakspace {}45\textdegree of the DMPC gel $L_{\beta I}$ phase observed on the CCD detector (left) and its corresponding pattern in the sample $q$-space (right)}}{159}{figure.3.57}
-\contentsline {figure}{\numberline {3.58}{\ignorespaces $q_r$ swath of the (2,\nobreakspace {}0) Bragg rod at $q_z=0$\nobreakspace {}\r A$^{-1}$}}{160}{figure.3.58}
-\contentsline {figure}{\numberline {3.59}{\ignorespaces tWAXS image of the DMPC ripple phase at 18 \textcelsius \ and $D$ = 60.3 \r A}}{162}{figure.3.59}
-\contentsline {figure}{\numberline {3.60}{\ignorespaces (left) Peak profile of the ripple tWAXS in $q_r$ at $q_z=0.2$\nobreakspace {}\r A$^{-1}$}}{163}{figure.3.60}
-\contentsline {figure}{\numberline {3.61}{\ignorespaces (left) $q_z$ swath of the gel (2,0) Bragg rod}}{163}{figure.3.61}
-\contentsline {figure}{\numberline {3.62}{\ignorespaces $q_z$ swath averaged between 1.465 and 1.481 \r A$^{-1}$ (left) and between 1.465 and 1.51 \r A$^{-1}$ (right) in $q_r$}}{164}{figure.3.62}
-\contentsline {figure}{\numberline {3.63}{\ignorespaces Lattice and geometry of thin rod model}}{166}{figure.3.63}
-\contentsline {figure}{\numberline {3.64}{\ignorespaces (left) Projection of the unit cell ($a$, $b$) on the laboratory ($x$, $y$) plane}}{169}{figure.3.64}
-\contentsline {figure}{\numberline {3.65}{\ignorespaces Definitions of structural quantities appearing in Table\nobreakspace {}\ref {tab:waxs_structure}}}{173}{figure.3.65}
-\contentsline {figure}{\numberline {3.66}{\ignorespaces Comparison of the electron density profiles of the DMPC gel phase (left) and the major arm in the ripple phase (right)}}{175}{figure.3.66}
-\contentsline {figure}{\numberline {3.67}{\ignorespaces (top) Chain packing in the major arm proposed in this thesis}}{178}{figure.3.67}
-\contentsline {figure}{\numberline {3.68}{\ignorespaces Comparison of the electron density profiles of the minor arm in the ripple phase (top), the DMPC fluid phase (middle) reproduced from \cite {Kucerka05_BPJ}, and the DHPC interdigitated $L_I$\ phase (bottom) from \cite {ref:Guler09}}}{181}{figure.3.68}
-\contentsline {figure}{\numberline {3.69}{\ignorespaces Comparison of the WAXS pattern predicted by the ripple phase structure proposed in \cite {ref:deVries05} (A, with black corresponding to highest intensity) and our measured WAXS (C, white corresponding to highest intensity)}}{183}{figure.3.69}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Headgroup $z$ positions $z_\text {Head}$ as a function of $x$ for the upper and lower leaflets, also shown as red lines in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp} (PF5).}}{131}{figure.3.28}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Comparison of low resolution structures obtained using the form factors from the unoriented (dashed orange) and oriented (solid green) samples}}{134}{figure.3.29}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison of high resolution structures obtained using the form factors from the unoriented (solid cyan) and oriented (dashed magenta) samples}}{135}{figure.3.30}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Comparison of low (solid green, same as in Fig.\nobreakspace {}\ref {fig:low-res_comparison}) and high (dashed magenta, same as in Fig.\nobreakspace {}\ref {fig:un_vs_ori}) resolution structures}}{135}{figure.3.31}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit1 (PF1), in linear grayscale}}{138}{figure.3.32}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Two dimensional electron density profile calculated using the phases factors obtained from Fit2 (PF2), in linear grayscale}}{139}{figure.3.33}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit3 (PF3), in linear grayscale}}{140}{figure.3.34}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Two dimensional electron density map calculated using the phase factors obtained from Fit7 (PF7), in linear grayscale}}{141}{figure.3.35}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF1_2D_edp} (PF1)}}{142}{figure.3.36}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF2_2D_edp} (PF2)}}{142}{figure.3.37}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF3_2D_edp} (PF3)}}{143}{figure.3.38}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces $z_\text {Head}(x)$ and $\rho _\text {Head}(x)$ obtained from the electron density map shown in Fig.\nobreakspace {}\ref {fig:PF7_2D_edp} (PF7)}}{143}{figure.3.39}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Electron density profiles along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{144}{figure.3.40}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Electron density profiles along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}, calculated using the phase factors predicted by different fits as indicated in the legend}}{145}{figure.3.41}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Variation in the electron density profile along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{146}{figure.3.42}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Variation in the electron density profile along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{146}{figure.3.43}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Major arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice A shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{147}{figure.3.44}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Minor arm electron density profiles from PF1, 2, 3, 5, 7, 5a, 5b, and 5c, along Slice B shown in Fig.\nobreakspace {}\ref {fig:Fit5_2D_edp}}}{147}{figure.3.45}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Data reduction of nGIWAXS data}}{149}{figure.3.46}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Fluid phase WAXS plotted along $q_r$ at $q_z$ = 0.012 \r A$^{-1}$}}{150}{figure.3.47}
+\contentsline {figure}{\numberline {3.48}{\ignorespaces (left) nGIWAXS image of the DMPC gel phase at 10 \textcelsius \ for $D$ = 57.7 \r A\ where the sample was in the L$_{\beta I}$ phase}}{151}{figure.3.48}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces High resolution nGIWAXS of the DMPC ripple phase for $D$ = 60.8 \r A}}{153}{figure.3.49}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces $q_r$ swaths of the ripple WAXS, each averaged over 0.02 \r A$^{-1}$ in $q_z$}}{154}{figure.3.50}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces nGIWAXS of the DMPC ripple phase for $D$ = 59.2 \r A\ (left) and difference between $D$ = 59.2 \r A\ and 60.8 \r A\ (right)}}{155}{figure.3.51}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Radial intensity profiles for various angles $\phi $}}{155}{figure.3.52}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Peak profile in $q_r$ at $q_z$ = 0.2 \r A$^{-1}$ fitted to the sum of two Lorentzians}}{156}{figure.3.53}
+\contentsline {figure}{\numberline {3.54}{\ignorespaces (left) Peak profile in $q_r$ at $q_z$ = 0.12 \r A$^{-1}$ fitted to the sum of two Lorentzian functions}}{156}{figure.3.54}
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Low resolution nGIWAXS of the DMPC ripple phase for $D$ = 61.0 \r A}}{158}{figure.3.55}
+\contentsline {figure}{\numberline {3.56}{\ignorespaces $q_r$ swaths along $q_z=0.020$ (left) and 0.012\nobreakspace {}\r A$^{-1}$ (right) of the low resolution nGIWAXS data shown in Fig.\nobreakspace {}\ref {fig:ripple_waxs_low-res}}}{159}{figure.3.56}
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Transmission WAXS at fixed angle $\omega $\nobreakspace {}=\nobreakspace {}45\textdegree of the DMPC gel $L_{\beta I}$ phase observed on the CCD detector (left) and its corresponding pattern in the sample $q$-space (right)}}{160}{figure.3.57}
+\contentsline {figure}{\numberline {3.58}{\ignorespaces $q_r$ swath of the (2,\nobreakspace {}0) Bragg rod at $q_z=0$\nobreakspace {}\r A$^{-1}$}}{161}{figure.3.58}
+\contentsline {figure}{\numberline {3.59}{\ignorespaces tWAXS image of the DMPC ripple phase at 18 \textcelsius \ and $D$ = 60.3 \r A}}{163}{figure.3.59}
+\contentsline {figure}{\numberline {3.60}{\ignorespaces (left) Peak profile of the ripple tWAXS in $q_r$ at $q_z=0.2$\nobreakspace {}\r A$^{-1}$}}{164}{figure.3.60}
+\contentsline {figure}{\numberline {3.61}{\ignorespaces (left) $q_z$ swath of the gel (2,0) Bragg rod}}{164}{figure.3.61}
+\contentsline {figure}{\numberline {3.62}{\ignorespaces $q_z$ swath averaged between 1.465 and 1.481 \r A$^{-1}$ (left) and between 1.465 and 1.51 \r A$^{-1}$ (right) in $q_r$}}{165}{figure.3.62}
+\contentsline {figure}{\numberline {3.63}{\ignorespaces Lattice and geometry of thin rod model}}{167}{figure.3.63}
+\contentsline {figure}{\numberline {3.64}{\ignorespaces (left) Projection of the unit cell ($a$, $b$) on the laboratory ($x$, $y$) plane}}{170}{figure.3.64}
+\contentsline {figure}{\numberline {3.65}{\ignorespaces Definitions of structural quantities appearing in Table\nobreakspace {}\ref {tab:waxs_structure}}}{174}{figure.3.65}
+\contentsline {figure}{\numberline {3.66}{\ignorespaces Comparison of the electron density profiles of the DMPC gel phase (left) and the major arm in the ripple phase (right)}}{176}{figure.3.66}
+\contentsline {figure}{\numberline {3.67}{\ignorespaces (top) Chain packing in the major arm proposed in this thesis}}{179}{figure.3.67}
+\contentsline {figure}{\numberline {3.68}{\ignorespaces Comparison of the electron density profiles of the minor arm in the ripple phase (top), the DMPC fluid phase (middle) reproduced from \cite {Kucerka05_BPJ}, and the DHPC interdigitated $L_I$\ phase (bottom) from \cite {ref:Guler09}}}{182}{figure.3.68}
+\contentsline {figure}{\numberline {3.69}{\ignorespaces Comparison of the WAXS pattern predicted by the ripple phase structure proposed in \cite {ref:deVries05} (A, with black corresponding to highest intensity) and our measured WAXS (C, white corresponding to highest intensity)}}{184}{figure.3.69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Two dimensional view of mosaic spread (left) and notations used in this section (right)}}{188}{figure.a.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of a two dimensional sample consisting of an ideal and tilted domains}}{190}{figure.a.A.2}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Notations used in this section}}{193}{figure.a.A.3}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Rocking scan trace in $q$-space.}}{194}{figure.a.A.4}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Two dimensional view of mosaic spread (left) and notations used in this section (right)}}{189}{figure.a.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of a two dimensional sample consisting of an ideal and tilted domains}}{191}{figure.a.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Notations used in this section}}{194}{figure.a.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Rocking scan trace in $q$-space.}}{195}{figure.a.A.4}
