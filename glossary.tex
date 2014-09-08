@@ -9,9 +9,13 @@
 \newglossaryentry{b}{name=$\mathbf{b}$, description={orthorhombic unit cell vector}}
 \newglossaryentry{B}{name=$B$, description={bulk modulus}}
 
-\newglossaryentry{chisqr}{name=$\chi^2$, description={goodness of fit}}
+\newglossaryentry{chisqr}{name=\ensuremath{\chi^2}, description={goodness of fit}}
 \newglossaryentry{chi}{name=$\chi$, description={angle measured from the meridian on a CCD detector}}
 \newglossaryentry{ci}{name=$c_i$, description={amplitude of the volume probability distribution for molecular component $i$}}
+\newglossaryentry{CH}{name=CH, description={methine group}}
+\newglossaryentry{CH2}{name=CH$_2$, description={methylene group}}
+\newglossaryentry{CH2CH}{name=CH$_2$+CH, description={methylene and methine group combination}}
+\newglossaryentry{CH3}{name=CH$_3$, description={terminal methyl group}}
 
 \newglossaryentry{Deltaqr}{name=$\Delta q_r$, description={instrumental resolution in $q_r$}}
 \newglossaryentry{Deltaqz}{name=$\Delta q_z$, description={instrumental resolution in $q_z$}}
@@ -27,7 +31,7 @@
 \newglossaryentry{f1}{name=$f_1$, description={ratio of the minor to the major arm electron densities}}
 \newglossaryentry{f2}{name=$f_2$, description={ratio of the kink region to the major arm electron densities}}
 \newglossaryentry{Fq}{name=$F(\mathbf{q})$, description={X-ray form factor}}
-\newglossaryentry{Fsim}{name=$F^\textrm{sim}(q_z)$, description={simulated X-ray form factor}}
+\newglossaryentry{Fsim}{name=\ensuremath{F^\textrm{sim}(q_z)}, description={simulated X-ray form factor}}
 \newglossaryentry{Fexp}{name=$F^\textrm{exp}(q_z)$, description={experimentally measured X-ray form factor}}
 \newglossaryentry{Fhk}{name=$F_{hk}$, description={X-ray form factor for the $(h,k)$ reflection}}
 \newglossaryentry{Fhkori}{name=$F_{hk}^\textrm{ori}$, description={$F_{hk}$ for the oriented sample}}
@@ -54,8 +58,10 @@
 \newglossaryentry{mu}{name=$\mu$, description={X-ray absorption length}}
 
 \newglossaryentry{omega}{name=$\omega$, description={beam incident angle}}
+
 \newglossaryentry{phi}{name=$\phi$, description={angle measured from the equator or in-plane chain tilt direction}}
 \newglossaryentry{Phihk}{name=$\Phi_{hk}$, description={X-ray phase factor for the $(h,k)$ reflection}}
+\newglossaryentry{Pi}{name=$P_i$, description={volume probability distribution}}
 \newglossaryentry{psi}{name=$\psi$, description={chain tilt angle with respect to the $z$ direction}}
 \newglossaryentry{px}{name=$p_x$, description={horizontal CCD pixel}}
 \newglossaryentry{pz}{name=$p_z$, description={vertical CCD pixel}}
@@ -74,10 +80,11 @@
 \newglossaryentry{rhoHi}{name=$\rho_{\textrm{H}i}$, description={electron density of the $i^\textrm{th}$ headgroup Gaussian in the 2G hybrid model}}
 \newglossaryentry{rhoM}{name=$\rho_\textrm{M}$, description={electron density of the terminal methyl Gaussian in the 2G hybrid model}}
 \newglossaryentry{rhoHead}{name=$\rho_\textrm{Head}(x)$, description={electron density profile along the headgroup positions}}
+\newglossaryentry{rhoW}{name=$\rho_\textrm{W}$, description={average water electron density}}
 
 \newglossaryentry{RTat}{name=$\RTat$, description={radius of Tat cylinder}}
 \newglossaryentry{R2}{name=$R_2$, description={outer radius of the boundary region}}
-\newglossaryentry{R3}{name=$R_3$, description={outer radius of the unperturbed region}}
+\newglossaryentry{R3}{name=\ensuremath{R_3}, description={outer radius of the unperturbed region}}
 
 \newglossaryentry{sigmaHi}{name=$\sigma_{\textrm{H}i}$, description={width of the $i^\textrm{th}$ Gaussian in the 2G hybrid model}}
 \newglossaryentry{sigmaM}{name=$\sigma_\textrm{M}$, description={width of the terminal methyl Gaussian in the 2G hybrid model}}
@@ -85,8 +92,11 @@
 \newglossaryentry{sigmaI}{name=$\sigma_I$, description={uncertainties on observed intensities}}
 \newglossaryentry{sigmai}{name=$\sigma_i$, description={volume probability distribution width for molecular component $i$}}
 \newglossaryentry{Sq}{name=$S(\mathbf{q})$, description={X-ray structure factor}}
+
 \newglossaryentry{T}{name=$T$, description={temperature}}
+
 \newglossaryentry{theta}{name=$\theta$, description={chain tilt angle or X-ray scattering angle}}
+
 \newglossaryentry{VHL}{name=$V_\textrm{HL}$, description={lipid headgroup volume}}
 \newglossaryentry{Vi}{name=$V_i$, description={volume of molecular component $i$}}
 \newglossaryentry{VTat}{name=$\VTat$, description={Tat volume}}
@@ -102,7 +112,7 @@
 \newglossaryentry{zHead}{name=$z_\textrm{Head}(x)$, description={headgroup $z$ positions}}
 \newglossaryentry{zi}{name=$z_i$, description={center of the volume probability distribution for molecular component $i$}}
 \newglossaryentry{zphos}{name=$\zphos$, description={phosphorus $z$ position in the suppressed region}}
-\newglossaryentry{zphos0}{name=$\zphos^0$, description={phosphorus $z$ position in the unperturbed region}}
+\newglossaryentry{zphos0}{name=\ensuremath{z_\textrm{phos}^0}, description={phosphorus $z$ position in the unperturbed region}}
 \newglossaryentry{zTat}{name=$\zTat$, description={Tat position measured from the bilayer center}}
 \newglossaryentry{zguan}{name=$\zguan$, description={guanidinium peak position}}
 \newglossaryentry{ZHi}{name=$Z_{\textrm{H}i}$, description={center of $i^\textrm{th}$ Gaussian in the 2G hybrid model}} 
@@ -127,6 +137,7 @@
 \newacronym{FWHM}{FWHM}{full width half maximum}
 \newacronym{GUV}{GUV}{giant unilamellar vesicle}
 \newacronym{HC}{HC}{hydrocarbon chain}
+\newacronym{HIP}{HIP}{hexafluoroisopropanol}
 \newacronym{LAXS}{LAXS}{low angle X-ray scattering}
 \newacronym{LUV}{LUV}{large unilamellar vesicle}
 \newacronym{MD}{MD}{molecular dynamics}
@@ -143,8 +154,10 @@
 \newacronym{PS}{PS}{phosphatidylserine}
 
 \newacronym{Tat}{Tat}{transactivator of translation}
-\newacronym{THC}{THC}{Tat in hydrocarbon chain model}
-\newacronym{THG}{THG}{Tat in headgroup model}
+\newacronym{TFA}{TFA}{trifluoroacetate}
+\newacronym{TFE}{TFE}{trifluoroethanol}
+\newacronym{THC}{THC}{Tat-in-hydrocarbon-chain model}
+\newacronym{THG}{THG}{Tat-in-headgroup model}
 \newacronym{tWAXS}{tWAXS}{transmission wide angle X-ray scattering}
 
 \newacronym{ULV}{ULV}{unilamellar vesicle}
