@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: abstract.aux
@@ -9,44 +9,44 @@ A level-1 auxiliary file: chap_03.aux
 A level-1 auxiliary file: appendix.aux
 The style file: ieeetr.bst
 Database file #1: mybib.bib
-You've used 161 entries,
+You've used 162 entries,
             1876 wiz_defined-function locations,
-            1516 strings with 35611 characters,
-and the built_in function-call counts, 56465 in all, are:
-= -- 5938
-> -- 2030
+            1521 strings with 35755 characters,
+and the built_in function-call counts, 56876 in all, are:
+= -- 5983
+> -- 2041
 < -- 0
-+ -- 737
-- -- 576
-* -- 4122
-:= -- 7528
-add.period$ -- 166
-call.type$ -- 161
-change.case$ -- 155
++ -- 741
+- -- 579
+* -- 4151
+:= -- 7579
+add.period$ -- 167
+call.type$ -- 162
+change.case$ -- 156
 chr.to.int$ -- 0
-cite$ -- 161
-duplicate$ -- 2858
-empty$ -- 4821
-format.name$ -- 576
-if$ -- 14063
+cite$ -- 162
+duplicate$ -- 2879
+empty$ -- 4857
+format.name$ -- 579
+if$ -- 14168
 int.to.chr$ -- 0
-int.to.str$ -- 161
-missing$ -- 157
-newline$ -- 491
-num.names$ -- 157
-pop$ -- 219
+int.to.str$ -- 162
+missing$ -- 158
+newline$ -- 494
+num.names$ -- 158
+pop$ -- 220
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2514
+skip$ -- 2534
 stack$ -- 0
-substring$ -- 4873
-swap$ -- 1597
+substring$ -- 4917
+swap$ -- 1610
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 501
-width$ -- 164
-write$ -- 1738
+while$ -- 504
+width$ -- 165
+write$ -- 1749

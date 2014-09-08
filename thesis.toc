@@ -8,74 +8,74 @@
 \contentsline {subsection}{\numberline {2.2.1}Stock Solutions}{13}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Thin Film Samples}{14}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Volume Measurements}{14}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}X-ray Setup}{16}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Analysis of Diffuse Scattering}{18}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.4}X-ray Setup}{15}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Analysis of Diffuse Scattering}{16}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}Modeling the Bilayer Structure}{20}{subsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.6.1}Functional Forms}{22}{subsubsection.2.2.6.1}
-\contentsline {subsubsection}{\numberline {2.2.6.2}Constraints}{24}{subsubsection.2.2.6.2}
-\contentsline {subsubsection}{\numberline {2.2.6.3}Fits with Lower Bounds}{27}{subsubsection.2.2.6.3}
-\contentsline {subsection}{\numberline {2.2.7}Molecular Dynamics Simulation}{28}{subsection.2.2.7}
-\contentsline {section}{\numberline {2.3}Analysis of Molecular Dynamics Simulation Data}{29}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}SIMtoEXP Program}{29}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Local Thinning of Membranes}{30}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Lateral Decay Length of Membrane Thinning}{32}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Results}{34}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Bending and Bulk Modulus}{34}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Form Factors}{35}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Volume}{41}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Electron Density Profile Modeling}{42}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Molecular Dynamics Simulations}{57}{subsection.2.4.5}
-\contentsline {section}{\numberline {2.5}Discussion}{69}{section.2.5}
-\contentsline {section}{\numberline {2.6}Conclusions}{72}{section.2.6}
-\contentsline {chapter}{\numberline {3}Ripple Phase}{73}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{73}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Some Historical Detail}{73}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Purpose of This Study}{77}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Materials and Methods}{80}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Sample Preparation}{80}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Instrumental Resolution}{81}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{81}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Energy Dispersion}{81}{subsubsection.3.2.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{82}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{LAXS}{82}{section*.9}
-\contentsline {paragraph}{nGIWAXS}{83}{section*.10}
-\contentsline {paragraph}{tWAXS}{85}{section*.11}
-\contentsline {subsubsection}{\numberline {3.2.2.4}Final Instumental Resolution}{89}{subsubsection.3.2.2.4}
-\contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering (LAXS)}{90}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering\\ (nGIWAXS)}{92}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Transmission Wide Angle X-ray Scattering (tWAXS)}{92}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Sample $q$-space}{96}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}LAXS Data Reduction}{98}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Lattice Structure -- Unit Cell}{98}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Lorentz Correction}{99}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Absorption Correction for LAXS}{105}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Correction due to Mosaic Spread}{109}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Synopsis of Intensity Corrections}{111}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Results for $|F_{hk}|$ Form Factors}{115}{section.3.4}
-\contentsline {section}{\numberline {3.5}Models to Fit the $|F_{hk}|$ and Obtain the Phase Factors}{120}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Contour Part of the Form Factor}{120}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Transbilayer Part of the Form Factor}{121}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Some Results of Model Fitting}{123}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Results for the Phase Factors}{124}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Electron Density Profiles and Coarse Grained Bilayer Structure}{129}{section.3.6}
-\contentsline {section}{\numberline {3.7}nGIWAXS: Results}{148}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Fluid and Gel Phase}{148}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Ripple Phase}{151}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}tWAXS: Results}{160}{section.3.8}
-\contentsline {section}{\numberline {3.9}Thin Rod Model}{166}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Gel Phase Model}{166}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Ripple Model}{169}{subsection.3.9.2}
-\contentsline {section}{\numberline {3.10}Combining WAXS and LAXS Results for the Major Arm}{173}{section.3.10}
-\contentsline {section}{\numberline {3.11}Discussion}{176}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}Major Arm}{176}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {3.11.2}Minor Arm}{180}{subsection.3.11.2}
-\contentsline {section}{\numberline {3.12}Conclusion}{185}{section.3.12}
-\contentsline {chapter}{Appendices}{187}{section*.12}
-\contentsline {chapter}{\numberline {A}}{188}{Appendix.a.A}
-\contentsline {section}{\numberline {A.1}Mosaic Spread for NFIT Analysis}{188}{section.a.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Mosaic Spread: Calculation}{188}{subsection.a.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Mosaic Spread: Near Equivalence of Two Methods}{193}{subsection.a.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}NFIT}{196}{subsection.a.A.1.3}
-\contentsline {section}{\numberline {A.2}Derivation of the Contour Part of the Form Factor}{198}{section.a.A.2}
-\contentsline {section}{\numberline {A.3}Derivation of the Transbilayer Part of the Form Factor in the 2G Hybrid Model}{201}{section.a.A.3}
-\contentsline {section}{\numberline {A.4}Correction due to Refractive Index}{203}{section.a.A.4}
+\contentsline {subsubsection}{\numberline {2.2.6.1}Functional Forms}{20}{subsubsection.2.2.6.1}
+\contentsline {subsubsection}{\numberline {2.2.6.2}Constraints}{23}{subsubsection.2.2.6.2}
+\contentsline {subsubsection}{\numberline {2.2.6.3}Fits with Lower Bounds}{26}{subsubsection.2.2.6.3}
+\contentsline {subsection}{\numberline {2.2.7}Molecular Dynamics Simulation}{27}{subsection.2.2.7}
+\contentsline {section}{\numberline {2.3}Analysis of Molecular Dynamics Simulation Data}{28}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}SIMtoEXP Program}{28}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Local Thinning of Membranes}{29}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Lateral Decay Length of Membrane Thinning}{31}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Results}{33}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Bending and Bulk Modulus}{33}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Form Factors}{34}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Volume}{40}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Electron Density Profile Modeling}{41}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Molecular Dynamics Simulations}{56}{subsection.2.4.5}
+\contentsline {section}{\numberline {2.5}Discussion}{68}{section.2.5}
+\contentsline {section}{\numberline {2.6}Conclusions}{71}{section.2.6}
+\contentsline {chapter}{\numberline {3}Ripple Phase}{72}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{72}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Some Historical Detail}{72}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Purpose of This Study}{76}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Materials and Methods}{79}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Sample Preparation}{79}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Instrumental Resolution}{80}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{80}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Energy Dispersion}{80}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{81}{subsubsection.3.2.2.3}
+\contentsline {paragraph}{LAXS}{81}{section*.9}
+\contentsline {paragraph}{nGIWAXS}{82}{section*.10}
+\contentsline {paragraph}{tWAXS}{84}{section*.11}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Final Instumental Resolution}{88}{subsubsection.3.2.2.4}
+\contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering (LAXS)}{89}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering\\ (nGIWAXS)}{91}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Transmission Wide Angle X-ray Scattering (tWAXS)}{91}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Sample $q$-space}{95}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}LAXS Data Reduction}{97}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Lattice Structure -- Unit Cell}{97}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Lorentz Correction}{98}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Absorption Correction for LAXS}{104}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Correction due to Mosaic Spread}{108}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Synopsis of Intensity Corrections}{110}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Results for $|F_{hk}|$ Form Factors}{114}{section.3.4}
+\contentsline {section}{\numberline {3.5}Models to Fit the $|F_{hk}|$ and Obtain the Phase Factors}{119}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Contour Part of the Form Factor}{119}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Transbilayer Part of the Form Factor}{120}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Some Results of Model Fitting}{122}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Results for the Phase Factors}{123}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Electron Density Profiles and Coarse Grained Bilayer Structure}{128}{section.3.6}
+\contentsline {section}{\numberline {3.7}nGIWAXS: Results}{147}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Fluid and Gel Phase}{147}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Ripple Phase}{150}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}tWAXS: Results}{159}{section.3.8}
+\contentsline {section}{\numberline {3.9}Thin Rod Model}{165}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Gel Phase Model}{165}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Ripple Model}{168}{subsection.3.9.2}
+\contentsline {section}{\numberline {3.10}Combining WAXS and LAXS Results for the Major Arm}{172}{section.3.10}
+\contentsline {section}{\numberline {3.11}Discussion}{175}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Major Arm}{175}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Minor Arm}{179}{subsection.3.11.2}
+\contentsline {section}{\numberline {3.12}Conclusion}{184}{section.3.12}
+\contentsline {chapter}{Appendices}{186}{section*.12}
+\contentsline {chapter}{\numberline {A}}{187}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Mosaic Spread for NFIT Analysis}{187}{section.a.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Mosaic Spread: Calculation}{187}{subsection.a.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Mosaic Spread: Near Equivalence of Two Methods}{192}{subsection.a.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}NFIT}{195}{subsection.a.A.1.3}
+\contentsline {section}{\numberline {A.2}Derivation of the Contour Part of the Form Factor}{197}{section.a.A.2}
+\contentsline {section}{\numberline {A.3}Derivation of the Transbilayer Part of the Form Factor in the 2G Hybrid Model}{200}{section.a.A.3}
+\contentsline {section}{\numberline {A.4}Correction due to Refractive Index}{202}{section.a.A.4}
