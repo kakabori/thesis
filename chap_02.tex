@@ -848,7 +848,7 @@ so $\Dphos$ should represent the actual thinning effect due to Tat.
   {Our simple model to extract the local bilayer thickness from 
   simulation trajectories. Tat is modeled as a cylinder with height $\HTat$ 
   and radius $\RTat$. The local bilayer thickness is defined as $\Dphos$. 
-  The thickness of the unperturbed DOPC bilayer is $\Dphos^0$. 
+  The thickness of the unperturbed DOPC bilayer is \gls{Dphos0}. 
   Lipids with blue headgroups fall within the imaginary cylinder extended from
   Tat. Unperturbed lipids have green headgroups.}
   \label{fig:cylinder_model}
@@ -1183,7 +1183,7 @@ It is also seen from Table~\ref{tab:DOPC_fit_results}
 that the area per lipid $\AL$ increased as the Tat concentration was
 increased from 0 to 0.034. An increase in $\AL$ implies thinning of a bilayer because
 a lipid bilayer can be approximated as an incompressible fluid membrane. 
-Another observed trend was that $\zTat$ increased as $\xTat$ was increased.
+Another observed trend was that \gls{zTat} increased as $\xTat$ was increased.
 Figure~\ref{fig:DOPC_Tat_XFF1} shows the best fits and corresponding 
 electron density profiles for DOPC with Tat.
 
@@ -1240,8 +1240,8 @@ electron density profiles for DOPC with Tat.
 \end{figure}
 
 As shown in Fig.~\ref{fig:DOPC_Tat_XFF1}, the membrane thickness can be defined
-as the distance $\DPP$ between the PC components in the opposing leaflets
-or the distance $\DHH$ between the maxima in the opposing leaflets. $\DHH$
+as the distance \gls{DPP} between the PC components in the opposing leaflets
+or the distance \gls{DHH} between the maxima in the opposing leaflets. $\DHH$
 is more reliable than $\DPP$ because it is a property of the total 
 electron density of a bilayer and, therefore, does not depend strongly on the 
 specific model employed for fitting the data. 
@@ -1413,7 +1413,7 @@ increased, similarly to DOPC/Tat systems shown in Fig.~\ref{fig:DOPC_Tat_total_E
 
 Figure~\ref{fig:DHH_DPP} summarizes the results for bilayer thickness as a function
 of Tat mole fraction $\xTat$. In all cases, $\DHH$ was smaller than $\DPP$, consistent
-with the results that the value of Tat position $\zTat$ was smaller 
+with the results that the value of Tat position \gls{zTat} was smaller 
 than that of PC headgroup position $\zPC$. The CG headgroup also carries 
 high average electron density and is located closer to the bilayer center than
 the PC headgroup. Therefore, in general, $\DHH$ is smaller than $\DPP$ even
@@ -1673,7 +1673,7 @@ we now turn to MD simulations.
 Due to slow relaxation in lipid bilayers and limited force field accuracy, 
 good agreement may be difficult to reach between experimental and MD simulation 
 calculated form factors. Consequently, we carried out several 
-constrained simulations at various $\AL$ and $\zTat$ as described
+constrained simulations at various \gls{AL} and \gls{zTat} as described
 in Sec.~\ref{sec:sim_methods}. 
 We then compared the simulated and experimental form factors $F(q_z)$. 
 Figure~\ref{fig:MD_dopc_sim-exp}  
@@ -1909,7 +1909,7 @@ shown in Table~\ref{tab:local_thickness}
 using the methods described in Sec.~\ref{sec:local_thinning}.
 For comparison, 
 the average bilayer thickness defined by the average phosphorus-phosphorus 
-distance $\langle\Dphos\rangle$ is also shown in Table~\ref{tab:local_thickness} 
+distance \gls{Dphosavg} is also shown in Table~\ref{tab:local_thickness} 
 for simulations with $\zTat$ = 16 \AA\ and 18 \AA. 
 $\langle\Dphos\rangle$ was measured using
 the electron density profile of phosphorus atoms. 
@@ -1936,7 +1936,7 @@ may partly be due to the bilayer compressing both from above and below.
 
 Table~\ref{tab:local_thickness} also lists
 the position of guanidinium groups averaged
-over all arginines in the $\zguan$ column. $\zguan$ was obtained
+over all arginines in the \gls{zguan} column. $\zguan$ was obtained
 from the peak position of the electron density profile of the guanidinium groups 
 as shown in Fig.~\ref{fig:charged-groups}. As Fig.~\ref{fig:charged-groups} shows,
 the distribution of the guanidinium groups was broad and 
@@ -2073,7 +2073,7 @@ indicated in Fig.~\ref{fig:figure9}.
   \begin{tabular}{ccccccccccc}
     \hline
     \rule{0pt}{14pt} % add extra space  
-    $\xTat$ & $\AL$ & $\zTat$ & $\langle\DPP\rangle$ & $\DPP$ & $\Delta t$ & $\HTat$ & $\RTat$ & $R_2$ & $\zphos$ & $\zguan$ \\
+    $\xTat$ & $\AL$ & $\zTat$ & $\langle\Dphos\rangle$ & $\Dphos$ & $\Delta t$ & $\HTat$ & $\RTat$ & $R_2$ & $\zphos$ & $\zguan$ \\
     \hline    
     0.015 & 72.9 & 17.1 & 35.4 & 32.7 & 3.6 & 8.7 & 8.3 & 17.1 & 14.6 & 15.1 \\  
     0.030 & 75.2 & 17.3 & 34.8 & 31.9 & 4.4 & 7.7 & 8.8 & NA & 13.8 & 15.4 \\
@@ -2088,7 +2088,7 @@ indicated in Fig.~\ref{fig:figure9}.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/Tat/figure9}
+  \includegraphics[width=1\textwidth]{figures/Tat/figure9}
   \caption[Location of Tat in DOPC bilayer]
   {Location of Tat in DOPC bilayer. Tat is represented as a cylinder, $z$ is the distance
   from the bilayer center, and $R$ is the in-plane distance from the center of Tat. The average $z$ of

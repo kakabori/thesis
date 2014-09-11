@@ -37,9 +37,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Divergence}{80}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Energy Dispersion}{80}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Geometric Broadening}{81}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{LAXS}{81}{section*.9}
-\contentsline {paragraph}{nGIWAXS}{82}{section*.10}
-\contentsline {paragraph}{tWAXS}{84}{section*.11}
+\contentsline {paragraph}{LAXS}{81}{section*.8}
+\contentsline {paragraph}{nGIWAXS}{82}{section*.9}
+\contentsline {paragraph}{tWAXS}{84}{section*.10}
 \contentsline {subsubsection}{\numberline {3.2.2.4}Final Instumental Resolution}{88}{subsubsection.3.2.2.4}
 \contentsline {subsection}{\numberline {3.2.3}Low Angle X-ray Scattering (LAXS)}{89}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Near Grazing Incidence Wide Angle X-ray Scattering\\ (nGIWAXS)}{91}{subsection.3.2.4}
@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {3.11.1}Major Arm}{175}{subsection.3.11.1}
 \contentsline {subsection}{\numberline {3.11.2}Minor Arm}{179}{subsection.3.11.2}
 \contentsline {section}{\numberline {3.12}Conclusion}{184}{section.3.12}
-\contentsline {chapter}{Appendices}{186}{section*.12}
+\contentsline {chapter}{Appendices}{186}{section*.11}
 \contentsline {chapter}{\numberline {A}}{187}{Appendix.a.A}
 \contentsline {section}{\numberline {A.1}Mosaic Spread for NFIT Analysis}{187}{section.a.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Mosaic Spread: Calculation}{187}{subsection.a.A.1.1}
