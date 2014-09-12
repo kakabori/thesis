@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ripple.aux
+The style file: ieeetr.bst
+Database file #1: ripple.bib
+Warning--empty journal in Koynova
+Warning--empty year in Koynova
+Warning--can't use both volume and number fields in Schmid14
+You've used 103 entries,
+            1876 wiz_defined-function locations,
+            1161 strings with 21939 characters,
+and the built_in function-call counts, 34895 in all, are:
+= -- 3723
+> -- 1168
+< -- 0
++ -- 429
+- -- 326
+* -- 2472
+:= -- 4606
+add.period$ -- 104
+call.type$ -- 103
+change.case$ -- 100
+chr.to.int$ -- 0
+cite$ -- 106
+duplicate$ -- 1843
+empty$ -- 2997
+format.name$ -- 326
+if$ -- 8730
+int.to.chr$ -- 0
+int.to.str$ -- 103
+missing$ -- 102
+newline$ -- 314
+num.names$ -- 101
+pop$ -- 159
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1620
+stack$ -- 0
+substring$ -- 2896
+swap$ -- 1033
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 318
+width$ -- 106
+write$ -- 1106
+(There were 3 warnings)
