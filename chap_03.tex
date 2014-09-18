@@ -3141,7 +3141,7 @@ the same, $\sim$1.49 \AA$^{-1}$.
 \end{figure}
 
 \begin{table}[htbp]
-  \centering
+  \makebox[\textwidth][c]{
   \begin{tabular}{ccccccc}
     \hline
     type & peaks & $q$ & $q_r$ & $q_z$ & $\Delta q_r$ & $\Delta q_z$ \\
@@ -3161,6 +3161,7 @@ the same, $\sim$1.49 \AA$^{-1}$.
     & gel (2, 0) & 1.479 & 1.479 & 0 & 0.020 & 0.4 \\
     \hline
   \end{tabular}
+  }
   \caption[Wide angle peak positions and widths for the ripple phase with comparison 
   to the gel and fluid phases]
   {Wide angle peak positions and widths for the ripple phase with comparison 
@@ -3696,30 +3697,33 @@ As ${\Delta}q_z \approx 0.4$\AA, broken symmetry Bragg rods would be predicted
 to overlap considerably.  This could blur them into apparently single Bragg 
 rods, but with larger ${\Delta}q_z$ than the intrinsic value of each Bragg rod. 
 
+
 \begin{table}[htbp]
-\centering
-\begin{tabular}{ | l | c | c | c |}
+\makebox[\textwidth][c]{
+  \begin{tabular}{ | l | c | c | c |}
   \hline                       
    & $(\pm2,0)$ & $(\pm1,1)$ & $(\pm1,-1)$ \\
   \hline
- $L_{{\beta}I}$ & 0 & $\sqrt{3}\sin\theta$ & $-\sqrt{3}\sin\theta$\\
+  $L_{{\beta}I}$ & 0 & $\sqrt{3}\sin\theta$ & $-\sqrt{3}\sin\theta$\\
   \hline  
   $P_{{\beta}I}^{\zeta=0}$ & 0 & $\sqrt{3}\sin(\theta-\xi)$ & $-\sqrt{3}\sin(\theta-\xi)$ \\
- \hline
-  $P_{{\beta}I}^{\zeta=\pi/2}$ & $\pm2\sin\xi$ & $\sqrt{3}\sin{\theta}\cos{\xi}\pm \sin{\xi}$ & $-\sqrt{3}\sin{\theta}\cos{\xi}\pm \sin{\xi}$\\
- \hline
-& $(\pm2,0)$ & $(1,\pm1)$ & $(-1,\pm1)$\\
   \hline
-$L_{{\beta}F}$ & $\pm2\tan\theta$ & $\tan\theta$ & $-\tan\theta$ \\
- \hline
+  $P_{{\beta}I}^{\zeta=\pi/2}$ & $\pm2\sin\xi$ & $\sqrt{3}\sin{\theta}\cos{\xi}\pm \sin{\xi}$ & $-\sqrt{3}\sin{\theta}\cos{\xi}\pm \sin{\xi}$\\
+  \hline
+  & $(\pm2,0)$ & $(1,\pm1)$ & $(-1,\pm1)$\\
+  \hline
+  $L_{{\beta}F}$ & $\pm2\tan\theta$ & $\tan\theta$ & $-\tan\theta$ \\
+  \hline
   $P_{{\beta}F}^{\zeta=0}$ & $\pm2\tan{\theta}\cos\xi$ & $\tan{\theta}\cos{\xi}\mp\sqrt{3}\sin{\xi}/\cos\theta$ & $-(\tan{\theta}\cos{\xi}{\mp}\sqrt{3}\sin{\xi}/\cos\theta)$\\
   \hline
    $P_{{\beta}F}^{\zeta=\pi/2}$ & $\pm2(\tan{\theta}\cos\xi+\sin\xi$) & $\tan{\theta}\cos{\xi}+\sin{\xi}$ & $-(\tan{\theta}\cos{\xi}+\sin{\xi})$\\
   \hline
-\end{tabular}
-\caption{$q_z^{hk}$ divided by 2$\pi/a$.}
-\label{tab:special_cases}
+  \end{tabular}
+  }
+  \caption{$q_z^{hk}$ divided by 2$\pi/a$.}
+  \label{tab:special_cases}
 \end{table}
+
 
 \newpage
 \section{Combining WAXS and LAXS Results for the Major Arm}\label{sec:waxs_results}
