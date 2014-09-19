@@ -869,6 +869,7 @@ this inexact placement of the bare wafer.
   The sample to detector distance is not drawn to scale.}
   \label{fig:sgeometry}
 \end{figure}
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample $q$-space}\label{sec:sample_q-space}
@@ -3188,7 +3189,9 @@ $q_z=0.012$ and 0.020~\AA$^{-1}$. Due to the low instrumental resolution,
 the stronger and weaker Bragg rods were not separated; otherwise,
 the peak profiles were similar to those in the high resolution nGIWAXS shown
 in Fig.~\ref{fig:qrplots}, indicating that the statistics of the high resolution
-data were adequate for the ripple WAXS.
+data were adequate for the ripple WAXS. For completeness, radial intensity
+profiles $I(q)$ of the low resolution nGIWAXS are plotted in 
+Fig.~\ref{fig:sector_plots_low-res}.
 
 \begin{figure}[htbp]
   \centering
@@ -3213,6 +3216,21 @@ data were adequate for the ripple WAXS.
   instrumental resolution $\Delta q_r=0.032$~\AA$^{-1}$, the weaker
   Bragg rod was not separated from the stronger one.} 
   \label{fig:ripple_waxs_low-res_qrplots}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/sector_10-30_low-res}
+  \includegraphics[width=0.45\textwidth]{figures/ripple/nGIWAXS/sector_40-70_low-res}
+  \caption[Radial intensity profiles of the low resolution nGIWAXS data shown in
+  Fig.~\ref{fig:ripple_waxs_low-res} for various angles $\phi$]
+  {Radial intensity profiles of the low resolution nGIWAXS data shown in 
+  Fig.~\ref{fig:ripple_waxs_low-res} for various angles $\phi$.
+  $\phi$ is an angle measured from the equator (see Fig.~\ref{fig:laxs_setup})
+  in $q$-space. Intensities are plotted as a function 
+  of total $q$, along constant $\phi$ indicated in the figure legend. 
+  Intensities were averaged over $\pm$5\textdegree\ to improve statistics.}
+  \label{fig:sector_plots_low-res}
 \end{figure}
 
 %\begin{figure}[htbp]
@@ -3880,8 +3898,8 @@ rods in the ripple and gel phases are approximately the same, indicating that
 chains in different leaflets in the ripple major arm also scatter coherently.
 
 With the thin rod model developed in Sec.~\ref{sec:ripple_model}, we indexed 
-the stronger Bragg rod as (2, 0) and weaker one as (1, $\pm$1). 
-The chain tilt angle $\theta=18.5$\textdegree\
+the stronger Bragg rod as (2,~0) and weaker one as (1,~$\pm$1). 
+The chain tilt angle $\theta=18.4$\textdegree\
 (see Table~\ref{tab:waxs_structure}) is consistent with the gel 
 $L_{\beta F}$ phase, supporting our interpretation that chains
 are in the $P_{\beta F}$ phase.
@@ -3957,14 +3975,14 @@ interpret in terms of interactions between lipid molecules.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/ripple/discussion/major-arm_cartoon}
+  \includegraphics[width=\textwidth]{figures/ripple/discussion/major-arm_cartoon_ver1}
   %\includegraphics[trim=300 450 200 300,clip=true,width=0.55\textwidth]{figures/ripple/discussion/Sengupta_cartoon}  
   %\includegraphics[width=0.5\textwidth]{figures/ripple/discussion/Kamal_cartoon}
   \caption[(top) Chain packing in the major arm proposed in this thesis]
   {(top) Chain packing in the major arm proposed in this thesis.
   Chains are drawn as solid green lines, and headgroups as green circles.
   Lipids are overlaid on the electron density map shown in Fig.~\ref{fig:Fit5_2D_edp}.
-  The dashed line indicates the bilayer midplane in the major arm.
+  %The dashed line indicates the bilayer midplane in the major arm.
   Chains are tilted by 18.4\textdegree\ with respect to the bilayer local normal. 
   Chains in the upper and lower leaflets are coupled and scatter coherently. 
   (bottom) Corresponding chain packing proposed by
